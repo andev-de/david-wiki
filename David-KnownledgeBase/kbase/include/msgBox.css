@@ -1,0 +1,104 @@
+#msgBox
+{
+   background-image:url(/graphic/alert/metallbg_alert.gif); 
+   padding:0px;
+   border-left:1px solid #f4f4f4;
+   border-right:1px solid #989898;
+   border-bottom:1px solid #989898;
+}
+
+img.msgBoxAlphaImg
+{
+   width:100%; 
+   height:100%; 
+   margin-bottom:-2px; 
+   padding:0px; /*IE7 Fix*/
+}
+
+#msgBoxContainer
+{
+   position:absolute;
+}
+
+#msgBoxTitle
+{
+   text-align:left;
+   width:100%; 
+   color: #383838;
+   margin-left:14px;
+   height:31px;
+   cursor:default;
+}
+
+span.msgBoxTitle
+{
+   position:absolute;
+   top:9px;
+   z-index:51;
+}
+
+span.msgBoxTitleShadow
+{
+   position:absolute;
+   top:10px;
+   z-index:1;
+   color:#e5e5e5;
+}
+
+#msgBoxContentBorder
+{
+   text-align:left;
+   margin-left:12px;
+   margin-right:12px;
+   border-left:solid 1px #b3b3b3;
+   border-right:solid 1px #e0e0e0;
+   border-top:solid 1px #b3b3b3;
+   border-bottom:solid 1px #e0e0e0;
+}
+
+#msgBoxContent
+{
+   text-align:left;
+   background-color:White;
+   border-left:solid 1px #6e6e6e;
+   border-right:solid 1px #6e6e6e;
+   border-top:solid 1px #6e6e6e;
+   border-bottom:solid 1px #6e6e6e;
+}
+
+table.msgBoxText
+{
+   width:100%;
+   border-bottom:solid 1px #919b9c;
+}
+
+#msgBoxButton
+{
+   background-color:#DBDBDB;
+   width:auto;
+   z-index:31;
+   text-align:right;
+   border-top:solid 1px White;
+   padding:10px;
+}
+
+img.msgBoxCloseBtn
+{
+   position:absolute;
+   z-index:99;
+}
+
+td.imgCell
+{
+   padding-left:10px; 
+   padding-right:13px;
+   padding-top:10px;
+   vertical-align:top;
+}
+td.txtCell
+{
+   vertical-align:top;
+   padding-top:10px;
+   width:100%;
+   color:#000000;
+}
