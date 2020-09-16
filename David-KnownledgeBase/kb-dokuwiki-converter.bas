@@ -40,16 +40,13 @@ Dim p2 As Integer
 Dim p3 As Integer
 Dim f As Integer
 
-'For kbid = 31 To 300
-'For kbid = 10106 To 10106
+'For kbid = 10989 To 10989
 For kbid = 31 To 10989
-'For kbid = 10900 To 10989
 	kbstr = "Q-1" & PadLeft(Str(kbid), 5, "0")
 	infile = ExePath & "\kbase\" & kbstr & ".html"
 	outfile = ExePath & "\dokuwiki-kb\" & LCase(Left(kbstr, 5) & "." & Mid(kbstr, 6)) & ".txt"
-	
+
 	If FileExists(infile) = -1 Then
-		'If FileExists(infile) = 0 Then
 		If 1 = 1 Then
 			f = FreeFile
 			Open infile For Binary As #f
