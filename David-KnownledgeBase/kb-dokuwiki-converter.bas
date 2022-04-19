@@ -39,9 +39,20 @@ Dim p1 As Integer
 Dim p2 As Integer
 Dim p3 As Integer
 Dim f As Integer
+Dim block_start As Integer
+Dim block_end As Integer
 
-'For kbid = 10989 To 10989
-For kbid = 31 To 10989
+block_start = 10989 : block_end = 10989
+
+'block_start = 10000 : block_end = 10199
+block_start = 10200 : block_end = 10499
+'block_start = 10500 : block_end = 10799
+'block_start = 10800 : block_end = 10989
+'block_start = 10247 : block_end = 10247
+'block_start = 8000 : block_end = 9999
+block_start = 31 : block_end = 7999
+
+For kbid = block_start To block_end
 	kbstr = "Q-1" & PadLeft(Str(kbid), 5, "0")
 	infile = ExePath & "\kbase\" & kbstr & ".html"
 	outfile = ExePath & "\dokuwiki-kb\" & LCase(Left(kbstr, 5) & "." & Mid(kbstr, 6)) & ".txt"
@@ -75,7 +86,7 @@ For kbid = 31 To 10989
 				tmp = StrReplace(tmp, "<div class=""title"">", "====== ")
 				tmp = StrReplace(tmp, "</div>         ", " - ")
 				tmp = StrReplace(tmp, Chr(13, 10) & "<b class=tabletext style=""position:relative; top:-5px;"">", "")
-				tmp = StrReplace(tmp, "</b><p style=""position:relative; top:-14px;""><br>", " ======" & Chr(13, 10))
+				tmp = StrReplace(tmp, "</b><p style=""position:relative; top:-14px;""><br>", " ======" & Chr(13, 10) & "~~NOCACHE~~" & Chr(13, 10) & "!!!")
 
 				' cleanup (frage)
 				tmp = StrReplace(tmp, "<table cellspacing=""0"" cellpadding=""2"" class=""border"" ID=""Table1"">", "")
@@ -83,20 +94,20 @@ For kbid = 31 To 10989
 				tmp = StrReplace(tmp, "<tr>    <td colspan=""2"" class=""tabletext"" height=""5""></td>  </tr>  ", "")
 				
 				' Problem
-				tmp = StrReplace(tmp, "    <tr>      <td width=""70"" valign=""top"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", "==== ")
-				tmp = StrReplace(tmp, "</b></td>      <td class=""tabletext"" style=""padding-right:10px;"">", " ====" & Chr(13, 10))
+				tmp = StrReplace(tmp, "    <tr>      <td width=""70"" valign=""top"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", Chr(13, 10) & "==== ")
+				tmp = StrReplace(tmp, "</b></td>      <td class=""tabletext"" style=""padding-right:10px;"">", " ====" & Chr(13, 10) & Chr(13, 10))
 				
 				' Produkt
-				tmp = StrReplace(tmp, "    <tr>      <td width=""70"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", "==== ")
-				tmp = StrReplace(tmp, "</b></td>      <td class=""tabletext"">", " ====" & Chr(13, 10))
+				tmp = StrReplace(tmp, "    <tr>      <td width=""70"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", Chr(13, 10) & Chr(13, 10) & "==== ")
+				tmp = StrReplace(tmp, "</b></td>      <td class=""tabletext"">", " ====" & Chr(13, 10) & Chr(13, 10))
 				
 				' Datum
-				tmp = StrReplace(tmp, "  <tr>    <td width=""70"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", "==== ")
-				tmp = StrReplace(tmp, "</b></td>    <td class=""tabletext"">", " ====" & Chr(13, 10))
+				tmp = StrReplace(tmp, "  <tr>    <td width=""70"" align=""right"" class=""tabletext"" style=""padding-right:10px;""><b>", Chr(13, 10) & Chr(13, 10) & "==== ")
+				tmp = StrReplace(tmp, "</b></td>    <td class=""tabletext"">", " ====" & Chr(13, 10) & Chr(13, 10))
 				
 				' Antwort
-				tmp = StrReplace(tmp, "</td>  </tr>  <tr>    <td colspan=""2"" class=""tabletext"" height=""5""></td>  </tr></table></p><p><table cellpadding=""2"" cellspacing=""0"" class=""border"">  <tr>    <td class=""borderhead"" style=""padding-left:5px""><b>", Chr(13, 10) & "==== ")
-				tmp = StrReplace(tmp, "</b></td>  </tr>  <tr>    <td class=""tabletext"" height=""5""></td>  </tr>  <tr>    <td class=""tabletext"" style=""padding-left:10px; padding-right:10px;"">", " ====" & Chr(13, 10))
+				tmp = StrReplace(tmp, "</td>  </tr>  <tr>    <td colspan=""2"" class=""tabletext"" height=""5""></td>  </tr></table></p><p><table cellpadding=""2"" cellspacing=""0"" class=""border"">  <tr>    <td class=""borderhead"" style=""padding-left:5px""><b>", Chr(13, 10) & Chr(13, 10) & Chr(13, 10) & "==== ")
+				tmp = StrReplace(tmp, "</b></td>  </tr>  <tr>    <td class=""tabletext"" height=""5""></td>  </tr>  <tr>    <td class=""tabletext"" style=""padding-left:10px; padding-right:10px;"">", " ====" & Chr(13, 10) & Chr(13, 10))
 				
 				tmp = StrReplace(tmp, "<p>", Chr(13, 10) & Chr(13, 10))
 				
@@ -120,15 +131,15 @@ For kbid = 31 To 10989
 
 				Print tmp
 				
-				f = FreeFile
-				Open ExePath & "\x-debug.txt" For Output As #f
-					Print #f, tmp
-				Close #f
+				'f = FreeFile
+				'Open ExePath & "\x-debug.txt" For Output As #f
+				'	Print #f, tmp
+				'Close #f
 
 				f = FreeFile
 				Open outfile For Output As #f
 					Print #f, tmp
-				Close #f				
+				Close #f
 			EndIf
 		EndIf
 	EndIf
