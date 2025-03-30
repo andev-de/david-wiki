@@ -116,6 +116,120 @@ function create_wiki_page($info, $post_data) {
 	file_put_contents(dirname(__FILE__).'/response.html', $response);
 }
 
+function update_wiki_page($page_key, $info, $post_data) {
+	$sessionNumber = 'wsc_583127_user_session';
+	$sessionValue  = '0f2065ffe1a2e49c5b5872bda68a9b9a7748f628c6f7f0f58250aa70e269c971-AXlT19l%2F0JZfnDXFyJr5PsJJMPGi0Q%3D%3D';
+	$xsrfToken = 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD%2BuiAgu5gEzA%3D%3D';
+	$cookieValue = $sessionNumber.'='.$sessionValue.'; XSRF-TOKEN='.$xsrfToken;
+	parse_str('t='.$xsrfToken, $tokenArr);
+
+	$post_data['t'] = $tokenArr['t'];
+
+	// print_r($post_data); exit;
+
+	$encodedData = http_build_query($post_data);
+
+	// echo $encodedData; exit;
+
+	echo $info;
+	
+	$url = "https://www.david-forum.de/wiki/entry-edit/".$page_key."/";
+	
+	// echo $url,"\n";
+
+	$cookieFile = __DIR__ . "/cookies.txt";
+
+	// Initialize cURL session
+	$ch = curl_init($url);
+
+	// Set cURL options
+	curl_setopt($ch, CURLOPT_POST, true); // Use POST method
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $encodedData); // Encode data
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return response as a string
+	// curl_setopt($ch, CURLOPT_COOKIEJAR, $cookieFile); // Save cookies to file
+	// curl_setopt($ch, CURLOPT_COOKIEFILE, $cookieFile); // Load cookies from file
+
+	// Optional headers (if required)
+	curl_setopt($ch, CURLOPT_HTTPHEADER, [
+		'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0',
+		'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+		'Accept-Language: de,en-US;q=0.7,en;q=0.3',
+		'Content-Type: application/x-www-form-urlencoded',
+		'Origin: https://www.david-forum.de',
+		'Connection: keep-alive',
+		'Referer: https://www.david-forum.de/wiki/entry-add/?categoryID=5',
+		'Cookie: '.$cookieValue,
+		'Upgrade-Insecure-Requests: 1',
+		'Sec-Fetch-Dest: document',
+		'Sec-Fetch-Mode: navigate',
+		'Sec-Fetch-Site: same-origin',
+		'Sec-Fetch-User: ?1',
+		'Priority: u=0, i',
+		'Pragma: no-cache',
+		'Cache-Control: no-cache'
+	]);
+
+	// curl_setopt($ch, CURLOPT_VERBOSE, true);
+
+	// Execute cURL request
+	$response = curl_exec($ch);
+
+	// Check for errors
+	if (curl_errno($ch)) {
+		echo 'Curl error: ' . curl_error($ch);
+		curl_close($ch);
+		exit;
+	}
+
+	// Close cURL session
+	curl_close($ch);
+
+	if (empty($response)) {
+		$status = "Erfolgreich";
+	}
+	else {
+		$pfind = '<small class="innerError">';
+		$pstart = strpos($response, $pfind);
+		if ($pstart !== false) {
+			$pstart = $pstart + strlen($pfind);
+			$pend = strpos($response, '</', $pstart + 1);
+			$plen = $pend - $pstart;
+			// echo $pstart,"-",$pend,"=",$plen,"\n";
+			$status = trim(substr($response, $pstart, $plen));
+		}
+		else {
+			$pfind = '<woltlab-core-notice type="error">';
+			$pstart = strpos($response, $pfind);
+			if ($pstart !== false) {
+				$pstart = $pstart + strlen($pfind);
+				$pend = strpos($response, '</', $pstart + 1);
+				$plen = $pend - $pstart;
+				// echo $pstart,"-",$pend,"=",$plen,"\n";
+				$status = trim(substr($response, $pstart, $plen));
+			}
+			else {
+				$pfind = '<p class="exceptionTitle">';
+				$pstart = strpos($response, $pfind);
+				if ($pstart !== false) {
+					$pstart = $pstart + strlen($pfind);
+					$pend = strpos($response, '</', $pstart + 1);
+					$plen = $pend - $pstart;
+					// echo $pstart,"-",$pend,"=",$plen,"\n";
+					$status = trim(substr($response, $pstart, $plen));
+				}
+				else {
+					file_put_contents(dirname(__FILE__).'/response.html', $response);
+					die('xxxx');
+				}
+			}
+		}
+	}
+
+	echo "[",$status,"]\n";
+
+	file_put_contents(dirname(__FILE__).'/response.html', $response);
+}
+
 function create_kb_page($kb) {
 	// $article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
 	$article = "aus Tobit KB importiert - vom ".$kb['date'];
@@ -147,6 +261,19 @@ function create_rl_page($page) {
 	$post_data['message'] = $page['notes'];
 
 	create_wiki_page("generating ReleaseNote ".$page['version']."... ", $post_data);
+}
+
+function update_rl_page($id, $page) {
+	$post_data['subject'] = $page['rollout'];
+	$post_data['synonyms'] = '';
+	$post_data['tags'][] = $page['rollout'];
+	$post_data['tags'][] = 'Version '.$page['version'];
+	$post_data['restrictedWriteAccess'] = '';
+	$post_data['category'] = '6';
+	$post_data['excerpt'] = 'Release Notes zu '.$page['rollout'].' / Version '.$page['version'].' vom '.$page['date'];
+	$post_data['message'] = $page['notes'];
+
+	update_wiki_page($id.'-version-'.$page['version'], "updating ReleaseNote ".$page['version']." (".$id.")... ", $post_data);
 }
 
 function convert_file_typeA($file) {
@@ -264,7 +391,8 @@ function get_rollout_info($version, $release) {
 	$infos[] = array('d' => '2016-11-17', 'r' => '258', 'v' => '0000');
 	$infos[] = array('d' => '2016-12-22', 'r' => '259', 'v' => '2909');
 	$infos[] = array('d' => '2017-01-20', 'r' => '260', 'v' => '0000');
-	$infos[] = array('d' => '2017-04-20', 'r' => '261', 'v' => '2925');
+	$infos[] = array('d' => '2017-04-20', 'r' => '261', 'v' => '2924');
+	$infos[] = array('d' => '2017-04-26', 'r' => '262', 'v' => '2925');
 	$infos[] = array('d' => '2017-05-15', 'r' => '264', 'v' => '2927');
 	$infos[] = array('d' => '2017-05-29', 'r' => '265', 'v' => '2931');
 	$infos[] = array('d' => '2017-06-19', 'r' => '266', 'v' => '2936');
@@ -407,27 +535,29 @@ function read_releasenotes_file($file) {
 
 	$tmp = get_rollout_info($page['version'], substr($page['release'], 0, 10));
 	$page['rollout'] = 'Rollout '.$tmp['r'];
-	echo $page['version']," / ",$page['release']," / ",$tmp['r'],"\n";
 
 	$page['notes'] = trim(substr($fdata, 73));
 
-	$page['notes'] = str_replace('\\ ', '<br>', $page['notes']);
+	$page['notes'] = str_replace('\\\\ ', '<br>', $page['notes']);
+	$page['notes'] = str_replace("=====  ", "</ul>\n</p>\n\n<p><br><hr><br>\n<b>", $page['notes']);
+	$page['notes'] = str_replace(" =====\n", "</b>\n<br><br>\n", $page['notes']);
+	$page['notes'] = str_replace("Feature ====\n\n", "<b>Feature</b>\n<ul>\n", $page['notes']);
+	$page['notes'] = str_replace("Bugfix ====\n\n", "<b>Bugfix</b>\n<ul>\n", $page['notes']);
+	$page['notes'] = str_replace("==== ", "</ul>\n\n", $page['notes']);
+	$page['notes'] = str_replace("xxxxxxxx", "§§§§", $page['notes']);
+	$page['notes'] = str_replace("xxxxxxxx", "§§§§", $page['notes']);
+	$page['notes'] = str_replace("xxxxxxxx", "§§§§", $page['notes']);
 	$page['notes'] = str_replace('  * ', "</li>\n<li>", $page['notes']);
-	// $page['notes'] = preg_replace('/  \* (.+)$/m', "<li>$1</li>", $page['notes']);
-	// $page['notes'] = str_replace("\r</li>", "</li>", $page['notes']);
-	$page['notes'] = str_replace("\r\n\n</li>", "</li>", $page['notes']);
-	$page['notes'] = str_replace("==== Feature ====\n\n</li>", "<b>Feature</b>\n<ul>", $page['notes']);
-	$page['notes'] = str_replace("==== Bugfix ====\n\n</li>", "<b>Bugfix</b><ul>", $page['notes']);
-	$page['notes'] = str_replace("=====  ", "</ul>\n<br><br>\n<b>", $page['notes']);
-	$page['notes'] = str_replace(" =====", "</b>\n<hr>", $page['notes']);
-	$page['notes'] = str_replace("\n\n\n</ul>", "</ul>\n\n", $page['notes']);
-	$page['notes'] = substr($page['notes'], 15);
-	$page['notes'] = str_replace("\n</ul>\n<br><br>", "</ul>\n\n<br><br>", $page['notes']);
-	$page['notes'] .= "</li>\n</ul>";
+	$page['notes'] = str_replace("\n</li>", "</li>", $page['notes']);
+	$page['notes'] = str_replace("\n\n</ul>", "</li>\n</ul>", $page['notes']);
+	$page['notes'] = str_replace("<br><br></li>\n</ul>", "<br><br>", $page['notes']);
+	$page['notes'] .= "</li>\n</ul>\n</p>";
+	$page['notes'] = '<p>'.substr($page['notes'], 28);
 
 	file_put_contents(dirname(__FILE__).'/notes.txt', $page['notes']);
+	file_put_contents(dirname(__FILE__).'/notes.html', $page['notes']);
 
-	// echo print_r($page, true),"\n";
+	// echo print_r($page,  true),"\n";
 	return $page;
 }
 
@@ -456,13 +586,17 @@ if (1 == 0) {
 // Import ReleaseNotes
 if (1 == 1) {
 	$files = @glob(dirname(__FILE__).'/releasenotes/*.txt');
+	// $files = @glob(dirname(__FILE__).'/releasenotes/3725.txt');
 
-	$cnt = 0;
-	$max = 140;
+	$cnt = 47;
+	$max = 185;
+	// $cnt = 180;
+	// $max = 180;
 
 	foreach ($files as $file) {
 		$item = read_releasenotes_file($file);
-		create_rl_page($item);
+		// create_rl_page($item);
+		update_rl_page($cnt, $item);
 		$cnt++;
 	
 		if ($cnt >= $max)
