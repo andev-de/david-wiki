@@ -3,10 +3,13 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ini_set('display_errors', 1);
 
+define('WSC_USER_SESSION', '82935b05410c1e0aca3053f3433c04d-AaOau0LCnC0YA6lvdabYch3gu6VD0Q=');
+define('XSRF_TOKEN', 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD+uiAgu5gEzA==');
+
 function create_wiki_page($kb) {
 	$xsrfToken = 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD+uiAgu5gEzA==';
 	$tmpArr = http_build_query(array($xsrfToken));
-	$cookieValue = 'wsc_583127_user_session=db8a5e94a6222de03c3cc6312a76193e1f049002144b2270b9d721cd381e7df0-AaOau0LCnC0YA6lvdabYch3gu6VDzw%3D%3D; XSRF-TOKEN='.substr($tmpArr, 2);
+	$cookieValue = 'wsc_583127_user_session='.WSC_USER_SESSION.'; XSRF-TOKEN='.XSRF_TOKEN;
 
 	$article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
 	$article .= "aus Tobit KB importiert - vom ".$kb['date'];
