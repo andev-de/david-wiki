@@ -12,8 +12,8 @@ function create_wiki_page($kb) {
 
 	
 
-	$article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
-	$article .= "aus Tobit KB importiert - vom ".$kb['date'];
+	// $article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
+	$article = "aus Tobit KB importiert - vom ".$kb['date'];
 	if (!empty($kb['link']))
 		$article .= " - <a href='".$kb['link']."'>Beitrag bei Tobit</a>";
 	$article .= "<hr><br>";
