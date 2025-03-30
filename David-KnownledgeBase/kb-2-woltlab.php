@@ -37,6 +37,8 @@ function create_wiki_page($kb) {
 
 	// echo $encodedData; exit;
 
+	echo "generating ",$kb['kbid'],"...\n";
+
 	// URL to send the POST request to
 	$url = "https://www.david-forum.de/wiki/entry-add/";
 
