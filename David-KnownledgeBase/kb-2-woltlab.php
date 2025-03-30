@@ -89,6 +89,7 @@ function create_wiki_page($kb) {
 
 	preg_match('/name="t" value="(.*?)"/', $response, $matches);
 	$xsrfToken = $matches[1] ?? null;
+	echo "[",$status,"]\n";
 
 	file_put_contents(dirname(__FILE__).'/response.html', $response);
 }
@@ -109,86 +110,74 @@ function convert_file_typeA($file) {
 	// echo $pstart,"-",$pend,"=",$plen,"\n";
 	$kb['kbid'] = trim(substr($fdata, $pstart, $plen));
 
-	if (substr($kb['kbid'], 0, 3) == 'Q-1') {
-		// OLD Format
+	$link_id = intval(str_replace('.','',substr($kb['kbid'], 3)));
+	// echo $link_id,"\n";
 
-		$link_id = str_replace('.','',substr($kb['kbid'], 3));
-		$kb['link'] = 'https://club.tobit.com/login/freekbarticle.asp?lang=ger&ArticleID='.$link_id;
+	// if ($link_id <= 10764)
 
-		$pfind = '<b class=tabletext style="position:relative; top:-5px;">';
-		$pstart = strpos($fdata, $pfind) + strlen($pfind);
-		$pend = strpos($fdata, '</b>', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$kb['title'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
-	
-		$pfind = '<b>Datum</b>';
-		$pstart = strpos($fdata, $pfind) + strlen($pfind);
-		$pstart = strpos($fdata, '<td class="tabletext">', $pstart + 1) + 22;
-		$pend = strpos($fdata, '</td>', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$kb['date'] = trim(substr($fdata, $pstart, $plen));
-		if (strlen($kb['date']) == 9)
-			$kb['date'] = '0'.$kb['date'];
-	
-		$pfind = '<b>Produkt</b>';
-		$pstart = strpos($fdata, $pfind) + strlen($pfind);
-		$pstart = strpos($fdata, '<td class="tabletext">', $pstart + 1) + 22;
-		$pend = strpos($fdata, '</td>', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$kb['product'] = trim(substr($fdata, $pstart, $plen));
-		// $kb['product'] = trim(str_replace('David','',substr($fdata, $pstart, $plen)));
-		// if (empty($kb['product']))
-		// 	$kb['product'] = 'David';
-	
-		$pfind = '<b>Problem</b>';
-		$pstart = strpos($fdata, $pfind) + strlen($pfind);
-		$pstart = strpos($fdata, '<td class="tabletext" style="padding-right:10px;">', $pstart + 1) + 50;
-		$pend = strpos($fdata, '</td>', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$kb['problem'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
-	
-		$pfind = '<b>Antwort</b>';
-		$pstart = strpos($fdata, $pfind) + strlen($pfind);
-		$pstart = strpos($fdata, '<td class="tabletext" style="padding-left:10px; padding-right:10px;">', $pstart + 1) + 69;
-		$pend = strpos($fdata, '</td>', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$kb['answer'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
+	$kb['link'] = 'https://club.tobit.com/login/freekbarticle.asp?lang=ger&ArticleID='.$link_id;
 
-		$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
-		$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
-	}
-	else {
-		die('NEW');
-	}
+	$pfind = '<b class=tabletext style="position:relative; top:-5px;">';
+	$pstart = strpos($fdata, $pfind) + strlen($pfind);
+	$pend = strpos($fdata, '</b>', $pstart + 1);
+	$plen = $pend - $pstart;
+	// echo $pstart,"-",$pend,"=",$plen,"\n";
+	$kb['title'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
 
+	$pfind = '<b>Datum</b>';
+	$pstart = strpos($fdata, $pfind) + strlen($pfind);
+	$pstart = strpos($fdata, '<td class="tabletext">', $pstart + 1) + 22;
+	$pend = strpos($fdata, '</td>', $pstart + 1);
+	$plen = $pend - $pstart;
+	// echo $pstart,"-",$pend,"=",$plen,"\n";
+	$kb['date'] = trim(substr($fdata, $pstart, $plen));
+	if (strlen($kb['date']) == 9)
+		$kb['date'] = '0'.$kb['date'];
 
+	$pfind = '<b>Produkt</b>';
+	$pstart = strpos($fdata, $pfind) + strlen($pfind);
+	$pstart = strpos($fdata, '<td class="tabletext">', $pstart + 1) + 22;
+	$pend = strpos($fdata, '</td>', $pstart + 1);
+	$plen = $pend - $pstart;
+	// echo $pstart,"-",$pend,"=",$plen,"\n";
+	$kb['product'] = trim(substr($fdata, $pstart, $plen));
+	// $kb['product'] = trim(str_replace('David','',substr($fdata, $pstart, $plen)));
+	// if (empty($kb['product']))
+	// 	$kb['product'] = 'David';
 
-	// for ($i=0; $i<1680; $i++) {
-	// 	$x = substr($kb['answer'], $i, 1);
-	// 	echo $x," = ",ord($x),"\n";
-	// }
+	$pfind = '<b>Problem</b>';
+	$pstart = strpos($fdata, $pfind) + strlen($pfind);
+	$pstart = strpos($fdata, '<td class="tabletext" style="padding-right:10px;">', $pstart + 1) + 50;
+	$pend = strpos($fdata, '</td>', $pstart + 1);
+	$plen = $pend - $pstart;
+	// echo $pstart,"-",$pend,"=",$plen,"\n";
+	$kb['problem'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
 
-	// $x = substr($kb['answer'], 5, 1);
-	// echo $x," = ",ord($x);
+	$pfind = '<b>Antwort</b>';
+	$pstart = strpos($fdata, $pfind) + strlen($pfind);
+	$pstart = strpos($fdata, '<td class="tabletext" style="padding-left:10px; padding-right:10px;">', $pstart + 1) + 69;
+	$pend = strpos($fdata, '</td>', $pstart - 1);
+	$plen = $pend - $pstart;
+	// echo $pstart,"-",$pend,"=",$plen,"\n";
+	$kb['answer'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
 
-	// echo $file_data,"\n";
+	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
+	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
+
 	echo print_r($kb, true),"\n";
 
 	return $kb;
 }
 
 // $files = @glob(dirname(__FILE__).'/kbase/*.html');
-$files = @glob(dirname(__FILE__).'/kbase/Q-100035.html');
+// $files = @glob(dirname(__FILE__).'/kbase/Q-100042.html');
 // $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 // $files = @glob(dirname(__FILE__).'/kbase/Q-11000*.html');
+$files = @glob(dirname(__FILE__).'/kbase/Q-106893.html');
+// $files = @glob(dirname(__FILE__).'/kbase/Q-11076*.html');
 
 $cnt = 0;
-$max = 2;
+$max = 1;
 
 foreach ($files as $file) {
 	$kb = convert_file_typeA($file);
