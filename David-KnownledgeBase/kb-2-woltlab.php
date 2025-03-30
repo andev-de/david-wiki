@@ -159,7 +159,8 @@ function convert_file_typeA($file) {
 		// echo $pstart,"-",$pend,"=",$plen,"\n";
 		$kb['answer'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
 
-		$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td>');
+		$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
+		$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
 	}
 	else {
 		die('NEW');
