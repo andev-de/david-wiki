@@ -187,7 +187,14 @@ $files = @glob(dirname(__FILE__).'/kbase/Q-100035.html');
 // $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 // $files = @glob(dirname(__FILE__).'/kbase/Q-11000*.html');
 
+$cnt = 0;
+$max = 2;
+
 foreach ($files as $file) {
 	$kb = convert_file_typeA($file);
 	create_wiki_page($kb);
+	$cnt++;
+
+	if ($cnt >= $max)
+		exit;
 }
