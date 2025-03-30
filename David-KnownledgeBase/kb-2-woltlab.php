@@ -3,13 +3,14 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ini_set('display_errors', 1);
 
-define('WSC_USER_SESSION', '82935b05410c1e0aca3053f3433c04d-AaOau0LCnC0YA6lvdabYch3gu6VD0Q=');
-define('XSRF_TOKEN', 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD+uiAgu5gEzA==');
-
 function create_wiki_page($kb) {
-	$xsrfToken = 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD+uiAgu5gEzA==';
-	$tmpArr = http_build_query(array($xsrfToken));
-	$cookieValue = 'wsc_583127_user_session='.WSC_USER_SESSION.'; XSRF-TOKEN='.XSRF_TOKEN;
+	$sessionNumber = 'wsc_583127_user_session';
+	$sessionValue  = '0f2065ffe1a2e49c5b5872bda68a9b9a7748f628c6f7f0f58250aa70e269c971-AXlT19l%2F0JZfnDXFyJr5PsJJMPGi0Q%3D%3D';
+	$xsrfToken = 'd90aaed67151a6eb8e16f7dc868c77313c5390c0923bbb667f8a05ab7ad94211-ZlXsRn634PD%2BuiAgu5gEzA%3D%3D';
+	$cookieValue = $sessionNumber.'='.$sessionValue.'; XSRF-TOKEN='.$xsrfToken;
+	parse_str('t='.$xsrfToken, $tokenArr);
+
+	
 
 	$article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
 	$article .= "aus Tobit KB importiert - vom ".$kb['date'];
@@ -29,7 +30,7 @@ function create_wiki_page($kb) {
 	$post_data['message'] = $article;
 	// $post_data['messageAttachments_tmpHash'][] = 'c7e0c4c02faa2a0e4b43b01acb0fbf6457822191';
 	// $post_data['isLinkedByParser'] = '1';
-	$post_data['t'] = $xsrfToken;
+	$post_data['t'] = $tokenArr['t'];
 
 	// print_r($post_data); exit;
 
@@ -37,7 +38,7 @@ function create_wiki_page($kb) {
 
 	// echo $encodedData; exit;
 
-	echo "generating ",$kb['kbid'],"...\n";
+	echo "generating ",$kb['kbid'],"... ";
 
 	// URL to send the POST request to
 	$url = "https://www.david-forum.de/wiki/entry-add/";
@@ -51,8 +52,8 @@ function create_wiki_page($kb) {
 	curl_setopt($ch, CURLOPT_POST, true); // Use POST method
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $encodedData); // Encode data
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return response as a string
-	curl_setopt($ch, CURLOPT_COOKIEJAR, $cookieFile); // Save cookies to file
-	curl_setopt($ch, CURLOPT_COOKIEFILE, $cookieFile); // Load cookies from file
+	// curl_setopt($ch, CURLOPT_COOKIEJAR, $cookieFile); // Save cookies to file
+	// curl_setopt($ch, CURLOPT_COOKIEFILE, $cookieFile); // Load cookies from file
 
 	// Optional headers (if required)
 	curl_setopt($ch, CURLOPT_HTTPHEADER, [
