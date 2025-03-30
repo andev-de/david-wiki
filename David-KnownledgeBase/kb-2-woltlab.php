@@ -74,21 +74,44 @@ function create_wiki_page($kb) {
 		'Cache-Control: no-cache'
 	]);
 
+	// curl_setopt($ch, CURLOPT_VERBOSE, true);
+
 	// Execute cURL request
 	$response = curl_exec($ch);
 
 	// Check for errors
 	if (curl_errno($ch)) {
 		echo 'Curl error: ' . curl_error($ch);
-	} else {
-		echo 'Response: ' . $response;
+		curl_close($ch);
+		exit;
 	}
 
 	// Close cURL session
 	curl_close($ch);
 
-	preg_match('/name="t" value="(.*?)"/', $response, $matches);
-	$xsrfToken = $matches[1] ?? null;
+	$pfind = '<woltlab-core-notice type="error">';
+	$pstart = strpos($response, $pfind);
+	if ($pstart !== false) {
+		$pstart = $pstart + strlen($pfind);
+		$pend = strpos($response, '</', $pstart + 1);
+		$plen = $pend - $pstart;
+		// echo $pstart,"-",$pend,"=",$plen,"\n";
+		$status = trim(substr($response, $pstart, $plen));
+	}
+	else {
+		$pfind = '<p class="exceptionTitle">';
+		$pstart = strpos($response, $pfind);
+		if ($pstart !== false) {
+			$pstart = $pstart + strlen($pfind);
+			$pend = strpos($response, '</', $pstart + 1);
+			$plen = $pend - $pstart;
+			// echo $pstart,"-",$pend,"=",$plen,"\n";
+			$status = trim(substr($response, $pstart, $plen));
+		}
+		else {
+			die('xxxx');
+		}
+	}
 	echo "[",$status,"]\n";
 
 	file_put_contents(dirname(__FILE__).'/response.html', $response);
