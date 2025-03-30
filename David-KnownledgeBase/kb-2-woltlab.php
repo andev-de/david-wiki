@@ -129,6 +129,8 @@ function convert_file_typeA($file) {
 		$plen = $pend - $pstart;
 		// echo $pstart,"-",$pend,"=",$plen,"\n";
 		$kb['date'] = trim(substr($fdata, $pstart, $plen));
+		if (strlen($kb['date']) == 9)
+			$kb['date'] = '0'.$kb['date'];
 	
 		$pfind = '<b>Produkt</b>';
 		$pstart = strpos($fdata, $pfind) + strlen($pfind);
