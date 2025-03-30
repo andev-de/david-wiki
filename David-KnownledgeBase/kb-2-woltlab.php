@@ -90,17 +90,11 @@ function create_wiki_page($kb) {
 	// Close cURL session
 	curl_close($ch);
 
-	$pfind = '<woltlab-core-notice type="error">';
-	$pstart = strpos($response, $pfind);
-	if ($pstart !== false) {
-		$pstart = $pstart + strlen($pfind);
-		$pend = strpos($response, '</', $pstart + 1);
-		$plen = $pend - $pstart;
-		// echo $pstart,"-",$pend,"=",$plen,"\n";
-		$status = trim(substr($response, $pstart, $plen));
+	if (empty($response)) {
+		$status = "Erfolgreich";
 	}
 	else {
-		$pfind = '<p class="exceptionTitle">';
+		$pfind = '<small class="innerError">';
 		$pstart = strpos($response, $pfind);
 		if ($pstart !== false) {
 			$pstart = $pstart + strlen($pfind);
@@ -110,9 +104,33 @@ function create_wiki_page($kb) {
 			$status = trim(substr($response, $pstart, $plen));
 		}
 		else {
-			die('xxxx');
+			$pfind = '<woltlab-core-notice type="error">';
+			$pstart = strpos($response, $pfind);
+			if ($pstart !== false) {
+				$pstart = $pstart + strlen($pfind);
+				$pend = strpos($response, '</', $pstart + 1);
+				$plen = $pend - $pstart;
+				// echo $pstart,"-",$pend,"=",$plen,"\n";
+				$status = trim(substr($response, $pstart, $plen));
+			}
+			else {
+				$pfind = '<p class="exceptionTitle">';
+				$pstart = strpos($response, $pfind);
+				if ($pstart !== false) {
+					$pstart = $pstart + strlen($pfind);
+					$pend = strpos($response, '</', $pstart + 1);
+					$plen = $pend - $pstart;
+					// echo $pstart,"-",$pend,"=",$plen,"\n";
+					$status = trim(substr($response, $pstart, $plen));
+				}
+				else {
+					file_put_contents(dirname(__FILE__).'/response.html', $response);
+					die('xxxx');
+				}
+			}
 		}
 	}
+
 	echo "[",$status,"]\n";
 
 	file_put_contents(dirname(__FILE__).'/response.html', $response);
@@ -188,7 +206,7 @@ function convert_file_typeA($file) {
 	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
 	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
 
-	echo print_r($kb, true),"\n";
+	// echo print_r($kb, true),"\n";
 
 	return $kb;
 }
