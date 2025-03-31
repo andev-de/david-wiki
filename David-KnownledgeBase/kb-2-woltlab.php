@@ -231,7 +231,6 @@ function update_wiki_page($page_key, $info, $post_data) {
 }
 
 function create_kb_page($kb) {
-	// $article  = "<h1>".$kb['kbid']." - ".$kb['title']."</h1>";
 	$article = "aus Tobit KB importiert - vom ".$kb['date'];
 	if (!empty($kb['link']))
 		$article .= " - <a href='".$kb['link']."'>Beitrag bei Tobit</a>";
@@ -240,15 +239,19 @@ function create_kb_page($kb) {
 	$article .= "<b>Problem</b><hr><p>".$kb['problem']."</p><br><br><br>";
 	$article .= "<b>Antwort</b><hr><p>".$kb['answer']."</p>";
 
-	$post_data['subject'] = $kb['kbid'];
+	$post_data['subject'] = $kb['kbid'].' - '.$kb['title'];
 	$post_data['synonyms'] = '';
 	$post_data['tags'][] = $kb['product'];
+	if ($kb['kblink'] == 1)
+		$post_data['tags'][] = 'UpdateLink';
 	$post_data['restrictedWriteAccess'] = '';
 	$post_data['category'] = '5';
 	$post_data['excerpt'] = $kb['kbid'].' - '.$kb['title'];
 	$post_data['message'] = $article;
 
-	create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
+	print_r($post_data);
+
+	// create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
 }
 
 function create_rl_page($page) {
@@ -276,7 +279,7 @@ function update_rl_page($id, $page) {
 	update_wiki_page($id.'-version-'.$page['version'], "updating ReleaseNote ".$page['version']." (".$id.")... ", $post_data);
 }
 
-function convert_file_typeA($file) {
+function read_knowledgebase_file($file) {
 	$kb = array();
 	$fdata = file_get_contents($file);
 
@@ -342,6 +345,11 @@ function convert_file_typeA($file) {
 	$plen = $pend - $pstart;
 	// echo $pstart,"-",$pend,"=",$plen,"\n";
 	$kb['answer'] = str_replace($what, $with, utf8_encode(substr($fdata, $pstart, $plen)));
+
+	if (strpos($kb['answer'], 'kbarticleCLUB') !== false)
+		$kb['kblink'] = '1';
+	else
+		$kb['kblink'] = '0';
 
 	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
 	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
@@ -562,19 +570,19 @@ function read_releasenotes_file($file) {
 }
 
 // Import KB
-if (1 == 0) {
+if (1 == 1) {
 	// $files = @glob(dirname(__FILE__).'/kbase/*.html');
-	$files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-11000*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-106893.html');
+	$files = @glob(dirname(__FILE__).'/kbase/Q-109361.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-11076*.html');
 	
 	$cnt = 0;
 	$max = 10;
 	
 	foreach ($files as $file) {
-		$kb = convert_file_typeA($file);
+		$kb = read_knowledgebase_file($file);
 		create_kb_page($kb);
 		$cnt++;
 	
@@ -584,7 +592,7 @@ if (1 == 0) {
 }
 
 // Import ReleaseNotes
-if (1 == 1) {
+if (1 == 0) {
 	$files = @glob(dirname(__FILE__).'/releasenotes/*.txt');
 	// $files = @glob(dirname(__FILE__).'/releasenotes/3725.txt');
 
