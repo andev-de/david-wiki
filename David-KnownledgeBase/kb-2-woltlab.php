@@ -266,8 +266,10 @@ function create_kb_page($kb) {
 }
 
 function create_rl_page($page) {
-	$post_data['subject'] = 'Version '.$page['version'];
-	$post_data['synonyms'] = '';
+	$post_data['subject'] = $page['rollout'].' / Version '.$page['version'];
+	$post_data['synonyms'][] = $page['rollout'];
+	$post_data['synonyms'][] = 'Version '.$page['version'];
+	$post_data['tags'][] = $page['rollout'];
 	$post_data['tags'][] = 'Version '.$page['version'];
 	$post_data['restrictedWriteAccess'] = '';
 	$post_data['category'] = '6';
@@ -279,7 +281,8 @@ function create_rl_page($page) {
 
 function update_rl_page($id, $page) {
 	$post_data['subject'] = $page['rollout'].' / Version '.$page['version'];
-	$post_data['synonyms'] = '';
+	$post_data['synonyms'][] = $page['rollout'];
+	$post_data['synonyms'][] = 'Version '.$page['version'];
 	$post_data['tags'][] = $page['rollout'];
 	$post_data['tags'][] = 'Version '.$page['version'];
 	$post_data['restrictedWriteAccess'] = '';
@@ -614,11 +617,11 @@ if (1 == 1) {
 	// $cnt = 180;
 	// $max = 180;
 
-	$files = @glob(dirname(__FILE__).'/releasenotes/29*.txt');
-	$cnt = 79;
+	// $files = @glob(dirname(__FILE__).'/releasenotes/29*.txt');
+	// $cnt = 79;
 
-	$files = @glob(dirname(__FILE__).'/releasenotes/3*.txt');
-	$cnt = 111;
+	// $files = @glob(dirname(__FILE__).'/releasenotes/3*.txt');
+	// $cnt = 111;
 
 	foreach ($files as $file) {
 		$item = read_releasenotes_file($file);
