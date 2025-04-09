@@ -251,10 +251,10 @@ function create_kb_page($kb) {
 	$article .= "<b>Antwort</b><hr><p>".$kb['answer']."</p>";
 
 	$post_data['subject'] = $kb['kbid'].' - '.$kb['title'];
-	$post_data['synonyms'] = '';
+	$post_data['synonyms'][] = $kb['kbid'];
 	$post_data['tags'][] = $kb['product'];
 	if ($kb['kblink'] == 1)
-		$post_data['tags'][] = 'UpdateLink';
+		$post_data['tags'][] = 'CheckLink';
 	$post_data['restrictedWriteAccess'] = '';
 	$post_data['category'] = '5';
 	$post_data['excerpt'] = $kb['kbid'].' - '.$kb['title'];
@@ -262,7 +262,7 @@ function create_kb_page($kb) {
 
 	// print_r($post_data);
 
-	// create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
+	create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
 }
 
 function create_rl_page($page) {
@@ -367,8 +367,8 @@ function read_knowledgebase_file($file) {
 	else
 		$kb['kblink'] = '0';
 
-	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
-	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><i><em><hr><table><tr><td><th><ol><ul><li>');
+	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><strong><i><em><hr><table><tr><td><th><ol><ul><li><a>');
+	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><strong><i><em><hr><table><tr><td><th><ol><ul><li><a>');
 
 	// echo print_r($kb, true),"\n";
 
@@ -587,15 +587,17 @@ function read_releasenotes_file($file) {
 
 // Import KB
 if (1 == 1) {
-	// $files = @glob(dirname(__FILE__).'/kbase/*.html');
+	$files = @glob(dirname(__FILE__).'/kbase/*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10004*.html');
+	$files = @glob(dirname(__FILE__).'/kbase/Q-10005*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-11000*.html');
-	$files = @glob(dirname(__FILE__).'/kbase/Q-109361.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10936*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10406*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-11076*.html');
 	
 	$cnt = 0;
-	$max = 10;
+	$max = 1;
 	
 	foreach ($files as $file) {
 		$kb = read_knowledgebase_file($file);
@@ -608,7 +610,7 @@ if (1 == 1) {
 }
 
 // Import ReleaseNotes
-if (1 == 1) {
+if (1 == 0) {
 	$files = @glob(dirname(__FILE__).'/releasenotes/*.txt');
 	// $files = @glob(dirname(__FILE__).'/releasenotes/2711.txt');
 
