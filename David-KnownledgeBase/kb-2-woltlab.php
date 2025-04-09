@@ -131,7 +131,7 @@ function update_wiki_page($page_key, $info, $post_data) {
 
 	// echo $encodedData; exit;
 
-	echo $info;
+	echo "[",$page_key,"] ",$info;
 	
 	$url = "https://www.david-forum.de/wiki/entry-edit/".$page_key."/";
 	
@@ -218,8 +218,19 @@ function update_wiki_page($page_key, $info, $post_data) {
 					$status = trim(substr($response, $pstart, $plen));
 				}
 				else {
-					file_put_contents(dirname(__FILE__).'/response.html', $response);
-					die('xxxx');
+					$pfind = '<h1 class="contentTitle">';
+					$pstart = strpos($response, $pfind);
+					if ($pstart !== false) {
+						$pstart = $pstart + strlen($pfind);
+						$pend = strpos($response, '</', $pstart + 1);
+						$plen = $pend - $pstart;
+						// echo $pstart,"-",$pend,"=",$plen,"\n";
+						$status = trim(substr($response, $pstart, $plen));
+					}
+					else {
+						file_put_contents(dirname(__FILE__).'/response.html', $response);
+						die('xxxx');
+					}
 				}
 			}
 		}
@@ -249,7 +260,7 @@ function create_kb_page($kb) {
 	$post_data['excerpt'] = $kb['kbid'].' - '.$kb['title'];
 	$post_data['message'] = $article;
 
-	print_r($post_data);
+	// print_r($post_data);
 
 	// create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
 }
@@ -267,7 +278,7 @@ function create_rl_page($page) {
 }
 
 function update_rl_page($id, $page) {
-	$post_data['subject'] = $page['rollout'];
+	$post_data['subject'] = $page['rollout'].' / Version '.$page['version'];
 	$post_data['synonyms'] = '';
 	$post_data['tags'][] = $page['rollout'];
 	$post_data['tags'][] = 'Version '.$page['version'];
@@ -275,6 +286,8 @@ function update_rl_page($id, $page) {
 	$post_data['category'] = '6';
 	$post_data['excerpt'] = 'Release Notes zu '.$page['rollout'].' / Version '.$page['version'].' vom '.$page['date'];
 	$post_data['message'] = $page['notes'];
+
+	// print_r($post_data);
 
 	update_wiki_page($id.'-version-'.$page['version'], "updating ReleaseNote ".$page['version']." (".$id.")... ", $post_data);
 }
@@ -592,14 +605,20 @@ if (1 == 1) {
 }
 
 // Import ReleaseNotes
-if (1 == 0) {
+if (1 == 1) {
 	$files = @glob(dirname(__FILE__).'/releasenotes/*.txt');
-	// $files = @glob(dirname(__FILE__).'/releasenotes/3725.txt');
+	// $files = @glob(dirname(__FILE__).'/releasenotes/2711.txt');
 
 	$cnt = 47;
 	$max = 185;
 	// $cnt = 180;
 	// $max = 180;
+
+	$files = @glob(dirname(__FILE__).'/releasenotes/29*.txt');
+	$cnt = 79;
+
+	$files = @glob(dirname(__FILE__).'/releasenotes/3*.txt');
+	$cnt = 111;
 
 	foreach ($files as $file) {
 		$item = read_releasenotes_file($file);
