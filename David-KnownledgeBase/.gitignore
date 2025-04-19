@@ -1,3 +1,13 @@
-dokuwiki-kb/*
-kbase/*
+dokuwiki-kb
+kbase
+kbase-content
+kbase-json
+releasenotes
+_this.code-workspace
+response.html
+cookies.txt
+notes.txt
+notes.html
+kbase-content
+CheckLink.txt
 x-debug.txt

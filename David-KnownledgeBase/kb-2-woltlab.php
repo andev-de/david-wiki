@@ -114,6 +114,7 @@ function create_wiki_page($info, $post_data) {
 	echo "[",$status,"]\n";
 
 	file_put_contents(dirname(__FILE__).'/response.html', $response);
+	file_put_contents(dirname(__FILE__).'/response-wiki.log', $info.": ".$status."\n", FILE_APPEND);
 }
 
 function update_wiki_page($page_key, $info, $post_data) {
@@ -260,6 +261,13 @@ function create_kb_page($kb) {
 	$post_data['excerpt'] = $kb['kbid'].' - '.$kb['title'];
 	$post_data['message'] = $article;
 
+	//if ($kb['kblink'] == 1)
+		//echo $kb['kbid'],"\n";
+
+	//$json_data = json_encode($post_data);
+	//file_put_contents(dirname(__FILE__).'/kbase-json/'.$kb['kbid'].'.json', $json_data);
+	//echo $kb['kbid'],"\n";
+
 	// print_r($post_data);
 
 	create_wiki_page("generating ".$kb['kbid']."... ", $post_data);
@@ -369,6 +377,12 @@ function read_knowledgebase_file($file) {
 
 	$kb['problem'] = strip_tags($kb['problem'], '<br><p><b><strong><i><em><hr><table><tr><td><th><ol><ul><li><a>');
 	$kb['answer'] = strip_tags($kb['answer'], '<br><p><b><strong><i><em><hr><table><tr><td><th><ol><ul><li><a>');
+
+	$pattern = '/kbarticleCLUB\.asp\?ArticleID=(\d+)/i';
+	$replacement = 'search/?q='.$kb['kbid'].'&type=com.viecode.lexicon.entry&sortField=time&sortOrder=DESC';
+	$kb['answer'] = preg_replace($pattern, $replacement, $kb['answer']);
+
+	// file_put_contents(dirname(__FILE__).'/kbase-content/'.$kb['kbid'].'.txt', $kb['kbid'].' - '.$kb['title']."\n\n".$kb['problem']."\n\n".$kb['answer']);
 
 	// echo print_r($kb, true),"\n";
 
@@ -587,17 +601,28 @@ function read_releasenotes_file($file) {
 
 // Import KB
 if (1 == 1) {
-	$files = @glob(dirname(__FILE__).'/kbase/*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10004*.html');
-	$files = @glob(dirname(__FILE__).'/kbase/Q-10005*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-11000*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-10936*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-10406*.html');
-	// $files = @glob(dirname(__FILE__).'/kbase/Q-11076*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10005*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10006*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10007*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10008*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-10009*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-100*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-101*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-102*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-103*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-104*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-105*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-106*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-107*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-108*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-109*.html');
+	$files = @glob(dirname(__FILE__).'/kbase/Q-110*.html');
 	
 	$cnt = 0;
-	$max = 1;
+	$max = 10000;
 	
 	foreach ($files as $file) {
 		$kb = read_knowledgebase_file($file);
