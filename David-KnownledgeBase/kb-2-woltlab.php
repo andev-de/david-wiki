@@ -384,6 +384,10 @@ function read_knowledgebase_file($file) {
 
 	// file_put_contents(dirname(__FILE__).'/kbase-content/'.$kb['kbid'].'.txt', $kb['kbid'].' - '.$kb['title']."\n\n".$kb['problem']."\n\n".$kb['answer']);
 
+	if (strpos($kb['problem'], 'xhtml') !== false) {
+		echo $kb['kbid'],"\n";
+	}
+
 	// echo print_r($kb, true),"\n";
 
 	return $kb;
@@ -601,7 +605,8 @@ function read_releasenotes_file($file) {
 
 // Import KB
 if (1 == 1) {
-	// $files = @glob(dirname(__FILE__).'/kbase/*.html');
+	$files = @glob(dirname(__FILE__).'/kbase/*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-110356.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10003*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10004*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-10005*.html');
@@ -619,14 +624,14 @@ if (1 == 1) {
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-107*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-108*.html');
 	// $files = @glob(dirname(__FILE__).'/kbase/Q-109*.html');
-	$files = @glob(dirname(__FILE__).'/kbase/Q-110*.html');
+	// $files = @glob(dirname(__FILE__).'/kbase/Q-110*.html');
 	
 	$cnt = 0;
 	$max = 10000;
 	
 	foreach ($files as $file) {
 		$kb = read_knowledgebase_file($file);
-		create_kb_page($kb);
+		// create_kb_page($kb);
 		$cnt++;
 	
 		if ($cnt >= $max)
