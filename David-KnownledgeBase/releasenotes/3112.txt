@@ -1,0 +1,59 @@
+====== Version 3112 vom 12.11.2019 ======
+
+Release: 2019-11-12T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Eigenschaften eines Ordners vererben: „Anzeige aufsteigend“\\ Die Eigenschaften eines Ordners können im david Client über den Schalter „Eigenschaften vererben“ auf die weiteren Unterordner vererbt werden. Hierbei wird nun auch die Einstellung „Sortierung/Anzeige aufsteigend“ berücksichtigt.\\ 
+
+==== Bugfix ====
+
+  * Anmeldename u.U. falsch eingetragen\\ Beim Hinzufügen eines neuen david Benutzers wurde der Anmeldename u.U. falsch übernommen.
+  * Mögliche Fehlfunktion bei „Als Spam melden“\\ In einem Einzelfall konnte es vorkommen, dass bei der Funktion "Als Spam melden" die selektierte eMail nicht übertragen wurde, sondern im aktuellen Ordner liegen bleib.
+  * Möglicher erhöhter Speicherverbrauch\\ Es konnte vorkommen, dass der Service Layer nach längerer Laufzeit immer mehr Speicher beanspruchte, was zu unterschiedlichen Problemen führen konnte (keine Anmeldung mehr per david Client, kein Zugriff mehr per EAS). Die Ursache wurde nun behoben.
+  * Benachrichtigung über neuen Nachrichten in Ordnern ohne Berechtigung\\ Hat ein Benutzer einen Ordner für die Benachrichtigung über neue Nachrichten eingetragen und ihm werden anschließend die Berechtigungen auf diesen Ordner entzogen, so wurde er weiterhin über neue Nachrichten in diesem Ordner informiert. Das ist nun behoben.\\ 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Versand einer signierten eMail mit Umlaut in der eMail-Adresse\\ Wird eine signierte eMail mit Umlauten in der eMail-Adresse versendet, so wurde der Umlaut beim Empfänger der eMail u.U. falsch angezeigt.
+  * Empfang von eMails mit Umlauten in eMail Adresse\\ Ist im david Administrator der Schalter "PostMan/Ungültige eMail-Adressen ablehnen" gesetzt, so wurden hierbei u.U. auch eMails mit gültiger eMail-Adresse abgelehnt, die Umlaute in der eMail-Adresse enthalten.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Maximale Größe der gesamten MIME-Nachricht bei ActiveSync Nutzung\\ Im david Administrator kann nun unter WebBox/ActiveSync die maximale Größe der gesamten MIME-Nachricht festgelegt werden (Vorgabe 15 MB). Zuvor konnte es vorkommen, dass die CPU Auslastung durch die WebBox sehr anstieg wenn eMails mit vielen und großen Dateianhängen per ActiveSync abgeglichen wurden.
+  * Erweiterte Fehlermeldung bei Sperrung des Remote Access\\ Wird der Remote Access eines david Anwenders aufgrund zu vieler fehlerhafter Anmeldeversuche automatisch gesperrt, so wird nun ein zusätzlicher Eintrag im david Ereignis-Ordner erstellt, der den Remote Access Benutzernamen, den verwendeten User-Agent sowie die IP-Adresse enthält.
+
+==== Bugfix ====
+
+  * Ganztägige Termin per ActiveSync u.U. falsch eingetragen\\ Ganztägige Termine wurden beim Zugriff per ActiveSync u.U. falsch eingetragen (von 01:00 Uhr morgens bis zum Folgetag um 01:00 Uhr morgens).
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Chat Nachricht in Priorität hoch\\ Wird über den Chat Dialog oben in der Symbolleiste des david Clients eine neue Chat Nachricht erstellt, so wird diese nun automatisch in Priorität hoch versendet, so dass beim Empfänger in diesem Fall der Chat als eigenes Fenster geöffnet wird.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * „Als gelesen markieren“ im Kontextmenü von Chat Nachrichten\\ Im Kontextmenü einer Chat Nachricht gibt es nun auch den Menüpunkt "Als gelesen markieren".
+  * Berechtigung zum Bearbeiten der 2nd Scan Whitelist\\ Die Berechtigung zum Bearbeiten der 2nd Scan Whitelist (Kontextmenü bei einem Ordner) ist nun gebunden an die Benutzer Berechtigung "Message Identification Services (MIS) anpassen" im david Administrator. Dies schließt auch das Vorhandensein des Schalters "Nachrichten von 'Absender eMail-Adresse' vertrauen und direkt durchstellen" im Transit ein.\\ 
+
+==== Bugfix ====
+
+  * Schaltfläche „Berechtigungen“ bei Ordner-Eigenschaften ausblenden\\ Die Schaltfläche "Berechtigungen" in den Ordner-Eigenschaften (Zugang) war vorhanden, auch wenn der Anwender die Berechtigung "Ordner-Zugriffsrechte anpassen" (david Administrator) nicht besitzt. Das wurde nun angepasst.
+  * Rückfrage beim Löschen einer Ordner-Verknüpfung\\ Beim Löschen einer Ordner-Verknüpfung stand in der Rückfrage, ob der Ordner wirklich gelöscht werden soll. Nun steht hier, ob die Verknüpfung wirklich gelöscht werden soll.
+  * Funktion „Verbinden mit“ beim Markieren einer Rufnummer in einer eMail\\ Wird in einer eMail eine Rufnummer markiert, so steht im Kontextmenü die Funktion "Verbinden mit" zur Auswahl. In Einzelfällen war der Menüpunkt jedoch nicht vorhanden, das ist nun behoben.
+  * Mögliches Fehlverhalten beim Einfügen von Dateiverknüpfungen\\ Wird eine neue eMail erstellt und es soll die Verknüpfung auf eine Datei im eMail Text eingefügt werden, so konnte dies dazu führen dass der geschriebene Text verschwand und nur die Verknüpfung angezeigt wurde. Das ist nun behoben.
+  * Mögliches Fehlverhalten beim Ändern eines Termins über mehrere Tage als Serie\\ Ist eine Terminserie eingetragen, deren Serienelemente über mehrere Tage geht, und man ändert ein einzelnes Serienelement, so wurden hier u.U. anschließend zwei einzelne Serienelemente angezeigt.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Feature ====
+
+  * Neuer TLD für Fax über das Internet (Beta)\\ Der TLD stellt eine neue Com Port Version (VoIP2) für den Versand und Empfang von Faxen über das Internet ohne zwischengeschaltete Hardware oder Fax-Gateways dar. Der Betrieb erfordert eine gültige Com Port License. Installation und Einrichtung erfolgen über die Port-Verwaltung im david Administrator (System &gt; Ports &gt; Port hinzufügen). Bei der Installation wird die Open Source Software FreeSWITCH, die zur Bereitstellung der Funktion verwendet wird, heruntergeladen und auf dem david Server Installiert. 
+

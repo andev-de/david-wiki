@@ -1,0 +1,102 @@
+====== Version 3041 vom 05.12.2018 ======
+
+Release: 2018-12-05T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david® Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.000.
+
+==== Bugfix ====
+
+  * Anzeige des Euro Zeichens im Betreff einer Nachricht\\ Wird im Betreff einer Nachricht das Euro Zeichen verwendet, so wurde dies u.U. nicht übertragen.
+  * Optimierte Angebe der Anzahl versendeter und empfangener eMails\\ Im david® Administrator wird im Punkt "Ports" u.a. die Anzahl der bisher versendeten und empfangenen eMails angezeigt. Diese Angaben waren u.U. nicht immer korrekt und werden nun richtig dargestellt. 
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Bearbeiten von Verschlüsselungs-Zertifikaten\\ Im david® Administrator können nun unter "System/TLS-Verschlüsselung/TLS-Zertifikate" die Verschlüsselungs-Zertifikate bearbeitet werden. Möglich ist u.a. die Anzeige, das Importieren und die Erstellung selbstsignierter Zertifikate.
+
+==== Bugfix ====
+
+  * Anzeige von Benutzernamen mit Umlauten in ActiveSync Übersicht\\ In der ActiveSync Übersicht wurden Umlaute in Benutzernamen falsch angezeigt.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Verwenden mehrerer Verschlüsselungs-Zertifikate\\ WebBox, Mail Access Server und PostMan können nun mehrere Verschlüsselungs-Zertifikate verwenden. Eingerichtet und verwaltet werden diese im david® Administrator unter "System/TLS-Verschlüsselung/TLS-Zertifikate".
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1. 
+  * Cipher Suite für TLS Verbindung bearbeiten\\ Im david® Administrator kann nun die verwendete Cipher Suite für den Aufbau von TLS Verbindungen bearbeitet werden: "System/TLS-Verschlüsselung - Kontextmenü Konfigurieren". Hier lässt sich der Kompatibilitätsmodus ändern und es können durch die Erstellung von benutzerdefinierten Einträgen die verwendeten Protokolle festgelegt werden. Die Verwendung einer selbst erstellten Datei "davidtls.ini" mit entsprechenden Einstellungen entfällt hierdurch.
+  * Unterstützung von SMTP MTA-STS (Strict Transport Security) (Beta)\\ PostMan unterstützt nun bei der verschlüsselten Nachrichtenübermittlung den neuen Standard "MTA-STS (Strict Transport Security)" in einer Beta Version.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * RSS Feeds mit langem Betreff\\ Enthält ein RSS Feed sehr lange Betreffs, so wurden diese bisher beim Import vom Grabbing Server eingekürzt, das wurde nun geändert. Ist im david® Client der Schalter "Ansicht/Eintragsliste/Anzeige des Betreffs erweitern" gesetzt, wird der komplette Betreff angezeigt.
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Verwenden mehrerer Verschlüsselungs-Zertifikate\\ WebBox, Mail Access Server und PostMan können nun mehrere Verschlüsselungs-Zertifikate verwenden. Eingerichtet und verwaltet werden diese im david® Administrator unter "System/TLS-Verschlüsselung/TLS-Zertifikate".
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1. 
+  * Cipher Suite für TLS Verbindung bearbeiten\\ Im david® Administrator kann nun die verwendete Cipher Suite für den Aufbau von TLS Verbindungen bearbeitet werden: "System/TLS-Verschlüsselung - Kontextmenü Konfigurieren". Hier lässt sich der Kompatibilitätsmodus ändern und es können durch die Erstellung von benutzerdefinierten Einträgen die verwendeten Protokolle festgelegt werden. Die Verwendung einer selbst erstellten Datei "davidtls.ini" mit entsprechenden Einstellungen entfällt hierdurch.
+
+==== Bugfix ====
+
+  * Authentifizierung per CRAM-MD5 bei IMAP Nutzung\\ Die Authentifizierung per CRAM-MD5 bei der IMAP Nutzung funktionierte u.U. nicht korrekt.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Verwenden mehrerer Verschlüsselungs-Zertifikate\\ WebBox, Mail Access Server und PostMan können nun mehrere Verschlüsselungs-Zertifikate verwenden. Eingerichtet und verwaltet werden diese im david® Administrator unter "System/TLS-Verschlüsselung/TLS-Zertifikate".
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1. 
+  * Cipher Suite für TLS Verbindung bearbeiten\\ Im david® Administrator kann nun die verwendete Cipher Suite für den Aufbau von TLS Verbindungen bearbeitet werden: "System/TLS-Verschlüsselung - Kontextmenü Konfigurieren". Hier lässt sich der Kompatibilitätsmodus ändern und es können durch die Erstellung von benutzerdefinierten Einträgen die verwendeten Protokolle festgelegt werden. Die Verwendung einer selbst erstellten Datei "davidtls.ini" mit entsprechenden Einstellungen entfällt hierdurch.
+  * Unterstützung von MTA-STS (Strict Transport Security) (Beta)\\ WebBox unterstützt nun bei der verschlüsselten Nachrichtenübermittlung den neuen Standard "MTA-STS (Strict Transport Security)" in einer Beta Version. Hierbei kann WebBox eine sogenannte "MTA-STS Richtlinie" als Datei zur Verfügung stellen, die anfragenden Mail-Servern bestätigt dass TLS-gesicherte Verbindungen unterstützt werden. Auch das zusätzlich erforderliche "mta-sts" Verschlüsselungs-Zertifikat kann von WebBox verwaltet werden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Vorschau mit zusätzlichen Tabs für erweiterte Eintragsinformationen \\ Im Vorschaufenster einer Nachricht können jetzt zusätzliche Tabs zur Verfügung gestellt werden, über die sich erweiterte Eintragsinformationen einsehen lassen (z.B. HTML-Inhalt, SMTP-Header, etc.). Hierzu dient der neue Schalter "Ansicht/Vorschau/Tabs mit erweiterten Eintragsinformationen anzeigen" in den Einstellungen des david® Client. Bisher standen diese Informationen ausschließlich über die Eintragseigenschaften und nur mit vorhandenem Dateizugriff, also nicht im Offline-Betrieb, zur Verfügung.&nbsp;
+  * Anzeige des Benutzernamens und der Rollout Version in Titelleiste\\ Zur besseren Übersicht wird der Name des angemeldeten Benutzers sowie die verwendete Rollout Version nun in der Titelleiste angezeigt.
+  * „Markierungen“ beim Datenexport\\ Werden die Eintragsinformationen aus einem Ordner per Menü "Datei/Datenexport" im ASCII oder Excel Format exportiert, so wird nun auch der Index einer gesetzten Markierung übergeben.
+  * Keine digitale Signatur bei neu erstelltem Dokument\\ Ist in den Einstellungen des david® Clients vorgegeben, dass neue eMails automatisch digital signiert werden, so gilt dies nun nicht mehr beim Erstellen eines neuen "Dokumentes".
+  * Neue Optionen zur Individualisierung des Client Layouts\\ In den Einstellungen des david® Client lässt sich  unter dem Punkt "Layout" das  Erscheinungsbild der Programmoberfläche individuell einstellen. Hier wurde die Auswahl der "Farbverläufe" erweitert.\\ \\ 
+
+==== Bugfix ====
+
+  * Optimiertes Verhalten beim Skalieren von Bildern im Editor\\ Das einfügen von Bildern mit anschließender Größenanpassung im Nachrichten-Editor konnte einem Fehlverhalten führen, wenn der betreffende Computer mit einer DPI Einstellungen größer 100% verwendet wurde. Diese Verhalten ist nun korrigiert.
+  * Möglicher Anzeigefehler bei Aufgabenübersicht\\ Wird im Navigator auch die Aufgabenübersicht eingeblendet, so konnte es in einem Einzelfall zu einem Anzeigefehler bei den "offenen" Aufgaben kommen.
+  * Mögliches Fehlverhalten beim Umbenennen des Betreffs\\ In einem Einzelfall konnte es vorkommen, dass nach Umbenennen des Betreffs noch der alte Betreff angezeigt wurde.
+  * Facebook Login u.U. nicht mehr möglich\\ Im chayns® iD Bereich war das Facebook Login u.U. nicht mehr möglich.
+  * Umlaute in eMail u.U. fehlerhaft\\ In einem Einzelfall wurden die Umlaute in einer eMail im geöffneten Editor falsch angezeigt (in der Vorschau waren sie korrekt).
+  * Automatische Aktualisierung der Eintragsliste überarbeitet\\ Die Eintragsliste des david® Client wird regelmäßig automatisch aktualisiert, um sicherzustellen, dass neue Einträge immer sofort sichtbar sind. In einem Einzelfall fand diese automatische Aktualisierung nicht statt, wenn zu einem zweiten david® Server gewechselt werden sollte, dieser Vorgang jedoch abgebrochen wurde (z.B. weil der Server nicht erreichbar war). Dieses Verhalten ist nun korrigiert. 
+  * Überarbeitete Darstellung von eMails\\ In einem Einzelfall wurde eine eMail (hier von eBay) in der Vorschau und im geöffneten Editor fehlerhaft dargestellt. Dieses Verhalten wurde korrigiert
+  * Optimierte Anzeige der Betreffinformation von Terminen\\ Wurde in der Kalenderansicht ein Termin über den Tab "Inhalt" in einem eigenen Fenster geöffnet, so konnte das dazu führen, dass sich anschließend in der Kalenderansicht die Betreffinformationen von Terminen nicht mehr durch Zeigen mit der Maus (beim MouseOver) anzeigen ließen. Dieses Verhalten wurde korrigiert.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Kommentare abschließen\\ Der Initiator einer eMail mit Kommentaren kann nun ebenso wie im david® Client für Windows das Kommentieren abschließen, so dass keine weiteren Kommentare mehr hinzugefügt werden können. Hierzu hat er im Kommentarbereich den neuen Button "Abschließen".
+  * Optimierung bei Besprechungseinladungen\\ Beim Hinzufügen von Teilnehmern zu einem Termin wurden Optimierungen vorgenommen.
+  * Überarbeitet Markierungen für  Nachrichten und Einträge\\ Die Symbole der Markierungen für Nachrichten und Einträge wurden an die Windows Version des david® Clients angepasst.
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität bei Betrieb auf Macbook Pro\\ Beim Einsatz auf einem Macbook Pro konnte der david® Client Mac u.U. bei einem Wechsel im david® abstürzen. Dieses Verhalten wurde korrigiert.
+  * Optimiertes Verhalten bei postlagerndem Versand\\ Beim Weiterleiten/Antworten einer eMail mit einem Dateianhang unter Einsatz des des postlagernden Versands wurden Änderungen am Dateianhang u.U. auch für die ursprünglich empfangene originale eMail übernommen. Dieses Verhalten ist nun korrigiert. 
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz \\ Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david®) wurde aktualisiert auf die Version 6.000. 
+

@@ -1,0 +1,170 @@
+====== Version 2711 vom 30.07.2013 ======
+
+Release: 2013-07-30T16:19:02
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Wird eine Besprechungsanfrage extern versendet, so war die Uhrzeit der Anfrage u.U. um eine Stunde versetzt, wenn die Anfrage in der Winterzeit erstellt wurde, aber einen Termin in der Sommerzeit betrifft.
+
+  * In Einzelfällen konnte es vorkommen, dass der Text einer eMail nicht in die Datenbank für die die Volltextsuche übernommen wurde. Dies konnte vorkommen, wenn der HTML Text einen Kommentar enthält und dieser mit mehr als zwei Bindestrichen abgeschlossen ist.
+
+  * Die geschriebenen LiveComments werden nun direkt in in den Volltextsuche Index eingefügt, so dass sie sofort bei der nächsten Suche gefunden werden können. Zuvor geschah dies erst bei der nächsten Bereinigung.
+
+  * Bei einer defekten *.0tx Datei eines Adresseintrags konnte es zu 100% Auslastung des Service Layers kommen, wenn entweder die zusätzlichen Adressfelder als Spalten eingeblendet sind oder der betroffene Ordner zur Adressvervollständigung ausgewählt ist. Das ist behoben.
+
+  * Es konnte zum Absturz kommen, wenn die Datei eines Versandjobs nicht erstellt werden konnte und der Job den Befehl @@archive enthält.
+
+  * Es konnte zum Absturz des Service Layers kommen, wenn "Nur Text" Nachrichten über einen Drucker gedruckt werden sollen und dieser einen Fehler zurück gab (z.B. wenn der Netzwerk Drucker nicht erreichbar ist).
+
+  * Ist bei einem Anwender ein Autoreply mit einem HTML Textbaustein eingerichtet, so wurden in der Autoreply Nachricht die Umlaute falsch dargestellt, wenn zusätzlich bei dem Anwender eine Fußnote eingestellt ist und die empfangene Nachricht eine "Nur Text" formatierte Nachricht ist. Das ist nun behoben.
+
+  * Wird per david® Client ein neuer Ordner erstellt und hierbei der Schalter "Eigenschaften übernehmen" aktiviert, so werden nun neben den Eigenschaften auch die Optionen (z.B. "Gelesen beim Kopieren/Verschieben erhalten") des ursprünglichen Ordners übernommen.
+
+  * Wenn die Freigabe \\Servername\david beim Start des Service Layers nicht erstellt werden kann, funktionierte im david Client die Notifizierung über neue Nachrichten nicht (man musste die Liste manuell aktualisieren). Die Notifizierung funktioniert nun auch ohne diese Freigabe.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Unter Windows 8.1 funktionierte die Suche per Quickfinder (z.B. in den Verteilregeln) nicht korrekt.
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Wird eine Besprechungsanfrage von extern empfangen, so war die Uhrzeit der Anfrage u.U. um eine Stunde versetzt, wenn die Anfrage in der Winterzeit erstellt wurde, aber einen Termin in der Sommerzeit betrifft.
+
+  * In den per Grabbing Server abgeholten Facebook Feeds wurden evtl. vorhandene Umlaute im Titel nicht angezeigt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neuer Reiter bei den Ordner-Eigenschaften: "Publizieren". Hier befindet sich der Schalter "Freigabe als Feed", sowie der neue Schalter "Ordner für chayns® freigeben". Wird der letztere aktiviert, wird zusätzlich der dazu notwendige Schalter "Freigabe als Feed" aktiviert. Die Datei \david\apps\webbox\code\feeds.idx enthält eine Liste der Ordner, die für chayns freigegeben sind.
+
+  * Unter "Einstellungen/Global" können Einstellungen für die Benachrichtigung über TeamBoard Einträge vorgenommen werden.
+
+  * Wird per Adressvervollständigung eine Adresse aus einem SQL Ordner ausgewählt und in der Nachricht Variablen dieser Adresse verwendet (z.B. Nachname), so erschien anschließend dennoch der Dialog zur Eingabe dieser Variablenwerte.
+
+  * Beim Drucken einer TIF Datei aus dem Fax Viewer heraus an einen PDF Drucker konnte es zu einem Fehlverhalten kommen, da in diesem Fall kein Dokumentname übergeben wurde.
+
+  * Unter Windows 8.1 wurde die Messagebox "Ist diese eMail nicht in Ihrer Sprache" fehlerhaft angezeigt.
+
+  * Die TeamBoards ersetzen die bisherigen TeamChats. In der Favoritenleiste gibt es dazu den neuen Button "TeamBoards". Die Einträge werden in der SQL Datenbank des Service Layers gespeichert, werden also nicht wie bisher nur als einzelne Dokumente im Ordner abgelegt. Die einzelnen Fenster des bisherigen TeamChats gibt es nicht mehr, neue Nachrichten werden als Badge am TeamBoards Button signalisiert. Zusätzlich zur Kommunikation kann der Benutzer auch Dateien mit anderen Benutzern austauschen, diese werden im
+  * Neuer Schalter beim Erstellen einer Wiedervorlage: "Kopie statt Original wiedervorlegen". Es wird somit eine Kopie der Nachricht in die Wiedervorlage gelegt.
+
+  * Ist die Einstellung "Nachricht nach 5 Sekunden als gelesen markieren" aktiviert, so wurde auch die Faxvorschau aktualisiert und es wurde wieder zum Beginn des selektierten Fax gesprungen, wenn zuvor in dem Fax gescrollt wurde.
+
+  * Gibt es nach der Suche in der Eintragsliste per Quickfinder kein Ergebnis, so wird nun angeboten, den Suchtext direkt für die Volltextsuche zu verwenden.
+
+  * Wird der Client auf einem Rechner mit IE 11 verwendet und in einer eMail per Zeilenumbruch eine Leerzeile eingefügt, so wurden hieraus anschließend zwei Leerzeilen.
+
+  * Unter Windows 8.1 war die Vorlage "Zitieren" nicht zentriert und man konnte darunter nichts eintippen.
+
+  * Ist im Kalender Ordner die Vorschau ausgeblendet und man blendet sie wieder ein, konnte es zum Absturz des Clients kommen.
+
+  * Wird der Client auf einem Windows 8.1 PC verwendet, so wurde im Eingabefeld von LiveComments ein Rahmen angezeigt.
+
+  * Wenn Grafikdateien per Drag & Drop in den Editor gezogen werden, werden sie automatisch als Inline Grafiken eingefügt. Will man sie aber stattdessen nur als normalen Dateianhang anfügen, so ist dies nun bei zusätzlich gedrückter STRG Taste möglich.
+
+  * Die Drehung eines Faxes wird nun, wenn die erste Seite gedreht wird, auf allen Seiten gespeichert, die dieselbe Drehung wie die erste Seite haben. Alle anderen Seiten lassen sich dann separat drehen.
+
+  * Ist unter "Einstellungen" eine "Vorlagen für Weiterleiten/Antworten" eingestellt, so wird diese nun auch beim Weiterleiten von RSS Einträgen verwendet.
+  * Wird aus einer eMail mit LiveComments nur die Passage eines Anwenders zitiert, so wird unter dem Zitat nun der Name dieses Anwenders geschrieben. Bisher enthielt das Zitat generell den Namen des ursprünglichen Absenders der eMail.
+
+  * Wenn bei einem Monitor unter Windows 7 ein höherer DPI Wert eingestellt ist (z.B. 150%), funktionierte die Screenshot Funktion nicht korrekt.
+
+  * In einem Einzelfall konnte es vorkommen, dass der Inhalt einer HTML eMail nicht angezeigt wurde.
+  * Bei eingehenden Anrufen wurde die von der TAPI übermittelte Rufnummer mit den Rufnummern in der Datenbank nur auf die Stellen der eingehenden Rufnummer verglichen. Es wird jetzt die Nummer auf Gleichheit überprüft.
+
+  * In einem Einzelfall waren die in einer eMail eingefügten Bilder nach dem Weiterleiten in der neu erstellten eMail nicht vorhanden (nur als Dateianhang). Ursache war eine sehr lange Content-ID.
+
+  * Wird eine zu versendende eMail als Entwurf gespeichert, so wird beim Öffnen die ausgewählte Absenderadresse wiederhergestellt. Ist jedoch eingestellt, dass eMails generell signiert werden sollen, so wurde in diesem Fall generell das Signaturzertifikat der Standard eMail Adresse verwendet.
+  * Wird beim Versand als Absenderadresse eine andere Adresse als die Standard eMail Adresse verwendet, so wurde beim Öffnen der eMail im Ausgang dennoch die Standard eMail Adresse im "Von" Feld angezeigt.
+
+  * Bei der Einstellung "Vorschau ohne Kopfzeilen" konnte es zu Anzeigefehlern kommen.
+
+  * Wird eine eMail geschrieben und die Option "Antwort erwartet" aktiviert, so konnte die spätere Wiedervorlage dieser Nachricht nicht als gelesen markiert werden.
+  * Der Button "Als gelesen markieren" bei LiveComments ist nun solange deaktiviert, wie der Anwender Text eingibt.
+  * Im eingebetteten Editor steht der Button "Als gelesen/ungelesen markieren" nun an vorderer Postion und enthält außerdem nun den Text "Als gelesen markieren" bzw. "Als ungelesen markieren".
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Wird für eine Nachricht über den Wiedervorlage Button rechts oben über der Eintragsliste ein Wiedervorlage Termin gewählt, so wurde diese Wiedervorlage unter Mac OS X 10.9 mit einem falschen Datum eingetragen.
+
+  * Wird bei einer Aufgabe das Erinnerungsdatum gesetzt, so wurde dies falsch gespeichert (einen Tag zu früh). Unter Mac OS X 10.9 wurde zudem ein völlig falsches Datum angezeigt und verwendet.
+
+  * Bei der Ansicht "Vorschau neben Eintragsliste" funktionierte der Wiedervorlage Button über der Vorschau nicht.
+  * Bei wartenden Versandaufträgen blinkt das Badge am Button "In Transit" nun im Intervall.
+
+  * In der Dateianhangsansicht von eMails kann nun die Ansicht "Große Symbole" gewählt werden.
+
+  * Über bzw. unter der Eintragsliste können nun die Tabs (z.B. Absender) eingeblendet werden.
+
+  * Beim Löschen einer externen eMail gibt es nun den gleichen Dialog wie bei der Windows Version mit der Möglichkeit z.B. zukünftige eMails des gleichen Absenders direkt per Verteilregel löschen zu lassen.
+
+  * Beim Drucken einer versendeten eMail fehlte die eMail Adresse und der "Angezeigte Name"
+
+  * Bei der Weiterleitung eines Fax als eMail Dateianhang wird nun die HTML Vorlage geladen. Außerdem wurde das Fax bisher nicht im Editor als Dateianhang angezeigt.
+
+  * In den Ordner-Eigenschaften kann nun die Ordnerfarbe gesetzt werden.
+
+  * Neuer Reiter bei den Ordner-Eigenschaften: "Publizieren". Hier befindet sich der Schalter "Freigabe als Feed", sowie der neue Schalter "Ordner für chayns® freigeben". Wird der letztere aktiviert, wird zusätzlich der dazu notwendige Schalter "Freigabe als Feed" aktiviert. Die Datei \david\apps\webbox\code\feeds.idx enthält eine Liste der Ordner, die für chayns freigegeben sind.
+
+  * Die TeamBoards ersetzen die bisherigen TeamChats. In der Favoritenleiste gibt es dazu den neuen Button "TeamBoards". Die Einträge werden in der SQL Datenbank des Service Layers gespeichert, werden also nicht wie bisher nur als einzelne Dokumente im Ordner abgelegt. Die einzelnen Fenster des bisherigen TeamChats gibt es nicht mehr, neue Nachrichten werden als Badge am TeamBoards Button signalisiert. Zusätzlich zur Kommunikation kann der Benutzer auch Dateien mit anderen Benutzern austauschen, diese werden im
+  * Unter Mac OS X 10.9 funktionierte das Uninstall nicht korrekt. Die Einstellungen wurden nicht entfernt, so dass nach einer anschließenden Neuinstallation der vorherige david Server und die Einstellungen wieder vorhanden waren.
+
+  * Unter Mac OS X 10.9 wurde der FaxWare Druckertreiber nicht installiert, das ist nun behoben.
+
+  * Ist die Einstellung "Nachricht nach 5 Sekunden als gelesen markieren" aktiviert, so wurde auch die Faxvorschau aktualisiert und es wurde wieder zum Beginn des selektierten Fax gesprungen, wenn zuvor in dem Fax gescrollt wurde.
+
+  * Beim Speichern von Dateianhängen außerhalb des david Clients konnte es u.U. zum Absturz des Clients kommen.
+
+  * In der Eingabehistory für die Felder An, Cc, Bcc wurden bisher nur Adressen vorgeschlagen, für die es auch Adresseinträge gibt. Nun werden auch Adressen gespeichert und beim nächsten Mal vorgeschlagen, für die es keinen Adresseintrag gibt.
+
+  * Neue Einstellungen:
+<p>
+"Ordnerbaum beim Beenden speichern"
+"Letzte Ordneransicht speichern" 
+</p>
+  * Der Adresseditor enthält nun das "Aktionen" Menü (Nummer wählen, In Zwischenablage übernehmen, etc.).
+
+  * Im "Nachricht versenden" Dialog (Faxversand) gibt es nun auch eine Eingabehistory.
+
+  * Die Fontverwaltung wurde optimiert - zuvor konnte es zu einer leeren Vorschau bzw. leerem eMail Inhalt kommen, wenn Fonts auf dem Mac nicht zur Verfügung stehen.
+
+  * Das Verhalten des Clients nach einem Standby wurde optimiert.
+
+  * Die Symbolleiste über der Eintragsliste bzw. über der Vorschau (wenn diese neben der Eintragsliste liegt) wurde an die Windows Version angepasst. Beim Verkleinern des Fensters wurden bisher zunächst die Buttons links ausgeblendet, jetzt sind es die Buttons rechts.
+
+  * Im eingebetteten Editor steht der Button "Als gelesen/ungelesen markieren" nun an vorderer Postion und enthält außerdem nun den Text "Als gelesen markieren" bzw. "Als ungelesen markieren".
+
+  * Wenn bei den Ordner-Eigenschaften eines Ordners "Manuelles Löschverbot" eingestellt ist, erschien beim Versuch ihn zu löschen ein fehlerhafter Dialog. Anschließend konnte der Ordner trotz dieser Einstellung gelöscht werden.
+
+  * Die Drehung eines Faxes wird nun, wenn die erste Seite gedreht wird, auf allen Seiten gespeichert, die dieselbe Drehung wie die erste Seite haben. Alle anderen Seiten lassen sich dann separat drehen.
+
+  * Dateianhänge wurden u.U. in der geöffneten eMail bzw. der Vorschau nicht angezeigt - lediglich über den Dateianhang Dialog.
+
+  * Faxe in normaler Auflösung wurden gestaucht angezeigt.
+  * Ist die Einstellung "Nachricht nach 5 Sekunden als gelesen markieren" aktiviert, so wurde auch die Vorschau aktualisiert und es wurde wieder zum Beginn der selektierten Nachricht gesprungen, wenn zuvor in der Nachricht gescrollt wurde.
+
+  * Neuer Menüpunkt bei einer geöffneten Adresse: "In die Zwischenablage übernehmen". Übernimmt den Namen und die Firma sowie die Anschrift, die unter "Anschrift" aktuell selektiert ist (Geschäftlich, Privat oder Weitere).
+
+  * Das david® Notifier Status Bar Symbol berücksichtigt nun während des Starts die Einstellungen unter "Einstellungen/Zusatzfenster".
+  * Audio und Video Feeds können jetzt über einen externen Player geöffnet werden (Kontextmenü und Doppelklick).
+Audio und Video Feeds können jetzt bearbeitet werden.
+Bei den Audio Feeds werden jetzt Informationen wie beim Video Feed angezeigt. 
+Wenn man im Ticker auf Audio oder Video Feeds klickt, wechselt man nun automatisch zum Eintrag.
+  * Die RSS Feeds im Ticker haben nun ein Kontextmenü.
+  * Beim Weiterleiten von VoiceMails wird jetzt die Vorlage geladen und die Nachricht als Anhang hinzugefügt.
+  * In den Ordnereigenschaften kann nun eine Hintergrundfarbe gewählt werden, in der der Ordner im Tree angezeigt wird.
+  * Im Editor können nun wie bei Windows Variablen ausgewählt werden, um z.B. eine Serien eMail erstellen zu können.
+  * Die Anzeige von Faxen in normaler Auflösung wurde optimiert.
+

@@ -1,0 +1,54 @@
+====== Version 3274 vom 18.11.2020 ======
+
+Release: 2020-11-18T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Sortierung in Ordnern u.U. fehlerhaft\\ Die in den Ordner-Eigenschaften einstellbare Sortierung funktionierte u.U. nicht mehr.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Auswahl aller Kalender Beschriftungen in Benutzereinstellungen\\ In den Benutzereinstellungen des david Administrators stehen nun alle Kalender Beschriftungen zur Auswahl, bisher waren das nur die ersten 9.
+
+==== Bugfix ====
+
+  * Sortierung der Liste „MTA-STS Domains“\\ In der Liste „MTA-STS Domains“ konnte in der Spalte „Letzte Nutzung“ nicht korrekt sortiert werden.\\ 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Provider SMS Versand\\ In Einzelfällen funktionierte der Provider SMS Versand nicht mehr korrekt.
+  * Mögliches Fehlverhalten beim Versand per MTA-STS\\ Ist in der PostMan Konfiguration der Versand per MTA-STS aktiviert, so konnte es in Einzelfällen zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Empfang von eMails mit bestimmten Zeichensätzen\\ Empfangene eMails mit japanischem, chinesischem oder kyrillischem Zeichensatz waren nach dem 2nd Scan im Zielordner u.U. leer.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Nutzung aller Prozessoren\\ Der Grabbing Server nutzt nun alle Prozessoren, bisher wurde nur einer verwendet.
+
+==== Bugfix ====
+
+  * Abholen leerer eMails\\ Es konnte vorkommen, dass leere eMails mit dem Absender unknown@IP-Adresse abgeholt wurden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Unterstützung der Bedienung per Touch bei Chromium Engine\\ Wird die Chromium Engine verwendet, so kann in der eMail Vorschau oder einer geöffneten eMail nun auch per Touch gescrollt  werden.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei MAPI Funktionalität\\ Bei der MAPI Funktionalität ("Senden an") konnte es zu einem Fehlverhalten kommen.
+  * Mögliches Fehlverhalten bei der Verwendung von Textbausteinen\\ Bei der Verwendung von Textbausteinen konnte es zu einem Fehlverhalten kommen, z.B. wurden eingefügte Bilder u.U. nicht angezeigt.
+  * Fehlender Betreff bei Verteilregel „Erstellen einer neuen Nachricht“Wird eine Verteilregel "Erstellen einer neuen Nachricht" erstellt und diese manuell ausgeführt, so fehlte anschließend u.U. der in der Verteilregel angegebene Betreff der neuen Nachricht.
+  * Optimierungen bei Verwendung der Chromium Engine\\ Es konnte u.U. zu Funktionseinschränkungen kommen, wenn die Chromium Engine verwendet wird, z.B. fehlendes Kontextmenü im Separator empfangener eMails, wählen aus dem david Client, Funktionstasten in Vorschau (z.B. F9), Vergrößern und Verkleinern in der Vorschau per Strg und +-.
+  * Mögliches Fehlverhalten beim Import eine dvp Datei (david Packed Message)\\ In einem Einzelfall konnte es vorkommen dass der Client "hängt" wenn eine ".dvp" Datei (david Packed Message) importiert werden soll.\\ 
+

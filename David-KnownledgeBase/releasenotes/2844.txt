@@ -1,0 +1,12 @@
+====== Version 2844 vom 08.01.2016 ======
+
+Release: 2016-01-08T18:55:41
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In einem Einzelfall konnte es bei dem Dialog "Import von Objekten" (externe Dateien per Drag & Drop in einen david Ordner ziehen) zu einem Anzeigefehler kommen - es fehlten dann die Buttons in dem Dialog.
+
+

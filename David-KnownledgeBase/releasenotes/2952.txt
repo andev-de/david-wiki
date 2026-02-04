@@ -1,0 +1,52 @@
+====== Version 2952 vom 14.08.2017 ======
+
+Release: 2017-08-14T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Werden Nachrichten aus gepackten Ablage-Ordnern in einen David Ordner kopiert, so konnten diese Nachrichten in einem Einzelfall fehlerhaft sein und der Inhalt fehlen.
+  * In Einzelfällen konnte es bei der Verarbeitung von Einträgen der Jobliste (In Transit) zum Absturz des Service Layers kommen.
+  * In einem Einzelfall konnte es bei einer StrongBox Sicherung aufgrund einer defekten Datei zum Absturz des Service Layers kommen.
+  * Nach der Migration einer David Installation auf einen neuen Server konnte es in einem Einzelfall zu einer Verzögerung beim Öffnen älterer eMails (vor der Migration) kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Bei der Erstellung eines Termins per ActiveSync, wurde u.U. zusätzlich ein Eintrag mit dem Betreff "Besprechungsanfrage" im Eingang des David Benutzers erstellt.
+  * In einem Einzelfall erfolgte kein Kalenderabgleich per ActiveSync aufgrund eines fehlerhaften Eintrags im Kalender (hier eine Besprechungsanfrage im Format "eMail" statt "Termin").
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Ganztägige Termine werden im Kalender nun alphabetisch sortiert angezeigt.
+  * Wird der Link zu einem Download im Intercom oder einem TalkAbout angeklickt, so gibt es nun einen entsprechenden Download Dialog.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Beim Erstellen bzw. Konfigurieren eines Web-Links in der Favoritenleiste kann nun eingestellt werden, dass die URL per Chromium Engine statt per Internet Explorer geöffnet werden soll.
+  * Das Design des eMail Separators wurde überarbeitet: Anpassung des David® Logos, "Von" und "An" nun sprachabhängig
+
+==== Bugfix ====
+
+  * Im Kalender wurde der Betreff von Terminen in hoher Priorität u.U. nicht in der entsprechenden Farbe angezeigt.
+  * Beim Versuch ein „Bild“ zu erstellen konnte es in einem Einzelfall vorkommen, dass die Funktion hierzu nicht aufgerufen werden konnte.
+  * Wird ein Ausdruck über den Sendeservice "Drucker" erstellt, konnte es in einem Einzelfall vorkommen, dass der Ausdruck nicht erfolgte. Außerdem konnte u.U. der Ausdruck des Verteilerkreises nicht deaktiviert werden.
+  * Werden im David Administrator Änderungen an Benutzer Einstellungen vorgenommen, so konnte es anschließend in Einzelfällen zu Verzögerungen bei den angemeldeten David Clients kommen.
+  * Werden mit dem Tool "Outlook-Import" (ol2tas.exe) Termine aus einem Outlook Kalender in den David Kalender importiert, so konnte es u.U. zu fehlerhaften Terminen kommen.
+  * Soll im Transit der eingestellte Zeitpunkt für einen wartenden Versandauftrag geändert werden, so fehlte hier der Sonntag.
+
+=====  ISDN TLD =====
+
+==== Bugfix ====
+
+  * Beim Versand einer SMS per ISDN TLD wurde u.U. nur der Betreff versendet, der Bodytext fehlte.
+
+=====  SMS TLD =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es vorkommen, dass ein Zeichen eines versendeten Textes doppelt übertragen wurde.
+

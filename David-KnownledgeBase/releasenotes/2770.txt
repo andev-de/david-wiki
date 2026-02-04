@@ -1,0 +1,48 @@
+====== Version 2770 vom 07.11.2014 ======
+
+Release: 2014-11-07T12:19:28
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * In einer Datei davidtls.ini, die in dem selben Verzeichnis liegen muss wie die davidtls.dll, können nun Angaben bzgl. der Cipher Suite gemacht werden.
+<p>
+Beispiel:
+</p>
+<p> 
+[Settings]
+CipherSuite=EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA256 EECDH+aRSA+RC4 EDH+aRSA EECDH RC4 !aNULL !eNULL 
+!LOW !3DES !MD5 !EXP !PSK !SRP !DSS
+SSLv3=yes
+TLS10=yes
+TLS11=yes
+TLS12=yes
+ServerCipherOrder=no
+</p>
+  * Adressen, die durch die Clients neu erstellt werden, werden beim Speichern nun direkt als gelesen markiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Wird eine eMail mit LiveComments in einen gemeinsam genutzten Ordner geschoben, so können nun auch Benutzer die LiveComments sehen, die nicht im ursprünglichen Verteiler der eMail stehen, aber Rechte in dem Ordner haben.
+
+
+  * Sind mehrere Nachrichten geöffnet und man will den Client beenden, so erscheint die Frage ob man die Nachrichten im Entwurf speichern möchte. Bricht man den Vorgang ab, erschien die Abfrage dennoch für jeden Dialog.
+
+  * Die Anzeige von Dateianhängen in einer geöffneten eMail wurde optimiert. In Einzelfällen wurden diese untereinander angezeigt, wobei Dateien u.U. übersehen werden konnten.
+
+  * Ansicht "Vorschau neben Eintragsliste": Der Tab einer geöffneten eMail enthält nun die Symbole zum Schließen und Ablösen des Fensters.
+
+  * Briefe können nun aus dem Client heraus per david® Hybrid Mail versendet werden (genutzt wird hierzu der E-Post-Dienst der deutschen Post). Hierzu ist ein E-Post Account notwendig. Am David Server muss über das Port Setup ein "david® Hybrid Mail" Port eingerichtet werden, bei dem dann die Zugangsdaten einzutragen sind. Die Erstellung erfolgt entweder mit dem neuen Druckertreiber "david® Hybrid Mail" oder direkt aus dem Client heraus - hierzu muss im Editor der Sendeservice "david® Hybrid Mail" eingestellt w
+  * Client Einstellung "HTML bei Antwort-eMail als Standard". Beantwortet man eine empfangene eMail im Plain Text Format und wechselt dann die Absenderadresse, wobei auch eine andere Vorlage verwendet wird, so wurde der Nachrichteninhalt der eMail u.U. nicht mehr angezeigt.
+
+  * Erstellt ein Anwender einen "privaten" Termin und andere Benutzer haben Zugriff auf diesen Kalender, so war in der Vorschau u.U. der Plain Text Inhalt des Termins sichtbar. Im Tooltipp des Termins wurde zudem der eingetragene Ort angezeigt. Beides ist nun behoben.
+
+  * Beim Abwesenheits-Assistenten gibt es nun zusätzlich die Einstellung "Immer eingeschaltet".
+  * Sind bei Einträgen Markierungen gesetzt und man lässt die Eintragsliste nach Markierungen gruppieren, so konnte nicht für mehrere Einträge gleichzeitig die Markierung geändert werden.
+  * Wird ein DFML Dokument in der Eintragsliste selektiert, so wurde in der Vorschau u.U. der HTML Code angezeigt.
+  * In dem Dialog "Einstellungen" kam es u.U. zu einem Anzeigefehler beim Scrollbalken, wenn dieser eingeblendet wurde.
+

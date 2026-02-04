@@ -1,0 +1,43 @@
+====== Version 2979 vom 12.02.2018 ======
+
+Release: 2018-02-12T00:00:00
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Umbenennung „Entfernte Benutzer“ in „Gelöschte Benutzer“\\ Um Missverständnisse zu vermeiden, wurde der Menüpunkt „Entfernte Benutzer“ in „Gelöschte Benutzer“ umbenannt. Die bisherige Bezeichnung „Entfernte Benutzer“ konnte zu der Annahme verleiten, es handele sich um Benutzer, die von entfernten Orten per Fernzugriff mit david® arbeiten.  
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Einfacher Zugriff auf die mit david® verknüpfte chayns® Site\\ Nutzern, die mit ihrer chayns® ID am david® Client angemeldet sind, steht in der Favoritenleiste der Button „chayns® Sites“ zur Verfügung. Dieser Button öffnet eine Liste aller besuchten und aller eigenen chayns® Sites. Ist die david® Installation direkt mit einer chayns® Site verknüpft, wird diese verknüpfte Site in der Liste jetzt optisch hervorgehoben und immer an oberster Stelle angezeigt.
+
+  * Anpassung der Funktion Antworten/Weiterleiten\\ Das Beantworten und Weiterleiten ist nun auch für empfangene HTML-formatierte eMails möglich, die im HTML-Code das Attribut „contenteditable=false“ enthalten und so gegen manuelle Veränderungen geschützt sind. Zuvor war beim Antworten oder Weiterleiten solcher eMails keine Texteingabe möglich.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Optimierung der Kommunikation per david® Chat\\ Beim Verfassen einer Chat Nachricht bleibt das aktuelle Fenster auch dann aktiv, wenn gleichzeitig eine Chat Nachricht von einem anderen Anwender eingeht. Zuvor wurde u.U. direkt zu der neu empfangenen Nachricht gewechselt. Die Anpassung verhindert, dass unbewusst im falschen Chat Fenster weitergeschrieben wird.
+
+  * Neuer Warnhinweis bei als Spam identifizierten eMails\\ Bei von den Message Identification Services (MIS) als Spam identifizierten eMails wird, solange sie noch nicht geöffnet wurden, anstatt der Vorschau ein Hinweis angezeigt, der auf die möglichen Gefahren von Spam aufmerksam macht und vor unbedachtem Öffnen warnt. So wird die Sicherheit des Systems weiter erhöht und verhindert, dass durch vorschnelles Klicken ungewollt Schadcode ausgeführt wird.
+
+  * Schalter zur De-/Aktivierung des Link Lookup Services immer verfügbar\\ Der Schalter zur Aktivierung bzw. Deaktivierung des Link Lookup Service (unter „Einstellungen/Sicherheit“) steht nun auch zur Verfügung, wenn sitecare™ nicht aktiv ist. So lassen sich die Hinweise des Link Lookup Service jederzeit und unabhängig von sitecare™ ein- oder ausschalten. Die Nutzung des Link Lookup Service zur automatischen Erkennung von Sicherheitsrisiken in Web-Links erfordert nach wie vor sitecare™.
+
+
+  * Standard Videoplayer für Wiedergabe angehängter Videos\\ Zur Wiedergabe von an eMails angehängten Videos wird jetzt anstatt des „david® Mediaplayers“ der Videoplayer verwendet, der im Betriebssystem des Computers als Standard für das betreffende Dateiformat ausgewählt ist.
+
+  * Optimierter Verbindungsaufbau zum david® Server nach Standby/Ruhemodus\\ Auf Arbeitstationen, die mit gestartetem david® Client aus dem Standby- bzw. Ruhemodus reaktiviert werden, findet nun ein optimierter Wiederaufbau der Verbindung zum david® Server statt. Zuvor konnte es hierbei in Einzelfällen zum 'Einfrieren' des david® Client kommen.
+
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler bei Datum-Auswahl behoben\\ An PCs, die mit einer Bildschirmskalierung von 115% arbeiten, konnten im Abwesenheits-Assistenten Anzeigefehler bei der Datums-Auswahl auftreten. Der Auswahl-Dialog zeigte dann u.U. nicht alle Tage eines Monats an. Dieses Verhalten wurde korrigiert.
+
+
+  * Optimierung der Kommentieren-Funktion unter Windows 7\\ Um jederzeit den bestmöglichen Überblick zu bieten, wurde die Funktion der Kommentieren-Funktion speziell für den Einsatz unter Windows 7 mit höher eingestellter Skalierung (z.B. 125%) überarbeitet. Zuvor war es möglich, dass bei dieser Einstellung Kommentare vereinzelt abgeschnitten dargestellt wurden.
+  * Mögliches Einfrieren bei Vorschau einer bestimmten eMail behoben\\ In einem Einzelfall konnte die Darstellung der Vorschau einer bestimmten eMail u.U. zum Einfrieren des david® Client führen. Das Verhalten wurde korrigiert, so dass auch in diesem Fall ein flüssiges Arbeiten mit dem david® Client sichergestellt ist.  
+
+  * Optimierte Verbindung zum david® Server in langsamen Netzen\\ Beim Betrieb des david® Client in langsamen Netzwerken (z.B. über das Internet per WLAN) konnte das automatische Wiederherstellen der Datenverbindung zum david® Server fehlschlagen, nachdem auf dem Server der Dienst „david® Service Layer“ neu gestartet wurde. Das wurde nun optimiert.
+  * Geschwindigkeitsoptimierung bei angezeigter Kommentarspalte\\ Bei Nutzung in der Ansicht „Vorschau unterhalb der Nachrichten“ reagierte der david® Client u.U. leicht verzögert, wenn in der Eintragsliste die Spalte „Kommentar“ eingeblendet war. Das konnte z.B. bei der Suche per Quickfinder auftreten. Diese unerwünschten Verzögerungen wurden beseitigt.
+
+

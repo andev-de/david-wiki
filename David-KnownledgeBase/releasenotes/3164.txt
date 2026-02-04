@@ -1,0 +1,73 @@
+====== Version 3164 vom 26.03.2020 ======
+
+Release: 2020-03-26T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand an interne Gruppenadressen auf Termin\\ Wird eine eMail an eine interne Gruppenadresse versendet und es wird hierbei ein Termin angegeben, so wurde die eMail zum Zeitpunkt des Termins in den Unverteilt Ordner gelegt, statt in den Ziel-Ordner.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim € Zeichen im Betreff\\ Wird eine eMail mit dem € Zeichen im Betreff versendet, so wurde dieses Zeichen bei einigen eMail Clients u.U. falsch oder gar nicht angezeigt.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Nachrichten mit längerem Betreff\\ Beim Abholen von eMails per IMAP konnte es vorkommen, dass bei Nachrichten mit längerem Betreff dieser eingekürzt wurde.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Neue Einstellung „Standard TCP Port exklusiv für Let's Encrypt nutzen“\\ Die neue Einstellung bewirkt, dass bei einem geöffneten Port 80 dieser nur für die Let's Encrypt Anfragen verwendet wird.\\ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * 64 Bit Version des david Clients (Beta)\\ Es ist nun zusätzlich zum 32 Bit Client eine 64 Bit Version verfügbar (Beta). Wird der david Client neu installiert, kann auf 64-Bit-Systemen im Setup zwischen der 32 und 64 Bit Version gewählt werden.
+  * Bildbetrachter für Dateianhänge\\ Beim Öffnen von angehängten Bildern wird nun ein Bildbetrachter verwendet, mit dem durch die einzelnen Bilder geblättert werden kann. Auch eine Diashow ist möglich.
+  * Barrierefreie Menü-Darstellung\\ Durch den neuen Schalter "Ansicht/Barrierefreie Menü-Darstellung" werden die Menüs im klassischen Stil angezeigt, so dass sie von Screenreadern erkannt werden können.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Wechsel zu HTML eMails\\ Wenn beim Wechsel zu einer HTML eMail die Vorschau angezeigt wurde, konnte es in Einzelfällen dazu kommen, dass der Client hängt oder abstürzt.
+  * Mögliches Fehlverhalten beim Erstellen einer Erinnerung\\ Erstellt man eine neue Erinnerung, bricht dann aber mit ESC ab und wählt "als Entwurf speichern" beendete sich der Client.
+  * Persönliches Wörterbuch beim Erstellen einer Erinnerung\\ Wird beim Erstellen einer Erinnerung das persönliche Wörterbuch geöffnet, so wurden hier die eingetragenen Wörter nicht angezeigt.
+  * Mögliches Fehlverhalten beim Ausdruck\\ In Einzelfällen konnte es beim Ausdruck zum Absturz der Druckerwarteschlange kommen.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * History Funktion bei Adresseingabe\\ Bei der Adresseingabe am Desktop werden nun per Pfeiltasten die zuvor gewählten Empfänger angezeigt.
+  * Anzeige aller Ordner\\ Es werden nun alle Ordner angezeigt, in denen der Benutzer Berechtigungen hat.
+  * Nachrichten per Drag &amp; Drop verschieben\\ Nachrichten können nun per Drag &amp; Drop verschoben werden.
+  * Anzeige von TMails und SMS\\ TMail und SMS werden nun auch angezeigt.
+  * Autovervollständigung bei der Eingabe von Benutzerkürzel\\ Bei der Eingabe eines Benutzerkürzels im Adressfeld wird dieses nun durch die entsprechende eMail Adresse ersetzt.
+  * Screenshots in neue Nachricht einfügen\\ In einer neuen Nachricht können nun Screenshots eingefügt werden.
+  * Verwendete Vorlage speichern\\ Die verwendete Vorlage wird nun beim Benutzer gespeichert, so dass er an jedem Gerät die gleiche Vorlage verwendet.
+  * Kommentare abschließen\\ Der Initiator einer eMail mit Kommentaren oder eines TalkAbouts kann das Kommentieren nun abschließen.
+  * Offline Anzeige\\ Ist der smart client offline, so wird dies nun durch einen Hinweis angezeigt.
+  * Beachtung der maximale zulässigen Anzahl Empfänger\\ Ist beim Benutzer im david Administrator ein Wert für die maximal zulässige Anzahl Empfänger eingetragen, so wird dies nun auch beim smart client beachtet.
+  * Kontextmenü per Rechtsklick öffnen\\ Das Kontextmenü bei Einträgen kann nun per Rechtsklick geöffnet werden.
+  * Neue Tastatuur Shortcuts \\ Neue Shortcuts sind verfügbar:
+\\ STR+S: speichern der Nachricht im Entwurfsordner\\ ENTF: Löschen der Nachricht\\ STRG+U bzw. STRG+M: Nachricht als gelesen/ungelesen markieren
+  * Kommentare in Nachrichten zitieren\\ Kommentare in Nachrichten können nun zitiert werden.
+  * Manuelle Aktualisierung der Eintragsliste bei mobiler Verwendung\\ Bei mobiler Verwendung kann die Eintragsliste nun manuell aktualisiert werden (Pull to Refresh).
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Schlüsselwort „Anhang“\\ Wird in einer Nachricht das Schlüsselwort "Anhang" verwendet, so konnte es zu einem Fehlverhalten kommen.
+  * Benutzerauswahl beim Hinzufügen zu Kommentaren optimiert\\ Die Benutzerauswahl beim Hinzufügen zu Kommentaren bei eMails wurde optimiert.
+  * Mögliches Fehlverhalten bei der mobilen Suche\\ Wird bei der mobilen Verwendung eine eMail geöffnet, so wurde anschließend der Dialog für die Suche u.U. nicht mehr angezeigt.
+  * Mögliches Fehlverhalten beim Bearbeiten von Entwürfen\\ Beim Bearbeiten und Versenden von Nachrichten im Entwurfsordner konnte es zu einem Fehlverhalten kommen.
+  * Senden Button u.U. deaktiviert\\ Beim Beantworten einer eMail war der Senden Button u.U. deaktiviert.\\ 
+

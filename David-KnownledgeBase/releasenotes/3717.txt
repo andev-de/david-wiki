@@ -1,0 +1,32 @@
+====== Version 3717 vom 12.11.2024 ======
+
+Release: 2024-11-12T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Integriertes Lizenzmanagement\\ User und Port-Lizenzen müssen nun nicht mehr separat erworben werden, sondern werden bei Bedarf dynamisch bezogen, berechnet und verwaltet.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Entpacken eines leeren Ordners\\ Ist ein Ordner gepackt und soll bei der kommenden Bereinigung entpackt werden, so wechselte der Status nicht, wenn der Ordner keine Einträge enthält.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Eigene Nachrichten nach TeamTalk nach oben verschieben\\ Schreibt ein Anwender im Team Client zu einer Nachricht einen TeamTalk, so wird diese Nachricht nun nach oben geschoben. Bisher war dies nun dann so, wenn ein anderer Teilnehmer einen TeamTalk schreibt.
+  * Sortierung von Wiedervorlagen in InfoCenter Ansicht\\ Wenn in der InfoCenter Ansicht im Team Client ein Kommentar zu einer Wiedervorlage gemacht wird, wird nun statt der Wiedervorlagezeit die Statuszeit für die Sortierung verwendet.
+
+==== Bugfix ====
+
+  * Wählen aus der Vorschau einer Adresse\\ Bei Verwendung des David oder Team Clients funktionierte u.U. das Wählen aus der Vorschau eines Adresseintrags nicht (nur aus der geöffneten Adresse). Das ist nun behoben.
+  * Mögliches Fehlverhalten beim Einfügen von Dateianhängen\\ Wird beim David oder Team Client ein Bild aus der Zwischenablage als Dateianhang eingefügt und hierbei ein Dateiname vergeben, konnte es zum Absturz des Clients kommen.
+  * Möglicher Anzeigefehler beim Deaktivieren des Hintergrundbildes\\ Im Team Client konnte es zu einem Anzeigefehler kommen, wenn das Hintergrundbild deaktiviert und gleichzeitig die Farbe geändert wurde.
+  * Möglicher Anzeigefehler bei Deaktivierung der Symbolleisten\\ Werden im Team Client alle Symbolleisten deaktiviert, konnte es zu einem Anzeigefehler kommen.&nbsp;
+  * Mögliches Fehlverhalten beim Einfügen eines Backslash im Betreff\\ Wird beim Team Client ein Backslash im Betreff einer neuen Nachricht eingefügt, konnte es zu einem Fehlerverhalten kommen und der Client musste neu gestartet werden.
+  * Mögliches Fehlverhalten beim Antworten auf Kalendereinladungen\\ Soll im Team Client auf eine Kalendereinladung geantwortet werden, so wurde hierbei ein leeres Editorfenster geöffnet und es konnte hierhin nicht geschrieben werden.
+  * Mögliches Fehlverhalten bei URLs von Ordnerverknüpfungen\\ Nach einem Update der WebView2 funktionierten im David und Team Client URLs, die per „Ordnerverknüpfung/Objekt-Verknüpfung kopieren“ erstellt wurden, u.U. nicht mehr (tic: Link).
+

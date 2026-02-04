@@ -1,0 +1,13 @@
+====== Version 3255 vom 16.09.2020 ======
+
+Release: 2020-09-16T00:00:00
+
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Start des Clients\\ Ein mögliches Fehlverhalten wurde behoben, das z.B. beim Start des Clients auftreten konnte.
+  * Mögliches Fehlverhalten bei Projektplanung\\ Beim Aufruf von Einträgen in der Projektplanung konnte es zu einer Fehlermeldung kommen.
+  * Mögliches Fehlverhalten bei Verwendung mehrerer Monitore\\ Bei der Verwendung von mehreren Monitoren konnte es u.U. zu Anzeigefehlern kommen, wenn der Client im Vollbildmodus verwendet wird.
+

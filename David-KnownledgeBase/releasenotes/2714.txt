@@ -1,0 +1,104 @@
+====== Version 2714 vom 25.11.2013 ======
+
+Release: 2013-11-25T18:26:12
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Nach der Bereinigung fehlten u.U. die Daten einiger Adressfelder in der persönlichen Adresskarte ("Einstellungen/Benutzerprofil"), z.B. "3. eMail Adresse" und "Weiteres Fax".
+
+  * Wird über die Funktion "Scannen und Speichern" ein Eintrag erstellt, so konnte per Volltextsuche bisher nicht nach diesen Einträgen gesucht werden (Betreff, Kommentar). Im david Administrator kann nun eingestellt werden, dass Multimedia Einträge auch für die Indizierung aufgenommen werden ("System/Optionen").
+
+  * Wird eine TeamBoard Nachricht mit sehr viel Text versendet, so wurde die Push Nachricht hierfür u.U. mehrfach versendet.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In den Einstellungen stehen nun zusätzliche Farben für die Programmoberfläche zur Auswahl.
+
+  * Wird die Eintragsliste nach den gesetzten Markierungen sortiert, so wird dort nun jeweils die Bezeichnung der Markierung angezeigt.
+
+  * Bei der Auswahl einer Adresse für den Nachrichtenversand wird nun neben dem Namen in einer neuen Spalte auch die im Adresseintrag gespeicherte Firma angezeigt.
+
+  * Wenn ein Benutzer nicht Teilnehmer eines LiveComments ist, aber im david.Administrator das Benutzerrecht "david Administrator" besitzt, werden ihm die LiveComments anderer Benutzer in Nachrichten angezeigt. In dem Fall ist dann das Eingabefeld ausgeblendet, es kam dabei jedoch zu Darstellungsfehlern. Außerdem erscheint nun in dem Fall an der Stelle des Eingabefeldes ein beschreibender Text, der erklärt, warum man zwar keinen Kommentar schreiben kann, aber die Kommentare der anderen Benutzer sieht.
+
+  * Unter "Einstellungen/Global/Bestätigungen" können die vorgenommenen Einstellungen der Bestätigungen nun auf ihre Standardwerte zurückgesetzt werden.
+
+  * Die Filtereinstellung "Ausgeblendete Einträge anzeigen/nicht anzeigen" wurde im Kalender nicht mehr berücksichtigt.
+
+  * Wird ein TeamBoard Eintrag an einen bisher nicht hinzugefügten Benutzer erstellt und hierbei ein Dateianhang hinzugefügt, so konnte es zum Absturz kommen.
+
+  * Wird eine Nachricht aus der Wiedervorlage weitergeleitet, so erhält sie im Header nun das aktuelle Datum und die aktuelle Uhrzeit. Bisher war dies der gewählte Zeitpunkt der Wiedervorlage.
+
+  * Bei der eigenen Adresskarte (Einstellungen/Benutzerprofil) konnten HTML Formatierungen vorgenommen werden, diese wurden jedoch nicht übernommen.
+
+  * Auf "Nur Text" umstellen: Strg+Umschalt+E
+Auf HTML umstellen: Strg+Alt+E
+Dialog "Nachrichtenoptionen": Strg+O
+
+  * Schreibt man einen Text im Nachrichtenfeld der TeamBoard Symbolleiste und drückt dann F5, so ließ sich dieses Feld bis zum Client Neustart nicht mehr bedienen.
+
+  * TeamBoard Einträge habe nun auch ein Kontextmenü.
+
+  * Man kann nun ein TeamBoard in einem separatem Fenster öffnen. Per Doppelklick auf den Eintrag, Enter oder Kontextmenü.
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * In den Einstellungen stehen nun zusätzliche Farben für die Programmoberfläche zur Auswahl.
+
+  * In den Eigenschaften eines Ablage-Ordners war unter "Optionen" der falsche Schalter nicht einstellbar: "Nur für Ordner" statt "Manuelles Löschverbot".
+
+
+  * Beim Betrieb des Clients unter Mac OS X 10.9 konnte es u.U. zu Abstürzen kommen.
+
+  * Im Kalender funktioniert der Button zum Ein- und Ausblenden anderer Kalender nicht mehr.
+
+  * Sind im Kalender andere Kalender eingeblendet (z.B. Gruppenkalender), so können nun beim Speichern eines neuen Termins bei der Auswahl des Kalenders mehrere Einträge selektiert werden.
+
+  * Hat der Benutzer nicht die Berechtigung TeamBoards zu nutzen, so wurde dennoch die Symbolleiste angezeigt.
+
+  * Bei der Auswahl einer Adresse für den Nachrichtenversand wird nun neben dem Namen in einer neuen Spalte auch die im Adresseintrag gespeicherte Firma angezeigt.
+
+  * Die Einstellung "Global/Bestätigungen/Abfrage bei Terminüberschneidungen" wirkte verkehrt herum.
+
+  * Wenn man beim Öffnen einer Terminserie in der Arbeitswochenansicht "Dieses Serienelement öffnen" wählt, wurde dennoch u.U. die ganze Serie geöffnet.
+
+  * Unter "Einstellungen/Global/Bestätigungen" können die vorgenommenen Einstellungen der Bestätigungen nun auf ihre Standardwerte zurückgesetzt werden.
+
+  * Die Filtereinstellung "Ausgeblendete Einträge anzeigen/nicht anzeigen" wurde im Kalender nicht mehr berücksichtigt.
+
+  * Im Quickfinder Menü des Eingangs gab es u.U. eine leere Auswahlmöglichkeit. Ebenso bei den Ordner-Eigenschaften unter "Anzeigen als".
+
+  * Die Anzeige der Benutzerfotos bei den TeamBoards wurde optimiert.
+
+  * Im Quickfinder wurde beim Filtern nach der "Identifizierung" kein Ergebnis gefunden, wenn die Ansicht "Vorschau neben der Liste" eingestellt ist.
+
+  * Beim Start des Clients gibt es nun wie bei Windows einen Hinweis, wenn durch die aktuellen Filtereinstellungen evtl. nicht alle Einträge angezeigt werden (z.B. keine ausgeblendeten Einträge).
+
+  * Hat ein Ordner Umlaute im Pfad (also der Pfadname im Explorer), so konnte es beim Wechsel in diesen Ordner zum Absturz kommen.
+
+  * Bei den Eintragseigenschaften wurde eine falsche Dateigröße angezeigt.
+
+  * Bei der eigenen Adresskarte (Einstellungen/Benutzerprofil) konnten HTML Formatierungen vorgenommen werden, diese wurden jedoch nicht übernommen.
+
+  * Der Eigenschaften Dialog von Einträgen ist nicht mehr modal, es kann also nun bei geöffnetem Dialog zwischen verschiedenen Einträgen gewechselt werden.
+
+  * Wird eine Nachricht aus der Wiedervorlage weitergeleitet, so erhält sie im Header nun das aktuelle Datum und die aktuelle Uhrzeit. Bisher war dies der gewählte Zeitpunkt der Wiedervorlage.
+
+  * Die Ladezeit bei einer langsamen Verbindung wurde optimiert.
+
+  * Die Ordneransicht "Link im Ordnerbaum" wurde optimiert.
+
+  * Ist bei einem Ordner "Anzeigen als HTML Layout" eingestellt und der Benutzer hat hier nur eingeschränkte Rechte, so war dennoch das Feld "Dokumentenvorlage", die Farbauswahl sowie der Button zur Ordnerauswahl aktiviert.<p>
+Ist unter "Dokumentenvorlage" der Link zu einer Webseite eingetragen, so wird diese nun geladen.</p>
+
+  * Unter Mac OS X 10.9 konnte es bei der Einstellung "Vorschau unter Eintragsliste" zu Zeichenfehlern oberhalb der Eintragsliste kommen, wenn zwischen Ordnern gewechselt wurde.
+
+

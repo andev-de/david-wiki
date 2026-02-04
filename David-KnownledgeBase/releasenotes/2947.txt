@@ -1,0 +1,72 @@
+====== Version 2947 vom 31.07.2017 ======
+
+Release: 2017-07-31T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Unter bestimmten Bedingungen wurde die Anzahl der erkannten Spammails im Security Report falsch ermittelt.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Im DvAdmin wird nun unter dem Punkt Webbox/ActiveSync zu jedem benutzten Gerät die verwendete EAS Protokoll Version angezeigt.
+
+==== Bugfix ====
+
+  * In der Benutzerkonfiguration des David Administrator fehlte für die Farbauswahl im David Client eine Reihe von Farben.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * UTF-16 codierte Mails werden nun unterstützt.
+
+==== Bugfix ====
+
+  * Unter gewissen Umständen wurde das Intervall zum Senden/Abholen von Mails auf "Nie" gesetzt. Das wurde nun korrigiert.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * UTF-16 codierte Mails werden nun unterstützt.
+
+==== Bugfix ====
+
+  * Unter gewissen Umständen wurde das Intervall zum Senden/Abholen von Mails auf "Nie" gesetzt. Das wurde nun korrigiert.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Das Benutzerrecht "David Chat erlauben" wird nun auch bei mobilen Geräten beachtet.
+
+==== Bugfix ====
+
+  * In vereinzelten Fällen konnte es vorkommen, dass die Mail Apps auf mobilen Geräten vermehrt unnötige Verbindungen zur Webbox aufgebaut haben. Dies führte u.U. zu einem erhöhten Akku Verbrauch und fehlenden Push Nachrichten.
+  * Auf iPhone Geräten mit EAS Protokoll 16 konnte es vorkommen, dass Besprechungsanfragen nicht versendet wurden. Das wurde korrigiert.
+  * In Einzelfällen kam es zu Fehlern bei der Darstellung empfangener signierter Mails.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Das Anmeldeverhalten (Anzeige des eingeloggten Benutzers) und die damit 
+verbundene Anzeige des Intercom Buttons wurde verbessert.
+  * Die vom Absender festgelegte Beschriftung einer internen&nbsp;Besprechungsanfrage(serie) wird 
+nun auch beim Empfänger so übernommen.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Die Textfarbe in den unterschiedlichen Beschriftungsfarben wurde zur besseren 
+Lesbarkeit angepasst.
+
+==== Bugfix ====
+
+  * Unter bestimmten Bedingungen wurden im Chat und in den Kommentaren der Code der Emoticons angezeigt statt der Grafik.
+  * Unter gewissen Umständen konnte es vorkommen, dass bei allen vorhandenen Regeln als „Bearbeitet von“ der gleiche Benutzer angezeigt wurde. Dies ist nun korrigiert.
+  * Im Einzelfall konnte in der Eintragsliste ein vertikaler Scrollbalken angezeigt werden.
+  * Beim Speichern von Kommentaren wurde eine zusätzliche Zeile am Ende eingefügt. Das wurde nun korrigiert.
+

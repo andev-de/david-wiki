@@ -1,0 +1,17 @@
+====== Version 2975 vom 16.01.2018 ======
+
+Release: 2018-01-16T00:00:00
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Mögliche Anzeigefehler von Checkboxen und Radiobuttons wurden behoben.
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * Beim Verschieben oder Kopieren von Nachrichten konnte es u.U. zum Absturz des Clients kommen.
+

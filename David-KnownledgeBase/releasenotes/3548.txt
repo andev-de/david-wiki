@@ -1,0 +1,68 @@
+====== Version 3548 vom 23.08.2023 ======
+
+Release: 2023-08-23T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Kein Rollout Download bei zu wenig Festplattenplatz\\ Sollte ein neues david Rollout zur Verfügung stehen, der Festplattenplatz aber für das Image, das Entpacken sowie die Backup Funktion nicht ausreichen, so erfolgt kein Download und es gibt eine entsprechende Meldung in Priorität hoch im david Ereignis Ordner. Die Vorgabe ist 5 GB im Windows Temp Ordner, sowie 10 GB für das david Volume. Die Werte können bei Bedarf im david Administrator (System/Updates/Minimum freier Speicherplatz) für den Windows Temp Ordner, sowie in der Datei \david\updates\update.ini für das david Volume angepasst werden.
+  * Neue Variablen für Verteilregel „Weiterleiten und XMedia“\\ Wird eine Client Verteilregel für "Weiterleiten und XMedia" erstellt, so können über Include Einträge zusätzliche Informationen zu der weitergeleiteten eMail eingefügt werden. Über die neuen Variablen %(cc_addr) und %(recipients_addr) sind dies die „To“ und „Cc“ eMail-Adressen dieser eMail.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei „Transit“ Anzeige im smart client\\ Im Transit des smart clients wurden u.U. die Sendeaufträge anderer Benutzer angezeigt, obwohl man die Berechtigung nicht hatte.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Testen der Provider Anmeldedaten\\ Wird der Versand über einen Provider eingerichtet, so gibt es bei den Anmeldedaten nun einen „Test“ Button, der die Erreichbarkeit des Mail Servers prüft.
+  * Anzeige der Ereignismeldungen im david Administrator\\ In der Ansicht „System“ werden nun die Einträge aus dem david Ereignis Ordner (System/David/Ereignisse) angezeigt. Ist ein david Client installiert, so wird beim Klick auf einen der Einträge der david Client gestartet und der Ereignis Ordner selektiert.
+  * Neue Einstellung „Tobit.Chat nutzen“\\ Im david Administrator kann mit dem neuen Schalter „System/Optionen/Tobit.Chat nutzen“ eingestellt werden, dass der david Client den neuen Tobit.Chat statt den bisherigen Chat verwenden soll. Für Benutzer, die nicht per chaynsID mit dem david Server verbunden sind, werden hierzu im Hintergrund automatisch chayns Konten eigens für die Nutzung des Tobit.Chat angelegt.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMail Weiterleitung\\ In einem Einzelfall funktionierte die eMail Weiterleitung an den PostMan einer anderen david Installation über die Datenbank „Direkte Weiterleitungen“ nicht.
+  * Mögliches Fehlverhalten beim eMail Empfang\\ In einem Einzelfall wurde beim eMail Empfang fälschlicherweise das STARTTLS Kommando gesendet, was in diesem Fall zum Abbruch des eMail Empfangs von dieser Gegenstelle führte.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Let's Encrypt Zertifikate u.U. nicht automatisch erneuert\\ Ist in der WebBox Konfiguration die Nutzung von TLS deaktiviert, so wurden vorhandene Let´s Encrypt Zertifikate für die Module nicht erneuert. Die Aktualisierung funktioniert nun auch ohne TLS.
+  * Nachrichten per ActiveSync löschbar trotz „Manuellem Löschverbot“\\ Ist bei einem Ordner die Einstellung "Manuelles Löschverbot" gesetzt, so konnten per ActiveSync dennoch Nachrichten gelöscht werden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Hyperlink im Editor bei eingefügtem Bild hinterlegen\\ Wird im Editor ein Bild eingefügt, so kann über das Menü nun ein Hyperlink beim Bild hinterlegt werden.
+  * eMail als PDF speichern\\ Beim „Speichern unter“ einer eMail steht nun auch das Speichern als PDF zur Auswahl.
+  * „Verknüpfung kopieren“ in eMail Vorschau\\ Im Kontextmenü der eMail Vorschau gibt es nun den Menüpunkt „Verknüpfung kopieren“ um eine angezeigte URL kopieren zu können.
+  * Optimierungen beim Editor\\ Beim Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Einfügen einer „Objekt Verknüpfung“ in eine eMail\\ Wird bei einer eMail über das Kontextmenü per „david Objekt-Verknüpfung kopieren“ ein Link zu dieser eMail in eine neue Nachricht eingefügt, so funktionierte anschließend dieser Link nicht.
+  * Mögliches Fehlverhalten beim Einfügen der Initialen\\ Werden die hinterlegten Initialen im Editor eingefügt, so wurde vor den Initialen u.U. ein Leerzeichen hinzugefügt.\\ Mögliches Fehlverhalten beim Öffnen einer eMail im Bearbeiten Modus\\ Wird eine eMail im Bearbeiten Modus geöffnet, so konnte es in Einzelfällen zum Absturz kommen.&nbsp;
+  * Mögliches Fehlverhalten beim Dialog zur Serverauswahl\\ Wird beim Programmsymbol des david Clients der Menüpunkt „Serverauswahl“ gewählt, so lag anschließend u.U. der Startbildschirm vor dem Dialog zur Serverauswahl.
+  * Update u.U. nicht installiert\\ Wenn es auf dem david Server eine neue Version des david Clients gibt, wurde dies u.U. nicht beim Start des david Clients geladen, wenn der Anwender beim Start die Anmeldedaten eingeben muss.&nbsp;
+  * Mögliches Fehlverhalten beim Drucken aus dem „Bild“ Dialog\\ Wird die „Bild“ Funktion verwendet und hieraus sollte gedruckt werden, so konnte es zum Absturz des david Clients kommen.
+  * Mögliches Fehlverhalten bei neuer Intercom Nachricht\\ Wenn eingestellt ist, dass neue Intercom Nachrichten in einem separaten Fenster geöffnet werden sollen, so konnte es in Einzelfällen vorkommen, dass das Fenster bei einer neuen Intercom Nachricht leer ist.
+  * Erweiterte Eigenschaften einer Nachricht u.U. nicht aufrufbar\\ In Einzelfällen gab es bei einer Nachricht beim Klick auf den Button „Eigenschaften/Erweitert“ eine Fehlermeldung (dvapi32.dll konnte nicht geladen werden).
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen\\ Wird eine neue eMail erstellt und es wird währenddessen ein Textbaustein eingefügt, so konnte es vorkommen dass der Textbaustein den bisher geschriebenen Text ersetzt.
+  * Mögliches Fehlverhalten bei chayns Abmeldung\\ Meldet man sich im david Client bei chayns ab, so wurde statt des „Anmelden“ Buttons bis zum nächsten Neustart des david Clients der Name des Windows Benutzers angezeigt.
+  * Mögliche falsche Anzeige der Hintergrundfarbe einer eMail\\ In Einzelfällen konnte es vorkommen dass beim Öffnen, Antworten, Weiterleiten einer eMail die falsche Hintergrundfarbe angezeigt wurde.
+  * eMail Adresse in eMail Vorschau kopieren\\ Soll in der eMail Vorschau die eMail Adresse im Separator kopiert werden, so funktionierte dies nicht.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Anpassungen der chaynsID Menüs an den Windows Client\\ Die chaynsID Menüs wurden an den Windows Client angepasst und bieten nun die gleichen Optionen.
+
+

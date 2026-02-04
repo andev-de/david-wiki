@@ -1,0 +1,11 @@
+====== Version 2886 vom 19.09.2016 ======
+
+Release: 2016-09-19T00:00:00
+
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * In Einzelfällen konnte es beim Start des david Clients zum Absturz kommen.
+

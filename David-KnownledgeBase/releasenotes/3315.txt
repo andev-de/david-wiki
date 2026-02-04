@@ -1,0 +1,85 @@
+====== Version 3315 vom 24.02.2021 ======
+
+Release: 2021-02-24T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Verteilregeln mit Variablen\\ Werden Nachrichten anhand von Variablen verteilt, so konnte es zu einem Fehlverhalten kommen, wenn der Betreff der Nachricht Sonderzeichen enthält.
+  * Mögliche Schutzverletzung bei Bereinigung der Chat Datenbank\\ Bei der Bereinigung der Chat Datenbank konnte es in einem Einzelfall zu einer Schutzverletzung kommen.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Passwortlänge bei Provider Login\\ Die Passwortlänge beim Provider Login wurde erweitert.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Passwortlänge bei Provider Login\\ 
+Die Passwortlänge beim Provider Login wurde erweitert.
+
+==== Bugfix ====
+
+  * Mögliche Schutzverletzung beim Empfang\\ In einem Einzelfall konnte es zu beim eMail Empfang zu einer Schutzverletzung kommen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Abholen von eMails\\ 
+Es konnte vorkommen dass keine eMails mehr abgeholt wurden und der Grabbing Server hierzu neu gestartet werden musste.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Provisionierung bei Windows Mail (ActiveSync)\\ Ist in der WebBox Konfiguration „Provisionierung erzwingen“ bei ActiveSync eingestellt, so konnte man sich per Windows Mail nicht verbinden.
+  * Mögliche Schutzverletzungen behoben\\ Mögliche Schutzverletzungen, die in Einzelfällen auftreten konnten, wurden behoben.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Link zur Videokonferenz einfügen\\ Im Editor kann nun über das Kontextmenü der Link zu einer Videokonferenz eingefügt werden.
+  * Verwendung der „Microsoft Edge WebView2“\\ Beim Update und der Neuinstallation des david Clients wird nun die "Microsoft Edge WebView2" installiert. Diese wird für den chayns Login Dialog sowie für die Videokonferenz verwendet.
+  * Sprache „Tschechisch“ bei 64 Bit david Client\\ Beim 64 Bit david Client wurde die zusätzliche Sprache "Tschechisch" aufgenommen.
+  * Links in Einladungen (Teams)\\ 
+Wird eine Einladung geöffnet (z.B. von Teams) und diese enthält Links, so erscheint beim Mouseover nun ein Tooltip mit dem Link und dem Hinweis, dass man den Link mit gedrückter Strg Taste öffnen kann.
+  * Verknüpfung eines chayns Kontos mit einem david Anwender\\ Ein chayns Konto kann nun nur noch mit einem david Anwender verknüpft werden.
+  * Optimierungen beim Chromium Editor\\ 
+Beim Chromium Editor wurden verschiedene Optimierungen vorgenommen, z.B. beim Markieren einer Telefonnummer für einen Anruf.\\ 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Drag & Drop von eMails in den Explorer\\ Beim Drag & Drop von eMails in den Explorer (als EML) konnte es zu einem Fehlverhalten kommen wenn kein Dateizugriff auf den david Server besteht.
+  * Mögliches Fehlverhalten beim Login Dialog ohne Internet Verbindung\\ Es konnte zu einem Fehlverhalten kommen, wenn der Login Dialog ohne eine Internet Verbindung aufgerufen wird.
+  * Mögliches Fehlverhalten beim Speichern von eMails im Explorer\\ Wird eine eMail im Bearbeiten Modus geöffnet oder eine neue eMail erstellt und im Explorer gespeichert, so war diese gespeicherte Datei u.U. fehlerhaft.
+  * Fehlenden Symbolleiste beim david Client Mobile\\ Beim david Client Mobile wurde die Symbolleiste mit den Schaltflächen "Gespräch" und "Anruf" bisher u.U. nicht angezeigt, das ist nun behoben.
+  * Menüpunkte für die Desktop Protection beim 64 Bit david Client\\ Beim 64 Bit david Client werden unter "Werkzeuge" nun auch die Desktop Protection Menüpunkte angezeigt.
+  * Mögliches Fehlverhalten beim Klick von ESC in der Vorschau\\ Ist die Chromium Engine aktiviert, so wurde der david Client beendet, wenn man in der Vorschau steht und ESC klickt.
+  * Fehlende Vorschau bei „Links im Ordnerbaum“\\ Werden bei der Ordner Einstellung "Links im Ordnerbaum" Links auf Dateien eingefügt, so wurde hier die Vorschau der eingefügten Datei nicht mehr angezeigt.
+  * Löschen von SQL Adressen\\ Ist bei einem Ordner die Darstellung "SQL Adressen" eingestellt, so stand hier fälschlicherweise das Löschen von Adressen zur Auswahl, was jedoch aktuell nicht möglich ist.
+  * Mögliches Fehlverhalten bei alphabetische Adressauswahl in Adresskarten Ansicht\\ 
+Bei bestimmten Umlauten in Adressnamen funktionierte die alphabetische Auswahl in der Adresskarten Ansicht nicht.
+  * Ordnerauswahl über Navigationsleiste\\ 
+Ist die Chromium Engine aktiviert, so funktionierte die Ordnerauswahl über die Navigationsleiste nicht.
+  * Wiederherstellen von Unterordnern beim StrongBox Image\\ Wenn bei einem StrongBox Image der letzte Eintrag der Eintragsliste zum Wiederherstellen ausgewählt ist, wurden ungewollt auch Unterordner wieder hergestellt.
+  * Nutzung von Funktionstasten bei Verwendung der Chromium Engine\\ 
+Ist die Chromium Engine aktiviert und man selektiert einen Text in der Vorschau, so konnten die Funktionstasten (z.B. F6 oder F9) nicht genutzt werden.
+  * Mögliches Fehlverhalten beim Öffnen eines Fax nach Serverwechsel\\ Nach einem Wechsel des aktuellen david Servers konnte es vorkommen, dass man bis zum Neustart des david Clients kein Fax öffnen konnte.
+  * Mögliches Kommunikationsproblem zur MAPI behoben\\ Ein mögliches Kommunikationsproblem zwischen MAPI und david Client, das in Einzelfällen auftreten konnte, wurde behoben.
+  * Mögliches Fehlverhalten nach Benutzerwechsel im david Client\\ 
+
+Beim Versand aus einer Drittapplikation wurde u.U. der falsche Absender verwendet, wenn zuvor im david Client ein Benutzerwechsel vorgenommen wurde.\\ 
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Auswahl der Absenderadresse\\ 
+Sind für den Anwender mehrere Absenderadressen hinterlegt, so kann nun beim Erstellen einer Nachricht die gewünschte Adresse ausgewählt werden.

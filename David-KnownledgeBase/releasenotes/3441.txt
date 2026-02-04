@@ -1,0 +1,74 @@
+====== Version 3441 vom 24.05.2022 ======
+
+Release: 2022-05-24T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Optimierung beim Laden neuer Signaturen für die Virus Protection\\ Sollte es vorkommen, dass der Service Layer neue Signaturen für die Virus Protection nicht laden kann, so wird der Service Layer Dienst nun vor der nächsten Bereinigung neu gestartet, so dass sie geladen werden können. Mit dem neuen Parameter „RestartOnAVUpdateFailure“ in der Datei \david\code\david.ini kann das Verhalten angepasst werden.
+  * Variablen in Weiterleiten/Autoreply Regel\\ Bei einer Weiterleiten/Autoreply Regel können nun folgende Variablen verwendet werden, die sich auf die Benutzerdaten des Anwenders beziehen, in dessen Ordner die Regel erstellt wird:
+\\ %(KUERZEL) Benutzerkürzel\\ %(USERNAME) Benutzername\\ %(USERDISPLAYNAME) Angezeigter Name\\ %(USERTITEL) Titel des Benutzers\\ %(USERFAX) Faxnummer des Benutzers\\ %(USERPHONE) Telefonnummer des Benutzers\\ %(USEREMAIL) eMail-Adresse des Benutzers\\ %(USERSMS) SMS-Nummer des Benutzers\\ %(USERLOCALEXTENSION) Lokale Nebenstellennummer des Benutzers\\ %(USERADD1) Inhalt des Feldes »Zusätze 1«\\ %(USERADD2) Inhalt des Feldes »Zusätze 2«\\ %(USERADD3) Inhalt des Feldes »Zusätze 3«\\ %(USERADD4) Inhalt des Feldes »Zusätze 4«
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei gegenseitig verknüpften Adressordnern\\ Sind zwei Adressordner gegenseitig verknüpft, so konnte es dazu kommen, dass der Service Layer nicht mehr startet. Das ist nun abgefangen.
+  * Mögliches Fehlverhalten nach Download neuer Virensignaturen\\ In einem Einzelfall konnte es vorkommen dass nach dem Download neuer Virensignaturen bis zum Neustart des Service Layers keine neuen Nachrichten mehr abgearbeitet wurden
+  * Mögliches Fehlverhalten bei ActiveSync und jährlichen Terminserien\\ In einem Einzelfall konnte es in Verbindung mit jährlichen Terminserien dazu kommen, dass die maximale Anzahl Verbindungen der WebBox erreicht wurde und der Dienst neu gestartet werden musste.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Eingabe von IP Adressen für Greylisting Ausnahmen\\ Im david Administrator können unter „eMail/PostMan/Datenbanken/Erlaubte Absenderadressen“ nun auch IP Adressem eingegeben werden, die dann beim aktivierten Greylisting von der Prüfung ausgenommen sind.
+
+==== Bugfix ====
+
+  * Eindeutige Message ID beim eMail Versand\\ Beim eMail Versand wurde u.U. keine eindeutige Message ID vergeben, das ist nun korrigiert.
+  * Mögliches Fehlverhalten bei der Erkennung „Erlaubter Absederadressen (Spam Erkennung)\\ Im david Administrator können unter „eMail/PostMan/Datenbanken/Erlaubte Absenderadressen eMail Adressen eingetragen werden, die dann von der Spam Erkennung ausgeschlossen sind. Hierbei konnte es in einem Einzelfall vorkommen, dass eine eingetragene eMail Adresse falsch ausgewertet wurde.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * OAUTH2 Authentifizierung für POP3 Abruf\\ Beim POP3 Postfach kann nun der Typ OAUTH2 Authentifizierung eingestellt werden, unterstützt wird aktuell der Google Account.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Möglicher Absturz behoben\\ Ein möglicher Absturz, der in Einzelfällen auftreten konnte, wurde behoben.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neuer david Client „Modern“ zusätzlich installiert\\ Mit dem Update des david Clients wird nun zusätzlich der neue david Client „Modern“ als Beta installiert, der parallel zum aktuellen david Client verwendet werden kann: C:\Programme\David Client\dvwin4.exe. Die Druckertreiber und die MAPI nutzen zunächst weiterhin den david Client „Classic„.
+  * Optimierung der Einschreiben Funktion bei Verwendung von Kommentaren\\ Erhält man eine eMail als Einschreiben und kommentiert diese mit anderen Anwendern, so wurde bei jedem neuen Kommentar wieder die „Einschreiben“ Information statt der eMail Inhalt in der Vorschau angezeigt. Das wurde nun optimiert, so dass der Inhalt dauerhaft angezeigt wird.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+  * Ausgewählter Adressordner beim Speichern neuer Adressen\\ Wird bei einer empfangenen eMail durch Klick per Kontextmenü auf die Absenderadresse ein neuer Adresseintrag erstellt, so wird hier nun der Ordner verwendet, der unter Einstellungen/Adressen/Standard-Zielordner für Adressen hinterlegt ist.
+  * Zugriff auf LDAP Adressen\\ Im david Client „Modern“ kann nun unter „Werkzeuge/LDAP Verbindungen“ der Zugriff auf LDAP Verzeichnisdienste eingerichtet werden, so dass diese Adressen in der Adressauswahl zur Auswahl stehen.
+
+==== Bugfix ====
+
+  * chayns Login mittels Google funktionierte u.U. nicht\\ Das chayns Login mittels Google funktionierte u.U. nicht.
+  * Mögliches Fehlverhalten beim Import einer ICS Datei\\ Wird die ICS Datei eines Plain Text Termins importiert, so wurde der Textteil des Termins nicht übernommen. In Einzelfällen konnte es auch zum Absturz kommen.
+  * Mögliches Fehlverhalten bei der Screenshot Funktion\\ Wird der 64 Bit david Client verwendet, so funktionierte bei der Screenshot Funktion (Button „Bild“) das Menü nicht.
+  * Eindeutige Message ID beim eMail Versand\\ Beim eMail Versand wurde u.U. keine eindeutige Message ID vergeben, das ist nun korrigiert.
+
+
+  * Mögliches Fehlverhalten beim Weiterleiten/Antworten von eMails\\ In Einzelfällen konnte es beim Weiterleiten/Antworten von eMails zum Absturz kommen.
+  * Auswahl des Kalenders beim Speichern von Terminen\\ Existiert unterhalb eines Kalenders ein weiterer Kalender, so stand dieser beim Speichern von Terminen nicht zur Auswahl, wenn man hierbei im oberen Kalender stand.
+  * Mögliches Fehlverhalten beim Anhängen von eMails im Chromium Editor\\ Wird der Chromium Editor verwendet und es werden per Drag &amp; Drop zwei eMails aus der Eintragsliste mit gleichen Betreff aber unterschiedlichem Inhalt angehängt, so erhielten beide Anhänge denselben Inhalt.
+
+
+  * Mögliches Fehlverhalten beim Einfügen von Inline Grafiken im Chromium Editor\\ Wird der Chromium Editor verwendet und es wird per Drag &amp; Drop eine Inline Grafik eingefügt, so wurde diese nicht versendet, wenn sich bereits eine Inline Grafik mit dem Namen image.xxx unter den Anhängen befindet und dieselbe Größe hat.
+  * Mögliches Fehlverhalten bei Telefonie Nutzung\\ In einem Einzelfall konnte der in den Telefonie Einstellungen eingetragene Registrar nicht aufgelöst werden, so dass die Telefonie Funktion nicht gegeben war.
+
+
+  * Fehlverhalten beim Download des aktuellen Client Packages \\ Der Download des aktuellen Client Packages über die URL des david Server per Port 267 funktionierte nicht mehr.
+
+
+  * Optimierung beim Speichern von Terminen mit Dateianhängen bei langsamer Verbindun\\ Bei einer langsamen Verbindung dauerte das Speichern eines Termins mit Dateianhängen u.U. sehr lange. Das wurde nun optimiert.
+

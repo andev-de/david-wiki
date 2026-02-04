@@ -1,0 +1,119 @@
+====== Version 3387 vom 13.10.2021 ======
+
+Release: 2021-10-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Abrechnung und Administration der Backline Services über chayns\\ Ab dem Rollout 335 wird die Abrechnung und die Administration der Backline Services auf chayns umgestellt. Der Zugriff auf die neue Administration erfolgt über david3.de oder direkt über die Portalseite im david.Administrator.
+  * chaynsID Verbindung bei gelöschten Benutzer aufheben\\ Wird ein david Benutzer gelöscht, so wird nun auch der Eintrag unter „chaynsID Verbindungen“ entfernt und die chayns Verbindung aufgehoben.
+  * Chat Teilnehmer entfernen\\ Man kann nun als Administrator einer Chat Gruppe Teilnehmer entfernen. Bei dem Dialog der Teilnehmer gibt es hierzu für den Administrator der Gruppe einen entsprechenden Button.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Weiterleiten/Antworten mit david Befehlen im Betreff\\ In einem Einzelfall war der Mail Inhalt einer weitergeleiteten Mail fehlerhaft, wenn der Betreff der Mail david Befehle enthält.
+  * Mögliches Fehlverhalten beim Autoreply mit zusätzlicher Weiterleiten Einstellung\\ Wird per Abwesenheits-Assistent eine Autoreply Regel erstellt mit einer zusätzlichen Weiterleiten Einstellung, so konnte es in Einzelfällen zu einer Loop kommen wenn hier mehr als eine Adresse angegeben wird.
+  * Kommentieren von externen Nachrichten per smart client\\ Ein Kommentieren von externen Nachrichten ist nicht möglich, da die Kommentare nicht an die externen Empfänger versendet werden. Beim smart client stand das Kommentieren aber dennoch zur Auswahl.
+  * Benachrichtigungen bei Ausnahmen von Terminserien\\ Empfangene Benachrichtigungen bei Ausnahmen von Terminserien wurden nicht durch aktuellere Benachrichtigungen überschrieben. Dadurch konnte man z.B. eine bereits ungültige Änderung noch annehmen.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Status des Backline Service „Server Monitoring“\\ In Einzelfällen konnte es vorkommen dass im david Administrator der Status des Backline Services „Server Monitoring“ falsch angezeigt wurde (deaktiviert statt aktiviert).
+
+
+  * Mögliches Fehlverhalten bei Konfiguration des WebAPI Dienstes\\ In einem Einzelfall konnte es zum Absturz des david Administrators beim Konfigurieren des WebAPI Dienstes kommen.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Konvertierung empfangener eMails\\ In einem Einzelfall wurde der Inhalt eines empfangenen Dateianhangs als Mail Text konvertiert.
+  * Optimierung der TLS Informationen im SMTP Header\\ Das Format der TLS Information im SMTP Header wurde entsprechend der RFC korrigiert.
+  * Hintergrundbild als Dateianhang angezeigt\\ Ein in einer eMail eingefügtes Bild wurde u.U. beim Öffnen der eMail in der ReadOnly Ansicht zusätzlich als Dateianhang aufgeführt.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Konvertierung empfangener eMails\\ In einem Einzelfall wurde der Inhalt eines empfangenen Dateianhangs als Mail Text konvertiert.
+  * Mögliches Fehlverhalten beim Empfang von Besprechungsanfragen\\ Beim Empfang von Besprechungsanfragen konnte es zum Absturz des Grabbing Servers kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Termine per ActiveSync u.U. nicht komplett synchronisiert\\ In einem Einzelfall führte ein fehlerhafter Serientermin dazu dass per ActiveSync nicht alle Termine synchronisiert wurden.
+  * Änderungen von Adressen auf dem Smartphone (ActiveSync)\\ Werden Änderungen an Adressen auf dem Smartphone gemacht (z.B. Ändern der Faxnummer), so wurden diese Änderungen bei der Nutzung von ActiveSync u.U. nicht zum david Server übernommen.
+  * Mögliches Fehlverhalten bei Bereitstellung von RSS Feeds\\ Bei der Bereitstellung von RSS Feeds über die WebBox konnte es in einem Einzelfall zum Absturz der WebBox kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Spaltenbreite bei Dateianhängen\\ Die Spaltenbreite in der Ansicht der Dateianhänge von eMails richtet sich nun nach dem längsten Dateinamen. Zuvor wurde der Dateiname u.U. eingekürzt.
+  * Optimierung bei Favoritenleiste\\ Die räumliche Aufteilung der Schaltflächen in  der Favoritenleiste wurde optimiert.
+  * Suche nach Markierungen per Quickfinder Menü\\ Man kann nun beim Quickfinder unter der erweiterten Suche eine Markierung angeben, nach der die Nachrichten gefiltert werden sollen.
+  * „Verbinden mit“ in WebView2 Vorschau\\ Ist die WebView2 eingestellt, so gibt es im Kontextmenü der Vorschau nun auch den Menüpunkt „Verbinden mit“, wenn eine Rufnummer markiert wird.
+  * Anzeige der eMail-Adresse „Weiterleiten an“ bei Autoreply Regel\\ Wird beim Abwesenheits-Assistenten eine Autoreply Regel erstellt mit einer zusätzlichen Weiterleiten Einstellung, so wird diese eMail-Adresse nun auch bei der zugehörigen Verteilregel angezeigt.
+  * Kein Laden der Chromium Engine wenn nicht verwendet\\ Wird die Chromium Engine im david Client nicht verwendet (auch nicht für die chayns Anmeldung), so werden die Prozess der Chromium Engine (dvcef.exe) nun nicht mehr mit geladen.
+  * Optimierung bei Prüfung auf Verfügbarkeit der Chromium Engine\\ Beim Start des david Clients wird bei Verwendung der Chromium Engine deren Verfügbarkeit geprüft und ggfs. ein Hinweis ausgegeben. Diese Prüfung wurde optimiert, so dass der Hinweis auch bei langsameren Systemen nicht unnötig erfolgt.
+  * Optimierung beim Laden von Kalenderansichten\\ Das Laden der Arbeitswochen- und Sieben-Tage-Kalenderansicht wurde optimiert.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+  * Auswahl der Zertifikate beim Verschlüsseln von Nachrichten\\ Soll eine eMail verschlüsselt versendet werden, so werden bei der Auswahl der Zertifikate nun per Vorgabe Empfängerzertifikate aufgelistet und nicht auch noch die eigenen Zertifikate.
+  * Erstellungsdatum beim Ändern von Aufgaben\\ Werden Änderungen an Aufgaben gemacht, so wurde jeweils das Erstelldatum (Spalte „Datum“) angepasst. Das wird nun in dem Fall nicht mehr gemacht.
+  * Grafiken per Drag &amp; Drop in Chromium Editor einfügen\\ Bei Verwendung des Chromium Editors können Grafiken nun per Drag &amp; Drop eingefügt werden.
+  * Hinweis beim Einfügen einer Grafik in eine Adresse\\ Wird ein Benutzerbild in eine Adresse eingefügt und die Datei ist größer als 600 KB so erfolgt nun ein Hinweis, dass die Grafik an einigen Stellen u.U. nicht angezeigt werden kann.
+  * Alle Chats als gelesen markieren\\ Neuer Schalter im Chat Menü unter „Erweitert“: Alle Chats als gelesen markieren. Hierdurch können alle ungelesenen Chats als gelesen markiert werden. Dies betrifft auch Chats die durch einen möglichen Datenbankfehler nicht mehr angezeigt werden.
+  * Ersetzungen bei Verwendung des Chromium Editors\\ Wird der Chromium Editor verwendet, so können hier nun auch die Ersetzungen genutzt werden (Einstellungen/Rechtschreibung/Wörterbuch).
+  * Neue Variablen zum Einfügen von Verteilerlisten\\ Im Editor gibt es nun unter „Variablen/Allgemein“ zwei neue Variablen zum Einsetzen von Verteilerlisten (An und Cc). Auf diese Weise in einer Vorlage zum Beispiel Position und Aussehen der Verteilerliste bestimmt werden.
+  * Bearbeiten von Vorlagen\\ Unter „Einstellungen/Vorlagen“ kann durch einen Rechtsklick auf eine Vorlage diese nun direkt bearbeitet werden.
+
+==== Bugfix ====
+
+  * Mögliche Abmeldung des Anwenders bei chayns SSO Login\\ Ist der Anwender per chayns SSO Login angemeldet und es werden Änderungen an der Benutzerkonfiguration im david Administrator vorgenommen, so konnte es vorkommen dass der Anwender abgemeldet wurde.
+  * Ändern von externen Dokumenten ohne Dateizugriff\\ Besteht kein Dateizugriff auf den david Server und es sollen externe Dokumente geändert werden, so wurde das Speichern der Änderungen u.U. nicht übernommen.
+  * Anzahl der ungelesenen Nachrichten u.U. als 0 angegeben\\ Bei der Einstellung einer Verzögerung (“Echtzeit“ Menü) und externen Änderungen an LiveComments konnte es vorkommen, dass die Badge Anzeige für ungelesen Nachrichten verschwand.
+  * Spezielle Emoticon bei Verwendung der Chromium Engine\\ Einige spezielle Zeichenkombinationen wurden bei Verwendung der Chromium Engine in der Vorschau als Emoticon dargestellt, obwohl das in dem speziellen Kontext nicht erwünscht ist.
+  * Text einer Mail Vorlage beim Antworten/Weiterleiten u.U. nicht eingefügt\\ Wird im globalen Vorlagen Ordner eine Vorlage mit Text erstellt und auf eine Mail im Format „Reiner Text“ geantwortet, so wurde der Text der Vorlage u.U. nicht eingefügt.
+  * Mögliches Fehlverhalten beim Einfügen einer Hintergrundfarbe in eine eMail\\ Soll bei der Erstellung einer eMail eine Hintergrundfarbe eingefügt werden, so funktionierte dies u.U. nicht.
+  * Mögliches Fehlverhalten bei der Erstellung von eMails mit eingefügten Grafiken (Screenshots)\\ Beim Einfügen von Bildern (Screenshots) in eine eMail und bei der anschließenden Erstellung konnte es u.U. zu einer auffälligen Verzögerung kommen.
+  * Verwendung von Variablen im Chromium Editor\\ Wird der Chromium Editor verwendet, so wurden die Variablen, die im Editor zur Auswahl stehen, u.U. nicht korrekt ausgewertet.
+  * Mögliches Fehlverhalten bei AutoSave Funktion\\ In Verbindung mit der AutoSave Funktion (Auto-Wiederherstellung abgebrochener Nachrichten) konnte es in Einzelfällen zum Absturz kommen.
+  * Inhalt einer neuen Nachricht u.U. gelöscht (Chromium Editor)\\ Wird der Chromium Editor zur Erstellung einer neuen Nachricht verwendet und hierbei die Maustaste für „Zurück“ gedrückt, so wurde der Inhalt der Nachricht gelöscht. Das ist nun behoben.
+  * Kommentare zu eMails u.U. nicht versendet\\ Wird eine eMail im separaten Fenster geöffnet, so konnte es in Einzelfällen vorkommen, dass ein neuer geschriebener Kommentar nicht versendet wurde.
+  * Mögliches Fehlverhalten beim Antworten/Weiterleiten per Chromium Editor\\ Wird der Chromium Editor verwendet, so konnte es in Einzelfällen beim Beantworten oder Weiterleiten von eMails zum Absturz des Editors kommen.
+  * Hintergrundgrafik einer neuen Nachricht nicht versendet\\ Wird bei einer neuen Nachricht eine Hintergrundgrafik eingefügt, so wurde diese u.U. nicht versendet,
+  * Leere Vorschau von Nachrichten (WebView2)\\ Wird für die Vorschau von Nachrichten die Webview2 verwendet, so konnte es in Einzelfällen vorkommen, dass die Vorschau leer war.
+  * Mögliches Fehlverhalten beim Import eines Termins per ICS Datei\\ Wird ein Termin per ICS Datei importiert, so wurde die Zeitzonenangabe etc/GMT u.U. falsch ausgewertet.
+  * Falsche Fontangabe bei 14pt beim Beantworten/Weiterleiten einer Nachricht\\ Ist für den Editor die Schriftgröße 14pt eingestellt, so wurde beim Antworten/Weiterleiten im IE Editor stattdessen 12pt verwendet.
+  * Abfrage nach Speichern bei Änderung der Formatierung im Chromium Editor\\ Wurden beim Bearbeiten einer Nachricht im Chromium Editor nur Formatierungen geändert, der eigentliche Text aber nicht, so erfolgte keine Abfrage beim Verlassen des Editors, ob Änderungen gespeichert werden sollen.
+  * Mögliches Fehlverhalten beim Chromium Editor (ALT Taste)\\ Wird im Chromium Editor die ALT Taste gedrückt, so konnte es vorkommen dass der Editor hing.
+  * Dateinamen von Anhängen in Mail Vorlagen\\ Grafiken in Mail Vorlagen wurden unter bestimmten Bedingungen mit ihrem David-internen Dateinamen angehängt .
+
+
+  * Emoticons wurden auf bestimmten Systemen nicht angezeigt\\ Systemabhängig konnte es vorkommen, dass Emoticons nicht angezeigt wurden und damit auch nicht auswählbar waren.
+  * Mögliches Fehlverhalten beim Erstellen bzw. Antworten/Weiterleiten von Nachrichten mit einer Vorlage\\ Wird eine Vorlage verwendet, in der eine Grafik eingefügt ist, deren Dateiname keine Dateierweiterung hat, so konnte es zum Absturz des david Clients kommen.
+  * Rückfrage beim Versand einer Nachricht bei fehlendem Dateianhang\\ Soll eine Nachricht mit einem Dateianhang versendet werden, und der Dateianhang wird vor dem Versand in der Quelle gelöscht oder umbenannt, so erfolgt ein entsprechender Hinweis. Dieser erfolgte nicht, wenn in der Nachricht Variablen verwendet werden. In dem Fall erfolgt der Hinweis nun auch.
+  * Mögliches Fehlverhalten beim Versand von hybrid mail Briefen mit Umlauten in der Adresse\\ Soll ein hybrid mail Brief mit Umlauten in der Adresse per @-@Direkt Befehl versendet werden, so konnte der Brief nicht versendet werden. Ohne diesen Befehl war die Funktion gegeben.
+  * Mögliches Fehlverhalten beim Hinzufügen von großen Dateianhängen\\ Wird der 64 Bit david Client verwendet so konnte es zum Absturz des Clients kommen, wenn über den Dateianhang Dialog eine sehr große Datei angehängt werden soll.
+  * Mögliches Fehlverhalten beim Annehmen/Ablehnen von Plain Text Besprechungsanfragen\\ Werden empfangene Einladungen, die nur Plain Text haben, aus dem geöffneten Editor beantwortet, so wurde der Plain Text zusätzlich mit HTML Code versandt.
+  * Mögliches Fehlverhalten bei der Rechtschreibprüfung (Chromium Editor)\\ Ist der Chromium Editor eingestellt und es wird die Rechtschreibprüfung verwendet, so konnte es beim „Lernen“ eines neues Worts zum Absturz kommen.
+  * Möglicher Versand einer eMail mit falscher digitaler Signatur\\ Wenn für den eMail Versand eine digitale Signatur hinterlegt ist und man gibt per david Befehl eine andere Absenderadresse ohne digitale Signatur an, so konnte u.U. eine eMail mit der falschen Signatur versendet werden.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Favoritenordner u.U. nicht zu öffnen\\ In Einzelfällen konnte es vorkommen dass bestimmte Favoritenordner nicht geöffnet werden konnten.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Optimierung beim Laden von Grafiken in eMails\\ Das Laden von Grafiken in eMails wurde optimiert.
+  * Protokollierung bei WebAPI Dienst optimiert\\ Die Protokollierung bei den WebAPI Logs wurde optimiert.
+

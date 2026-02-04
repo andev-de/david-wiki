@@ -1,0 +1,12 @@
+====== Version 2820 vom 14.08.2015 ======
+
+Release: 2015-08-14T15:49:58
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * In einem Einzelfall wurde eine angehängte Wave Datei auf dem iPhone nicht angezeigt, wenn sie per ActiveSync übertragen wurde.
+
+

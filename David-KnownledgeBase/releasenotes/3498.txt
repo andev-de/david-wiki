@@ -1,0 +1,55 @@
+====== Version 3498 vom 13.10.2022 ======
+
+Release: 2022-10-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Spam Report u.U. nicht versendet\\ In einem Einzelfall konnte es vorkommen dass nach dem „Als Spam melden“ der Spam Report nicht versendet werden konnte, weil die Empfängeradresse fehlte.
+  * Mögliches Fehlverhalten bei der Verwendung von LiveComments\\ Enthält eine interne eMail LiveComments und ein Anwender verlässt den Verteiler so konnte es in einem Einzelfall in der Folge zu Fehlverhalten kommen, z.B. fehlende Kommentare oder fehlende Verteilerangaben.
+  * Mögliche Verzögerung bei Wiedervorlagen\\ In einem Einzelfall konnte die Wiedervorlage eines fehlerhaften Termins dazu führen, dass andere Wiedervorlagen verzögert in den Eingang gelegt wurden.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei den Einstellungen des Postausgangsservers\\ Wird im david Administrator beim Anwender ein eMail Konto eingerichtet, so waren hier die Einstellungen für den Posteingangsserver u.U. nicht änderbar.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand einer eMail mit Umlauten in der Absenderadresse\\ In einem Einzelfall konnte es vorkommen, dass eine eMail mit Umlauten in der Absenderadresse nicht versendet werden konnte.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Auswertung der Empfängerangabe\\ In einem Einzelfall konnte es vorkommen, dass durch die Auswertung des X-Envelope-To Feldes eine fehlerhafte Verteilkennung für die empfangene eMail eingetragen wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Rückfrage beim Antworten auf eMails in Cc\\ Ist der Empfänger einer eMail nur als Cc Empfänger adressiert, so erfolgt beim Modern Client beim Versuch die eMail zu beantworten oder einen Kommentar zu schreiben ein Hinweis hierauf mit der Rückfrage ob wirklich geantwortet bzw. kommentiert werden soll.
+  * Vorgabe der Aktion beim Löschen einer Besprechungsanfrage\\ Wird bei einer empfangenen Besprechungsanfrage die ENTF Taste gedrückt, so ist die Vorgabe der nachfolgenden Auswahl nun „Besprechungsanfrage löschen“ (zuvor „Annehmen und Absender antworten“).
+  * Konfigurationmöglichkeit des Filters für LDAP Anfragen\\ Die Benutzer können nun die LDAP Filter konfigurieren, wenn der LDAP Server nicht für die Standardanfrage konfiguriert ist. Außerdem wird nun durch Eingaben im „Finden“ Feld entsprechend des Filters nach weiteren Adressen gesucht.
+  * „Als Spam melden“ bei Rundsendungen\\ eMails die die Identifizierung „Rundsendung“ haben konnten bisher nicht als Spam gemeldet werden, das ist nun möglich.
+
+
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Ausdruck von eMails mit Grafiken\\ Wenn Grafiken innerhalb von eMails mit Größenattributen skaliert werden (max-width bzw max-height), so wurde das beim Ausdruck mit dem Modern Client nicht berücksichtigt.
+  * Umlaute in der Textsuche bei Verwendung der Chromium Engine\\ Wird beim Modern Client die Chromium Engine verwendet und es wird in der Vorschau nach Texten gesucht, so wurden Umlaute hierbei nicht gefunden.
+  * Mögliche falsche Spaltenanordnung beim Listenausdruck\\ Wird beim Modern Client die Eintragsliste gedruckt und die Spaltenanordnung wurde zuvor geändert, so wurde dies u.U. beim Ausdruck nicht übernommen.
+  * Text in Volltextsuche u.U. abgeschnitten\\ Beim Modern Client wurde u.U. der untere Text des Suchbegriffs bei der Volltextsuche abgeschnitten.
+  * Mögliches Fehlverhalten bei der Auswahl von SQL Adressen\\ Bei der Auswahl von SQL Adressen bei der Erstellung einer Nachricht konnte es zum Absturz des Modern Clients kommen.
+
+
+  * Einstellung „Eintragstitel per Mausklick editieren“ ohne Funktion\\ Die Einstellung "Ansicht/Eintragsliste/Eintragstitel per Mausklick editieren" war beim Modern Client ohne Funktion.
+  * Mögliches Fehlverhalten beim Einfügen von Links im Chat\\ Soll ein Link auf eine Datei im Chat eingefügt werden, so konnte es in einem Einzelfall vorkommen dass der Dateipfad nicht komplett verlinkt wurde und die Datei somit vom Empfänger nicht per Doppelklick geöffnet werden konnte.
+  * Mögliches Fehlverhalten beim Abbrechen der hybrid Mail Erstellung\\ Werden bei einer hybrid Mail Erstellung Dokumente aus verschiedenen Anwendungen kombiniert und der Anwender bricht die Fortschrittsanzeige ab, so wurde u.U. ein unvollständiger hybrid Mail Brief versendet. In diesem Fall erfolgt nun eine Sicherheitsabfrage.
+

@@ -1,0 +1,75 @@
+====== Version 2902 vom 17.11.2016 ======
+
+Release: 2016-11-17T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Wird ein neuer david Benutzer hinzugefügt, so ist die Bereinigung in seinem Papierkorb Ordner nun auf 7 Tage eingestellt (zuvor 1 Tag).
+  * In den Ordnern kann per david Client als Sortierung nun zusätzlich "Markierung" eingestellt werden.
+
+==== Bugfix ====
+
+  * Im Automation-Monitor des david.Administrators wurden u.U. keine Informationen mehr angezeigt.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Bei dem Lizenztyp "Academic" wurde die Portalseite nicht angezeigt, bzw. blieb leer.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Bei einem hybrid mail Auftrag kann nun per david Befehl der Duplex Druck vorgegeben werden:
+
+@@duplex
+
+  * Neue Aktion bei Client-Verteilregel "Sonstige": "Eintrag als gelesen markieren"
+  * Soll über den Kalender in der InfoCenter Ansicht ein neuer Termin erstellt werden, so wurde immer der aktuelle Zeitpunkt vorgeschlagen, auch wenn man z.B. den Tab "Morgen" oder "Übermorgen" selektiert hat.
+  * Bei der nachträglichen Rechtschreibprüfung in eMails werden Links nun übersprungen.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert.
+  * Neuer Schalter unter "Einstellungen/Global": Wichtige david® System-Nachrichten anzeigen. Hierdurch kann der Anwender diese vom david® Server an die Anwender verteilten Nachrichten anzeigen lassen oder ggfs. die Anzeige abbestellen.
+  * Das Icon für "Löschen" wurde in der Symbolleiste aktualisiert, ist nun ein Papierkorb.
+  * Sind im Kommentarfeld Links eingetragen, so können diese nun per Mausklick+Strg Taste aufgerufen werden.
+  * Es gibt beim Löschen einer Terminserie nun die zusätzliche Option "Dieses und alle nachfolgenden Elemente", um Terminserien zu beenden, jedoch nicht komplett zu löschen, damit bereits vergangene Termine nicht verloren gehen.
+  * Bei Terminen und Aufgaben gibt es nun jeweils 8 zusätzliche Beschriftungsfelder (Datei \David\Clients\Windows\tobit!.ger für den deutschen Client).
+  * Nach einem david Client Update wird oben im Client Fenster nun ein Hinweis angezeigt, der auf die aktuellen david Release Notes verweist.
+  * Wird ein Feed Eintrag geöffnet, so kann dieser anschließend nun auch wieder per Kontextmenü als "ungelesen" markiert werden.
+
+==== Bugfix ====
+
+  * Bei Nutzung der Windows 10 Insider Preview Build 14955 auf einem surface konnte es zum Absturz des david Clients kommen, z.B. beim Zitieren oder Schreiben von LiveComments.
+  * Ist in den Client Einstellungen für den Editor die Schriftgröße „14“ vorgegeben, so wurde dies beim Erstellen einer neuen Nachricht ohne Vorlage ignoriert und stattdessen die Schriftgröße „12“ verwendet.
+  * Soll aus PowerPoint (Office 2016 oder 365) eine PowerPoint Datei als eMail Anhang versendet werden, so wurde die Datei u.U. nicht angehängt.
+  * Bei der Einstellung "farbige Icons" wurde das Kommentar Icon in der Ansicht "Vorschau neben der Eintragsliste" dennoch grau angezeigt.
+  * Die Ordner-Icons im Feedbereich hatten u.U. die falsche Größe, wenn zwischen 2 Monitoren mit unterschiedlicher DPI-Einstellung gewechselt wurde.
+  * Ruft ein Teilnehmer an und man drückt während des Anrufs beim Schreiben in einer Nachricht "Enter", so wurde der Anruf u.U. ungewollt abgelehnt.
+  * In einem Einzelfall wurden nicht alle Grafiken einer eMail in der Bild-Vorschau angezeigt.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Das Icon für "Löschen" wurde in der Symbolleiste aktualisiert, ist nun ein Papierkorb.
+  * Beim david Client Mac kann ein Verteilerkreis nun auch verlassen werden, ohne dass es bereits LiveComments gibt (wie beim david Client Windows).
+  * Klickt ein Anwender auf den Button um den Verteilerkreis zu einer eMail zu verlassen, so erfolgt nun eine zusätzliche Sicherheitsabfrage (um ein versehentliches Verlassen zu vermeiden).
+  * Die Auswahl und Anzeige der Emoticons im Editor und david®chat wurde optimiert (wie schon beim david Client Windows).
+  * Die Funktion "Als Spam melden" wurde integriert (wie schon beim david Client Windows).
+  * Bei Terminen und Aufgaben gibt es nun jeweils 8 zusätzliche Beschriftungsfelder (Datei \David\Clients\Windows\tobit!.ger für den deutschen Client).
+
+==== Bugfix ====
+
+  * Nach Verlassen des david®chat und anschließendem Erstellen einer neuen Nachricht konnte es u.U. zum Absturz des Clients kommen.
+  * Wird eine eMail durch einen LiveComment wieder als ungelesen markiert, so änderte sich der Zustand des Buttons (Ungelesen/Gelesen) nicht richtig.
+  * Wenn eine Nachricht per Doppelklick im neuen Fenster geöffnet wird, stand im Fenster-Menüpunkt als Titel für dieses Fenster „Neue Nachricht“.&nbsp;
+  * Unter Mac OSX 10.12 gab es u.U. an einigen Stellen englische Texte obwohl der Client in deutsch installiert wurde.
+  * Beim Einlesen von Einträgen in Eintragslisten konnte es u.U. zum Absturz des Clients kommen.
+  * Editiert man den Betreff einer eMail mit Enter, wurde der Editor an der falschen Stelle angezeigt.
+  * Die Größe und Postion vom Chateingabefeld passte bei unterschiedlichen Monitorkombinationen manchmal nicht.
+  * Werden Ordner durch die Angabe der Sortierungszeichens "#01...#02" sortiert, so wurden die Ordnernamen u.U. abgeschnitten.
+  * Beim Einlesen des Absenders von Nachrichten konnte es u.U. zum Absturz kommen.
+

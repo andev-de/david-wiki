@@ -1,0 +1,68 @@
+====== Version 3018 vom 17.09.2018 ======
+
+Release: 2018-09-17T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Unterstützung längerer Betreffzeilen in der david® SQL Datenbank\\ Die SQL Datenbank von david®, die u.a. für Suchfunktionen verwendet wird, stellt nun für die Betreffzeilen von eMails mehr als die bisher verfügbaren 100 Zeichen bereit, so dass lange Betreffzeilen dort nicht mehr wie bisher nach 100 Zeichen abgeschnitten werden.
+
+
+==== Bugfix ====
+
+  * Mögliches Einfrieren bei fehlerhafter Rundsendedatei beseitigt\\ Zum Versand von Rundsendungen können die Empfänger-Adressen in so genannten Rundsendedateien übergeben werden. Hierbei handelt es sich um Textdateien, die eine Liste der gewünschten Adressen enthalten. Die Verwendung von Rundsendedateien, die in einem nicht unterstützen Zeichencode (z.B. UCS-2 BE-BOM) gespeichert sind, konnte u.U. konnte zum Einfrieren des david® Service Layers führen, anstatt eine entsprechende Fehlermeldung auszulösen. Dieses Verhalten wurde korrigiert.
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Max. Länge der Namen für Ausgabe-Queues bei der Druckereinrichtung auf 80 verdoppelt\\ Die maximale Zeichenlänge zur Benennung von Ausgabe-Queues bei der Druckereinrichtung im david® Administrator wurde auf 80 verdoppelt. Zuvor erfolgte u.U. kein Ausdruck auf Druckern, deren Name dort eine Länge von 40 Zeichen überstieg. 
+
+  * Optimierter Aufruf der Portalseite\\ Bei david® Versionen, die unter Nutzung des Angebotes, die Software die ersten 30 Tage lang gratis zu nutzen, installiert wurden, fehlte u.U. im david® Administrator der Menüpunkt „Site“, der die Anzeige der Portalseite ermöglicht. Diese Funktion wurde überarbeitet, so dass der Menüpunkt nun zuverlässig zur Verfügung steht.
+
+  * Verbessertes Starten\\ Die Stabilität des david® Administrators beim Starten wurde optimiert. Abstürze unmittelbar beim Starten, die es zuvor u.U. geben konnte, treten nun nicht mehr auf.
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Optimierte Darstellung asiatischer Schriftzeichen in eMails\\ In einem Einzelfall wurde eine empfangene eMail mit asiatischer Kodierung nicht korrekt konvertiert so dass die Schriftzeichen falsch dargestellt wurden. Dieses Verhalten wurde korrigiert.
+
+  * Möglicher Fehler beim Empfang von Dateianhängen behoben\\ In einem Einzelfall konnte es vorkommen, dass die Dateianhänge einer empfangenen eMail nicht richtig konvertiert wurden und statt der korrekten Dateien lediglich leere Anhänge mit dem Dateinamen „Textpart.txt“ angezeigt wurden. Dieses Verhalten wurde korrigiert.
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Optimierte Darstellung asiatischer Schriftzeichen in eMails\\ In einem Einzelfall wurde eine empfangene eMail mit asiatischer Kodierung nicht korrekt konvertiert so dass die Schriftzeichen falsch dargestellt wurden. Dieses Verhalten wurde korrigiert.
+
+  * Möglicher Fehler beim Empfang von Dateianhängen behoben\\ In einem Einzelfall konnte es vorkommen, dass die Dateianhänge einer empfangenen eMail nicht richtig konvertiert wurden und statt der korrekten Dateien lediglich leere Anhänge mit dem Dateinamen „Textpart.txt“ angezeigt wurden. Dieses Verhalten wurde korrigiert.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Vollständige Abmeldung bei Benutzerwechsel\\ Die Schaltfläche „Anmelden“ in der Titelleiste des david® Client ermöglicht das Einloggen über die persönliche chayns®ID™, um zusätzliche Dienste wie z.B.das Intercom zu nutzen. Diese Anmeldung wird aufgehoben, sobald über den Punkt „Netzwerk/david® Server“ ein neues david® Login unter einem anderen Benutzernamen erfolgt.
+
+  * Anzeige längerer Betreffzeilen in der Eintragsliste\\ Der neue Schalter „Anzeige des Betreffs erweitern“ unter „Einstellungen / Ansicht / Eintragsliste“ bewirkt, dass der Betreff von eMails in der Eintragsliste nicht wie in der Standardeinstellung nach 95 Zeichen abgeschnitten wird. So sind mehr Betreff-Informationen sichtbar, was das Aufspüren bestimmter Nachrichten erleichtert. 
+
+
+==== Bugfix ====
+
+  * Optimierte Platzierung des Cursors bei Erstellung von Terminen\\ Die Nutzung einer höheren DPI Einstellung für die Monitordarstellung konnte u.U. zu dem Effekt führen, dass beim Erstellen von Terminen der Cursor in den Feldern „Betreff und „Ort“ nicht korrekt an der Position des Mauszeigers, sondern etwas versetzt platziert wurde. Dieses Verhalten wurde korrigiert.
+
+  * Optimierung beim Speichern von Dateianhängen\\ Beim Speichern von Dateianhängen im david® Client fehlte u.U. die Dateinamen-Erweiterung, die den Dateityp des Anhangs angibt (z.B. .TXT für Textdateien), wenn in den Einstellungen des Windows Datei Explorer die Option „Ansicht/Erweiterungen bei bekannten Dateitypen ausblenden“ aktiviert war. Dieses Verhalten wurde korrigiert.
+
+  * Optimierung der Anzeige von Dateianhängen\\ In einem Einzelfall wurde der vorhandene Dateianhang einer bestimmten eMail u.U. nicht angezeigt, wenn diese Mail geöffnet wurde. Dieses Verhalten wurde korrigiert.
+
+  * Beseitigung störender Buttons im david®Chat Fenster\\ Bei Nutzung des david®Chat konnte u.U. der Effekt auftreten, dass neben den Tabs mehrerer aktiver Chats vereinzelte Schaltflächen aus der Eintragsliste des david® Client angezeigt wurden, wenn noch ungelesene Chat Nachrichten von verschiedenen david® Benutzern vorlagen. Diese verirrten Buttons tauchen jetzt nicht mehr auf.
+
+  * Überarbeitete Funktion von eMail-Vorlagen\\ Die Verwendung von eMail-Vorlagen ermöglicht es, sehr einfach Nachrichten mit immer gleichem Layout zu erstellen, ohne die dafür nötigen Einstellungen für Schriftart, Schriftgröße, Hintergrund, etc. jedes Mal neu einstellen zu müssen. Für einen stabileren Betrieb des david® Client wurden die Vorlagen-Funktionen überarbeitet. Zuvor konnte in einem Einzelfall beim Erstellen einer neuen Nachricht der Einsatz einer Vorlage mit speziellen Schrift-Einstellungen zum Absturz des Clients führen. Dieses Verhalten wurde korrigiert.
+
+

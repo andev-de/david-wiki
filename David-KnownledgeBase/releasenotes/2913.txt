@@ -1,0 +1,71 @@
+====== Version 2913 vom 20.01.2017 ======
+
+Release: 2017-01-20T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Beim Erstellen eines neuen david Benutzers wird bei dessen Aufgaben Ordner nun "Anzeigen als: Aufgaben" voreingestellt (bisher: "Vorgabe"). Somit wird beim Erstellen eines Unterordners und Übernahme der Eigenschaften dieser Ordner auch als "Aufgabenordner" eingestellt.
+
+==== Bugfix ====
+
+  * Wird ein StrongBox Backup erstellt, so wurden die NTFS-Verzeichnisrechte u.U. nicht gesichert, so dass sie bei einem späteren Restore nicht wieder entsprechend vergeben wurden.
+  * Wird ein neuer Ordner erstellt, der ein %-Zeichen im Namen enthält, so konnte es zum Absturz des Service Layers kommen. Ebenso konnte es zum Absturz während der Bereinigung kommen, wenn Ordner mit einem %-Zeichen im Namen bereits existieren.
+  * Wird der Absender einer Nachricht durch die Funktion "Absender identifizieren" in die Liste "Identifizierung" im david Administrator eingetragen, so wurden die vorgenommenen Einstellungen der Identifizierung beim erneuten Aufruf des Dialoges u.U. nicht angezeigt.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Im david Administrator können unter "System/Optionen" nun Einstellungen zum Versand des Security Reports vorgenommen werden.
+
+==== Bugfix ====
+
+  * Wird in der WebBox Konfiguration der Button "Konfiguration/Erweitert/Zertifikat installieren" geklickt, konnte es zum Absturz kommen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Ist david auf einem Server 2003 oder Windows XP Rechner installiert und die Virus Protection Services sind aktiviert, so konnte es im david Ereignis Ordner zu der Fehlermeldung "Unable to check for new virus signatures" kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Emoticons in LiveComments wurden per ActiveSync Zugriff auf einem iPhone u.U. nicht angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+
+==== Bugfix ====
+
+  * Soll im Editor ein Textbaustein eingefügt werden, so war die Sortierung der Textbausteine beim Einfügen über das Menü und den Button unterschiedlich.
+  * Beim Verteilregel Dialog "Verteilen an einen Benutzer oder in einen Ordner" wurden u.U. die Buttons auf dem Tab "Ziel" nicht angezeigt. Dies konnte bei einer bestimmten Monitor Auflösung auftreten.
+  * Wird in den Client Einstellungen ("Sicherheit") ein Zertifikat ausgewählt, so konnte es hierbei in Einzelfällen zum Absturz kommen.
+  * Wird in der Arbeitswochenansicht des Kalenders per Tastatur in dem kleinen Kalenderblatt durch die einzelnen Wochen gewechselt, so wurden hierbei u.U. Wochen übersprungen.
+  * Beim Beantworten bzw. Weiterleiten bestimmter eMails konnte es zu Problemen beim Einfügen von Text über dem Separator kommen.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Beim Terminassistenten gibt es nun wie bei der Windows Version die Einstellungen „Ganztägige Termine berücksichtigen“ und „Private Termine berücksichtigen“.
+  * Der Wechsel in die Kalenderansicht wurde optimiert, zuvor konnte es hier zu Verzögerungen kommen.
+  * Beim Start des Clients wurden Optimierungen vorgenommen.
+
+==== Bugfix ====
+
+  * Ist im david Client Windows unter "Einstellungen/Sicherheit" ein Zertifikat eingestellt, so wurde diese Einstellung u.U. entfernt, wenn der gleiche david Benutzer auch den david Client Mac verwendet und hierbei Einstellungen vornimmt.
+  * Werden in den Einstellungen die Zugangsdaten geändert, so konnte es u.U. zu einem Fehlverhalten kommen, wenn in einem oder mehreren Ordnern unterschiedliche Zugangsdaten eingestellt sind und hierauf hingewiesen werden soll.
+  * Soll eine neue Aufgabe erstellt werden, so konnte der aktuelle Tag zunächst nicht direkt ausgewählt werden.
+  * Der Terminassistent lieferte u.U. keine Ergebnisse.
+  * In Verbindung mit LiveComments konnte es vorkommen, dass beim "Allen antworten" die eigene eMail Adresse als Empfänger Adresse hinzugefügt wurde.
+  * Wird ein neuer Termin erstellt, so wurde die voreingestellte Erinnerungszeit u.U. nicht gespeichert.
+  * Beim Einfügen von Text aus der Zwischenablage in eine neue Nachricht konnte es in einem Einzelfall zum Absturz kommen.
+

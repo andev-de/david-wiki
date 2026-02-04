@@ -1,0 +1,55 @@
+====== Version 3535 vom 26.07.2023 ======
+
+Release: 2023-07-26T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Erstellung eines Serientermins\\ In einem Einzelfall konnte die Erstellung eines Serientermins dazu führen dass keine Wiedervorlagen mehr eingetragen wurden.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Einstellung „Einfacher Zeilenumbruch per Enter„\\ Die Einstellung „Einfacher Zeilenumbruch per Enter“ im david Client kann nun auch über den david Administrator für die Anwender vorgegeben werden.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Optimierung bei Spam Erkennung\\ In einem Einzelfall funktionierte die Spam Erkennung bei einer einzelnen eMail nicht.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Optimierung bei Spam Erkennung\\ In einem Einzelfall funktionierte die Spam Erkennung bei einer einzelnen eMail nicht.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Umgestaltung des Netzwerk Dialogs\\ Der Netzwerk Dialog zur Auswahl eines anderen david Servers wurde umgestaltet.
+  * Erneutes Einlesen der Eintragsliste und Vorschau\\ Die neue Tastenkombination Strg+Shift+F5 erzwingt ein erneutes Einlesen der Eintragsliste incl. kompletter Reinitialisierung der Vorschau.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Setzen des Cursors in den Editor\\ Ist eine Vorlage für das Beantworten von eMails eingestellt, so wurde der Cursor u.U. nicht in den Editor gesetzt.
+  * Mögliches Fehlverhalten bei der Einstellung „Rechtschreibprüfung vor dem Versand“\\ Ist der Schalter „Immer Rechtschreibprüfung vor Senden oder Speichern“ gesetzt, so konnte die eMail nicht versendet werden.
+  * Mögliches Fehlverhalten bei Ersetzungen mit Umlauten\\ Sind bei der Rechtschreibprüfung Ersetzungen mit Umlauten hinterlegt, so wurden diese Umlaute bei der Ersetzung im Editor u.U. falsch eingefügt.
+  * Einstellung „Zeichensatz“ im Editor ohne Funktion\\ Die Einstellung „Format/Zeichensatz“ im Editor war ohne Funktion
+  * Möglicher Absturz beim Start\\ Wenn beim Start des david Clients das Startbild und zusätzlich eine Meldung angezeigt wird, konnte es u.U. zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen in eMails mit Vorlage\\ Beim Einfügen von Textbausteinen wurde die eingestellte eMail Vorlage u.U. nicht ersetzt.
+  * Mögliches Fehlverhalten bei Adressauflösung\\ Bei der Eingabe der ersten Zeichen einer Adresse werden die zugehörigen Adressen normalerweise direkt vorgeschlagen. Das funktioniere in Einzelfällen u.U. nicht mehr, da die zugehörige Datenbank fehlerhaft sein konnte.
+  * Mögliches Fehlverhalten bei Einstellungen der Volltextsuche\\ Beim Aufruf der Volltextsuche Einstellungen konnte es zum Absturz des Classic Clients kommen.&nbsp;
+  * Mögliches Fehlverhalten beim Speichern von eMails als eml\\ Datei
+Beim Speichern von eMails als eml Datei konnte es zum Absturz kommen.
+  * Neuer Dateianhang im Editor u.U. doppelt vorhanden\\ Wird eine eMail mit einem Dateianhang geöffnet und die Datei wird an eine neue eMail angehängt, so wurde die Datei u.U. doppelt angehängt.
+  * Tastenkürzel Shift+Tab im Editor\\ Im Editor funktionierte das Tastenkürzel Shift+Tab für den Wechsel zurück in die Betreffzeile nicht.&nbsp;
+  * Mögliches Fehlverhalten beim Einfügen von Bildern\\ Beim Einfügen von Bildern in den Editor konnten diese u.U. nicht vergrößert werden.
+  * Mögliches Fehlverhalten bei der Synchronisation von Serienterminen\\ In einem Einzelfall wurde bei der ProviderSync ein Serientermin nicht korrekt synchronisiert.&nbsp;
+  * Mögliches Fehlverhalten beim Einfügen von Bildern und Texten\\ Wird aus einer eMail ein eingebettetes Bild zusammen mit Text kopiert und in eine neue eMail eingefügt, so funktionierte dies u.U. nicht korrekt.
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen im Format „Nur Text“\\ Wird ein Textbaustein im Format „Nur Text“ eingefügt, so wurden Formatierungen (z.B. Zeilenumbrüche) u.U. nicht übernommen.
+

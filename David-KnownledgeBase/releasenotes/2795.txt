@@ -1,0 +1,35 @@
+====== Version 2795 vom 15.04.2015 ======
+
+Release: 2015-04-15T14:19:04
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Wird eine eMail per POP3 abgeholt, so wurde sie u.U. nicht in den angegebenen Ziel-Ordner verteilt. Dies konnte in einem Einzelfall in Verbindung mit aktiviertem 2nd Scan auftreten.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Wird ein david Benutzer im david.Administrator gelöscht und man hatte zuvor eine Konversation mit diesem Benutzer im Chat, so wird für diesen Benutzer nun "Unbekannt" angezeigt.
+
+  * Das Design der Markierungen (z.B. in der Eintragsliste) wurde angepasst.
+
+  * Über den Button "Tobit.Software" bzw. "Feedback" rechts oben im Client Fenster kann nun ein Feedback an Tobit.Software geschrieben werden.
+
+  * Wenn man bei der hybrid mail Vorlage ("Formulare" im Client) den Betreff frei lässt, stand anschließend ein Dateipfad im Betreff Feld.
+
+  * Die Wörterliste wurde erweitert.
+  * Bei der Fehlermeldung "Objekte oder Text befinden sich innerhalb der Sperrflächen für die Freimachung" beim hybrid mail Versand wird der "Senden" Button nun deaktiviert, so dass die Ursache zunächst behoben werden muss.
+dvwin32.exe 12.00a (5505)
+
+  * Die Ermittlung der Sperrflächen beim hybrid mail Versand wurde optimiert. In Einzelfällen gab es zuvor die Fehlermeldung "Objekte oder Text befinden sich innerhalb der Sperrflächen für die Freimachung", obwohl dies nicht der Fall war.
+
+  * Hat eine signierte eMail Dateianhänge und viele Empfänger (mehr als 4000 Zeichen im Header), so dauerte das Öffnen durch den Client u.U. sehr lange.
+
+  * Die Kostenanzeige bei hybrid mail Aufträgen wurde überarbeitet und enthält nun auch den Hinweis "Brutto".
+
+

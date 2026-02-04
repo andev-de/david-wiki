@@ -1,0 +1,44 @@
+====== Version 2812 vom 25.06.2015 ======
+
+Release: 2015-06-25T15:57:07
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Beim Outlook Import Tool (ol2tas.exe) wurden Design Anpassungen an Windows 10 vorgenommen.
+  * Beim ersten Start des Clients unter Windows 10 wird in den Notifier Einstellungen der neue Schalter "Windows 10 Benachrichtigungen nutzen" gesetzt, so dass die Benachrichtigungen im Windows 10 "Info-Center" angezeigt werden.
+  * Beim Abwesenheits-Assistenten kann nun auch "Ganztägig" gewählt werden. Die Uhrzeit muss also nicht zwingend angegeben werden und die Variablen enthalten in dem Fall auch nur das Datum (%(autoreplyfrom) und %(autoreplyto))
+  * Wenn man bei den Nachrichtenoption für "Antwort an" Text mit mehr als 80 Zeichen eingibt, konnte es beim Versenden zum Absturz des Clients kommen.
+  * Die Favoritenleiste enthält nun einen Button mit der Suchfunktion (Tastenkombination: Shift+F3).
+  * In einem Einzelfall waren die Umlaute einer per Outlook-Import Tool (ol2tas.exe) importierten eMail falsch.
+  * In einem Einzelfall wurde der Inhalt einer empfangenen Plain Text eMail nicht angezeigt.
+  * Wird eine eMail nur an Cc Empfänger erstellt und im eMail Text wird ein abschließender david Befehl eingetragen, so wurde dieser u.U. anschließend durch das Einfügen der Verteilerliste nicht ausgewertet.
+  * Wird eine Grafik in eine eMail eingefügt, und die Quelldatei vor dem Versand umbenannt, gelöscht oder verschoben, so erfolgt nun ein Hinweis darauf dass die Grafik nicht mit versendet werden kann.
+  * Die Formatierungs Symbolleiste befindet sich im eMail-Editor nun oberhalb des Textfeldes.
+
+  * Unter "Einstellungen/Ansicht" stehen neue Farbschemen zur Auswahl.
+
+  * Soll eine Terminbestätigung oder -absage weitergeleitet werden, so enthält diese eMail nun auch den Inhalt der Besprechungsanfrage (bisher wurde lediglich der Termin als *.ics Datei angehängt). Außerdem konnte es zum Client Absturz kommen, wenn diese eMail geöffnet und dann im Menü "Datei/Weiterleiten" gewählt wurde.
+
+  * Die Auswahl der "Programmoberfläche" in den Einstellungen wurde entfernt.
+
+  * Bei den Client Verteilregeln kann nun als Dokumenttyp zusätzlich "hybrid mail" gewählt werden.
+
+  * Im Kontextmenu eines Kalendereintrages hat man nun zusätzlich zum Löschen des Termins die Möglichkeit den Termin abzusagen. In dem Fall wird der Termin dann in der Ansicht durchgestrichen dargestellt.
+
+  * Schickt man einem externen Teilnehmer einen Serientermin als Besprechungsanfrage, der externe Teilnehmer nimmt an. Geht man nun hin und löscht eine Instanz aus der Serie, erhält der eingeladene externe Teilnehmer eine Absage über die gesamte Serie statt nur über die eine Instanz.
+Das ist korrigiert.
+
+  * Bei externen Besprechungsanfragen wurden im Transit u.U. die Buttons "Annehmen" "Unter Vorbehalt" usw. angezeigt. Dies wurde behoben.
+
+  * Die Wörterliste wurde erweitert
+  * Beim Datenformat TMail wurden bislang bei der Adressauswahl nur Adressen mit eingetragener Voice Box Nummer angezeigt. Die Auswahl wurde jetzt erweitert auf die Mobil Funk Nummer sowie die privaten und geschäftlichen Telefonnummern.
+  * Wenn man im Anhangsbereich des Chat Fensters einen in der Zwischenablage befindlichen Anhang einfügen wollte, wurde dieser u.U. nicht übernommen.
+
+  * Im Client wird nun nicht mehr nur der persönliche Kalender auf neue Einträge überwacht sondern auch die verlinkten Kalender. Dadurch werden dann in der Infocenter Ansicht auch Termine angezeigt die dort von anderen angelegt werden.
+  * Wenn man im Client aus einer geöffneten, signierten eMail einen Anhang in ein Editor Fenster zieht, bekam der Anhang dort die aktuelle Zeit als Dateizeit.
+Das ist nun korrigiert.
+
+

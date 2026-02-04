@@ -1,0 +1,23 @@
+====== Version 3275 vom 20.11.2020 ======
+
+Release: 2020-11-20T00:00:00
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Optimierung beim Abholen von vielen POP3 Postfächer\\ Das Abholen von eMails bei der Verwendung vieler Postfächer wurde optimiert.\\ 
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Keine Verbindung möglich wenn IP in webbox.ini eingetragen\\ Wenn eine IP in der webbox.ini eingetragen ist, konnte keine Verbindung mehr hergestellt werden (per Vorgabe ist keine eingetragen).
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * Schaltfläche in Rollout Update Dialog u.U. ohne Funktion\\ Bei aktivierter Chromium Engine konnte es vorkommen dass die Schaltflächen in dem Dialog zur manuellen Installation des Rollouts nicht funktionierten.
+

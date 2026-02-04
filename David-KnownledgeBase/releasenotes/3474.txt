@@ -1,0 +1,50 @@
+====== Version 3474 vom 28.07.2022 ======
+
+Release: 2022-07-28T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Verhalten bei automatischer Weiterleitung einer Besprechungsanfrage\\ Ist eine automatische Weiterleiten Regel eingerichtet und man erhält eine Besprechungsanfrage, so wird diese Anfrage nun als ICS Datei an die neu erstelle Mail angehängt.
+  * Optimierung bei der Anzeige weitergeleiteter eMails\\ Ist der PostMan zum Weiterleiten von eMails aus fremden Anwendungen eingerichtet, so wurden die weitergeleiteten eMails anschließend im Ausgang im MIME Format gespeichert, waren also unleserlich. Das wurde nun optimiert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Empfang von Besprechungszusagen per POP3\\ Werden Zusagen zu Besprechungsanfragen per POP3 abgeholt, so wurden die Zusagen u.U. nicht beim jeweiligen Termin als Status eingetragen.
+  * Mögliche falsche Wiedervorlage bei Terminserien\\ Werden einzelne Elemente einer Terminserie verschoben, so konnte es in Einzelfällen vorkommen dass die jeweilige Wiedervorlage falsch angepasst wurde.
+  * Mögliches Fehlverhalten bei LDAP Verbindungen\\ Stellt der Anwender eine chayns Verbindung über das chayns ID Menü im david Client her oder trennt diese, konnte es zu leeren Einträgen bei den LDAP Verbindungen kommen.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei TLS Verbindung\\ In einem Einzelfall konnte es vorkommen dass keine TLS Verbindung aufgebaut werden konnte.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierung bei der Sortierung von Unterordnern\\ Die Sortierung von Unterordnern wurde optimiert, so dass ein Ordner mit einem „Ä“ nun nach einem mit „A“ folgt (zuvor wurde er nach einem Ordner mit „Z“ einsortiert), sowie Ordner mit Kleinbuchstaben vor Ordnern mit Großbuchstaben stehen.
+  * Optimierung beim Öffnen des Editors bei Verwendung mehrerer Monitore\\ Werden mehrere Monitore verwendet und der User öffnet den Editor für eine neue Nachricht, so wurde ein weiteres Editorfenster u.U. auf einem anderen Monitor geöffnet wenn das erste Fenster zuvor minimiert wurde.
+  * Unterstützung des „Snap Layouts“ unter Windows 11\\ Der david Modern Client unterstützt nun das Snap Layout Feature von Windows 11 (Mouse Over über den Maximieren Button bzw. Windows Taste + Z).
+  * Optimierung beim Scrollen mit dem Touchpad im Kalender\\ Die Geschwindigkeit des Scrollens mit dem Touchpad im Kalender wurde beim david Modern Client dem Mausrad angeglichen.
+  * Status bei Teilnehmern einer Besprechungsanfrage\\ Nimmt ein Anwender eine Besprechungsanfrage an, zu der mehrere Teilnehmer eingeladen wurden, so kann in seinem Kalender in der Übersicht der Teilnehmer nur seine eigene Antwort angezeigt werden. Bei den anderen Teilnehmern stand bisher „keine“, was missverstanden werden könnte. Daher wurde der Status beim david Modern Client nun in „unbekannt“ geändert.
+  * Auswahl als Standard Client\\ In den Windows Einstellungen unter Apps/Standard-Apps kann der Modern Client nun als Standard Client ausgewählt werden.
+  * Standard Buttons in der Favoritenleiste u.U. entfernt\\ Ist der Anwender per SSO Login angemeldet, so konnte es beim david Modern Client u.U. vorkommen, dass die Standard Buttons der Favoritenleiste (Eingang, Ausgang, Kalender, etc.) im laufenden Betrieb entfernt wurden und man den Client neu starten musste.
+  * Optimierung bei Unterscheidung zwischen Modern und Classic Client\\ Um den david Modern Client und david Classic Client besser unterscheiden zu können, wurde die Verknüpfung „david“ nach „david Classic Client“ umbenannt.
+
+==== Bugfix ====
+
+  * Fehlverhalten bei Badge Anzeige in Favoritenleiste\\ Beim david Modern Client&nbsp;war die Badge Anzeige in der Favoritenleiste auf 1.000 Einträge begrenzt.
+  * Mögliches Fehlverhalten bei der Anzeige von Plain Text eMails in der Vorschau\\ In einem Einzelfall konnte es bei der Anzeige von Plain Text eMails in der Vorschau zum Absturz kommen.
+
+
+  * Mögliches Fehlverhalten beim Klick auf eine eMail/einen Adresseintrag mit Benutzerbild\\ In einem Einzelfall konnte es beim Klick auf eine eMail oder einen Adresseintrag bei dem ein Benutzerbild angezeigt wird, zum Absturz kommen.
+
+
+  * Möglicher Absturz des Fax Viewers\\ Wird der 64 Bit david Client neu installiert, so konnte es vorkommen dass der Fax Viewer beim Öffnen von Faxen abstürzt.
+
+
+

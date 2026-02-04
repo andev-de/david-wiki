@@ -1,0 +1,24 @@
+====== Version 3697 vom 16.10.2024 ======
+
+Release: 2024-10-16T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Möglicher Absturz behoben\\ In einem Einzelfall konnte es zum Service Layer Absturz kommen, der nun behoben wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Sortierung von Wiedervorlagen in InfoCenter Ansicht\\ In der InfoCenter Ansicht des Team Clients werden Wiedervorlagen nun nicht mehr nach ihrem Erstelldatum, sondern nach dem Vorlagedatum einsortiert.
+  * Designanpassung (Hintergrundbild)\\ Im Team Client wird nun ein Hintergrundbild angezeigt, für das die Farbe frei gewählt werden kann (Einstellungen/Ansicht/Farbe wählen/Hintergrundbild anzeigen).
+  * Verhalten beim „als Gelesen markieren“ in Infocenter Ansicht\\ Beim Team Client werden „als gelesen markierte“ Einträge in der Infocenter Ansicht nun erst bei einem Selektionswechsel aus der Ansicht entfernt.
+  * Funktion „Antwortet erwartet“ bei Kommentaren\\ Wenn bereits ein Kommentar auf eine Nachricht, bei der eine Antwort erwartet wird, gemacht wurde, wird diese nun beim Team Client in der Infocenter Ansicht als beantwortet betrachtet.
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler bei geänderter Windows Schriftgröße\\ Beim David und Team Client konnte es zu Anzeigefehlern kommen (z.B. abgeschnittene Buttons), wenn die Windows Standardschriftgröße geändert wurde.
+

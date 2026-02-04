@@ -1,0 +1,53 @@
+====== Version 2895 vom 20.10.2016 ======
+
+Release: 2016-10-20T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Der Befehl @@Priorität funktionierte nicht mehr (die Kurzform war dagegen OK)
+  * Die StrongBox Infos im Security Report waren u.U. nicht korrekt (0 Ordner, 0 MB), wenn das Backup während der Erstellung des Reports noch läuft.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert.
+  * Die Funktion zum Import der Internet Explorer Favoriten wurde entfernt.
+  * Der "Tapps" Button in der Favoriten-Leiste wurde entfernt.
+  * Bei einem hybrid mail Auftrag kann nun per david Befehl der farbige Ausdruck vorgegeben werden:
+\\ @@FARBIG\\ @@COLORED
+\\ @@COLOURED
+
+  * Bei einem hybrid mail Auftrag kann nun per david Befehl der Versand als Einschreiben vorgegeben werden:
+
+@@EINSCHREIBEN\\ @@REGISTERED\\ Ohne Parameter oder @@Einschreiben 1@@ ergibt ein einfaches Einschreiben.
+
+Mit Parameter 3 (@@Einschreiben 3@@) ergibt ein Einschreiben mit Rückschein.
+
+  * Mit dem Client Setup wird das "Office Add-In for david®" installiert. In Word steht anschließend der Tab "david®" zur Verfügung mit den Optionen Brief, Serienbrief, Fax, Serienfax, Anhang.
+
+==== Bugfix ====
+
+  * Nach Installation des neuesten Windows 10 Update konnte es beim Betrieb des david Clients im Vollbild Modus zu Problemen führen, der david Client reagierte teilweise träge.
+
+  * Eine Programmdatei des david Clients (dvwinh.exe) wurde u.U. von Virenscannern als Virus erkannt.
+  * Ist das klassische Layout im david Client eingestellt und zusätzlich sind farbige Icons aktiviert, so wurden die chayns®ID Icons oben rechts im Hauptfenster nicht angezeigt.
+  * Ist der hybrid mail TLD nicht eingerichtet, so gibt es beim Versuch einen hybrid mail Auftrag zu versenden eine entsprechende Fehlermeldung - hier wurde jedoch u.U. ein falsche Hinweistext angezeigt.
+  * Sind unter Windows 7 größere Schriften eingestellt, so wurden im david Client an verschiedenen Stellen Texte u.U. zu klein dargestellt.
+  * Wird bei einer Nachricht über "Eigenschaften" der Dialog "Erweitert" geöffnet, so konnte es beim Schließen dieses Dialoges zum Absturz kommen.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Die Version der Desktop Protection for david® wurde aktualisiert, u.a. gab es Anpassungen an Windows 10. Zusätzlich kann in den Einstellungen festgelegt werden, welche Art von Warnungen (Priorität ) gemeldet werden sollen.&nbsp;Die älteren Betriebssysteme Windows XP und Server 2003 werden nicht mehr unterstützt, eine Neuinstallation ist hier nicht möglich. Ist eine ältere Version der Desktop Protection for david® auf diesen Betriebssystemen bereits installiert, so wird diese nicht aktualisiert - die bisherige Funktion bleibt also erhalten.
+
+===== Message Identification Services =====
+
+==== Feature ====
+
+  * Die Engine für die Message Identification Services wurde aktualisiert.
+

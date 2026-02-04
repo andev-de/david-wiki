@@ -1,0 +1,57 @@
+====== Version 3177 vom 07.05.2020 ======
+
+Release: 2020-05-07T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Übernahme von Nachrichten in Ablageordner\\ Während der Bereinigung (per Vorgabe Nachts um 03:00 Uhr) werden u.a. auch Nachrichten in Ablage-Ordner verschoben und deren Dateien zusammengefasst, sofern dies eingestellt ist. Wenn währenddessen diese Dateien durch Fremdanwendungen im Zugriff sind, so konnte dies in Einzelfällen dazu führen dass einzelne Nachrichten anschließend nicht mehr geöffnet werden konnten. Das wurde nun optimiert, so dass dies nicht mehr vorkommen kann.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Möglicher Absturz beim Start behoben\\ In Einzelfällen konnte es beim Start des PostMan zum Absturz kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Möglicher Absturz bei der Protokollierung fehlerhafter Anmeldeversuche\\ Bei der Protokollierung von CalDAV und CardDAV Zugriffen mit falschen Passwörtern konnte es zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Änderung des Absenders (ActiveSync)\\ Wird per ActiveSync eine neue eMail erstellt und hierbei per @@von Befehl die Absender-Adresse geändert, so konnte es zum Absturz der WebBox kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+<p></p>  * 64 Bit Client keine Beta Version mehr\\ Der 64 Bit Client befindet sich nun nicht mehr im Beta Stadium. Bei einer Neuinstallation auf einem 64 Bit System kann zwischen der 32 und 64 Bit Version gewählt werden, Vorgabe ist der 64 Bit Client.
+  * Animationseffekte beim 64 Bit Client\\ Beim 64 Bit Client funktionieren nun auch die Animationseffekte.
+<p></p>
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Terminserie mit Dauer „0 Minuten“\\ Soll eine Terminserie mit der Dauer "0 Minuten" erstellt werden, so konnte es zum Absturz des Clients kommen.
+  * Sortierung der Adressfelder im Tab „Alle Felder“\\ Die Sortierung der Adressfelder im Tab "Alle Felder" war nicht korrekt.
+  * Telefonie Funktion beim 64 Bit Client\\ Wird beim 64 Bit Client die Telefonie Funktion verwendet, so wurde u.U. nicht das richtige Eingabegerät eingestellt.
+  * Scannen beim 64 Bit Client\\ Wird der 64 Bit Client verwendet, so funktionierte die Scanner Funktion u.U. nicht.
+  * Möglicher Darstellungsfehler bei der Vergabe von Ordner-Berechtigungen\\ Beim Hinzufügen eines Anwenders für die Berechtigungen in einem Ordner ("Eigenschaften/Zugang/Berechtigungen") konnte es zu einem Darstellungsfehler kommen, so dass u.U. der falsche Anwender selektiert wurde.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Mehrere Einträge selektieren\\ Über das Eintragsmenü können nun mehrere Einträge selektiert und anschließend gelöscht, verschoben oder als gelesen/ungelesen markiert werden.
+  * Antworten auf Kommentare bei eMails\\ Enthält eine eMail Kommentare, so steht hier nun auch die "Antworten" Funktion im Menü zur Verfügung.
+  * Info „Benutzer schreibt gerade...“ bei Kommentaren in eMails\\ Schreibt ein Anwender gerade einen Kommentar zu einer eMail, so wird dies nun auch durch eine Info angezeigt.
+  * Push Benachrichtigung stumm schalten\\ Über das Kontextmenü eines Eintrags kann nun die Push Benachrichtigung für Kommentare zu dieser eMail „stumm“ geschaltet werden.
+  * VoiceMails abspielen\\ Empfangene VoiceMails können nun abgespielt werden.
+  * Entwürfe direkt im Bearbeiten Modus öffnen\\ eMails im Entwurfsordner werden nun direkt im Bearbeiten Modus geöffnet.
+  * Adressen anzeigen und bearbeiten\\ Adressen werden nun auch angezeigt und können bearbeitet werden.
+  * Einfaches Löschen von Nachrichten in mobiler Ansicht\\ In der mobile Ansicht können Nachrichten nun einfach per Wisch Geste ohne anschließende Nachfrage gelöscht werden.
+
+==== Bugfix ====
+
+  * Optimierung der Darstellung auf einem iPad im Querformat\\ Die Darstellung des smart clients auf einem iPad im Querformat wurde optimiert.
+  * Diverse Optimierungen\\ Diverse Optimierungen, z.B. Offline Anzeige beim Start der App, Verhalten nach Trennen der Verbindung. 
+

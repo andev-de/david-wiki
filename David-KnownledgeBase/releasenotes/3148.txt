@@ -1,0 +1,61 @@
+====== Version 3148 vom 04.02.2020 ======
+
+Release: 2020-02-04T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * eMail mit neuem LiveComment u.U. nicht nach oben verschoben\\ Klickt der Teilnehmer einer eMail in einem LiveComment auf "Stimme zu" und schreibt direkt anschließend einen Kommentar, so wurde diese eMail bei den übrigen Teilnehmern in deren Eintragsliste u.U. nicht nach oben verschoben.
+  * Verteilregel bei eMails mit Sonderzeichen und Umlauten im Betreff\\ Eine Client-Verteilregel wirkte u.U. nicht, wenn die zu verteilende eMail Sonderzeichen und Umlaute im Betreff enthält.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Besprechungsanfragen per ActiveSync u.U. nicht versendet\\ Es konnte vorkommen, dass per ActiveSync erstellte Besprechungsanfragen nicht an die Teilnehmer versendet wurden. In diesem Fall trat es auf verschiedenen Android Geräten auf.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Größe von Bildern in eMails verändern\\ Bilder in eMails können nun proportional oder unproportional in der Größe verändert werden, je nachdem ob man die Größe an den Eckpunkten oder an den Seiten verändert.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Entfernung verschiedener inzwischen obsoleter Funktionen\\ Festplattenkapazität prüfen, ActiveX/JavaApplets in der Vorschau ausführen, Internet-Verbindungsaufbau während Vorschau erlauben
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei HTML eMail Erstellung\\ Beim Erstellen einer HTML eMail konnte es vorkommen, dass in der Nachricht das abschließende HTML Tag nicht gesetzt wurde.
+  * Mögliches Fehlverhalten bei Verbindung PostgreSQL Datenbank\\ Soll bei einem Adressordner eine Verbindung zu einer PostgreSQL Datenbank hergestellt werden, so funktionierte dies u.U. nicht und es konnte zum Absturz des Clients kommen.
+  * Personen in LiveComments oder Chats benennen\\ In LiveComments oder Chats mit mehreren Teilnehmern kann eine bestimmte Person durch die Eingabe eines @ Zeichens ausgewählt und direkt benannt werden. Stand im Text als letztes Zeichen eine Klammer, so funktionierte dies u.U. nicht.
+  * Möglicher Absturz in Jahresübersicht des Kalenders\\ Steht man in der Jahresübersicht des Kalenders konnte es zum Absturz des Clients kommen, wenn zeitgleich an einem anderen PC Änderungen an einem Serientermin in diesem Kalender vorgenommen wurden.
+  * Erstellen von eMails mit Anhängen u.U. verzögert\\ Wird eine neue eMail mit größeren Anhängen erstellt, so dauerte der Prozess u.U. länger wenn in der eMail Variablen verwendet werden.
+  * Verwendung von Stempeln in Faxen\\ In Einzelfällen konnte es vorkommen, dass im Fax Viewer eigene Stempel nicht mehr verwendet werden konnten.
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Möglicher Fehler beim Versand bei Einschreiben mit Rückschein\\ Wird ein Einschreiben mit Rückschein erstellt, so konnte es zu einem Fehler beim Versand kommen, wenn die hierbei eingetragene Adresse Umlaute enthält.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Bugfix ====
+
+  * Auswahl der Einstellung um Port als Sende Service anzubieten\\ Im david Administrator konnte der Schalter um den Port als Sende Service anzubieten nicht aktiviert werden.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Optimierungen und Performanceverbesserungen\\ Diverse Optimierungen und Performanceverbesserungen, z.B. Portcheck beim Start des Dienstes.
+  * Optimierung bei der Übertragung von Profilbildern\\ Bilder können nach Bedarf in unterschiedlichen Größen angefragt werden.
+  * Funktionalität für Wiedervorlage und Verteilen implementiert\\ Nachrichten können nun auf Wiedervorlage gelegt sowie manuell an andere david Benutzer verteilt werden.
+  * Protokolldateien zur Analyse übertragen lassen\\ In der WebAPI Konfiguration gibt es nun den neuen Schalter "Protokoll senden", mit dem die aktuellen Protokolldateien zur Analyse automatisch an den Technischen Support übertragen werden können.
+  * Systemmeldungen im Ereignisordner\\ Systemmeldungen der WebAPI werden nun im Ereignisordner eingetragen. 
+  * Optimierungen beim Versand an andere eMail Clients\\ Es wurden Optimierungen zur Anzeige der eMails bei anderen eMail Clients vorgenommen.
+  * Automatische Aktualisierung der Empfangszeit\\ Ist der smart client geöffnet so werden die angezeigten Empfangszeiten der Nachrichten nun automatisch aktualisiert (z.B. „vor 5 Min.“).
+  * Weitere Vorlagen zur Auswahl\\ Beim Erstellen einer eMail stehen nun zusätzliche Vorlagen zur Auswahl.
+  * Kontextmenüs als eigener Dialog\\ Kontextmenüs werden nun als eigener Dialog angezeigt.
+

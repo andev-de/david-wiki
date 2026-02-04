@@ -1,0 +1,90 @@
+====== Version 3254 vom 15.09.2020 ======
+
+Release: 2020-09-15T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.100. 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Beenden des Service Layers\\ In Einzelfällen konnte es beim Beenden des Service Layers zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Änderung an StrongBox Job\\ Wird an einem StrongBox Job eine Änderung vorgenommen während das Backup läuft, so konnte es zum Absturz des Service Layers kommen.
+  * Mögliches Fehlverhalten bei gegenseitiger Kopierregel\\ Richten zwei Anwender eine gegenseitige Kopierregel für neue Nachrichten ein und zusätzlich einen weiteren Ordner, in den die eMails kopiert werden sollen, so erhielten die Anwender neue Nachrichten u.U. mehrfach.
+  * Mögliches Fehlverhalten beim Verschieben von eMails einer Rundsendung\\ Werden einzelne eMails einer Rundsendung aus dem Ausgang in einen anderen Ordner verschoben, so konnte es zu einem Fehlverhalten kommen, wenn einzelne Dateien dieser eMails durch eine Fremdapplikation (z.B. ein Virenscanner) gesperrt sind.
+  * Mögliches Fehlverhalten bei eMail Empfang der PostMan\\ In einem Einzelfall konnte es beim eMail Empfang per PostMan zum Absturz des Service Layers kommen.
+  * Mögliches Fehlverhalten bei Notifizierung der david Clients\\ In einem Einzelfall konnte es bei der Notifizierung der david Clients (z.B. über neuen Nachrichten) zum Absturz des Service Layers kommen.
+  * Mögliches Fehlverhalten in Verbindung mit WebAPI Dienst\\ In Verbindung mit dem WebAPI Dienst konnte es in einem Einzelfall zum Absturz des Service Layers kommen.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMail Empfang mit Dateianhang\\ In einem Einzelfall konnte es zu einem Fehlverhalten beim eMail Empfang mit Dateianhang kommen - der Dateiname war in diesem Fall fehlerhaft und er ließ sich nicht öffnen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMail Empfang mit Dateianhang\\ In einem Einzelfall konnte es zu einem Fehlverhalten beim eMail Empfang mit Dateianhang kommen - der Dateiname war in diesem Fall fehlerhaft und er ließ sich nicht öffnen.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Sicherheitsoptimierung\\ Für HTTP wurde die OPTIONS Methode deaktiviert und wird ausschließlich für Protokolle benutzt, die diese benötigen.
+  * Nutzung aller Prozessoren\\ Die WebBox nutzt nun alle Prozessoren, bisher wurde nur einer verwendet.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei geänderter Standard Vorlage\\ In einem Einzelfall konnte es zum Absturz der WebBox kommen, wenn per david Client Web eine neue Nachricht erstellt wird und die Standard Vorlage geändert wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Zusätzliche Farbe „weiß" als Kalenderhintergrund\\ In den Einstellungen des Kalenders und bei den Ordner-Eigenschaften des Kalenders steht nun zusätzlich die Hintergrundfarbe "weiß" zur Auswahl.
+  * Kennzeichnung signierter eMails\\ Ist eine empfangene eMail digital signiert, so wird dies nun auch in der Ansicht "Vorschau neben den Nachrichten" in der Eintragsliste durch ein entsprechendes Symbol gekennzeichnet.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Kennzeichnung des Wochenendes in 7 Tage Kalendernansicht\\ Zur besseren Unterscheidung ist in der 7 Tage Kalenderansicht das Wochenende nun farblich von den Werktagen abgesetzt.
+  * Weitere Optimierungen bei Verwendung des Chromium Editors\\ Der Chromium Editor (Beta) enthält weitere Optimierungen und Fehlerkorrekturen.
+
+==== Bugfix ====
+
+  * Datum einer wiedervorgelegten Nachricht\\ Wird eine Nachricht auf Wiedervorlage gelegt und nach erfolgter Wiedervorlage wird dieser erneut auf Wiedervorlage gelegt, so entsprach das Datum anschließend nicht mehr dem Originaldatum.
+  * Mögliches Fehlverhalten bei Vorlagen mit eingefügter Grafik (Chromium Engine)\\ Wird die Chromium Engine verwendet, so konnte es zu einem Fehlverhalten kommen, wenn die verwendete Vorlage eine Grafik enthält und man eine empfangene eMail mit einer Vorlage beantwortet oder weiterleitet, die ebenfalls eine Grafik enthält.
+  * Möglicher Anzeigefehler bei Verwendung von zwei Monitoren\\ Ist ein zweiter Monitor abgeschlossen, so konnte es zu einem Anzeigefehler kommen, wenn der david Client im Vollbild Modus verwendet wird, es waren dann einzelne Pixel auf dem zweiten Monitor zu sehen.
+  * Keine Adressbuchkategorien bei internen Adressen\\ Bei der Auswahl einer internen Adresse standen fälschlicherweise auch die Adressbuchkategorien zur Auswahl.
+  * Neue eMail ohne Verwendung der Vorlage\\ Wird beim Erstellen einer neuen Nachricht der Button "Neu" zusammen mit der Shift Taste gedrückt, so wird die eingestellte Vorlage nicht geladen - das funktionierte aktuell nicht mehr, sie wurde dennoch geladen. 
+  * Ausdruck von eMails als eml Datei mit eingefügten Bildern\\ Liegt eine eMail mit eingefügten Bildern als eml Datei vor und soll gedruckt werden, so wurde das Bild u.U. nicht mit gedruckt.
+  * Mögliches Fehlverhalten beim Kalenderausdruck als PDF\\ Beim Kalenderausdruck als PDF konnte es zum Absturz kommen.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Anpassungen an macOS 11\\ Es wurden Anpassungen für das macOS 11 vorgenommen.
+  * Optimierung bei der chayns Anmeldung\\ Bei der chayns Anmeldung entspricht die Anzahl der Login Methoden nun der des david Client PC. Außerdem bleibt das Login nun bestehen, auch wenn der Client mehrere Tage nicht verwendet wird.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz\\ Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david) wurde aktualisiert auf die Version 6.100. 
+  * Version aktualisiert\\ Die Desktop Protection for david, die für Virenschutz auf den Arbeitsplatzrechnern im Netzwerk sorgt, wurde aktualisiert. Unter anderem enthält die neue Version Anpassungen für den Einsatz mit dem neuesten Windows 10 Update (2004). Während der Aktualisierung muss der PC neu gestartet werden, es erfolgt nach dem automatischen Laden des Updates durch den neuen david Client ein entsprechender Hinweis.
+
+=====  ISDN TLD =====
+
+==== Bugfix ====
+
+  * Mögliche Fehlermeldungen\\ In Einzelfällen konnte es bei der Initialisierung des TLDs zu vielen Fehlermeldungen kommen.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Faxempfang\\ In einem Einzelfall konnte es beim Faxempfang passieren, dass das empfangene Fax nicht gespeichert wurde.
+

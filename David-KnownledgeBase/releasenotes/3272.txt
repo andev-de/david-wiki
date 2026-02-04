@@ -1,0 +1,98 @@
+====== Version 3272 vom 05.11.2020 ======
+
+Release: 2020-11-05T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Abholen der Virensignaturen\\ Der Download neuer Virensignaturen erfolgt nun nicht mehr über den Grabbing Server, sondern über den Service Layer.
+
+==== Bugfix ====
+
+  * Zusätzliche Ordner erstellt\\ In Einzelfällen konnte es vorkommen, dass nach dem Update einige zusätzliche Ordner unterhalb von „Benutzer„ erstellt wurden.
+  * Mögliche dauerhafte hohe Auslastung\\ In Einzelfällen konnte es bei der Verwendung des smart clients zu einer dauerhaften hohen Auslastung des Service Layers kommen.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1h.
+  * Nutzung aller Prozessoren\\ Der PostMan nutzt nun alle Prozessoren, bisher wurde nur einer verwendet.
+
+==== Bugfix ====
+
+  * Erkennung des Betreffs bei nicht erlaubten Adressen\\ Ist im david Administrator unter PostMan/Datenbanken/Nicht erlaubte Adressen (Spam-Filter) ein Eintrag vorhanden, der eine eMail mit einem bestimmten Betreff als Spam behandeln soll, so wurde dies u.U. nicht erkannt wenn der Betreff im SMTP Header UTF8 codiert ist.
+  * Mögliches Fehlverhalten bei IP Übertragung per SLS\\ Sind die "Server Locator Services" aktiviert, so funktionierte die IP Übertragung nicht, wenn im PostMan "TLS bei Versand verwenden: Erzwingen" eingestellt ist.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Erkennung des Betreffs bei nicht erlaubten Adressen\\ Ist im david Administrator unter PostMan/Datenbanken/Nicht erlaubte Adressen (Spam-Filter) ein Eintrag vorhanden, der eine eMail mit einem bestimmten Betreff als Spam behandeln soll, so wurde dies u.U. nicht erkannt wenn der Betreff im SMTP Header UTF8 codiert ist.
+
+
+  * Mögliches Fehlverhalten bei POP3 Abruf\\ In einem Einzelfall führte ein Problem beim Abholen von eMails aus einem POP3 Postfach dazu, dass es auch beim Abholen von eMails aus weiteren Postfächern zu Verzögerungen kam.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Optimierung bei eMail Abfrage über eine TLS Verbindung\\ Wenn eine eMail Abfrage per TLS nicht korrekt zustande kommt, konnte es u.U. passieren, dass auch weitere Abfragen zu dieser Zeit nicht funktionierten. Das wurde nun optimiert.
+  * Optimierung bei IMAP Abfragen\\ Die eMail Abfrage per IMAP wurde optimiert.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Neue Einstellung zur Behandlung von Besprechungsanfragen per ActiveSync\\ In den ActiveSync Einstellungen des david Anwenders (david Client und david Administrator) gibt es die neue Einstellung "Besprechungsanfragen nur in persönlichen Ordnern berücksichtigen". Ist der Schalter deaktiviert, so werden neue Besprechungsanfragen auch in anderen Ordnern (z.B. ein Gruppen Ordner) als solche behandelt.
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1h.
+
+==== Bugfix ====
+
+  * Möglicher erhöhter Speicherverbrauch\\ Bei Verwendung der WebBox konnte es nach längerem Betrieb zu einem erhöhten Arbeitsspeicherverbrauch kommen.
+  * Mögliches Fehlverhalten bei Verwendung des david Client Web\\ Wird im david Client Web in den Ausgang gewechselt und dort liegen Einträge des VoIP2 TLDs, so konnte es zum Absturz der WebBox kommen.
+  * Mögliches Fehlverhalten bei Verwendung der david iOS App\\ Wird die david iOS App verwendet, so konnte es bei der Erstellung von neuen Nachrichten zu einer falschen Darstellung der eMails kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Prüfung der „Standard-Apps“ Einstellungen beim Programmstart\\ Die Prüfung der "Standard-Apps" Einstellungen beim Programmstart wurde optimiert. Sie enthält neben der Prüfung ob der Client als Standardmanager für eMail Funktionen registriert ist nun auch ob das "MailTo" Protokoll dem david Client zugewiesen ist.
+  * Weitere Optimierungen bei Verwendung des Chromium Editors\\ Der Chromium Editor (Beta) enthält weitere Optimierungen und Fehlerkorrekturen.
+  * HTML-Inhalte mit Chromium darstellen\\ Der Schalter "Einstellungen/Ansicht/HTML-Inhalte mit Chromium darstellen" ist nun per Vorgabe aktiviert und betrifft z.B. die Vorschau und die ReadOnly Ansicht des Editors. Unterhalb dieser Einstellung gibt es nun eine separate Einstellmöglichkeit zur Verwendung der Chromium Engine im david Editor (Beta), die per Vorgabe nicht aktiviert ist.
+  * Kommentare und TalkAbouts unten anordnen\\ Durch den neuen Schalter "Einstellungen/Ansicht/Vorschau/Kommentare/TalkAbouts unten anordnen" können bei der Ansicht "Vorschau neben den Nachrichten" die Kommentare und Talkabouts unterhalb der Vorschau angezeigt werden.
+  * Benutzerfoto per Variable einfügen\\ 
+Im Editor kann nun unter "Vaiablen/Benutzerdaten" auch das eigene Benutzerfoto eingefügt weden, sofern es beim Adresseintrag hinterlegt ist.
+  * Eigenen Titel bei Adressen entfernen\\ Wurde in einer Adresse im Feld "Titel" ein eigener Eintrag hinzugefügt, so kann dieser in der geöffneten Auswahl der Titel mit der ENTF Taste wieder gelöscht werden.
+  * „Stimme zu“ Schaltfläche im Chat nun oberhalb des EingabefeldesIm Chat ist die "Stimme zu" Schaltfläche nun einheitlich oberhalb des Eingabefeldes positioniert. Im separaten Chat Fenster gab es sie bisher nicht.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.\\ 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Installation einer digitalen Signatur\\ Bei der 32 Bit Version des david Clients konnte es bei der Installation einer digitalen Signatur zum Absturz kommen.
+  * Mögliches Fehlverhalten bei der Adressauswahl zur Faxerstellung\\ Wird bei der Faxerstellung in der Adressauswahl ein ganzer Adrressordner übernommen, so konnte es zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Zugriff auf die Projektplanung\\ In einem Einzelfall konnte es beim Zugriff auf die Projektplanung zum Absturz des Clients kommen.
+  * Möglicher Anzeigefehler des Editors im Vollbild Modus\\ Wird der Editor im Vollbildmodus verwendet, so wurden am linken Rand u.U. Teile vom eingegebenen Text nicht angezeigt.
+  * Datum einer wiedervorgelegten Nachricht\\ 
+Wird eine Nachricht auf Wiedervorlage gelegt und nach erfolgter Wiedervorlage wird diese erneut auf Wiedervorlage gelegt (über die erstellte Verknüpfung der Wiedervorlage in der Favoritenleiste), so entsprach das Datum anschließend nicht mehr dem Originaldatum.
+  * Mögliches Fehlverhalten bei Grafiken in Textbausteinen\\ Wird im Editor die Chromium Engine verwendet, so konnte es beim Einfügen von Textbausteinen mit Grafiken vorkommen, dass die Grafik nicht übernommen wurde.
+  * Selektion bei Verwendung der Chromium Engine\\ Bei Verwendung der Chromium Engine funktioniert nun die Selektion von Wörtern und Absätzen per Doppel- bzw. Dreifachklick korrekt.
+  * Mögliches Fehlverhalten beim Weiterleiten von eMails mit eingefügten Bildern\\ In einem Einzelfall wurden beim Weiterleiten einer eMail mit eingefügten Bildern diese nicht mit versendet.
+  * Automatisches Einblenden der Windows Taskleiste\\ Ist die Windows Taskleiste ausgeblendet, so wurde sie nicht wieder automatisch eingeblendet, wenn der david Client im Vollbild Modus verwendet wird.
+  * Mögliches Fehlverhalten bei Plain Text eMails mit Zeilenumbrüchen\\ In einem Einzelfall wurden Zeilenumbrüche in einer Plain Text eMail nicht angezeigt.
+  * Optimierung der Funktion „Senden an“ (MAPI)Die Funktion "Senden an" wurde optimiert, in einem Einzefall konnte die zu sendende Datei nicht an den Client übergeben werden.\\ 
+
+=====  VoIP2 TLD =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Rufnummern mit Klammern\\ Enthält eine ausgewählte Faxnummer Klammern, so konnte das Fax u.U. nicht versendet werden.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Mehrere Einträge selektieren\\ Werden mehrere Einträge selektiert, so funktioniert die anschließende Aktion u.U. nicht korrekt (löschen, verschieben, gelesen/ungelesen).
+

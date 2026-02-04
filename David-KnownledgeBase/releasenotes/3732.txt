@@ -1,0 +1,11 @@
+====== Version 3732 vom 13.01.2025 ======
+
+Release: 2025-01-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Die neuen Release Notes der aktuellen Rollouts befinden sich ab sofort unter <a editor-url="https://david.tobit.software/releasenotes" href="javascript:void(0);">https://david.tobit.software/releasenotes</a>
+

@@ -1,0 +1,23 @@
+====== Version 3066 vom 21.06.2019 ======
+
+Release: 2019-06-21T00:00:00
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Korrektur bei POP3-Abruf mit Einstellung „Kopie aller Nachrichten auf dem Server belassen“\\ Bei Betrieb des david Grabbing Server mit der POP3 Einstellung „Kopie aller Nachrichten auf dem Server belassen“ konnten u. U. die erforderlichen Datenbankdateien  (*.mldb) nicht korrekt erstellt und daher vorhandene eMails nicht abgerufen werden. Dieses Verhalten wurde korrigiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Angabe des kompletten Namens in Kontextmenüs von LiveComments\\ In den Kontextmenü-Optionen von LiveComments, mit denen man z.B. direkt eine eMail, Besprechungsanfrage etc. an den Verfasser erstellen kann, wird nun immer der vollständige Name inklusive Vor- und Zuname der betreffenden Person angegeben, nicht nur der Vorname.
+
+
+==== Bugfix ====
+
+  * Optimierung bei Anzeige von in eMails eingebetteten Grafiken\\ Bei der Darstellung von eMails mit eingebetteten Bildern (Inline Grafiken) konnte es u.U. zum Absturz des david Client kommen. Dieses Verhalten wurde korrigiert.
+
+

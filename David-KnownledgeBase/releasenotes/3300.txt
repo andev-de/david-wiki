@@ -1,0 +1,109 @@
+====== Version 3300 vom 13.01.2021 ======
+
+Release: 2021-01-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Anmeldung per Single Sign On via chayns\\ Ist für den Anwender im david Client bzw. im david Administrator eine chayns Verbindung eingerichtet, so kann die Anmeldung des david Clients (Windows) am david Server nun auch per „SSO via chayns“ vorgenommen werden. Hierzu steht unter „Netzwerk/david Server“ der neue Tab „Single Sign On“ zur Verfügung. Im david Administrator gibt es außerdem unter „System/Optionen“ eine neue Einstellung um dies für alle Anwender zu erzwingen.
+  * Verzögerter Download des aktuellen Rollouts\\ Im david Administrator kann nun unter "System/Updates" ein verzögerter Download des aktuellen Rollout eingestellt werden (z.B. 3 Tage, eine Woche). Der Download erfolgt somit entsprechend später nach der Freigabe.
+  * Erstellen von Debug Dateien zur Problemanalyse\\ Sollten Probleme beim Service Layer auftreten, kann nun eine Debug Datei erstellt werden, die wichtige Informationen zur Laufzeit enthält. Hierzu gibt es in der Textdatei \david\code\david.ini den neuen Parameter "Debugfile=1". Nach Aktivierung des Parameters und Neustart des Dienstes wird im gleichen Verzeichnis die Datei sl-debug.log erstellt.
+  * Sicherung der Systemdatei david.dat\\ Beim Speichern von Systemeinstellungen im david Administrator wird nun auch immer eine Kopie der david.dat als daviddat.bak angelegt, die den gleichen Inhalt hat. Sollte die david.dat beim Laden oder Zugriff darauf nicht vorhanden sein, wird die daviddat.bak zur david.dat kopiert und verwendet.
+
+==== Bugfix ====
+
+  * Anzeige von empfangenen Faxen beim Speichern als TIF Datei u.U. fehlerhaft\\ Werden empfangene Faxe als TIF Datei gespeichert, so konnte es vorkommen dass einzelne Seiten fehlerhaft angezeigt werden.
+  * Ausdruck von Faxen mit Seitenanzahl „0“\\ Kann ein Fax aufgrund von Übertragungsfehlern nicht versendet werden und hat als Info „Seitenanzahl“ 0, so konnte es nicht über den Service Layer ausgedruckt werden.
+  * Info zu einer verteilten Nachricht u.U. überschrieben\\  Verteilt man eine Nachricht, wird hierzu eine Info in dem Tab „Antwort/Weiterleitung“ aufgenommen. Wird die verteilte Nachricht anschließend verschoben, so wurde die vorherige Info durch diese Aktion überschrieben.
+  * Mögliches Fehlverhalten beim Versand von HTML eMails\\ Beim Versand von eMails mit HTML Inhalt konnte es unter seltenen Umständen vorkommen, dass der HTML Inhalt durch beliebigen binären Inhalt ersetzt wurde.
+  * Dateien von Nachrichten u.U. gelöscht beim Verschieben während der Bereinigung\\ Wird vom Anwender eine Nachricht verschoben, während die Bereinigung läuft (per Vorgabe Nachts um 03:00 Uhr), so wurden die Dateien der Nachricht u.U. gelöscht.
+  * Optimierungen beim Verschieben von Nachrichten\\ Es wurden Optimierungen beim Verschieben von Nachrichten vorgenommen, wenn die Nachricht nicht im Ziel-Ordner eingetragen werden kann.
+  * Mögliches Fehlverhalten beim Kopieren oder Verschieben von Ordnern\\ Sollte die Systemdatei „archive.dir“ in einem Ordner fehlerhaft sein, so konnte es beim Verschieben oder Kopieren von anderen Ordnern in diesen Ordner vorkommen, dass falsche Inhalte angezeigt werden.
+  * Empfangene eMails liegen in der Archive Root\\ Es konnte vereinzelt vorkommen, dass empfangene eMails nicht korrekt verteilt werden, sondern in der Archive Root liegen.
+  * Dateien bei der Datenbereinigung u.U. gelöscht\\ Dateien von Nachrichten konnten bei der Datenbereinigung u.U. gelöscht werden, wenn die Systemdatei archive.dat in einem Ordner nicht gelesen oder die Datei archive.ref nicht geschrieben werden kann.
+  * Mögliches Fehlverhalten beim Import empfangener eMails\\ Werden eMails per POP3 mit dem Grabbing Server abgeholt, so konnte es in Einzelfällen vorkommen, dass die Dateien empfangener eMails im Verzeichnis \david\import\system liegen bleiben.\\ 
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Fehlermeldung wenn TCP Port 5555 nicht verfügbar\\ Sind die Message Identification Services eingerichtet, der TCP Port 55555 ausgehend aber nicht verfügbar, so gibt es beim Start des PostMan nun eine entsprechende Fehlermeldung im david Ereignis Ordner.
+
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Fehlermeldung wenn TCP Port 5555 nicht verfügbar\\ Sind die Message Identification Services eingerichtet, der TCP Port 55555 ausgehend aber nicht verfügbar, so gibt es beim Start des Grabbing Servers nun eine entsprechende Fehlermeldung im david Ereignis Ordner.
+
+
+
+==== Bugfix ====
+
+  * eMails u.U. nicht mehr abgeholt\\ Es konnte u.U. vorkommen dass per Grabbing Server keine eMails mehr abgeholt wurden und der Dienst dazu neu gestartet werden musste.
+  * eMails werden u.U. mehrfach abgeholt\\ Es konnte in Einzelfällen vorkommen dass eMails mehrfach abgeholt werden.
+
+ 
+  * Mögliches Fehlverhalten nach Server Neustart\\ In einem Einzelfall konnte es vorkommen, dass nach einem Server Neustart zunächst keine eMails per POP3 abgeholt wurden und hierzu der Grabbing Server neu gestartet werden musste. Das ist nun behoben.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim IMAP Zugriff und Umlauten in Passwort oder Username\\ In Einzelfällen konnte es Probleme beim IMAP Zugriff geben, wenn das Passwort oder der Username Umlaute enthält.
+  * Optimierung beim IMAP Zugriff\\ Es konnte in Einzelfällen vorkommen, dass beim IMAP Zugriff die Verbindung in einen Timeout lief, wenn die Gegenstelle länger für die Kommandos benötigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Einstellung um TAPI Protokolleinträge im Ausgang zu unterbinden\\ Es gibt nun einen neuen Schalter in den TAPI Einstellungen um die Protokollierung im Ausgang zu unterbinden.
+  * Anmeldung per Single Sign On via chayns\\ Ist für den Anwender im david Client bzw. im david Administrator eine chayns Verbindung eingerichtet, so kann die Anmeldung des david Clients (Windows) am david Server nun auch per „SSO via chayns“ vorgenommen werden. Hierzu steht unter „Netzwerk/david Server“ der neue Tab „Single Sign On“ zur Verfügung. Im david Administrator gibt es außerdem unter „System/Optionen“ eine neue Einstellung um dies für alle Anwender zu erzwingen.
+  * Anzeige der chayns Verbindungen\\ Im chayns Menü werden nun alle Server angezeigt, mit denen der Anwender verbunden ist. Hierüber kann auch eine Verbindung getrennt werden, wenn der Server nicht mehr existiert und die Verbindung daher nicht am Server selbst getrennt werden kann.
+  * Verknüpfungen zu Dateien und Ordnern in eMails erstellen\\ Bei Verwendung der Chromium Engine ist es nun möglich in einer neuen eMail Verknüpfungen zu Dateien und Ordnern per Drag &amp; Drop und gleichzeitiger Betätigung der Strg+Shift Tasten zu erstellen.
+  * Kontextmenü in eMail Vorschau\\ Wird die Chromium Engine verwendet, so wurde hier das Kontextmenü in der Vorschau von eMails angepasst und enthält nun z.B. auch den Menüpunkt "Verknüpfung kopieren".
+  * eMail als PDF speichern\\ Bei Verwendung der Chromium Engine kann eine geöffnete eMail in der "Nur lesen" Ansicht über "Speichern unter" nun auch als PDF gespeichert werden.
+  * Menü für Einstellungen der Chromium Engine\\ Für die Einstellungen zur Verwendung der Chromium Engine gibt es nun das eigene Menü "Global/Chromium". Hier kann nun auch eingestellt werden, bei welcher Größe der Cache gelöscht werden soll.
+  * Keine Benachrichtigung bei neuen Intercom Nachrichten\\ Wird bei einer Intercom Kommunikation diese auf "Stumm" geschaltet, so erfolgt in diesem Fall nun auch keine Benachrichtigung im david Client.
+  * Optimierung beim Löschen von Adressen aus einer geöffneten eMail\\ Wird aus einer geöffneten eMail heraus die zugehörige Adresse geöffnet und anschließend gelöscht, so wird dadurch nun nicht mehr in den Adressordner gewechselt, sondern man bleibt in der aktuellen Eintragsliste.
+  * Verwendeter Browser in Navigations-Symbolleiste\\ Ist in den Einstellungen des david Clients die Verwendung der Chromium Engine aktiviert, so wird bei der Eingabe einer URL in der Navigations-Symbolleiste nun der Chromium Browser verwendet.
+  * Verzögerte Benachrichtigung über neue Kommentare einstellbar\\ Der Anwender wird über neue Kommentare in eMails üblicherwiese direkt benachrichtigt. Über die neue Einstellung „Echtzeit“ können auf Wunsch neu eintreffende Kommentare um die hier eingestellte Zeitspanne verzögert angezeigt werden, um eine ungestörte Bearbeitungszeit zu ermöglichen.  
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Ordnerverknüpfung bei RSS Feeds nicht zu öffnen\\ 
+Enthält ein RSS Feed eine eMail mit einer Ordnerverknüpfung, so konnte dieser Ordner durch einen Klick nicht geöffnet werden.
+  * Möglicher Absturz beim Ausdruck der Eintragsliste an einen PDF Drucker\\ Beim Ausdruck der Eintragsliste an einen PDF Drucker konnte es u.U. zum Absturz kommen.
+  * Verschieben von eMails trotz „manuellem Löschverbot“\\ Ist in einem Ordner der Schalter „Manuelles Löschverbot“ gesetzt, so können eMails weder verschoben noch gelöscht werden. Wenn man jedoch in der InfoCenter Ansicht steht, konnten eMails per Drag &amp; Drop dennoch verschoben werden.
+  * Erstellen von Einladungen zu Videkonferenzen\\ Bei der Erstellung einer Einladung zu einer Videokonferenz funktionierte die  Autovervollständigung der Adresseneingabe u.U. nicht, wenn keine dynamischen Teams vorhanden sind.
+  * eMail nach Weiterleitung u.U. leer\\ Enthält eine eMail @ @ Zeichen im Quelltext, so wurde nach dem Weiterleiten dieser eMail der Inhalt u.U. nicht angezeigt.&nbsp;
+  * Mögliches Fehlverhalten bei Suche in einem sehr umfangreichen Chat\\ Wird in einem sehr umfangreichen Chat gesucht, so konnte es dabei vorkommen dass der Client „hängt“.
+  * Kopieren aus Tab „Zusatzinfos“ bei Verwendung der Chromium Engine\\ Wird die Chromium Engine verwendet, so funktionierte im Tab „Zusatzinfos“ einer Nachricht Strg+C zum Kopieren nicht.
+  * Veränderung der Vorschaugröße bei Verwendung der Chromium Engine\\ Wird die Chromium Engine verwendet, so wurde die Veränderung der Vorschaugröße bei eMails und Adressen unterschiedlich behandelt.
+  * Mögliches Fehlverhalten beim Aufruf des Dialogs „Berechtigungen“\\ In Einzelfällen konnte es beim Aufruf des Dialgs „Berechtigungen“ (Ordner-Eigenschaften/Zugang) zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Nummerneingabe im Telefon Dialog\\ Bei bestimmten Conference Calls überlagerten Buttons u.U. denjenigen zum Aufruf des Nummernfeldes, womit dann keine Nummern während des Anrufs eingegeben werden konnten. Das ist nun optimiert.
+  * Optimierung beim Drag &amp; Drop in den Chromium Nachrichten Editor \\ Wird beim Nachrichten Editor die Chromium Engine verwendet, so konnte das Drag &amp; Drop von Dateien in den Editor u.U. sehr lange dauern.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden verschiedene Optimierungen durchgeführt, u.a. die Markierung von Text per Strg+Shift+Pfeil, eine evtl. falsche Hintergrundfarbe bei Textbausteinen sowie das fölschliche Einfügen eines Leerzeichens am Anfang der eMail.
+  * Mögliches Fehlverhalten beim Öffnen eines Einschreibens\\ Wird die Chromium Engine verwendet, so konnte es beim Öffnen eines Einschreibens vorkommen, dass der Client hängt.
+  * Markierung der aktuellen Uhrzeit im Kalender\\ Die Markierung der aktuellen Uhrzeit im Kalender durch eine Linie passte in Einzelfällen nicht ganz.
+  * Optimierungen beim Kopieren von eMails als EML Dateien in den Windows Explorer\\ Werden mehrere eMails per Drag &amp; Drop in den Windows Explorer kopiert, so brach der Kopiervorgang ab, wenn es bei einer einzelnen Nachricht zu einem Fehler kam (z.B. ein fehlender Dateianhang).
+  * david Chat in neuem Fenster öffnen\\ Beim david Chat in der Favoritenleiste war der Menüpunkt "In neuem Fenster öffnen" ohne Funktion.
+  * Anzeige „Ganztägig“ bei Erstellung einer Besprechungsanfrage\\ Bei der Erstellung einer Besprechungsanfrage wurde beim Serientyp u.U. fälschlicherweise „Ganztägig“ angezeigt.
+  * Aktuelle Position beim Wechseln zwischen verschiedenen Nachrichten\\ Wird die Chromium Engine verwendet und man wechselt in der „Nur lesen“ Ansicht zwischen verschiedenen eMails, so wurde die aktuelle Position jeweils beibehalten und nicht wieder nach oben gescrollt.
+
+=====  VoIP2 TLD =====
+
+==== Bugfix ====
+
+  * Mögliche Rückmeldung „Belegt“ bei Faxempfang\\ In Einzelfällen konnte es vorkommen, dass der TLD bei einem eingehenden Ruf ein "belegt" an den Absender meldete.\\ 
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Eigenen Port für externen Zugriff konfigurieren (Proxy)\\ Es ist nun möglich einen eigenen Port für den Zugriff von extern zu konfigurieren. Dies ist z.B. wichtig, wenn der WebAPI Dienst hinter einem Proxy betrieben wird. Hierzu kann der Port in der Datei \david\code\DavidRestApi\appsettings.json in der Sektion ApiOptions angegeben werden: "PortExternal"
+

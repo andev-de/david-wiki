@@ -1,0 +1,87 @@
+====== Version 3045 vom 14.01.2019 ======
+
+Release: 2019-01-14T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Erhöhung der Adress-Kategorien auf 64\\ Im david.Administrator standen bisher 32 verschiedene Kategorien für die Adressverwaltung zur Verfügung (siehe „Erweitert/Kategorien“). Diese Anzahl wurde verdoppelt, so dass nun 64 Kategorien genutzt werden können.
+
+
+==== Bugfix ====
+
+  * Optimierte Umsetzung von Terminserien in Kalendern mit automatischer Ablage\\ Bei Kalender-Ordnern, für die die Funktion „Automatische Ablage“ aktiviert ist und die Terminserien enthalten konnte u.U. der Effekt auftreten, dass Serientermine bereits vor ihrem Ablaufen mit in die Ablage verschoben wurden. Dieses Verhalten ist nun korrigiert. 
+
+  * Optimierter Betrieb bei Erstellung von StrongBox Sicherungen\\ In einem Einzelfall konnte bei der Erstellung einer StrongBox Sicherung ein Absturz des david® Service Layers auftreten. Diese Verhalten wurde korrigiert. 
+
+  * Optimierte Anzeige von eMail Kommentaren (LiveComments)\\ In Einzelfällen wurden Kommentare, die an eMails angefügt wurden (LiveComments), nicht korrekt dargestellt. Dieses Verhalten ist nun korrigiert.
+
+  * Optimierte Datenbereinigung\\ Während der automatischen Datenbereinigung konnte u.U. der Service Layer abstürzen, wenn das Systemverzeichnis „david\code\index“ auf dem david® Server fehlte. Die Bereinigung läuft nun auch in diesem Fall vollständig durch.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Verbindungstest für individuellen https Port der WebBox\\ Ist für die Nutzung sicherer WebBox-Verbindungen per https ein anderer als der voreingestellte TCP Port 443 in der Datei „webbox.ini“ eingetragen, so wird dieser individuelle Port nun beim Verbindungstest im david® Administrator automatisch mit einbezogen. Der Verbindungstest lässt sich über die Schaltfläche „Verbindungen testen“ in der Symbolleiste des david® Administrator starten und prüft, ob die von david® benötigten TCP Ports tatsächlich zur Verfügung stehen.
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Zeitintervall für POP3-Abruf optimiert\\ Beim Abholen von eMails per POP3 wurde in einem Einzelfall das eingestellte Zeitintervall für die Postfachabfrage nicht korrekt eingehalten. Dieses Verhalten ist nun korrigiert.
+
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Optimierter IMAP-Zugriff auf Ordner mit sehr langem Pfad\\ Beim IMAP-Zugriff konnten IMAP-Kommandos, die eine sehr lange Pfadangabe enthielten, zum Absturz des Mail Access Servers führen. Dieses Verhalten wurde korrigiert.
+
+  * Modifizierte IMAP-Anmeldung\\ Aktuelle Modifikationen zur Optimierung der IMAP-Anmeldung sorgen für einen noch zuverlässigeren Einsatz. Zuvor war es in einem Einzelfall möglich, dass trotz Angabe der korrekten Anmeldedaten diese nicht akzeptiert wurden. Dieser Effekt tritt nun nicht mehr auf.
+
+  * Anpassungen bei IMAP Zugriff per Alias Login\\ Bei Nutzung des IMAP Zugriffs per Alias Login konnte es zu einem Fehlverhalten des Mail Access Servers kommen, wenn Nachrichten aus einem Unterordner zurück in den Eingang verschoben werden sollten. Dieses Verhalten wurde korrigiert.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Ausschließen von Adressfeldern bei Synchronisation per ActiveSync\\ Im david® Administrator können innerhalb der ActiveSync Einstellungen der WebBox jetzt über den neuen Schalter „Adressfelder ausschließen“ gezielt Adressfelder von der Synchronisation per ActiveSync ausgeschlossen werden. Diese Einstellung gilt ab Aktivierung für neue bzw. geänderte Adressen. So lässt sich u.a. verhindern, dass betriebsinterne Informationen ungewollt auf mobile Geräte dupliziert werden.
+
+
+==== Bugfix ====
+
+  * Vermeidung von Abstürzen wegen Einsatz alter david® Apps\\ Bei Verwendung der alten david® Smartphone App, die seit einiger Zeit nicht mehr weiterentwickelt wird, konnte in Einzelfällen das Beantworten von HTML eMails  zum Absturz der WebBox führen. Dieser Effekt tritt nun nicht mehr auf.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Übernahme der Sortierung beim Kopieren von Einträgen&nbsp; \\ Nach dem Kopieren und Einfügen mehrerer Einträge von einem Ordner in einen anderen per Tastaturkürzel [STRG]+[C] und [STRG]+[V], ist die Sortierung der Einträge im Zielordner nun identisch zu der im Quellordner. Bisher erfolgte das Einfügen der kopierten Einträge im Zielordner in umgekehrter Reihenfolge.
+
+  * Einfaches Kopieren von david® Ordnerpfaden\\ Der neue Menüpunkt „Kompletten david® Ordnerpfad kopieren“ im Kontextmenü eines Ordners ermöglicht es, dessen Pfad direkt per Mausklick in die Zwischenablage zu übernehmen, ohne dafür extra die Ordnereigenschaften öffnen zu müssen. So lässt sich diese Information sehr leicht weiterverwenden.
+
+  * Optimierungen beim Fax-Versand über FaxWare Druckertreiber\\ Werden mehrere Dokumente zum Versand per Fax an den FaxWare Druckertreiber gedruckt, kommt nun nur noch das „Nachricht versenden“ Fenster des david® Client in den Vordergrund, das die Eingabe der Empfängernummer und das Festlegen von Sendeoptionen erlaubt. Zuvor wurde zusätzlich auch der david® Client selbst in den Vordergrund geholt.
+
+  * Facebook Client App entfernt\\ Die Facebook Client App wurde aus der Auswahl der installierbaren Client Apps entfernt, ebenso wie die zugehörige Benutzer-Berechtigung im david® Administrator.
+
+  * Dauerhafte chayns® Anmeldung\\ Wer auch per chayns® im david® Client angemeldet ist, musste u.U. bisher das chanys® Login erneuern, nachdem der david® Client einige Tage nicht genutzt wurde. Das ist nun nicht mehr erforderlich. Hierzu muss sich der Anwender nach Installation des Rollout 298 einmal neu anmelden.
+
+  * Anzeige des angemeldeten Benutzers in der Titelleiste\\ In der Titelleiste des david® Clients wird nun der Name des angemeldeten Windows Benutzers angezeigt. Wird über den daneben angeordneten Button „Anmelden“ auch ein chayns® Login durchgeführt, so wechselt die Anzeige zum chayns® Benutzernamen, sofern sich dieser vom Windows Benutzernamen unterscheidet.
+
+  * Von Eingabe-History überschriebenen Betreff zurückholen\\ Beim Erstellen einer Nachricht kann es schnell passieren, dass der gerade eingetragene Betreff durch versehentliches Drehen des Mausrades oder Drücken der Cursortasten von der Eingabe-History überschrieben wird. Bisher war der ursprüngliche Betreff danach verloren und musste neu eingetippt werden. Jetzt kann er über das Tastaturkürzel [Strg]+[Z] wiederhergestellt werden.
+
+
+==== Bugfix ====
+
+  * Optimierte Bearbeitung von Automations-Scripten\\ Das Bearbeiten von Automations-Scripten, z.B. für Gebäude-Steuerung, wurde überarbeitet, so dass Abstürze des david® Client, die zuvor hierbei u.U. auftreten konnten, nun nicht mehr vorkommen.
+
+  * Unterstützung für automatisches Ein-/Ausblenden der Windows Taskleiste\\ Bei Einsatz des david® Client im Vollbild-Modus und mit individuellen Layout-Einstellungen konnte die Windows-Funktion „Taskleiste automatisch ausblenden“ nicht korrekt genutzt werden. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Adress-History beim Versenden von TalkAbouts\\ Nach dem Versand von Intercom TalkAbout Nachrichten wurden die dort genutzten Zieladressen u.U. nicht korrekt in die Eingabe-History übernommen und standen  daher für später folgende Nachrichten nicht über die History-Funktion zur Verfügung. Dieses Verhalten wurde korrigiert. 
+

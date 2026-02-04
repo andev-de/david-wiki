@@ -1,0 +1,77 @@
+====== Version 3325 vom 31.03.2021 ======
+
+Release: 2021-03-31T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Befehl WARTEN bei smart client Nutzung\\ Ist beim Benutzer im david Administrator als Abschluss Include der Befehl „Warten“ hinterlegt, so wird dieser nun bei der smart client Nutzung ignoriert, weil der Anwender hier keine Möglichkeit hat den Status im Transit aufzuheben.
+  * Befehl WARTEN bei ActiveSync Nutzung\\ Ist beim Benutzer im david Administrator als Abschluss Include der Befehl „Warten“ hinterlegt, so wird dieser nun bei der ActiveSync Nutzung ignoriert, weil der Anwender hier keine Möglichkeit hat den Status im Transit aufzuheben.
+
+==== Bugfix ====
+
+  * Fehlendes Zeichen bei Weiterleitung mit HTML Include\\ Wird eine eMail per Weiterleiten Regel automatisch weitergeleitet und hierbei ein HTML Include verwendet, so konnte es vorkommen dass das letzte Zeichen der eMail fehlte.
+  * Abarbeitung von Sendeaufträgen im API Verzeichnis u.U. verzögert\\ Die Abarbeitung der Sendeaufträge im API Verzeichnis konnte sich u.U. verzögern, wenn sich die david Installation und die Ordner Struktur auf verschiedenen Laufwerken befindet.
+  * Mögliches Fehlverhalten beim Weiterleiten von VoiceMails per smart client\\ Wird mit dem smart client eine empfangene VoiceMail weitergeleitet, so wurde aus der Dateiendung .wav die Endung .mp3. Das ist nun korrigiert.
+  * Mögliches Fehlverhalten beim Weiterleiten von Faxen als TIFF oder PDF\\ Werden empfangene Faxe per Verteilregel als Dateianhang im TIFF oder PDF Format weitergeleitet, so konnte es vorkommen dass ab der zweiten Seite die Faxe gestaucht angezeigt werden.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Installation der „Microsoft Edge WebView2“ auf dem Server\\ Beim Update und der Neuinstallation der david Installation wird nun die "Microsoft Edge WebView2" installiert.
+  * Neue Einstellung zur Anzeige von StrongBox Inhalten\\ Im david Administrator kann beim Benutzer nun eingestellt werden, dass er unabhängig von sonstigen Rechten den Inhalt von StrongBox Images komplett  sehen kann (Rechte/Immer vollständigen Inhalt anzeigen).
+  * Einstellungen zur Installation von Hotfixes\\ Im david Administrator kann nun unter System/Updates eingestellt werden, ob Hotfixes für das aktuelle Rollout automatisch installiert werden sollen oder diese nicht installiert werden sollen.\\ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Rendering-Methode „Microsoft WebView2-Edge (Beta)"\\ In den Einstellungen "Global/Chromium" steht nun die zusätzliche Rendering-Methode "Microsoft WebView2-Edge (Beta)" zur Auswahl.
+  * Auswahl des Kalenders beim Öffnen einer ICS Datei\\ Soll ein Termin den man als ICS Datei erhalten hat gespeichert werden, so erfolgt vor dem Speichern nun die Abfrage nach dem Ziel-Kalender.
+  * Hörerlautstärke bei Telefonie-Dienst einstellbar\\ In den Einstellungen des Telefonie-Dienstes ist die Hörerlautstärke nun einstellbar.
+  * Beenden einer „hängenden“ Instanz des david Clients\\ Wenn beim Start festgestellt wird, dass bereits ein nicht mehr funktionierender Client läuft, wird angeboten diesen zu beenden und den david Client neu zu starten.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Löschen eines Ordners ohne Namen\\ Hat ein Ordner keinen Namen und es wird versucht ihn zu löschen, so konnte es bei der 64 Bit Version des david Clients zum Absturz kommen.
+  * Dateianhänge von verschlüsselten eMails im API Verzeichnis\\ Wird eine Nachricht mit Dateianhängen verschlüsselt versendet, so wurden die Dateianhänge u.U. zusätzlich in das API Verzeichnis kopiert.
+  * Ausdruck von abgesagten Terminen\\ Wird eine Kalenderansicht ausgedruckt und sie enthält abgesagte Termine (Betreff durchgestrichen), so wurde der Betreff dieser Termine zu klein ausgedruckt.
+  * Ausdruck von eMails mit „SVG“ Grafiken\\ Enthält eine eMail eine „SVG“ Grafik, so konnte sie u.U. nicht ausgedruckt werden.
+  * Mögliches Fehlverhalten beim „MailTo“ mit Textinhalt\\ Wird der Chromium Editor verwendet und es soll per „MailTo“ eine eMail Adresse und ein Textinhalt übergeben werden, so wurde der Text nicht übernommen.
+  * Mögliches Fehlverhalten beim Ändern einer Besprechungsanfrage\\ Wenn bei einer Besprechungsanfrage die als Terminserie eingetragen ist mehrfach eine Änderung an einem einzelnen Serienelement vorgenommen, so konnte es vorkommen, dass die Teilnehmer eine "Besprechungsanfrage" statt einer "Besprechungsänderung" erhielten. Der zuvor geänderte Termin blieb bei den Teilnehmern dann bestehen und ein neuer Termin wurde eingetragen. Dieses Verhalten wurde nun behoben.
+  * Mögliches Fehlverhalten bei Verwendung der Chromium Engine und deaktivierter Animation\\ Wird die Chromium Engine bei deaktivierten Animationseffekten verwendet, so konnte es zu einem Fehlverhalten kommen. Zum Beispiel wurden beim Drag &amp; Drop von Dateien in eine neue Nachricht nur Links eingefügt.
+  * Mögliche Anzeigefehler bei Verwendung mehrerer Monitore\\ In spezieller Kombination von Auflösung und Monitoren konnte es zu Anzeigefehlern kommen, z.B. war dann die Schriftgröße in der Vorschau zu klein oder Systemdialoge wie z.B. die Farbauswahl wurden in falscher Größe dargestellt.
+  * Bereinigung des Chats u.U. ohne Funktion\\ Werden in einem Chat einzelne Nachrichten nachgeladen, so war eine ausgewählte Bereinigung ohne Funktion.
+  * Weiterleiten eines Fax beim 64 Bit david Client\\ Das Weiterleiten eines Fax aus dem Fax Viewer war bei Verwendung des 64 Bit Clients nicht möglich.
+  * Optimierung bei der Anzeige von Tiff Dateien\\ Tiff Dateien mit einer DPI Ratio von 200 zu 100 werden im Bildbetrachter des david Clients nun so skaliert, dass der Inhalt nicht gestaucht dargestellt wird.
+  * Mögliches Fehlverhalten beim Abspielen von Wave Dateien\\ In einem Einzelfall funktioniert der Slider beim Abspielen von Wave Dateien nicht.
+  * Mögliches Fehlverhalten beim Import von Terminen per ICS Datei\\ Beim Import eines Termins per ICS Datei konnten Zeitzonennamen mit Escape Sequenzen dazu führen, dass die Zeitzone nicht gefunden und daher nicht korrekt übernommen werden konnte.
+  * Hinweis beim Weiterleiten/Antworten von eMails mit enthaltenen david Befehlen\\ Enthält eine eMail david Befehle, so wurde beim Weiterleiten oder Antworten dieser eMail der Hinweis hierauf nicht mehr angezeigt.
+  * Mögliches Fehlverhalten beim Versenden von eMails mit Bildern\\ Bilder in eMails, die mit der speziellen Url „dvise-0tx“ angegeben sind, wurden u.U. nicht versendet
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Kein Update für alte macOS Systeme\\ Ältere macOS Systeme (&lt; 10.12) erhalten lediglich ein Update auf die david Client Mac Version 2.5074. Für das Update auf neuere david Client Mac Version wird eine neuere macOS Version benötigt.  
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Speichern einer VCF Datei\\ Soll eine VCF Datei als Adresse gespeichert werden, konnte es zum Absturz kommen.
+  * Start des david Clients nicht mehr möglich\\ Aufgrund eines Problems mit dem Apple-Zertifikat konnte der david Client u.U. nicht mehr gestartet werden.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Version aktualisiert\\ Die Desktop Protection for david, die für Virenschutz auf den Arbeitsplatzrechnern im Netzwerk sorgt, wurde aktualisiert. Während der Aktualisierung muss der PC neu gestartet werden, es erfolgt nach dem automatischen Laden des Updates durch den neuen david Client ein entsprechender Hinweis.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Öffnen von Anhängen\\ In Einzelfällen konnte es bei der Verwendung eines Proxys vorkommen, dass Anhänge von eMails nicht geöffnet werden konnten.
+

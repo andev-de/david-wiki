@@ -1,0 +1,129 @@
+====== Version 3065 vom 17.06.2019 ======
+
+Release: 2019-06-17T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.010. 
+
+  * Einsatz von david Befehlen in Verteilregeln für Weiterleiten/Autoreply\\ Wurden bei Erstellung von Verteilregeln für Weiterleiten/Autoreply auch Include-Dateien verwendet, die david Befehle (@@ Befehle) enthalten, so wurden diese Befehle zwar ausgeführt, jedoch u.U. nicht aus dem Nachrichtentext entfernt. Jetzt werden auch in diesem Fall die Befehle aus dem Mailtext entfernt. 
+
+Durch Verwendung des Parameters DisableScanHtmlCommands=TRUE in der david.ini kann dies bei Bedarf unterbunden werden.
+
+
+==== Bugfix ====
+
+  * Optimierte Datumsangabe bei Terminserien in Wiedervorlage\\ In Einzelfällen wurde bei Wiedervorlagen zu Terminserien u.U. ein falsches Datum angezeigt (der 01.01.1970). Diese Verhalten wurde korrigiert.
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1b. 
+
+
+==== Bugfix ====
+
+  * Verwendung mehrerer TLS-Zertifikate\\ Zur Datenübertragung über verschlüsselte Verbindungen kann der david PostMan ein oder mehrere TLS-Zertifikate nutzen. Sind hier mehr als ein gültiges Zertifikat hinterlegt, konnte es u.U. (hier: Einstellung „Erzwingen“ bei Einsatz von MTA-STS) beim eMail-Empfang dazu kommen, dass die Gegenstelle nicht das passende Zertifikat übermittelt bekam und den Versand deswegen abbrach. Dieses Verhalten wurde korrigiert.
+
+  * Längere Benutzernamen bei Provider- und  Weiterleitungsoptionen\\ Die maximale Länge für die in den Einstellungen des david PostMan unter „Provider/Parameter“ und „Weiterleiten/Einschränkungen/Parameter“ anzugebenden Benutzernamen wurde von von 40 auf 100 Zeichen erhöht.
+
+  * Möglicher Absturz beim Weiterleiten\\ In einem Einzelfall konnte der david PostMan u.U. abstürzen, wenn er zur Weiterleitung eingerichtet und genutzt wurde. Dieses Verhalten wurde korrigiert.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Optimierung der POP3 Funktion „Kopie aller Nachrichten auf dem Server belassen„\\ Bei Nutzung der POP3 Einstellung „Kopie aller Nachrichten auf dem Server belassen“ wurde bisher für jedes Postfach eine Referenzdatei (*.lst) im Verzeichnis \david\apps\dvgrab\code erstellt. Diese Methode ist nun auf SQL Lite umgestellt. Dazu werden beim Update die vorhandenen *.lst Dateien in die Datenbankdateien *.mldb umgewandelt.
+
+
+==== Bugfix ====
+
+  * Optimierter Betrieb bei hohem Datenaufkommen\\ Der david Grabbing Server erhielt weitere Überarbeitungen, die speziell den Betrieb beim Abholen vieler und besonders umfangreicher eMails optimieren.
+
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1b. 
+
+
+==== Bugfix ====
+
+  * Vermeidung von Fehlinterpretationen beim IMAP Protokoll\\ IMAP-Anfragen mit in Klammern stehenden Parametern wurden durch den david Mail Access Server u.U. fehlinterpretiert. So konnte es vorkommen, dass die Abfrage „SEARCH NOT (SEEN)" alle Einträge des ausgewählten Ordners lieferte, anstatt nur die ungelesenen. Dieses Verhalten wurde korrigiert
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.1b. 
+
+
+==== Bugfix ====
+
+  * UNC Pfad zum Speichern in david angeforderter TLS-Zertifikate\\ Das Speichern von TLS-Zertifikaten, die im david Administrator angefordert werden, erfolgt nun unter Verwendung des UNC Pfads für die Angabe des Speicherorts (nicht mehr als Pfad mit Laufwerksbuchstaben). So ist der Zugriff auf die Zertifikate auch dann möglich, wenn der david Administrator auf einem anderen Rechner als dem david Server genutzt wird.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue LiveComments Funktionen: Zitieren, Antworten, Löschen\\ Das direkte Kommentieren von eMails per LiveComments wurde um verschiedene neue Funktionen erweitert. Über ein neues Menü, das per Mausklick in der oberen rechten Ecke eines Kommentars aufgerufen werden kann, stehen diese Funktionen zur Verfügung:
+\\ Zitieren:
+Der betreffende Kommentar wird automatisch als Zitat in eine neue eMail übernommen.\\ Antworten:
+Direktes Antworten auf den betreffenden Kommentar. Ähnlich wie beim „Zitieren“, die Kommunikation wird hier jedoch innerhalb der LiveComments weitergeführt, nicht in einer neuen eMail.\\ Löschen (nur möglich bei eigenen Kommentaren):
+Der Kommentar wird gelöscht. Als Hinweis auf die Löschung wird ein entsprechender Hinweis angezeigt. 
+
+Bei empfangenen Kommentaren bietet das neue Menü außerdem weitere Optionen zu direkten Kontaktaufnahme mit den Verfasser (eMail, Aufgabenanfrage, Besprechungsanfrage, david Chat, Anruf).&nbsp;
+  * „Kategorien“ als neue Quickfinderoption bei Aufgaben\\ In der Aufgabenansicht wurde die Spalte „Kategorien“ zu den Quickfinderoptionen hinzugefügt. Ab sofort können also Aufgabenordner per Quickfiinder auch nach dieser Information durchsucht werden.
+&nbsp;
+  * Vermeidung wiederholter „Stimme zu“ Meldungen in Kommentaren\\ Nach Benutzung des „Stimme zu“ Buttons in Kommentaren bleibt dieser für den betreffenden Anwender nun so lange deaktiviert, bis danach neue Kommentare eintreffen. So wird ein unerwünschtes und überflüssiges Wiederholen von „Stimme zu“ Meldungen vermieden. 
+&nbsp;
+  * Ausdruck der „7 Tage“ Kalenderansicht\\ Das Ausdrucken der Kalenderansicht „7 Tage“ erfolgt nun in einem für diese Anzeigeart angepassten Layout. Bisher entsprach das Layout für die „7 Tage“ Ansicht dem der Arbeitswochenansicht.
+&nbsp; 
+\\ 
+
+==== Bugfix ====
+
+  * Optimiertes Speichern eigener david Client Layouts\\ In den Einstellungen des david Client lässt sich unter dem Punkt „Layout“ die Darstellung des Programmfensters bestimmen. Neben der Auswahl verschiedener vordefinierter Designs ist es auch möglich, komplett eigene Layouts zu erstellen. Zur Darstellung eigener Layouts in der Auswahlliste diente bisher das jeweils im Layout verwendete Bild. Layouts, in denen ausschließlich Farbeinstellungen getroffen, aber kein Bild verwendet wurde, waren daher in der Auswahl zwar vorhanden aber quasi 'unsichtbar'. Jetzt wird in diesen Fällen dort die jeweils im Layout eingestellte Kontrastfarbe angezeigt.
+
+  * Versand von Dateianhängen in kyrillischem Format\\ Beim Versand von eMails mit angehängten Dateien in kyrillischem Format wurden die Dateianhänge u.U. nicht mitversendet. Das ist nun behoben.
+
+  * Optimierter Versand von Statusbericht für Aufgaben\\ Das Versenden von Statusberichten zu Aufgaben funktionierte u.U. nicht korrekt. Dieses Verhalten wurde korrigiert.
+
+  * Hinweis auf nicht mehr verfügbare Dateianhänge\\ Werden Dateien, die beim Verfassen einer Nachricht angehängt wurden noch vor dem Versand der Nachricht am ursprünglichen Speicherort umbenannt, verschoben oder gelöscht, so kann kein korrekter Versand erfolgen. Eine entsprechende Hinweismeldung macht auf dieses Problemaufmerksam. Da dieser Hinweis jedoch in der letzten Version des david Clients irrtümlich fehlte, wurde er jetzt wieder aufgenommen.
+  * Entfernung der Einstellung „Sortierung“ bei InfoCenter Ansicht\\ In der InfoCenter-Ansicht bei Einstellung „Vorschau unterhalb der Nachrichten“ war nach Rechtsklick auf die Spaltenüberschriften der Eintragliste der Menüpunkt „Sortierung“ auswählbar, obwohl diese Funktion hier nicht zur Verfügung steht. Der Punkt wurde daher für diese Konstellation aus dem Menü entfernt.&nbsp;
+  * Unterbinden nachträglicher Dateianhänge an signierte/verschlüsselte Sendeaufträge\\ Bisher war ein nachträgliches Hinzufügen von Dateianhängen an eMails, die bereits im Ordner „In Transit“ auf ihren Versand warteten, auch dann möglich, wenn es sich dabei um signierte und/oder verschlüsselte Nachrichten handelte. Das ist nun unterbunden.
+
+  * „Hamburger-Menü" immer verfügbar\\ Die Darstellung des „Hamburger-Menüs“, das in der oberen linken Ecke des david Client die Hauptmenüpunkte (Datei, Bearbeiten etc.) bereitstellt, wurde optimiert. Zuvor wurde dieses Menü-Icon u.U. nicht angezeigt, wenn unter „Einstellungen/Global/Outdated“ Einstellungen zur Ansicht des Clients geändert wurden.
+
+  * Quickfinder-Suche nach Nachnamen in Chat-Übersicht\\ In der Chat-Übersicht kann nun auch per Quickfinder nach Nachnamen gefiltert werden. Das war zuvor u.U. nicht möglich. 
+
+  * Ändern von Ordnernamen nach Speichern von eMails als EML Datei\\ Nach dem Speichern einer eMail als EML Datei in einem Ordner war ein anschließendes Umbenennen dieses Ordners im Windows Explorer erst nach Beenden des david Clients möglich. Dieses Verhalten wurde korrigiert. 
+
+  * Optimierter Dateiversand per Drag &amp; Drop\\ Das Versenden von Dateien per Drag &amp; Drop kann auch in der Chat-Vorschau des david Client erfolgen, indem die Dateien direkt in den Vorschaubereich des geöffneten Chats gezogen werden. Die Verwendung von Drag &amp; Drop in der Chat-Übersicht (Eintragsliste) ist nicht möglich.
+
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Optimierte Anzeige der Anzahl ungelesener Nachrichten im Navigator\\ Unter macOS 10.14 wurde u.U. die im Navigator angezeigte Anzahl ungelesener Nachrichten nicht immer zuverlässig aktualisiert. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Anzeige der Termineinträge in Wochenansicht\\ Unter macOS 10.14 wurde u.U. beim Scrollen in der Wochenansicht des Kalenders die Anzeige der Termine nicht korrekt aktualisiert. Dieses Verhalten wurde korrigiert.
+
+  * Anpassung des Installationspakets für macOS &lt; 10.13\\ Das Installationspaket konnte unter macOS &lt; 10.13 nicht mehr ausgeführt werden. Nach entsprechenden Anpassungen ist das jetzt wieder möglich.
+
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz\\ Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david) wurde aktualisiert auf die Version 6.010 (mcscan32.dll bzw.&nbsp;mscan64a.dll).
+

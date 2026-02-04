@@ -1,0 +1,103 @@
+====== Version 3654 vom 10.07.2024 ======
+
+Release: 2024-07-10T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * eMails digital signieren durch den Service Layer\\ Der Service Layer kann nun eMails digital signieren, hierzu dient der neue Befehl SMIMESIGN. Das Zertifikat wird anhand der Absender eMail Adresse ausgewählt und muss auf dem david Server liegen (wo es bisher auch schon vom david Client verwendet wird). Wird bei einem Versandauftrag per OWNER Befehl der Eigentümer geändert, so wird der Befehl ignoriert, ebenso bei Autoreply eMails.
+
+==== Bugfix ====
+
+  * Ausnahme einer Terminserie u.U. in Ablage-Ordner verschoben\\ Ist im Kalender eine Ablage eingerichtet und man verschiebt das Element einer Terminserie, die ein Enddatum hat, so wurde dieses Element bei der anschließenden Bereinigung in einen Ablage-Ordner verschoben.
+  * Mögliches Fehlverhalten bei Übernahme von Editortexten in die SQL Datenbank\\ In Einzelfällen konnte es bei der Übernahme von Texten die mit dem Editor erstellt wurden in die SQL Datenbank zu einem Fehlverhalten kommen, so dass diese anschließend bei der Volltextsuche nicht gefunden wurden.
+  * Mögliches Fehlverhalten bei der Bestellung von Class 1 Zertifikaten\\ Sollte es bei der Bestellung eines Class 1 Zertifikates zu einem Fehler kommen, so wurde anschließend u.U. kein erneuter Versuch unternommen, das Zertifikat anzufordern.
+  * Mögliche falsche Anzahl der Zugriffe bei Verteilregeln\\ Sind im david Administrator Verteilregeln angelegt, so stimmte dort der Wert „Zugriffe insgesamt“ u.U. nicht, wenn es sich dabei um extern empfangene eMails handelt, die durch den 2nd Scan im Transit laufen.
+  * Mögliches Fehlverhalten bei der Bestellung von Class 1 Zertifikaten\\ Ist im david Administrator bei einem david Benutzer kein „Angezeigter Name“ eingetragen, so funktionierte für diesen Benutzer die Bestellung von Class 1 Zertifikaten nicht.
+  * Mögliches Fehlverhalten beim Versand an externe und interne Empfänger\\ Wird eine eMail mit einem langen Betreff an externe und interne Empfänger versendet, so konnte es in Einzelfällen vorkommen, dass versucht wurde die eMail an die internen Empfänger auch extern zu versenden.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Kein Widerrufen von Class 1 digitalen Zertifikaten\\ Da das Widerrufen der Class 1 digitalen Zertifikate vom Anbieter nicht mehr unterstützt wird, wurde die entsprechende Auswahl beim Bestellvorgang im David Administrator entfernt.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim DKIM Signatur Versand per FileScan Job\\ Wird eine eMail per Filescan Service erstellt, so fehlte beim anschließenden Versand mit DKIM Signatur die „To“ Info im MIME Header.
+  * Mögliches Fehlverhalten beim SMTP Fehler 421\\ Soll eine eMail an eine Gegenstelle gesendet werden und diese meldet den SMTP Fehler 421 zurück, so wurden u.U. keine weiteren Sendeversuche unternommen, obwohl dies so eingestellt ist.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * RSS Einstellung „Readability“ entfernt\\ Die RSS Einstellung „Readability“ wurde entfernt.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Bearbeiten von Entwürfen bei IMAP Nutzung\\ Ist ein eMail-Client per IMAP an David angebunden und es wird eine neue eMail als Entwurf gespeichert, so konnte sie u.U. anschließend nicht wieder im Bearbeiten Modus geöffnet werden.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Synchronisation von Unterordnern per ActiveSync\\ Werden bei der Synchronisation per ActiveSync die Einstellungen für den Umfang der Daten geändert (alle synchronisieren oder nur einen bestimmten Zeitraum), so konnte es vorkommen, dass nicht alle entsprechenden Nachrichten in Unterordnern synchronisiert wurden.
+  * Möglicher Absturz bei fehlerhaftem Termin\\ In einem Einzelfall konnte es bei einem per ActiveSync synchronisierten Termin zum Absturz der WebBox kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Auswahlmöglichkeit beim Einfügen von Textbausteinen\\ Im Dialog zur Auswahl eines Textbausteins gibt es nun zwei Buttons: „Einfügen“ fügt den gewählten Textbaustein an der Cursorposition ein. „Überschreiben“ ersetzt den eMail-Inhalt durch den gewählten Textbaustein.
+  * Wechsel zwischen den Clients\\ Über ein neues Menü rechts neben dem David Logo im Hauptfenster der Clients kann nun zwischen dem David Client und dem David Classic Client gewechselt werden. Zusätzlich kann zum Team Client gewechselt werden. Ist dieser noch nicht installiert, erfolgt die Abfrage ob dieser nachinstalliert werden soll.
+  * Ersetzungsfunktion im Editor deaktivieren\\ Per Vorgabe werden im Editor URLs, eMail-Adressen und Datei-Pfade automatisch verlinkt. Ist dies nicht gewünscht, kann dies in den Einstellungen unter „Editor/Optionen“ deaktiviert werden. Diese Einstellungen können auch im David Administrator für die Anwender vorgenommen werden.&nbsp;
+  * Nachträgliche Installation der Druckertreiber beim Team Client\\ Bei der Team Installation werden die Druckertreiber (FaxWare, Image Messaging, Hybrid Mail) per Vorgabe nicht mit installiert. Sollten sie doch benötigt werden, so können Sie nun über das Menü „Werkzeuge/Installation/Drucker“ nachinstalliert werden.
+  * „TeamTalk“ und Benutzer bei externen eMails hinzufügen\\ Bei extern empfangenen eMails, die nicht direkt einem David Benutzer zugeordnet sind (Benutzerkonfiguration/Eingehende eMail-Adressen im david Administrator), kann dieser nun wie bei internen eMails Kommentare (“TeamTalk“) und andere interne David Benutzer hinzufügen. Die Funktion ist im David und im Team Client gegeben. Beim „Allen Antworten“ auf eine solche eMail kann der Benutzer entscheiden, ob die Kommentare im eMailtext mit versendet werden sollen sowie ob die eMail auch an die hinzugefügten internen David Benutzer gesendet werden soll.
+  * Verwendung des Team Clients ohne aktivierte KI Einstellung\\ Der Team Client kann nun auch verwendet werden, ohne dass die KI Einstellung im David Administrator aktiviert ist.
+  * Optimierung der Funktion „Suchen und Ersetzen“ im Editor\\ Die Funktion „Suchen und Ersetzen“ im Editor (Strg+F bzw. Strg+H) wurde optimiert.
+  * Verwendung des Team Clients ohne chayns Anmeldung\\ Der Team Client kann nun auch ohne chayns Anmeldung verwendet werden.
+  * Einrichten von Tabs im Team Client\\ Unterhalb der Symbolleisten können im Team Client nun Tabs eingerichtet werden, um darüber zwischen verschiedenen Ordern, Kalendern, Webseiten und geöffneten eMails wechseln zu können.&nbsp;
+  * Web-Links im Tab öffnen\\ Web Links (z.B. in eMails) können nun beim Anklicken statt im externen Browser in einen Tab vom Team Client geöffnet werden. Das Verhalten lässt sich in den Einstellungen unter „Ansicht“ aktivieren.
+  * Zeilenumbruch statt Absatz im Editor
+\\ In den Einstellungen des Team Clients (Editor/Optionen) kann nun festgelegt werden, ob die Eingabe von Enter einen Zeilenumbruch oder einen Absatz bewirken soll.
+  * „TeamTalk“ zu Websites\\ Enthält eine eMail eine URL zu einer WebSite, so kann per Kontextmenü nun ein TeamTalk zu dieser WebSite erstellt werden.
+  * Einfügen von Excel Tabellen im Editor\\ Excel Tabellen können nun per Copy &amp; Paste im Editor eingefügt werden. Hierfür muss beim Einfügen die Einfügeoption „HTML-formatierter Text“ ausgewählt werden. Formatierungen werden beim Einfügen entfernt.
+
+==== Bugfix ====
+
+  * Fehlverhalten der Druckertreiber beim 32 Bit Classic Client\\ Beim 32 Bit Classic Client funktionierte der Aufruf des Clients durch die Druckertreiber nicht mehr.
+  * Möglicher Darstellungsfehler bei Besprechungsanfragen im Dark Mode\\ Ist der Dark Mode eingestellt, so konnte es bei empfangenen Besprechungsanfragen zu einem Darstellungsfehler kommen.
+  * Mögliches Fehlverhalten beim Client Start\\ In Einzelfällen konnte es beim Client Start einen Absturz geben.
+  * Mögliches Fehlverhalten beim Ausschneiden und Einfügen eines Dateianhangs\\ Wird bei einer zum Weiterleiten oder Antworten geöffneten eMail der Dateianhang per Kontextmenüpunkt „Ausschneiden“ entfernt und ein anderer Dateianhang neu hinzugefügt, so wurde hier der ursprüngliche Dateiname angezeigt. Das wurde nun behoben.
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen
+  * Wenn im David Client die „Auto-Wiederherstellung“ aktiviert ist, konnte dies in Einzelfällen dazu führen, dass beim Einfügen eines Textbausteins in eine eMail der bisherige eMail-Text durch den Textbaustein ersetzt wurde.
+  * Mögliches Fehlverhalten beim Drag &amp; Drop von Dateianhängen bei italienischer Spracheinstellung\\ Ist der David Client in italienischer Sprache eingestellt, so funktionierte das Drag &amp; Drop von Dateianhängen in den Editor u.U. nicht.
+  * Einladungen zu Besprechungen in externen Kalendern\\ Ist ein externer Kalender von Microsoft eingebunden, so können in diesem keine Termine gespeichert werden, da diese beim nächsten Abgleich wieder entfernt würden. Bei Einladungen zu Besprechungen war dies jedoch dennoch möglich, nun erfolgt auch in diesem Fall ein entsprechender Hinweis, dass das Speichern nicht möglich ist.
+  * Möglicher Absturz beim Start\\ In einem Einzelfall konnte es beim Start des David Clients zum Absturz kommen.
+  * Senden einer eMail u.U. nicht möglich\\ In einem Einzelfall konnte es vorkommen dass beim Klick auf „Senden“ im Nachrichten-Editor die eMail nicht versendet wurde.
+  * Mögliches Fehlverhalten bei HTML Attribut „Rechtschreibprüfung unterbinden“ im Editor\\ Ist in einer empfangenen eMail das HTML Attribut für „Rechtschreibprüfung unterbinden“ gesetzt, so wurde dies auch beim Beantworten oder Weiterleiten der eMail übernommen und die Rechtschreibprüfung funktionierte somit nicht.
+  * Öffnen von Faxen u.U. nicht mehr möglich\\ Wird der Classic Client deinstalliert, so funktionierte anschließend u.U. im david Client das Öffnen von Faxen nicht mehr. Das ist nun behoben.
+  * „Zugangsdaten speichern“ im Anmelden Dialog\\ Im Anmelden Dialog fehlte u.U. die Auswahl „Zugangsdaten speichern“
+  * Erinnerungszeitpunkt beim Import einer ICS Datei\\ Wird ein Termin als ICS Datei importiert und der Erinnerungszeitpunkt ist in Stunden und Minuten angegeben, so wurde u.U. ein falscher Erinnerungszeitpunkt vorgeschlagen.
+  * Mögliche falsche Zuweisung bei Auflösung von Adressen\\ Wenn eMail-Adressen aufgelöst werden, um stattdessen den Display Name anzuzeigen, konnte in bestimmten Fällen die Zuweisung zur Adresse falsch sein, so dass scheinbar Empfänger doppelt angezeigt wurden oder fehlten.
+  * Leerer Dialog beim Abbestellen der „Insider Notes“\\ Wird in den „Insider Notes“ der „Abbestellen“ Link angeklickt, so wurde ein leerer Bestätigungsdialog angezeigt.
+  * Falsche Beschriftung von „Rückgängig“ und „Wiederholen“ im Editor\\ Die Beschriftung der „Rückgängig“ und „Wiederholen“ Buttons in der Toolbar des Editors war vertauscht.
+  * STRG+V fügte „null“ im Editor ein\\ Hat man im Editor ohne Textauswahl STRG+C gedrückt, wurde die Zwischenablage geleert, wodurch bei STRG+V „null“ eingefügt werden konnte.
+  * Falsche Shortcuts nach Klicken auf Toolbar im Editor\\ Nach dem Klicken auf die Toolbar im Editor haben die Shortcuts nicht mehr wie erwartet funktioniert.
+Falsche Position von Tooltips im Editor
+Nach dem Zoomen im Editor wurden die Button Tooltips an den falschen Positionen angezeigt.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * eMails signieren\\ Sind für den Anwender digitale Signaturen hinterlegt, so können eMails nun auch mit dem David Client Mac signiert werden.
+  * Class 1 Zertifikate bestellen\\ Class 1 Zertifikate können nun auch mit dem David Client Mac bestellt werden.
+  * „TeamTalk“ und Benutzer bei externen eMails hinzufügen\\ Bei extern empfangenen eMails, die nicht direkt einem David Benutzer zugeordnet sind (Benutzerkonfiguration/Eingehende eMail-Adressen im David Administrator), kann dieser nun wie bei internen eMails Kommentare (“TeamTalk“) und andere interne David Benutzer hinzufügen. 
+

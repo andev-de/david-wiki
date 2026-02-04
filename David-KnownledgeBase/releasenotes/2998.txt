@@ -1,0 +1,73 @@
+====== Version 2998 vom 25.06.2018 ======
+
+Release: 2018-06-25T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Spam Reports von automatischer Ablage ausgenommen\\ Empfangene eMails, die vom Empfänger über die zugehörige Funktion (Kontextmenü) als Spam gemeldet werden, erscheinen daraufhin als „Spam Reports“ im Ausgangs-Ordner. Die automatische Ablagefunktionen hat bisher auch diese Spam Reports berücksichtigt und mit in die Ablage verschoben. Ab sofort werden Spam Reports nicht mehr in die Ablage übernommen, sondern bleiben stattdessen im Ausgang.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Optimierung der Anforderung von TLS-Zertifikaten\\ TLS-Verschlüsselungszertifikate werden ausschließlich für Domänen, nicht aber für IP-Adressen ausgestellt. Bei der Anforderung eines TLS-Zertifikats für WebBox, PostMan, und/oder Mail Access Server (Punkt „TLS-Verschlüsselung“ im david® Administrator) ist daher die Angabe einer IP-Adresse im Feld „Domäne“ nicht mehr möglich. 
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der integrierten Verschlüsselungs-Engine\\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.0h. Zusätzlich wird die aktuell verwendete Version nun auch im david® Administrator unter dem Menüpunkt „System/Protokolle &amp; Infos/Versions Informationen“ aufgeführt.
+
+
+==== Bugfix ====
+
+  * Optimiertes Intervall für automatische TLS-Zertifikat-Aktualisierung\\ Ein im david® Administrator bestelltes TLS-Verschlüsselungszertifikat muss regelmäßig aktualisiert werden, um gültig zu bleiben. Diese Aktualisierungen führt david® vollautomatisch durch. Vorgesehen dafür ist ein Intervall von 60 Tagen. Unter Umständen erfolgte die automatische Aktualisierung jedoch früher als nötig. Das wurde korrigiert, so dass das 60-Tage-Intervall nun generell eingehalten wird.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Verschlüsselungsfunktion für Dateianhänge direkt in den david® Client integriert\\ Bisher wurden die Funktionen, die der david® Client für die Verschlüsselung von eMail-Dateianhängen bietet, von einer separaten Client-Komponente (dvcrypt.dll) bereitgestellt. Da diese Funktionen nun direkt in den david® Client (dvwin32.exe) integriert wurden, entfällt die Datei dvcrypt.dll ab sofort.
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität des david® Chat\\ Bei Nutzung des david® Chat konnte in einem Einzelfall das Öffnen eines angehängten Bildes zu einem Absturz führen. Dieses Verhalten wurde korrigiert.
+
+  * Schnelleres Einfügen von Textbausteinen im Editor\\ Die Auswahl von Textbausteinen im Nachrichten Editor wurde beschleunigt. Zuvor mögliche Verzögerungen wurden beseitigt.
+
+  * Kein unerwünschter HTML-Code in eMails\\ Die Darstellung von HTML-formatierten eMails wurde überarbeitet. Bisher konnte es in einem Einzelfall vorkommen, dass einzelne Zeichen des HTML Quelltextes zu Beginn einer eMail angezeigt wurden.
+
+  * Korrigierte Umlaute bei Einsatz der Variable „Benutzer eMail„\\ In Nachrichten-Vorlagen lassen sich durch Verwendung von Variablen definierte Daten automatisch einsetzen. Bei Nutzung der Variable % (Benutzer eMail) wurden in der eMail-Adresse des Anwenders enthaltene Umlaute falsch dargestellt. Das wurde korrigiert, so dass nun auch eMail-Adressen mit Umlauten richtig im Text erscheinen. 
+
+  * Optimierte Darstellung mehrtägiger Terminserien\\ Ein neuer Kalendereintrag, der als ganztägiger Termin mit einer Gesamt-Dauer von mehreren Tagen und gleichzeitig als Terminserie mit regelmäßiger Wiederholung angelegt ist, wurde bisher im Kalender immer jeweils nur am ersten Tag angezeigt. Das wurde korrigiert, so dass nun immer sämtliche Tage solcher Termine im Kalender eingezeichnet sind.
+
+  * Korrektur für Serienmail mit Variablen aus SQL-Adressen\\ Bei Erstellung einer Serienmail, bei der variable Inhalte aus SQL-Adressen eingefügt werden sollen, wurden u.U. die Variablen (z.B. für die Anrede) nicht durch die jeweils individuellen Daten aus den jeweiligen Adresseinträgen, sondern stattdessen durch einen immer gleichen Inhalt ersetzt. Dieses Verhalten wurde korrigiert.
+
+  *  Längerer Betreff beim Dialog „Verteilung lernen“\\ Enthält eine empfangene Nachricht einen sehr langen Betreff und es wird über den Dialog "Verteilung lernen" eine Verteilregel hierfür erstellt, so konnte es vorkommen dass hierbei der Betreff für den Vergleich eingekürzt wurde. Das Verhalten wurde nun optimiert.\\ 
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Anpassung des chayns® ID Bereiches\\ Der chayns® ID Bereich wurde an die Windows Version des david® Clients angepasst.
+
+==== Bugfix ====
+
+  * Möglicher Absturz beim Aufruf des Dialoges „Verfügbare Spalten“\\ In einem Einzelfall konnte es beim Aufruf des Dialoges "Verfügbare Spalten" in der Eintragsliste zum Absturz kommen.
+  * Erstellen eines neuen david® Chats\\ Es konnte vorkommen, dass man mit einem Anwender, mit dem man noch keine Kommunikation per Chat hatte, keinen neuen Chat beginnen konnte.
+  * Diverse Abstürze behoben\\ Einige Abstürze, die in Einzelfällen aufgetreten sind, wurden behoben.\\ 
+
+===== Message Identification Services =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Zur stetigen Optimierung des Spamschutzes wurden die zentralen Funktionen der Message Identification Services aktualisiert und stehen nun in einer neuen Engine zur Verfügung. 
+

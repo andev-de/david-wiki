@@ -1,0 +1,92 @@
+====== Version 2925 vom 26.04.2017 ======
+
+Release: 2017-04-26T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * <p>Wird ein david Benutzer im david.Administrator gelöscht, so wird dieser nun 
+in der neuen Liste "Benutzer/Entfernte Benutzer" geführt. Dort können also ggfs. 
+noch Einstellungen der entfernten Benutzer eingesehen werden (z.B. welches 
+Kürzel ein&nbsp; ehemaliger Mitarbeiter hatte).</p>
+<p>Im david Client werden gelöschte Benutzer in LiveComments und im david Chat 
+nicht mehr als "unbekannt" geführt, sondern der Benutzername wird stattdessen 
+durchgestrichen dargestellt.</p>
+  * <p>Die Funktion "Spam melden" im david Client wurde optimiert - der Spam Report 
+wird nun vom Service Layer und nicht mehr vom david Client erzeugt.</p>
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Beim Zugriff per ActiveSync auf einen defekten Kalendereintrag (negativer 
+Zeitwert des Eintrages) konnte es zum Absturz der WebBox kommen. Dies wurde in der neuen davidlib.dll behoben.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Ist der david Anwender über den chayns® ID Bereich angemeldet und gehört bei mindestens einer chayns® Site zur Gruppe Manager oder chayns® Customer Service, so steht ihm nun in der Favoritenleiste der neue Button "Intercom" zur Verfügung. Zusätzlich kann er in der InfoCenter Ansicht über den "+" Button diese Sites als Intercom Quelle hinzufügen.
+
+In der Intercom Ansicht können über den "Neu" Button Intercom Nachrichten an andere Anwender erstellt werden. Über den Button "TalkAbout" lassen sich Intercom Threads an interne david Anwender versenden, um diese ggfs. zu diskutieren.
+
+  * Die Auswahl der Emoticons im Nachrichten Editor und im david®chat wurde 
+erweitert.
+  * <p>Es wurden u.a. folgende Designanpassungen vorgenommen:</p>
+<p>Position der Favoritenleiste ist immer unten.\\ Position der "Kommentare" in 
+eMails (bisher "LiveComments") ist immer links.\\ Schalter für Farbintensität 
+von Grafiken und Symbolen ist auf "s/w" eingestellt und die Einstellung wurde 
+nun nach "Outdated" verschoben.\\ Der "+" Button in der Favoritenleiste wurde 
+entfernt.\\ Das "Suchen" Feld steht in der Favoritenleiste nun ganz 
+rechts.\\ Das Menü beim Erstellen bzw. Bearbeiten von Nachrichten wurden 
+geändert.\\ Die Icons im david Client (z.B. Symbolleisten, Dialoge) wurden 
+erneuert.\\ Der Button "Vorschau unter/neben Eintragsliste" wurde entfernt.</p>
+  * <p>Die Standardfarbe des david Client Layout wurde auf einen Grauton geändert und 
+wird einmalig beim Update eingestellt.</p>
+  * <p>Die Wörterliste der Rechtschreibprüfung wurde erweitert. </p>
+  * <p>Wenn&nbsp;eine Nachricht als persönlich, privat oder vertraulich markiert ist, 
+wurde&nbsp;dies bisher&nbsp;nur in der geöffneten eMail&nbsp;angezeigt. Diese Info wird nun 
+auch in der Vorschau neben der Liste angezeigt </p>
+  * <p>Hat&nbsp;ein david Benutzer nicht die Berechtigung den david®Chat zu verwenden, so 
+steht er nun für andere david Benutzer in der david®Chat Liste "Alle Kontakte" 
+nicht mehr zur Auswahl.</p>
+
+==== Bugfix ====
+
+  * Wird in einer Nachricht ein Hintergrund Sound eingefügt, so wurde dies u.U. nicht gespeichert.
+  * <p>Soll aus einer externen Applikation (z.B. Microsoft Excel) eine Datei per  „Senden an“ an ein geöffnetes Editor Fenster übergeben werden, so wurde die  Datei u.U. an das falsche Editor Fenster angehängt.</p>
+  * <p>Der david Mediaplayer (dvwintv.exe) ließ sich u.U. nicht mehr starten.</p>
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Ältere macOS Systeme (&lt; 10.10) erhalten lediglich ein Update auf die david 
+Client Mac Version 1.4958. Für das Update auf neuere david Client Mac Version 
+wird eine neuere macOS Version benötigt.
+  * <p>Es wurden u.a. folgende Designanpassungen vorgenommen:</p>
+<p>Position der Favoritenleiste ist immer unten.\\ Position der "Kommentare" in 
+eMails (bisher "LiveComments") ist immer links.\\ Schalter für Farbintensität 
+von Grafiken und Symbolen ist auf "s/w" eingestellt.\\ Die Icons im david 
+Client (z.B. Symbolleisten, Dialoge) wurden erneuert.\\ Der Button "Vorschau 
+unter/neben Eintragsliste" wurde entfernt.\\ Die Standardfarbe des david Client 
+Layout wurde auf einen Grauton geändert und wird einmalig beim Update 
+eingestellt.</p>
+  * <p>Der&nbsp;chayns®ID Bereich oben rechts im Client ist nun wie beim david Client PC integriert.</p>
+
+=====  hybrid TLD =====
+
+==== Feature ====
+
+  * Neuer Schalter im hybrid TLD: Brief nach erfolgreichem Versand aus dem E-Post 
+Konto löschen.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Die Version der Desktop Protection for david® wurde aktualisiert, es gab 
+Anpassungen an das Creators Update von Windows 10.
+

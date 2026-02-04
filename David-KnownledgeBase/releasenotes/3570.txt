@@ -1,0 +1,22 @@
+====== Version 3570 vom 25.09.2023 ======
+
+Release: 2023-09-25T00:00:00
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Dark Mode für eMail Vorschau einstellbar\\ Unter Einstellungen/Ansicht/Vorschau lässt sich nun bestimmen, ob die Darstellung einer eMail in der Vorschau an den Dark Mode angepasst werden soll, sofern das möglich ist.
+  * Optimierung bei der Anzeige gepackter Ordner\\ Gepackte Ordner werden andersfarbig (blau) angezeigt. Diese Farbe wurde bisher nur bei der Selektion eines Ordners verwendet und nicht in der Ordnerübersicht.
+  * Dark Mode bei Adressen und Aufgaben\\ Wird der Dark Mode eingestellt, so werden nun auch die Adress- und Aufgabenansichten entsprechend dargestellt.
+  * Neue Design Einstellung „System“ (Dark Mode)\\ Es gibt nun unter Einstellungen/Ansicht die zusätzliche Design Einstellung „System“, bei der sich der helle oder dunkle Modus nach der Windows Systemeinstellung richtet.
+  * Optimierungen beim Editor\\ Beim Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Einfügen von HTML Code mit Zeilenumbrüchen\\ Soll im Editor über „Einfügen/HTML“ HTML Code eingefügt werden, so durfte dieser bisher keine Zeilenumbrüche haben. Das ist nun möglich.
+  * Mögliches Fehlverhalten beim Zitieren\\ Soll aus einer eMail zitiert werden, so konnte es vorkommen dass der zitierte Text nicht in die neue eMail übernommen wurde.
+  * Mögliche Anzeigefehler im Dark Mode\\ Diverse Anzeigefehler im Dark Mode wurden behoben, z.B. bei der Anzeige von WebLinks.
+  * Mögliches Fehlverhalten bei Tastatur Shortcuts im Editor\\ Es konnte vorkommen, dass Tastatur Shortcuts im Editor teilweise nicht funktionierten, z.B. Strg+V.
+

@@ -1,0 +1,56 @@
+====== Version 2958 vom 11.09.2017 ======
+
+Release: 2017-09-11T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Im David Administrator kann nun bei der Konfiguration eines StrongBox Jobs ein Konto angegeben werden unter dem der Service Layer die Image Datei anlegt. Der Service Layer muss in der Lage sein, sich als der angegebene Benutzer anmelden zu können. Somit kann die Image Datei z.B. auf einem anderen Rechner erstellt werden.
+  * Ist ein Autoreply in einem Ordner eingerichtet, so erfolgt kein unnötiger Autoreply an folgende Adressen: noreply, no-reply, newsletter.
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bei der Volltextsuche zum Absturz des Service Layers kommen.
+  * Wird im David Administrator in der Liste "Entfernte Benutzer" die Konfiguration geöffnet und mit OK geschlossen, so konnte es zum Absturz des Service Layers kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Es konnte zu einem Fehlverhalten kommen, wenn Nachrichten per David Client Web
+oder über ein Formular der WebBox erstellt werden sollen.
+  * Beim Ändern eines Elements einer Terminserie per ActiveSync konnte es u.U. vorkommen, dass der Termin auf dem David Server mehrfach eingetragen wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Bei der Auswahl der Textbausteine für eine Auto-Reply Regel gibt es nun einen zusätzlichen Button um direkt einen neuen Textbaustein anzulegen, der dann auch  direkt ausgewählt werden kann. Der Button ist inaktiv in Ordnern, in denen keine Rechte vorhanden sind.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Beim Abwesenheits-Assistenten kann nun beim Erstellen der Regeln nach internen und externen Nachrichten unterschieden werden.
+
+==== Bugfix ====
+
+  * Wenn man eine Aufgabe oder einen Termin mit eingefügter Grafik ausdruckt, wurde diese u.U. nicht mit gedruckt.
+  * Wird in der Druckvorschau der Drucker gewechselt oder die Seite eingerichtet, so konnte anschließend nicht zu den weiteren Seiten gewechselt werden.
+  * Werden beim Ausdruck einer Nachricht Einstellungen zu Kopf- und/oder Fußzeile vorgenommen, so konnte es zum Absturz kommen.
+  * Beim Ausdruck von eMails fehlte u.U. die Info über Dateianhänge, wenn die eMail im Ausgangsordner oder im Bearbeiten Modus gedruckt wurde.
+  * In einem Einzelfall konnte es beim Aufruf des Kalenders zum Absturz kommen. Ursache war hier ein fehlerhafter Eintrag im Kalender.
+  * Wird eine Nachricht auf Wiedervorlage gelegt und anschließend die Zeit der Wiedervorlage nochmal geändert, so wurde bei der anschließenden Erinnerung u.U. die ursprüngliche Wiedervorlage Zeit angezeigt.
+  * Bei den Vorschlägen zur Rechtschreibkorrektur konnte es in Einzelfällen vorkommen, dass diese im Kontextmenü falsch platziert waren.
+  * Es wurden Abstürze des David Clients behoben, die in Einzelfällen auftreten konnten.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Es wurden diverse Optimierungen vorgenommen.
+
+===== Message Identification Services =====
+
+==== Feature ====
+
+  * Die Engine für die Message Identification Services wurde aktualisiert. 
+

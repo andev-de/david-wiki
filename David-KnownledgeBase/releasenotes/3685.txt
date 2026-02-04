@@ -1,0 +1,46 @@
+====== Version 3685 vom 04.09.2024 ======
+
+Release: 2024-09-04T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem David Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.710.
+  * Automatische KI Zusammenfassung empfangener eMails\\ Die neue Einstellung „System/KI/Zusammenfassung automatisch erstellen (Beta)“ im David Administrator bewirkt, dass für Anwender mit aktivierten KI Diensten bei allen im persönlichen Eingang empfangenen eMails die Sidekick Zusammenfassungen automatisch bereits durch den Service Layer erstellt werden und daher immer sofort in Tobit.Team zur Verfügung stehen. Ansonsten erfolgt die Erstellung weiterhin wie bisher durch Tobit.Team erst nachdem die Nachrichten dort zum ersten Mal angeklickt wurden.
+  * Erstellung von TeamTalks zu eMails unterbinden\\ Der Absender einer eMail kann nun per Befehl (@_@TeamTalk no@_@ oder als Kurzform ttk no) das Kommentieren dieser eMail untersagen. Im David und Team Client der Empfänger wird dies durch einen Hinweis angezeigt. Im Team Client kann dies statt über den Befehl auch über eine Einstellung bei den Nachrichtenoptionen erreicht werden.
+  * Empfängeradresse in Robinson-Liste aufnehmen\\ Mit dem Befehl @_@AddRobinson Adresse,Name[,rnd]@_@ kann eine Empfängeradresse in die Robinson-Liste aufgenommen werden, so dass keine Nachrichten an diese Adresse versendet werden können. Bisher wurde ein neuer Eintrag erst nach einem Neustart des Service Layers beachtet, jetzt wird er sofort nach dem Eintragen beachtet.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Annahme externer Aufgabenanfragen\\ Wird eine externe Aufgabenanfrage angenommen, so konnte es u.U. passieren, dass diese nicht im persönlichen Aufgabenordner gespeichert wurde.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Weiterleiten von eMails\\ In Einzelfällen konnte es beim Weiterleiten von eMails über einen Provider zu einer Fehlfunktion kommen, so dass die eMails nicht versendet werden konnten.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierte Rechtschreibprüfung\\ Im David Client wurde die Rechtschreibprüfung optimiert. Per Kontextmenü können vorgeschlagene Wörter in das Wörterbuch aufgenommen werden und die Rechtschreibprüfung funktioniert auch in verschiedenen Sprachen.
+  * Zusätzliche Sprachen bei Rechtschreibprüfung\\ Im Team Client können nun bei der Rechtschreibprüfung neben englisch auch die weiteren Sprachen verwendet werden, die im Client eingestellt werden können.
+  * Optimierung beim Zugriff auf den Tobit.Chat\\ Wird der Tobit.Chat verwendet, so erfolgt der Zugriff auf den Chat nach Start des Team Clients nun schneller.
+  * Link Popup zeigt URLs im Editor\\ Um deutlich zu machen, dass man bei Anpassungen an einem Hyperlink (URL, eMail-Adresse oder Datei-Pfad) im David Editor lediglich den angezeigten Text ändert, aber nicht das eigentliche Ziel des Links, wird jetzt in diesem Fall automatisch ein Popup-Fenster geöffnet, das auch die gleichzeitige Bearbeitung des Ziels ermöglicht.
+  * Optimierung der Cursor Position im Editor\\ Wenn eine eMail-Vorlage keine eingestellte Cursor Position hat, so wird der Cursor nun besser positioniert. Er wird nicht mehr unerwartet in einem neuen  Element mit größerem Zeilenabstand positioniert, außerdem steht der Cursor nun am Ende der ersten Zeile und nicht am Ende des gesamten Elements. Gibt es eine feste Cursor-Position (z.B. per id=“cursor“ im HTML Teil der Vorlage oder per STRG+SHIFT+W im Editor), dann steht der Cursor an der selben Position wie zuvor.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Speichern geänderter eMails\\ Wird im Team Client eine eMail zum Bearbeiten in einem eigenen Tab geöffnet und beim Schließen über den Tab das Speichern der Änderungen verneint, so wurden die Änderungen dennoch gespeichert.
+  * Unerwartetes Beenden von Team oder David Client\\ Ein mögliches Problem, das dafür sorgen konnte, dass sich die Anwendung unerwartet und ohne Fehlermeldung beendet, wurde behoben.
+  * Anzahl ungelesener Nachrichten im Chat u.U. nicht angezeigt\\ Wenn die Anzeige von Personenbildern ausgeschaltet ist, wurden sie beim Team Client auch im Chat nicht mehr angezeigt. Dadurch fehlte dann das Badge für die Anzahl ungelesener Chats.
+  * Sidekick Button u.U. nicht auswählbar\\ Wenn bei einem Anwender die Berechtigung auf den Chat deaktiviert ist (David Administrator, Benutzerrechte), so konnte der Anwender den Sidekick Button in der Favoritenleiste nicht auswählen.&nbsp;
+  * Benutzerbild bei neuer Chat Nachricht u.U. nicht angezeigt\\ Wird der Tobit.Chat verwendet und für einen Anwender ist ein Benutzerbild hinterlegt, so wurde dies in der InfoCenter Ansicht bei einer neuen Chat Nachricht u.U. nicht angezeigt.
+  * Optimierung beim Einfügen großer Grafiken in den Editor\\ Beim Einfügen großer Grafiken in den Editor kam es bisher u.U. zu Verzögerungen. Das wurde nun optimiert.
+  * Optimierung beim „Als gelesen“ markieren in InfoCenter Ansicht\\ Wird ein Eintrag in der InfoCenter Ansicht des Team Clients zum Bearbeiten geöffnet, so wird hierbei ein Tab erstellt und der Eintrag als gelesen markiert. Beim Schließen des Tabs wurde der nun gelesene Eintrag aber nicht aus der Ansicht entfernt.
+  * Mögliches Fehlverhalten beim Speichern geänderter eMails\\ Wird eine eMail im Bearbeiten Modus geöffnet und man macht Änderungen, so wurden diese beim Schließen des Tabs über das x gespeichert, obwohl die Frage nach dem Speichern mit „Nein“ beantwortet wird.
+  * Unerwartete leere Absätze im Editor bei Verwendung von  Tags im Editor\\ Bei der Verwendung des meta-HTML-Elements innerhalb des body-HTML-Elements einer Vorlage konnten ungewollt leere Textzeilen erstellt werden.
+

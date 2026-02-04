@@ -1,0 +1,46 @@
+====== Version 3488 vom 12.09.2022 ======
+
+Release: 2022-09-12T00:00:00
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * OAUTH2 Authentifizierung für eMail Versand\\ Bei den PostMan Sendemethoden kann nun der Typ OAUTH2 Authentifizierung eingestellt werden, unterstützt werden aktuell Google und Microsoft Konten.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * OAUTH2 Authentifizierung für POP3 Abruf\\ Beim POP3 Postfach kann die OAUTH2 Authentifizierung nun auch für Microsoft Konten eingestellt werden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Kein Beta Status mehr des david Modern Clients\\ Der david Modern Client hat nun keinen Beta Status mehr.
+  * Optimierung der Performance beim Öffnen von eMails und Laden von Vorlagen\\ Das Öffnen von eMails und Laden von Vorlagen für den Editor wurde optimiert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMailerstellung mit Variablen\\ In einem Einzelfall konnte es bei der Erstellung einer neuen eMail zum Absturz des Clients kommen, wenn in der eMail Variablen verwendet werden.
+  * Mögliches Fehlverhalten beim Ändern von Adressen\\ In Einzelfällen konnte es beim Ändern von Adressen zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Öffnen einer Plain Text eMail über die Tickeransicht\\ In einem Einzelfall konnte es zum Hängen des Clients kommen wenn eine Plain Text eMail über die Tickeransicht geöffnet wird.
+  * Fehlverhalten bei der Einstellung „Nachricht nach Wechsel als gelesen markieren“\\ Die Einstellung "Ansicht/Vorschau/Nachricht nach Wechsel als gelesen markieren" war beim david Modern Client ohne Funktion.
+  * chayns Anmeldung u.U. nicht verfügbar\\ In einem Einzelfall konnte es beim david Modern Client vorkommen, dass der Button für die chayns Anmeldung nicht angezeigt wurde.
+  * ProviderSync: Mögliches Fehlverhalten bei Anmeldung\\ Die Anmeldung der ProviderSync funktionierte u.U. nicht mehr, so dass Termine nicht mehr synchronisiert wurden.
+  * Chat aufrufen trotz fehlender Berechtigung\\ Wenn ein Anwender nicht die Berechtigung hat den david Chat zu verwenden, ist der entsprechende Button in der Favoritenleiste nicht verfügbar. Über den Hotkey F11 konnte der Chat jedoch dennoch aufgerufen werden, das ist nun behoben.
+
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Optimierung beim Laden von Nachrichten und RSS Feeds\\ Das Laden von Nachrichten und RSS Feeds wurde optimiert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Selektion eines Favoriten\\ Wird ein Ordner zur Favoritenleiste hinzugefügt, so konnte es in Einzelfällen vorkommen, dass er nicht selektiert werden konnte.
+

@@ -1,0 +1,45 @@
+====== Version 2865 vom 01.06.2016 ======
+
+Release: 2016-06-01T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Werden im david.Administrator beim Anwender weitere eMail-Adressen für ausgehende Nachrichten hinterlegt, so wurden Umlaute und Sonderzeichen in diesen Adressen beim Erstellen einer eMail u.U. falsch übernommen.
+  * Eine eingerichtete Client Verteilung funktionierte u.U. nicht, wenn der Betreff der zu verteilenden Nachricht OEM kodiert ist und der Betreff in der Verteilregel UTF-8 ist.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Der Schalter "Kompatibilitätsmodus" ist nun auch in den Benutzereinstellungen des david Administrators verfügbar, so dass er vom Administrator für die david Anwender vorgegeben werden kann.
+
+==== Bugfix ====
+
+  * Wurden im david Administrator mehrere Telefonie-Dienst Profile angelegt und es wird in der Benutzerkonfiguration eines dieser Profile ausgewählt, so wurde u.U. das falsche Profil angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert. 
+  * Im Termin Dialog wird unter "Optionen" bei den eingetragenen Teilnehmern als zusätzliche Spalte nun auch deren eMail-Adresse angezeigt.
+  * Der Button "Verteilerkreis verlassen" bei einer empfangenen internen eMail ist nun auch dann vorhanden, wenn noch keine LiveComments geschrieben wurden.
+  * Die Auswahl und Anzeige der Emoticons im Editor und david®chat wurde optimiert.
+  * Die Standard eMail Vorlage wurde für die Anzeige in der iOS Mail App optimiert.
+  * Die Auswahl und Anzeige der Emoticons im Editor und david®chat wurde optimiert.
+  * Die Formatierungsleiste im Editor wurde überarbeitet. Die klassische Formatierungsleiste kann über die Einstellungen (Editor/Erweitert), sowie im david.Administrator (Benutzerdaten) wieder aktiviert werden.
+
+==== Bugfix ====
+
+  * Im david®chat funktionierte die Suche nach Benutzernamen per Quickfinder u.U. nicht, wenn im Quickfinder eines Ordner das "Von" deaktiviert ist.
+  * Soll die Eintragsliste ausgedruckt werden und es wird in dem entsprechenden Dialog auf "Vorschau" geklickt, konnte es zum Absturz des Clients kommen.
+  * Wird per MAPI Protokoll eine Datei mit Umlauten versendet, so waren die Umlaute im Nachrichten Editor u.U. fehlerhaft. Durch Aktivierung des Kompatibilitätsmodus in den Client Einstellungen konnte der Fehler behoben werden.
+  * Die Standard eMail Vorlage wurde für die Anzeige in der iOS Mail App optimiert.
+  * Bei einer DPI Einstellung von 125% wurde der Betreff in der Eintragsliste zu klein dargestellt.
+  * Bei einer DPI Einstellung von 125% wurde der Betreff in der Eintragsliste zu klein dargestellt.
+  * Soll eine Nachricht an mehrere Empfänger verteilt werden, so funktionierte dies nur wenn die Empfänger in der Liste von unten nach oben markiert werden. Andernfalls wurde die Nachricht nur an den ersten Empfänger verteilt.
+  * Wird eine eMail mit Dateianhang im Bearbeiten Modus ausgedruckt, so fehlte auf dem Ausdruck u.U. die Info zu dem Dateianhang.
+

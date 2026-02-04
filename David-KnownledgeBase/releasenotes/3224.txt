@@ -1,0 +1,101 @@
+====== Version 3224 vom 19.08.2020 ======
+
+Release: 2020-08-19T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Einstellung „Vererbung aufheben“ in Ablage-Ordnern\\ Wird eine Ablage eingerichtet so wird nun beim Anlegen des obersten Ablage-Ordners der Schalter "Vererbung aufheben" aktiviert, so dass eine eingestellte Bereinigung nicht für die Ablage-Ordner übernommen wird.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten in Verbindung mit der Volltextsuche\\ In Verbindung mit der Volltextsuche konnte es zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Verbindung des david Administrators\\ In einem Einzelfall konnte es bei der Verbindung vom Administrator zum Absturz des Service Layers kommen.
+  * Mögliches Fehlverhalten bei wiederkehrenden Terminen\\ In einem Einzelfall konnte es bei wiederkehrenden Terminen zum Absturz kommen.
+  * Mögliches Fehlverhalten in Verbindung mit der Summarizer Vorschau\\ In Einzelfällen konnte es in Verbindung mit der Summarizer Vorschau zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Verschieben von Nachrichten\\ Soll eine Nachricht in einen anderen Ordner verschoben werden und es können hierbei nicht alle zugehörigen Dateien verschoben werden (z.B. weil eine Drittapplikation oder ein Virenscanner diese geöffnet hat), so bleibt die Nachricht nun im ursprünglichen Ordner liegen.
+  * Mögliches Fehlverhalten bei der Anwendung von Verteilregeln\\ In einem Einzelfall konnte es bei der Anwendung einer Verteilregel zum Absturz kommen.
+  * Informationen zum Eintrag nach Entpacken von Ablage-Ordnern\\ Enthält eine Nachricht in einem gepackten Ordner Tracking Informationen oder Informationen zur Weiterleitung oder Antwort dieser Nachricht, so waren diese Informationen nach dem Entpacken des Ordners u.U. nicht mehr vorhanden.
+  * Mögliches Fehlerverhalten bei Eintrag im Ereignis Ordner\\ In Einzelfällen konnte es zum Absturz beim Start des Service Layers kommen, Ursache waren hier vorgenommene Einträge im Ereignis Ordner.
+  * Mögliches Fehlerverhalten bei Indexerstellung\\ In Einzelfällen konnte es beim Erstellen eines Eintrages für den Volltextindex zum Absturz kommen.
+  * Mögliches Fehlerverhalten beim Ändern des Status im Transit\\ In Einzelfällen konnte es zum Absturz kommen, wenn durch den david Client Statusänderungen an Versandaufträgen im Transit vorgenommen werden.
+  * Mögliches Fehlerverhalten beim Verschieben oder Kopieren von Nachrichten\\ In Einzelfällen konnte es beim Verschieben oder Kopieren von Nachrichten, die Tracking Informationen enthalten, zum Absturz kommen.
+  * Mögliches Fehlerverhalten bei der Abarbeitung von PostMan Sendeaufträgen\\ In Einzelfällen konnte es bei der Abarbeitung von PostMan Sendeaufträgen zum Absturz kommen.
+  * Falscher Versandzeitpunkt eines Autoreplys auf eine Besprechungsanfrage\\ Ist bei einem Anwender ein Autoreply eingestellt und er erhält eine Besprechungsanfrage, so wurde diese erst zum Zeitpunkt des angefragten Termins versendet.
+  * Mögliches Fehlverhalten beim Ändern oder Löschen eines StrongBox Jobs\\ In Einzelfällen konnte es beim Ändern oder Löschen eines StrongBox Jobs zum Absturz kommen.
+  * Mögliches Fehlverhalten beim david Client Web ohne david Freigabe\\ Existiert auf dem david Ordner keine Freigabe, so war der Remote Access per david Client Web u.U. nicht möglich.
+  * Mögliches Fehlverhalten bei der Automation\\ In Einzelfällen konnte es in Verbindung mit der Automation zu einem Absturz kommen, wenn Einträge im Ereignis Ordner vorgenommen wurden.
+  * Mögliches Fehlverhalten beim Zugriff auf Nachrichten in Ablage-Ordnern per smart client\\ Werden per smart client Plain Text Nachrichten in Ablage-Ordnern geöffnet, so wurde der Inhalt nicht angezeigt. Außerdem konnten die Dateianhänge nicht geöffnet werden.
+  * Mögliches Fehlverhalten beim Weiterleiten einer eMail mit sehr vielen Grafiken\\ Wird eine eMail mit sehr vielen Grafiken (mehr als 255) weitergeleitet, konnte es zum Absturz kommen.
+  * Summarizer Vorschau u.U. fehlerhaft nach Antwort per smart client\\ Wird bei einer eMail mit Kommentaren auf einen Kommentar per smart client geantwortet, so konnte es anschließend zu Anzeigefehlern in der Summarizer Vorschau kommen.
+  * Umlaute im Betreff falsch nach Bearbeiten per smart client\\ Wird per smart client eine Nachricht mit Umlauten im Betreff bearbeitet, so waren die Umlaute anschließend falsch.
+  * Mögliches Fehlverhalten beim Restore aus StrongBox Images\\ In Einzelfällen konnte es beim Restore aus StrongBox Images zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Beenden\\ Beim Beenden des Service Layers konnte es in Verbindung mit dem Summarizer zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Statistiken\\ Bei der Verwaltung der Statistiken konnte es zu einem Absturz kommen, z.B beim erhöhen der Anzahl extern empfangener Mails.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Verzögerter Aufruf des Menüs „Druckaufträge“\\ Bei der Auswahl des Menüs "Druckaufträge" konnte es zu einer Verzögerung kommen.
+  * Benutzerdaten des Template Users änden\\ Werden die Einstellungen des "Template Users" geöffnet, so konnten hier die Einstellungen unter "Benutzerdaten/david Client konfigurieren" nicht gespeichert werden.\\ 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Tracking Kommando\\ Ist das Message Tracking aktiviert, so wurde das Tracking Kommando für "kopiert" u.U. fehlerhaft versendet, so dass es bei dem Empfänger nicht korrekt zugeordnet werden konnte.
+  * Mögliches Fehlverhalten bei falsch eingestelltem Intervall\\ Ist der PostMan für den Provider Versand eingerichtet, so konnte es bei einem fehlerhaften Intervall für den Versand zum Absturz kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Weitere Optimierungen bei Verwendung des Chromium Editors\\ Der Chromium Editor (Beta) wurde weiter optimiert. So enthält er z.B. nun auch die Rechtschreibprüfung, außerdem verwendet auch der Kalender und Aufgaben Editor nun die Chromium Engine, wenn aktiviert.
+  * Optionen beim Löschen einer Besprechungsänderung\\ Wird eine Besprechungsanfrage gelöscht, erscheint hier immer schon ein Dialog um schnell auf die Anfrage antworten zu können (z.B. Annehmen und Absender antworten). Diese Auswahl erscheint nun auch bei einer Besprechungsänderung.
+  * Neue Bedingung bei Verteilregeln: „Empfänger oder Verteilkennung“\\ Es gibt nun eine neue Bedingung bei den Verteilregeln: "Empfänger oder Verteilkennung".
+  * Verwendung der Chromium Engine bei eMail „Nur lesen“ Ansicht\\ Ist in den Client Einstellungen die Verwendung der Chromium Engine aktiviert, so wird diese nun auch beim Öffnen von empfangenen eMails im separaten Fenster verwendet.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Aktualisierte GhostScript Version bei hybrid mail\\ Bei einer Neuinstallation des Clients wird nun die neue GhostScript Version 9.52 installiert und bei hybrid mail Aufträgen verwendet.
+  * Einstellung um Intercom Fenster in separatem Fenster anzuzeigen\\ Neue Einstellung "Ansicht/Zusatzfenster/neue Intercom Nachricht in separatem Fenster anzeigen". Wird der Schalter deaktiviert, so wird bei neuen persönlichen Intercom Nachrichten kein Dialog geöffnet. Es erfolgt lediglich eine Information durch ein rotes Badge oben im david Client.
+  * Erstellen einer neuen Erinnerung über Wiedervorlage Ordner\\ Steht man im Wiedervorlage-Ordner und klickt auf "Neu" wird nun direkt der Dialog "Neue Erinnerung" geöffnet statt wie bisher der normale Editor.
+  * Einfügen eines Deckblattes bei Faxerstellung\\ Wird bei der Faxerstellung im Editor des david Clients ein Deckblatt eingefügt, so wird dies nun nicht mehr per Befehl in den Editor geschrieben, sondern wird als eigene Infozeile oberhalb des Editors dargestellt.
+
+==== Bugfix ====
+
+  * Standardgröße der Vorschau wiederherstellen\\ Wird die Vorschau in der Größe verändert (Strg+-), so wurde sie durch Strg+0 nur für den aktuellen Eintrag wieder auf die Vorgabe eingestellt. Nun gilt das generell für alle Nachrichten.
+  * Abfrage nach dem Speichern nach Ablehnen einer Besprechungsanfrage\\ Wird eine bereits zugesagte Besprechungsanfrage nachträglich abgelehnt und es soll zusätzlich ein Text als Erklärung gespeichert werden, so erfolgte hierzu keine Abfrage und der Text wurde nicht gespeichert.
+  * Parameter in Datei tobit.ini nach Upgrade auf den 64 Bit Client\\ Wird ein Upgrade vom 32 Bit auf den 64 Bit Client vorgenommen und in der tobit.ini wurden zuvor die Parameter "EntryCommand" oder "ArchiveCommand" verwendet, so wurden diese nicht übernommen.
+  * Mögliches Fehlverhalten beim Ordnerwechsel\\ In Einzelfällen konnte es beim Ordnerwechsel zum Absturz kommen.
+  * Fehlverhalten beim Löschen einer Aufgabenkategorie\\ Wird im david Client bei den Aufgaben die erste auswählbare Kategorie gelöscht, so wurden hier anschließend die Texte der Kalenderbeschriftungen angezeigt. Das ist nun behoben.
+  * „Geschweifte Klammer zu“ im Nachrichten Editor\\ Das Zeichen "Geschweifte Klammer zu" konnte im Nachrichten Editor nicht eingetragen werden.
+  * Stempel in Faxen nach Upgrade auf den 64 Bit Client u.U. nicht verfügbar\\ Nach dem Upgrade vom 32 Bit auf den 64 Bit david Client standen im Fax Viewer die Stempel u.U. nicht mehr zur Auswahl.
+  * Mögliches Fehlverhalten beim Antworten mit digitaler Signatur\\ Hat ein Anwender zwei Absender eMail-Adressenm und es ist nur bei der zweiten eine digitale Signatur hinterlegt, so konnte es beim Antworten auf eMails an diese zweite Adresse zu einem Fehlverhalten kommen.
+  * Mögliches Fehlverhalten beim Antworten oder Weiterleiten von eMails\\ Beim Antworten oder Weiterleiten von eMails konnte es zum Absturz kommen.
+  * MAPI Funktion nach Upgrade auf 64 Bit david Client\\ Wird ein Upgrade von der 32 Bit auf die 64 Bit Version des david Clients gemacht, so war anschließend die MAPI Funktion u.U. nicht mehr gegeben.
+  * Fehlerhafte Vorschau von angehängten Faxdateien beim 64 Bit Client\\ Enthält eine eMail Faxdateien als Anhang, so war hier die Vorschau fehlerhaft.
+  * Nachrichten suchen in InfoCenter Ansicht\\ In der InfoCenter Ansicht können per Quickfinder auch bereits gelesene Nachrichten gefunden werden. Das funktionierte nicht, wenn aktuell in der InfoCenter Ansicht keine ungelesene Nachricht angezeigt wird.
+  * Angehängte mehrseitige Tiff Dateien öffnen\\ Hat eine eMail einen mehrseitigen Tiff-Dateianhang, so wurde beim Öffnen nur die erste Seite angezeigt.
+  * Verwendung des Befehls @@Direkt bei einem hybrid mail Versandauftrags\\ Bei der Erstellung eines hybrid mail Versandauftrags wurde der Befehl @@Direkt nicht mehr ausgewertet.
+  * Dateianhänge u.U. nicht angezeigt\\ Beim Öffnen von signierten eMails mit Dateianhängen wurden diese u.U. nicht angezeigt.
+  * Ordner verschieben u.U. nicht möglich\\ In einem Einzelfall konnte es vorkommen, dass ein Ordner nicht in einen anderen Ordner verschoben werden konnte.
+  * Fehlendes Kontextmenü beim Separator in eMails\\ Das Kontextmenü im Separator beim Weiterleiten/Antworten enthielt nicht mehr die Punkte "eMails senden an", "Besprechungsanfrage an",...
+  * Mögliches Fehlverhalten bei geöffnetem Dialog „Ordner-Eigenschaften“\\ Wird beim geöffnetem Dialog für die Ordner-Eigenschaften der Ordner gewechselt, z.B. von Eingang nach Ausgang, so konnte der Dialog nicht mehr bedient werden und man musste hierzu den Client beenden.
+  * Mögliches Fehlverhalten beim Einfügen von Bildern per UNC Pfad\\ Soll beim Erstellen einer neuen Nachricht ein Bild eingefügt werden, so funktionierte dies u.U. nicht, wenn es über einen UNC Pfad eingefügt wurde.
+  * Mögliches Fehlverhalten beim Weiterleiten/Antworten von eMails mit der Chromium Engine\\ Ist in der Einstellungen der Schalter "HTML-Inhalte mit Chromium darstellen (Beta)" aktiviert, so konnte es in Einzelfällen beim Weiterleiten/Antworten von Plain Text eMails zum Absturz kommen.
+  * Mögliches Fehlverhalten beim 64 Bit Client und monatlichen Terminen\\ Wird der 64 Bit Client verwendet, so konnte es in Einzelfällen zu einem Fehlverhalten in Verbindung mit monatlichen Terminen im Kalender kommen. Diese wurden in dem Fall nicht angezeigt oder es kam zum Absturz beim Wechsel in den Kalender.
+
+=====  ISDN TLD =====
+
+==== Bugfix ====
+
+  * Optimierung im Fehlerfall\\ Beim Auftreten des Fehlers "No free PLCI" war anschließend u.U. bis zum Neustart kein Faxversand mehr möglich.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Feature ====
+
+  * Neue Einstellungen zur Verwendung von ECM und V17\\ In der Konfiguration kann nun die Verwendung von "ECM" und "V17" festgelegt werden.
+

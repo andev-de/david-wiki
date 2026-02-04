@@ -1,0 +1,38 @@
+====== Version 2976 vom 29.01.2018 ======
+
+Release: 2018-01-29T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Werden Unterstriche, Bindestriche oder Gleichheitszeichen in eMails als Trennzeichen verwendet, so werden diese nun nicht mehr vom Summarizer bei der Zusammenfassung berücksichtigt.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Bei den "entfernten Benutzern" wurde das nachträgliche Ändern von Einstellungen nun unterbunden.
+ 
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Wird eine signierte Mail mit Versandzeitpunkt versendet, wird jetzt der Versandzeitpunkt im Mime Header eingetragen. Zuvor stand dort der Zeitpunkt der Erstellung der Nachricht (nur bei signierten Mails).
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Ist man per chayns® Login angemeldet, so gibt es nun den neuen Button "chayns® Sites" in der Favoritenleiste, der alle besuchten und alle eigenen chayns® Sites enthält.
+  * Die Feedback Funktion wurde optimiert.
+  * Bei höheren Auflösungen konnte es u.U. zum Fehlverhalten beim Scrollen in der Eintragsliste (Ansicht "Vorschau neben der Liste") kommen.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+
+==== Bugfix ====
+
+  * Stellt man in der Aufgabenansicht eine Gruppierung ein (z.B. nach gelesen), so konnte es zum Absturz des Clients kommen.
+

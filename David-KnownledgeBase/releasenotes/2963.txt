@@ -1,0 +1,63 @@
+====== Version 2963 vom 09.10.2017 ======
+
+Release: 2017-10-09T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Wird eine eMail aufgrund einer Greylisting Einstellung des Empfängern nicht beim ersten Sendeversuch versendet, so ist der Status dieser eMail im Versand nun "Verzögerte Zustellung", statt "Temporär beschäftigt".
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Das eigentlich nur zwischen Outlook Clients übliche Attachment Winmail.dat wird nun vom Postman Grabbing Server analysiert und die richtigen Dateianhänge werden extrahiert. Vorher in der Regel nur ein Attachment als "UNKNOWN."
+  * Wenn der Postman zum Weiterleiten konfiguriert ist und zur Authentifizierung die Einträge der Datenbank "Direkte Weiterleitungen" benutzt werden, wurden diese nicht berücksichtigt wenn gleichzeitig in der Konfiguration der Schalter "Ungültige eMail-Adressen ablehnen" aktiviert war. Dieses ist nun korrigiert.
+  * Ist bei PostMan die Weiterleitung von eMails per "SMTP Anmeldung/Anmeldung mit Remote-Access Daten erlauben" aktiviert, so funktionierte die Weiterleitung auch bei korrekten Anmeldedaten, aber deaktiviertem Remote Access. Nun wird in diesem Fall auch der aktivierte Remote Access geprüft.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Das eigentlich nur zwischen Outlook Clients übliche Attachment Winmail.dat wird nun vom Postman Grabbing Server analysiert und die richtigen Dateianhänge werden extrahiert. Vorher in der Regel nur ein Attachment als "UNKNOWN."
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Wird eine Besprechungsanfrage per ActiveSync auf einem iOS Gerät angenommen, so erfolgte u.U. keine Rückmeldung an den Ersteller der Anfrage.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In den Kalenderansichten wird jetzt einheitlich oben mittig der angezeigte Zeitraum angezeigt, einschließlich des Jahres.
+  * In der Auswahlliste der dynamischen Teams können nun Einträge als Favoriten markiert und in einem eigenen Tab angezeigt werden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Die neue Kalenderansicht "Gruppe (Woche)" zeigt die eingeblendeten Kalender nebeneinander in der Wochenansicht an.
+  * Wird eine eMail aufgrund einer Greylisting Einstellung des Empfängern nicht beim ersten Sendeversuch versendet, so ist der Status dieser eMail im Versand nun "Verzögerte Zustellung", statt "Temporär beschäftigt".
+
+==== Bugfix ====
+
+  * Durch falsches Betätigen des Abbrechen Buttons konnte es in diesem Dialog zum Hängen des Client kommen wenn man zuvor in dem User Freigaben Dialog gewesen ist.
+  * Wenn in einem DFML Formular Dateianhänge selektiert wurden, wurden diese nur in der ersten passenden Sektion auch verarbeitet.
+  * Wenn man in der Vorschau im Inhalt Tab auf das Symbol zum Ablösen des Fensters klickt, konnte es zum Absturz des Clients kommen.
+  * Beim Klick auf den Button für den chayns® ID Bereich konnte es zum Absturz des Clients kommen.
+  * In einem Einzelfall konnte es beim Klick auf eine empfangene VoiceMail zum Absturz des David Clients kommen.
+  * Wird eine eMail mit einem "/" im Betreff als Dateianhang zu einer neuen eMail versendet und diese wird signiert, so wurde dieser Dateianhang in der geöffneten eMail nicht angezeigt.
+  * Soll per dvsqlacc.dll der Zugriff auf SQL-Adressen ermöglicht werden, so war das Eingabefeld für die Zuordnung zu einem SQL Feld bisher auf 34 Zeichen beschränkt.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Unter macOS 10.13 (High Sierra) konnte es in Einzelfällen zu Abstürzen kommen (Dialog "Einstellungen" beenden, Versand von eMails mit Variablen, Vorschau von eMails).
+
+===== Message Identification Services =====
+
+==== Bugfix ====
+
+  * In Einzelfällen konnten eMails nicht identifiziert werden und erhielten den Status "ohne Überprüfung".
+

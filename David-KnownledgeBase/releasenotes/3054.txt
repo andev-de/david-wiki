@@ -1,0 +1,53 @@
+====== Version 3054 vom 25.04.2019 ======
+
+Release: 2019-04-25T00:00:00
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Optimierter eMail-Versand per MTA-STS\\ Ist beim PostMan der Versand per MTA-STS (Beta) aktiviert, so funktionierte u.U. die Übertragung zu bestimmten Gegenstellen nicht immer zuverlässig (Gmail und Googlemail). Das ist jetzt optimiert.
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Vermeidung von Timeouts beim Abholen von eMails per POP3\\ Beim Abholen von eMails per POP3 konnte es in Einzelfällen zu einem Timeout 
+kommen, so dass die eMails nicht abgeholt werden konnten. Das ist jetzt optimiert.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Optimierter EAS-Abgleich von auf iPhone erstellten Aufgaben\\ Auf einem iPhone in Unterordnern erstellte Aufgaben wurden beim Datenabgleich per Exchange ActiveSync u.U. nicht korrekt zum david Server übertragen. Dieses Verhalten wurde korrigiert. 
+  * Port 80 Optimierung bei Anforderung eines Verschlüsselungs-Zertifikats\\ In einem Einzelfall konnte die Erreichbarkeitsprüfung der WebBox bei Anforderung eines Verschlüsselungs-Zertifikats fehlschlagen, obwohl die dazu erforderliche Verbindung über den TCP Port 80 von extern problemlos hergestellt werden konnte. Ab sofort wird in einem solchen Fall weiterhin eine Fehlermeldung erzeugt, aber gleichzeitig trotzdem versucht, den Auftrag auszuführen.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Weiterer Nachrichtentyp: Erinnerung\\ Ab sofort lassen sich über die Schaltfläche „Neu“ im david Client (oder per Shortcut  Strg+Shift+W) auch Erinnerungen (vergleichbar mit Wiedervorlagen) direkt erzeugen. Zuvor war das nur über den Umweg möglich, zunächst eine neue Nachricht zu erstellen und diese dann in einem zweiten Schritt als Wiedervorlage zu speichern. 
+  * david Client: Einfügen von Screenshots und Dateien in Chats direkt aus der Zwischenablage\\ In Chats lassen sich ab jetzt Screenshots und Dateien aus der Zwischenablage ganz einfach per Strg+V oder Kontexmenü einfügen.
+ 
+  * Neue Layouts und Farb-Verläufe zur Auswahl\\ Die Auswahl der Layouts und Verläufe zur individuellen Anpassung der david Client Optik ist jetzt noch vielfältiger.
+
+  * Neue Spalte „Erinnerung“ in Aufgabenübersicht\\ In der Aufgabenübersicht kann nun die Spalte „Erinnerung“ hinzugefügt werden, so dass sich ab sofort auch hier bereits erkennen lässt, ob und mit welcher Vorlaufzeit eine Erinnerung eingestellt ist.
+  * Aktualisierte Vorgabe für „Hash-Algorithmus“ bei digitaler Signatur\\ Als „Hash-Algorithmus“ zur Prüfung des Signaturzertifikats beim eMail Versand mit digitaler Signatur wird nun standardmäßig SHA256 genutzt (zuvor SHA1). Bei bereits installierten Clients erscheint beim Versand signierter eMails einmalig die Abfrage, ob die Einstellung von SHA1 zu SHA256 geändert werden soll. Der Hash-Algorithmus lässt sich auch manuell unter „Einstellungen/Sicherheit/Zertifikate und Algorithmen“ jederzeit anpassen.
+
+  * Präfix 00 bei TAPI Rückruf beibehalten\\ In den TAPI Einstellungen des david Clients wurde der neue Schalter „Präfix 00 immer beibehalten“ hinzugefügt. Dieser Schalter bewirkt, dass bei Rückrufen an Absendernummern, die mit '00' beginnen, tatsächlich beide führende Nullen mitgewählt werden. Ist dieser Schalter nicht gesetzt, wird automatisch eine der beiden Nullen entfernt.
+
+
+
+==== Bugfix ====
+
+  * Optimiertes Kopieren und Einfügen von Terminen\\ Das Kopieren und Einfügen von Terminen zu einem anderen Zeitpunkt funktionierte unter Umständen nicht mehr korrekt – der eingefügte Termin wurde wieder für den gleichen Zeitpunkt eingetragen. Das ist jetzt behoben.
+  * Verbesserte Stabilität beim Ändern des Betreffs\\ In einem Einzelfall konnte es beim Ändern des Betreffs einer Nachricht zum Absturz kommen. Das ist jetzt behoben.
+  * Optimierter URL-Aufruf bei Nutzung des Link Lookup Service\\ Bei Nutzung des Link Lookup Service konnte es vorkommen, dass beim Klick auf eine URL innerhalb einer eMail eine falsche URL aufgerufen wurde. Das ist jetzt behoben.
+  * Optimierte Vorschau für StrongBox Images\\ Wurde ein StrongBox Image per david Client an einem anderen Rechner als dem david Server gemountet, so war die Vorschau der darin enthaltenen eMails u.U. fehlerhaft. Das ist jetzt behoben.
+  * Speichern von eMails mit Dateianhang als EML ohne Dateizugriff\\ Das Speichern von eMails mit Dateianhängen als EML Datei funktioniert jetzt auch ohne Dateizugriff auf den david Server.
+
+  * Import von ICS Dateien optimiert\\ In einem Einzelfall wurde beim Import einer ICS Datei eine falsche Uhrzeit für den neu erstellten Termin übernommen. Dieses Verhalten wurde korrigiert.
+

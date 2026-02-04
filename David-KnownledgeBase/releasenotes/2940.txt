@@ -1,0 +1,46 @@
+====== Version 2940 vom 03.07.2017 ======
+
+Release: 2017-07-03T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Befindet sich im David Administrator unter "Entfernte Benutzer" ein Benutzername mit Umlauten, so konnte es in einem Einzelfall zum Absturz des Service Layers kommen.
+  * In einem Einzelfall konnte es vorkommen, dass Wiedervorlagen zum eingestellten Termin nicht vorgelegt wurden, sondern erst bei einem anschließenden Neustart des Service Layers.
+  * Beim Kopieren vieler Nachrichten in einen anderen Ordner konnte es u.U. vorkommen, dass anschließend nicht alle Nachrichten im Ziel-Ordner vorhanden waren.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * In der Benutzerkonfiguration des David Administrators gibt es nun eine zusätzliche Spalte, die den Zeitpunktes der letzten Änderung an den Benutzereinstellungen enthält.
+
+==== Bugfix ====
+
+  * Wird beim Löschen eines David Benutzers aus dem David Administrator der Schalter "Alle persönlichen Ordner des Benutzers entfernen" nicht gesetzt, so wurden diese Ordner u.U. dennoch gelöscht.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Bei der Nutzung von ActiveSync unter Outlook 2013 oder 2016 konnte es zum Fehlverhalten kommen, wenn im Kalender ein Termin mit einem Dateianhang existiert. In dem Fall wurde die Synchronisation u.U. unterbrochen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Bei der Einstellung "Scrollbalken automatisch einblenden" werden diese nun bereits eingeblendet, wenn man die Maus in die Liste bewegt und nicht mehr erst dann, wenn man mit der Maus den Bereich des Scrollbalken trifft.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Beim Erstellen von TalkAbouts können nun auch Cc Empfänger ausgewählt werden.
+  * Per Web Link lässt sich in der Favoritenleiste nun ein Google Kalender einbinden. Zuvor gab es bei der anschließenden Anmeldung eine Fehlermeldung.
+
+==== Bugfix ====
+
+  * In Kommentaren von eMails und im David® Chat wurden entfernte David Benutzer fälschlicherweise als "unbekannt" benannt, statt mit ihrem richtigen Namen.
+  * Wird im David Administrator bei einem David Anwender dessen eMail Adresse entfernt und durch eine andere ersetzt, so wurde im David Client die entfernte eMail Adresse u.U. weiterhin aufgelöst.
+  * Wird bei einer Office 2016 Anwendung die Funktion "Als PDF senden" verwendet und die Nachricht enthält Umlaute im Betreff, so konnte die Nachricht u.U. nicht erstellt werden.
+  * Wird bei Einträgen mit Bildern die Maus in der Vorschau über ein Bild bewegt und es wird kurz darauf der Tooltipp mit den Bildinformationen angezeigt, so konnte es zum Absturz des Clients kommen.
+  * Wird der Sendeservice "Drucker" gewählt, eine Adressvariable eingefügt und ein Adresseintrag ohne eMail Adresse auswählt, so gab es nach der Druckerauswahl u.U. die Fehlermeldung, dass nicht alle erforderlichen Daten für den eingestellten Sendeservice existieren.
+

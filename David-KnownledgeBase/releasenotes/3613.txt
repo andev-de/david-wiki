@@ -1,0 +1,63 @@
+====== Version 3613 vom 07.02.2024 ======
+
+Release: 2024-02-07T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * DKIM für eMail-Versand aktivieren\\ Im david Administrator kann nun unter „System“, Rechtsklick „Konfigurieren/Übertragung/DKIM“ eingestellt werden, dass eMails mit einer DKIM Signatur versendet werden. Nach der Konfiguration muss durch den Administrator ein entsprechender Eintrag im DNS Server vorgenommen werden, der u.a. den öffentlichen Schlüssel enthält. Auch per FileScan Service erstellte eMails können DKIM signiert werden. Hierzu müssen die Job Dateien mittels der david Befehle UTF8Body und UTF8Commands UTF-8 konvertiert werden.
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.700.
+
+==== Bugfix ====
+
+  * WebAPI Domäne u.U. nicht mehr eingetragen\\ In Einzelfällen konnte es vorkommen, dass nach dem Service Layer Update die Domäne in der WebAPI Konfiguration nicht mehr eingetragen war.
+  * Reaktivierte david User u.U. nicht in die DVG-Gruppe eingetragen\\ Wird ein im david Administrator gelöschter david User reaktiviert, so wurde er u.U. nicht wieder in die DVG-Gruppe aufgenommen. Über diese Gruppe werden u.a. die Rechte zur Erstellung neuer Nachrichten geregelt.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Fehlerhafte Anzeige bei gelöschtem david Benutzer\\ Im david Administrator wurde in der Übersicht der gelöschten Benutzer das Feld „Letzte Änderung“ fehlerhaft angezeigt.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Übertragung des „From“ bei Autoreply Nachrichten\\ Per Vorgabe wird nun bei Autoreply Nachrichten das „From“ übertragen. Bisher wurde ein leeres „From“ übertragen. Mit dem Parameter SUBMITSENDERONAUTOREPLY in der postman.ini kann das Verhalten angepasst werden.
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand vieler eMails per ActiveSync\\ Werden gleichzeitig viele Nachrichten per ActiveSync an die WebBox übergeben, so konnte es beim anschließenden Versand u.U. zu einem Fehlverhalten kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Einstellung „Einträge abwechselnd farbig hinterlegen“\\ In den Einstellungen (Benutzerprofil) gibt es nun wie beim Classic Client die Einstellung „Einträge abwechselnd farbig hinterlegen“.
+  * Messageboxen mit der Leertaste bestätigen\\ Messageboxen im david Client können nun auch mit der Leertaste bestätigt werden.
+  * Optimierung bei der Unterscheidung gelesener und ungelesener Nachrichten\\ Zur besseren Unterscheidung gelesener und ungelesener Nachrichten wird das Symbol vor dem Eintrag einer gelesenen Nachricht nun leicht ausgegraut dargstellt.
+  * Geöffnete EML Datei bearbeiten\\ Wird eine EML Datei geöffnet, so gibt es in der Symbolleiste nun den zusätzlichen Button „Bearbeiten“ über den die Nachricht verändert werden kann.
+
+==== Bugfix ====
+
+  * Möglicher Darstellungsfehler bei Empfängerliste über der Vorschau\\ Beim Auf- und Zuklappen der Empfängerliste über der eMail-Vorschau konnte es zu Darstellungsfehlern kommen, wenn der gelbe Hinweis „Inhalt aus dem Internet wurde blockiert“ angezeigt wird.
+  * Buttons zum Drehen von Faxen u.U. nicht sichtbar\\ Ist ein Fax in der Eintragsliste selektiert, so wurden hierbei die Buttons zum Drehen des Faxes über der Vorschau u.U. nicht angezeigt.
+  * Mögliches Fehlverhalten bei Client Scripten im Classic Client\\ In Einzelfällen funktionierten die Client Scripte beim Classic Client u.U. nicht mehr. Das wurde nun korrigiert.
+  * Mögliches Fehlverhalten beim Start der Team Anwendung (KI Fehlermeldung)\\ In Einzelfällen konnte es trotz aktivierter KI Einstellung beim Start der Team Anwendung den falschen Hinweis geben, dass „KI“ am david Server nicht aktiviert ist.
+  * Mögliches Fehlverhalten beim Start des Classic Clients\\ In Einzelfällen konnte es vorkommen, dass der Classic Client nach dem Update nicht mehr startet, wenn das Programmverzeichnis C:\Programme\Tobiti~1 statt C:\Programme\Tobit InfoCenter lautet.&nbsp;
+  * Bestätigungsdialoge u.U. im Hintergrund\\ In Einzelfällen konnte es vorkommen, dass Bestätigungsdialoge des Clients (z.B. beim Löschen einer Nachricht) im Hintergrund lagen und somit nicht direkt sichtbar waren.
+  * eMail Vorschau u.U. verzögert\\ Die Vorschau von eMails (z.B. beim Ordnerwechsel) wurde u.U. verzögert dargestellt, das ist nun behoben.
+  * Aktualisierung von eingefügten Grafiken beim Eintragswechsel\\ Wird in der Eintragsliste zwischen eMails gewechselt, die eingefügte Grafiken mit gleichen Dateinamen enthalten, so wurde die Vorschau dieser Grafiken u.U. nicht aktualisiert.
+  * Markieren von Rechtschreibfehlern\\ Das Markieren falsch geschriebener Wörter im Editor funktionierte nach einem Update der „Microsoft Edge WebView2“ u.U. nicht mehr.
+

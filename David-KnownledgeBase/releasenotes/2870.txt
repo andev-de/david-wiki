@@ -1,0 +1,56 @@
+====== Version 2870 vom 30.06.2016 ======
+
+Release: 2016-06-30T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Die Abarbeitung der Nachrichten, die über das Verzeichnis \import\system ins System gelangen, wurde optimiert.
+
+=====  Administrator =====
+
+==== Feature ====
+
+<div>  * Die Größe des Dialogs "Verbindungen testen" kann nun geändert werden.
+</div>
+==== Bugfix ====
+
+  * Beim Start des david.Administrators bzw. beim Serverwechsel konnte es in einem Einzelfall zum Absturz des david.Administrators kommen.
+  * Beim Aufruf der Hilfethemen konnte es zum Absturz des david.Administrators kommen.
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Beim eMail Empfang per POP3 bzw. IMAP wird nun auch das Received Feld übertragen.
+
+==== Bugfix ====
+
+  * Werden eMails per IMAP abgerufen, so wurden u.U. nicht sofort alle neuen eMails angezeigt. Das konnte auftreten, wenn der Mail Client per Index und nicht per UID auf die eMails zugreift.
+
+=====  Client PC =====
+
+==== Feature ====
+
+<div>  * Die Wörterliste wurde erweitert.
+  * Im "Telefon" Dialog (david® Telefonie Dienste) gibt es nun einen Lautsprecher Button (war zuvor nur per Maus erreichbar).
+  * Im HTML Editor gibt es nun die Buttons "Einrücken" und "Ausrücken" (wie schon bei den klassischen Optionen).
+  * Der Text im Eingabefeld des david®chat kann nun mit Strg + A komplett markiert werden.
+  * In den Client Einstellungen kann nun die Schriftgröße für den david®chat vorgegeben werden (Einstellungen/david®chat).
+  * Im Menü der Favoritenleiste gibt es nun den zusätzlichen Menüpunkt "In neuem Fenster öffnen".
+</div>
+==== Bugfix ====
+
+  * Filtert man im Kalender nach einem bestimmten Termin und will diesen dann löschen, so konnte es vorkommen, dass zusätzlich ein weiterer Termin zum Löschen vorgeschlagen wurde, der jedoch durch den Filter nicht angezeigt wurde. Außerdem funktionierte das Filtern in der Kalenderansicht "Gruppen" nicht.
+  * In der Symbolleistenkonfiguration funktionierte das Aktivieren und Deaktivieren einiger Buttons der neuen Formatierungsleiste nicht korrekt.
+  * Wird bei der Screenshot Erstellung das Format JPEG, sowie die Optionen "als Dateianhang" und "vor dem Einfügen bearbeiten" gewählt, so wurde stattdessen die Dateierweiterung .png verwendet.
+  * Wird eine Nachricht im Plain Text Modus erstellt und hierbei der Shortcut für die Zeichensatzauswahl ausgeführt, so konnte es zum Absturz des Clients kommen.
+  * Sind die "klassischen" Markierungen eingestellt, so konnte es zu einem Fehlverhalten kommen, wenn eine höhere DPI Einstellung genutzt wird.
+  * Ist beim Abwesenheits-Assistenten der Schalter "Nur für eMails anwenden" gesetzt, so wurde nach Ablauf der eingestellten Dauer der aktive Button nicht bei "Ausgeschaltet" angezeigt sondern bei "Eingeschaltet im Zeitraum".
+  * Die Fenster und Dialoge des Clients wurden optimiert für das Verschieben zwischen Monitoren mit unterschiedlicher DPI Einstellung.
+  * In einem Einzelfall konnte es zum Absturz kommen, wenn man bei einer 2nd Scan Nachricht im Transit auf den Button "Nachrichten von xxx künftig vertrauen und direkt durchstellen?" klickt.
+  * In einem Einzelfall konnte es zum Absturz beim Öffnen von EML Dateianhängen kommen.
+  * In einem Einzelfall konnte eine bestimmte eMail aus dem Editor heraus nicht gedruckt werden.In einem Einzelfall konnte es beim Öffnen bestimmter eMails, oder beim selektieren dieser eMails in der Vorschau zum Absturz kommen.
+

@@ -1,0 +1,54 @@
+====== Version 2738 vom 11.04.2014 ======
+
+Release: 2014-04-11T13:16:47
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * WebBox/ActiveSync: Wird der neue Schalter "Gerät sperren" bei einem der aufgeführten Geräte gesetzt, wird jeder Verbindungsversuch dieses Geräts mit einem "Access denied" von WebBox beantwortet.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * In einem Einzelfall führte der defekte Mailbody einer eMail zum Absturz.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Kalender können bei der ActiveSync nun auch verwendet werden.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Wörter mit nur 2 Buchstaben können nun auch in den Wörterbüchern eingetragen werden und werden entsprechend berücksichtigt.
+
+  * Wird eine Terminserie in der Zukunft erstellt und das Enddatum soll auch angegeben werden, so wurde per Vorgabe für das Enddatum der aktuelle Tag vorgeschlagen. Das wurde nun geändert.
+
+  * Wird bei einer vorhandenen Besprechungsanfrage über das Kontextmenü die Beschriftung geändert, so wurde unnötigerweise eine Besprechungsänderung an die Teilnehmer versendet.
+
+  * Neues Benutzerrecht im david.Administrator: "Robinson-Verzeichnis bearbeiten". In dem Fall kann der Benutzer über das Kontextmenü bei einer Nachricht diese Adresse dem Robinson-Verzeichnis hinzufügen. Zusätzlich kann er über den Menüpunkt "Optionen/Robinson-Verzeichnis" die Liste bearbeiten. 
+  * Wenn man eine Nachricht öffnet, die im gleichen Moment durch ein anderes david Modul gelöscht wird, konnte es u.U. zum Absturz kommen.
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Wird eine Terminserie in der Zukunft erstellt und das Enddatum soll auch angegeben werden, so wurde per Vorgabe für das Enddatum der aktuelle Tag vorgeschlagen. Das wurde nun geändert.
+  * Wird im Aufgaben Ordner die Spalte "Datum" eingeblendet, so wurde das Datum hier im falschen Format angezeigt.
+
+  * In der Monats- und Wochenansicht konnten einzelne Termine einer Serie nicht gelöscht werden.
+
+  * Der Kalender enthält nun den Terminassistenten.
+  * Hat eine eingetragene Terminserie eine Ausnahme und die Serie wird in der Wochen- oder Monatsansicht über diese Serientermin-Ausnahme geöffnet, so enthielt der Editor nicht die Serientermin Infos.
+
+  * Wird eine Suche per Quickfinder durchgeführt und anschließend ohne das Löschen der Quickfinder Eingabe ein Ordnerwechsel durchgeführt, so wurden neue Einträge in dieser Liste u.U. falsch einsortiert.
+
+

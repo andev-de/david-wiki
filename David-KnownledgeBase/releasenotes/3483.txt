@@ -1,0 +1,52 @@
+====== Version 3483 vom 15.08.2022 ======
+
+Release: 2022-08-15T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Anhängen von Dateien mit Leerzeichen im Dateinamen per Attach Befehl\\ Soll per Befehl @@Attach eine Datei mit Leerzeichen im Dateinamen angehängt werden, so funktionierte dies nicht. Wird der Dateiname in Anführungszeichen gesetzt, so wird die Datei nun angehängt.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Löschen eines Elementes einer Terminserie\\ Wird eine Terminserie erstellt und hierzu ein Anwender eingeladen und anschließend das erste Element der Serie gelöscht, so blieb die Wiedervorlage bei dem eingeladenen Anwender trotz Benachrichtigung erhalten.
+  * Mögliches Fehlverhalten beim Weiterleiten von eMails\\ Ist der PostMan zum Weiterleiten von eMails aus fremden Anwendungen eingerichtet und es tritt bei einer eMail ein Fehler beim Sendeversuch auf, so waren u.U. auch die nachfolgenden Sendeversuche bei der gleichen eMail fehlerhaft.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Optimierung bei der Auswertung des „X-ORIGINAL-TO“ Feldes\\ Bei der Konvertierung empfangener eMails wird nun ein mehrfach enthaltenes „X-ORIGINAL-TO“ Feld berücksichtigt.
+  * Protokollierung im Fehlerfall\\ Sollte es beim Abholen von Mails bei einem Postfach zu Fehlern kommen, so wird bei der Fehlermeldung (Read Message failed) nun auch das entsprechende Postfach aufgeführt.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der openssl Version\\ Die davidtls.dll wurde auf openssl 1.1.1q aktualisiert. 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Anzeige der Intercom Nachrichten ausgeblendeter Sites\\ Ist im Intercom für eine Site die Anzeige abgewählt, so werden neue Nachrichten dieser Site nicht mehr unter „Alle“ angezeigt.
+
+
+  * Optimierung der Performance\\ Beim david Modern Client wurde die Performance optimiert (z.B. das Laden der Nachrichten).
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler in der Favoritenleiste beim Wechsel der Auflösung\\ Wenn die Auflösung des Bildschirms geändert wird, konnte es beim david Modern Client zu Anzeigefehlern in der Favoritenleiste kommen.
+  * Mögliches Fehlverhalten bei Barrierefreier Menü-Darstellung\\ Ist die Barrierefreie Menü-Darstellung aktiviert, so waren im Menü „Ansicht“ nicht alle Menüpunkte auswählbar.
+  * Möglicher Absturz beim Drag &amp; Drop einer Intercom Nachricht\\ Steht man beim david Modern Client in der Intercom Ansicht und versucht eine Nachricht per Drag &amp; Drop in den Eingang zu kopieren, kam es zum Absturz des Clients.
+
+
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Anzeige des Kalenders (Beta)\\ In der chayns App und unter chayns.de ist nun auch der Kalender des smart clients verfügbar, vorerst noch als Beta.
+

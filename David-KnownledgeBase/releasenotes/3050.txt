@@ -1,0 +1,83 @@
+====== Version 3050 vom 03.03.2019 ======
+
+Release: 2019-03-03T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Kein Einkürzen des Betreffs bei Weiterleiten oder Autoreply per Regel\\ Bei Einsatz von Verteilregeln zum Weiterleiten oder zum automatischen Beantworten empfangener Nachrichten (Autoreply) wird nun lange Betreffzeilen der Originalnachrichten nicht mehr eingekürzt. In auf diese Weise weitergeleiteten bzw. beantworten Nachrichten bleibt also der originale Betreff vollständig erhalten
+  * Optimierte Darstellung langer Betreffzeilen mit EURO Zeichen\\ Bei Erstellung neuer Nachrichten mit langer Betreffzeile und darin enthaltenem EURO Zeichen (€) konnte u.U. der Effekt auftreten, der Betreff bis zum € Zeichen abgeschnitten wurde. Diese Verhalten wurde korrigiert.
+
+  * Optimierte Anzeige von Serienterminen\\ Nach dem Löschen einzelner Elemente aus einer Terminserie konnte der Effekt auftreten, dass anschließend auch nicht gelöschte Termine dieser Serie u.U. nicht mehr im Kalender angezeigt wurden. Diese Verhalten wurde korrigiert.
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Verdoppelung der Threads für den eMail-Abruf per POP3\\ Der Vorgabewert für die Anzahl der Pop3Threads beim eMail-Abruf durch den Grabbing Server wurde von 5 auf 10 erhöht. Diese Einstellung kann über den Parameter „MaxPOP3Threads“ in der Datei dvgrab.ini individuell angepasst werden.
+
+
+==== Bugfix ====
+
+  * Optimiertes Cachen von RS-Feed-Daten\\ Der Grabbing Server dient neben dem Abfragen externen POP3-Postfächer auch zum Abrufen und Vorhalten RSS Feeds. Dabei werden die Inhalte abonnierter Feeds zentral auf dem david Server gespeichert und stehen den Benutzern dort direkt zur Verfügung, ohne für jede Anforderung erneut aus dem WWW geladen werden zu müssen. Diese Daten (im Verzeichnis C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Microsoft\Windows\INetCache\IE) beanspruchen nun durch optimierte Speicherung deutlich weniger Speicherplatz als zuvor.
+
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Anzeige des vollständigen Betreffs bei POP3 Abruf\\ Beim Abruf von eMails per POP3 wird der komplette Betreff jetzt auch bei solchen Nachrichten angezeigt, die über eine außergewöhnlich lange Betreffzeile verfügen. Zuvor wurde hier der Betreff u.U. eingekürzt.
+  * Anzeige des vollständigen Betreffs bei IMAP Zugriff\\ Beim Abruf von eMails per IMAP wird der komplette Betreff jetzt auch bei solchen Nachrichten angezeigt, die über eine außergewöhnlich lange Betreffzeile verfügen. Zuvor wurde hier der Betreff u.U. eingekürzt.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Optimierte Anzeige von eMail-Inhalten bei Einsatz von Exchange ActiveSync mit der aktuellen E-Mail Appu von Samsung\\ Bei Nutzung des Datenabgleichs mit david per Exchange ActiveSync wurden eMail-Inhalte auf mobilen Geräten mit der Version 6-0-01-11 der Samsung E-Mail App u.U. nicht vollständig angezeigt. Dieser Effekt tritt nicht mehr auf. 
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Rückfrage bei eMail-Versand an mehrere Empfänger abschaltbar\\ Der Hinweis, mit dem david darauf aufmerksam macht, wenn eMails an mehrere Empfänger gerichtet sind, lässt sich nun auf Wunsch ausblenden. Über einen zugehörigen Schalter in den Einstellungen des david Client (unterhalb von „Global/Bestätigungen“) kann dieses Ausblenden auch wieder rückgängig gemacht werden. 
+
+  * Spalte „Erledigt am“ in Aufgabenansicht\\ In der Aufgabenansicht lässt sich nun die Spalte „Erledigt am“ zusätzlich einblenden. 
+Hinweis: Sind sehr viele Aufgaben angelegt, kann das Einblenden dieser Spalte möglicherweise die Performance des david Client beeintrgächtigen.
+
+  * Ordner bei Adressauswahl\\ Bei der Adressauswahl, z.B. über den Button „An“, besteht die Möglichkeit, über die Funktion „Hinzufügen“ die angebotene Liste von Adressordnern um weitere Einträge zu erweitern. Werden nun aus einem auf diese Weise neu hinzugefügten Ordner Adressen ausgewählt, so wird dieser Ordner bei der nächsten Adressauswahl automatisch wieder vorgeschlagen und geöffnet. Das war bisher nicht so.
+
+  * david Chat mit neuen Funktionen und in das Hauptfenster integriert\\ Der david Chat ist nun in das Hauptfenster des Clients eingebettet und über einen eigenen Button in der Favoritenleiste aufrufbar. Die InfoCenter-Ansicht zeigt jetzt auch neue Chat Nachrichten an. Bei Gruppen-Chats werden die Namen der Teilnehmer in unterschiedlichen Farben dargestellt und es kann über die Eingabe des @-Zeichens eine Benutzerauswahl geöffnet werden, um einzelne Mitglieder gezielt anzuschreiben.
+
+  * LiveComments mit Funktions- und Designerweiterungen\\ Die LiveComments wurden sowohl im Design als auch im Funktionsumfang weiter verbessert. In Kommentaren zu eMails mit mehreren Benutzern werden die Namen der Teilnehmer in unterschiedlichen Farben dargestellt und es kann über die Eingabe des @-Zeichens eine Benutzerauswahl geöffnet werden, um einzelne Mitglieder gezielt anzuschreiben.
+
+  * „Tipps“ Button aus der Favoritenleise entfernt\\ Der „Tipps“ Button ist aus der Favoritenleiste entfernt und wird auch bei einer Neuinstallation des david Client nicht mehr eingerichtet.
+
+  * Aktualisierte Version der integrierten Chromium Engine\\ Die im david Client integrierte Chromium Engine, die zur Darstellung von HTML-Inhalten sowie für die chayns Anmeldung und das Intercom im david Client zum Einsatz kommt, wurde aktualisiert.
+
+  * Start-Video entfernt\\ Das Video (Startlogo), das sich beim Start des david Clients abgespielen lässt, wurde entfernt.
+
+  * Automatisches Minimieren des Ticker-/Navigator-Bereichs\\ Um im david Client möglichst viel Raum zur Darstellung von Nachrichteninhalten und LiveComments zu schaffen, wurden neue Funktionen integriert, die die Teilfenster  von Navigator und Ticker bei Nichtnutzung minimieren. Je nach Wunsch geschieht das Minimieren dabei entweder generell oder automatisch abhängig von der eingestellten Fenstergröße des david Client. Navigator und Ticker werden dann zu schmalen Balken zusammengeschoben. Durch Platzieren des Mauszeigers auf diese Balken wird die ursprüngliche Größe so lange wieder hergestellt, bis der Mauszeiger diesen Bereich wieder verlässt. 
+
+Die neue Funktionen lassen sich in den Einstellungen des david Client unter dem Punkt „Ansicht“ aktivieren.
+
+  * Neue Layout Vorgabe\\ Nach Update oder Neuinstallation erscheint der david Client in der neuen david3 Layout-Vorgabe. 
+
+
+==== Bugfix ====
+
+  * Optimiertes Öffnen von VCF Dateien\\ In einem Einzelfall konnte das Öffnen einer bestimmten VCF Datei (digitale Visitenkarte) zum Absturz des david Client führen. Dieses Verhalten wurde korrigiert.
+
+  * Optimierung der Funktion Ausschneiden + Einfügen von eMails\\ Das Verschieben einer eMail per „Ausschneiden+Einfügen“ aus einem Ordner in einen anderen anderen Ordner konnte u.U. fehlschlagen, wenn der Ziel-Ordner per Rechtsklick im Navigator selektiert wurde. Dieses Verhalten wurde korrigiert.
+
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Neue Version der Desktop Protection for david®\\ Die Desktop Protection for david®, die für Virenschutz auf den Arbeitsplatzrechnern im Netzwerk sorgt,  wurde aktualisiert. Unter anderem enthält die neue Version Anpassungen für den Einsatz mit dem Windows 10 Oktober 2018 Update. Die Aktualisierung der betreffenden Arbeitsstationen erfolgt nach Installation des david® Rollout automatisch. 
+
+

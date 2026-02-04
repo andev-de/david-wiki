@@ -1,0 +1,101 @@
+====== Version 2779 vom 04.12.2014 ======
+
+Release: 2014-12-04T17:24:14
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * In einem Einzelfall konnte es vorkommen, dass eMail Rundsendungen im "Transit" mit dem Status "in Bearbeitung" liegen blieben, obwohl sie erfolgreich versendet wurden.
+
+  * Wird eine XMedia Verteilregel erstellt, die beim Empfang einer neuen VoiceMail eine SMS versenden soll, so blieb diese SMS in einem Einzelfall im Transit als "unbearbeitet" liegen. In diesem Fall wurde bei der Verteilregel der Schalter "Nur Betreff" nicht gesetzt und per Include abschließend das Datenformat SMS gesetzt.
+
+  * In Einzelfällen konnte es vorkommen, dass trotz gesetztem Schalter "Ungültige eMail-Adressen ablehnen" (PostMan Konfiguration) entsprechende eMails angenommen wurden und anschließend im Unverteilt Ordner lagen.
+
+  * Ist im david.Administrator der Schalter "Nachrichten im Ausgang als gelesen markieren" gesetzt, so wurden die Nachrichten nicht als gelesen markiert, wenn eine Verteilregel die Nachrichten zusätzlich in einen anderen Ordner kopiert. Das ist nun behoben.
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Die MSN-Messenger Funktion wurde entfernt.
+
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * In einem Einzelfall wurde bei einer per IMAP übertragenen eMail das Dateianhangsymbol für die angehängte PDF Datei in der Eintragsliste (z.B. bei Outlook) nicht angezeigt.
+
+  * Wird beim Login ein Benutzername mit Umlauten eingetragen, so funktionierte das Login u.U. nicht.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * In einem Einzelfall wurde ein Dateianhang (hier eine PDF Datei) in einer per ActiveSync an ein iPhone übertragene eMail nicht angezeigt.
+
+  * In einem Einzelfall (hier das Gerät LG G2) wurden Faxe im Ordner nicht angezeigt.
+  * ActiveSync: Hat ein Fax mehr als 9 Seiten, so wurden die weiteren Seiten auf einigen Geräten (z.B. ein Windows Phone 8 Gerät von Nokia und das Android HTC one) u.U. nicht korrekt dargestellt, z.B. statt der Seite 10 die Seite 1.
+
+  * Wird ein mehrseitiges Fax auf dem iPhone per ActiveSync geöffnet, so wurde nur die erste Seite angezeigt.
+
+  * WebBox überprüft nun bei verlinkten Ordnern, die sich außerhalb des eigenen User Bereichs befinden, nicht nur die Existenz einer access.ini, sondern auch die in der archive.ini angegebenen Zugangsdaten (User Name und Passwort).
+
+  * Wird eine Adresse mit Anschrift auf dem Gerät erstellt und anschließend der Typ der Anschrift z.B. von Privat nach Büro geändert, so wurde die Anschrift beim david Client u.U. zweimal angezeigt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neuer Button über der Eintragsliste: "VIP". Ist er aktiviert, so werden nur Nachrichten von VIP Kontakten angezeigt.
+
+  * Wird in die InfoCenter Ansicht gewechselt und dort liegt ein wartender Versandauftrag, so wurde beim obersten Eintrag u.U. der Button "Zurückstellen" nicht angezeigt. Zusätzlich wurde über der Vorschau "Als gelesen markieren" statt "Freigeben" angezeigt. Nach einer Aktualisierung war dies wieder korrekt.
+
+  * Der Hybrid Druckertreiber unterstützt nun das direkte Drucken ohne Aufruf des Clients. Dazu ist File Zugriff auf die Freigabe notwendig (Verzeichnis \david\apps\faxware\out\api).
+<p>
+Wie beim FaxWare Drucker wird nun der Befehle @_@direkt unterstützt. Aus dem Druck wird dann der entsprechende Job erzeugt, ohne dass der Client involviert ist.
+Die Benutzung von Deckblättern ist in diesem Fall nicht möglich. Außerdem muss sichergestellt sein, dass das Layout des Dokuments den üblichen Vorgaben für Hybrid Ma
+  * Haben mehrere Hybrid Mail Einträge eine unterschiedliche Anzahl Seiten, so wurden nach dem Wechseln zwischen den Einträgen u.U. nicht alle Seiten in der Vorschau angezeigt.
+
+  * Hybrid Mail Dokumente können beim Drucken nun kombiniert werden (neuer Button "Kombinieren"). Also z.B. als erste Seite ein Word Dokument und als weitere Seite ein Excel Dokument (ähnlich wie bereits bei der Faxerstellung).
+
+  * Wird eine externe Besprechungsanfrage beantwortet, die an mehrere Teilnehmer gerichtet ist, so wurden in der Antwort bisher fälschlicherweise alle Teilnehmer aufgeführt. Nun ist nur der antwortende Teilnehmer enthalten.
+
+  * In einem speziellen Einzelfall wurden die Umlaute in einer eMail falsch dargestellt. 
+
+  * Wird eine eMail beantwortet oder weitergeleitet, die nicht an die Hauptadresse des Benutzers adressiert ist, sondern an eine weitere seiner eingetragenen Empfänger Adressen, so ist diese weitere Adresse nun im Von Feld als Absenderadresse bereits vorausgewählt.
+
+  * Im Wiedervorlage Dialog kann nun auch durch einen Klick in das Feld für die Uhrzeit die entsprechende Option gewechselt werden (Tag oder Nächster Werktag).
+
+  * Gibt es einen Adresseintrag mit Foto in einem Adressordner und diese Adresse existiert zusätzlich in dem Ordner "Adressen/Interne Benutzer" (hier ohne Foto), so wurde bei der Adressauswahl u.U. die Adresse ohne Foto angezeigt. Der Ordner "Adressen/Interne Benutzer" hat bei gleichen Adressen nun eine geringere Priorität als normale Ordner. 
+
+  * Wird für die Vorschau die Anzeige der "Kopfzeilen" deaktiviert, so bleibt die Symbolleiste (z.B. Antworten, Weiterleiten) nun erhalten so dass diese Funktionen weiterhin genutzt werden können.
+
+  * Die Client App "Tipps" wird bei deutschsprachigen Clients installiert.
+  * Der Chat Button in der globalen Symbolleiste ist nun per Vorgabe ausgeblendet. Die bisherige Badge Anzeige für neue Chat Nachrichten wird nun bei dem Chat Button der "david®chat Nachricht" Symbolleiste angezeigt.
+
+  * Über ein neues Menü neben dem "Finden" Eingabefeld können die Chat-Inhalte nun durchsucht werden.
+
+  * Werden per Outlook-Import (ol2tas.exe) eMails in kyrillischer Schrift importiert, so werden diese nun korrekt dargestellt.
+
+  * Die Wörterliste wurde erweitert.
+  * Wird eine eMail an Kürzel gesendet, so erfolgte in der Verteilerliste keine Namensauflösung der eMail Adressen, wenn die Kürzel in Kleinbuchstaben angegeben werden.
+
+  * Ist in der Eintragsliste eine Markierung gesetzt und man öffnet die Liste der verfügbaren Markierungen, so stand der Fokus in der Liste nicht auf der gesetzten Markierung, sondern um einen Eintrag versetzt. Dies trat nur bei der Einstellung "Klassische Markierung" auf.
+
+  * Ist der Kalender in der InfoCenter Ansicht eingeblendet, so kann dort nun über den neuen "+" Button ein Termin erstellt werden.
+
+  * In der Liste der Chats gibt es nun bei "Gruppen" ein Kontextmenü. Ist man Ersteller der Gruppe, kann man über den Menüpunkt "Bearbeiten" Benutzer der Gruppe hinzufügen und/oder den Namen der Gruppe ändern. Als Teilnehmer der Gruppe hat man die Möglichkeit, die Gruppe zu verlassen. Zusätzlich steht im Kontextmenü für alle Einträge "Löschen" zur Verfügung (war bisher nur über die Entf Taste möglich).
+<p>
+1. Status:
+Es gibt drei auswählbare Status: 
+Verfügbar ist die Vorgabe.
+Abwesend hat lediglich inform
+  * Im Dialog zur Adressauswahl kann nun über einen neuen Button die Sortierung der Adressen angegeben werden (Vorname Nachname oder Nachname, Vorname).
+
+

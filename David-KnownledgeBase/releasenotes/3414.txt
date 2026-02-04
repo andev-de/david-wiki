@@ -1,0 +1,56 @@
+====== Version 3414 vom 01.03.2022 ======
+
+Release: 2022-03-01T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Optimierung des Zugriffs auf die Chat Datenbank\\ Der Zugriff auf die Chat Datenbank wurde optimiert, was sich vor allem bei umfangreichen Chats bemerkbar macht.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Empfang mehrerer Besprechungsanfragen in einem Ordner\\ Werden mehrere Besprechungsanfragen für verschiedene Benutzer in einem gemeinsamen Ordner empfangen, so wurde u.U. nur eine der Anfragen in dem Ordner angezeigt.
+  * Mögliches Fehlverhalten beim Öffnen der Wiedervorlage zu einer Besprechung per s\\ Wird die Wiedervorlage zu einer Besprechung mit dem smart client geöffnet, so wurde die Wiedervorlage u.U. erneut zugestellt.
+  * Optimierung der Suche im smart client\\ Die Suche im smart client per Quickfinder wurde optimiert, zuvor konnte es hier zu Verzögerungen kommen.
+  * Mögliches Fehlverhalten beim Erstellen/Verschieben von Ordnern\\ Beim Erstellen oder Verschieben eines david Ordners konnte es bei einer fehlerhaften Verzeichnisstruktur dazu kommen dass zwei david Ordner auf das gleiche Verzeichnis zeigen.\\ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * david Client: Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim mounten von StrongBox Images\\ Wird ein StrongBox Image manuell mit dem 64 Bit david Client gemountet, so konnte es vorkommen dass Inhalte von Mails nicht angezeigt wurden und bei einem Restore auch leer zurückgesichert wurden.
+  * Mögliches Fehlverhalten beim Aufruf der Eigenschaften einer digitalen Signatur\\ In einem Einzelfall konnte es in den Einstellungen beim Aufruf der Eigenschaften einer digitalen Signatur zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Speichern für Auto-Wiederherstellung\\ Beim Bearbeiten einer Nachricht konnte es in Verbindung mit der Auto-Wiederherstellung zum Absturz des Clients kommen.
+  * Mögliches Fehlverhalten beim Drag &amp; Drop von StrongBox Einträgen\\ Werden aus einem per david Client gemounteten StrongBox Image einzelne Nachrichten per Drag &amp; Drop wiederhergestellt, so wurden diese u.U. unten statt oben in der Eintragsliste einsortiert.
+  * Möglicher Anzeigefehler von Umlauten in einer Mail bei falscher Angabe der Zeichencodierung\\ In einem Einzelfall führte die falsche Position der Zeichencodierung im HTML Teil einer Mail zur fehlerhaften Anzeige der Umlaute.
+  * Falsches Symbol bei Ordner-Verknüpfung\\ Wird eine neue Ordner-Verknüpfung erstellt, so wurde u.U. nicht das vorgeschlagene Symbol bei der Verknüpfung übernommen.
+  * Mögliches Fehlverhalten beim Öffnen von Dateianhängen ohne Dateierweiterung\\ Werden verschiedene Dateianhänge mit gleichem Namen aber ohne Dateierweiterung geöffnet, so wurde u.U. der falsche Dateiinhalt angezeigt.
+  * Optimierung bei Telefonie-Dienst\\ Der Telefonie-Dienst wurde optimiert, zuvor konnte es in Einzelfällen vorkommen dass die falsche IP-Adresse verwendet wurde.
+  * Optimierung des Verhaltens nach Standby Betrieb\\ Das Verhalten des david Clients nach dem Standby Betrieb wurde optimiert. Zuvor konnte es vorkommen dass der david Client längere Zeit hing.
+  * Importieren eines ganztägigen Termins\\ In einem Einzelfall wurde beim Import eines Termins per ICS Datei nicht der eingetragene ganztägige Termin erstellt, sondern ein Termin von 0:00 - 0:00 Uhr.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Neue Variablen im Editor zur Auswahl \\ Im Nachrichten-Editor stehen wie beim PC Client nun auch die Variablen „Benutzerdaten/Benutzer Foto“ und „Allgemein/Absender Adresse“ zur Verfügung.
+
+==== Bugfix ====
+
+  * Bresprechungsanfrage nach Ablehnen u.U. nicht entfernt\\ Wird eine Besprechnungsanfrage über den Button „Ablehnen“ in der Vorschau abgelehnt, so wurde sie nicht aus der Eintragsliste entfernt.
+
+
+  * Mögliches Fehlverhalten bei falscher Ordnerverknüpfung\\ In einem Einzelfall führte die Verknüpfung zu einem Adressordner mit Sonderzeichen im Namen zum Absturz des Clients.
+
+=====  VoIP2 TLD =====
+
+==== Bugfix ====
+
+  * Fehlerhafte Konfigurationsdatei vars.xml\\ In Einzelfällen konnte die Konfigurationsdatei vars.xml fehlerhaft gespeichert werden, was zu Fehlern beim Faxversand und Empfang führt, das wurde nun optimiert.
+

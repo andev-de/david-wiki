@@ -1,0 +1,12 @@
+====== Version 2832 vom 14.08.2015 ======
+
+Release: 2015-08-14T15:48:48
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Bei der Funktion "Antworten an" (Reply-To) werden nun auch mehr als eine Adresse unterstützt.
+
+

@@ -1,0 +1,84 @@
+====== Version 3515 vom 23.01.2023 ======
+
+Release: 2023-01-23T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Optimierung bei der Rücksicherung von StrongBox Inhalten\\ Die Rücksicherung von StrongBox Inhalten wurde optimiert. Zuvor konnte es zu Verzögerungen bei der Rücksicherung kompletter Ordner kommen, wenn im Ziel-Ordner noch Nachrichten vorhanden sind.
+
+
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei falscher SID eines david Benutzers\\ Der Service Layer prüft nun beim Start ob die bei den david Benutzern gespeicherte Windows SID mit deren wirklicher SID übereinstimmt. Im Fehlerfall wird ein Eintrag im david Ereignis Ordner mit Hinweisen zur Korrektur erstellt. Bei einer falschen SID kann es z.B. zu Problemen im smart client kommen. Weiterhin konnte es in einer Domäne zu einem Fehlverhalten kommen, wenn ein david User mit falscher SID dem richtigen Windows User zugewiesen werden sollte, in dem Fall konnte die SID weiterhin falsch bleiben.
+  * Falsches Benutzerbild bei Telefonie Nachrichten im smart client\\ Bei Verwendung des smart clients wurde bei den Telefonie Nachrichten (z.B. „Eingehender Anruf“) u.U. ein falsches Benutzerbild angezeigt. 
+
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Sortierung der Einträge „Backup Images“\\ Durch einen Klick auf die Spaltenüberschrift können die Einträge unter „System/StrongBox/Backup Images“ nun sortiert werden.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Fehlernummer beim eMail Versand\\ Ist beim eMail Versand nach dem Kommando "RCPT TO:" ein SMTP-Fehler aufgetreten, so wurde dieser bei der entsprechenden eMail nicht unter Eigenschaften/Information/Fehlernummer angezeigt.
+  * Mögliches Fehlverhalten beim Empfang von eMails mit Sonderzeichen in der eMail Adresse\\ Enthält eine empfangene eMail Adresse Sonderzeichen in dem Teil vor der Domäne, so konnte diese u.U. nicht empfangen werden. In diesem Fall gab es die Fehlermeldung „SMTPUTF8 is required“.
+  * Mögliches Fehlverhalten beim Versand (SMTPUTF8)\\ Beim eMail Versand konnte es zu einem Fehlverhalten kommen, so dass eMails nicht versendet wurden, wenn die Gegenstelle UTF8 anbietet. SMTPUTF8 wird nun nur noch verwendet, wenn die eMail Adresse UTF8 Zeichen enthält und die Gegenstelle dies unterstützt. Über den neuen Parameter DISABLETXSMTPUTF8 = TRUE in der postman.ini kann dieses Verhalten verhindert werden.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der openssl Version\\ Die davidtls.dll wurde auf openssl 1.1.1s aktualisiert. 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Wiedervorlage von Terminen per ActiveSync\\ Wird per ActiveSync ein Termin erstellt und hierbei „keine Erinnerung“ ausgewählt, so wurde bei der Nutzung von iOS 16 u.U. eine Wiedervorlage von 0 Minuten übergeben, so dass der Termin ungewollt wiedervorgelegt wurde.
+  * Fehlermeldung „Include file not found“\\ Trotz der Einstellung „Standard TCP Port exclusiv für Let's Encrypt nutzen" in der WebBox Konfiguration des david Administrators konnte es u.U. zu der unnötigen Fehlermeldung "Include file not found" im david Ereignis Ordner kommen. Das ist nun behoben.
+  * Mögliches Fehlverhalten bei CalDAV Synchronisation\\ Ein mögliches Fehlverhalten bei der CalDAV Synchronisation wurde behoben, z.B. bei Thunderbird wurden u.U. keine Daten synchronisiert.
+
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierung beim Vergrößern/Verkleinern im Chromium Editor\\ Im Chromium Editor wurde das Vergrößern/Verkleinern der Anzeige optimiert.
+  * Kein Beta Status mehr beim Hinzufügen von Microsoft Kalendern\\ Im Kalender können auch Microsoft Kalender hinzugefügt werden. Diese Funktion hat nun keinen Beta Status mehr.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Nachrichtenoption „Vertraulichkeit“\\ Wird bei einer neuen eMail ein Sendeservice ausgewählt und die eMail dann als Entwurf gespeichert, so war anschließend u.U. unter „Nachrichtenoptionen/Vertraulichkeit“ eine falsche Auswahl eingestellt.
+  * Mögliches Fehlverhalten beim Antworten/Weiterleiten per Chromium Editor\\ In einem Einzelfall wurde beim Antworten oder Weiterleiten einer empfangenen eMail per Chromium Editor der eMail Inhalt nicht geladen.
+  * Animation während der Volltextsuche\\ Wird die Volltextsuche verwendet, so wurde u.U. während der Suche die Animation (eine drehende Uhr) nicht angezeigt, so dass nicht zu erkennen war wann die Suche beendet ist.
+
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Beschleunigter Chatwechsel\\ Der Wechsel zum Chat wurde optimiert, so dass die Einträge nun schneller angezeigt werden.
+
+==== Bugfix ====
+
+  * Anzeigefehler unter macOS 13\\ Unter macOS 13 konnte es zu Anzeigefehlern kommen. 
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Anzeige von Vorschaubildern im Ausgang\\ Die Vorschaubilder von versendeten Nachrichten im Ausgang zeigten immer das eigene Profilbild an. Nun ist es das des Empfängers.
+  * Anzeige des Transit\\ Der Transit wird nun auch im smart client angezeigt.
+
+==== Bugfix ====
+
+  * VoiceMail im Browser nicht abspielbar\\ Empfangene VoiceMails konnten beim smart client im Browser nicht mehr abgespielt werden. Das ist nun behoben.
+

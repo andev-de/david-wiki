@@ -1,0 +1,38 @@
+====== Version 2972 vom 02.01.2018 ======
+
+Release: 2018-01-02T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Ist ein Autoreply in einem Ordner eingerichtet, so erfolgt bereits kein unnötiger Autoreply an folgende Adressen: noreply, no-reply, newsletter. Enthält die eMail jedoch eine "reply-to Adresse" erfolgt in diesem Fall nun dennoch die Autoreply Abarbeitung.
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bei einer fehlerhaften Systemdatei (david.usr) zum Absturz kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Unter "Einstellungen/Layout" sind nun verschiedene Skins für die Darstellung des david Clients auswählbar.
+  * Die Info zur Anzahl der Einträge in einer Ansicht (z.B. einem Ordner) befindet sich nun rechts unten innerhalb der Liste. Durch einen Klick auf diese Info kann sie dauerhaft angezeigt werden.
+  * Bei Einträgen mit Anhängen kann die Liste der Anhänge nun durch klick auf den Kopf der Spalte entsprechend sortiert angezeigt werden.
+  * Die Vorschau bei einem Einschreiben und bei einer verschlüsselten Nachricht enthält nun einen kurzen erklärenden Text und einen Button zum Öffnen.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+
+==== Bugfix ====
+
+  * In einem Einzelfall wurden beim Ausdruck einer eMail mit eingefügten Bildern diese nicht mit ausgedruckt und es wurden stattdessen nur Platzhalter angezeigt.
+  * Beim häufigen Öffnen von eMails mit Dateianhängen oder Verschieben der Trennlinie zwischen Textfeld und Dateianhangsliste konnte es nach einiger Zeit zu Abstürzen des Clients kommen.
+  * Liegt der david Client im Systray und eine neue Nachricht wird aufgrund der Notifizierung durch Klick auf das Notifier Fenster geöffnet, so konnte es u.U. zu einem Fehlverhalten kommen (Absturz des Clients oder Öffnen des Fax Viewers statt des eMail Viewers).
+  * In einem Einzelfall wurde beim Öffnen einer signierten eMail der Inhalt nicht angezeigt (in der Vorschau dagegen wohl).
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Das Verhalten des david Clients bei einer langsamen Verbindung zum Service Layer wurde optimiert.
+

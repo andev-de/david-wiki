@@ -1,0 +1,44 @@
+====== Version 2961 vom 25.09.2017 ======
+
+Release: 2017-09-25T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Bei den internen Benutzer Adressen wird nun aus dem Displaynamen auch Vorname und Nachname generiert und in die Adressen eingetragen.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall trat ein Fehler bei der Konvertierung auf, so dass ein empfangener Dateianhang (hier ein PDF) nicht korrekt dargestellt wurde.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall trat ein Fehler bei der Konvertierung auf, so dass ein empfangener Dateianhang (hier ein PDF) nicht korrekt dargestellt wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Für die Funktion "Als Text einfügen" wurde der Tastatur Shortcut SHIFT+STRG+V hinzugefügt.
+  * Enthält eine eMail PDF Dateien als Dateianhänge, so können diese nun beim Ausdruck automatisch mit ausgedruckt werden (neuer Schalter im Drucken Dialog). Der Ausdruck erfolgt auf dem eingestellten Standard Drucker.
+  * Wird beim beantworten von (meist) ausländischen Nachrichten ein anderer Zeichensatz festgestellt wird beim Versenden ein entsprechender Dialog angezeigt. Dieser kann jetzt durch Setzen eines neuen Schalter unter Einstellungen\Editor übersprungen werden. In dem Fall wird dann grundsätzlich UTF8 beim Antworten/Weiterleiten benutzt.
+  * Soll eine Nachricht gedruckt werden, und die dazu notwendige Programmdatei dvwinp.exe kann nicht geladen werden, so erfolgt nun ein entsprechender Hinweis.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Link Lookup Service ist als Beta Version integriert. Aktivierbar im David® Client unter Einstellungen/Global. Dieser Service ist nur mit aktiviertem sitecare™ verfügbar. Dieser Service überprüft zur Laufzeit ob ein im David® Client angeklickter Link als gefährlich klassifiziert ist.&nbsp;
+
+==== Bugfix ====
+
+  * Wird eine eMail zum Weiterleiten oder Antworten geöffnet, in der geöffneten eMail Text hinzugefügt und dann gedruckt, so wurde dieser zusätzliche Text nicht ausgedruckt.
+  * Wenn im Client die Vorschau deaktiviert ist, konnte in der Intercom Ansicht kein TalkAbout generiert werden, auch nicht wenn man den Eintrag geöffnet hatte.
+  * Wird ein Element einer Besprechungsanfrage geändert, so wurde beim Besprechungsteilnehmer u.U. ein weiterer Termin eingetragen, was dann anschließend zu einer falschen zusätzlichen Wiedervorlage führte.
+  * Wenn vom Organisator einer Besprechungsanfrage eine Änderung eines einzelnen Termins vorgenommen wurde und anschließen von ihm die gesamte Serie gelöscht wird, konnte es zu einem Fehlverhalten beim Empfänger kommen, u.U. blieb z.B. der geänderte Termin bestehen. 
+  * Werden bei einem Drucker Einstellungen vorgenommen (z.B. Sortierung, Anzahl Kopien), so waren diese u.U. nach dem Ausdruck aus dem Client heraus verworfen.
+  * Wird beim Abwesenheits-Assistenten der Schalter "Nur für eMails anwenden" gesetzt, so war er nach Deaktivieren und erneutem Aktivieren u.U. nicht mehr gesetzt.
+  * Hat der Anwender keine Schreibrechte in einem Ordner, aus dem er eine Nachricht manuell als Kopie verteilen möchte, so konnte er dennoch eine Info für den Empfänger eintragen.
+

@@ -1,0 +1,55 @@
+====== Version 2987 vom 14.05.2018 ======
+
+Release: 2018-05-14T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Detailliertere Absenderangabe bei Systemnachrichten des david® Servers\\ Zu verschiedenen Ereignissen erzeugt und versendet der david® Server automatische Systemnachrichten. Beispiele hierfür sind der monatliche Security Report an die Benutzer oder Benachrichtigungen zu neuen Rollouts an den Administrator. Der Absender dieser Nachrichten enthält nun im „Angezeigten Namen“ den Namen des betreffenden david® Servers. So lässt sich z.B. in Netzwerken mit mehreren david® Servern sofort erkennen, von welchem dieser Server eine bestimmte Meldung stammt.
+  * Erhalten abgelaufener Signatur-Zertifikate bei Aktualisierung\\ Bestellt ein david® Anwender eine neue digitale Signatur, weil die bisherige abgelaufen ist, so wird bei deren Installation die abgelaufene Zertifikat-Datei nicht mehr durch die neue Version ersetzt. Stattdessen wird die alte Datei umbenannt und bleibt somit erhalten, um mögliche Hinweise auf Zertifikatsfehler beim Öffnen älterer Nachrichten zu vermeiden. Beim Umbenennen wird ein Name nach folgendem Muster vergeben: „alter name.ba.tt-mm-jjjj.dcf“
+\\ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierte Auswahl der anzuzeigenden Tage in Kalenderansichten\\ In den Einstellungen des david® Client wurde unter „Kalender“ der neue Unterpunkt „Erweitert“ hinzugefügt. Hier können nun für die Kalenderansichten „Arbeitswoche“ und „Gruppenansicht“ die jeweils anzuzeigenden Wochentage separat bestimmt werden.
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Separate Standard-Erinnerung für ganztägige Termine\\ In den Kalender-Einstellungen (Menüpunkt „Kalender“ in den david® Client Einstellungen) kann nun neben der Standard-Erinnerung für normale Termine eine separate Standard-Erinnerung für ganztägige Termine festgelegt werden. Als Vorgabe gelten hier 16 Stunden.
+
+  * Individuelle Vorgabe für Erinnerung bei Besprechungsanfragen\\ Beim Annehmen von Besprechungsanfragen richtet sich die vorgeschlagene Zeitspanne für die automatische Erinnerung nun ebenfalls nach der definierten „Standard Erinnerung“ für Termine (Menüpunkt „Kalender“ in den david® Client Einstellungen). Bisher konnte diese Vorgabewert nicht beeinflusst werden.
+
+  * Kalendername als Spaltenüberschrift beim Ausdruck der Gruppenkalenderansicht\\ Beim Ausdruck der einfachen Gruppenkalenderansicht enthalten die Spaltenüberschriften nun die Namen der jeweiligen Kalender. Bisher wurde dort der betreffende Tag angegeben.
+
+  * Anpassungen für Nutzung von Multimedia-Tastaturen\\ Bei Einsatz von Multimedia-Tastaturen beansprucht der david® Client nicht mehr den exklusiven Zugriff auf die Media-Tasten (z.B. Play/Pause, Vor/Zurück), sobald er im Vordergrund ist. So kann auch während der Arbeit mit dem david® Client die Medien-Wiedergabe über beliebige Medienplayer gesteuert werden, ohne dazu den david® Client verlassen zu müssen.
+
+  * Kommentare abschließen\\ Der Initiator einer eMail mit Kommentaren oder eines TalkAbouts kann das Kommentieren für die betreffende Nachricht nun abschließen, so dass keine weiteren Kommentare mehr hinzugefügt werden können. Hierzu steht ihm im Kommentarbereich die neue Schaltfläche „Abschließen“ zur Verfügung.
+
+  * Keine Kommentieren-Funktion für Bcc-Empfänger\\ Die Kommentieren-Funktion, die einen schnellen Austausch innerhalb des Verteilerkreises einer internen eMail erlaubt, steht für Bcc-Empfänger nicht mehr zur Verfügung. Direkte Empfänger und Cc-Empfänger können die Funktion weiterhin wie gewohnt nutzen.
+
+
+==== Bugfix ====
+
+  * Verbesserte Unterstützung eigener Layout-Bilder\\ Bei der Nutzung eigener Layouts für die Darstellung des david® Client (Menüpunkt „Layout“ in den david® Client Einstellungen) konnte die Verwendung von Bildern mit 8 Bit Farbtiefe u.U. zu einem Absturz führen. Dieses Verhalten ist nun korrigiert.
+
+  * Optimierter Ausdruck der Kalenderansicht „Gruppe (Woche)„\\ Das Ausdrucken der Kalenderansicht „Gruppe (Woche)" funktionierte teilweise nicht zufriedenstellend. Das ist nun behoben.
+
+  * Optimierter Ausdruck aus Gruppenkalendern\\ Das Ausdrucken der Termine mehrerer Tage aus der Gruppenkalender Ansicht erstreckt sich häufig über mehrere Seiten. Hierbei konnte es vorkommen, dass  die Informationen auf den hinteren Seiten unvollständig waren. Dieses Verhalten ist nun behoben.
+
+  * Verbesserte Stabilität bei Notizen mit Hintergrundgrafik\\ Die Stabilität des david® Client beim Einsatz von Hintergrundgrafiken in Notizen wurde optimiert. Zuvor konnte das Öffnen einer Notiz mit Hintergrundgrafik zum Absturz führen. Dieser Effekt tritt nun nicht mehr auf.
+
+  * Optimiertes Verhalten beim direkten Öffnen von Dateianhängen\\ In einem Einzelfall konnte das Ausführen eines Dateianhangs zum Absturz des david® Client führen. Dieses Verhalten wurde korrigiert.
+
+  * Mögliches Fehlverhalten bei manueller Sortierung behoben\\ Bei Nutzung der manuellen Sortierung über den Menüpunkt „Ansicht/Sortieren nach“ wurde u.U. fälschlicherweise nach einer anderen als der eigentlich ausgewählten Spalte sortiert. Dieses Verhalten wurde korrigiert. 
+
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Neue Version der Desktop Protection for david®\\ Die Desktop Protection for david®, die für Virenschutz auf den Arbeitsplatzrechnern im Netzwerk sorgt,  wurde aktualisiert. Unter anderem enthält die neue Version Anpassungen für den Einsatz mit dem Windows 10 April 2018 Update. Die Aktualisierung der betreffenden Arbeitsstationen erfolgt nach Installation des david® Rollout automatisch. 
+
+

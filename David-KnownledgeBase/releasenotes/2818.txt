@@ -1,0 +1,48 @@
+====== Version 2818 vom 14.08.2015 ======
+
+Release: 2015-08-14T15:50:11
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Enthält eine eMail Adresse Umlaute und die Adresse wird im IDN-Format angegeben, so konnte die eMail u.U. nicht versendet werden.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Wird ein ganztägiger Termin, der über mehrere Tage geht, in der Arbeitswochenansicht in einen anderen Kalender kopiert, so wurde er dort u.U. mehrfach eingetragen.
+
+  * Die Erstellung von hybrid mail Serienbriefen wurde optimiert, was vor allem bei sehr umfangreichen Dokumenten eine Performance Verbesserung und bessere Nutzung von Speicherplatz während der Erstellung betrifft.
+  * Im Dialog zur Serverauswahl konnte u.U. nicht per Tap zu den Eingabefeldern für die Zugangsdaten gewechselt werden.
+
+  * Wird ein Eintrag mit einem vorhandenen eingescannten Dokument geöffnet und es soll über "Datei/Einlesen per Scanner" ein weiteres Dokument hinzugefügt werden, so wurde u.U. nur eine 0 Byte Datei hinzugefügt. Auch konnte es in einem Einzelfall vorkommen, dass statt dem korrekten Dokument ein älteres Dokument aus dem Temp Ordner eingefügt wurde.
+
+  * Wird bei der Suche in StrongBox Ordnern die Option "Ergebnisse in neuem Fenster anzeigen" gewählt, so wurde fälschlicherweise in den Live Ordnern ab dem obersten Ordner gesucht.
+
+  * Der Button "Diese Nachricht löschen" bzw. "Nachrichten von... künftig vertrauen und direkt durchstellen" über der eMail Vorschau war beim MouseOver nicht als Button zu erkennen.
+
+  * Wird eine empfangene eMail zum Bearbeiten/Weiterleiten geöffnet und es sollen die vorhandenen eMail Adressen im Separator per Rechtsklick im Kontextmenü kopiert werden, so funktionierte dies u.U. nicht.
+
+  * Wird eine neue Nachricht erstellt und per "tic:" Befehl der Empfänger und der Mailtext vorgegeben, so konnte es vorkommen, dass der Mailtext nicht übernommen wurde.
+
+  * Die Wörterliste wurde erweitert.
+  * Wird ein hybrid mail Serienbrief erstellt und es treten Fehler bzgl. der Sperrfläche auf, so werden die fehlerhaften Adressen beim Tapp "Serienbrief" nun mit einem "x" gekennzeichnet. Außerdem wird in dem Fall direkt auf den Tabb "Serienbrief" gewechselt, so dass die fehlerhaften Empfänger direkt sichtbar sind und ggfs. per Kontextmenü entfernt werden können. Werden sie nicht entfernt, so erscheinen sie beim Versand direkt mit einem Fehlerstatus im Ausgang, so dass man eine Übersicht der nicht versendeten S
+  * In der Favoritenleiste wurde das Kontextmenü beim Suchen Button entfernt.
+
+  * Im Dialog zum Versand eines hybrid mail Jobs wurde der Button zum Anfordern der Preisinformation (ein "?") durch einen Link ersetzt und ist somit besser zu erkennen.
+
+  * Das Hinzufügen und Entfernen von Ordnern für den david Notifier wurde u.U. nicht korrekt übernommen.
+
+  * Änderungen an der Favoritenleiste wurden u.U. nicht korrekt übernommen.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Unter Mac OS X 10.11 konnte es zu fehlerhaften Darstellungen einiger Icons im Client kommen.
+
+

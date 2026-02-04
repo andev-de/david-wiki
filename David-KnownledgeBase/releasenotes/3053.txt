@@ -1,0 +1,58 @@
+====== Version 3053 vom 25.03.2019 ======
+
+Release: 2019-03-25T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * „Jetzt anwenden“ bei deaktivierten Verteilregeln\\ Der Service Layer führt nun eine Regel bei der Wahl von „Jetzt anwenden“ auch dann aus, wenn sie nicht aktiviert ist (david Client, Regeln bei Ordnern).
+
+==== Bugfix ====
+
+  * Betreff bei Regel „Erstellen einer neuen Nachricht“\\ Wird eine Regel "Erstellen einer neuen Nachricht" eingerichtet und hierbei ein Betreff für die neue Nachricht hinterlegt, so wurde dieser Betreff bei Anwendung der Regel u.U. nicht übernommen.
+  * Wiedervorlage nicht im persönlichen Eingangsbuch\\ Wird eine Nachricht aus einem Gruppenordner als Verknüpfung in die Wiedervorlage gelegt, so kann hier gewählt werden dass die Wiedervorlage anschließend wieder im Gruppenordner statt dem Eingangsbuch erfolgt. Das funktionierte nicht mehr, sie erfolgte generell im Eingangsbuch.\\ 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei fehlerhafter TLS Verbindung\\ In einem Einzelfall blieben Sendeaufträge bei einer fehlerhaften TLS Verbindung dauerhaft im Transit stehen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Abholen von eMails per POP3 und TLS\\ Beim Abholen von eMails per POP3 und TLS Verbindung konnte es ein Einzelfällen zu einem Fehlverhalten kommen, so dass bis zum Neustart keine weiteren eMails abgeholt wurden.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Nicht alle Nachrichten abgeholt (Wiedervorlagen auf gleiche Nachricht)\\ Existieren in einem Ordner mehrere Wiedervorlagen für die gleiche Nachricht, so wurde beim Zugriff per Mail Access Server u.U. nur eine dieser Nachrichten abgeholt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Standard-Dauer für Terminerstellung\\ In den Einstellungen unter „Kalender/Erweitert“ kann nun die Standard-Dauer für die Erstellung von Terminen festgelegt werden. Der angegebene Wert (z.B. 10 Minuten) wird als Dauer vorgeschlagen, unabhängig von dem eingestellten Zeitraster für die Ansicht.
+  * Kalenderansicht "Übersicht“ farbig drucken\\ Sind Termine in der Kalenderansicht "Übersicht" mit einer farbigen Beschriftung versehen, so werden diese nun auch beim Ausdruck farbig gedruckt.
+  * Einstellung „Vorschau unterhalb der Nachrichten“ auch in InfoCenter Ansicht\\ Die Einstellung „Vorschau unterhalb der Nachrichten“ wird nun auch in der InfoCenter Ansicht wieder berücksichtigt. Chat Nachrichten können dann jedoch hier nicht angezeigt werden - dazu muss „Vorschau neben den Nachrichten“ eingestellt sein.
+  * Thema angeben bei Erstellung eines Chats\\ Beim Erstellen eines neuen Chats kann nun auch ein Thema angegeben werden, wenn man nur mit einer einzelnen Person einen Chat beginnt. Bisher war dies nur bei Gruppenchats möglich.
+  * Verwendeter Browser beim Einfügen von Web Links\\ Beim Einfügen von Web Links in die Favoritenleiste wird nun per Vorgabe der Schalter "Öffnen in Browser-Ansicht basierend auf Chromium anstatt Internet Explorer" gesetzt.
+  * Neue Spalte „Erinnerung“ in Kalenderansicht "Übersicht“\\ In der Kalenderansicht "Übersicht" kann nun die neue Spalte "Erinnerung" eingeblendet werden.
+  * Neuer Button „Unterhaltung öffnen“ bei Intercom TalkAbout\\ In einem Intercom TalkAbout gibt es nun den neuen Button "Unterhaltung öffnen", der die Original-Intercom Nachricht öffnet.
+  * Neue Kalenderansicht „7 Tage“\\ Es gibt nun die neue Kalenderansicht „7 Tage“, die ab dem aktuellen Tag beginnt.
+  * Wechsel der Absenderadresse und Verwendung einer digitalen Signatur\\ Hat ein Anwender mehrere eMail Adressen mit jeweils hinterlegter digitaler Signatur und er wechselt bei der Erstellung einer eMail durch die Eingabe des Befehl @@from die Absender eMail Adresse, so wird nun direkt die hinterlegte digitale Signatur der gewählten eMail Adresse verwendet. Bisher gab es in diesem Fall eine Fehlermeldung.
+  * Einzelne Nachrichten bei Kommentaren zu eMails\\ Schreibt ein Anwender in eMails mehrere Kommentare hintereinander (jeweils mit Enter versendet), so werden diese zur besseren Übersicht nun als einzelne "Sprechblasen" dargestellt.
+  * Laden von Dateianhängen bei Formularen\\ Werden Formulare für den Mailversand über den Button „Formulare“ geladen, so werden hierbei nun auch Dateianhänge mit geladen, die an den Formularen anhängen.
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler bei Kommentaren\\ Wird in einem Kommentar zu einer eMail der Name eines Teilnehmers fett geschrieben (durch Eingabe des @ Zeichens), dann zu einer anderen eMail und wieder zurück gewechselt, so wurden u.U. auch andere Teile des geschriebenen Kommentars fett dargestellt.
+  * Anzeigefehler im Benutzernamen\\ Enthält der Benutzername ein "&amp;" Zeichen, so wurde dies oben im Client Fenster falsch dargestellt.
+  * Mögliches Fehlverhalten bei Tracking Anforderung\\ Das Anfordern von Tracking Informationen funktionierte u.U. nicht korrekt, wenn die versendete eMail signiert ist.
+  * Möglicher Absturz beim Wechsel zur Chat Ansicht\\ Ein möglicher Absturz beim Wechsel zur Chat Ansicht wurde behoben.
+  * Links in eMails u.U. falsch aufgerufen\\ In einem Einzelfall wurde ein Link in einer eMail falsch aufgerufen.
+

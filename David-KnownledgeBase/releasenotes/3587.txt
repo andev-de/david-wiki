@@ -1,0 +1,50 @@
+====== Version 3587 vom 31.10.2023 ======
+
+Release: 2023-10-31T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mehrfache Terminbenachrichtigung\\ Werden bei einem neuen Termin Benutzer hinzugefügt und die Option „Benachrichtigung bei Speichern des Termins“ gewählt, so erhielten die Benutzer bei jedem Öffnen der Benachrichtigung mit dem smart client diese erneut. Das wurde nun behoben.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Bestellen von DigiCert S/MIME Zertifikaten\\ Im david Administrator werden nun unter „Benutzer/eMail Zertifikate S/MIME“ die bei den Anwendern installierten Zertifikate aufgeführt. Durch den Menüpunkt „Neue Bestellung“ können weitere Zertifikate bei DigiCert bestellt werden. Unter „System/Sicherheit“ kann festgelegt werden, dass die Bestätigung der Bestellung automatisch erfolgen soll (Vorgabe). In dem Fall wird die eMail „Confirm your email address“ in dem neuen Ordner System/David/Zertifikate abgelegt und der Anwender braucht sie nicht zu bestätigen. Ohne die automatische Bestätigung wird sie in den Eingang des Anwenders gelegt. Nach dem Empfang des Zertifikates erhält der Anwender die eMail „Ihre digitale Signatur" mit einem Link, über den das Zertifikat bei ihm eingerichtet wird. Sind Gruppenadressen eingerichtet (mehrere Anwender mit der gleichen ausgehenden eMail Adresse) so braucht nur einmal bestellt zu werden und alle betroffenen Anwender erhalten die eMail zur Einrichtung. Das Zertifikat (*.dcf) wird in dem Fall in dem neuen Ordner \david\Code\common\certificates\global gespeichert. Über die Liste der Zertifikate im david Administrator können zusätzlich auch Zertifikate importiert und Zertifikate widerrufen werden.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der openssl Version\\ Die davidtls.dll wurde auf openssl 1.1.1w aktualisiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierung bei den Farben des Hauptfensters\\ Im Hauptfenster des david Clients ist der obere Bereich mit den Symbolleisten, sowie die Favoritenleiste nun grau statt weiß.
+  * Bild per Drag &amp; Drop als Dateianhang einfügen\\ Wird ein Bild per Drag &amp; Drop bei gedrückter Strg Taste in den Editor gezogen, so wird es nun als Dateianhang eingefügt und nicht als Inline Grafik.
+  * Verwendung des hybrid Mail Druckertreibers\\ Der hybrid Mail Druckertreiber wurde für die Verwendung des david und Team Clients angepasst. Je nachdem welcher Client zuletzt gestartet wurde, verwendet der hybrid Mail Druckertreiber nun diesen Client.
+  * Cursor Position in eMail Vorlagen festlegen\\ Um in eMail Vorlagen die Cursor Position festlegen zu können, kann hierzu nun mit dem neuen Shortcut STRG+SHIFT+W ein Popup geöffnet werden, das entsprechende Funktionen bietet.
+  * Anzeige abgesagter Termine in Kalenderübersicht\\ Wird ein Termin abgesagt (durchgestrichener Termin im Kalender), so wurde er in der eingeblendeten Kalenderübersicht in der InfoCenter Ansicht weiterhin angezeigt. Dort wird er nun nicht mehr angezeigt.
+  * Bestellung von Class 1 S/MIME Zertifikaten\\ In den Einstellungen des david Clients können nun zusätzlich zu Class 2 Zertifikaten auch Class 1 Zertifikate bestellt werden. Je nach Einstellung im david Administrator (System/Sicherheit) muss der Anwender die Bestellung bestätigen oder nicht bestätigen.
+  * Automatische Ersetzungsfunktionen im Editor\\ Automatische Ersetzungsfunktionen (z.B. automatische URL-Erkennung, Rechtschreibkorrektur, Ersetzungen des Wörterbuchs, etc.) lassen sich über STRG+Z rückgängig machen, so dass man weiterschreiben kann, ohne dass die Ersetzungsfunktion erneut ausgeführt wird. Der Ersetzungsdialog (STRG+H) erlaubt Ersetzung durch leeren String. Dadurch kann gesuchter Text entfernt werden.
+  * Optimierung beim Einfügen von Bildern im Editor\\ Die Nutzerfreundlichkeit von Bildbreite Popup wurde verbessert, speziell verliert man beim Schreiben in den Bildbreite Input nicht mehr den Fokus.
+  * Cursor Position im Editor beim Antworten auf eMails\\ Falls in der genutzten Vorlage kein Cursor Element definiert ist, ist die initiale Cursor-Position bei Antworten nicht mehr in der eMail, auf die geantwortet wird.
+  * Emoji-Auswahl im Editor\\ Die Emoji-Auswahl nutzt nun Unicode Zeichen.
+  * Optimierung beim Rückgängig machen im Editor\\ Schreibt man etwas im Editor und macht dann schnell einen Undo (Strg+Z), wird auch die letzte Eingabe im Undo Stack gespeichert. Vorher konnte es passieren, dass man eventuell mit einem Redo (Strg+Y) nach einem Undo nicht mehr zum letzten Zustand zurück kommen konnte.
+  * Neuer Button „Sidekick“ in Favoritenleiste der Team Anwendung\\ Das bisherige „Brainstorming“ Eingabefeld im Hauptfenster der Team Anwendung wurde entfernt. Stattdessen gibt es nun in der Favoritenleiste den neuen Button „Sidekick“, der den chayns Chat mit dem Sidekick Assistenten öffnet.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Verwendung des Chromium Editors im david Classic Client\\ Wird beim david Classic Client der Chromium Editor verwendet, so funktionierte hier u.U. das Einfügen aus der Zwischenablage nicht.
+  * Anzeige von Windows Warnmeldung bei david Client Messageboxen\\ Ist unter Windows die „Verstärkte Sicherheitskonfiguration für IE“ aktiviert, so wurde beim Auftreten von david Client Messageboxen (z.B. beim Löschen einer Nachricht) u.U. eine Windows Warnmeldung angezeigt.
+  * Verwendung von Tastatur Shortcuts bei Terminen und Aufgaben\\ Im Aufgaben- und Termineditor funktionierten die Tastatur Shortcuts u.U. nicht.
+  * Suchfunktion im Editor\\ Im Editor funktionierte die Suche nicht (Strg+F).
+  * Mögliches Fehlverhalten beim Mounten von StrongBox Images\\ Wird ein StrongBox Image mit dem david Client gemountet, so konnten die enthaltenen Nachrichten u.U. nicht zurückgesichert werden.
+  * Möglicher Anzeigefehler im Editor\\ Der Editor „zittert“ nicht mehr beim MouseOver über den Buttons „Rechtschreibprüfung“ oder „Dokumentenhintergrund“.
+  * Mögliches Fehlverhalten beim Herunterfahren des PCs\\ Ist der david Client beim Herunterfahren des PCs noch gestartet, so konnte dies u.U. das Herunterfahren verhindern.
+

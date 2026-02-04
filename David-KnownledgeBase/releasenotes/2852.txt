@@ -1,0 +1,75 @@
+====== Version 2852 vom 16.02.2016 ======
+
+Release: 2016-02-16T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Die Übersicht der Feiertage im Ordner "Ressourcen/Feiertage" wurde um weitere Jahre erweitert.
+  * Bei jährlichen Terminserien werden nun auch auch Tag, Arbeitstag und Wochenendtag unterstützt.
+  * Im david Administrator wird die automatische Installation der Rollouts aktiviert, so dass die david Installation zukünftig selbständig nach Herunterladen eines neuen Packages aktualisiert wird ("Konfiguration/Updates"), Vorgabe ist Samstag Nacht um 2 Uhr. 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Wird im david Client bei "Antworten an" eine eMail Adresse mit Umlauten eingetragen, so wurde diese u.U. fehlerhaft an den Empfänger übertragen.
+  * Wird eine externe Besprechungsanfrage empfangen, so wurde in einem Einzelfall die Terminserie "jeden dritten Mittwoch" als "jeden dritten Dienstag" eingetragen.
+Mögliche Fehler in dem Zusammenhang waren noch: Aus dem letzten Freitag eines jeden 2. Monats wurde jeder vierte Freitag eines jeden 2. Monats und aus dem letzten Samstag im März wurde der letzte Februar im März.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Verlässt ein david Anwender einen LiveComment (Info "Hat den Verteiler verlassen" im LiveComment), so wird diese Info nun auch im david Client Web undper ActiveSync korrekt angezeigt.
+
+==== Bugfix ====
+
+  * In einem Einzelfall trat es auf, dass aufgrund einer fehlerhaften eMail nach der Synchronisation dieser eMail per ActiveSync zu einem iPhone die iOS Mail App abstürzte.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Sind mehrere Telefonie-Dienst Geräte für eine Rufnummer registriert, so entfällt nun die Nachricht "Entgangener Anruf" wenn eines der Geräte den Ruf angenommen hat.
+  * Die Infos zu einer empfangenen Besprechungsänderung werden nun auch in der Vorschau angezeigt (wie schon bei einer Besprechungsanfrage). Ebenso die Buttons für Annehmen, Unter Vorbehalt, Ablehnen.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert.
+  * Sind im Client bereits Zugangsdaten für Telefonie-Dienste eingetragen ("Einstellungen/Telefon"), so werden diese nun einmal an den Server übertragen und dort gespeichert (Datei dic.dfg im Ordner des david Benutzers). In den Einstellungen kann nun mit einem neuen Schalter entschieden werden, ob die lokal in der Registry gespeicherten Zugangsdaten verwendet werden sollen, oder die auf dem Server gespeicherten Daten. Zusätzlich können die Zugangsdaten nun im david Administrator für den Anwender eingestellt werden (Tab "Benutzerdaten" bei den Einstellungen des Anwenders).
+  * Besitzt ein Anwender das Recht "David Administrator", so gibt es in den Einstellungen des Clients ("Editor/Erweitert") nun einen zusätzlichen Button, mit dem man eine Liste globaler Schlüsselwörter für die Dateianhang-Erinnerung verwalten kann, die dann für alle Benutzer gelten.
+  * Beim Wechsel des david Servers werden nun die Telefonie Einstellungen des jeweiligen david Servers berücksichtigt.
+  * Ist beim Kalender eine zusätzliche Zeitzone eingestellt, so wird diese nun beim MouseOver angezeigt.
+  * Wird in der Telefonansicht manuell eine Nummer eingegeben, und es gibt mehrere Vorschläge, so wird nun vorrangig die Nummer selektiert, die der Eingabe entspricht. So wird nun z.B. bei der Eingabe einer internen dreistelligen Nummer diese selektiert.
+  * Im Kalendereditor kann man nun bei der Einstellung für die Erinnerung "Benutzerdefiniert" wählen und in dem Folgedialog bis zu 16 unterschiedliche Erinnerungen für einen Termin definieren. Hierbei können absolute Erinnerungen sowie Erinnerungen relativ zu einem Zeitpunkt angegeben werden.
+  * Beim Abwesenheits-Assistenten kann nun zusätzlich eine Weiterleitung eingestellt werden.
+
+
+==== Bugfix ====
+
+  * Ist beim Serverwechsel zwischen zwei david Servern die Einstellung "Ansicht/Immer Menü anzeigen" unterschiedlich, so wurde dies u.U. falsch übernommen. Es konnte vorkommen, dass sich das Menü dann auch mit der ALT Taste nicht mehr einblenden ließ.
+  * Der Bestätigungston beim Auflegen des Hörers erfolgte u.U. nur noch beim ersten Auflagen nach Neustart des david Clients.
+  * Werden die Telefonie Dienste erstmalig im Client eingerichtet und es ist ein Profil bereits vorgegeben, so wurde dieses u.U. nicht verwendet bis der Dialog erneut geöffnet und bestätigt wurde.
+  * Wird der Protokolleintrag eines entgangenen Anrufs per ActiveSync zum mobilen Gerät (iOS, Android) übertragen, so konnte durch Tippen auf die Rufnummer kein Anruf erzeugt werden. Es wird nun "tel:" als Protokoll eingetragen, so dass der Anruf funktioniert.
+  * Verdeckt das Chat Fenster einen anderen Dialog des Clients, z.B. den Löschen 
+Dialog beim Versuch eine Nachricht zu löschen, so konnte das Chat Fenster nicht 
+verschoben werden, um diesen Dialog zu bestätigen.
+  * In einem Einzelfall konnte es beim Selektieren einer Voice Mail in der Eintragsliste zum Absturz des Clients kommen.
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Das Design wurde an den david Client PC angepasst. Es steht nun auch eine Auswahl des Farbschemas für die Programmoberfläche zur Auswahl.
+  * Die Sounds Einstellungen sind nun in der Untergruppe "Global".
+  * Outdated Einstellungen wurden unter "Global" hinzugefügt.
+
+==== Bugfix ====
+
+  * Beim Erstellen eines Serientermins wurde bei der Wiedervorlage u.U. nicht der in den Einstellungen vorgegebene Wert vorgeschlagen.
+  * In der Wochen- und Monatsansicht des Kalenders konnte die Trennlinie zwischen den Einträgen und der Vorschau u.U. nicht verschoben werden.
+  * Wenn bei den LiveComments das Senden per Enter deaktiviert ist, konnte man im david®chat keine Nachrichten versenden.
+  * Wird ein neues Bild erstellt ("Neu/Bild") konnte es vorkommen, dass anschließend der Client nicht oder verzögert wieder in der Vordergrund kam. 
+

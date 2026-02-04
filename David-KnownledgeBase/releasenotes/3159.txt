@@ -1,0 +1,90 @@
+====== Version 3159 vom 02.03.2020 ======
+
+Release: 2020-03-02T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Nachricht an interne Anwender auf Termin\\ Wird eine Nachricht an einen internen Anwender auf Termin versendet, so liegt diese nun bis zum Versand wie eine externe Nachricht im Transit.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Hinzufügen von Teilnehmern in LiveComments\\ In einem Einzelfall konnte es beim Hinzufügen von Teilnehmern in LiveComments zum Absturz kommen.
+  * Mögliches Fehlverhalten bei „VIP“ Kontakten\\ Es konnte vorkommen, dass die "VIP" Kontakte der david Anwender nicht mehr gespeichert waren, das ist nun behoben.
+  * Mögliches Fehlverhalten bei mehr als 255 FileScan Services\\ In einem Einzelfall trat ein Fehlerverhalten bei der Abarbeitung von Jobs auf, die durch die Vielzahl der FileScan Services bedingt war. Das ist nun behoben.
+  * Fehlverhalten bei Verteilregel mit dem Vergleich auf Dateianhänge\\ Wird eine Verteilregel erstellt, die Dateianhänge von Nachrichten auf bestimmte Dateinamen prüft, so funktionierte diese u.U. nicht wenn auf Großbuchstaben geprüft wurde.
+  * Nutzung des david Communication Controller (dvcc) bei einer david3 Lizenz\\ Der david Communication Controller (dvcc) kann nun auch bei einer david3 Systemlizenz verwendet werden.\\ 
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Weiterleiten von eMails an Umlaut-Adressen\\ Sollen von PostMan Nachrichten an eMail-Adressen mit Umlauten weitergeleitet werden, so funktionierte dies u.U. nicht.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Aktualisierung des Lets encrypt Zertifikates\\ In einem Einzelfall konnte die Aktualisierung des Lets encrypt Zertifikates fehlschlagen.
+  * Dateinamen beim postlagernden Versand\\ Wird eine eMail mit Dateianhang postlagernd versendet, so wurde beim anschließenden Download der Datei im Browser der Dateiname u.U. eingekürzt, wenn er Leerzeichen enthält.
+ 
+ 
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Einstellung „Externe Inhalte in Nachrichten laden“\\ Die neue Einstellung "Ansicht/Vorschau/Externe Inhalte in Nachrichten laden" bewirkt dass externe Inhalte in eMails per Vorgabe in der Vorschau geladen werden. Durch Deaktivieren des Schalters wird dies unterbunden. In dem Fall wird ein gelber Hinweis über der Vorschau angezeigt, über den die Inhalte nachträglich geladen werden können.
+  * VIP Adressen konfigurieren\\ Unter "Einstellungen/Adressen/VIP" können nun die VIP Adressen hinzugefügt oder entfernt werden.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Info über Status von Besprechungseinladungen\\ Im Kalender wird beim Tooltipp von Besprechungseinladungen nun der Status der Eingeladenen durch ein Icon angezeigt (z.B. ein grüner Haken für "zugesagt").
+  * Funktion „Bild einfügen“ nun auch als Button im Nachrichteneditor\\ Die Funktion "Bild einfügen" gibt es nun auch als Button im Nachrichteneditor.
+  * Eingabefeld „Finden“ bei Adressen und im Kalender nun links\\ In den Ordnern Adressen und Kalender ist das "Finden" Feld nun links angeordnet.
+  * Bilder in Intercom TalkAbouts vergrößern\\ Bilder in Intercom TalkAbouts können nun mit dem Mausrad und gedrückter Strg-Taste vergrößert werden.
+  * Nachricht an interne Anwender auf Termin\\ Wird eine Nachricht an einen internen Anwender auf Termin versendet, so liegt diese nun bis zum Versand wie eine externe Nachricht im Transit.
+
+==== Bugfix ====
+
+  * Preisermittlung bei hybrid mail Serienbrief\\ Wird ein hybrid mail Serienbrief erstellt und im Dokument ist bei der Adresse kein Land angegeben, so gab es bei der Preisermittlung die Fehlermeldung "Länderübergreifend nicht möglich". Das ist nun behoben.
+  * Öffnen des Chat Fensters bei neuer Nachricht\\ Wenn der Anwender eingestellt hat, dass bei einer neuen Chat Nachricht das Chat Fenster geöffnet werden soll, so passierte dies nicht, wenn der Chat ausgewählt und der Client minimiert ist. Das ist nun behoben.
+  * Einstellung „Hinweis bei der Konfiguration von Ablageordnern“\\ Die Einstellung "Global/Bestätigungen/Hinweis bei der Konfiguration von Ablageordnern" funktionierte nicht korrekt.
+  * Mögliches Fehlverhalten beim Einfügen eines Hintergrund Sounds\\ Soll in einer neuen Nachricht ein Hintergrund Sound hinzugefügt werden, so konnte es bei der Dateiauswahl zum Absturz des Clients kommen.
+  * Mögliches Fehlverhalten beim Ausdruck von eMails mit PDF Anhängen\\ Beim Ausdruck von eMails funktionierte in einem Einzelfall der gleichzeitige Ausdruck der angehängten PDF Dateien nicht.
+  * Mögliches Fehlverhalten (Client reagiert nicht mehr)\\ In einem Einzelfall konnte es vorkommen, dass der david Client plötzlich nicht mehr reagiert. Das wurde nun behoben.
+  * Mögliches Fehlverhalten beim Ändern und Speichern des Quelltextes einer eMail\\ Wird der Quelltext einer eMail bearbeitet, so konnte es beim anschließenden Speichern der eMail zum Absturz kommen.
+  * Hinweis auf fehlenden Dateianhang trotz angehängter Adresskarte\\ Wird in einer neuen eMail die persönliche Adresskarte angehängt und im Text wird eines der Schlüsselwörter für die Dateianhang-Erinnerung verwendet, so erschien beim Versand die Frage, ob ein Dateianhang vergessen wurde. Der Hinweis erfolgt in diesem Fall nun nicht mehr.\\ Mögliches Fehlverhalten beim Druck an PDF Drucker\\ Soll ein Fax aus dem Fax Viewer heraus an den Microsoft PDF Drucker gedruckt werden, konnte es zum Absturz des Fax Viewers kommen. Das wurde nun behoben.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Bugfix ====
+
+  * Möglicher falscher Versandstatus\\ In einem Einzelfall konnte es vorkommen, dass ein Fax als "versendet" eingetragen wurde, obwohl ein Fehler auftrat.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Weitere Vorlagen zur Auswahl\\ Beim Erstellen einer eMail stehen nun zusätzliche Vorlagen zur Auswahl.
+  * Anzeigen von empfangenen Faxen\\ Empfangene Fax werden im smart client nun auch angezeigt.
+  * Nachrichten verschieben\\ Nachrichten können nun per Dialog in andere Ordner verschoben werden.
+  * eMail als gelesen markieren beim Öffnen einer Push Nachricht\\ Beim Öffnen einer Push Nachricht wird die entsprechende eMail nun als gelesen markiert.
+  * Zuletzt ausgewählte eMail Vorlage speichern\\ Die zuletzt ausgewählte eMail Vorlage wird nun gespeichert, so dass sie bei der nächsten eMail auch wieder vorausgewählt ist.
+  * Eintrags- und Ordnerwechsel per Tab Taste\\ Per Tab Taste kann nun durch die Ordner und Nachrichten gewechselt werden.
+  * Wischgeste bei mobiler Nutzung\\ Bei der mobilen Nutzung kann eine Nachricht nun per Wischgeste als gelesen bzw. ungelesen markiert sowie gelöscht werden. Zusätzlich erhält man ein Menü mit weiteren Funktionen.
+  * „Stimme zu“ Schalter während des Schreibens von Kommentaren ausgeblendet\\ Während der Eingabe eines Kommentars zu einer Nachricht wird der "Stimme zu" Schalter nun ausgeblendet.
+  * Abfrage beim Löschen von Nachrichten\\ Bei der Abfrage zum Löschen einer Nachricht wird der Betreff der Nachricht nun hervorgehoben.
+  * Anzeige von Emoticons in Kommentaren zu eMails\\ Die Anzeige von Emoticons in Kommentaren zu eMails wurde optimiert.\\ 
+
+==== Bugfix ====
+
+  * Keine Begrenzung mehr bei der Anzahl der Unterordner\\ Die Anzahl der angezeigten Unterordner innerhalb eines Ordners war bisher begrenzt, das ist nun behoben.
+  * Aktualisierung der Nachrichten\\ Nach der Anmeldung wurden die Nachrichten bis zur manuellen Aktualisierung u.U. nicht automatisch aktualisiert.
+  * Bilder in Nachrichten\\ Bilder in Nachrichten wurden u.U. gestaucht angezeigt. Außerdem wurden beim Einfügen von Bildern diese nicht vollständig angezeigt, wenn sie zu groß waren.
+  * Bearbeiten von eMails\\ Beim Öffnen von eMails zur Bearbeitung wurden diese u.U. nicht korrekt dargestellt. Außerdem wurde das Bearbeiten von Intercom TalkAbouts nun unterbunden.
+  * Kommentar u.U. bei falscher Nachricht angezeigt\\ Erstellt man einen neuen Kommentar zu einer Nachricht, so wurde der geschriebene Text bis zum Absenden u.U. auch in einen anderen Nachricht angezeigt.
+  * Keine Push Nachrichten im Browser\\ Wird der smart client im Browser am PC verwendet, konnte es u.U. vorkommen dass keine Push Nachrichten angezeigt wurden.
+  * Eingabe des Betreffs bei neuer Nachricht auf dem iPhone u.U. nicht möglich\\ Bei der Eingabe des Betreffs für eine neue Nachricht konnte es auf dem iPhone vorkommen dass die Tastatur direkt wieder geschlossen wurde.
+

@@ -1,0 +1,39 @@
+====== Version 2843 vom 07.12.2015 ======
+
+Release: 2015-12-07T19:04:50
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In den Client Einstellungen ("Kalender") kann nun eine zusätzliche Zeitzone gewählt werden, die dann in den Kalender Ansichten zusätzlich angezeigt wird.
+
+  * Wird eine Besprechungsanfrage mit Dateianhang erstellt, so konnte es in einem Einzelfall zu einem Fehlerverhalten kommen. Die Anfrage wurde in dem Fall nicht versendet und es gab stattdessen den Fehlerstatus "Ungültige Befehlslänge".
+
+  * Wenn im david.Administrator in der WebBox Konfiguration TLS aktiviert wird und kein Zertifikat vorliegt, erscheint nun ein Wizard zum Erstellen oder Einbinden eines Zertifikats.
+
+  * Ändert der Ersteller einer externen Besprechungsanfrage (Terminserie) ein Element dieser Terminserie, so konnte dies u.U. dazu führen, dass beim Empfänger die Terminserie gelöscht wurde.
+
+  * Soll per Link (tel:) eine Telefonnummer an den Dialog "Telefonnummer wählen" übergeben werden, so funktionierte dies nicht.
+
+  * Markiert man in der InfoCenter Ansicht mehrere neue Nachrichten als "gelesen" (über den entsprechenden Schalter über der Vorschau einer dieser Nachrichten), so wurden zunächst alle selektierten Nachrichten aus der InfoCenter Ansicht entfernt - obwohl sich der Schalter nur auf eine Nachricht bezieht.
+
+  * Die Funktion "Fensteraufteilung optimieren" (Button oben rechts im Client) findet nun auch bei der Skalierung statt, wenn die Fenster zuvor schon mal entsprechend angepasst wurden.
+
+  * Enthält der Protokolleintrag zu einem Anruf bereits den Namen des Anrufers, da er durch die Telefonanlage übergeben wird, es existiert aber noch kein Adresseintrag in einem david Ordner, so fehlte der Button um einen neuen Adresseintrag zu erstellen.
+
+  * Die Wörterliste wurde erweitert. 
+
+  * Nachdem ein Client Update erfolgt ist, wurde auf den erforderlichen Client Neustart bisher durch einen Dialog im Vordergrund hingewiesen. Das wurde nun durch einen entsprechenden Hinweis im Client Fenster selbst ersetzt.
+
+  * In den Filtereinstellungen können nun auch hybrid mail Einträge gewählt werden.
+  * Bei den Telefonie-Diensten sind nun auch Klingeltöne für interne Anrufe auswählbar.
+
+  * Markierungen bei Terminen werden nun auch in der Wochen- und Monatsansicht angezeigt.
+
+  * Wird bei Nutzung des Telefonie-Dienstes eine Benachrichtigung im Telefon Dialog angezeigt (z.B. "Belegt") so konnte es im Einzelfall vorkommen, dass der Client anschließend nicht mehr bedienbar war.
+
+  * Ruft man eine Gegenstelle an und zeichnet das Telefonat auf, so wird nun im Eingang eine Verknüpfung zu dem Protokolleintrag im Ausgang (der die aufgezeichnete Datei enthält) erstellt.
+
+

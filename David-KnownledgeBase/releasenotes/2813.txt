@@ -1,0 +1,12 @@
+====== Version 2813 vom 29.07.2015 ======
+
+Release: 2015-07-29T14:36:31
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Wird im david Client Web ein längerer LiveComment Text erstellt, so wurde dieser u.U. bei 399 Zeichen abgeschnitten.
+
+

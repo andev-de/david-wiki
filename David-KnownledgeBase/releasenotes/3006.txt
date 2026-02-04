@@ -1,0 +1,60 @@
+====== Version 3006 vom 13.08.2018 ======
+
+Release: 2018-08-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * „Ohne Anhang zustellen“ als zusätzliche Option bei Viren-Fund\\ Bei Einsatz der in david® integrierten Virus Protection steht im david® Administrator unter „Backline Services/Viruserkennung/Aktion bei erkanntem Virus“ die zusätzliche Option „Ohne Anhang zustellen“ zur Verfügung. Hierbei werden die virenbehafteten Dateianhänge betreffender eMails zunächst entfernt und anschließend die so bereinigte Nachricht dem Empfänger zugestellt. Als Hinweis auf die erfolgte Bereinigung erscheinen auch die Namen der gelöschten Dateien weiterhin in der Liste der Anhänge, sind aber hier durch die Angabe der Dateigröße von 0 Byte und den Kommentar „Anhang aus Sicherheitsgründen entfernt“ gekennzeichnet. \\ 
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Support-Link in Portalseite öffnet sich im Standard-Browser\\ Beim Klick auf den in der Portalseite des david® Administrators integrierten Link zum Support öffnet sich nun der unter Windows eingestellte Standard-Browser anstatt wie bisher generell der Microsoft Internet Explorer. Ist als Standard-Browser Google Chrome oder Mozilla Firefox eingerichtet, bringt das den Vorteil, dass in diesem Fall auch das Intercom sofort zur Verfügung steht, um mit dem Support direkt in Kontakt zu treten, was bei Nutzung des Internet Explorers nicht möglich ist.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Optimierte Funktion der Datenbank „Erlaubte Absenderadressen„\\ In der Konfiguration des PostMan im david® Administrator können unter „PostMan/Datenbanken/Erlaubte Absenderadressen“ eMail Adressen eingetragen werden, für die generell keine Spam Überprüfung beim Nachrichtenempfang stattfinden soll. In einem Einzelfall funktionierte diese Ausnahme jedoch nicht, so dass eine solche eMail dennoch geprüft und als „Spam“ identifiziert wurde. Dieses Verhalten wurde korrigiert.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Zusätzliche „Einschreiben“ Optionen für den hybrid mail™ Versand\\ Beim Versand von hybrid mail™ Nachrichten, also für Briefe, die über david® digital erstellt, an den E-POST-Dienst der Deutschen Post übermittelt und von diesem dann auf klassischem Weg per Briefpost zugestellt werden, stehen folgende Optionen für die Zustellung als Einschreiben zusätzlich zur Verfügung:
+\\ Einschreiben Einwurf\\ Einschreiben Eigenhändig\\ Einschreiben Eigenhändig mit Rückschein
+  * Vorschau von hybrid mail™ Nachrichten in der gewählten Farbeinstellung\\ Bei der Erstellung von hybrid mail™ Nachrichten kann festgelegt werden, ob der Versand über den E-POST-Dienst der Deutschen Post in Schwarz/Weiß oder in Farbe erfolgen soll. Zur leichteren Erkennbarkeit der gewählten Farbeinstellung wird jetzt die Vorschauansicht von hybrid mail™ Nachrichten im „Ausgang“ und im „In Transit“ Ordner entsprechend der jeweiligen Auswahl ebenfalls farbig oder in Graustufen dargestellt. Zuvor wurden hybrid mail™ Nachrichten dort generell in Farbe angezeigt.
+
+  * Verbesserte Anordnung der Suchergebnisse im Telefon Dialog\\ Bei Nutzung der in david® integrierten Telefoniedienste wird eine Liste mit Nummernvorschlägen bzw. Suchergebnissen geöffnet, sobald man beginnt, eine Nummer zu wählen oder einen Suchbegriff einzutippen. Diese Liste ist jetzt abhängig von der Position des „Telefon“ Dialogs immer so angeordnet, dass stets sämtliche Einträge erreichbar bleiben. Zuvor wurde die Liste bei ungünstiger Platzierung des „Telefon“ Dialogs u.U. abgeschnitten, so dass dann möglicherweise nicht alle Treffer sichtbar waren.
+
+  * „Warten“ Status bei hybrid mail™ Aufträgen\\ Bei der Erstellung von hybrid mail™ Sendeaufträgen ist es jetzt möglich, direkt zu entscheiden, ob der Auftrag sofort versendet werden soll, oder zunächst im Ordner „In Transit“ so lange als „wartend“ eingetragen bleiben soll, bis er manuell für den Versand freigegeben wird. Dazu stehen nun - ebenso wie beim Faxversand über den FaxWare-Druckertreiber - die Optionen „Warten“ bzw. „Warten aufheben“ auch im hybrid mail™ Dialog zur Verfügung.
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Optimierte Darstellung empfangener eMails\\ In einem Einzelfall wurden bestimmte eMails nach dem Empfang nicht korrekt dargestellt (hier: Newsletter von rakuten.de). Dieses Verhalten wurde korrigiert.
+
+  * Optimierung des david® Chat bei Nutzung über den Tageswechsel hinaus\\ Wird der david® Chat über den Tageswechsel hinaus genutzt, ohne das Dialogfenster zwischenzeitlich zu schließen, so erfolgt nun eine automatische Aktualisierung der Anzeige „heute“ im Verlauf der Korrespondenz. Das was bisher nicht der Fall.
+
+  * Korrigierte Funktion der Option „Anzeige als Link im Ordnerbaum„\\ Die Ordner-Eigenschaft „Anzeigen als Link im Ordnerbaum“ ermöglicht es, einen david® Ordner so zu nutzen, dass er Windows-Verzeichnisse oder auch einzelne Dateien daraus per Link zum direkten Zugriff aus dem david® Client heraus bereitstellt. Bei Verknüpfungen zu Windows-Verzeichnissen, deren Namen Umlaute enthalten, wurde der zugehörige Inhalt hier jedoch unter Umständen nicht angezeigt. Dieses Verhalten wurde korrigiert.
+
+  * Hinweis beim Anhängen der persönlichen Adresskarte ausblenden\\ Beim Erstellen einer neuen eMail lässt sich über den Button „Adresskarte anhängen“ die eigene elektronische Visitenkarte als Datei an die Nachricht anfügen, was durch eine entsprechende Hinweismeldung am oberen Rand des Editor-Fensters bestätigt wird. Per Klick auf das in dieser Meldung enthaltene „X“ Symbol kann der Hinweis nun auf Wunsch ausgeblendet werden. Das war zuvor u.U. nicht immer möglich.
+
+  * Größenanpassung des Dialogs zum Facebook Login\\ Das Dialogfenster, das sich nach Klick auf die „Anmelden“ Schaltfläche in der Titelleiste des david® Client öffnet und u.a. die Anmeldung per Facebook Login erlaubt, öffnete sich bisher u.U. zu klein, um alle enthaltenen Informationen komplett darzustellen. Dieses Verhalten wurde korrigiert. 
+
+  * Optimierter Vorschlag für „Fällig am“ Datum bei Aufgaben\\ Bei der Erstellung neuer Aufgaben wurde u.U. als „Fällig am“ ein Zeitpunkt vorgeschlagen, der vor dem „Beginnt am“ festgelegten Datum lag. Dieses Verhalten wurde korrigiert.
+
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Korrigierte Preisermittlung für beidseitigem Druck\\ Bei der Erstellung von hybrid mail™ Sendeaufträgen funktionierte die automatische Preisermittlung u.U. nicht korrekt, wenn die Option „Beidseitiger Druck“ ausgewählt war. Dieses Verhalten wurde korrigiert.
+
+

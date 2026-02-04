@@ -1,0 +1,40 @@
+====== Version 3132 vom 18.12.2019 ======
+
+Release: 2019-12-18T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Hinweis bei fehlender Administrator Einstellung\\ Im david Administrator kann in der Systemkonfiguration ein david Anwender als "david Administrator" selektiert werden, an den u.a. wichtige Systemnachrichten verteilt werden. Ist hier kein Anwender eingetragen, so wird nun beim Neustart des Service Layers eine entsprechende Meldung in Priorität hoch im david Ereignis Ordner erstellt.
+
+==== Bugfix ====
+
+  * Fehlermeldung „Verzögerte Zustellung fehlgeschlagen“ bei hybrid mail Versand\\ In Einzelfällen konnte es vorkommen, dass beim hybrid mail Versand der Sendeversuch mit dem Status "Verzögerte Zustellung fehlgeschlagen" eingetragen wurde. Das ist nun behoben.\\ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Hinzufügen eines Eintrags in der Schnellstartleiste\\ Beim Hinzufügen eines Eintrags in der Schnellstartleiste konnte es in einem Einzelfall zum Absturz kommen.
+  * Inhalt einer eMail im Nachrichten Editor u.U. nicht angezeigt\\ In einem Einzelfall wurde der Inhalt einer signierten eMail im Format "Nur Text" im Nachrichten Editor nicht angezeigt.
+  * Ausdruck im Querformat bei umgeleiteten Druckern\\ Wird aus dem david Client heraus auf einem umgeleiteten Drucker (RDP Sitzung) gedruckt, so funktionierte hier der Ausdruck im Querformat u.U. nicht.
+  * Wochentage der in Kalenderansicht z.U. nicht angezeigt\\ In einem Einzelfall waren in der Monatsübersicht des Kalenders die Zahlen der Wochentage nicht zu sehen. Das wurde nun optimiert.
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Eingabe der Zugangsdaten\\ Bei der Eingabe der Zugangsdaten konnte es in Einzelfällen zu einem Fehlverhalten kommen.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * david3 smart client\\ Der neue david3 smart client ist speziell für den plattformübergreifenden Live-Zugriff auf den david Server konzipiert. Er ist direkt im WebBrowser nutzbar und steht außerdem als App für den Betrieb auf Smartphone, Tablet, PC oder Mac zur Verfügung. Dadurch eignet er sich besonders für den mobilen Einsatz. Hinweise zur Einrichtung werden dem Administrator der david Installation automatisch in seinem Eingangsbuch bereitgestellt.
+

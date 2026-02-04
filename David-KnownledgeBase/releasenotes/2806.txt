@@ -1,0 +1,98 @@
+====== Version 2806 vom 10.04.2015 ======
+
+Release: 2015-04-10T09:29:26
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * In einem Einzelfall konnte es vorkommen dass ein geschriebener LiveComment als david®chat Nachricht versendet wurde.
+
+  * Wird eine Nachricht per FileScan erstellt, so wurden u.U. Informationen hinter dem HTML Kommentar Tag entfernt. Das ist nun behoben.
+
+  * Zukünftige Updates der david® Installation können automatisch heruntergeladen und installiert werden (vorausgesetzt sitecare™ ist aktiviert). Entsprechende Einstellungen befinden sich in der Systemkonfiguration im david Administrator (Rechtsklick auf "System", dann "Konfigurieren..." wählen) auf der Registerkarte "Updates". Zusätzlich erhält der Administrator eine eMail mit einem Link zum heruntergeladenen Update Package (\david\Updates), um das Download manuell installieren zu lassen.
+  * Für hybrid mail Jobs kann nun auch eine eigene Include Datei erstellt werden - als Dateiendung wird in dem Fall *.hyb erwartet.
+
+  * Wird per Volltextsuche ein Termin gesucht und über das Öffnen in den Suchergebnissen eine Änderung am Termin vorgenommen, so wurden nicht alle Änderungen übernommen (z.B. Betreff, Ort, Uhrzeiten).
+
+  * Klickt ein Anwender in einer eMail mit LiveComments auf "Stimme zu", so führt dies nun nur noch beim Verfasser der eMail dazu, dass sie bei ihm wieder als ungelesen markiert wird. Bei den übrigen Teilnehmern des LiveComments wird die eMail hierdurch nicht mehr als ungelesen markiert.
+
+  * Fügt ein Benutzer bei einer eMail weitere LiveComments Benutzer hinzu, so bekommen nun nur noch diese neuen Benutzer die eMail als ungelesen zugestellt. Bei den übrigen Benutzern wird durch das Hinzufügen die eMail nicht mehr als ungelesen markiert.
+
+  * Adressen, die per *.nmr Datei importiert werden, sind per Vorgabe als "gesehen" markiert. Sollen diese Adresse dagegen als ungesehen markiert sein, so kann dies durch den neuen Parameter [UNREAD] in der *.nmr Datei erreicht werden.
+
+  * Sind Verteilregeln oder Verteilvorgaben im david Administrator oder david Client eingetragen, die eine sehr lange Verteilkennung haben, so funktionierte diese Verteilung u.U. nicht, wenn auch der Betreff einer zu verteilenden Nachricht sehr lang ist. Die Nachrichten landeten dann im Unverteilt Ordner. Das ist nun behoben.
+
+  * Liegen Statusnachrichten zu Besprechungsanfragen im Eingang, so erfolgte u.U. keine Benachrichtigung damit auch ActiveSync Geräte und Programme die Änderung erkennen. Das wurde nun optimiert.
+
+  * In Einzelfällen konnte bei hybrid mail Aufträgen die Preisinformation nicht angezeigt werden (bis zum Neustart des Service Layers).
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * In Einzelfällen wurden UTF-8 Zeichen im Betreff u.U. falsch angezeigt - dies konnte auftreten, wenn der Betreff UTF-8 ist sowie Base64 kodiert ist und ein Zeilenumbruch zwischen zwei UTF-8 Zeilen stattfindet
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * In einem Einzelfall kam es zum Absturz der WebBox wenn eine bestimmte eMail im david Client Web geöffnet wurde.
+
+  * Werden eMails mit sehr umfangreichen LiveComments per ActiveSync abgeglichen, so wurde u.U. Text von den LiveComments abgeschnitten.
+
+  * Befindet sich eine Wiedervorlage im Kalenderordner, so funktioniert der Abgleich der Termine per ActiveSync unter iOS u.U. nicht korrekt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In einem Einzelfall wurden eMails beim Weiterleiten oder beim Ausdruck nicht mehr korrekt angezeigt.
+
+  * In Einzelfällen konnte es beim Öffnen signierter eMails zu der Fehlermeldung "Die Signatur konnte nicht geprüft werden." kommen.
+
+  * Enthält eine neue Nachricht die Worte "Anhang" oder "Anhänge" und es ist kein Dateianhang vorhanden, so erfolgt beim Versand die Abfrage ob ein Dateianhang möglicherweise vergessen wurde. Die Frage kann deaktiviert werden.
+
+  * Der Terminsassistent wurde um eine Übersicht erweitert, die die Zeiten der gewählten Mitarbeiter anzeigt.
+
+  * In den Einstellungen der LiveComments war der Menüpunkt "Kommentare verbergen" auch vorhanden, wenn die Position der LiveComments auf links oder rechts eingestellt ist. Nun ist er nur noch bei der Position "oben" vorhanden.
+
+  * Zeigt das Badge eine neue Nachricht von nur einem Benutzer an, so wird beim Klick nun direkt die entsprechende Konversation angezeigt. Erst bei neuen Nachrichten von mindestens zwei Benutzern wird die Liste der Konversationen angezeigt.
+
+  * Wird in eine neue Nachricht per "Einfügen/Anhänge/Scannen und anhängen" eine gescannte Datei angehängt, so kann dort die Qualität (damit also auch die Kompression und somit die Dateigröße) eingestellt werden (für JPEG und TIFF).
+
+  * Über "Datei/Datenexport" können Nachrichten nun gepackt werden (Exportart "David Package Message"), Default Dateiendung ist *.dvp. Hierbei bleiben alle Informationen vorhanden, so dass sie anschließend z.B. auf einer anderen david Installation wieder entpackt werden können.
+
+  * In einem Einzelfall konnte es zum Absturz des Clients in Verbindung mit dem Chat Fenster kommen.
+  * Schickt ein Anwender eine eMail an eine Adresse, die bei ihm selbst als weitere eigene eMail Adresse eingetragen ist und er öffnet sie zum Beantworten, so wurde als Absender und Empfänger die gleiche Adresse vorgeschlagen. Das ist nun geändert.
+
+  * Ist das Hauptfenster des Chat geöffnet und es wird ein Server- oder Benutzerwechsel gemacht, so wird es nun geschlossen.
+
+  * Das Hauptfenster des Chats hatte das Standard Windows Symbol statt das david Symbol.
+
+  * Liegt ein 2nd Scan Eintrag im Transit, so entfällt dort nun der Button "Freigeben" um den Eintrag direkt in den 2nd Scan zu schicken. Stattdessen gibt es dort nun den Button "Nachrichten von <Absendername> künftig vertrauen und direkt zustellen?". Die Absenderadresse wird dadurch also in die 2nd Scan Whitelist eingetragen und zusätzlich direkt in den 2nd Scan geschickt.
+
+  * Wird im Chat unter "Letzte Kontakte" per Quickfinder gesucht, so wurden nur Ergebnisse aus dem sichtbaren Bereich des Fensters angezeigt.
+
+  * Die Wörterliste wurde erweitert.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * LiveComments Menü hinzugefügt (Schließen, Versenden mit Enter, Empfänger hinzufügen).
+<p>
+Neue Adressaten können nun zu einem LiveComment hinzugefügt werden.
+</p><p>
+Versenden mit Enter kann deaktiviert werden
+</p>
+  * Geschriebene und noch nicht versendete LiveComments werden nun zwischengespeichert.
+  * Wird eine eMail beantwortet oder weitergeleitet, die nicht an die Hauptadresse des Benutzers adressiert ist, sondern an eine weitere seiner eingetragenen Empfänger Adressen, so ist diese weitere Adresse nun im Von Feld als Absenderadresse bereits vorausgewählt.
+
+  * In der Eintragsliste wurden bei der Darstellung "Vorschau neben Eintragsliste" die Symbole für weitergeleitete und/oder beantwortete Nachrichten nicht angezeigt.
+
+
+

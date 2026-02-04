@@ -1,0 +1,61 @@
+====== Version 2874 vom 04.08.2016 ======
+
+Release: 2016-08-04T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Im david.Administrator können nun unter "System/Sicherheit/Remote Access" Vorgaben zur Sicherheit des Remote Access eingestellt werden, z.B. welche und wie viel Zeichen das Remote Access Passwort enthalten muss. Zusätzlich sind Einstellungen für das Verhalten bei mehrmaliger falscher Eingabe des Passwortes möglich. Beim Ändern/Eintragen des Passworts im david Client wird dies geprüft und es erfolgt ggfs. ein Hinweis wenn die Vorgaben nicht beachtet werden. Wird der Remote Access eines david Benutzers aufgrund mehrmaliger falscher Eingabe des Passwortes gesperrt (z.B. per ActiveSync, david Client Web, IMAP), so erfolgt ein entsprechender Eintrag im Ereignis Ordner sowie ein entsprechender Hinweis in den Zugangs Einstellungen (Remote Access) des Anwenders (david Client und david.Administrator). Hier kann in dem Fall der Zugang auch wieder freigeschaltet werden.
+
+==== Bugfix ====
+
+  * Wird ein Termin mit eingestellter Wiedervorlage in einen anderen Kalender verschoben, so wurde die Wiedervorlage aus dem Wiedervorlage Ordner gelöscht. Nun bleibt sie erhalten und wird an den neuen Ordner angepasst.
+  * Soll ein david Benutzer umbenannt werden, der nur in david angelegt wurde, und nicht unter Windows existiert, so funktionierte dies nicht.
+  * Ist für einen Termin eine mehrfache Wiedervorlage eingestellt, so konnte es in einem seltenen Fall vorkommen, dass die Wiedervorlage aus dem Wiedervorlage Ordner gelöscht wurde.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Der Dialog "Ordner-Auswahl" ist nun in der Größe veränderbar.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Soll mit einem Gerät unter iOS 10 eine TLS Versbindung zur WebBox per david®chat App oder ActiveSync hergestellt werden, so funktionierte dies nicht. Das ist nun mit einer aktualisierten Version der davidtls.dll behoben.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert. 
+  * Der Dialog "Dateien anhängen" (Nachrichten Editor) ist nun in der Größe veränderbar.
+  * Der Dialog "Bild versenden" hat nun eine Mindestgröße, so dass das Menü und die Buttons auch bei kleineren Bildausschnitten zu sehen ist.
+  * Wird eine empfangene eMail mit eingefügten Bildern geöffnet, so gibt es im Kontextmenü der Bilder nun den zusätzlichen Menüpunkt "Speichern unter".
+  * Werden längere Namen der Buttons in der Favoritenleiste eingekürzt, so wird beim Mouseover nun der komplette Name als Tooltipp angezeigt.
+  * Der Abwesenheitsassistent steht nun auch den Benutzern zur Verfügung, die nicht die Berechtigung "Verteilregel erstellen/bearbeiten" besitzen.
+  * Ist im eigenen Kalender der Kalender eines anderen david Benutzers eingebunden und es wird ein neuer Termin im Kalender dieses david Benutzers gespeichert, so wird die gewählte Einstellung "Für den Besitzer des gewählten Kalenders speichern" nun gespeichert und beim nächsten Erstellen wieder vorgeschlagen.
+  * Im Dialog "Verteilen" kann nun die Sortierung wahlweise nach "Nachname, Vorname" oder "Vorname Nachname" eingestellt werden. Außerdem gibt es dort nun einen Quickfinder.
+
+==== Bugfix ====
+
+  * Wird die Druckvorschau aufgerufen (z.B. beim Drucken aus der Liste der Aufgaben, oder in der Kalenderansicht), so hing der Client u.U.
+  * Werden Emoticons in eine eMail eingefügt, so wurden diese beim anschließenden Versand u.U. nicht übernommen, wenn diese eMail Variablen enthält.
+  * Wird der david Client "als Administrator" gestartet, so können bestimmte Dinge nicht ausgeführt werden (z.B. das Öffnen von EML, ICS etc. Dateien). Bisher gab es in dem Fall jedoch keinen Hinweis an den Anwender - diesen Hinweis gibt es nun.
+  * Die Dialoge zur Bestellung einer digitalen Signatur wurden an evtl. höhere DPI Einstellungen angepasst. Bisher waren sie in dem Fall u.U. zu klein.
+
+=====  Replica =====
+
+==== Bugfix ====
+
+  * Wird während einer Replizierung die Internet Verbindung getrennt wird, konnte es zu einer dauerhaften hohen Auslastung durch den Replica Dienst kommen.
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Wird bei der Erstellung eines hybrid mail Auftrags ein Deckblatt für die Adresse verwendet, so gab es beim Sendeversuch u.U. die Fehlermeldung "Sperrflächen bedruckt".
+

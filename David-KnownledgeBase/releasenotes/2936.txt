@@ -1,0 +1,41 @@
+====== Version 2936 vom 19.06.2017 ======
+
+Release: 2017-06-19T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Ein neuer Summerizer zeigt in der Eintragsliste und im Ticker den Kerninhalt der jeweiligen Nachricht bzw. des RSS Feeds an.
+
+==== Bugfix ====
+
+  * In einem Einzelfall kam es bei der Abarbeitung des \david\import\system Verzeichnisses zum Absturz des Service Layers. Ursache waren fehlende 001 Dateien zu HTML Error Log Einträgen.
+  * In einem Einzelfall konnte es vorkommen, dass beim Erstellen mehrerer neuer Verteilregeln im David Administrator einzelne mit den gleichen Werten gespeichert wurden.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * In der ActiveSync Übersicht (WebBox Konfiguration) konnte es in einem Einzelfall zum Absturz des David Administrators kommen, wenn dort noch ein bereits gelöschter David Benutzer angezeigt wird.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Der Kommentarbereich in der eMail Vorschau bzw. im eMail Editor wird nur noch dann automatisch eingeblendet, wenn auch schon ein Kommentar existiert.
+  * Verlässt ein David Benutzer den Verteiler einer eMail, die an mehrere Empfänger ging ("Verteiler verlassen" im Kommentarbereich), so wird die eMail dadurch nun nicht mehr bei allen anderen Empfängern unnötigerweise als "ungelesen" markiert.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Der Button "Stimme zu" bei Kommentaren befindet sich nun oben hinter dem "Als gelesen markieren" Button. Somit kann man auch schon zustimmen, ohne erst den Kommentar Bereich zu öffnen.
+  * In TalkAbouts und in der Intercom Ansicht kann nun die Zitieren Funktion genutzt werden.
+
+==== Bugfix ====
+
+  * Wird bei den Verteilregeln (Kriterium "Datum &amp; Zeit") der Kalenderdialog geöffnet, so fehlte dort der Sonntag. Gleiches galt für den Kalenderdialog bei der Funktion "Antwort erwartet am".
+  * Die Windows Funktion "Taskleiste automatisch ausblenden" funktionierte u.U. nicht korrekt, wenn der David Client im Vollbild Modus betrieben wird.
+  * Wird im David Administrator für den David Anwender ein Script aktiviert, das die Menüstruktur im David Client erweitert, so wurde dieses Script u.U. nicht korrekt ausgeführt.
+  * Ist beim David Benutzer der Auto-Reply aktiviert und er startet den David Client, so wurde der Hinweis auf die aktivierte Auto-Reply Einstellung u.U. mehrfach angezeigt.
+  * Wird eine eMail mit Dateianhängen als EML Datei gespeichert, so wurde beim Öffnen der EML Datei mit dem David Client bei den Dateianhängen immer das aktuelle Datum angezeigt.
+  * Sind im David Administrator die Einstellungen zur Sicherheit des Remote Access aktiviert, so erschien der Hinweis bzgl. Problemen bei den Sicherheitseinstellungen u.U. auch bei Ordnern, bei denen kein Remote Access aktiviert ist.
+

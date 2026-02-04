@@ -1,0 +1,80 @@
+====== Version 3532 vom 13.06.2023 ======
+
+Release: 2023-06-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.600.
+  * Übersicht der Feiertage erweitert\\ Die Übersicht der Feiertage im Ordner „Ressourcen/Feiertage“ wurde um weitere Jahre erweitert.&nbsp;
+  * Optimierung beim Versand von Tracking Mails\\ Wird das Message Tracking genutzt und es liegen viele Tracking Mails im Transit (z.B. durch das Löschen oder Verschieben vieler eMails), so werden diese nun nachrangig versendet, so dass der Versand normaler eMails nicht verzögert wird.
+  * Neustart des WebAPI Dienstes bei Aktualisierung eines Lets encrypt Zertifikates\\ Wird ein Lets encrypt Zertifikat automatisch aktualisiert, so wird nun auch der WebAPI Dienst neu gestartet.
+
+==== Bugfix ====
+
+  * Anhängen von Dateien mit Komma im Dateinamen per Attach Befehl\\ Soll per Befehl @@Attach eine Datei mit einem Komma im Dateinamen angehängt werden, so funktionierte dies nicht. Wird der Dateiname in Anführungszeichen gesetzt, so wird die Datei nun angehängt.
+  * Als „gelesen“ markiert nach Verteilung\\ Neue Nachrichten in einem Ordner können per Regel automatisch als „gelesen“ markiert werden. Wird eine neue Nachricht per Regel von einem anderen Ordner in diesen Ordner als Kopie verteilt, so wurde auch die Nachricht in dem ursprünglichen Ordner als „gelesen“ markiert. Das ist nun behoben.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim eMail-Empfang\\ In Einzelfällen konnte es vorkommen, dass beim eMail-Empfang die eMail-Adresse des Absenders falsch eingetragen wurde, so dass beim Antworten die neue eMail nicht versendet werden konnte.&nbsp;
+  * Mögliches Fehlverhalten bei eMail mit Umlauten im Dateianhang\\ In einem Einzelfall wurde bei einer empfangenen eMail mit einem Umlaut im Dateinamen dieser anschließend nach der Konvertierung im david Client falsch angezeigt.
+  * Optimierung bei OAUTH2 Authentifizierung\\ Die Aktualisierung des Token bei der OAUTH2 Authentifizierung wurde optimiert.
+  * Möglicher Absturz beim eMail Empfang\\ In einem Einzelfall konnte es beim eMail Empfang zum Absturz kommen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMail mit Umlauten im Dateianhang\\ In einem Einzelfall wurde bei einer empfangenen eMail mit einem Umlaut im Dateinamen dieser anschließend nach der Konvertierung im david Client falsch angezeigt.
+  * Optimierung bei OAUTH2 Authentifizierung\\ Die Aktualisierung des Token bei der OAUTH2 Authentifizierung wurde optimiert.
+  * Möglicher Absturz beim eMail Empfang\\ In einem Einzelfall konnte es beim eMail Empfang zum Absturz kommen.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Aktualisierung der openssl Version\\ Die davidtls.dll wurde auf openssl 1.1.1t aktualisiert. 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Beantworten von eMails per ActiveSync\\ In Einzelfällen konnte es vorkommen dass bei der Beantwortung von eMails per ActiveSync die eMail-Adresse falsch übernommen wurde.
+  * Mögliches Fehlverhalten beim Terminerstellung per ActiveSync\\ Wird per ActiveSync ein Termin mit der Erinnerung „Zum Ereigniszeitpunkt“ erstellt, so wurde am david Server die Erinnerung nicht eingetragen.
+  * Mögliche fehlerhafte Ansicht ganztägiger Termine bei ActiveSync Nutzung\\ Werden Termine per ActiveSync mit einem iPhone synchronisiert, so konnte es in einem Einzelfall vorkommen dass ein ganztägiger Termin in der Standard Kalender App an zwei Tagen statt nur an einem Tag angezeigt wurde.
+  * Mögliches Fehlverhalten beim Antworten auf eMails ohne Betreff per ActiveSync\\ Wird auf eine empfangene eMail ohne Betreff auf einem iPhone per ActiveSync geantwortet, so konnte diese neue eMail u.U. nicht versendet werden.
+  * Anzeige privater Termine per ActiveSync\\ Werden per ActiveSync als privat gekennzeichnete Termine anderer Benutzer synchronisiert, so wurden diese im Kalender des Smartphones u.U. nicht angezeigt oder enthielten anders als im david Client PC die Informationen zum Betreff, Ort und den Inhalt. Nun werden sie wie im david Client PC ohne diese Informationen angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Namensänderung des „david Modern Client„\\ Der „david Modern Client“ wurde nach „david Client“ umbenannt.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.&nbsp;
+  * Chromium Engine bei Ordneransicht „HTML-Layout“\\ Ist bei einem Ordner die Ansicht „HTML-Layout“ eingestellt, so gibt es im Classic Client den neuen Schalter „Chromium Engine verwenden“, so dass zur Anzeige Chromium statt der IE verwendet wird.
+  * Schriftgröße ändern\\ Im david Client kann nun unter Einstellungen/Ansicht die Schriftgröße geändert werden: Klein, Standard, Groß.
+  * Favoritenleiste oben anordnen\\ Die Favoritenleiste kann im david Client nun über deren Kontextmenu oben/unten platziert werden.
+  * Anzeige von Bildern zu eMail Adressen per chayns und Gravatar\\ Wenn es zu der eMail Adresse einer eMail kein Benutzerbild in den Adressordnern gibt, wird versucht ein passendes Bild über chayns oder Gravatar zu ermitteln und im david Client anzuzeigen.&nbsp;
+  * Verwendung des FaxWare Druckertreibers\\ Der FaxWare Druckertreiber wurde für die Verwendung des david Clients angepasst. Je nachdem welcher Client zuletzt gestartet wurde, verwendet der FaxWare Druckertreiber nun den david oder Classic Client.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei eMail Vorschau und Verwendung der WebView2\\ Wird die aktuelle Microsoft WebView-Edge für die eMail Vorschau verwendet, so konnte es hierbei in Einzelfällen zum Absturz des david Clients kommen.
+  * Mögliches Fehlverhalten bei eMail Vorschau im Transit\\ In Einzelfällen konnte es vorkommen, dass bei empfangenen eMails, die für den 2nd Scan noch im Transit liegen im Classic Client eine falsche eMail Vorschau angezeigt wurde.
+  * Mögliches Fehlverhalten beim Beantworten von eMails mit Hinweis auf Vertraulichkeit\\ Erhält man eine eMail mit dem Hinweis auf die Vertraulichkeit (z. B.„persönlich“) und sendet diese weiter, so wird man nochmal auf die Vertraulichkeit hingewiesen. Dieser Hinweis erfolgte aber auch wenn man dem Absender antworten möchte und einen Text aus der Zwischenablage einfügt.&nbsp;
+  * Nutzung des persönlichen Wörterbuches ohne Dateizugriff\\ Die Nutzung des persönlichen Wörterbuches war ohne Dateizugriff auf den david Server u.U. nicht möglich.
+  * Mögliches Fehlverhalten bei der Auflösung einer Rufnummer (TAPI)\\ Bei eingehenden Anrufen wurden die Rufnummer u.U. nicht zu der entsprechenden Adresse aufgelöst, wenn die Adresse in einem SQL Adress-Ordner liegt.
+  * Möglicher Anzeigefehler bei der Erstellung von Unterordnern\\ In einem Einzelfall konnte es vorkommen, dass ein neu erstellter Unterordner bis zur Aktualisierung der Ansicht doppelt angezeigt wurde.
+  * Möglicher Anzeigefehler in den Einstellungen/Benutzerprofil\\ Wenn beim Verschlüsselungszertifikat keines ausgewählt war, wurde im Profil „Noch keine persönliche Signatur vorhanden“ angezeigt obwohl eines ausgewählt war.
+
+
+  * Möglicher Absturz bei Kommentaren in eMails\\ Hat man eine eMail mit Kommentaren und schließt den Kommentarbereich, so konnte es beim david Client zum Absturz kommen, wenn ein Anwender erneut einen Kommentar zu dieser eMail schreibt.&nbsp;
+  * Mögliches Fehlverhalten bei der Anzeige privater Termine\\ Werden in der InfoCenter Ansicht auch Termine eines anderen Anwenders angezeigt und dieser Anwender hat Termine als „Privat“ gekennzeichnet, so wurde im david Client dennoch der Betreff und der Ort dieses Termins angezeigt.
+  * Mögliches Fehlverhalten bei Symbolleisten Einstellung\\ Wenn im Editor des david Clients Menüpunkte in der Symbolleiste „Einfügen“ aktiviert bzw. deaktiviert werden sollten, funktionierte das nicht korrekt.
+  * Text im Intercom per Strg+C kopieren\\ Im Intercom funktionierte das Kopieren von Texten per Strg+C nicht.
+  * Menüpunkt „Aktuellen Ordner überwachen“ ohne Funktion\\ Der Menüpunkt „Aktuellen Ordner überwachen“ war beim david Client ohne Funktion.
+  * Drag &amp; Drop von Nachrichten in einen Browser\\ Wird eine Nachricht per Drag &amp; Drop in einen Browser kopiert um sie dort an eine neue Mail anzuhängen (z.B. bei GMail), so wurde sie hierbei u.U. doppelt angehängt. Das wurde im david Client nun angepasst.
+

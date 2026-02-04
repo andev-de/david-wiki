@@ -1,0 +1,78 @@
+====== Version 2981 vom 16.04.2018 ======
+
+Release: 2018-04-16T00:00:00
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Überarbeitung der WebBox Statistik-Funktionen\\ Die im david® Administrator verfügbaren Statistik-Funktionen der WebBox wurden überarbeitet. Zuvor konnte der Aufruf der WebBox Statistiken „Referrer“ u.U. zum Absturz führen.
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Anzeige weiterer Empfänger beim eMail-Empfang\\ In einem Einzelfall wurde beim Empfang von eMails, die an eine Empfängergruppe (nicht Bcc) gerichtet waren, jeweils nur die eigene Adresse als Empfänger angezeigt, nicht aber die der übrigen Adressaten. Jetzt sind auch in diesem Fall die übrigen Empfängeradresen sichtbar.
+
+  * Optimierung der eMail-Konvertierung\\ In einem Einzelfall wurde der Inhalt einer empfangenen eMail wegen zu umfangreicher Header-Informationen ohne jeden Zeilenumbruch, nicht korrekt konvertiert und daher nicht richtig dargestellt. Dies ist nun optimiert.
+
+  * Optimierte Dekodierung von eMail-Anhängen\\ Die beim Empfang von eMails erforderliche Dekodierung von Dateianhängen wurde überarbeitet. Zuvor war es möglich, dass Attachments von eMails, die mit Apple Mail erstellt und versendet wurden, nicht erfolgreich dekodiert werden konnten. Anstatt der korrekten Datei trugen diese eMails dann ein Attachment mit dem Namen ATT00001.dat. Dieses Verhalten ist nun korrigiert.
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Anzeige weiterer Empfänger beim eMail-Empfang\\ In einem Einzelfall wurde beim Empfang von eMails, die an eine Empfängergruppe (nicht Bcc) gerichtet waren, jeweils nur die eigene Adresse als Empfänger angezeigt, nicht aber die der übrigen Adressaten. Jetzt sind auch in diesem Fall die übrigen Empfängeradresen sichtbar.
+
+  * Optimierung der eMail-Konvertierung\\ In einem Einzelfall wurde der Inhalt einer empfangenen eMail wegen zu umfangreicher Header-Informationen ohne jeden Zeilenumbruch, nicht korrekt konvertiert und daher nicht richtig dargestellt. Dies ist nun optimiert.
+
+  * Optimierte Dekodierung von eMail-Anhängen\\ Die beim Empfang von eMails erforderliche Dekodierung von Dateianhängen wurde überarbeitet. Zuvor war es möglich, dass Attachments von eMails, die mit Apple Mail erstellt und versendet wurden, nicht erfolgreich dekodiert werden konnten. Anstatt der korrekten Datei trugen diese eMails dann ein Attachment mit dem Namen ATT00001.dat. Dieses Verhalten ist nun korrigiert.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Darstellung von HTML-eMails trotz fehlerhafter Formatierung\\ In einem Einzelfall sorgte eine vom Verfasser vorgenommene fehlerhafte HTML-Formatierung in seiner eMail dafür, dass der Inhalt der Nachricht nicht im david® Client dargestellt wurde. Jetzt zeigt der david® Client solche Nachrichten trotz der enthaltenen Formatierungsfehler an. 
+
+  * Neue Anordnung im Intercom-Menupunkt „Tabs„\\ Zur schnelleren und besseren Erreichbarkeit wurde die Option „Einstellungen“ im Punkt „Tabs“ des Intercom-Menüs an die oberste Position der Liste gesetzt.
+
+  * Bessere Verfügbarkeit aller 32 Adress-Kategorien\\ Für Adressen lassen sich insgesamt 32 unterschiedliche Kategorien definieren. Wenn jedoch die Bezeichnungen der ersten 16 Kategorien insgesamt bereits mehr als 494 Zeichen umfassten, stand die zweite Hälfte nicht mehr zur Verfügung. Dieses Verhalten wurde korrigiert, so dass nun auch in diesem Fall alle 32 Kategorien nutzbar sind.
+
+  * Erweiterte Adressvorschläge beim Fax-Versand\\ Beim Versand von Faxen über den FaxWare Druckertreiber steht im Dialogfenster „Fax versenden“ eine optimierte automatische Adressvervollständigung zur Verfügung. Zur Erstellung der Vorschläge werden sowohl die Eingabe-Historie als auch die in der persönlichen Adressdatenbank gespeicherten Faxnummern berücksichtigt.
+
+  * Erweiterter Passwortschutz\\ Zur permanenten Steigerung der Datensicherheit wurde der Schutz für die im david® Client verwendeten Passworte weiter ausgebaut.
+
+  * Beantworten von Nachrichten an sekundäre eMail-Adresse\\ Beim Beantworten von eMails, die nicht über die als „Hauptadresse“ eingetragene eMail-Adresse des antwortenden Benutzers empfangen wurden, erscheint nach dem Klick auf „Senden“ ein Dialogfenster, das Einstellungen für die zu verwendende Absenderadresse ermöglicht. Hier kann entschieden werden, ob die Hauptadresse des Benutzers oder die Adresse, über die die Nachricht ursprünglich empfangen wurde, als Absenderangabe dienen soll. In der Voreinstellung („Eigenen Absender benutzen“) wird nun die Hauptadresse mit dem „Angezeigten Namen“ inklusive der kompletten eMail-Adresse dargestellt. Zuvor wurde ausschließlich der „Angezeigte Name“ angegeben.
+
+  * Anpassungen für die Anforderung digitaler Signaturen\\ Der interne Prozess zur Anforderung digitaler Signaturen wurde angepasst um dauerhaft die Voraussetzungen des ausstellenden Trustcenters für die automatische Generierung und Bereitstellung der erforderlichen Zertifikate zu erfüllen.  
+  * Anpassungen für Adress-Sperrflächen bei hybrid™ mail Versand\\ Die Deutsche Post nimmt in Kürze leichte Änderungen bei den Abmessungen der Adressflächen für den Versand von E-POST Briefen vor. Dementsprechend sind auch geringe Anpassungen zur Berechnung der Sperrflächen für den david® hybrid™ mail Versand erfolgt. Der david® Client prüft Adressangaben jetzt nach den neuen Vorgaben und meldet ggfs. Fehler wenn Texte in die Sperrflächen hineinragen. 
+
+
+==== Bugfix ====
+
+  * Optimierte Speichernutzung beim david®Chat\\ Die Nutzung des david®Chat nimmt nun weniger Arbeitsspeicher in Anspruch. Zuvor konnte der david®Chat in Einzelfällen einen erhöhten Speicherverbrauch verursachen. Das tritt jetzt nicht mehr auf. 
+  * Umschalten der „Gelesen“-Markierung  bei höherer DPI Einstellung\\ Wird der david® Client in der Ansicht „Vorschau unterhalb der Nachrichten“ genutzt, kann per Klick in  die Spalte „Gelesen“ der betreffende Eintrag als gelesen bzw. ungelesen markiert werden. Bisher war es u.U. schwierig, mit dem Mauszeiger den Punkt für das Ändern der „Gelesen“ Markierung sicher zu treffen, wenn in den Einstellungen des david® Client die Option „DPI-Skalierung“ (unterhalb von „Ansicht“) aktiviert und für die Monitor-Darstellung eine höhere Vergrößerungsstufe gewählt war. Das ist nun behoben. 
+
+  * Cc Empfängerangabe in Separator beim Weiterleiten von Nur-Text-eMails\\ Der Separator, der beim Weiterleiten empfangener eMails automatisch über den Text der ursprünglich empfangenen Nachricht eingefügt wird, enthält jetzt auch bei eMails im Format „Nur Text“ die Liste der Cc-Empfänger.
+
+  * Übernehmen von Inhalten aus dem Faxeditor\\ Das Übernehmen von Inhalten aus dem Faxeditor wurde überarbeitet. Zwischenzeitlich war es u.U. nicht mehr möglich, einen im Faxeditor markierten Bereich über die Zwischenablage in eine neue Nachricht zu kopieren. Diese Funktion ist nun wieder verfügbar.
+
+  * Darstellungsfehler beim Ändern der Textbreite in „Nur Text“ Nachrichten\\ Bei Nachrichten im Format „Nur Text“ konnte das Ändern der Textbreite durch Verschieben der (unsichtbaren) Begrenzungslinie am rechten Textrand zu Darstellungsfehlern führen. Das ist jetzt korrigiert.
+
+  * Optimiertes Verhalten beim Öffnen von EML Anhängen\\ Beim Öffnen von Dateianhängen des Formats EML (eMail) zeigte der david® Client den zugehörigen Inhalt nicht an, wenn das „An“ Feld dieser Mail zwar die „Angezeigten Namen“ des/der Empfänger, nicht aber die zugehörige/n eMail-Adresse/n enthielt. Dieses Verhalten wurde korrigiert, so dass auch in solchen Fällen der Nachrichteninhalt zu sehen ist. 
+
+  * Anzeigefehler beim Weiterleiten versendeter hybrid™ mail Nachrichten als eMail\\ Bereits versendete hybrid™ mail Nachrichten, die direkt aus dem Ausgangsbuch als eMails weitergeleitet wurden, hatten u.U. beim Empfänger scheinbar keinen Inhalt. Sie wurden dort als leere Dokumente angezeigt, obwohl sämtlicher Inhalt eigentlich vorhanden war. Dieses Verhalten ist nun korrigiert. 
+
+  * Verbesserte Touch-Bedienung\\ Die Bedienung des Clients per Touchscreen wurde optimiert. Hier im Besonderen das Tippen und Halten als Geste für das Klicken mit der rechten Maustaste und die Unterstützung der Tasten von Eingabestiften.
+
+  * Übernahme von Formular-Texten bei „Nur Text“ Voreinstellung\\ Ist in den Einstellungen des david® Client unter „Editor/Erweitert“ die Option „HTML bei eMails als Standard“ ausgeschaltet, werden neue eMails generell im Format „Nur Text“ erstellt. Wird nun bei dieser Voreinstellung über den Button „Formulare“ eine HTML-formatierte Vorlage geöffnet, so wird die Formatierung verworfen und nur die reine Textinformation aus der Vorlage in den Nachrichten Editor übernommen. Bisher öffnete der Editor in diesem Fall ein leeres Dokument, ohne den Text aus der Vorlage zu übernehmen.
+
+  * Zugriffsschutz für Anhänge von privaten Terminen\\ Dateianhänge von als privat gekennzeichneten Terminen haben nun einen verbesserten Zugriffsschutz, so dass andere Benutzer diese Dateien weder sehen noch öffnen können.
+
+  * Anzeigefehler bei Absenderangabe verschlüsselter eMail-Sendeaufträge\\ Beim Öffnen einer in verschlüsselter Form versendeten Nachricht direkt im Ausgangsbuch konnten u.U. Anzeigefehler auftreten. In diesem Fall wurde bei der Absenderangabe eine falsche Absenderadresse angezeigt, obwohl die Nachricht tatsächlich mit den korrekten Daten versendet wurde. Dieses Verhalten ist nun korrigiert. 
+

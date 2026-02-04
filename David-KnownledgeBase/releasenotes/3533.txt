@@ -1,0 +1,53 @@
+====== Version 3533 vom 12.07.2023 ======
+
+Release: 2023-07-12T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Unnötige Fehlermeldung beim Start des Service Layers beim Mobile Client\\ Wird der Mobile Client verwendet, so konnte es beim Start des Service Layers eine unnötige Fehlermeldung in Priorität hoch bzgl. einer fehlenden Datei (restapi.pem) geben.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Ordner mit ungültigem Servernamen in Feeds Übersicht\\ Im RSS Fenster des david Clients können neben RSS Feeds auch der Eingang oder andere Ordner angezeigt werden. Ist hier ein nicht (mehr) existierender Servername eingetragen (z.B. nach einem Serverumzug) so konnte es beim Start des david Clients zu Verzögerungen kommen. Beim Start des Grabbing Servers werden solche Einträge (Grabbing Server Konfiguration/Feeds) nun entfernt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Verwendung der Microsoft WebView2 statt Chromium Engine\\ Der david Client verwendet nun nur noch die Microsoft WebView2 statt der Chromium Engine.&nbsp;
+  * Buttons „Wiederholen“ und „Rückgängig“ aus Symbolleiste entfernt\\ Da der neue Editor die Buttons „Wiederholen“ und „Rückgängig“ in der Symbolleiste des Editors nicht verwendet, wurden sie beim david Client hier entfernt
+  * Darstellung von Domain Bildern in Eintragsliste\\ Wenn für den Absender ersatzweise das Bild einer eMail Domaine in der Eintragsliste verwendet wird, so ist die Darstellung im david Client nun optimiert worden.
+  * Buttons in der oben angeordneten Favoritenleiste\\ Wird die Favoritenleiste im david Client oben angeordnet, so sind die Buttons nun linksbündig, statt zentriert wenn sie unten angeordnet ist.
+  * Zusätzliches „tic4:" Protokoll\\ Per Vorgabe wird das „tic:“ Protokoll vom david Classic Client verwendet und kann durch Anpassungen in der Registry stattdessen vom david Client verwendet werden. Das neue zusätzliche Protokoll „tic4:“ wird nur vom david Client verwendet, so dass diese Anpassungen in dem Fall nicht notwendig sind.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.&nbsp;
+  * Zeilenumbruch statt Absatz im Editor\\ In den Einstellungen des david Clients (Editor/Optionen) kann nun festgelegt werden, ob die Eingabe von Enter einen Zeilenumbruch oder einen Absatz bewirken soll.
+  * Neues Design „Dark Mode“ (Preview)\\ Unter Einstellungen/Ansicht kann im david Client nun das neue Design „Dark Mode“ ausgewählt werden (Preview Version).
+
+==== Bugfix ====
+
+  * Vorlage beim Wechsel des Absenders\\ Wird mit dem david Client eine eMail erstellt und hierbei ein anderer Absender gewählt, so wurde im Editor nicht die dem neuen Absender entsprechende Vorlage geladen.
+  * Zugriff auf SQL Adressen nicht möglich\\ Der Zugriff auf SQL Adressen funktionierte im david Client u.U. nicht.
+  * Mögliches Fehlverhalten beim Einfügen von Text in den Editor\\ Das Einfügen von Text aus der Zwischenablage in den Editor funktionierte beim david Client nicht, wenn der Editor im „Nur Text“ Modus geöffnet wird.
+  * Mögliches Fehlverhalten beim Hinweis auf den Modern Client\\ Beim Start des david Classic Clients erscheint ein Hinweis auf den neuen david Client. Vereinzelt konnte es hierbei zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Speichern der Editor Einstellungen\\ Beim david Client konnte in den Einstellungen die Seite „Editor“ nicht mit dem „OK“ Button bestätigt werden.
+  * Mögliches Fehlverhalten bei Ordner-Ansicht „HTML-Layout“\\ Ist bei einem Ordner die Ansicht „HTML-Layout“ eingestellt und hier der neue Schalter „Chromium Engine verwenden“ gesetzt, so wurde dieser Schalter vom david Client nicht berücksichtigt
+  * Mögliche Verzögerung beim Start bei falschem Servernamen\\ Im RSS Fenster können neben RSS Feeds auch der Eingang oder andere Ordner angezeigt werden. Ist hier ein nicht (mehr) existierender Servername eingetragen (z.B. nach einem Serverumzug) so konnte es beim Start des david Clients oder des david Classic Clients zu Verzögerungen kommen. Ein falscher Servername wird hier nun ignoriert.
+  * Mögliche „WebView2“ Fehlermeldung\\ In Einzelfällen konnte es zu einer „WebView2“ Fehlermeldung im david Client und im david Classic Client kommen.
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen mit Grafiken\\ Soll ein Textbaustein mit Grafiken in eine eMail eingefügt werden, so fehlten die Grafiken u.U. beim david Client und dem david Classic Client.
+  * Mögliches Fehlverhalten beim Einfügen von Textbausteinen im „Nur Text“ Modus\\ Öffnet man den Editor im „Nur Text“ Modus und möchte einen Textbaustein einfügen der ebenfalls im „Nur Text“ Modus vorliegt, so konnte es zum Absturz des david Clients und des david Classic Clients kommen.
+  * Ausdruck neu erstellter eMails\\ Wird im david Client eine eMail neu erstellt und ist noch nicht gespeichert, so konnte sie nicht ausgedruckt werden.
+  * Mögliches Fehlverhalten bei Nutzung des „tic:" Protokolls\\ Werden aus einer anderen Anwendung Daten (z.B. to, bodytext), per „tic:“ Protokoll an den david Client übergeben, so wurde der übergebene „bodytext“ nicht in den Editor übernommen.
+  * Mögliches Fehlverhalten beim Einfügen eines Hyperlinks\\ Soll im Editor des david Clients ein Hyperlink per Kontextmenü eingefügt werden, so wurde hierbei u.U. das falsche Protokoll eingefügt.
+  * Adressvorschlag bei SQL Adressen\\ Existieren bei einer Adresse in einem SQL Adressordner drei eMail Adressen, so wurden bei der Erstellung einer eMail nur die ersten beiden eMail Adressen vorgeschlagen.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Ordner als Favorit entfernen\\ Wurde ein Ordner im smart client als Favorit markiert, so konnte er anschließend über den entsprechenden Menüpunkt nicht wieder als Favorit entfernt werden.
+

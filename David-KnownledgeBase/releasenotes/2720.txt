@@ -1,0 +1,84 @@
+====== Version 2720 vom 14.12.2013 ======
+
+Release: 2013-12-14T12:38:43
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Wird eine signierte eMail versendet und der Betreff per @-@ Befehl nachträglich geändert, so war diese Änderung beim Empfänger in der eMail nicht enthalten. Das ist nun geändert.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Der Zugriff des Clients auf den Service Layer bei einer langsamen Verbindung wurde optimiert. Über den neuen Button "Netz" in der Symbolleiste kann das Verhalten im laufenden Betrieb geändert werden.
+
+  * Auf der InfoCenter Seite wird nun, wenn die Vorschau neben den Nachrichten angezeigt wird, unterhalb der Nachrichtenliste die Liste der TeamBoards eingeblendet.
+
+  * Wird eine Serienfax aus dem Editor heraus erstellt, so konnte es u.U. vorkommen, dass der Client hängt.
+  * Ist der Internet Explorer 11 installiert, so fehlte beim Ausdruck einer eMail mit Dateianhängen u.U. die Liste dieser Anhänge.
+
+  * In der Adressauswahl wurden SQL Adressen u.U. doppelt angezeigt.
+
+  * An der Client/Service Layer Kommunikation wurden diverse Optimierungen vorgenommen.
+
+  * Wird eine VCF Datei mit mehreren Adressen importiert, wurden enthaltene Umlaute in den Adressen u.U. falsch dargestellt.
+
+  * Im Adressordner können nun über einen neuen Button andere Adressordner als Verknüpfung hinzugefügt werden, so dass deren Adressen ebenfalls in der Ansicht angezeigt werden (wie schon das Verknüpfen von anderen Kalendern in der Kalenderanzeige). Das Aktivieren/Deaktivieren der CardDAV Funktion ist hierbei ebenfalls möglich.
+
+  * Das Tastaturkürzel im Editor zum Wechsel von "Nur Text" nach HTML Formatierung wurde geändert von Strg+Alt+E nach Alt+Umschalt+E.
+
+  * Es gibt jetzt die Möglichkeit Kategorien für Aufgaben einzustellen. Die Kategorien werden wie die Kalenderbeschriftungen in der Datei TOBIT!.GER auf dem Server gespeichert (unter der neuen Sektion TaskLabels). Wenn es diese Sektion noch nicht gibt, werden die vorhandenen Kalenderbeschriftungen genommen. Die Kategorien lassen sich, analog zu dem Kalender, über das Kontextmenü eines Aufgaben-Eintrags bearbeiten. Die Kategorien lassen sich auch als Spalte einblenden, um danach zu sortieren oder zu gruppieren.
+  * Ist die Standard eMail Vorlage eingestellt, so konnte bisher keine Hintergrundfarbe gesetzt werden.
+
+  * Bei der Annahme einer Besprechungsanfrage kann nun der Zielkalender gewählt werden. Bisher wurde immer im eigenen Kalender gespeichert, nun stehen auch die verknüpften Kalender zur Auswahl.
+
+  * Wird der Internet Explorer 11 verwendet, so konnte es bei bestimmten eMails vorkommen, dass der falsche Font angezeigt wurde. Zudem konnte es zum Absturz des Clients kommen, wenn die eMail im Bearbeiten Modus geöffnet wird.
+  * Die Soundeinstellungen können nun im Client vorgenommen werden (Einstellungen/Global/Sounds). Bisher war dies nur in den Windows Einstellungen möglich.
+
+  * In der Adressenansicht des Clients kann man nun als Spalte auch die Kategorien einblenden. Es ist dann hier möglich per QuickFinder nach Kategorien zu filtern, zu sortieren oder zu gruppieren.
+
+  * Beim Editor waren im HTML Modus die Optionen für die Hintergrundgestaltung (Farbe/Grafik/Sound) nur über das per Vorgabe ausgeblendete Menü erreichbar. Diese Optionen existieren nun auch im Kontextmenü.
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Im Navigator werden nun die StrongBox Server Images angezeigt.
+  * Adressen können über den neuen Button "Weiterleiten" in der Symbolleiste als eMail Anhang weitergeleitet werden.
+
+  * Das Navigatorfenster enthält nun die Tabs Navigator und Kontakte. Bei den Kontakten stehen nun im Kontextmenü die Adressen zur Auswahl (z.B. "eMail an..."). Beim "Kontakte" Tab kann per Kontextmenü ein Adressordner gewählt werden.
+
+  * Wird eine Aufgabe oder ein Termin im "Nur Text" Format als eMail Anhang versendet, so fehlte in der versendeten Datei der Text des Eintrags.
+
+  * Im Adressordner können nun über einen neuen Button andere Adressordner als Verknüpfung hinzugefügt werden, so dass deren Adressen ebenfalls in der Ansicht angezeigt werden (wie schon das Verknüpfen von anderen Kalendern in der Kalenderanzeige). Das Aktivieren/Deaktivieren der CardDAV Funktion ist hierbei ebenfalls möglich.
+
+  * An der Client/Service Layer Kommunikation wurden diverse Optimierungen vorgenommen. 
+  * Bei Terminen im "Nur Text" Format wurde keine Vorschau angezeigt.
+
+  * Die "Postlagernd" Funktion wurde beim Versand von Nachrichten mit Dateianhängen integriert.
+
+  * Bei der Annahme einer Besprechungsanfrage kann nun der Zielkalender gewählt werden. Bisher wurde immer im eigenen Kalender gespeichert, nun stehen auch die verknüpften Kalender zur Auswahl.
+
+  * Es gibt jetzt die Möglichkeit Kategorien für Aufgaben einzustellen. Die Kategorien werden wie die Kalenderbeschriftungen in der Datei TOBIT!.GER auf dem Server gespeichert (unter der neuen Sektion TaskLabels). Wenn es diese Sektion noch nicht gibt, werden die vorhandenen Kalenderbeschriftungen genommen. Die Kategorien lassen sich, analog zu dem Kalender, über das Kontextmenü eines Aufgaben-Eintrags bearbeiten. Die Kategorien lassen sich auch als Spalte einblenden, um danach zu sortieren oder zu gruppieren.
+  * TeamBoard Notifizierungen gibt es nun auch unter Mac OS X 10.7.
+<p>
+Unter Mac OS X 10.8 wurde die TeamBoard Notifizierung optimiert, nun kann das Adressbild angezeigt werden.
+</p>
+  * Bei neuen Nachrichten wird nun eine Notifizierung angezeigt.
+<p>
+Ab Mac OS X 10.9 werden die System Notifizierungen benutzt. Die Anzeigedauer kann nicht konfiguriert werden. 
+</p>
+<p>
+Unter Mac OS X 10.8 und 10.7 wird eine eigene Implementierung der Banner benutzt. Die Anzeigedauer kann hier im david® Notifier eingestellt werden.
+</p>
+
+  * In eMails eingefügte Grafiken wurden u.U. nicht angezeigt.
+
+  * Wird in der Faxvorschau die Miniaturansicht eingestellt, so wurde diese beim Wechsel zu einem anderen Fax nicht korrekt aktualisiert.
+
+

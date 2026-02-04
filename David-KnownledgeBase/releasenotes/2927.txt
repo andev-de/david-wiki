@@ -1,0 +1,51 @@
+====== Version 2927 vom 15.05.2017 ======
+
+Release: 2017-05-15T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Beim Start des neuen Service Layers wird einmalig beim User Template die Berechtigung "Remote Access nutzen" gesetzt. Somit haben anschließend neue David Anwender diese Berechtigung automatisch.
+
+==== Bugfix ====
+
+  * Ist der Ordner eines David Anwenders ausgeblendet (Ordner Eigenschaft), so wurde im David® Chat dieser Anwender mit dem Status "unbekannt" angezeigt (dieser Status war zudem durchgestrichen). Ebenso war dies in den Kommentaren von eMails. Nun wird dieser Anwender wieder mit seinem Namen angezeigt.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Wird bei nicht gestartetem Service Layer der David.Administrator gestartet und in die Übersicht "WebBox/ActiveSync" gewechselt, so konnte es zum Absturz des David.Administrators kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Wird auf einem Android Gerät der Name oder Vorname einer Adresse geändert, und diese wird per ActiveSync an den David Server übertragen, so wurde hier der "Angezeigte Name" u.U. nicht aktualisiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Das Hauptmenü befindet sich nun oben links.
+  * Die lokale Hilfe wurde entfernt und wird künftig durch ein Forum ersetzt.
+  * Die Favoritenleiste im David® Client ist im Standard unten. Das sorgt für eine verbesserte Übersicht. Die Funktion zum Ändern der Position findet sich noch in den Client-Einstellungen unter „Outdated“.
+
+==== Bugfix ====
+
+  * Wird in den Einstellungen des david Clients der Schalter "Benutzerprofil/Einträge abwechselnd farbig hinterlegen" deaktiviert, so konnte es zu Darstellungsfehlern kommen: Werden interne eMails kommentiert, wurde unter den Kommentaren ein schwarzer Bereich angezeigt. Die Auswahl der Emoticons hatte einen schwarzen Hintergrund.
+  * Es konnte vorkommen, dass trotz chayns® Anmeldung der Intercom Button in der Favoritenleiste nicht angezeigt wurde.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * In den Einstellungen gibt es nun auch den Schalter "Editor/Erweitert/Rücksende Prefix bei Antwort".
+
+==== Bugfix ====
+
+  * Es konnte u.U. keine Chat Nachricht an einen David Anwender erstellt werden, mit dem es noch keinen Chat gab.
+

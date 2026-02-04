@@ -1,0 +1,89 @@
+====== Version 2993 vom 08.06.2018 ======
+
+Release: 2018-06-08T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Mehr Zeichen für den Betreff von eMails\\ Ab sofort werden längere Betreffzeilen als bisher unterstützt. Das heißt, beim Versand von eMail können längere Texte als Betreff angegeben werden und bei empfangenen eMails werden längere Betreffzeilen nicht mehr abgeschnitten. 
+
+==== Bugfix ====
+
+  * Korrigiertes Verhalten bei Verwendung des david® Befehls @@Nummer in Verbindung mit extrem langen Zielnummern\\ Wird in einem Sendeauftrag für die Übergabe der Zieladresse der david® Befehl @@Nummer verwendet, konnte es zum Absturz führen, wenn die so angegebene Nummer deutlich mehr als 100 Zeichen umfasste. Dieses Verhalten wurde korrigiert.
+
+  * Verbesserte Stabilität bei Zugriff auf defekte eMails\\ In einem Einzelfall konnte es zu einem Absturz des david® Service Layers führen, wenn versucht wurde, per david® Client auf eine defekte eMail zuzugreifen. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Darstellung von eMail-Fußnoten\\ Im david® Administrator lassen sich für jeden Anwender individuelle eMail-Fußnoten hinterlegen, die dann in eMail-Sendeaufträge der Benutzer eingefügt werden können. In einem Einzelfall wurde diese eMail-Fußnote fehlerhaft angezeigt. Dieses Verhalten wurde korrigiert. 
+
+  * Optimierte Unterstützung von Umlauten in Auto-Reply-Nachrichten\\ In einem Einzelfall wurden beim externen Empfänger einer von david®  versendeten Auto-Reply-Nachricht keine Umlaute angezeigt. Dieses Verhalten wurde korrigiert, so dass die Umlaute nun auch in diesem Fall dargestellt werden.
+  * Optimierungen für das Anfordern digitaler Signaturen\\ Das Anfordern digitaler Signaturen konnte u.U. fehlschlagen, wenn auf dem david® Server bestimmte Systemordner gelöscht wurden. Der david® Service Layer stellt nun fehlende Systemordner automatisch wieder her, so dass die Signatur-Anforderung auch in solchen Fällen gelingt.
+
+  * Korrigierte Funktion von Variablen für Include-Dateien\\ Mit so genannten Include-Dateien lassen sich vordefinierte Inhalte, Befehle und Variablen in Nachrichten, Weiterleitungen oder automatischen Antworten einfügen. Hierbei funktionierten die Variablen %(TIME_DATE) und %(TIMESTR) nicht mehr korrekt und lieferten nur noch die Uhrzeit ohne Informationen auf das Datum. Das wurde korrigiert, so dass diese Variablen jetzt wieder wie vorgesehen einsetzbar sind.
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Verschlüsselungs-Zertifikat für sichere Datenübertragung im Internet\\ Im david® Administrator kann über den neuen Menüpunkt „System / TLS-Verschlüsselung“ ein Verschlüsselungs-Zertifikat angefordert werden, das für WebBox, PostMan und MailAcess Server verwendet werden kann, und für sichere Datenübertragung im Internet sorgt. In Verbindung mit der WebBox stellt dieses Zertifikat z.B. den korrekten Datenabgleich per Exchange ActiveSync auch für Mobile Geräte sicher, die unter iOS laufen.
+
+==== Bugfix ====
+
+  * Optimierte Anzeige der Namen von Dateianhängen\\ Die Anzeige der Namen von Dateianhängen wurde optimiert, um sicherzustellen, dass diese immer vollständig dargestellt werden können. Zuvor konnte es in einem Einzelfall zu dem Effekt kommen, dass die Dateinamen von Anhängen empfangener eMails abgeschnitten wurden.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Optimierte Anzeige der Namen von Dateianhängen\\ Die Anzeige der Namen von Dateianhängen wurde optimiert, um sicherzustellen, dass diese immer vollständig dargestellt werden können. Zuvor konnte es in einem Einzelfall zu dem Effekt kommen, dass die Dateinamen von Anhängen empfangener eMails abgeschnitten wurden.
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Verschlüsselungs-Zertifikat für sichere Datenübertragung im Internet\\ Im david® Administrator kann über den neuen Menüpunkt „System / TLS-Verschlüsselung“ ein Verschlüsselungs-Zertifikat angefordert werden, das für WebBox, PostMan und MailAcess Server verwendet werden kann, und für sichere Datenübertragung im Internet sorgt. In Verbindung mit der WebBox stellt dieses Zertifikat z.B. den korrekten Datenabgleich per Exchange ActiveSync auch für Mobile Geräte sicher, die unter iOS laufen.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Verschlüsselungs-Zertifikat für sichere Datenübertragung im Internet\\ Im david® Administrator kann über den neuen Menüpunkt „System / TLS-Verschlüsselung“ ein Verschlüsselungs-Zertifikat angefordert werden, das für WebBox, PostMan und MailAcess Server verwendet werden kann, und für sichere Datenübertragung im Internet sorgt. In Verbindung mit der WebBox stellt dieses Zertifikat z.B. den korrekten Datenabgleich per Exchange ActiveSync auch für Mobile Geräte sicher, die unter iOS laufen. 
+  * Aktualisierung der integrierten Verschlüsselungs-Engine \\ Die in david® integrierte Verschlüsselungs-Engine davidtls.dll (\windows\syswow64) wurde aktualisiert und unterstützt jetzt OpenSSL-1.1.0f und  Forward Secrecy. Im Rating der SSLabs wurde die erreichte Note von 'B' auf 'A' verbessert.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Zusätzlicher Hash-Algorithmus für Signatur-Zertifikate\\ In den Einstellungen des david® Client kann unter dem Punkt „Sicherheit“ ausgewählt werden, mit welchem Hash-Algorithmus die Prüfsumme (Hash-Wert) für die digitale Signatur zu versendender eMails gebildet werden soll. Diese Auswahl wurde um den Hash-Algorithmus SHA256 erweitert.
+
+  * Größere Auswahl vordefinierter Layouts\\ Zur individualisierten Darstellung des david® Client steht unter „Einstellungen/Layout“ nun eine erweiterte Anzahl vordefinierter Layouts zur Verfügung. 
+
+  * Anpassungen für optimierten Einsatz der S/MIME-Verschlüsselung\\ Der Versand S/MIME verschlüsselter eMails wurde so optimiert, dass trotz der systembedingten Schwächen von S/MIME die Datensicherheit uneingeschränkt erhalten bleibt.
+  * Kategorien bei Ordnern vom Typ „SQL Adressen„\\ In David Ordnern, für die in den Ordner Eigenschaften die Option „Anzeigen als SQL Adressen“ eingestellt ist, stehen nun auch Kategorien zur Verfügung. Das war bisher nicht möglich.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Optimierte Kalenderanzeige von Terminen bei „Zeitraster 15 Minuten„\\ Wenn in den Kalender Einstellungen das Zeitraster auf 15 Minuten eingestellt ist, wurden bei Erstellung neuer Termine die Beginn- und Stoppzeit nicht optimal angezeigt. Die Kalenderdarstellung wurde nun für diese Fälle angepasst.
+
+  * Keine ungewollte Einrichtung als „Standard eMail Client“&nbsp; &nbsp;\\ Ein Update des david® Client führte u.U. dazu, dass dieser als „Standard eMail Client“ eingerichtet wurde, obwohl das nicht gewünscht war. Diese Verhalten wurde korrigiert.
+  * Verbesserte Stabilität beim Hinzufügen vieler Dateianhänge\\ Beim Erstellen neuer Nachrichten konnte das Hinzufügen einer großen Anzahl von Dateianhängen u.U. zum Absturz des david® Client führen. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Anpassung der Login Dialoge an die gewählte DPI Einstellung\\ Die Schaltfläche „Anmelden“ in der Titelleiste des david® Client ermöglicht das Einloggen über die persönliche chayns®ID™, um zusätzliche Dienste wie z.B.das Intercom zu nutzen. Bei höherer DPI Einstellung wurden hierbei die Login Dialoge (Facebook, Google, etc.) u.U. zu klein dargestellt. Dieses Verhalten wurde korrigiert.
+  * Wiederholtes Anzeigen des Hinweis-Dialog beim Öffnen von Dateianhängen unterbunden\\ Beim Öffnen des Anhangs einer eMail konnte es in einem Einzelfall vorkommen dass der Dialog "Änderungen an diesem Anhang werden nicht auf dem david® Server zurückgesichert“ mehrfach angezeigt wurde. Dieses Verhalten wurde korrigiert.
+
+  * Empfängername im „Betreff“ Feld beim „Nachricht versenden“ Dialog\\ Erfolgt bei der Faxerstellung über den FaxWare Druckertreiber die Angabe der Zielnummer über einen Adressbucheintrag, so erscheint nun im „Betreff“ Feld des „Nachricht versenden“ Dialogs wieder der in dem gewählten Adresseintrag gespeicherte Empfängername.
+
+  * Vermeidung des unbeabsichtigten Löschens von Adressfeldern durch Kopieren in die Zwischenablage\\ Bei Darstellung von Adressordnern in der Listenansicht konnte es u.U. vorkommen, dass durch Markieren und Kopieren per [Strg]+[C] der Inhalt eines Adressfeldes unbeabsichtigt gelöscht wurde. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Empfängerangabe im „Nachricht versenden“ Dialog bei Faxversand\\ Bei der Erstellung von Faxen über den FawWare Druckertreiber konnte in einem Einzelfall der Effekt auftreten, dass im „Nachricht versenden“ Dialog der Inhalt des „An“ Feldes nicht sichtbar war. Dieses Verhalten wurde korrigiert.
+
+===== Desktop Protection for  =====
+
+==== Bugfix ====
+
+  * Optimierung der Statusanzeige für den OnAccess Scanner\\ Die Desktop Protection for david® sorgt für den Virenschutz auf Arbeitsplatzrechnern. Hierbei steht auch ein OnAccess Scanner zur Verfügung. Der tatsächliche Status des OnAccess Scanners (aktiviert oder deaktiviert) wurde in den Einstellungen u.U. falsch angezeigt. Das ist nun korrigiert.
+

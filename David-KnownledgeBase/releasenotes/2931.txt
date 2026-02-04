@@ -1,0 +1,56 @@
+====== Version 2931 vom 29.05.2017 ======
+
+Release: 2017-05-29T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Beim Eintragen von neuen eMails in die SQL Datenbank konnte es in einem Einzelfall zum Absturz des Service Layers kommen.
+
+
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es zum Absturz des Mail Access Servers kommen, wenn per POP3 oder IMAP auf eine eMail mit defektem Datensatz (Priorität der eMail) zugegriffen wurde.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bei einer ActiveSync Verbindung zum Absturz der WebBox kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+
+==== Bugfix ====
+
+  * In der Ansicht "Kontakte" waren die Untermenüs u.U. nicht sichtbar.
+  * Ist das klassische Layout (Outdated) in Verbindung mit farbigen Symbolen eingestellt, so wurde das Menü-Symbol u.U. nicht angezeigt.
+  * Das Ausblenden des Navigators und/oder der Kontakte funktionierte u.U. nicht.
+  * Wird das Menü per ALT-D aufgerufen, so funktionierte anschließend die Auswahl bestimmter Menüpunkte u.U. nicht.
+  * Soll ein Fax im David Image Editor über "Datei/Speichern unter" im Explorer gespeichert werden, so funktioniert dies u.U. nicht, wenn das Creators Update von Windows 10 installiert ist.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Das Laden von David®Chat Nachrichten und deren Anhänge wurde optimiert. Zusätzlich gibt es in den Einstellungen nun die Möglichkeit die Anzahl Nachrichten pro Chat anzugeben.
+
+==== Bugfix ====
+
+  * Wird per David Client Mac zu einer eMail der erste Kommentar erstellt, so wurde dieser u.U. beim David Client PC nicht angezeigt.
+  * Bei der Einstellung "Vorschau unter der Eintragsliste" konnte es zu Darstellungsfehlern beim Vergrößern oder Verkleinern des Vorschaufensters kommen.
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Unter Server 2003 ließ sich der hybrid mail TLD u.U. nicht starten.
+

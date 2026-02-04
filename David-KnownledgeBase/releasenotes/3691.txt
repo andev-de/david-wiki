@@ -1,0 +1,26 @@
+====== Version 3691 vom 25.09.2024 ======
+
+Release: 2024-09-25T00:00:00
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Fehlverhalten bei POP3 Konto mit persönlichem Microsoft Account\\ Ist im David Administrator ein POP3 Konto mit einem persönlichen Microsoft Account eingerichtet, so funktionierte hier der „Anmelden“ Button u.U. nicht mehr korrekt und es wurde eine Fehlermeldung angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Einstellung zum Unterbinden typographischer Ersetzungen\\ In den Einstellungen des David Clients (Editor/Erweitert) gibt es nun eine Einstellung, um typographische Ersetzungen zu unterbinden („“  –).
+
+==== Bugfix ====
+
+  * Mögliche Fehlermeldung bei Nutzung der KI Funktionen\\ Bei der Nutzung einiger KI Funktionen im Team Client konnte es zu Fehlermeldungen kommen, wenn ein Virenscanner eingesetzt wird (z.B. von Sophos).
+  * Mögliches Fehlverhalten beim Wechsel zwischen Eintragsliste und geöffnetem Editor\\ In einem Einzelfall konnte es beim Team Client zum Fehlverhalten beim Wechsel zwischen der Eintragsliste und dem in einem Tab geöffneten Editor kommen, so dass der Team Client neu gestartet werden musste.
+  * Mögliches Fehlverhalten bei chayns Anmeldedialog\\ In Einzelfällen wurde der Dialog für die chayns Anmeldung im David Client an einer Position angezeigt, wo er kaum bedienbar war.
+  * Mögliches Fehlverhalten bei chayns Anmeldung\\ Beim Team Client konnte es in Einzelfällen vorkommen, dass man plötzlich nicht mehr per chayns angemeldet war.
+Fehlende Übersetzungen ergänzt
+Im englischen Editor des Team Clients waren einige Texte bisher nur in deutsch verfügbar.
+

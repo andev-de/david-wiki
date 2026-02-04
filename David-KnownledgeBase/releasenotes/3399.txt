@@ -1,0 +1,107 @@
+====== Version 3399 vom 14.12.2021 ======
+
+Release: 2021-12-14T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  *  Aktualisierte Engine für Virus Protection\\ Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.300. 
+  * Intercom TalkAbouts in Cc an sich selbst senden\\ Bisher war es nicht möglich einen Intercom TalkAbout zusätzlich in Cc an sich selbst zu senden, das wurde nun angepasst.
+
+==== Bugfix ====
+
+  * Umlaute in LiveComments in Vorschau u.U. falsch angezeigt\\ Enthält ein per smart client erstellter LiveComment Umlaute, so wurden diese in der Vorschau des david Clients u.U. falsch angezeigt. 
+  * Mögliches Fehlverhalten beim Antworten auf LiveComments per smart client\\ Wird per smart client auf einen LiveComment geantwortet, der Anführungszeichen enthält, so war der erstellte Antworttext u.U. fehlerhaft.
+  * Ordner mit einem Pipe Zeichen im Namen verknüpfen\\ Hat ein Ordner ein Pipe Zeichen im Namen (|), so konnte zu diesem Ordner keine Verknüpfung erstellt werden.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Lizenzen u.U. nicht löschbar\\ In Einzelfällen konnte es vorkommen, dass die im david Administrator eingetragenen Lizenzen nicht gelöscht werden konnten.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Möglicher Fehler beim Versand an MTA-STS Domains\\ Ist in den PostMan Einstellungen die MTA-STS Nutzung aktiviert, so konnte es in Einzelfällen trotz korrekter Einstellungen der Gegenstelle zu Fehlern beim Versand an MTA-STS Domains kommen.
+  * Mögliches Fehlverhalten beim Empfang einer Einladung\\ In einem Einzelfall erhielt eine empfangene Einladung für den Termin das falsche Datum 01.01.1970.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Empfang einer Einladung\\ In einem Einzelfall erhielt eine empfangene Einladung für den Termin das falsche Datum 01.01.1970.
+  * Optimierung bei der Auswertung des „X-Envelope-To“ Feldes\\ Bei der Konvertierung empfangener eMails wird nun ein mehrfach enthaltenes „X-Envelope-To“ Feld berücksichtigt.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Ändern von Serienterminen per ActiveSync\\ Werden mit dem david Client PC Änderungen an einzelnen Elementen einer Terminserie vorgenommen, so wurden diese u.U. nicht an die per ActiveSync verbundenen Geräte übertragen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neuen Kalender erstellen\\ In der Kalenderansicht kann nun über den neuen Button „Weitere Kalender“ ein neuer persönlicher Kalender erstellt werden.
+  * Importieren von Terminen aus Outlook Kalender (Beta)\\ In der Kalenderansicht können nun über den neuen Button „Weitere Kalender“ auch Microsoft Kalender eingebunden werden, die z.B. Microsoft Teams Einladungen enthalten. Hierbei ist sowohl die Anmeldung mit einem persönlichen Microsoft Konto, als auch mit einem Unternehmens-Konto möglich.
+
+Für den regelmäßigen Import der Microsoft Termine wird der neue Dienst „David Provider Synchronisation“ eingerichtet (\david\Apps\providersync). 
+  * Hinweis auf nicht unterstütztes Betriebssystem Windows Server 2022\\ Beim Start des david Clients auf einem Windows Server 2022 entfällt nun der Hinweis dass das Betriebssystem noch nicht unterstützt wird.
+  * Optimierung des Adress Dialogs\\ Im Adress Dialog unter „Generell“ werden oben rechts nun alle drei eMail-Adressen angezeigt. Die zuvor dort angezeigten Informationen stehen nun unten links unter „Sonstige“.
+  * Auswahl des „Tel: Protokolls“ beim Einfügen eines Links\\ Beim Einfügen eines Links im Editor steht nun auch das „Tel: Protokoll“ zur Verfügung.
+  * Dateianhänge im SVG Format öffnen\\ Der david Client unterstützt nun auch Vektorgrafiken im SVG Format. Somit können nun z.B. auch SVG Dateianhänge als Bilder angezeigt und mit dem internen Bildbetrachter geöffnet werden.
+  * Ablösbare Tabs im Navigator Bereich\\ Im Navigator Bereich können die Tabs nun per Maus durch ziehen abgelöst werden.    
+  * Automatische Rechtschreibprüfung bei Chromium Editor\\ Die automatische Rechtschreibprüfung beim Versenden von eMails steht jetzt auch bei Benutzung des Chromium Editors zur Verfügung.
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen und Verbesserungen vorgenommen.
+  * Filtereinstellungen bei TAPI Konfiguration\\ In der TAPI Konfiguration gibt es nun weitere Filtereinstellungen, um z.B. Rufnummern mittels regulärer Ausdrücke zu filtern.
+
+==== Bugfix ====
+
+  * chayns Anmeldung per Google Account u.U. nicht möglich\\ Die chayns Anmeldung funktionierte mit einem Google Account u.U. nicht.
+  * Priorität eines Termins beim Export als ICS Datei\\ Wird ein Termin in hoher Priorität als ICS Datei exportiert, so wurde in der Datei der Wert für die Priorität u.U. falsch eingetragen.
+  * Öffnen von Links in RSS Feeds\\ Beim Öffnen von Links in RSS Feeds wurde hierzu u.U. ein externer Browser aufgerufen, statt diese im david Client zu öffnen.
+  * Optimierung bei der Auswahl der Stoppzeit von Terminen\\ Wird bei einem neuen Termin eine Stoppzeit ausgewählt, so konnte es vorkommen, dass man beim erneuten Öffnen des gespeicherten Termins andere Zeiten für die Stoppzeit zur Auswahl hatte.
+  * Emoticons u.U. nicht versendet\\ Es konnte in Einzelfällen vorkommen, dass bestimmte Emoticons nach dem Einfügen in eine eMail anschließend beim Empfänger fehlten.
+  * Optimierung des Scrollens per Touchpad\\ Die Geschwindigkeit des Scrollens mit dem Touchpad in den Listen des david Clients wurde optimiert. 
+  * Mögliches Fehlverhalten beim Wechsel der Client Sprache\\ Wenn eine Plain Text Nachricht beim Wechsel der Sprache des Clients angezeigt wurde, konnte es u.U. zu einer Schutzverletzung kommen.
+  * Mögliches Fehlverhalten bei Umbrüchen im Namen von Adressen\\ Sind bei einem Adresseintrag ungewollt Umbrüche im angezeigten Namen enthalten, so konnte dies zu Problemen beim eMail Versand führen. Die Umbrüche werden vor dem Versand nun entfernt.
+  * Verschieben von Bildern im Chromium Editor\\ Wird der Chromium Editor verwendet, so können Bilder innerhalb einer eMail nun auch verschoben werden.
+  * Telefon Dialog öffnen\\ Wird eine empfangene eMail in der ReadOnly Ansicht geöffnet, konnte der Telefon Dialog per F12 nicht mehr aufgerufen werden.
+  * Einfügen von Dateianhängen als Inline Grafik\\ Beim Editor kann man angehängte Grafiken als Inline Grafiken in die eMail einfügen. Hierbei konnte dies jedoch dazu führen, dass anschließend die Grafik beim Zugriff per ActiveSync oder smart client nicht angezeigt wurde.
+  * Schriftart beim Wechsel von Plain Text nach HTML\\ Beim Wechsel der Formatierung einer eMail von Plain Text nach HTML im Editor wurde die eingestellte Schriftart nicht berücksichtigt.
+  * Anzeige des Cursors nach Fensterwechsel bei Chromium Editor\\ Wird der Chromium Editor verwendet, so wurde der im Editor angezeigte Cursor nach einem zwischenzeitlichen Fensterwechsel u.U. nicht mehr angezeigt.
+  * Optimierung bei der Ordnung nach Konversation\\ Ist bei der Ansicht Vorschau neben der Eintragsliste eine Ordnung nach Konversation eingestellt, so konnte es vorkommen dass der Kopf einer Konversation nicht ganz oben stand.
+
+
+  * Anmeldung bei Umlauten im Login Namen oder Passwort unter Windows 11\\ Wird Windows 11 verwendet und der Login Name oder das Passwort enthält Umlaute, so konnte man sich u.U. nicht am david Server anmelden.
+  * Menüpunkt „Verknüpfung kopieren“ in eMail Vorschau\\ Enthält eine eMail einen Link, so fehlte in der Vorschau u.U. der Menüpunkt "Verknüpfung kopieren".
+  * Mögliches Fehlverhalten beim Umbenennen von Dateianhängen\\ Soll ein Dateianhang einer eMail umbenannt werden, so wurde die Änderung u.U. bei einem anderen Dateianhang der gleichen eMail vorgeschlagen.
+  * Button „Anruf“ u.U. ohne Funktion\\ Der Button „Anruf“ war u.U. ohne Funktion, je nachdem in welcher Ansicht man steht, z.B. im Kalender oder im Chat.
+
+
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz\\ 
+Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david) wurde aktualisiert auf die Version 6.300.
+
+=====  VoIP2 TLD =====
+
+==== Bugfix ====
+
+  * Anzahl der verwendeten TLDs u.U. eingeschränkt\\ Sollen mehrere VoIP2 TLDs verwendet werden, so war die maximale Anzahl u.U. auf 7 beschränkt.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Optimierung beim Neustart des WebAPI Dienstes\\ Das Starten des Dienstes wurde optimiert. Es konnte beim Server Neustart fehlschlagen wenn der Start des Service Layer Dienstes länger dauert.
+
+
+

@@ -1,0 +1,56 @@
+====== Version 2970 vom 27.11.2017 ======
+
+Release: 2017-11-27T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Werden Adressen aus dem Ordner "Interne Benutzer" in einen anderen Ordner verschoben oder kopiert, so konnten einige Felder (z.B. Name, eMail Adresse) bisher nicht bearbeitet werden. Das ist nun möglich.
+  * Aufgrund technischer Neuerungen erhalten ältere Windows Versionen &lt;= 6.0 (Windows XP, Windows Server 2003, Windows Vista, Server 2008 (nicht R2)) kein Update des david Clients mehr. Er kann auf diesen Betriebssystemen auch nicht mehr neu installiert werden.
+
+==== Bugfix ====
+
+  * Wurde in einer Regel eine Bedingung festgelegt die auf eine bestimmte Uhrzeit zielte, wurde diese Regel nur ausgeführt wenn das Ereignis exakt um die eingestellte Uhrzeit (millisekundengenau) statt fand. Der Vergleich gilt jetzt für die gesamte eingestellte Minute.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall wurden bestimmte Dateianhänge (hier Grafiken) bei einem Winmail.dat Dateianhang nicht angezeigt.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall wurden bestimmte Dateianhänge (hier Grafiken) bei einem Winmail.dat Dateianhang nicht angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In der Kalenderansicht wird oben nun der Name des aktuellen Kalender angezeigt.
+  * Über die neue Variable "%(Absender Adresse)" (Nachrichten Editor / Schaltfläche "Variablen" / Allgemein) kann nun z.B. in einer eMail Vorlage automatisch die aktuelle Absender Adresse eingefügt werden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Die im david Client verwendete Chromium-Engine wurde aktualisiert.
+  * Der Quickfinder der Eintragsliste befindet sich nun links neben den Absender-Tabs.
+  * Die Anzeige der chayns® Menüs unterhalb des Namens wurde optimiert. 
+  * Unter "Hilfe/sitecare™ Information" kann nun der sitecare™ Status geprüft werden.
+
+==== Bugfix ====
+
+  * In einer geöffneten eMail mit Dateianhängen funktionierte der Menüpunkt "Datei/Anhänge speichern" u.U. nicht.
+  * In einem Einzelfall wurde der Inhalt einer eMail nicht angezeigt.
+  * Ist der Dateianhang einer empfangenen eMail verschlüsselt, so erfolgte beim Klick auf den Dateianhang in der Read-Only Ansicht u.U. keine Passwortabfrage und der Anhang ließ sich hierüber nicht öffnen.
+  * In einem Einzelfall wurden in einer eMail-Vorlage eingefügte Linien an der falschen Position angezeigt.
+  * In der Read-Only Ansicht konnte es in einem Einzelfall zu einem Anzeigefehler kommen, so dass beim Öffnen der Mail nicht sofort alle Dateianhänge angezeigt wurden.
+  * In einem Einzelfall konnte es bei der Anzeige der Dateianhänge einer empfangenen eMail zum Absturz des david Clients kommen.
+  * In der Kalenderansicht "Gruppe (Woche)" funktionierte die Suche per Quickfinder nicht.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Die Desktop Protection for david® kann nun auch bei der "Insider Preview" unter Windows 10 installiert werden.
+

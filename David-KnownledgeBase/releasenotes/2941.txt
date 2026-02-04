@@ -1,0 +1,51 @@
+====== Version 2941 vom 17.07.2017 ======
+
+Release: 2017-07-17T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Wird bei einem TalkAbout zusätzlich ein Cc Empfänger angegeben, so wird bei diesem Empfänger der Betreff in blau eingefärbt (wie schon bei eMails).
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Wird eine Terminanfrage von iCloud empfangen, so war die Start- und Stoppzeit um eine Stunde versetzt.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Wird eine Terminanfrage von iCloud empfangen, so war die Start- und Stoppzeit um eine Stunde versetzt.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bei der Einrichtung von ActiveSync auf einem Smartphone zum Absturz der WebBox kommen.
+  * Wird in der Kalender App von Windows 10 ein ganztägiger Termin erstellt, so wurde dieser beim Abgleich per ActiveSync im David Kalender an 2 Tagen angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Vorgabe des Schalters „Einstellungen/Global/Bestätigungen/Optionen beim Löschen von externen Nachrichten“ ist nun „deaktiviert“.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es beim Erstellen einer Aufgabe zum Absturz des Clients kommen.
+  * Nach Installation des David® Server Pack, Rollout 267 konnte es zu 
+einem Fehlverhalten kommen, wenn Dokumente mit Umlauten per MAPI 
+als Dateianhang an den David® Client übergeben werden (z.B. aus dem 
+PDF Reader).
+  * Wird eine externe Datei (z.B. ein PDF) in einen David Ordner importiert und diese soll anschließend mit dem David Client ohne Dateizugriff auf den David Server (z.B. von extern) versendet werden, so konnte es beim Versand zu einer Fehlermeldung kommen.
+  * Wird ein Hyperlink vom Typ "tic" in eine Nachricht eingefügt, so konnte es vorkommen, dass stattdessen der Typ "file" gespeichert wurde.
+  * In Einzelfällen konnte es zu einer erhöhten Speichernutzung durch den David Client kommen.
+  * Zwei Mögliche Abstürze beim Beenden des Clients wurden behoben.
+  * Im Navigator konnte es einen Absturz geben, wenn man auf den Kontakte oder Navigator Tab klickt und anschließend die Maus mit gedrückter Maustaste auf den Button "Finden" bewegt.
+  * Bei der Internetsuche im David Client konnte es in einem Einzelfall zu einer Fehlermeldung kommen (hier bei der Suche über "Leo Translator").
+

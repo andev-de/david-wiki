@@ -1,0 +1,86 @@
+====== Version 3194 vom 30.06.2020 ======
+
+Release: 2020-06-30T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Optimierung beim Packen bzw. Entpacken von Ordnern\\ Bei der nächtlichen Bereinigung werden entsprechend der Einstellungen ältere Nachrichten in Ablage-Ordner verschoben und die Dateien zusammengeführt oder können auf Wunsch auch wieder entpackt werden. Hierbei gab es einige Optimierungen, z.B. bricht das Zusammenführen bei einem fehlerhaften Eintrag nicht mehr ab und die Dateien der neu gepackten Nachrichten werden nicht zur selben Zeit gelöscht, sondern erst bei der nächsten Bereinigung. Außerdem werden nun auch bereits gepackte Ordner durchlaufen und dort ggfs verwaiste Dateien gelöscht.
+  * Mögliches Fehlverhalten bei gegenseitig eingerichteter Weiterleitung\\ Richten zwei Anwender eine gegenseitige Weiterleitungsregel ein und erhalten eine neue Nachricht, so wurde diese u.U. ungewollt vervielfältigt.
+  * Mögliches Fehlverhalten beim Verschieben von verknüpften Nachrichten\\ Werden Nachrichten zu denen eine Verknüpfung besteht verschoben, so konnte die Verknüpfung anschließend u.U. nicht mehr geöffnet werden.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Tracking eMails mit leerer MAIL FROM Info\\ Werden Tracking eMails versendet, so wurde hierbei u.U. ein leeres MAIL FROM übergeben.
+  * Angezeigter Name u.U. nicht korrekt übernommen\\ In einem Einzelfall wurde der Angezeigte Name einer empfangenen eMail fehlerhaft übernommen. 
+  * Mögliches Fehlverhalten beim Empfang behoben\\ In einem Einzelfall konnte es beim Empfang einer bestimmten eMail zum Absturz kommen.
+  * Mögliche Probleme beim eMail Versand nur an Cc oder Bcc Empfänger\\ Wird eine eMail nur an Cc oder Bcc Empfänger versendet, so wurde hierbei eine leere "An" Information übertragen - dies konnte in Einzelfällen dazu führen, dass die eMail nicht von jeder Gegenstelle angenommen wurde. Das wurde nun angepasst. Mit dem Parameter MIMEEmptyFields=TRUE in der postman.ini kann das ursprüngliche Verhalten wieder eingestellt werden.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Angezeigter Name u.U. nicht korrekt übernommen\\ In einem Einzelfall wurde der Angezeigte Name einer empfangenen eMail fehlerhaft übernommen. 
+  * Mögliches Fehlverhalten beim Empfang behoben\\ In einem Einzelfall konnte es beim Empfang einer bestimmten eMail zum Absturz kommen.
+  * Optimierung beim Laden von Audio- und Video RSS Feeds\\ Werden RSS Feeds geladen, die Audio- oder Video Podcasts enthalten, so wurden die Audio- und Videodateien u.U. nicht geladen, wenn es sich um https Verbindungen handelt.
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Unterstützung des IMAP Parameters „Smaller“\\ Der IMAP Parameters "Smaller" wird nun auch unterstützt.\\ 
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Verwendung einer Vorlage beim Antworten/Weiterleiten per ActiveSync\\ Neuer Schalter in der WebBox Konfiguration unter "ActiveSync": Vorlage auch beim Antworten oder Weiterleiten zulassen. Ist dieser Schalter gesetzt, so wird die beim Anwender im david Client unter Einstellungen/Zugang/ActiveSync eingestellte Vorlage auch beim Antworten oder Weiterleiten verwendet. Dies muss von der jeweiligen App unterstützt werden.
+
+==== Bugfix ====
+
+  * Anzeige ganztägiger Termin in Outlook Kalender bei Verwendung von ActiveSync\\ Wird im david Kalender ein ganztägiger Termin erstellt, so wurde dieser bei der Verwendung von ActiveSync im Outlook Kalender u.U. um einen Tag zu früh angezeigt.
+  * Verwendung einer eingefügten Grafik in Standard eMail Vorlage und david Client Web\\ Wird bei der Standard eMail Vorlage eine Grafik eingefügt, so wurde diese beim Versand per david Client Web nicht mit übertragen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierung der Anzeige von ganztägigen Terminen in Kalenderansicht\\ Sind an einem Tag viele ganztägige Termine eingetragen, so wurde die Ansicht nun optimiert: Per Maus kann die Trennung zwischen den ganztägigen und den normalen Terminen verschoben werden. Außerdem kann in dem Bereich mit den ganztägigen Terminen nun gescrollt werden.
+  * Ausgabeformat PDF beim Scannen und Speichern\\ Beim "Scannen und Speichern" kann nun zusätzlich das Ausgabeformat PDF eingestellt werden.
+  * HTML-Inhalte mit Chromium darstellen (Beta)\\ Durch das Setzen des neuen Schalters "Ansicht/HTML-Inhalte mit Chromium darstellen (Beta)" wird in der Vorschau und im Editor nun die Chromium Engine statt der Internet Explorer verwendet.
+  * Upgrade Vorschlag auf 64 Bit Version\\ Im david Administrator kann unter „Konfiguration/Updates“ nun der neue Schalter „Upgrade auf 64-Bit david Client anbieten“ gesetzt werden. In dem Fall prüft der Client beim Start ob die Voraussetzungen für den 64 Bit Client gegeben sind und schlägt dem Anwender das Upgrade vor. Die Einstellungen des Anwenders werden hierbei beibehalten, wenn er lokale Adminrechte besitzt. Der Vorschlag entfällt bei einer david Client Mobile Installation sowie bei einer Installation auf einem Terminalserver.&nbsp;In einem kommenden Rollout wird der Schalter per Vorgabe aktiviert sein.
+  * Vorgabe beim „Speichern unter“ nun EML\\ Soll eine eMail auf Dateiebene gespeichert werden, so ist die Vorgabe nun Speichern als EML, statt als HTML.
+  * Wiedervorlage Option „Nächster Werktag“\\ Wird bei einer Wiedervorlage der "Nächste Werktag" gewählt, so waren das bisher die Tage Montag bis Freitag. Nun werden hier die eingestellten Werktage in den Kalender Einstellungen des Anwenders berücksichtigt (Kalender/Erweitert/Arbeitswoche).
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Skalierung in geöffneter eMail\\ In der geöffneten eMail kann per Strg+ bzw. Strg- die Skalierung geändert werden. Diese wird nun beim Beenden gespeichert. Mit Strg+0 kann die Vorgabe 100% wieder eingestellt werden.
+  * Optimierung bei der Erstellung von Terminen aus eMails per Drag &amp; Drop\\ Aus einer eMail kann per Drag &amp; Drop in den Kalender ein Termin erstellt werden. Dies kann jedoch jeweils nur für eine eMail gemacht werden. Werden mehrere eMails per Drag &amp; Drop in den Kalender gezogen, so erfolgt nun eine entsprechender Hinweis.\\ 
+
+==== Bugfix ====
+
+  * „Senden an“ Funktion nach Upgrade auf david Client 64 Bit\\ Wird die 32 Bit Version des david Client deinstalliert und anschließend die 64 Bit Version installiert, so funktionierte das "Senden an" u.U. nicht mehr korrekt.
+  * Beachtung der Berechtigung „Ordner-Eigenschaften bearbeiten“\\ Hat der Anwender nicht die Berechtigung "Ordner-Eigenschaften bearbeiten", so kam er über den "Sortieren" Dialog bei den Spalten-Überschriften dennoch an die entsprechenden Dialoge. Das wurde nun behoben.
+  * Statusänderung gelesen/ungelesen bei Intercom Nachrichten\\ Im Intercom funktionierte die Statusänderung der Nachrichten in gelesen bzw. ungelesen u.U. nicht.
+  * Mögliches Fehlverhalten beim Speichern des Bildes eines Adresseintrags\\ Wird ein Adresseintrag mit Bild geöffnet, so konnte es bei der 64 Bit Version des david Clients zum Absturz kommen, wenn im Kontextmenü des Bildes "Speichern unter..." selektiert wurde.
+  * Anzeige eines Jahretages beim 64 Bit Client\\ In einem Einzelfall konnte es vorkommen, dass bei der 64 Bit Version des david Clients ein Jahrestag im Kalender nicht angezeigt wurde.
+  * Mögliches Fehlverhalten beim Löschen einer Terminserie\\ In einem Einzelfall konnte es beim Löschen einer Terminserie in der Tagesansicht des Kalenders zum Absturz des Clients kommen.\\ 
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Dateien per Drag &amp; Drop anhängen\\ Beim Erstellen einer neuen eMail können nun Dateien per Drag &amp; Drop in den Editor gezogen werden um sie mit zu versenden.
+  * Eintragsliste aktualisieren\\ Steht man in einem Unterordner und aktualisiert die Eintragsliste, so bleibt man nun anschließend in dem gewählten Ordner.
+  * Auswahl "Öffnen/Herunterladen“ bei Dateianhängen\\ Bei Dateianhängen gibt es nun die Auswahl ob dieser geöffnet oder heruntergeladen werden soll.
+  * Ziel beim Verschieben von eMails per Doppelklick auswählen\\ Beim Verschieben von eMails kann der Ziel-Ordner nun auch per Doppelklick ausgewählt werden.
+  * Tabellen einfügen\\ Beim Schreiben einer eMail lassen sich nun Tabellen einfügen.
+  * Neue Shortcuts\\ Neue Shortcuts sind verfügbar:
+\\ Doppelklick um eMail als gelesen zu markieren\\ STRG+E zum Erstellen einer neuen eMail\\ STRG+F zum Öffnen der Suchleiste (ESC zum Schließen)\\ F10 zum Senden einer eMail
+  * Serverliste einklappen\\ In der Desktop Version kann die Serverliste nun eingeklappt werden, um Platz zu sparen.
+  * Anwender benennen in Kommentaren zu eMails\\ In Kommentaren zu eMails können Anwender durch die Eingabe des @-Zeichens nun benannt werden.
+  * Anzeige des Ordnern „Verknüpfungen“ auf der obersten Ebene\\ Der Ordner "Verknüpfungen" wird nun der obersten Ebene angezeigt, so dass besser auf die verknüpften Ordner zugegriffen werden kann.
+  * Anzeige von Adressen in verknüpften Ordnern\\ Hat ein Anwender einen anderen Adress-Ordner unter seinem eigenen verknüpft, so wurden die Adressen in diesem Ordner nicht im smart client angezeigt.\\ 
+

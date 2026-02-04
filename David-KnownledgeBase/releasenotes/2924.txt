@@ -1,0 +1,34 @@
+====== Version 2924 vom 20.04.2017 ======
+
+Release: 2017-04-20T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Die Engine für die Virus Protection (MCSCAN32.DLL) wurde aktualisiert auf die Version 5.900. 
+
+==== Bugfix ====
+
+  * Existiert der Aufgaben-Ordner eines david Benutzers nicht mehr, und er erhält eine Aufgabenanfrage, so konnte es zum Absturz des Service Layers kommen.
+  * Ist der Service Layer als "eMail Forwarder" eingerichtet, so konnte es in einem Einzelfall zum Absturz kommen, wenn der Ausgangs-Ordner des "David System Users" nicht existiert oder der Service Layer in dem Ordner keine Schreibrechte besitzt.
+  * Wird eine empfangene eMail zunächst als "Rundsendung" identifiziert und liegt somit "eingefärbt" im 2nd Scan, nach dem 2nd Scan wird sie jedoch als "Einwandfrei" identifiziert, so wurde die Einfärbung u.U. beibehalten. Das ist nun korrigiert.
+  * Ist bei den Eigenschaften einer Nachricht das Feld "Letzte Änderung" fehlerhaft (kleiner 0) und der david Client soll diese Nachricht in der Vorschau anzeigen, konnte es zum Absturz des Service Layers kommen.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Wird per david Administrator der Wizzard zur Erstellung eines eigenen Zertifikates aufgerufen, so wird hier nun ein SHA-256 Zertifikat erstellt (bisher SHA-1). Wird es mit dem Tool tlscert.exe (\david\util\windows\tlscert) erstellt, war dies bereits der Fall.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Es wird nun das ActiveSync Protokoll 16 unterstützt. Sofern die Anwendung dies unterstützt, können nun Dateianhänge an Terminen geöffnet werden und als Entwurf gespeicherte Nachrichten werden zum david Server in den entsprechenden Entwurfsordner übertragen.
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bei einer empfangenen eMail mit Umlauten im Dateianhang dazu kommen, dass der Zugriff auf den Eingangsordner per ActiveSync auf dem iPhone nicht mehr möglich war.
+

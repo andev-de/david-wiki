@@ -1,0 +1,128 @@
+====== Version 2755 vom 11.07.2014 ======
+
+Release: 2014-07-11T14:17:26
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Haben Teilnehmer eines TeamBoards Dateien eingestellt und alle beteiligten Teilnehmer löschen diesen Thread, so werden nun auch die Dateien gelöscht.
+
+  * Ist der 2nd Scan aktiviert, so wird bei extern empfangenen eMails ein Hinweis angezeigt, ob zukünftig dem Absender vertraut werden soll. In dem Fall wird die Absender eMail Adresse in die Whitelist des Ordners eingetragen und zukünftig laufen eMails des gleichen Absenders nicht mehr über den 2nd Scan. Ist der 2nd Scan aktiviert und es befindet sich mindestens ein Eintrag in der Whitelist, so kann diese über das Kontextmenü des Ordners eingesehen werden.
+
+  * Bei 64 Bit Systemen wird nun generell ein eigener Prozess (SLPrintHelper64.exe) zum Ausdrucken von HTML Nachrichten benutzt (wie zuvor schon für Windows 8).
+
+  * Wird eine Terminserie incl. Wiedervorlage für mehrere Teilnehmer erstellt und ein anderer Benutzer als der ursprüngliche Ersteller nimmt bei einem Serienelement eine Ausnahme vor, so wurde die entsprechende Wiedervorlage im Wiedervorlage Ordner dieses Benutzers erstellt. Das konnte u.U. dazu führen dass die Teilnehmer anschließend keine Wiedervorlage mehr erhalten. Nun wird in dem Fall der ursprüngliche Ersteller der Terminserie für die Wiedervorlage beibehalten.
+
+  * Der Service Layer synchronisiert nun die internen david® Benutzer in einen Ordner "Interne Benutzer", den der Service Layer automatisch unterhalb von \Adressen anlegt,  wenn er nicht existiert.
+<p>
+Von den Benutzerdaten werden in die Adresse übernommen:
+Display Name
+Titel
+Drei eMail  Adressen
+Fax Nummer
+SMS Nummer
+Telefon Nummer
+Lokale Nebenstelle
+</p>
+<p>
+Im Client können dann diese Adressen bearbeitete werden, vorausgesetzt es bestehen Berechtigungen auf den Ordner. Die oben genannten Felder s
+  * Sind die MIS aktiviert, so wird beim Update nun auch der 2nd Scan aktiviert (Vorgabe 2 min.). Gleiches gilt, wenn die MIS nach dem Update erstmalig aktiviert werden.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Die Suche per Quickfinder wurde optimiert, zuvor konnte es u.U. vorkommen, dass die Suche keine oder falsche Ergebnisse lieferte. Außerdem wurde die "Entf" Taste nicht beachtet.
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Die Funktion "Spam melden" wurde optimiert.
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Beim Zugriff per IMAP konnte es in Einzelfällen (z.B. mit dem Android Mail Programm "K-9 Mail") zum Absturz kommen.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Man konnte bisher eine Nachricht nicht an eine Bcc Adresse versenden.
+
+  * Signierte eMails, die LiveComments enthalten, werden nun an die Geräte nicht signiert übertragen. Andernfalls können die LiveComments u.U. nicht angezeigt werden.
+  * Die Serverseitige Suche funktionierte u.U. nicht bei neu angelegten ActiveSync Benutzern.
+
+  * In einem Einzelfall führte eine eMail mit UTF-8 Zeichen dazu, dass bei Verwendung eines iPhone keine eMails mehr synchronisiert wurden.
+
+  * Wurde eine Änderung am Adressfeld "Geburtstag" durch ein Gerät vorgenommen, so wurde diese Änderung nicht an den david Server übertragen.
+
+  * Ist die Datei webcapture.dll im Verzeichnis \david\apps\webbox\code nicht vorhanden, so konnte es zum Absturz der WebBox kommen (bei der Anzeige eines Fax als PNG Datei). Die Abhängigkeiten wurden nun geändert, so dass die Datei webcapture.dll zwingend erwartet wird und WebBox andernfalls nicht gestartet werden kann.
+
+  * Enthält eine empfangene eMail Adresse als Cc Angabe nur einen "Angezeigten Namen" statt einer korrekten eMail Adresse, konnte dies auf verschiedenen Geräten zu Anzeigefehlern dieser falschen Adressen oder auch zu Fehlern bei der Synchronisierung führen (z.B. beim iPhone). Es werden nun nur noch gültige eMail Adressen übertragen.
+
+  * Beim Kommando "ResolveRecipients" konnte es zum Absturz der WebBox kommen.
+
+  * Beim Beantworten von eMails konnte es auf einigen Geräten vorkommen, dass entweder statt der Absender eMail Adresse die eigene eMail Adresse in das An Feld eingetragen wurde, oder aber gar keine eMail Adresse.
+
+  * In einem Einzelfall konnte es zum Absturz der WebBox kommen, wenn ein Kontakt auf einem Gerät aktualisiert werden sollte, und es sich dabei um eines der erweiterten Adressfelder handelt (z.B. Kinder oder Name des Partners). Wurde hier ein String mit weniger als drei Zeichen übergeben konnte dies zum Absturz führen.
+
+
+  * Liegt das Enddatum eines Serientermins nicht in der Zukunft, sondern in dem Zeitfenster, für das Termine synchronisiert werden, so wurde diese Terminserie nicht übertragen.
+<p>
+Bei einer Serie mit Enddatum, z.B. 8:00-8:30 Uhr beginnend am 14.07.2014 und endend am 18.07.2014, so wurde der Termin am Freitag (18.07.2014) u.U. nicht mehr dargestellt.
+</p>
+
+  * Bei empfangenen eMails wurde die Angabe des To Feldes u.U. auch als Inhalt des Cc Feldes übertragen. Das ist nun behoben.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Per Vorgabe wird nun der Betreff über dem Absender angezeigt (neuer Schalter "Einstellungen/Eintragsliste/Absender über dem Betreff anzeigen"). Markierungen werden nun unter dem Bild angezeigt, das Symbol für Dateianhänge rechts.
+
+  * Die LiveComments Sprechblase wird nun nicht mehr angezeigt, da per Vorgabe die LiveComments nun über der Nachricht angezeigt werden und ein direktes Schreiben von LiveComments ermöglichen.
+
+  * Ist das Farbschema "Überrasch mich" eingestellt, so war dies nach einem Client Update nicht mehr eingestellt.
+
+  * Wird eine Besprechnungsanfrage von einem MS Exchange Server angenommen, so wurden auch alle "Optionalen" Teilnehmer über die Annahme informiert, statt nur der Organisator.
+
+  * Wird die Vorschau unter der Eintragsliste angezeigt, so wurde die Vorschau eines Fax u.U. verzögert dargestellt. Das ist nun optimiert.
+
+  * Die Gruppierung von eMails mit gleichem Betreff ("Nach Konversation ordnen") wurde optimiert. Bisher wurden z.B. auch eMails einbezogen, die den gleichen Betreff hatten, aber von einem anderen Absender kamen. Nun werden nur eMails vom gleichen Absender gruppiert dargestellt.
+
+  * Wird eine signierte eMail mit Anhängen weitergeleitet, wobei die Anhänge den gleichen Dateinamen haben, so wurde beim Öffnen u.U. jeweils der gleiche Inhalt angezeigt.
+
+  * Bei der Einstellung "Vorschau neben Eintragsliste" wird im Ausgang nun das Bild des Empfängern angezeigt (sofern es im Adressordner existiert). Bisher war es immer das Bild des Absenders.
+
+  * Bei der Einstellung "Vorschau neben Eintragsliste" werden in der Eintragsliste nun die Bilder zu den Absendern bzw. Empfängern der Nachrichten angezeigt, sofern diese im Adressbuch vorhanden sind (wie schon in der Vorschau der Nachrichten). Existiert kein Bild, so wird eine farbige Grafik angezeigt, die den Anfangsbuchstaben des Adressaten enthält. In den Einstellungen des Clients kann dies deaktiviert werden.
+
+  * Die Datenübertragung für den postlagernden Versand wurde optimiert, so dass das Hinzufügen sehr großer Dateianhänge nun schneller ist.
+
+  * Wenn der Dateiname einer EML Datei Unicode Zeichen enthält, die nicht in ANSI darstellbar sind, konnte diese EML Datei u.U. nicht per Drag & Drop oder per "Speichern" in den Client importiert werden.
+
+  * Es gibt nun eine Reihenfolge nach der die Adressen bei der automatischen Vervollständigung vorgeschlagen werden:
+<p>
+1. Häufigkeit der Benutzung der Adresse
+2. Rang des Ordners der Adresse
+3. Ist beides gleich dann alphabetisch.
+</p>
+  * Die LiveComments werden nun per Vorgabe über dem eMail Text angezeigt. Zusätzlich wurde die Hintergrundfarbe (bisher gelb) geändert. Oberhalb der LiveComments gibt es rechts ein neues Menü, über das z.B. die Position geändert werden kann.
+
+  * "Slowakisch" wurde in den Einstellungen des Clients aus der Sprachauswahl entfernt.
+
+  * Neue Einstellung im david Client: "Zugang/ActiveSync: Erinnerungen nur für eigenen Termine". Wird ein Kalender synchronisiert, in dem auch andere Benutzer Termine eintragen, kann somit eine Erinnerung an fremde Termine verhindert werden. Zusätzlich gibt es in den Einstellungen verknüpfter Kalender ("Gruppenkalender") den neuen Schalter "ActiveSync Erinnerung", mit dem dies pro Kalender individuell eingestellt werden kann.
+
+  * Der Client speichert nun beim Erstellen oder Ändern einer Verteilregel den Namen  des Benutzers und zeigt ihn in dem Dialog "Verteilregeln" an.
+
+  * Die Wörterliste wurde erweitert.
+
+

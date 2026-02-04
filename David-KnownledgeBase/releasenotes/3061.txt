@@ -1,0 +1,80 @@
+====== Version 3061 vom 20.05.2019 ======
+
+Release: 2019-05-20T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * david Benutzerkonten reaktivieren\\ Die Benutzerkonten von deaktivierten david Benutzern, die in der Liste „Gelöschte Benutzer“ der david Benutzerverwaltung enthalten sind, können nun wiederhergestellt werden. Dazu enthält das Kontextmenü nun den neuen Eintrag „Reaktivieren“. Sofern noch vorhanden, wird den Benutzern dabei ihre alte Ordnerstruktur samt Inhalt wieder zur Verfügung gestellt.
+
+  * Import von Adressen mit Sonderzeichen\\ Erweiterte Funktionen für den Import von Adressdaten erleichtern die Übernahme von Adressen mit Sonderzeichen (z.B. mit tschechischen Namen). So ist jetzt auch der Import von Dateien im UTF-8 Format möglich. Dafür muss die zu importierende Datei als erste Zeile den Parameter [UTF8] enthalten und im Format UTF-8 (ohne BOM) gespeichert werden. Weitere Informationen zum Adressimport enthält die Hilfe des david Administrators.
+
+
+==== Bugfix ====
+
+  * Geringere Systemauslastung bei bei Änderungen in der Benutzerkonfiguration\\ Der bei Änderungen in der david-Benutzerkonfiguration auftretende Einfluss auf die Auslastung des Servers wurde reduziert. Das macht sich hauptsächlich in großen Umgebungen bemerkbar.
+
+  * Port-Erweiterungen für david3 Small Business Versionen\\ Small Business Versionen von david3 lassen sich durch das Eintragen zusätzlicher Portlizenzen um Kommunikationsports erweitern. Bisher standen die Ports jedoch u.U. trotz Hinzufügen gültiger Lizenzen anschließend nicht zur Verfügung. Dieses Verhalten tritt jetzt nicht mehr auf.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * david Benutzerkonten reaktivieren\\ Die Benutzerkonten von deaktivierten david Benutzern, die in der Liste „Gelöschte Benutzer“ der david Benutzerverwaltung enthalten sind, können nun wiederhergestellt werden. Dazu enthält das Kontextmenü nun den neuen Eintrag „Reaktivieren“. Sofern noch vorhanden, wird den Benutzern dabei ihre alte Ordnerstruktur samt Inhalt wieder zur Verfügung gestellt.
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Vermeidung unvollständiger Reply-To Adressen\\ Beim Empfang einer eMail mit Reply-To Angabe konnte es in einem Einzelfall vorkommen, dass Information abgeschnitten wurde und daher beim Beantworten per david Client nicht vollständig zur Verfügung standen. Dieses Verhalten wurde korrigiert.
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Vermeidung unvollständiger Reply-To Adressen\\ Beim Empfang einer eMail mit Reply-To Angabe konnte es in einem Einzelfall vorkommen, dass Information abgeschnitten wurde und daher beim Beantworten per david Client nicht vollständig zur Verfügung standen. Dieses Verhalten wurde korrigiert.
+
+  * Optimierter POP3-Abruf bei langsamer Verbindung\\ Der eMail-Abruf über per POP3 wurde speziell für den Einsatz bei langsamen Verbindungen und/oder die Übertragung großer Dateianhängen überarbeitet. Zuvor konnte es hier u.U. zu unerwünschten Verbindungsabbrüchen kommen. 
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Optimierter ActiveSync-Abgleich mit Samsung eMail App\\ Der eMail-Abgleich per Exchange ActiveSync mit der Samsung „E-Mail“ App wurde optimiert. Zuvor war u.U. der Inhalt empfangener signierter eMails unvollständig, wenn Anwender zusätzlich Kommentare hinzugefügt haben. Dieses Verhalten wurde korrigiert.
+
+  * Unterstützung längerer Benutzernamen für david Client Web\\ Die Länge von Benutzernamen für den Remote Access per david Client Web ist nicht länger auf maximal 30 Zeichen beschränkt. Ab sofort ist also auch die Verwendung von Benutzernamen mit mehr als 30 Zeichen möglich.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Nachvollziehbarkeit bei manuellem Verteilen von Nachrichten\\ Wird eine Nachricht über den Kontextmenupunkt „Verteilen“ manuell verteilt (kopiert oder verschoben), so werden Informationen zu dieser Aktion (Zeitpunkt, Name des Anwenders, Quellordner und Zielordner) ab sofort gespeichert und in dem Tab „Antwort/Weiterleitung an“ über der Vorschau angezeigt. Dort stehen sie dann zusätzlich zu den Infos über ggf. erfolgte Antworten und Weiterleitungen. 
+
+  * Zusammenfassung schnell aufeinanderfolgender LiveComments\\ Schreibt ein Anwender mehrmals kurz hintereinander LiveComments zu einer eMail, ohne dass zwischendurch andere Anwender eigene Anmerkungen machen,  werden seine Kommentare nun in einer Sprechblase zusammengefasst und dort durch einen leicht vergrößerten Zeilenabstand optisch voneinander getrennt. Sobald mehr als 5 Minuten seit dem letzten Kommentar vergangen sind, wird generell eine neue Sprechblase erzeugt.
+
+  * Unterscheidung von Nutzern mit gleichen Vornamen in LiveComments\\ In LiveComments von eMails können nach Eingabe des @ Zeichens einzelne Personen aus dem Verteilerkreis ausgewählt und so gezielt benannt bzw. angesprochen werden. Der Vorname einer so ausgewählten Person wird dann optisch hervorgehoben (farbig und in Fettschrift) in den Text eingefügt. Befinden sich mehrere Personen mit identischen Vornamen im Verteilerkreis, wird hier ab sofort der erste Buchstabe des Nachnamens bzw. der komplette Nachname hinzugefügt.
+
+  * Anzeige des Ortes in Kalenderansicht\\ In den auf der Tagesansicht basierenden Kalenderansichten (Arbeitswoche usw.) wird nun, falls genug Platz für eine weitere Zeile ist, auch der Ort des Termins angezeigt. Bisher ließ sich diese Information in der Kalenderansicht nur durch Zeigen mit der Maus (MouseOver) anzeigen.
+
+  * Gleichzeitiges Kopieren und einfügen mehrerer Termine&nbsp; \\ m Kalender können nun auch mehrere Termine gleichzeitig per Kopieren und Einfügen an einem anderen Tag eingefügt werden.
+
+
+==== Bugfix ====
+
+  * Wertung für Erinnerungen\\ Der Nachrichtentyp Erinnerung („Neu/Erinnerung“) kann nun auch mit einer Wertung versehen werden (normal/gut/schlecht - dargestellt durch keine/grüne/rote Unterstreichung). Bisher war die Wertung zwar auswählbar, wurde aber bei Anzeige der Erinnerung nicht dargestellt. 
+
+  * Stabilität des Fax Viewers verbessert\\ Die Stabilität des Fax Viewers wurde weiter optimiert. Zuvor konnte u.U. das Drucken eines Faxes direkt aus dem Viewer heraus oder die Änderung der Skalierung auf 400% zum Absturz des Moduls führen. Das tritt nun nicht mehr auf. 
+
+  * Optimierte Darstellung neuer Chat Nachrichten\\ Bei Nutzung des david Chat in einem eigenen Fenster werden mehrere aktive Chats als Registerkarten angezeigt, deren Titel in rot dargestellt werden, wenn sie noch ungelesene Nachrichten enthalten. U.U. wurden hier nach dem Absenden einer eigenen Chat Nachricht auch solche Chats rot markiert, in denen sich keine neuen oder ungelesenen Einträge befinden. Das wurde nun korrigiert.
+
+  * Eingabe-History für die Funktion „Antworten an„\\ Beim Erstellen einer neuen Nachricht lässt sich über den Punkt „Datei/Nachrichtenoptionen/Antworten an“ eine individuelle Adresse angeben, die automatisch verwendet wird, wenn der Empfänger die „Antworten“ Funktion nutzt. Dabei verfügt das „Antworten an“ Feld über eine History-Funktion, die alle zuletzt dort eingetragenen Adressen als Auswahl zur Verfügung stellt. Diese History arbeitete u.U. nicht korrekt und wurde jetzt korrigiert.
+
+  * Vollständiges Deaktivieren der Telefonie-Einstellungen\\ In den Einstellungen des david Client lassen sich unter „Telefon“ mithilfe des Punktes „Telefonie-Dienste nutzen“ die Telefonie-Funktionen entweder aktivieren oder komplett abschalten. Bisher blieben jedoch auch bei deaktivierten Telefonie-Diensten die Einstellungen in dem Unterpunkt „Telefon/Erweitert“ weiterhin verfügbar, ohne dass Änderungen hieran eine Auswirkung hatten. Ab sofort sind nach Deaktivieren der Telefonie-Dienste auch diese Einstellmöglichkeiten nicht mehr änderbar. 
+
+

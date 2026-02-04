@@ -1,0 +1,45 @@
+====== Version 3567 vom 14.09.2023 ======
+
+Release: 2023-09-14T00:00:00
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Testen der Provider Anmeldedaten (SMTP Port 465)\\ Der „Test“ Button bei den Einstellungen zum Versand über einen Provider testet die Erreichbarkeit des Mails Servers neben den Ports 25 und 587 nun auch den Port 465.
+  * KI Einstellungen\\ Unter System/KI kann die KI Nutzung durch die neue Team Anwendung aktiviert werden. Außerdem kann das Recht zur KI Nutzung bei jedem Anwender aktiviert bzw. deaktiviert werden.
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler im Status Monitor\\ Im Status Monitor konnte es zu einem Anzeigefehler kommen (es wurde Text aus einem anderen Dialog angezeigt).
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Anwendung „Team“ die unter anderem KI Funktionen enthält\\ Die neue Anwendung „Team“ enthält u.a. umfangreiche KI Funktionen und kann über das Setup \david\Clients\team-setup.exe installiert werden. Zur Nutzung wird ein chayns Account benötigt, außerdem muss im david Administrator KI unter „System/KI“ aktiviert werden und der Anwender benötigt das Benutzerrecht „KI-Funktionen erlauben“.
+
+==== Bugfix ====
+
+  * Optimierung bei der Anzeige der selektierten Buttons in der Favoritenleiste\\ Die Anzeige des aktuell selektierten Buttons in der Favoritenleiste wurde optimiert.
+  * Möglicher Anzeigefehler im Dark Mode\\ Im Dark Mode konnte es im Dialog zur Erstellung einer Erinnerung zu einem Anzeigefehler kommen.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Optimierung beim Start des WebAPI Dienstes\\ Es konnte vereinzelt vorkommen, dass beim Neustart des david Servers der WebAPI Dienst nicht automatisch gestartet wurde, das wurde nun optimiert.
+

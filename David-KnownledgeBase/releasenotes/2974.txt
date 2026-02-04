@@ -1,0 +1,32 @@
+====== Version 2974 vom 15.01.2018 ======
+
+Release: 2018-01-15T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Hat ein Anwender in einem vom Notifier überwachten Ordner nur Leserechte, so konnte er in der InfoCenter Ansicht u.U. dennoch neue Nachrichten aus diesem Ordner in andere Ordner verschieben.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Der Button zur Anzeige der Anzahl Nachrichten hat nun ein "Pin" Symbol und kann darüber dauerhaft angezeigt werden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Die Bezeichnungen der chayns® Menüpunkte wurden angepasst.
+
+==== Bugfix ====
+
+  * Beim Löschen einer Aufgabe konnte es zum Absturz kommen. 
+  * Ist ein Layout eingestellt, so wurden Programmsymbole in der Schnellstartleiste u.U. nicht angezeigt.
+
+=====  ISDN TLD =====
+
+==== Bugfix ====
+
+  * Ist im Script eingestellt dass eine Voice Datei abgespielt werden soll und diese existiert nicht, so konnte es zum Absturz des TLDs kommen.
+ 
+
+

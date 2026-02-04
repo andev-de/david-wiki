@@ -1,0 +1,44 @@
+====== Version 3344 vom 14.07.2021 ======
+
+Release: 2021-07-14T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Optimierung der Blocklist Funktion bei der Viruserkennung\\ In der Blocklist können Dateinamen eingetragen werden, so dass eMails mit solchen Dateianhängen generell als virusbehaftet behandelt werden. Sind in der Datei Leerzeilen enthalten, so konnte es u.U. vorkommen dass auch andere Dateianhänge entsprechend behandelt wurden.
+  * Fehlerhafte Darstellung von Umlauten bei Annahme einer Besprechungsänderung\\ Wird eine Besprechungsänderung angenommen und diese enthält Umlaute im Text, so wurden diese anschließend falsch angezeigt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Informationen zur Stornierung einer Besprechungsanfrage in der Vorschau\\ Erhält man die Stornierung zu einer Besprechungsanfrage, so werden die Informationen hierzu nun auch schon in der Vorschau angezeigt (bisher nur beim Öffnen des Eintrags). Zusätzlich gibt es hier nun einen neuen Button, um diesen Eintrag und den zugehörigen Kalendereintrag direkt zu löschen (bisher nur beim Öffnen des Eintrags).
+  * eMail durch Doppelklick in der Vorschau öffnen\\ Wird die Chromium Engine verwendet, so kann nun durch einen Doppelklick in der Vorschau die eMail geöffnet werden.
+
+
+  * Optimierungen beim Chromium Editor\\ Beim Chromium Editor wurden weitere Optimierungen vorgenommen.
+  * Auswahl der Chromium Einstellungen\\ In den david Client Einstellungen unter „HTML“ steht nun nur eine Chromium Rendering-Methode zur Auswahl statt wie bisher zwei, der bisherige „Fenstermodus“. Hierbei ist nun auch das Drag &amp; Drop von Dateien in den Chromium Editor möglich.
+  * Menüpunkt „Speichern unter“ bei Bildern in Chromium Vorschau\\ Wird die Chromium Engine verwendet, so gibt es im Kontextmenü der Vorschau nun den neuen Menüpunkt „Speichern unter“, um Bilder speichern zu können.
+  * Aktualisierung der Chromium Engine\\ Die verwendete Chromium Engine wurde aktualisiert.
+  * Anzeige der StrongBox Images auf Übersichsseite\\ In der Übersichtsseite der einzelnen StrongBox Images werden die erstellten Backups nun in geänderter Reihenfolge dargestellt, die neusten stehen nun oben.
+  * chayns.de Seite beim Wechsel zur InfoCenter Ansicht\\ Beim Wechsel zur InfoCenter Ansicht wird die chayns.de Seite nun nicht mehr angezeigt.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei der Auswahl einer Vorlage\\ Soll eine Vorlage ausgewählt werden, so konnte es zum Absturz kommen, wenn der Anwender keine Rechte im globalen Vorlagen-Ordner hat oder dieser nicht existiert.
+  * Speichern der Editor Einstellungen\\ Wurden die Editor Einstellungen noch nie gespeichert und es ist für das Antworten/Weiterleiten keine Vorlage eingestellt, so wurde hierbei die Schriftart Courier verwendet, statt Arial.
+  * chayns Login u.U. nicht möglich\\ Das chayns Login per Facebook war u.U. nicht mehr möglich.
+  * Dateianhänge einer eMail löschen\\ Wird beim Weiterleiten oder Antworten einer eMail der Dateianhang gelöscht, so wurde der Bereich der Dateianhänge dennoch weiterhin angezeigt.
+  * Mögliches Fehlverhalten bei der Installation der digitalen Signatur\\ Ist für die Vorschau und die ReadOnly Ansicht der IE und nicht Chromium aktiviert, so fehlte in der eMail mit der digitalen Signatur u.U. der Button zum Installieren.
+  * Mögliches Fehlverhalten beim Beantworten von eMails mit Dateianhängen\\ Wird eine empfangene eMail mit Dateianhängen beantwortet und es werden hierbei die Anhänge verändert (z.B. der vorhandene gelöscht und ein neuer hinzugefügt), so war bei der anschließenden Frage ob die Dateianhänge mit versendet werden sollen, diese Auswahl u.U. nicht voreingestellt. Außerdem kam es vor, dass beim erneuten Aufruf des Dialogs der zuvor gesetzte Schalter dann nicht mehr gesetzt war.
+  * Mögliches Fehlverhalten bei Grafiken in Vorlagen und Textbausteinen\\ In Einzelfällen wurden Grafiken in Vorlagen und Textbausteinen u.U. nicht angezeigt.
+  * Mögliche fehlerhafte Vorlage beim Wechsel des Absenders\\ Wird der Absender gewechselt und bei dem neuen Absender ist die Vorlage „Ohne Formatierung“ eingestellt, so wurde diese falsch eingefügt.
+  * Mögliche Fehlverhalten beim Drag &amp; Drop von Dateien in eine eMail\\ In Einzelfällen konnte es vorkommen dass das Drag &amp; Drop von Dateien von einer eMail in eine andere eMail nicht möglich war.
+  * Mögliches Fehlverhalten beim Klick in das „An“ Feld\\ In Einzelfällen konnte es beim Mausklick in das An-Feld des Editors zu einer Schutzverletzung kommen.
+  * Mögliches Fehlverhalten beim Ausdruck von EML Anhängen mit Grafiken\\ Wird eine angehängte EML Datei geöffnet und gedruckt, so wurden Grafiken in der EML Datei u.U. nicht mit gedruckt.
+  * Mögliches Fehlverhalten beim Löschen von Dateianhängen\\ Wird eine empfangene eMail mit Dateianhängen zum Weiterleiten geöffnet und man möchte für die neue Nachricht nur ausgewählt Dateianhänge beibehalten, so konnte es bei der Auswahl vorkommen, dass doch alle Anhänge an die neue Nachricht angehängt wurden.
+  * Scrollen in längeren Menüs\\ Das Scrollen in längeren Menüs (z.B. im Editor „Format/Codierung“) wurde optimiert.
+  * Mögliches Fehlverhalten beim Einfügen mehrerer Bilder\\ Wird ein Bild in eine neue Nachricht eingefügt, die Quelldatei durch ein anderes Bild ersetzt und auch dieses Bild eingefügt, so wurde anschließend das falsche Bild versendet. Das wurde nun optimiert.
+

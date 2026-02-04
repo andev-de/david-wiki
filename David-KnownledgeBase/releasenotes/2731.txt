@@ -1,0 +1,66 @@
+====== Version 2731 vom 24.01.2014 ======
+
+Release: 2014-01-24T20:15:36
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Es konnte u.U. vorkommen, dass ein neuer LiveComment nicht als ungelesen angezeigt wurde, das ist nun geändert. Außerdem wird nun der Button "Als gelesen markieren" bei den LiveComments automatisch ein/ausgeblendet, abhängig vom Status des zugehörigen Eintrags. Bei einer ungelesenen Nachricht mit LiveComments bewirkt das Klicken in das Editfeld des LiveComments, dass der Eintrag als gelesen markiert wird.
+
+  * Wird über den FaxWare Druckertreiber eine Faxrundsendung erstellt, im "Nachricht versenden" Dialog ein Betreff angegeben und die Adressen aus dem Adressbuch gewählt, so wurde der Betreff durch die Namen der Adressen überschrieben.
+
+  * Beim Löschen in den Ergebnissen der Volltextsuche kann man nun auch statt der Verknüpfung den zugehörigen Originaleintrag löschen.
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Bei empfangenen signierten eMails konnte es in Einzelfällen vorkommen, dass diese Dateianhänge anschließend im geöffneten Editor des Clients nicht angezeigt wurden.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Der Schalter "Kein Arbeitstag" in den Einstellungen von Terminen bewirkt nun dass der Tag bei der Suche mittels Terminassistent nicht berücksichtigt wird.
+  * Die neue Ansicht "Gruppen" zeigt die Termine der eingerichteten Gruppenkalender nebeneinander an.
+
+  * Ist die Anzeige "Vorschau unter der Eintragsliste" eingestellt, so konnte es nach dem Weiterleiten einer eMail und anschließendem Speichern der verwendeten Adresse beim Eintragswechsel dazu kommen, dass immer der gleiche eMail Header angezeigt wurde.
+
+  * Enthält eine empfangene eMail viele Empfängeradressen, so dass zur Anzeige der Adressen gescrollt werden muss, so wurde beim Mouseover auf diesen Adressen u.U. die falsche Adresse im Tooltipp angezeigt.
+
+  * Wird beim Einfügen der Initialen (STRG+N) ein Textbaustein verwendet, so konnte es bei bestimmten eMails oder RSS Feeds zu unnötig eingefügten Leerzeilen kommen (in Verbindung mit dem Internet Explorer 11).
+
+  * Wird der Internet Explorer 11 verwendet, so konnte es beim Weiterleiten/Antworten auf bestimmte eMails oder beim Weiterleiten bestimmter RSS Feeds zu Darstellungsfehlern oder unnötig eingefügten Leerzeilen in Verbindung mit der eingestellten Vorlage kommen.
+
+  * Wird eine neue Nachricht ohne eine Vorlage erstellt und man klickt mit der Maus in das Textfeld, so stand der Cursor u.U. nicht an erster Stelle, sondern hinter einem eingefügten Leerzeichen.
+
+  * Enthält ein Ordner mehr als 100 Textbausteine und im Editor wird über "Einfügen/Textbausteine" einer dieser Textbausteine ausgewählt, so funktionierte anschließend u.U. die HTML Ansicht bei eMails nicht mehr bis zum Neustart des Clients.
+
+  * Wird beim Versenden einer Besprechungsanfrage ein Adressordner statt einzelne Adresseinträge selektiert, so konnte es zum Absturz des Clients kommen.
+
+  * Der Ausdruck einer SQL Adresse funktioniert nun auch aus dem geöffneten Editor - bisher nur per Kontextmenü aus der Liste.
+
+  * Gibt man längere LiveComments über das Vorschaufenster ein, so konnte im Text u.U. nicht mehr gescrollt werden. Das wurde nun verbessert.
+
+  * Wird aus einer versendeten Nachrichten zitiert, so enthält die Vorlage nun auch die Empfängerangabe. Bisher fehlte sie in diesem Fall.
+
+  * Auf der StrongBox Portalseite wird nun auf dem Tab nicht mehr die kryptische URL angezeigt, sondern der Name des Backups.
+
+Bei lokal gemounteten Backups wird in der Tabelle nun auch der Ort der Sicherungsdatei angezeigt.
+
+  * Wird im Dialog "Ordner Eigenschaften" auf der Seite "Sortierung" der Button "Übernehmen" geklickt, so kam es zu einem Anzeigefehler.
+
+  * In der Übersicht der StrongBox Sicherungen (eine HTML Ansicht) kam es bei großen Monitoren zu einem Anzeigefehler. Die einzelnen Blöcke erschienen dann teilweise ineinander verschoben.
+
+  * Wenn man im Navigator die Selektion mit den Cursor Tasten ändert, blieb beim zuletzt selektierten Ordner die Fettschrift stehen.
+
+  * Beim Antworten/Weiterleiten einer eMail wurde u.U. die falsche Hintergrundfarbe gesetzt.
+
+  * Bei der Einstellung "Sehr langsame Verbindung" wurde die TeamBoards Anzeige nur einzeilig dargestellt. Das wurde nun geändert.
+  * Wenn man per david Skriptfunktion den Menüpunkt "Netzwerk" ausblenden lässt, ließen sich Ordner nicht mehr in einem separaten Fenster öffnen.
+
+

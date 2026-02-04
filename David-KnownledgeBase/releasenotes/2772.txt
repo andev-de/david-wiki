@@ -1,0 +1,23 @@
+====== Version 2772 vom 01.12.2014 ======
+
+Release: 2014-12-01T18:16:58
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * In Einzelfällen konnte es vorkommen, dass Hybrid Mail Sendeaufträge als "unbearbeitet" im Transit liegen blieben. Außerdem wurde die TLD Konfiguration optimiert.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Ist Android 5.0 installiert, so konnte es bei der Nutzung von ActiveSync u.U. vorkommen, dass die Kontakte nicht mehr korrekt synchronisiert wurden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert. 
+

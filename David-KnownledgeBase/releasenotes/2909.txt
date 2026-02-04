@@ -1,0 +1,72 @@
+====== Version 2909 vom 21.12.2016 ======
+
+Release: 2016-12-21T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Mit der neuen Variable %(autoreply-forward-address) in einer Autoreply-Vorlage kann das Feld "Zusätzlich weiterleiten an" beim Abwesenheitsassistenten ausgegeben werden.
+  * Neuer Schalter im david.Administrator: System/Optionen/Fax-Weiterleitung als PDF-Dateien bei XMedia". Bewirkt, dass bei einer Client Verteilregel, bei der empfangene Faxe als Dateianhang per eMail weitergeleitet werden, diese als PDF und nicht als TIFF (Vorgabe) erstellt werden. 
+
+==== Bugfix ====
+
+  * In Einzelfällen konnte es vorkommen, dass Systemnachrichten bei LiveComments ("Empfänger hinzugefügt", "Stimme zu") nicht eingetragen wurden. Das wurde behoben.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Wird eine eMail per FileScan Service erstellt und der Befehl @@displayname verwendet, so wurde der „Angezeigte Name“ der eMail Adresse u.U. im eMail Header nicht übertragen oder aber er wurde ohne Leerzeichen getrennt direkt an die eMail Adresse gesetzt.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Der Grabbing Server kann RSS Feeds nun auch per https Verbindung abholen (z.B. heise.de).
+
+==== Bugfix ====
+
+  * Ein möglicher Absturz des Grabbing Servers beim Abholen von RSS Feeds wurde behoben.
+  * Ist das Verzeichnis \david\archive\media\feeds\tempdvg nicht vorhanden (z.B. versehentlich gelöscht), so wurden keine RSS Feeds mehr abgeholt. Das Verzeichnis wird nun beim Start erstellt, wenn nicht vorhanden.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Wird per david Client Web eine vorhandene Aufgabe oder ein vorhandener Termin geändert, so wurde der Textinhalt u.U. entfernt.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Farben der Terminbeschriftungen wurden optimiert - zuvor war z.B. die Farbe des 10. Eintrags (gelb) nach grün geändert worden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Im david.Administrator kann unter "System" die URL für eine Website eingetragen werden, die dann im david Client als neuer Button in der Favoritenliste angezeigt wird.
+  * Im Editor von Aufgaben und Terminen steht nun auch der Menüpunkt "Format/ HTML (Klassische Optionen)" zur Auswahl.
+  * In den Client Einstellungen gibt es nun auch die Einstellung „Editor/Erweitert/Immer Menü anzeigen“.
+  * Im Kontextmenü einer Chat Gruppe gibt es nun zusätzlich den Punkt "Teilnehmer". Im Folgedialog wird dann auch angegeben, wer der Administrator der Gruppe ist.
+
+==== Bugfix ====
+
+  * Wird eine eMail geöffnet und soll mit der Funktion "Als Notiz versenden" beantwortet oder weitergeleitet werden, so wurde u.U. Text der eMail abgeschnitten.
+  * Werden beim hybrid mail Druck die Einstellungen für Farbe und Beidseitigen Druck geändert, so konnte es beim Anschließenden Klick auf "Senden" oder "Abbrechen" zum Absturz kommen.
+  * In einem Einzelfall konnte es beim Ausdruck einer eMail zum Absturz kommen.
+  * In einem Einzelfall wurde der Separator beim Weiterleiten einer eMail nicht am Anfang, sondern in die Mitte der eMail plaziert.
+  * Bei höherer DPI Einstellung wurden in Einzelfällen die Wortvorschläge der Rechtschreibprüfung fehlerhaft angezeigt.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Die Farben der Terminbeschriftungen wurden optimiert - zuvor war z.B. die Farbe des 10. Eintrags (gelb) nach grün geändert worden.
+  * Der Betrieb des david Clients nach dem Standby Modus wurde optimiert.
+
+==== Bugfix ====
+
+  * Bei bestimmten Kodierungen des Betreffs empfangener eMails konnte es zum Absturz des david Clients kommen.
+  * Das Zitieren von eMail Inhalten funktionierte u.U. nicht mehr.
+  * Ist die Anzeige der RSS Feeds deaktiviert, so wurden die Feeds trotzdem unnötigerweise geladen.
+  * Soll beim Löschen einer externen eMail gleichzeitig eine Verteilregel erstellt werden, die diese eMails (z.B. vom gleichen Absender) dauerhaft löscht, so konnte es im Einzelfall zum Absturz des Clients kommen.
+

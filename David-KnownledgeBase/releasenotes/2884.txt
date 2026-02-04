@@ -1,0 +1,62 @@
+====== Version 2884 vom 16.09.2016 ======
+
+Release: 2016-09-16T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Der Service Layer erstellt zu Beginn eines Monats einen david® Security Report und verteilt diesen an die einzelnen david Benutzer. Er enthält Informationen über die eingestellten Sicherheitsfunktionen der david Installation (z.B. Message Identification Services, Virus Protection, StrongBox), sowie Statistiken über die abgewehrten Spam eMails und Viren. In den Client Einstellungen sowie im david Administrator kann die Zustellung des Reports pro Anwender deaktiviert werden.
+
+==== Bugfix ====
+
+  * Erhält ein Teilnehmer eines Termins die Wiedervorlage hierzu und schiebt oder kopiert diese in einen anderen Ordner, so wurde sie bei allen Teilnehmern erneut eingetragen.
+  * Ist bei einem david Benutzer im david Administrator unter "Empfang/Weitersenden an" eine Adresse eingetragen, und der Benutzer erhält aufgrund eines Termins mit mehreren Teilnehmern eine Wiedervorlage, so wurde diese u.U. permanent wieder eingetragen.
+  * Einträge im Robinson-Verzeichnis mit einem Wildcard an erster Stelle wurden u.U. nicht beachtet.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Im Verbindungstest wurde der Port 587 hinzugefügt.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Bei einer TLS Verbindung enthält der eMail Header nun die Cipher Informationen.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * TLS unterstützt jetzt auch Forward Secrecy, die RSA Verschlüssellungstiefe wurde zudem dem installierten Zertifikat angepasst.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert.
+  * Das horizontale Scrollen per Mausrad wird nun unterstützt.
+  * In den Einstellungen zu den Aufgaben kann jetzt eine Standard Startzeit vorgegeben werden.
+  * Klickt ein Anwender auf den Button um den Verteilerkreis zu einer eMail zu verlassen, so erfolgt nun eine zusätzliche Sicherheitsabfrage (um ein versehentliches Verlassen zu vermeiden).
+  * Die Einstellung "Lokale Zeit mit Server-Zeit abgleichen" wurde entfernt.
+  * Integration von chayns®ID. Der Support für die technische Unterstützung und Hilfe bei der Anwendung wurde bei david® auf chayns® umgestellt. chayns® schafft den direkten Draht zu Tobit.Software und zehntausenden anderen Sites.
+
+==== Bugfix ====
+
+  * Wird eine Verteilregel erstellt und hierbei mehrere Benutzer auf einmal selektiert und als Empfänger eingetragen, so wurde u.U. ab dem 2. Benutzer ein falscher Pfad eingetragen.
+  * Soll eine Nachricht manuell an einen Benutzer mit Umlauten im Namen verteilt werden, so wurde der Benutzer nicht gefunden, wenn man den Umlaut in der Benutzerauswahl eingibt.
+  * Wird bei einer empfangenen eMail beim Absender auf "Kontakt hinzufügen" geklickt, so wurden Vorname und Nachname u.U. nicht in die richtigen Felder der neu erstellten Adresse übernommen.
+  * Wird unterhalb des Aufgaben Ordners ein Order erstellt, der nicht für Aufgaben eingestellt ist und man sucht nach eMails in diesem Ordner, so wurden die gefundenen eMails beim Öffnen im Aufgaben Editor dargestellt.
+  * Wird z.B. das Surface nur im Batteriebetrieb verwendet, so wurde das automatische Client Update u.U. nicht ausgeführt.
+  * Hat man im Client "Fensteraufteilung optimieren" geklickt, so musste nach Wechsel in bzw. aus dem Vollbild Modus die Einstellung u.U. erneut vorgenommen werden.
+  * In einem Einzelfall wurden Emoticons in einer eMail nicht dargestellt.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Das Update der Signaturen bei den PCs wird nun zeitversetzt (bis zu 5 Minuten) ausgeführt, so dass nicht alle PCs gleichzeitig die Dateien abholen.
+

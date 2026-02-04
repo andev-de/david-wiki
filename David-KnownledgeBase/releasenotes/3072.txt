@@ -1,0 +1,50 @@
+====== Version 3072 vom 15.07.2019 ======
+
+Release: 2019-07-15T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Optimiertes Einfügen von Grafiken bei Autoreply-Vorlagen\\ Beim Autoreply können individuelle Vorlagen für den Empfänger der Autoreply Nachricht eingestellt werden. Enthalten diese Vorlagen auch Grafiken, so konnte es in einem Einzelfall vorkommen, dass diese nicht in der versendeten Autoreply Nachricht enthalten waren. Dieses Verhalten wurde korrigiert. 
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler beim Absendernamen einer eMail\\ Wenn der angezeigte Name bei einer eMail-Adresse Umlaute und ein Komma enthält, wurde beim Pop3 Zugriff durch externe Programme auf diese Mail in einem Einzelfall der Name des Absenders fehlerhaft angezeigt. Dieses wurde jetzt angepasst.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Aufnahme eines ActiveSync Gerätes\\ Der david Administrator stellt unter "Fernzugriff &amp; Publizierung/WebBox/ActiveSync" eine Übersicht aller eingerichteten ActiveSync Geräte der david Anwender zur Verfügung. Beim Einrichten eines neuen Geräts durch den Anwender konnte es in einem Einzelfall zum Absturz der WebBox kommen, wenn das neue Gerät in die Übersicht aufgenommen wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Anzeige des Tages beim Wechsel der Kalenderansichten\\ Im Kalender stehen verschiedene Ansichten zur Auswahl, z.B. 7 Tage, Arbeitswoche, Monat. Wählt man einen bestimmten Tag aus und wechselt zwischen den verschiedenen Ansichten, so wird dort nun jeweils der Zeitraum angezeigt, in dem der zuvor gewählte Tag liegt. Bisher wurde beim Wechsel u.U. zum Zeitraum des aktuellen Datums gewechselt.
+  * Optimierte Anzeige von eMails mit Inline Grafiken\\ Das Laden und damit die Anzeige von eMails mit Inline Grafiken wurden optimiert und stark beschleunigt. Zuvor konnte es bei einer langsamen Verbindung oder Verbindung mit hoher Latenz beim Laden von eMails mit vielen/großen Inline Grafiken dazu kommen, dass der Client während des Ladens sich nicht mehr bedienen ließ.
+
+==== Bugfix ====
+
+  * Optimierung bei Auswahl von Dateianhängen über UNC Pfad\\ Wenn beim Erstellen einer eMail eine Datei angehängt und dabei die Dateiauswahl über einen UNC Pfad gemacht wurde, gab es hierbei u.U. eine Fehlermeldung beim anschließenden Versand der eMail.
+  * Öffnen des chayns Messenger Fensters beim Versand einer chayns Nachricht\\ Empfängt man von einem anderen chayns Anwender eine chayns Messenger Nachricht, so öffnet sich im david Client automatisch ein Fenster und zeigt die Nachrichten an. Versendet man selbst z.B. im Browser oder per Smartphone eine Nachricht an einen chayns Anwender so konnte es vorkommen, dass in dem Fall ebenfalls das eigene chayns Messenger Fenster geöffnet wurde. Das wurde nun optimiert.
+  * Einfügen von Hyperlinks bei bestimmten Zeichen optimiert\\ In einer neuen eMail können per Rechtsklick über das Kontextmenü u.a. Hyperlinks eingefügt werden. Wird hierbei der Typ "file" gewählt, so funktionierte dies u.U. nicht, wenn der Pfadname bestimmte Unicode-Zeichen enthält, z.B. den typographischen Bindestrich. Dieses Verhalten wurde korrigiert. 
+  * Mögliches Fehlverhalten bei eingehendem TAPI Anruf\\ In einem Einzelfall konnte es bei einem eingehenden TAPI Anruf zum Absturz kommen, das wurde nun behoben.
+  * Fenstertitel bei neuer Nachricht und Autovervollständigung des Betreffs\\ Beim Erstellen einer neuen Nachricht wird der im Betreff eingetragene Text automatisch im Fenstertitel der neuen Nachricht angezeigt. Wird hierbei ein Vorschlag aus der History übernommen, so wird dieser ab sofort auch direkt im Fenstertitel übernommen. Das war bisher nicht der Fall. 
+  * Versenden eines Statusberichts zu einer Aufgabe an mehrere Empfänger\\ Bei eingetragenen Aufgaben kann ein Statusbericht versendet werden. Erfolgt dies an mehrere Empfänger, so wurde den einzelnen Empfängern bisher nicht angezeigt, wer den Bericht noch erhalten hat. Dies wurde nun angepasst.
+  * Löschen eines stornierten Elements einer Terminserie\\ Wird bei einer Terminserie mit mehreren Teilnehmern ein einzelner Termin verschoben oder gelöscht, so werden die Teilnehmer hierüber informiert und der Termin in ihrem Kalender wird entsprechend angepasst. In einem Einzelfall konnte es vorkommen, dass das Löschen eines einzelnen Termins nicht übernommen wurde. Dieses Verhalten wurde korrigiert.
+  * Optimierung der Chat Anzeige bei mehreren gleichzeitigen Chats\\ Bei empfangenen Chat Nachrichten kann das Chat Fenster als eigenes Fenster dargestellt werden. Erhält man von einem Anwender eine Chat Nachricht und dieser Anwender erstellt zusätzlich eine Gruppe in der man selbst auch Teilnehmer ist, so wurde das von anderen Geschriebene u.U. im falschen Chat angezeigt. Dieses Verhalten wurde korrigiert. 
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Optimierungen bei der Erstellung von Serienfaxen\\ Beim Versuch, ein Serienfax über die Seriendruckfunktion von Office365 und den Faxwaredruckertreiber zu erstellen, konnte es zum Absturz des david Clients Mac kommen. Dieses Verhalten wurde korrigiert und die Erstellung von Serienfaxen optimiert.
+  * Skalierung beim Drucken über FaxWare Druckertreiber\\ Unter Mac OS 10.14 wurde beim Druck über den FaxWare Druckertreiber falsch skaliert, so dass Faxe u.U. rechts abgeschnitten wurden. Dieses Verhalten wurde korrigiert.
+  * Diverse Optimierungen und Korrekturen an der Chat Funktion\\ Die Chat Funktion des david Clients erhielt diverse Optimierungen, kleinere Fehler wurden korrigiert.
+  * Diverse Optimierungen und Korrekturen an der Kommentieren Funktion\\ Die Kommentieren Funktion von eMails wurde an die kürzlich vorgenommenen Änderungen bei der Windows Version des david Clients angepasst. Hierbei wurden auch kleinere Fehler korrigiert.
+

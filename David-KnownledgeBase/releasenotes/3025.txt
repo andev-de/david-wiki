@@ -1,0 +1,74 @@
+====== Version 3025 vom 22.10.2018 ======
+
+Release: 2018-10-22T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Ausdruck von Terminen inkl. Beschriftung\\ Beim Ausdruck von Terminen aus der Tagesansicht von Kalendern kann nun auch die angegebene Beschriftung mit ausgedruckt werden. Hierzu dient die neue Variable ##LABEL##, die im Template \david\code\template\default.cal angegeben werden kann.
+
+
+==== Bugfix ====
+
+  * Optimierte Funktion der FileScan Services\\ Bei Nutzung der FileScan Services konnte u.U. der Effekt auftreten, dass Sendeaufträge nicht korrekt erstellt und stattdessen die Fehlermeldung „Invalid File Format“ im Ereignis Ordner erzeugt wurden. Dieses Verhalten wurde korrigiert.
+
+  * Sofortige Anzeige von Änderungen am Betreff\\ Nach dem Umbenennen des Betreffs von Ordnereinträgen wurden diese Änderungen u.U. nicht sofort in der Eintragsliste angezeigt. Dieses Verhalten wurde korrigiert.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Benutzerübersicht mit separaten Spalten der Benutzer-eMail-Adressen für Empfang und Versand\\ Der david® Administrator zeigt nun in der Übersicht der eingerichteten david® Benutzer (Menüpunkt „System/Benutzer“ im Konfigurationsbaum) die von dem jeweiligen Nutzer für den eMail-Versand und -Empfang genutzten Adressen in zwei separaten Spalten an.
+
+  * Optimierte Anzeige von Statusmeldungen bei TLS-Zertifikat-Anforderung
+
+Bei Anforderung eines TLS-Zertifikats im david® Administrator über den Menüpunkt "TLS-Verschlüsselung" sorgen nun optimierte Anzeigefunktionen für eine verbesserte Information über den jeweils aktuellen Status der laufenden Anforderung.
+
+  * david® Client Hinweis auf fehlende Virenprüfung immer ein-/ausschaltbar\\ In den Einstellungen der Backline Services steht auf der Registerkarte „Viruserkennung“ der Schalter „david® Client Hinweis“ nun permanent zur Verfügung. So lässt sich der Hinweis auf fehlende Virenprüfung beim Öffnen von Dateianhängen externer eMails jetzt jederzeit ein- bzw. ausschalten.
+
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität beim IMAP Zugriff\\ Beim eMail-Abgleich über das IMAP Protokoll konnte u.U. der david® Mail Access Server abstürzen. Das Verhalten des Moduls wurde korrigiert, so dass diese Abstürze nun nicht mehr auftreten.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Automatische Verbindungsprüfung vor Anforderung eines TLS-Verschlüsselungs-Zertifikats\\ Wird im david® Administrator über den Menüpunkt „TLS-Verschlüsselung“ ein TLS-Zertifikat angefordert, so prüft die WebBox ab sofort vor Absenden der Anforderung, ob die eingetragene Domain tatsächlich von extern über den TCP-Port 80 erreichbar ist. Ist das nicht der Fall, wird die Zertifikat-Anforderung nicht durchgeführt und stattdessen ein entsprechender Eintrag sowohl im david® Ereignis Ordner als auch im Status-Monitor der WebBox erzeugt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Zusätzliche Skins zur Individualisierung des david® Client\\ Das Erscheinungsbild des david® Client lässt sich auf unterschiedliche Arten individuell gestalten. Der Punkt „Einstellungen/Layout“ bietet dazu verschiedene Möglichkeiten. Unter anderem können hier Fotos und Grafiken als so genannte Skins für die Darstellung der Programmoberfläche gewählt werden. Ab sofort stehen dort mehr Skins zur Verfügung und bieten so eine größere Auswahl zur Gestaltung der Optik.
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung
+
+
+Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Ausdruck von Terminen inklusive Beschriftung\\ Beim Ausdruck von Terminen aus der Tagesansicht von Kalendern kann nun auch die angegebene Beschriftung mit ausgedruckt werden. Hierzu dient die neue Variable ##LABEL##, die im Template \david\clients\windows\appoint.prn  angegeben werden kann.
+
+  * Link Lookup Service im david® Client Mobile auch ohne Verbindung zum david® Server nutzbar\\ Bei Einsatz des david® Client Mobile war bisher die Nutzung des Link Lookup Service nur bei bestehender Verbindung zum david® Server möglich. Ab sofort gilt diese Einschränkung nicht mehr, so dass die automatische Prüfung von Web-Links jetzt auch funktioniert, wenn der david® Client ohne Verbindung zum david® Server genutzt wird.
+
+  * Hotkey für Offline-/Online-Wechsel bei Einsatz des david® Client Mobile\\ Der david® Client Mobile ist eine spezielle Version des david® Client, die auch ohne permanente Verbindung zum david® Server genutzt werden kann und sich damit z.B. besonders für den Einsatz auf mobilen Computern und Notebooks eignet. Im Offline-Modus arbeitet der Anwender mit einer lokalen Kopie seines aktuellen Datenbestandes, die automatisch mit dem david® Server abgeglichen wird, sobald die Netzwerkverbindung wieder besteht. Ab sofort ist über das Tastaturkürzel [STRG]+[O] ein schneller manueller Wechsel zwischen Online- und Offline-Modus möglich. 
+
+  * SQL Adressen auch für david® Telefonie-Dienste nutzbar\\ Bei Einsatz der david® Telefonie-Dienste stehen nun auch solche Adresseinträge zur Auswahl, die sich in Adress-Ordnern mit der Einstellung „SQL Adressen“ befinden. 
+
+
+==== Bugfix ====
+
+  * Überarbeitete Anzeige der Teilnehmer von privaten Terminen\\ Details über einen Termin, der im Kalender als „privat“ gekennzeichnet ist, sind nur für den Besitzer des Termins selbst sichtbar. Der so genannte Tooltipp, der erscheint, wenn man den Mauszeiger auf einem solchen Termin platziert, zeigte u.U. jedoch auch anderen david® Benutzern die Namen der Besprechungsteilnehmer an. Dieses Verhalten ist nun korrigiert.
+
+  * Optimierte Darstellung von Markierungen bei Kalender-Ausdrucken\\ Beim Ausdruck von Kalenderinhalten werden vorhandene Markierungen von Terminen ab sofort in optimierter Form dargestellt.
+
+  * Speichern benutzerdefinierter Farben überarbeitet\\ Dort, wo Farbeinstellungen vorgenommen werden können, werden benutzerdefinierte Farben in der Regel automatisch gespeichert, um sie beim nächsten Aufrufen der entsprechenden Funktion sofort wieder zur Verfügung zu haben. Dieses automatische Speichern funktionierte bisher u.U. nicht immer zuverlässig. Das Verhalten wurde korrigiert, so dass der Farbauswahl-Dialog des david® Client nun immer auch die zuletzt verwendeten benutzerdefinierten Farben anbietet.
+
+

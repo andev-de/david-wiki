@@ -1,0 +1,18 @@
+====== Version 2758 vom 22.08.2014 ======
+
+Release: 2014-08-22T08:47:39
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Neuer Button "Bereinigung" im david Client oberhalb der TeamBoards. Über ein Menü neben diesem Button können Einträge die ein bestimmtes Alter überschritten haben oder aber bereits gelesen wurden, gelöscht werden. Die Bereinigung bezieht sich nur auf den aktuell selektierten TeamBoard Eintrag.
+
+  * In Einzelfällen konnte es vorkommen, dass vorhandene TeamBoard Einträge nicht mehr angezeigt wurden.
+
+  * Wird eine extern empfangene Nachricht per Client Verteilung (z.B. im Unverteilt) in einen anderen Ordner verteilt, so kann das Anlegen der Whitelist für den 2nd Scan nun auch in diesem Fall genutzt werden - sie wird dann in dem ursprünglichen Ordner erstellt, wo diese Client Verteilung eingerichtet wurde.
+
+  * Ist in einem Ordner eine Sortierung eingestellt (Eigenschaften/Sortierung), so konnte es in Einzelfällen vorkommen, dass nach der nächtlichen Bereinigung einzelne Einträge nicht mehr angezeigt wurden (erst wieder nach deaktivieren der eingestellten Sortierung). Das ist nun behoben.
+
+

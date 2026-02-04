@@ -1,0 +1,70 @@
+====== Version 3174 vom 23.04.2020 ======
+
+Release: 2020-04-23T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Erstellen von Fax Formularen\\ Wird im david Administrator unter "Erweitert/Formular-Manager" ein Fax Formular eingerichtet, so wurde diese bei der anschließenden Faxerstellung u.U. nicht verwendet, wenn zuvor ein Formular mit gleichem Namen gelöscht wurde.
+  * Möglicher Absturz bei eMail Weiterleitung\\ In einem Einzelfall konnte es zum Absturz des Service Layers kommen, wenn PostMan für die Weiterleitung von eMails eingerichtet ist.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Neue Einstellung zur Abwehr von „Brute Force Angriffen“ (Beta)\\ In den PostMan Einstellungen des david Administrators gibt es nun den neuen Tab "Brute Force Attack (Beta)", in dem das Verhalten bei eventuellen Brute Force Angriffen festgelegt werden kann. \\ 
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Angeforderte Tracking Informationen u.U. nicht ausgewertet\\ Werden eMails per POP3 abgeholt, die eine Tracking Anforderung enthalten, so wurde dies u.U. nicht ausgewertet und somit keine Tracking Information an den Absender zurückgesendet.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Optimierung beim IMAP Zugriff (SEARCH Kommando)\\ Beim IMAP Zugriff wurde das Kommando "SEARCH" u.U. nicht korrekt ausgewertet.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Eingefügte Bilder in Vorlage ActiveSync\\ Wird im david Client eine Vorlage für die Verwendung per ActiveSync eingerichtet, so können dort nun auch Bilder eingefügte werden - diese wurden bisher nicht mit versendet.
+
+==== Bugfix ====
+
+  * Dateianhänge öffnen bei ActiveSync Verwendung und geändertem HTTPS Port\\ Wurde die Vorgabe des HTTPS Ports der WebBox geändert und man empfängt per ActiveSync eMails mit Dateianhängen, so konnten diese u.U. nicht abgerufen werden, wenn sie die im david Administrator eingestellte maximal Größe überschreiten (WebBox Konfiguration/ActiveSync).
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Dynamische Teams bei Videokonferenz als Empfänger zur Auswahl\\ Beim Initiieren einer Videokonferenz stehen nun auch die bereits vorhandenen dynamischen Teams als Empfänger zur Auswahl.
+  * Videokonferenz beginnen bei david Client Mobile\\ Steht der david Client Mobile auf dem lokalen Service Layer, so konnte bisher keine Videokonferenz begonnen werden.
+  * Planung einer Videokonferenz\\ Im Dialog "Gespräch" gibt es nun den neuen Tab "Planung", mit dem Anfragen zu einer geplanten Videokonferenz versendet werden können.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.\\ \\ 
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim postlagernden Versand\\ In einem Einzelfall konnte es vorkommen dass beim eMail Versand die Auswahl „Nachrichtenoptionen/Postlagernd“ nicht übernommen wurde.
+  * Optimierung beim Bearbeiten selbst erstellter Adressfelder\\ Das Bearbeiten selbst erstellter Adressfelder wurde optimiert.
+  * Optimierung beim Öffnen einer Excel Datei im david Ordner\\ Wird eine Excel Datei in einem david Ordner gespeichert und später geöffnet, so gab es u.U. die Meldung dass die Datei bereits von einem anderen Benutzer geöffnet sei. Das wurde nun optimiert.
+  * Optimierung der CPU Auslastung bei einer Videokonferenz\\ Die CPU Auslastung während einer Videokonferenz wurde verbessert. Außerdem kann die Blur Funktion nun genutzt werden.
+  * Mögliches Fehlverhalten beim Ausdruck von gescannten Dokumenten\\ Wird ein gescanntes Dokument als PDF gedruckt, so war der Ausdruck u.U. fehlerhaft.
+  * Öffnen von Faxen in gemounteten StrongBox Images\\ Wird ein StrongBox Image per Client gemountet, so konnten darin enthaltene Faxe u.U. nicht geöffnet werden.
+  * Mögliches Fehlverhalten im Transit\\ In einem Einzelfall konnte es in der Ansicht "In Transit" zum Absturz des Clients kommen.
+  * Update des david Client Mobile 64 Bit\\ Ist der david Client 64 Bit als Mobile Version installiert, so funktionierte beim Client Update das gleichzeitige Update des Backends nicht. Das ist nun korrigiert.
+  * Mögliches Fehlverhalten bei Installation per MSI Paket\\ Wird der david Client per MSI Paket verteilt, so wurde hier der 64 Bit Client installiert. Das ist nun korrigiert und es wird wieder die 32 Bit Version installiert.
+  * Mögliches Fehlverhalten beim Ausdruck an „Microsoft PDF Printer“\\ Beim Ausdruck einer Nachricht aus der Eintragsliste an den „Microsoft PDF Printer“ konnte es zum Absturz kommen.
+  * Angezeigte Ordner-Berechtigungen u.U. fehlerhaft\\ Die Berechtigungen einzelner david Benutzer in einem Ordner wurden unter "Eigenschaften/Zugang/Berechtigungen" u.U. fehlerhaft angezeigt.
+  * Mögliches Fehlverhalten beim Ausdruck aus Bildbetrachter\\ Beim Ausdruck aus dem Bildbetrachter konnte es zum Absturz kommen, wenn für den gewählten Drucker ein Dateiauswahldialog geöffnet wird.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Einstellungen zurücksetzen bei WebAPI Dienst\\ Mit dem neuer Schalter "Einstellungen zurücksetzen" in der WebAPI Konfiguration können die vorgenommenen Einstellungen auf die Vorgabe zurückgesetzt werden.
+

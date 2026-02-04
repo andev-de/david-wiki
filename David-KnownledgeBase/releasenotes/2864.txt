@@ -1,0 +1,99 @@
+====== Version 2864 vom 12.05.2016 ======
+
+Release: 2016-05-12T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Wird im david.Administrator der Abschluss-Stempel für den Faxausdruck aktiviert (System/Drucker), so erhält dieser die Faxnummer. Soll stattdessen der Betreff des Fax ausgegeben werden, so kann dies durch einen neuen Parameter in der david.ini (\david\code) erreicht werden: PRINTFAXSUBJECT=TRUE
+  * Fügt der Empfänger einer Aufgabe einen Dateianhang hinzu, so wird dieser nach der Bearbeitung durch den Empfänger nun auch beim Ersteller der Aufgabe angezeigt.&nbsp;
+  * &nbsp;Die mitgelieferten eMail Vorlagen (Ressourcen/Vorlagen) wurden aktualisiert. Zusätzlich wurden die Betreffs dieser Vorlagen geändert, z.B. "Weiße Kachel" statt bisher "eMail Vorlage für neue Nachrichten". Die bisherigen Vorlagen werden in einem Unterordner gesichert.
+
+==== Bugfix ====
+
+  * Sind bei einem david Benutzer im david Administrator neben seiner Haupt eMail Adresse noch weitere eMail Adressen eingetragen und er empfängt eine interne eMail mit einer dieser weiteren eMail Adressen, so funktionierte "Verteiler verlassen" in Verbindung mit LiveComments u.U. nicht korrekt.
+
+  * Das Bearbeiten der Datei viruslst.txt (Black List für Viruserkennung) per david Administrator wurde optimiert, so dass mehr Dateinamen als bisher eingetragen werden können.
+  * In einem Einzelfall konnte es vorkommen, dass die Wiedervorlage zu einer Nachricht endlos erneut im Eingang eingetragen wurde.
+  * Enthält die Anschrift für einen hybrid mail Auftrag min. 2 Kommas, so war der anschließende Versand fehlerhaft.
+  * Bei den Client Verteilregeln gibt es nun zusätzlich die Kriterien "Dateianhang" und "Eingebettete Grafik", so dass z.B. eMails mit bestimmten Dateianhängen verteilt werden können.
+  * Enthält die Robinsonliste Einträge mit Wildcards (*) am Anfang, so konnte dies u.U. dazu führen, dass andere Einträge in der Robinsonsliste nicht gefunden wurden.&nbsp;
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * In den Benutzer Einstellungen des david Administrators ("Benutzerdaten/david® Client konfigurieren") kann nun zusätzlich die Editor Einstellung "Immer Menü anzeigen" vorgegeben werden.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * In der PostMan Konfiguration gibt es nun den neuen Schalter "Zertifikatkette bei TLS-Verbindungen übermitteln" (wie auch schon bei WebBox).
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Wird eine externe Besprechungsanfrage empfangen, so wurde in einem Einzelfall die Terminserie "jeden dritten Mittwoch" als "jeden dritten Dienstag" eingetragen.
+Mögliche Fehler in dem Zusammenhang waren noch: Aus dem letzten Freitag eines jeden 2. Monats wurde jeder vierte Freitag eines jeden 2. Monats und aus dem letzten Samstag im März wurde der letzte Februar im März.
+
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Nach Neustart des Servers konnte es u.U. die Fehlermeldung "TCP/IP SSL Bind Failed" im david Ereignis Ordner geben. Der Start des WebBox Dienstes wurde nun optimiert.
+
+  * Ein möglicher Protokollfehler bei der CardDAV Abfrage wurde behoben: TYPE=work; (Semikolon statt Komma)
+,PREF (Komma statt Semikolon)
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Die Wörterliste wurde erweitert.
+  * Im Aufgaben Editor gibt es nun auch den Menüpunkt "Einfügen/Bild".
+
+  * Beim Einfügen eines Bildes ("Neu/Bild") ist die Einstellung "Vor dem Einfügen bearbeiten" nun Vorgabe.
+  * Im david Client gibt es beim Abwesenheits-Assistenten nun den neuen Schalter "Nur für eMails anwenden".&nbsp;
+  * Beim Löschen von externen Nachrichten, entfällt beim Zeichensatz "Unicode (UTF-8)" die Abfrage ob diese Nachrichten generell gelöscht werden sollen (Verteilregel erstellen).&nbsp;
+  * &nbsp;Diverse Design Anpassungen wurden vorgenommen.
+  * &nbsp;Der Client ist nun "DPI aware" (Windows 10), was eine&nbsp;optimierte Skalierung der Client Fenster und Dialoge bei einer Vergrößerung &gt; 100%&nbsp;ermöglicht. Unter "Einstellungen/Ansicht/DPI-Skalierung" kann dies ggfs. deaktiviert werden.
+  * Der Dialog "Ordnerzugriff" (Einstellungen/Zugang/Parameter sowie Ordner-Eigenschaften/Zugang/Parameter) ist nun ein echtes Client Fenster und kein DFML Formular mehr.
+  * Der Editor wird&nbsp;nun mindestens im IE 8 Modus verwendet (kann unter "Einstellungen/Editor/Erweitert/Kompatibilitätsmodus" deaktiviert werden).
+  * &nbsp;Die mitgelieferten eMail Vorlagen (Ressourcen/Vorlagen) wurden aktualisiert. Zusätzlich wurden die Betreffs dieser Vorlagen geändert, z.B. "Weiße Kachel" statt bisher "eMail Vorlage für neue Nachrichten".
+  * Bei den Client Verteilregeln gibt es nun zusätzlich die Kriterien "Dateianhang" und "Eingebettete Grafik", so dass z.B. eMails mit bestimmten Dateianhängen verteilt werden können.
+
+==== Bugfix ====
+
+  * Wird bei der Einstellung "Vorschau unter Eintragsliste" per Quickfinder gesucht und anschließend sollen Spalten der Eintragliste per Drag &amp; Drop anders angeordnet werden, so konnte es zum Absturz des Clients kommen.
+  * Sind für den Client farbige Symbole eingestellt, so wurden bei der Einstellung "Outdated/Klassisches Layout" im Fax Viewer dennoch die Symbole nicht farbig angezeigt.
+  * Ist für den Client keine Vorlage für neue eMails eingestellt, so wurde in einem Einzelfall dennoch eine eMail Vorlage verwendet.
+
+  * Ist für das Erstellen neuer Termine eine Vorlage eingestellt, so wurde diese beim Erstellen über den Terminassistenten u.U. dennoch nicht verwendet.
+  * Das Kommentarsymbol in der Eintragsliste bei der Einstellung "Vorschau neben der Eintragsliste" wurde in einem Einzelfall nicht angezeigt.
+  * Hat man zur Erstellung von Terminen eine Vorlage eingestellt, und im Quelltext dieser Vorlage steht der Befehl , so konnte es beim Erstellen eines neuen Termins zum Absturz des Clients kommen.
+  * Wird beim Bearbeiten einer eMail lediglich die Hintergrundfarbe geändert, so erfolgte beim Schließen der eMail keine Abfrage nach dem Speichern.
+  * Wenn im Adressordner eine eigene Spalte für einen numerischen Wert gesetzt wird, so konnte danach nicht sortiert werden.
+  * In einem Einzelfall konnte eine ICS Datei für den Import in den Kalender nicht geöffnet werden, Ursache war hier der fehlerhafte Aufbau des DTEND Feldes.
+
+  * Wird ein Termin mit Erinnerung erstellt, die Erinnerung nachträglich entfernt und soll dann erneut gesetzt werden, so wurde das erneute Setzen u.U. nicht übernommen.&nbsp;
+  * In Verbindung mit dem Schalter "Suchbegriff beibehalten" konnte es zu einem möglichen Anzeigefehler beim Quickfinder kommen, so dass die Filterergebnisse nicht stimmten.&nbsp;
+  * Bei einer importierten ICS Datei, bei der Start und Stoppzeit als "VALUE=DATE-TIME" angegeben ist, wurden die Uhrzeiten falsch importiert.
+  * Wird ein Dokument, das ein einzelnes "@" Zeichen enthält, an den hybrid mail Druckertreiber gedruckt, so konnte es zum Absturz kommen.
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * Im Kalendereditor kann man nun bei der Einstellung für die Erinnerung "Benutzerdefiniert" wählen und in dem Folgedialog bis zu 16 unterschiedliche Erinnerungen für einen Termin definieren. Hierbei können absolute Erinnerungen sowie Erinnerungen relativ zu einem Zeitpunkt angegeben werden.
+  * &nbsp;Im david Client Mac gibt es beim Abwesenheits-Assistenten nun den neuen Schalter "Nur für eMails anwenden". 
+  * &nbsp;Beim Abwesenheits-Assistenten kann nun zusätzlich eine Weiterleitung eingestellt werden.
+  * &nbsp;Neue Einstellung "Darstellung/Layout/Tabs oben" (wie schon bei der Windows Version).
+  * &nbsp;Diverse Design Anpassungen wurden vorgenommen.
+  * &nbsp;Die mitgelieferten eMail Vorlagen (Ressourcen/Vorlagen) wurden aktualisiert. Zusätzlich wurden die Betreffs dieser Vorlagen geändert, z.B. "Weiße Kachel" statt bisher "eMail Vorlage für neue Nachrichten".
+

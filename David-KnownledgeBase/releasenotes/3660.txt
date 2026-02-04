@@ -1,0 +1,58 @@
+====== Version 3660 vom 07.08.2024 ======
+
+Release: 2024-08-07T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Terminassistenten\\ In einem Einzelfall wurden bei der Verwendung des Terminassistenten im David Client die möglichen freien Zeiten eines Anwenders nicht korrekt angezeigt. 
+  * Optimierung beim Empfang/Versand von Autoreply eMails\\ In Einzelfällen konnte es vorkommen, dass beim Empfang von externen Autoreply eMails diese nicht als solche erkannt wurden. Gleiches gilt beim Versand von Autoreply eMails an andere eMail Systeme.
+  * Optimierung beim Update der Viren Signaturen\\ In Einzelfällen konnte es dazu kommen, dass das Update der Virensignaturen nicht funktionierte und erst nach einem Neustart des Service Layers die neuen Signaturen geladen wurden. Das wurde nun optimiert.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * KI Einstellungen per Remote Zugriff falsch angezeigt\\ Wird der David Administrator an einem PC statt am David Server selbst gestartet, so wurden die KI Einstellungen nicht korrekt angezeigt.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei „Direkter Weiterleitung„\\ In einem Einzelfall konnten eMails nicht versendet werden, deren Empfänger eMail-Adresse in den PostMan Einstellungen unter „Datenbanken/Direkte Weiterleitungen“ eingetragen ist.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierte Rechtschreibprüfung\\ Im Team Client wurde die Rechtschreibprüfung optimiert. Per Kontextmenü können vorgeschlagene Wörter in das Wörterbuch aufgenommen werden und die Rechtschreibprüfung funktioniert auch in verschiedenen Sprachen.
+  * Tab erstellen bei umbenanntem Favoritenordner\\ Wird ein Ordner in den Favoriten umbenannt, so wird der neue Ordnername nun auch bei der Erstellung eines Tabs verwendet.
+  * Einstellung zum Unterbinden typographischer Ersetzungen\\ In den Einstellungen des Team Clients (Editor/Erweitert) gibt es nun eine Einstellung, um typographische Ersetzungen zu unterbinden („“  –).
+
+==== Bugfix ====
+
+  * eMail in Vorschau u.U. nicht vollständig angezeigt\\ Beim Team Client konnte es in Einzelfällen vorkommen, dass die eMail in der Vorschau unten abgeschnitten wurde und somit nicht vollständig angezeigt wurde.
+  * KI-Dialoge u.U. nicht angezeigt\\ In Einzelfällen konnte es beim Team Client vorkommen, dass im Editor die KI-Dialoge nicht angezeigt wurden.
+  * Mögliches Fehlverhalten bei Vcard Verknüpfung\\ Beim Team Client konnte es vorkommen, dass in den Windows App Einstellungen bei der Dateiendung *.vcf (VCard) der Team Client nicht zur Auswahl stand.
+  * Symbolleiste zur Formatierung im Editor nicht angezeigt\\ In einem Einzelfall bewirkte ein HTML Tag in einer eMail Vorlage, dass im Editor die Symbolleiste zur Formatierung nicht angezeigt wurde.
+  * Frage nach Standard-eMail-Client\\ Der Schalter „Konflikt mit Standard-eMail-Client“ in den Einstellungen des Team Clients war bisher ohne Funktion.
+  * Optimierung bei Speichernutzung (ProviderSync)\\ In Einzelfällen konnte es zu einem erhöhten Speicherverbrauch der ProviderSync.exe kommen, das wurde nun optimiert.
+
+=====  WebAPI (smart client) =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei geändertem TCP Port\\ Ist in der WebAPI Konfiguration ein anderer TCP Port als die Vorgabe (8443) eingestellt, so funktionierte der Zugriff per smart client u.U. nicht mehr.
+

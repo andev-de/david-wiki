@@ -1,0 +1,57 @@
+====== Version 2956 vom 28.08.2017 ======
+
+Release: 2017-08-28T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Im David Administrator können entfernte David Benutzer aus der Liste "Entfernte Benutzer" nun auch endgültig gelöscht werden.
+
+==== Bugfix ====
+
+  * Wird bei der Erstellung einer Nachricht eine Rundsendedatei ausgewählt und es werden im An oder Cc Feld zusätzliche Empfänger eingetragen, so wurde die Rundsendedatei u.U. anschließend gelöscht.
+  * Ist bei einem Anwender im Ausgang eine Verteilregel eingerichtet, die Nachrichten kennzeichnet (z.B. als gelesen markieren, durch ein Symbol kennzeichnen, in anderer Farbe darstellen), so wurde beim internen Versand beim Empfänger diese Nachricht auch entsprechend gekennzeichnet. Nun wirkt diese Regel nur noch auf die Nachrichten im Ordner mit der Regel.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es zum Absturz des Grabbing Servers in Verbindung mit den eingestellten DNS Servern kommen.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Wird per ActiveSync eine neue Adresse erstellt und hierbei auch eine eMail Adresse angegeben, so wurde im Adresseintrag als "Bevorzugte Adresse" Fax statt eMail eingestellt.
+  * In einem Einzelfall konnte es vorkommen, dass Änderungen an Nachrichten im Ordner „Entwürfe“, die per David Client PC vorgenommen wurden, durch die Synchronisation per ActiveSync überschrieben wurden.
+  * In einem Einzelfall konnte es bei der EAS Nutzung durch bestimmte Smartphones (hier Samsung S5) zu einem erhöhten Akkuverbrauch kommen.
+  * Das Versenden von Fotos funktionierte mit der David Client iOS App nicht mehr.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Im Tab "Optionen" der Ordner-Eigenschaften gibt es einen neuen Button mit dem diverse Eigenschaften dieses Ordners auf die weiteren Unterordner vererbt werden können. Im David Administrator kann dieses Recht bei den David Benutzern aktiviert bzw. deaktiviert werden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Soll eine Datei postlagernd versendet werden und der Anwender löscht oder verschiebt die Quelldatei, nachdem er sie im Editor eingefügt hat, so gibt es beim anschließenden Versand nun einen Hinweis auf die fehlenden Quelldatei.
+  * Die eMail Kopfzeile bei der Einstellung "Vorschau unterhalb der Nachrichten" wurde optimiert und enthält nun die gleichen Informationen wie bei der Einstellung "Vorschau neben den Nachrichten"
+  * Beim Öffnen von signierten und/oder verschlüsselten eMails wird der Status nun entsprechend angezeigt. Bisher stand dort generell "Digital signiert".
+
+==== Bugfix ====
+
+  * Der Ausdruck von Nachrichten aus dem Client heraus wurde optimiert. Zuvor konnte es in Einzelfällen vorkommen, dass nach dem Ausdruck vieler Nachrichten nicht mehr gedruckt wurde oder es zu einem Client Absturz kam.&nbsp;
+  * Bei einer zum Weiterleiten geöffneten eMail war das Kontextmenü im eMail Separator u.U. nicht zu öffnen (z.B. um den Verteilerkreis zu übernehmen).
+  * Auf Geräten mit höherer Auflösung war auf dem Ausdruck von Nachrichten die Schrift u.U. zu klein oder wurde abgeschnitten.
+  * Beim Bearbeiten der Verteilregel "Löschen oder kennzeichnen" konnte es in einem Einzelfall vorkommen, dass neben einer Aktion zum Kennzeichnen auch die Aktion zum Löschen aktiviert wurde.
+  * Soll eine Nachricht aus der Eintragsliste heraus gedruckt werden, so konnte es in einem Einzelfall zum Absturz des David Clients bei der Auswahl des Druckers kommen.
+  * Ist die Systemzeit des PCs falsch eingestellt, so konnte es beim Start des David Clients zum Absturz kommen.
+  * Beim Drag &amp; Drop von Bildern aus dem Client heraus auf den Desktop konnte es in einem Einzelfall zum Absturz kommen.
+
+=====  ISDN TLD =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es beim Anruf des TLDs zum Absturz kommen.
+

@@ -1,0 +1,34 @@
+====== Version 3076 vom 25.07.2019 ======
+
+Release: 2019-07-25T00:00:00
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Link zu Verzeichnispfaden in Chat Nachrichten\\ Versendet ein david Anwender im david Chat einen Link zu einem Verzeichnispfad (ohne Leerzeichen), so ist dieser für den Empfänger nun direkt anklickbar und kann somit direkt geöffnet werden.
+  * Aktualisierung der Chromium Engine\\ Die Chromium Engine wird u.a. für die chayns Anmeldung und das Intercom genutzt. Die verwendete Version wurde nun aktualisiert.
+  * Menüpunkt „Quellen konfigurieren“ im Menü des InfoCenter Buttons\\ Über den Menüpunkt "Quellen konfigurieren" können die in der InfoCenter Ansicht angezeigten Ordnerinhalte und Intercom Quellen festgelegt werden. Dieser Menüpunkt wurde zur besseren Erreichbarkeit nun zusätzlich im Kontextmenü des InfoCenter Buttons in der Favoritenleiste aufgenommen.
+  * Vorschau von eMails in Ticker Ansicht\\ In der Ticker Ansicht wird die Vorschau von eMails nun automatisch aktualisiert.
+  * Optimierung bei automatischer Aktualisierung des david Clients\\ Wird auf dem david Server durch eine Rollout Installation die Version des david Clients aktualisiert, so laden und installieren die angebundenen david Clients anschließend automatisch diese neue Version. Dieser Ablauf wurde nun weiter optimiert.\\ 
+
+==== Bugfix ====
+
+  * Optimierung der chayns Anmeldung\\ Meldet man sich per chayns im david Client an, so bleibt diese Anmeldung in der Regel dauerhaft bestehen. In einem Einzelfall konnte es vorkommen, dass man dennoch nicht mehr per chayns angemeldet war, wenn man den david Client mehrere Tage nicht genutzt hatte.
+  * Öffnen von Links im Intercom\\ Ist der Link Lookup Lookup Service aktiviert, erhält der Anwender beim Klick auf einen Link z.B. in einer eMail einen Statushinweis zum möglichen Sicherheitsrisiko des Links. Ist der Dialog deaktiviert, so funktionierte der Aufruf von Links im Intercom u.U. nicht. Das wurde nun korrigiert.
+  * Kopieren von Bildern aus eMails\\ Soll aus einer eMail mit eingefügten Bildern der gesamte Inhalt kopiert und in eine neue eMail eingefügt werden, so wurden die Bilder hierbei u.U. nicht übernommen. Das wurde behoben.
+  * Mögliches Fehlverhalten bei eMails mit Inline Grafiken\\ In einem Einzelfall konnte es beim Eintragswechsel zu einer eMail, die eingefügte Grafiken enthält, zum Absturz kommen. Das wurde nun korrigiert.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Benutzername beim Verlassen des Verteilerkreises einer eMail\\ Verlässt ein Anwender den Verteilerkreises einer eMail so wird bei dem Hinweis hierauf nun auch der Benutzername angezeigt.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierung der Desktop Protection\\ Die Desktop Protection for david, die für Virenschutz auf den Arbeitsplatzrechnern im Netzwerk sorgt, wurde aktualisiert. Unter anderem enthält die neue Version Anpassungen für den Einsatz mit dem neuesten Windows 10 Update (1903). Die Aktualisierung der betreffenden Arbeitsstationen erfolgt nach Installation des david Rollout automatisch.
+

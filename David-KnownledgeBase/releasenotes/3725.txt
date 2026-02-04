@@ -1,0 +1,60 @@
+====== Version 3725 vom 10.12.2024 ======
+
+Release: 2024-12-10T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Anfragen des Link Lookup Service\\ Die Sicherheitsprüfung beim Klick auf Links in Nachrichten (“Link Lookup Service“) erfolgt nun nicht mehr durch den jeweiligen Client, sondern durch den Service Layer.
+
+==== Bugfix ====
+
+  * Langsames Beenden des Dienstes\\ In Einzelfällen konnte das Beenden des Service Layers (z.B. für ein Update) durch aktive Verbindungen sehr lange dauern.
+  * Umlaute in KI-Zusammenfassung u.U. fehlerhaft\\ Wird für empfangene eMails automatisch eine KI-Zusammenfassung erstellt, so konnte es vorkommen dass hier die Umlaute falsch waren.
+  * Eintragsliste im smart client u.U. leer\\ In Einzelfällen konnte es vorkommen, das die Nachrichten des persönlichen Eingangs im smart client nicht angezeigt wurden.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Prüfung auf einen eingetragenen System Administrator\\ Beim Start des David Administrators erfolgt ein Hinweis dass der korrekt eingetragene David Administrator geprüft werden sollte, da dieser wichtige Systemmeldungen und Service-Informationen erhält.
+  * Anzeige des Kontingents der Benutzer- und Portlizenzen\\ Seit dem Rollout 505 können neue Benutzer- und Portlizenzen nur noch in der David Administration eingetragen werden und nicht mehr im lokalen Administrator. Um auch hier weiterhin das Gesamt-Kontingent der Benutzer- und Portlizenzen sehen zu können, werden diese Werte nun zusätzlich im David Administrator unter System/Lizenzen angezeigt.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Optimierung bei der Erstellung von Versandaufträgen per FileScan Service\\ Ist im David Administrator DKIM aktiviert und es sollen Versandaufträge per FileScan Service erstellt werden, so mussten hierzu bisher die David Befehle UTF8Body und UTF8Commands in die Job-Datei eingefügt und die Datei entsprechend UTF-8 kodiert gespeichert werden. Dies entfällt nun.
+
+==== Bugfix ====
+
+  * Möglicher Absturz beim Empfang einer Besprechungsanfrage\\ In einem Einzelfall konnte es beim Empfang einer Besprechungsanfrage zum Absturz kommen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Möglicher Absturz beim Empfang einer Besprechungsanfrage\\ In einem Einzelfall konnte es beim Empfang einer Besprechungsanfrage zum Absturz kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * chayns Seiten öffnen im eigenen Tab\\ Die persönlichen chayns Seiten (money, cards etc.) werden nun in einem eigenen Tab geöffnet. Zuvor hätten sie unter Umständen einen geöffneten Editor überlagert.
+  * Neue Auswahlmöglichkeit beim Einfügen von Textbausteinen\\ Im Dialog zur Auswahl eines Textbausteins gibt es wie schon im David Client nun auch im Team Client zwei Buttons: „Einfügen“ fügt den gewählten Textbaustein an der Cursorposition ein. „Überschreiben“ ersetzt den eMail-Inhalt durch den gewählten Textbaustein.\\ Einstellung „Einträge abwechselnd farbig hinterlegen“
+In den Einstellungen (Benutzerprofil) gibt es nun wie beim David Client die Einstellung „Einträge abwechselnd farbig hinterlegen“.
+  * Selektion des Chats im Navigator\\ Wenn im Team Client der Chat über die Favoritenleiste geöffnet wird, wird nun auch der entsprechende Eintrag im Navigator selektiert.
+  * Datum beim Ausdruck einer eMail mit TeamTalks\\ Beim Ausdruck einer Nachricht mit TeamTalks im Team Client wird als Datum nun nicht mehr das Datum des letzten Kommentars verwendet, sondern das originale Datum der eMail.
+  * Zugriff auf die Kontakte im Telefon Dialog\\ Im Telefon Dialog des Team Clients gibt es nun den neuen Tab „Kontakte“ um auf die Kontakte für die Auswahl der Rufnummer zugreifen zu können.
+  * Neuer Hotkey zum Einfügen eines Textbausteins\\ Wird im Team Client beim Einfügen eines Textbausteins die Strg Taste gedrückt, so wird der Textbaustein nun generell eingefügt statt den vorhandenen Text zu überschreiben.
+
+==== Bugfix ====
+
+  * Möglicher Darstellungsfehler bei längeren Ordnernamen in Favoritenleiste\\ Werden im Team Client Ordner mit längerem Namen zur Favoritenleiste hinzugefügt oder aus ihr entfernt, so konnte es zu Darstellungsfehlern kommen.
+  * Mögliches Fehlverhalten beim Start\\ In einem Einzelfall konnte es durch eine fehlerhafte Kontakte-Datenbank beim Start des Team Clients zum Absturz kommen.
+  * Mögliches Fehlverhalten beim Einfügen von Sonderzeichen im Betreff\\ Beim Einfügen von Sonderzeichen im Betreff des Team Clients konnte es u.U. dazu kommen, dass der Client beim anschließenden Versand hing.
+  * Anzeige des absoluten Datums bei Nachrichten\\ Soll beim David oder Team Client immer das absolute Datum angezeigt werden, so wurde dies am aktuellen Tag in der ReadOnly Ansicht von Nachrichten nicht beachtet.
+  * Mögliches Fehlverhalten bei Installation eines Class 1 Zertifikates\\ Die Installation eines Class 1 Zertifikates über den Button „Signatur installieren“ in der eMail „Ihre digitale Signatur“ funktionierte im David und Team Client u.U. nicht mehr korrekt.
+

@@ -1,0 +1,60 @@
+====== Version 3602 vom 19.12.2023 ======
+
+Release: 2023-12-19T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Umlaute in Adressansicht u.U. falsch angezeigt\\ Werden in der Adressansicht des david oder Team Clients auch die „privaten“ oder „weiteren“ Adressen als Spalten eingeblendet, so wurden Umlaute in diesen Adressen (Straße, Ort) u.U. falsch angezeigt.
+  * Mögliches Fehlverhalten beim Schreiben von LiveComments per smart client\\ Beim Schreiben eines LiveComments im smart client konnte es vorkommen, dass durch das gleichzeitige Senden eines LiveComments durch einen anderen Teilnehmer die eigene Nachricht nach oben verschoben wurde und der Text verloren ging.
+  * Mögliches Fehlverhalten bei der Bestellung von Class 1 S/MIME Zertifikaten\\ Bei der Bestellung von Class 1 S/MIME Zertifikaten mit dem Rollout Stand 414 konnte es zu einem Fehlverhalten sowie zu Abstürzen des Service Layers kommen. Hierzu wurde bereits ein Hotfix verteilt, das automatisch installiert wurde.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei Anmeldung an Microsoft Konten per OAuth2\\ Sind Microsoft Konten per OAuth2 eingerichtet, so funktionierte hier die erneute Anmeldung aus dem david Administrator u.U. nicht mehr.&nbsp;
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand über Microsoft Konten per OAuth2\\ Beim Versand über Microsoft Konten per OAuth2 konnte es zu Problemen kommen. 
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim POP3 Empfang per OAuth2\\ Beim POP3 Empfang von Microsoft Konten per OAuth2 konnte es zu Problemen kommen. 
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei fehlerhafter eMail Vorlage\\ In einem Einzelfall führte eine fehlerhafte eMail Vorlage beim Erstellen einer neuen eMail zu einer stark erhöhten WebBox Auslastung.   
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Zusammenfassung bei externem eMail Versand per Team Anwendung\\ Beim Versand an externe Empfänger mit der Team Anwendung kann nun eine KI erstellte Zusammenfassung dem eigentlichen eMail Text vorangestellt werden. Diese Funktion kann in einem Dialog vor dem Versand aktiviert/deaktiviert werden. Hier kann auch die Zusammenfassung vorab eingesehen werden.
+  * Bestellung von Class 1 S/MIME Zertifikaten auch in Team Anwendung\\ In den Einstellungen der Team Anwendung können nun wie schon im david Client zusätzlich zu Class 2 Zertifikaten auch Class 1 Zertifikate bestellt werden. Je nach Einstellung im david Administrator (System/Sicherheit) muss der Anwender die Bestellung bestätigen oder nicht bestätigen.
+  * Automatische Dateipfad Erkennung beim Chromium Editor\\ Beim Einfügen eines Dateipfads im Chromium Editor wird dieser automatisch in einen Hyperlink umgewandelt. Hat der Dateipfad ein Leerzeichen, dann wird dieser bis zum Leerzeichen erkannt.&nbsp;
+  * Automatische eMail Adressen Erkennung im Chromium Editor\\ Beim manuellen Eintippen und beim Einfügen einer eMail Adresse im Chromium Editor wird diese nun automatisch in einen Hyperlink umgewandelt.
+  * Optimierungen bei der Symbolleiste des Chromium Editors\\ Es gibt diverse Optimierungen bei der Symbolleiste des Chromium Editors (z.B. behobene Anzeigefehler, Öffnen der Formatvorlagen Auswahl per Strg+Shift+Y).
+  * Launcher App für Classic Client und Abkündigung\\ Die dvwin32.exe wurde durch eine Launcher App ersetzt und die bisherige dvwin32.exe nach classicclient.exe umbenannt. Die Launcher App ruft zunächst weiterhin den Classic Client auf. Nach 5 Stunden Laufzeit erscheint ein Hinweis im Classic Client, dass es in wenigen Wochen einen neuen, frischen Look gibt - zusätzlich gibt es eine Schaltfläche um direkt umzustellen, anschließend wird dann der david Client gestartet.
+
+==== Bugfix ====
+
+  * Rufnummer im Editor wählen (Strg+D)\\ Im Editor funktionierte das Wählen einer selektierten Rufnummer per Strg+D nicht.
+  * Mögliches Fehlverhalten beim Sidekick Button in Team Anwendung\\ Beim Klick auf den Sidekick Button in der Team Anwendung wurde u.U. stattdessen der alte david Chat aufgerufen.
+  * Mögliches Fehlverhalten bei Aktivierung von Checkboxen in Dialogen\\ Wird ein Dialog mit einer Checkbox angezeigt (z.B. „Diese Meldung nicht mehr anzeigen“ beim Verschieben eines Termins), so wurde die Aktivierung der Checkbox u.U. nicht gespeichert.
+  * Mögliches Fehlverhalten beim „Versenden als Notiz“ im Dark Mode\\ Ist der Dark Mode aktiviert und es soll eine eMail über die Funktion „Als Notiz versenden“ weitergesendet oder beantwortet werden, so wurde der eMail Inhalt in der neu erstellten Notiz u.U. nicht angezeigt.
+  * Mögliches Fehlverhalten bei der Synchronisation von Microsoft Terminen\\ Die Synchronisation von Microsoft Terminen per ProviderSync funktionierte u.U. nicht mehr.
+  * Geöffnetes Chat Fenster u.U. immer im Vordergrund\\ Wird bei einer neuen Chat Nachricht dieses in einem eigenen Fenster geöffnet, so blieb dieses Fenster u.U. immer im Vordergrund, auch wenn ein dahinterliegendes Fenster angeklickt wird.&nbsp;
+  * Fehlverhalten bei der Einstellung „eMail-Adressen in Separator beim Antworten/Weiterleiten“\\ Die Editor Einstellung „eMail-Adressen in Separator beim Antworten/Weiterleiten“ war ohne Funktion.&nbsp;
+  * Kopieren und Einfügen bei Zusammenfassung einer Adresse\\ Im Tab „Zusammenfassung“ einer Adresse funktionierte das Kopieren und Einfügen nicht.
+  * Mögliches Fehlverhalten beim Suchen und Ersetzen im Editor\\ Das Suchen und Ersetzen im Editor funktionierte nicht korrekt, wenn hierbei nach einem Backslash gesucht wurde.
+

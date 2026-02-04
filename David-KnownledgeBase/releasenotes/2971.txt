@@ -1,0 +1,50 @@
+====== Version 2971 vom 11.12.2017 ======
+
+Release: 2017-12-11T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Wird im david Administrator in der Liste "Identifizierung" oder "Verteilregeln" ein Eintrag gelöscht, so wurde anschließend bis zur Aktualisierung der Liste beim Öffnen eines verbleibenden Eintrags u.U. der falsche Inhalt angezeigt.
+  * In einem Einzelfall konnte es vorkommen, dass für Benutzer Ordner kein Volltext Index erstellt wurde und somit die Volltextsuche keine Ergebnisse lieferte.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es beim Empfang einer eMail zu einem Fehler in der Konvertierung kommen, so dass der Mailinhalt nicht korrekt dargestellt wurde.
+  * In einem Einzelfall konnte es beim Empfang einer eMail mit einer sehr langen To-Adresse zum Absturz kommen.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es beim Empfang einer eMail zu einem Fehler in der Konvertierung kommen, so dass der Mailinhalt nicht korrekt dargestellt wurde.
+  * In einem Einzelfall konnte es beim Empfang einer eMail mit einer sehr langen To-Adresse zum Absturz kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * In der Intercom Ansicht können über das Menü "Tabs/Einstellungen" die Tabs der einzelnen Locations nun sortiert und ein/ausgeblendet werden.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Der Quickfinder wird nun wieder komplett mit dem Eingabefeld angezeigt.
+  * Die Einstellung "Filter/Absender-Tabs im Eingangsbuch" wurde nun deaktiviert. Unter "Einstellungen/Global/Outdated" kann diese wieder aktiviert werden.
+
+==== Bugfix ====
+
+  * In Einzelfällen wurde beim Einfügen von Initialen per Strg+N diese u.U. an der falschen Position eingefügt.
+  * Wird der Scrollbalken durch die Bewegung mit der Maus automatisch eingeblendet, so konnte es zum Absturz kommen.
+  * Beim Aufruf der Website nach dem Klick auf den "Was ist neu" Schriftzug (nach einem Client Update) wird nun die Chromium Engine statt der IE verwendet. Mit dem IE konnte es hier zu einer erhöhten Auslastung kommen.
+  * Das € Zeichen wurde beim Erstellen einer Intercom Nachricht nicht berücksichtigt.
+  * In einem Einzelfall wurde bei einer eingestellten Vorlage für das Weiterleiten/Antworten von eMails der Cursor nicht korrekt in der eMail positioniert.
+  * Bei vorhandenen Terminen wurde u.U. eine Änderung der Farbe über "Eigenschaften/Farbe" nicht übernommen.
+  * Wird der Kalender als eigenes Fenster abgelöst, so konnte dieses Fenster u.U. nicht vergrößert werden.
+  * In einem Einzelfall konnte es beim Wechsel zu einem Fax zum Absturz des Clients kommen, wenn die Faxvorschau angezeigt wird.
+  * In einem Einzelfall konnte es beim Aufruf eines bestimmten RSS Feeds dazu kommen, dass der david Client "hängt" (einfriert).
+  * Eine mögliche Ursache dass der david Client "hängt" (einfriert) wurde behoben.
+  * Wird eine Eintragsliste in einem eigenen losgelösten Fenster geöffnet, so wurde der Quickfinder hier u.U. nicht angezeigt.
+  * Beim Öffnen bestimmter signierter eMails konnte es zum Absturz des david Clients kommen.
+

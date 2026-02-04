@@ -1,0 +1,174 @@
+====== Version 2793 vom 31.10.2014 ======
+
+Release: 2014-10-31T17:41:15
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Der Port Befehl wurde nun so erweitert, dass man für Extension TLDs (also nicht nur allein für hybrid mail) einen Port angeben kann, der nur dann verwendet wird, wenn die Adressierung auch an das Extension TLD geht.
+<p>
+Man schreibt dazu hinter der Portnummer die Adressierung des TLD. Also kann man in einem Benutzerinclude z.B. angeben:
+</p>
+<p>
+@_@port 2 {hybrid}
+
+Alle Adressierungen hybrid:xxxx gehen dann an Port 2, normale eMail über PostMan (bzw. intern).
+</p>
+  * In den Einstellungen des Hybrid TLD gibt es nun den Schalter "Über Provider (Tobit®Software) versenden". In dem Fall werden keine eigenen e-Post Zugangsdaten benötigt, sondern der Versand erfolgt über Tobit®Software und die Zahlung über das TSSM Konto.
+
+  * Wird bei einem wartenden Versandauftrag eine Markierung gesetzt, so wurde dieser Eintrag u.U. bei der folgenden Bereinigung gelöscht.
+
+  * Tauschen mehrere Benutzer LiveComments aus und ein Benutzer löscht seine Nachricht, so wird sie bei erneuten LiveComments wieder in seinen Eingang gelegt. Hierbei konnte es vorkommen, dass beim nachträglichen "Allen antworten" nicht alle ursprünglichen Adressaten im An Feld standen.
+
+  * In einem Einzelfall konnte es beim Autoreply zu einem Fehlverhalten mit einem UTF-8 kodierten Betreff kommen, so dass der Autoreply für diese Nachricht immer wieder neu erstellt wurde.
+
+  * In einem Einzelfall kam es aufgrund einer defekten archive.dat zum Absturz des Service Layers bei der Datenbereinigung.
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Der Status Monitor des david Administrator enthält nun eine Statistik über versendete und empfangene LiveComments (ab Neuinstallation bzw. Update der aktuellen Version). Zusätzlich enthält sie die monatlichen Werte (seit ersten Tag des Monats). In der Nachricht "Finish purging Archive" werden diese Werte ebenfalls erfasst.
+
+  * Im david®Administrator können für einen david® Benutzer über den neuen Reiter "Remote Access" nun dessen Zugangsdaten eingetragen werden (entspricht der Einstellung "Zugang" im david® Client des jeweiligen Benutzers).
+
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Hat ein POP3 Postfach Umlaute im Passwort, so funktionierte das Abholen der eMails u.U. nicht.
+
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Der Mail Access Server unterstützt nun auch die beiden Login Methoden
+AUTH=PLAIN und AUTH=CRAM-MD5.
+
+  * Hat das Passwort des Remote Access Umlaute, so konnte man sich damit nicht per IMAP anmelden.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * In Verbindung mit einem defekten Eintrag (Priorität im SendRec > 2 ) konnte es zum Absturz der WebBox kommen.
+
+
+  * Wird der Inhalt einer bereits synchronisierten Nachricht (z.B. eine eMail im Eingang) geändert, so wird nun die geänderte Nachricht neu geladen.
+
+  * Bei der Nutzung von CardDAV und CalDAV unter Mac OS X 10.10 konnte es zu Fehlfunktionen kommen.
+
+  * Wird eine Aufgabe (Erinnerung) erstellt, die Umlaute im Notizfeld enthält, so waren diese nach der anschließenden Synchronisierung per ActiveSync u.U. falsch.
+
+  * Wird auf einem iOS Gerät eine Terminserie mit Enddatum erstellt, so wurde nach der Synchronisation per ActiveSync das Enddatum u.U. falsch eingetragen, so dass beim Öffnen mit dem david® Client PC der 01.01.1970 angezeigt wurde.
+
+  * Sofern vom Gerät unterstützt können Ordner nun auch per ActiveSync gelöscht werden.
+
+  * Neue Einstellung beim Reiter "Zugang" von Ordner-Eigenschaften: "Benutzer-Freigaben". Es können Benutzer hinzugefügt werden, die bestimmte Rechte auf diesen Ordner haben.
+<p>
+Ist ein Ordner ohne Username/Password freigegeben, gilt er auch weiterhin für alle Nutzer zum Lesen freigegeben.
+</p>
+<p>
+Ist der ActiveSync Schalter "Schreiben in globalen Ordnern erlauben" gesetzt, können alle Benutzer, vorausgesetzt der Zugriff ist gegeben, dort schreiben.
+</p>
+<p>
+Ist keine der Sachen gegeben, zählt die neu
+  * Liegt eine Hybrid Mail mit Umlauten im Empfängernamen in einem Ordner, so wurde diese Nachricht und neuere Nachrichten beim ActiveSync Zugriff per iOS nicht angezeigt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Soll eine eMail beantwortet werden, die an eine Gruppen eMail Adresse ging, so wird diese eMail Adresse als Absender eMail Adresse vorgeschlagen. Das schlug jedoch fehl, wenn in der angegebenen eMail Adresse eine andere Groß/Kleinschreibung verwendet wurde.
+
+  * Wird ein verschlüsselter Dateianhang aus der Vorschau statt aus dem Editor oder dem Dateianhang Dialog geöffnet, konnte es zum Fehlverhalten kommen: Es konnte einen Absturz des Clients geben oder der Anhang wurde nicht geöffnet.
+
+  * Nach dem Erstellen einer hybrid mail gibt es im Dialog mit den Versandinformationen nun einen Button, über den die Preisinformation ermittelt werden kann.
+
+  * Wird bei einem Termin, zu der Teilnehmer zugesagt haben, die Zeit geändert, so erfolgte u.U. keine Abfrage ob die Teilnehmer über die Änderung informiert werden sollen. Die entsprechende eMail wurde aber versendet.
+
+  * Erhält ein Benutzer eine eMail und verschiebt sie in einem Gruppenordner, so konnten andere Benutzer, die Rechte in diesem Ordner haben, LiveComments hinzufügen, ohne selbst im Verteiler zu sein. Das ist nun behoben.
+
+  * Unter "Einstellungen/Vorlagen" war die Vorlagenauswahl u.U. nicht möglich, wenn für den Benutzer im david Administrator keine eMail Adresse hinterlegt ist und darüber hinaus in der Systemkonfiguration auch keine Domäne eingetragen ist.
+
+  * Wird eine versendete hybrid mail im Ausgang geöffnet und wieder geschlossen, so gab es fälschlicherweise die Abfrage "Möchten Sie den Auftrag abbrechen?"
+
+  * Hat man in der Kalender- oder Adressansicht die Ansicht nach unten vergrößert, so wurde diese u.U. nach dem Wechsel in andere Ansichten wieder verkleinert dargestellt.
+
+  * Ist das Navigatorfenster losgelöst, konnte es dazu kommen dass der geöffnete Editor im Hintergrund lag und nicht in den Vordergrund geholt werden konnte.
+
+  * In einem Einzelfall konnte es beim Drucken eines Dokumentes über den david hybrid mail Druckertreiber fälschlicherweise die Fehlermeldung "Objekte oder Text befinden sich innerhalb der Sperrflächen für die Freimachung" geben.
+
+  * In einem Einzelfall konnte es beim Senden eines LiveComments die Meldung "Ihr LiveComment konnte nicht versendet werden" geben - Grund war hier, dass ein beteiligter david Benutzer gelöscht und später neu erstellt wurde.
+
+
+  * Wenn man eine neue Chat Nachricht bekommt und eingestellt hat, dass sich nicht automatisch das Fenster öffnen soll, wurde die Anzahl für ungelesene Nachrichten in dem Badge nicht aktualisiert.
+
+  * Wird eine Nachricht im Bearbeiten Modus geöffnet und soll als eml oder html Datei in einem Verzeichnis mit kyrillischen Zeichen im Namen gespeichert werden, so funktionierte dies nicht.
+
+  * In der Vorschau von Plain Text eMails wird nun als Schriftgröße die Einstellung aus "Einstellungen/Editor" verwendet.
+
+  * Über einen neuen Button neben dem LiveComment Feld können nun zusätzliche Benutzer als LiveComment Empfänger hinzugefügt werden. Diese Benutzer werden zusätzlich als "An" bzw. "Cc" Empfänger hinzugefügt.
+
+  * Die Wörterliste wurde erweitert.    
+
+  * Soll eine Nachricht aus einem Gruppenordner auf Wiedervorlage gelegt werden, so stand der Schalter "Wiedervorlage im persönlichen Eingangsbuch" "auch beim Verschieben/Kopieren des Originals in den Wiedervorlage Ordner zur Verfügung. Da diese Auswahl (Eingang oder Gruppenordner) nur beim Erstellen einer Verknüpfung möglich ist, steht die Option nun nur noch in diesem Fall zur Verfügung.
+
+  * Wird aus OpenOffice ein mehrseitiger Ausdruck an den hybrid mail.™ Druckertreiber übergeben, so wurde nur eine Seite angezeigt - verschickt wurden jedoch korrekt alle Seiten. Die Ansicht wurde nun korrigiert.
+
+  * Wird eine eMail mit LiveComments von einem Benutzer in einen Gruppenordner verschoben, auf den auch ein anderer nicht im Verteiler dieser eMail enthaltene Benutzer Zugriff hat, so wurde diese eMail in Einzelfällen u.U. zusätzlich an diesen Benutzer verteilt.
+
+  * Öffnet man die Ausnahme einer Terminserie mit dem Editor und möchte diesen Eintrag über das Löschen Symbol im Editor löschen, so wurde der Eintrag nicht gelöscht.
+
+  * Wird bei einem Ordner, der Unterordner enthält, der Remote Access eingerichtet oder geändert, so erfolgt beim Speichern nun die Abfrage ob dies auch für die Unterordner angepasst werden soll.
+
+  * Sind mehrere Chats in einem Fenster geöffnet, konnte es zu einem Anzeigefehler kommen.
+  * Ist der hellste Wert für die Programmoberfläche eingestellt, so war bei der Reminder Anzeige die Zahl hinter dem Ordnernamen schlecht zu erkennen.
+
+  * Wird die ICS Datei für eine Terminserie importiert, so wurde das angegebene Enddatum u.U. nicht korrekt erkannt.
+
+  * Besitzt ein Benutzer nicht das Benutzerrecht "david®chat erlauben", so konnte er das Chat Fenster dennoch mit dem Hotkey F11 öffnen.
+
+  * Wird im geöffnetem Chat Fenster über das Kontextmenü die Liste der Teilnehmer geöffnet, so konnte in diesem Dialog nicht bis ganz nach unten gescrollt werden.
+  * Wird eine Client App installiert und das entsprechende Package ist nach dem Download defekt, so konnte es zum Absturz des Clients kommen.
+
+
+=====  Client Mac =====
+
+==== Feature ====
+
+  * In einem Einzelfall wurde der Textinhalt einer eMail nicht angezeigt.
+
+  * Soll eine eMail mit Dateianhang weitergeleitet oder beantwortet werden, und hierbei wird eine zusätzliche Datei angehängt, so konnte die eMail u.U. nicht postlagernd versendet werden.
+
+  * Voice Mails ließen sich u.U. nicht abspielen
+  * Die Einstellung "Ansicht/Eintragsliste/Absender über dem Betreff anzeigen" gibt es nun auch beim david® Client Mac
+  * Die Einstellung "Bilder vor den Einträgen anzeigen" gibt es nun auch beim david® Client Mac.
+
+  * Die Hintergrundfarbe der LiveComments (bisher gelb) wurde an die Windows Version angepasst.
+
+  * Bei Weblinks in der Favoritenleiste kann nun kein farbiges Ordnersymbol mehr angezeigt werden. Dies konnte zuvor zu leeren Icons in der Favoritenleiste führen.
+
+  * Die Textzeilen pro Eintrag kann nun verändert werden. Zuvor waren hier immer 4 Zeilen feste eingestellt.
+
+  * Fensterüberschriften im dunklen Farbschema waren unter Mac OS X 10.10 u.U. schlecht zu erkennen.
+
+  * Die neuen Farbschemen und die "Überrasch mich" Funktion gibt es nun auch im david® Client Mac (wie schon im Windows Client).
+
+  * "TeamBoards" wurde wie beim Windows Client nach david®chat umbenannt. 
+<p> 
+Außerdem konnte es vorkommen, dass sich die Chat Übersicht über den Favoriten Button nicht öffnen ließ - das wurde behoben.
+</p>
+<p>
+Vom david® Client Mac verschickte Nachrichten konnten fälschlicherweise als Systemnachrichten auf dem Windows Client erkannt werden und wurden dann nicht angezeigt
+</p>
+  * Nach der Neuinstallation unter Mac OS X 10.10 startete der Client u.U. nicht korrekt.
+
+

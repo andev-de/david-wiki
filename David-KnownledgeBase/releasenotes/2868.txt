@@ -1,0 +1,25 @@
+====== Version 2868 vom 10.06.2016 ======
+
+Release: 2016-06-10T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * In einem sehr seltenen Einzelfall konnte es zu Lesefehlern bei der Bereinigung kommen, was zu einem Fehlverhalten führen konnte.
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * Die Bearbeitung der globalen Liste für Dateianhang-Erinnerungen (Einstellungen/Editor/Erweitert) war u.U. nicht möglich.
+  * Die Bearbeitung der Wörterbücher in den Client Einstellungen (persönlich/global) war u.U. nicht möglich.
+  * Das Tastaturkürzel für das Euro Zeichen funktionierte im Editor nicht mehr.
+  * Es wurden diverse Optimierungen bzgl. der DPI Einstellung vorgenommen, z.B. 
+passen sich einige Dialog nun korrekt an, wenn sie zwischen 2 Monitoren mit 
+unterschiedlicher Einstellung verschoben werden.
+  * Ist ein fremder Kalender eingebunden, in dem der Anwender nur Leserechte hat, so 
+konnte er beim Löschen von eigenen Terminen u.U. fälschlicherweise Termine aus 
+diesem Kalender ebenfalls löschen.
+

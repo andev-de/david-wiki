@@ -1,0 +1,47 @@
+====== Version 3081 vom 19.08.2019 ======
+
+Release: 2019-08-19T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * david Anwender u.U. als offline angezeigt\\ Nach einer Änderung in der Benutzerkonfiguration im david Administrator konnte es in der Folge passieren, dass dieser Anwender im aktiven david Client bis zum Neustart des david Clients als offline angezeigt wurde. Dieses Verhalten wurde nun korrigiert.
+  * Mögliches Fehlerverhalten beim Entpacken von Nachrichten\\ In einem Einzelfall konnte es vorkommen, dass Nachrichten, die in einem gepackten Ordner liegen, nach dem Entpacken fehlerhaft sind. Das ist nun korrigiert.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Provider SMS Versand über Port 25\\ Erfolgt der Provider SMS Versand nicht direkt, sondern über einen eingestellten eMail Provider, so wird hier nun Port 25 verwendet.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * TLS Zertifikate nach Ablauf automatisch erneuern\\ Rechtzeitig vor dem Ablauf eines angeforderten Verschlüsselungs-Zertifikats wird automatisch versucht dieses zu erneuern. Ist dieses Zertifikat jedoch bereits abgelaufen, so erfolgte u.U. keine Aktualisierung mehr. Das wurde nun korrigiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Farbiger Ausdruck der Eintragsliste\\ Über die Eintrags-Eigenschaften einer Nachricht kann eine andere Farbe für den aktuellen Eintrag gewählt werden. Wird die Eintragsliste des aktuellen Ordners ausgedruckt, so werden diese Einträge nun auch farbig gedruckt.
+  * Einfügen von Hyperlinks im david Chat\\ Im david Chat steht nun wie bereits im eMail Editor per Rechtsklick im Kontextmenü der Menüpunkt "Hyperlink" zur Auswahl um somit auf einfache Weise z.B. den Link zu einer Datei oder eine Web-Adresse einzufügen.
+  * LiveComments und TalkAbouts stumm schalten\\ Bei neuen Kommentaren in LiveComments oder TalkAbouts werden diese wieder an die oberste Stelle im Eingang verschoben. Möchte man dies bei einzelnen Nachrichten vorübergehend unterbinden, so gibt es hierzu nun den neuen Button "Keine Benachrichtigungen über neue Kommentare". Die Funktion bewirkt, dass für den Anwender bei Eingang eines weiteren Kommentars dieser Eintrag zwar wieder als ungelesen markiert, aber nicht nach oben verschoben wird. Außerdem notifiziert der Notifier dann nicht über diesen Eintrag.
+  * Designanpassungen in der Kalenderansicht\\ Das Design der Kalenderansichten wurden optisch überarbeitet.
+  * Optimierte Anzeige von Dateianhängen\\ Dateianhänge in eMails werden in der Vorschau und in der "Nur-lesen" Ansicht des Editors nun alphabetisch sortiert angezeigt. Außerdem wird die Spaltenbreite des Dateinamens nun automatisch auf den längsten Dateinamen erweitert. Bisher wurde hier nach wenigen Zeichen eingekürzt.
+  * Rahmen bei eingefügter Grafik hinzufügen\\ Fügt man eine Grafik in eine eMail ein, so kann diese über den Menüpunkt "Eigenschaften" im Kontextmenü bearbeitet werden. Hier steht nun auch die neue Option "Rahmen um Bild anzeigen" zur Verfügung.
+  * Formatauswahl beim Einfügen aus der Zwischenablage\\ Wird Inhalt aus der Zwischenablage in eine eMail eingefügt und hierbei stehen verschiedene Formate zur Verfügung, so erscheint nun ein Dialog zur Auswahl des gewünschten Formates. Bisher wurde z.B. beim Einfügen von Zeilen einer Excel Tabelle immer eine Grafik eingefügt, nun steht hier zusätzlich "HTML-formatierter Text" und "Text ohne Formatierung" zur Auswahl.
+  * „chayns Freigabe“ in Ordner-Eigenschaften entfernt\\ Im Tab „Publizieren“ der Ordner-Eigenschaften wurde die Option „chayns Freigabe“ entfernt.\\ 
+
+==== Bugfix ====
+
+  * Möglicher fehlerhafter Aufruf einer URL\\ In einem Einzelfall wurde beim Klick auf ein URL in einer eMail diese URL falsch aufgerufen. Das wurde nun korrigiert.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Optimierung des Update Vorgangs\\ Der Vorgang zur Aktualisierung der Desktop Protection wurde optimiert.
+

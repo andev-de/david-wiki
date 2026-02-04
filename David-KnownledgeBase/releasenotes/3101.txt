@@ -1,0 +1,41 @@
+====== Version 3101 vom 17.10.2019 ======
+
+Release: 2019-10-17T00:00:00
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Erstellen eines selbstsignierten Zertifikates u.U. nicht möglich\\ Die Erstellung eines selbstsignierten Zertifikates war u.U. nicht möglich. Das wurde nun korrigiert.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Uhrzeit von Serientermin bei ActiveSync Abgleich u.U. fehlerhaft\\ Wird ein Serientermin erstellt und dieser wird per ActiveSync auf ein Smartphone synchronisiert, so gab es bei der Uhrzeit des Termins u.U. eine Stunde Differenz wenn zu einem Serienelement in der Winter- bzw. Sommerzeit gewechselt wurde.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Emoticons auch in Chat Vorschau als Grafik\\ In der Chat Vorschau werden die Emoticons nun auch als Grafik angezeigt.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Klick auf den Platzhalter für das Benutzerbild\\ Macht man in der Eintragsliste einen Rechtsklick auf das Platzhalterbild von einem eMail-Absender, so konnte es zum Absturz des Clients kommen. Das ist nun korrigiert.
+  * Mögliches Fehlverhalten beim „Scannen und speichern“\\ In Einzelfällen konnte es bei der Funktion „Scannen und speichern“ zum Absturz kommen. Das wurde nun korrigiert.
+  * Mögliches Fehlverhalten bei konventioneller Suchfunktion\\ Ist die konventionelle Suche eingestellt, so konnte es in einem Einzelfall auftreten, dass ein Anwender bei der Suche in einem Ordner die Betreffs der Nachrichten angezeigt bekam, obwohl er die Einträge beim Wechsel in den Ordner aufgrund fehlender Berechtigungen nicht sehen kann.
+  * Mögliches Fehlverhalten bei der Auswahl der Kontakte\\ In einem Einzelfall konnte es bei der Auswahl der Kontakte zum Absturz kommen.
+  * Mögliches Fehlverhalten bei postlagerndem Versand\\ In einem Einzelfall konnte es beim postlagernden Versand zum Absturz kommen.
+  * Mögliches Fehlverhalten bei Eintragswechsel zum nächsten Fax\\ Wird ein Fax geöffnet und anschließend aus dem Fax Viewer zum nächsten Fax gewechselt, so konnte es u.U. zum Absturz kommen.
+  * Möglicher Absturz der Druckerwarteschlange bei Faxerstellung\\ Bei der Erstellung eines Fax über den FaxWare Druckertreiber konnte es in einem Einzelfall vorkommen, dass die Druckerwarteschlange abstürzte.
+  * Mögliches Fehlverhalten beim Öffnen von exportierter Adressdatei mit Excel 2019\\ Werden Adressen im SLK Format exportiert, so konnte diese Datei mit Excel 2019 nicht geöffnet werden. Das ist nun behoben.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * FaxWare Druckertreiber unter macOS 10.15\\ Der FaxWare Druckertreiber funktioniert nun auch unter macOS 10.15.
+

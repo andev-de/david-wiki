@@ -1,0 +1,41 @@
+====== Version 3448 vom 13.06.2022 ======
+
+Release: 2022-06-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Wiedervorlage einer beendeten Terminserie\\ Wird bei einer eingetragenen Terminserie nachträglich ein Enddatum gesetzt, das vor der nächsten Wiedervorlage liegt, so wurde diese Wiedervorlage nicht entfernt und an dem entsprechenden Tag in den Eingang gelegt.
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten bei den Einstellungen zur TLS-Verschlüsselung\\ Im david Administrator wurde unter System/TLS-Verschlüsselung u.U. ein falsches Datum für die nächste automatische Aktualisierung angezeigt (der 01.01.1970). Außerdem war die Erstellung eines selbstsignierten Zertifikates nicht mehr möglich.
+
+ 
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Neue Bedingung bei den Client Verteilregeln (david Client Modern)\\ Bei den Client Verteilregeln kann nun als zusätzliches Kriterium „enthält nicht“ ausgewählt werden.
+  * Link kopieren bei LiveComments (david Client Modern)\\ Ist im LiveComment einer eMail ein Link enthalten, so kann das Ziel dieses Links nun durch einen neuen Menüpunkt im Kontextmenü kopiert werden.
+  * Zugriff auf LDAP Adressen (david Client Classic)\\ Im david Client „Classic“ kann nun unter „Werkzeuge/LDAP Verbindungen“ der Zugriff auf LDAP Verzeichnisdienste eingerichtet werden, so dass diese Adressen in der Adressauswahl zur Auswahl stehen.
+
+
+
+==== Bugfix ====
+
+  * Fehlende Auswahl der Markierungen beim david Client Modern\\ Die Auswahl der Markierungen fehlte u.U. (z.B. bei Nachrichten, Terminen, Aufgaben).
+  * Mögliches Fehlverhalten bei dvapi Anmeldung\\ Verwenden externe Anwendungen die dvapi32.dll, so konnte es u.U. zu Problemen bei der Anmeldung kommen.
+  * Mögliches Fehlverhalten beim Schließen von RSS Einträgen\\ Wird ein RSS Eintrag geöffnet, so konnte er u.U. nicht über den „Schließen“ Button geschlossen werden.
+
+
+  * Vertauschte Scanner Schaltflächen\\ Die beiden in der Symbolleiste einblendbaren Scanner Schaltflächen waren in der Konfiguration vertauscht.
+  * Mögliches Fehlverhalten beim Link Lookup Service\\ Der Link Lookup Service ermöglicht die automatische Sicherheitsprüfung beim Klick auf Links in eMails. Enthält ein Link eine eMail  Adresse, so wurde nach dem Klick auf den Link für die Anzeige die Domain aus der Adresse statt aus dem Link verwendet.
+  * Suche in Online Hilfe beim david Client Modern\\ Die Suche in der Online Hilfe funktionierte nicht.
+  * Mögliches Fehlverhalten beim Öffnen einer eMail im Ticker Fenster\\ In einem Einzelfall konnte es zum Absturz kommen, wenn eine neue eMail im Ticker Fenster geöffnet wird.
+

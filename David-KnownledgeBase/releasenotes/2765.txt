@@ -1,0 +1,36 @@
+====== Version 2765 vom 31.10.2014 ======
+
+Release: 2014-10-31T17:44:31
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Ab der FritzOS Firmware 6.05 funktionierte SLS nicht mehr. Das wurde nun behoben.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Bei der Nutzung von ActiveSync auf Windows Phone 8 Geräten konnte es u.U. zu Abbrüchen bei der Synchronisierung kommen.
+
+  * Wird eine Besprechungsanfrage per ActiveSync angenommen, so wurde der Termin auf einigen Geräten u.U. nicht im Kalender angezeigt.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Im Client gibt es nun einen neuen Button, um den Abwesenheits-Assistenten aufzurufen (hinter dem Chat Button). Beim Aktivieren werden dieselben Regeln im Eingang erstellt, wie auch für die Out Of Office Funktion von ActiveSync. Man kann das also sowohl per Client als auch per Smartphone anlegen oder ändern (sofern die Funktion "Abwesend" von dem Smartphone unterstützt wird).
+ 
+Der Client weist zudem beim Start daraufhin, wenn aktuell eine solche Regel aktiv ist und man hat die Möglichkeit, sie auszuschalt
+  * Wird eine Client Verteilregel mit mehr als einem Ziel-Ordner eingerichtet und anschließend auf "Jetzt anwenden" geklickt, so wurden die eingetragenen Ziel-Ordner u.U. aus der Regel entfernt.
+
+  * Die Wörterliste wurde erweitert.
+  * Ist der SQL Dienst nicht korrekt eingerichtet bzw. nicht gestartet, konnten die Clients sich u.U. nicht mit dem Service Layer verbinden.
+
+  * Einstellungen/Kalender: Hier kann nun eine Standard-Beschriftung für neue Termine festgelegt werden.
+
+

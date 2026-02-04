@@ -1,0 +1,27 @@
+====== Version 2980 vom 22.03.2018 ======
+
+Release: 2018-03-22T00:00:00
+
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Bearbeitung von per ActiveSync abgeglichenen Adressbildern\\ Bilder von Adresseinträgen, die auf Smartphones erstellt und dann per Exchange ActiveSync zu david® übertragen wurden, konnten u.U. nicht im david® Client bearbeitet oder geändert werden. Das ist nun möglich.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Hinweis auf noch ungelesene Intercom Nachrichten\\ Über den Button „Intercom“ in der Favoritenleiste können Nutzer, die per chayns® ID am david® Client angemeldet sind, direkt auf ihre Intercom Nachrichten ihrer eigenen chayns® Site(s) zugreifen. Hier stehen die Kommunikationsverläufe aller chayns® Sites zur Verfügung, mit denen der jeweilige Nutzer verknüpft ist. Als Hinweis auf neue Intercom Einträge zeigt nun - genau wie beim Eingangsbuch - ein Badge direkt auf diesem Button die Anzahl der noch ungelesenen Intercom Nachrichten an.
+  * Neue persönliche Intercom Nachrichten in separatem Fenster\\ Nutzer, die mit ihrer chayns® ID am david® Client angemeldet sind, werden  noch besser auf neu eintreffende persönliche Intercom Nachrichten aufmerksam gemacht. Dazu öffnen sich diese Nachrichten nun automatisch in einem separaten Intercom Fenster.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Anpassungen beim Beantworten von eMails\\ In einem Einzelfall kam es beim Beantworten einer empfangenen eMail zu dem Effekt, dass in den Bereich der Antwort-eMail, der zum Verfassen der Antwort vorgesehen ist, Textteile aus dem Inhalt der empfangenen Nachricht unerwünscht voreingetragen waren. Dieses Verhalten tritt nun nicht mehr auf. 
+
+  * Optimierung der Kalenderfunktionen in der InfoCenter Ansicht\\ Der im InfoCenter integrierte Terminkalender wurde überarbeitet, um die Nutzung komfortabler und stabiler zu machen. Zuvor konnte u.U. das Öffnen eines noch ungelesenen Termins zum Absturz des david® Client führen.
+
+

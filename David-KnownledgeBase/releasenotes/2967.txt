@@ -1,0 +1,29 @@
+====== Version 2967 vom 13.11.2017 ======
+
+Release: 2017-11-13T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * In einem Einzelfall konnte es bedingt durch eine fehlerhafte Terminerinnerung zum Absturz kommen.
+  * Sind die Ressourcen Dateien des Service Layer (\david\code\Resource\code.*) nicht mehr vorhanden, so konnte es beim Start des Service Layers zum Absturz kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierung bei der Übernahme von Teams in die Liste der Favoriten.
+  * Wird eine empfangene eMail geöffnet, die Bilder als Dateianhänge enthält, so wird nun der letzte geöffnete Tab ("Anhänge" oder "Bilder") gespeichert, so dass beim nächsten Öffnen wieder die gleiche Ansicht geöffnet wird.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Soll z.B. ein neuer Termin erstellt werden, und die Vorlage für neue Termine enthält falsche Serverpfade, so konnte es zu einer Verzögerung kommen. Diese falschen Pfade werden nun ignoriert.
+
+==== Bugfix ====
+
+  * Wird die Funktion "Bildschirmfoto" verwendet und im Ordner "Ressourcen/Vorlagen" ist die Vorlage "Bildschirmfoto" nicht mehr vorhanden, so konnte es zum Absturz des david Clients kommen.
+  * Wird eine eMail Vorlage verwendet, die eingefügte Grafiken enthält, so wurden diese u.U. nicht mit versendet.
+  * Beim Einfügen von Bildern in Chats konnte es in Einzelfällen zum Absturz kommen.
+  * Soll ein Textbaustein in eine neue eMail per Hotkey ALT+E+T eingefügt werden, so konnte es hierbei zum Absturz kommen.
+  * In einem Einzelfall konnte es vorkommen, dass bei Verwendung der "Zitat" Vorlage nur eine leere Nachricht erstellt wurde.
+

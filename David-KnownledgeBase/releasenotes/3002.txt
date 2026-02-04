@@ -1,0 +1,70 @@
+====== Version 3002 vom 09.07.2018 ======
+
+Release: 2018-07-09T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Client-Server-Kommunikation per TLS/SSL\\ Um maximale Datensicherheit zu gewährleisten, wurde die Verschlüsselung der Kommunikation zwischen dem david® Service Layer und dem david® Client PC überarbeitet und auf den generell etablierten Standard TLS/SSL umgestellt.
+
+==== Bugfix ====
+
+  * Korrigierte Darstellung von Emoticons im Betreff empfangener eMails\\ Bestimmte Emoticons im Betreff von empfangenen eMails wurden u.U. sowohl in der Vorschau als auch im eMail Viewer nicht korrekt angezeigt. Diese Verhalten wurde korrigiert. 
+
+  * Berücksichtigung der Wiedervorlage bei Stornierung von Besprechungsanfragen\\ Erhält der Empfänger einer externen Besprechungsanfrage hierzu eine nachträgliche Stornierung, so wurde bei der Abfrage, ob dieser gespeicherte Termin im Kalender des Nutzers gelöscht werden soll, eine zugehörige Wiedervorlage nicht immer mit entfernt. Dieses Verhalten wurde korrigiert, so dass jetzt auch in solchen Fällen die betreffenden Termine inklusive der Wiedervorlagen zuverlässig gelöscht werden. 
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Übersicht der ActiveSync Geräte erweitert\\ Die Übersicht der ActiveSync Geräte (WebBox/ActiveSync) enthält nun auch den jeweils übergebenen User-Agent.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität beim eMail-Empfang\\ Beim Empfang einer bestimmten eMail konnte es in einem Einzelfall zum Absturz des Grabbing Server bzw. des PostMan kommen. Dieses Verhalten wurde korrigiert.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität beim eMail-Empfang
+ 
+Beim Empfang einer bestimmten eMail konnte es in einem Einzelfall zum Absturz des Grabbing Server bzw. des PostMan kommen. Dieses Verhalten wurde korrigiert.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Übersicht der ActiveSync Geräte erweitert\\ Die Übersicht der ActiveSync Geräte (WebBox/ActiveSync) enthält nun auch den jeweils übergebenen User-Agent.
+  * Verschlüsselte TLS-Verbindung als optionale Voraussetzung für Nutzung des david® Client Web\\ Um maximale Sicherheit beim Betrieb des david® Client Web sicherzustellen, ist es nun möglich, für dessen Nutzung verschlüsselte TLS-Verbindungen zwingend vorauszusetzen. Dies kann über den neuen Parameter „WebAccessForceTLS = TRUE“ in der Datei WEBBOX.INI erreicht werden. Ist dieser Parameter gesetzt, kann der david® Client Web über ungesicherte Verbindungen nicht mehr genutzt werden. Der neue Parameter wird beim Update auskommentiert in die WEBBOX.INI unterhalb von \DAVID\APPS\WEBBOX\CODE eingetragen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Ausführung von Scripten auch im eMail Viewer abschaltbar\\ Wird über die entsprechende Option in den Einstellungen des david® Client unter „Ansicht / Vorschau“ die Ausführung von Scripten unterbunden, gilt das nun außer für das Vorschaufenster auch für den eMail Viewer. So lässt sich sicherstellen, dass nicht nur beim Betrachten in der Vorschau, sondern auch beim Öffnen einer eMail evtl. darin enthaltene Scripte (z.B. JavaScript) nicht ausgeführt werden.
+  * Kein Abschneiden langer Betreffzeilen bei eMail-Ausdruck\\ Beim Ausdrucken von eMails aus dem david® Client wurden bisher u.U. sehr lange Betreffzeilen abgeschnitten und waren daher nicht komplett auf den Ausdrucken enthalten. Dieses Verhalten wurde nun korrigiert.
+
+  * Option „Senden an david®" im Windows Explorer Kontextmenü\\ Über den Punkt „Senden an david®" im Windows Explorer Kontextmenü können david® Nutzer beliebige Dateien direkt aus dem Explorer-Fenster mit david® versenden. Um sicherzustellen, dass diese Funktion immer zur Verfügung steht, sorgt eine automatische Überprüfung bei jedem Start des david® Client dafür, dass die Option ins Kontextmenü eingetragen wird, falls festgestellt wird, dass sie dort noch nicht existiert.
+
+  * Client-Server-Kommunikation per TLS/SSL\\ Um maximale Datensicherheit zu gewährleisten, wurde die Verschlüsselung der Kommunikation zwischen dem david® Service Layer und dem david® Client PC überarbeitet und auf den generell etablierten Standard TLS/SSL umgestellt.
+  * Funktion&nbsp;„Verschieben nach“ bearbeiten\\ Werden Nachrichten über den Menüpunkt "Verschieben nach" im Kontextmenü in andere Ordner verschoben, so werden die Ziel-Ordner in diesem Menü gespeichert. Über den neuen Menüpunkt "Bearbeiten" können diese Einträge nun entfernt oder ggfs. auch weitere hinzugefügt werden.
+
+==== Bugfix ====
+
+  * Optimierte Ordner-Auswahl per Eintippen des Namens\\ Im Navigator können Ordner durch Eintippen des Namens gefunden und selektiert werden. Dabei wird der Ordnerbaum beginnend von der aktuellen Position nach unten durchsucht und jeweils zum nächsten Ordner gesprungen, dessen Name zur bisher eingetippten Buchstabenkombination passt. Bisher funktionierte das u.U. nicht zuverlässig, wenn diese Buchstabenkombination einen oder mehrere Umlaute enthielt. Dieses Verhalten wurde optimiert, so dass die Suche auch bei enthaltenen Umlauten zuverlässig zum gewünschten Ziel führt.
+  * Verbesserte Darstellung von eMail-Inhalten\\ In einem Einzelfall konnte es vorkommen, dass der Inhalt einer eMail nach dem Öffnen im eMail Viewer nicht vollständig angezeigt wurde, obwohl er in der Vorschau komplett zu sehen war. Dieses Verhalten wurde korrigiert.
+
+  * Verbesserte Stabilität bei Benutzerwechsel\\ In einem Einzelfall konnte es zum Absturz des david® Client führen, wenn sich ein Anwender unter einem anderen Benutzernamen bei david® anmeldet. Dieses Verhalten tritt nun nicht mehr auf.
+  * Vermeidung erhöhter CPU-Auslastung nach Benutzerwechsel\\ Wenn auf einer Windows-Workstation der david® Client zunächst von einem Nutzer verwendet wurde, der den david® Reminder deaktiviert hat, und sich danach am selben Rechner ein anderer Benutzer mit aktiviertem Reminder bei david® anmeldet, konnte dies zu erhöhter CPU-Auslastung auf dieser Arbeitsstation führen. Dieses Verhalten tritt nun nicht mehr auf.
+
+  * Korrektur der Cursorposition beim Antworten/Weiterleiten\\ In einem Einzelfall wurde beim Beantworten/Weiterleiten einer bestimmten eMail der Cursor nicht oberhalb der empfangenen Originalnachricht platziert, sondern innerhalb des Textes. Dieses Verhalten tritt nun nicht mehr auf. 
+
+  * Nachrichten aus Ticker-Ansicht ausschneiden\\ Werden in der „Ticker“ Übersicht auch Nachrichten aus dem Eingang angezeigt, so ist hier der Menüpunkt „Ausschneiden“ im Kontextmenü auswählbar. Es fehlte jedoch bislang beim anschließenden Wechsel in einen anderen Ordner der entsprechende Menüpunkt „Einfügen“.
+  * Adress-Ordner in Adressauswahl sortieren\\ Unterordner können durch die zusätzliche Angabe von #Nummer# vor dem Ordnernamen im Ordnerbaum sortiert werden. Wird dies für Adress-Ordner gemacht, so wurden diese in der Adressauswahl nicht entsprechend sortiert aufgelistet. Das wurde nun angepasst.
+

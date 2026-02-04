@@ -1,0 +1,60 @@
+====== Version 3167 vom 07.04.2020 ======
+
+Release: 2020-04-07T00:00:00
+
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * WebAPI Dienst bei Verbindungstest\\ Beim Verbindungstest im david Administrator wird nun auch der eingetragene Port des WebAPI Dienstes berücksichtigt.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Optimierung beim IMAP Zugriff\\ Beim IMAP Zugriff wurde das Kommando "EXAMINE" nicht korrekt unterstützt.
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Vorlage für neue Nachrichten per ActiveSync verwenden\\ Im david Client kann nun eine Vorlage für neue Nachrichten bei der Verwendung von ActiveSync eingestellt werden („Zugang/ActiveSync“). Hierbei können auch die Benutzerbezogenen Variablen verwenden werden (z.B. @@GET BEN_EMAIL). Sofern die verwendete Mail App dies unterstützt, wird diese Vorlage auch beim Weiterleiten/Antworten verwendet.
+  * Verbesserte Sicherheit\\ Die Webbox gibt nun bei HTTP Anfragen mit den Methoden PUT und DELETE einen Fehler 501 zurück.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Videokonferenz starten\\ Im david Client können ab sofort auch Videokonferenzen gestartet werden. Diese Funktion befindet sich aktuell noch im Beta Stadium. Der Initiator einer Videokonferenz muss mit seiner chayns.ID angemeldet sein und diese mit seinem Benutzerkonto verknüpft haben. Das Starten selbst erfolgt per Klick auf die neue Schaltfläche "Gespräch" in den Symbolleisten des david Client. Zusätzlich ist es möglich, sich direkt mit dem kompletten Empfängerkreis interner eMails per Videokonferenz auszutauschen. Hierzu steht im Vorschaubereich betreffender eMails ebenfalls ein Button mit der Bezeichnung "Gespräch" zur Verfügung, über den dann alle beteiligten Personen automatisch eingeladen werden.  
+
+Ob die Videokonferenz-Funktionen generell zur Verfügung stehen sollen oder nicht, lässt sich im david Administrator am Server festlegen. Hierzu dient die Einstellung "Videokonferenzen erlauben" in der david Systemkonfiguration unterhalb von "Optionen".
+  * Einstellung um Bildanhänge in externem Viewer zu öffnen\\ Ist die neue Einstellung "Ansicht/Zusatzfenster/Bildanhänge in externem Viewer öffnen" aktiviert, so werden Bildanhänge in eMails nicht mit dem Bildbetrachter des david Clients geöffnet. Über den david Administrator kann diese Einstellung ebenfalls vor den Anwender vorgenommen werden.\\ 
+
+==== Bugfix ====
+
+  * Fehlverhalten bei Einstellung „Barrierefreie Menü-Darstellung“\\ Bei der Einstellung "Barrierefreie Menü-Darstellung" war unter dem Menüpunkt "Netzwerk" die Serverliste leer. Außerdem war im Editor der Menüpunkt "Optionen/Sendeservice" ohne Funktion.
+  * Mögliches Fehlverhalten beim Öffnen von Bildanhängen\\ Hat eine eMail neben Bildanhängen auch andere Dateianhänge, so konnte es in Einzelfällen vorkommen dass beim Öffnen eines Bildes das falsche angezeigt wurde.
+  * Mögliches Fehlverhalten beim Ausdruck von Bildanhängen\\ Werden in eMails angehängte Bilder ausgedruckt, so war der Ausdruck u.U. fehlerhaft.
+  * Mögliche Fehlfunktion bei Installation eines Zertifikates (64 Bit Version)\\ Bei der Verwendung der 64 Bit Version des david Clients konnte ein angefordertes persönliches Zertifikat u.U. nicht eingerichtet werden.\\ 
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Bugfix ====
+
+  * Vorwahl für Amtsholung bei Wahlwiederholung\\ Ist im TLD eine Vorwahl für die Amtsholung eingestellt, so wurde bei einer Wahlwiederholung diese Vorwahl u.U. nochmal gewählt.
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Menüpunkte und Funktionen bei fehlender Berechtigung\\ Hat ein Anwender eingeschränkte Rechte in einem Gruppen-Ordner, so werden ihm nun nur noch die entsprechenden Menüpunkte angezeigt.
+  * Klickbereich der Symbole bei mobiler Nutzung\\ Bei mobiler Nutzung wurde der Klickbereich der Symbole vergrößert.
+
+==== Bugfix ====
+
+  * Eingabe von Links im Editor\\ Werden Links im Editor eingegeben, so wurden diese generell im Kleinschrift geändert.
+  * Möglicher Anzeigefehler bei Filter „Nur ungelesene anzeigen“\\ Wird in der Eintragsliste der Filter "Nur ungelesene anzeigen" gesetzt, konnte es zu Anzeigefehlern kommen.
+  * Mögliches Fehlverhalten beim Hinzufügen von Personen\\ Beim Hinzufügen von weiteren Personen zu einer eMail sprang der Cursor u.U. an die falsche Stelle und die Kontakte wurde nicht immer korrekt gefiltert.
+  * Benachrichtigung über neue Nachrichten im Browser\\ Bei der Verwendung des smart clients im Browser funktionierte die Benachrichtigung über neuen Nachrichten u.U. nicht.\\ 
+

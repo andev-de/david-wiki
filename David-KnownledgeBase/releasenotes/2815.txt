@@ -1,0 +1,36 @@
+====== Version 2815 vom 03.08.2015 ======
+
+Release: 2015-08-03T16:16:16
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Ein möglicher Absturz der in Einzelfällen auftreten konnte wurde behoben.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Unter "Optionen/Einstellungen/Ansicht/Farbe wählen" stehen nun weitere Farbschemen zur Auswahl.
+
+  * Ist bei einer empfangenen eMail der Anwender lediglich der Cc Empfänger, so konnte es in einem Einzelfall vorkommen, dass seine Adresse zusätzlich auch im An Feld stand.
+
+  * Die Wörterliste wurde erweitert. 
+  * Beim Erstellen einer neuen Nachricht konnte per Kontextmenü die "Einfügen" Symbolleiste nicht deaktiviert werden.
+
+  * Bei einer david® - mail exchange™ Installation kann nun auch unter "Einstellungen" das klassische Layout mit farbigen Symbolen gewählt werden.
+
+  * Sind mehrere Chat Fenster geöffnet und einzelne werden wieder geschlossen, so konnte u.U. in den verbleibenden Fenstern kein Text markiert werden. In einem Einzelfall konnte es hierbei auch zum Absturz des Clients kommen.
+
+  * In einem Einzelfall konnte es beim Versand einer hybrid mail Nachricht zum Absturz des Clients kommen.
+
+  * Im Dialog zum hybrid mail Versand können nun auch die "Nachrichtenoptionen" aufgerufen werden, um z.B. die Nachricht zunächst auf "Wartend" zu setzen.
+
+  * Wird in einer empfangenen eMail eine angehängte PDF Datei über den Dateianhang Dialog geöffnet und dann aus einem PDF Viewer per "Datei per E-Mail senden" Funktion in einer neuen eMail erneut versendet, so stimmte das Dateidatum u.U. nicht (lag in der Zukunft).
+
+  * Öffnet man eine hybrid mail im Ausgang, so findet dort nun auch eine Überprüfung auf Sperrflächen statt. Bisher konnte eine fehlerhafte hybrid mail im Ausgang durch die fehlende Überprüfung dennoch für den Versand freigegeben werden.
+
+

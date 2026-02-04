@@ -1,0 +1,57 @@
+====== Version 3466 vom 11.07.2022 ======
+
+Release: 2022-07-11T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ 
+Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.500. 
+
+==== Bugfix ====
+
+  * Fußnote an Tracking Mails angehängt\\ Ist für den Anwender im david Administrator eine Fußnote eingestellt, so wurde diese u.U. auch bei den automatisch erstellten Tracking Nachrichten angehängt. Das ist nun unterbunden.
+  * Tracking Infos bei verschobener eMail\\ Wird eine versendete eMail mit Tracking Anforderung aus dem Ausgang per Verteilregel in einen anderen Ordner verschoben, so wurden die Tracking Antworten dieser eMail nicht zugeordnet. Das ist nun behoben.
+
+
+  * Mögliche falsche Wiedervorlage bei Terminserien\\ Bei bestimmten Terminserien konnte es vorkommen, dass die Wiedervorlage zum falschen Zeitpunkt eingetragen wurde (z.B. bei einer Serie alle 3 Monate beginnend am ersten Tag eines Monats).
+
+
+  * Mögliches Fehlverhalten beim Hinzufügen von Empfängern zu eMails mit LiveComment\\ Werden bei einer eMail weitere Empfänger für LiveComments hinzugefügt, so stand die Info hierüber (“als neuen Empfänger hinzugefügt“) in Einzelfällen doppelt in der eMail.
+
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Angezeigter Name bei LDAP Adressen\\ In den LDAP Einstellungen kann nun bestimmt werden, welches LDAP Feld als Angezeigter Name ausgewertet werden soll.
+  * Inline Emoticons im Editor nicht mehr als Dateianhang (david Client Modern)\\ Wird eine eMail mit Inline Emoticons versendet, so erscheinen diese beim Empfänger nun nicht mehr als Dateianhang.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim schnellen Wechsel zwischen Plain Text eMails\\ Wurde in der Eintragsliste schnell zwischen Plain Text eMails gewechselt, so konnte es ein Einzelfällen zum Absturz kommen.
+
+
+  * Mögliches Fehlverhalten beim Aufruf der Emoticon Auswahl im Chromium Editor\\ Wird der Chromium Editor verwendet und die Emoticon Auswahl soll per F4 Taste aufgerufen werden, kam es zum Absturz.
+  * Mögliches Fehlverhalten beim Editor für eine neue Erinnerung (david Client Modern)\\ Wird eine neue Erinnerung erstellt (“Neu/Erinnerung“), so konnte es zum Hängen des Clients kommen, wenn hierbei ein Textbaustein eingefügt wird.
+  * Mögliches Fehlverhalten beim Versand per MAPI ohne david Client\\ Soll aus einer externen Anwendung eine Nachricht per MAPI versendet und dies ohne notwendige Freigabe des Anwenders im Hintergrund erfolgen, so funktionierte dies in Einzelfällen nicht mehr und der Anwender musste die Nachricht manuell freigeben.
+  * Mögliches Fehlverhalten beim Aufruf der Einstellungen\\ In einem Einzelfall konnte es beim Aufruf der Einstellungen (“Nachrichten-Editor“) zum Absturz kommen.
+
+
+  * Text im Intercom per Strg+C kopieren (david Client Modern)\\ Im Intercom funktionierte das Kopieren eines markierten Textes per Strg+C nicht.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz\\ Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david) wurde aktualisiert auf die Version 6.500.
+
+===== Message Identification Services =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Die Engine für die Message Identification Services wurde aktualisiert.
+

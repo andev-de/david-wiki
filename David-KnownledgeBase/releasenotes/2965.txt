@@ -1,0 +1,54 @@
+====== Version 2965 vom 30.10.2017 ======
+
+Release: 2017-10-30T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Ein mögliches Fehlverhalten beim Überschreiben älterer StrongBox Images wurde behoben.
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Bei der Konvertierung von Winmail.dat Dateianhängen wurden Optimierungen vorgenommen. In einem Fall konnte eine PDF Datei nicht geöffnet werden, in einem anderen Fall enthielt die Winmail.dat Datei eine falsche Dateigröße und konnte von externen "Winmail Opener" Applikationen nicht geöffnet werden.
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Bei der Konvertierung von Winmail.dat Dateianhängen wurden Optimierungen vorgenommen. In einem Fall konnte eine PDF Datei nicht geöffnet werden, in einem anderen Fall enthielt die Winmail.dat Datei eine falsche Dateigröße und konnte von externen "Winmail Opener" Applikationen nicht geöffnet werden.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Beim Ändern von Einträgen im Entwurfs-Ordner konnte es in Einzelfällen zum Absturz der WebBox kommen.
+  * Wird per ActiveSync eine Besprechungsanfrage im Format "Nur Text" angenommen, so konnte es zum Absturz der WebBox kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Der Link Lookup Service ist nun integriert und per Vorgabe aktiviert (Schalter unter "Einstellungen/Sicherheit"). Dieser Service ist nur mit aktiviertem sitecare™ verfügbar und überprüft zur Laufzeit ob ein im david® Client angeklickter Link als gefährlich klassifiziert ist. 
+  * Der „Drucken“ Button ist bei einer eMail nun auch dann aktiv, wenn der Fokus im Feld „Kommentieren“ steht. Außerdem gibt es nun auch in der Vorschau und in der ReadOnly Ansicht im Kontextmenü den Menüpunkt Drucken“.
+  * Die Vorschau von Dateianhängen wurde optimiert.
+  * Das Laden der eingestellten Vorlagen bei der eMail Erstellung wurde optimiert.
+  * Die Wörterliste der Rechtschreibprüfung wurde erweitert. 
+  * Sind im Kalender auch andere Kalender eingebunden, so wird in der Ansicht "Gruppen" und "Gruppe (Woche)" nun bei jedem Kalender dessen eingestellte Hintergrundfarbe verwendet (es sein denn bei dem Kalender ist  "Lokale Einstellung benutzen" eingestellt).
+
+==== Bugfix ====
+
+  * Beim Aufruf von URLs in eMails wird nun der User-Agent des verwendeten Browsers beibehalten (z.B. "Mozilla/5.0") statt "David Client".
+  * Wird im Kalender eine weiße Schrift bei Terminen angezeigt (z.B. bei orangefarbener Beschriftung), so wurde diese auch beim Ausdruck verwendet und konnte bei einem schwarz/weiß Drucker u.U. nicht erkannt werden.
+  * Ist das Windows 10 Update 1709 (Fall Creators Update) installiert und man versucht den PC bei gestartetem David Client herunter zu fahren, so konnte es eine Windows Meldung geben, dass der David Client das herunterfahren verhindert.
+  * Beim Wechsel zum Kalender konnte es in Einzelfällen zum Absturz kommen.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Nach dem Standby konnte es in Einzelfällen vorkommen, dass der David Client hing.
+

@@ -1,0 +1,35 @@
+====== Version 2809 vom 27.05.2015 ======
+
+Release: 2015-05-27T12:02:39
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Ist im Ausgangsordner eines david® Benutzers eine Verteilregel eingerichtet, die alle Nachrichten in einen anderen Ordner verschiebt und der Benutzer nutzt die Funktion "Antwort erwartet", so wurde die anschließende Wiedervorlage an ihn u.U. nicht zugestellt.
+  * Werden bei einer Client Verteilregel Variablen verwendet und der Vergleichsstring wird hierdurch sehr lang, so konnte es zum Absturz des Service Layers bei dieser Regel kommen.
+  * Werden Änderungen an den david Benutzer Adressen vorgenommen, z.B. eine andere eMail Adresse, so wurde diese Änderung u.U. nicht an den Clients für die Adressvorschläge übernommen.
+
+
+=====  Mail Access Server =====
+
+==== Feature ====
+
+  * Der Mail Access Server unterstützt nun für IMAP4 Verbindungen auch das Kommando STARTTLS. Voraussetzung dafür ist natürlich, dass SSL/TLS überhaupt möglich ist.
+
+
+=====  WebBox =====
+
+==== Feature ====
+
+  * Bei Nutzung von ActiveSync oder david Client iOS/Android können nun auch die folgenden david Befehle verwendet werden:
+<p>
+@@VON (VON)\\ 
+@@AN (AN)\\ 
+@@ATTACH (ATT)\\ 
+@@WARTEN (WRT)\\ 
+@@EILIG (ELG)\\ 
+@@BETREFF (BTR)\\ 
+</p>
+

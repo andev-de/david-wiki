@@ -1,0 +1,38 @@
+====== Version 3003 vom 23.07.2018 ======
+
+Release: 2018-07-23T00:00:00
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität beim eMail-Empfang\\ In einem Einzelfall konnte der Empfang einer bestimmten eMail zum Absturz des Grabbing Servers bzw. des PostMan führen. Dieses Verhalten wurde korrigiert.
+  * Möglicher Fehler bei Konvertierung behoben\\ Beim Empfang einer bestimmten eMail konnten in einem Einzelfall eine fehlerhafte Konvertierung der empfangenen Daten dazu führen, dass die Nachricht nicht korrekt im Eingangsordner angezeigt wurde. Diese mögliche Fehlerquelle wurde beseitigt. 
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität beim eMail-Empfang\\ In einem Einzelfall konnte der Empfang einer bestimmten eMail zum Absturz des Grabbing Servers bzw. des PostMan führen. Dieses Verhalten wurde korrigiert.
+  * Möglicher Fehler bei Konvertierung behoben\\ Beim Empfang einer bestimmten eMail konnten in einem Einzelfall eine fehlerhafte Konvertierung der empfangenen Daten dazu führen, dass die Nachricht nicht korrekt im Eingangsordner angezeigt wurde. Diese mögliche Fehlerquelle wurde beseitigt. 
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Optimierungen für die Funktion „Verschieben nach„\\ Das Kontextmenü zu einem bzw. mehreren markierten Nachrichten in der Eintragsliste bietet mit der Funktion „Verschieben nach“ eine schnelle Möglichkeit zum Verschieben der betreffenden Elemente in einen gewünschten Zielordner. Die Liste dieser Zielordner lässt sich nun über den Punkt „Bearbeiten...“ beliebig sortieren. Um dabei immer den Überblick behalten zu können, lässt sich die Größe des „Bearbeiten“ Fensters frei anpassen.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Unerwünschter Zeitversatz bei Besprechungsanfrage an Outlook 365 beseitigt\\ Beim Versand einer Besprechungsanfrage an eine Gegenstelle, die Outlook 365 verwendet, wurde der betreffende Termin u.U. um eine Stunde versetzt angezeigt, wenn es sich um eine Terminserie handelte. Dieses Verhalten wurde korrigiert.
+  * Verbesserte Installation von david® Client Apps\\ Mit david® Client Apps lässt sich das Funktionsangebot des david® Client um spezielle Angebote erweitern. Dabei werden die Client Apps in die Favoritenleiste eingebunden und sind dort direkt aufrufbar. In einem Einzelfall war die Installation von Client Apps nicht möglich, obwohl sämtliche erforderlichen Mindestvoraussetzungen erfüllt waren. Dieses Verhalten wurde korrigiert.
+
+  * Behebung möglicher Darstellungsfehler bei eMail Sendeaufträgen\\ In einem Einzelfall konnte die Verwendung einer fehlerhaften HTML-Vorlage dazu führen, dass die zu versendende eMail falsch dargestellt wurde. Dieses Verhalten wurde korrigiert.
+
+  * Optimiertes Verhalten bei Starten des david® Client\\ In einem Einzelfall konnte der david® Client direkt beim Starten bzw. während der Angabe der Benutzerdaten bei der Anmeldung abstürzen. Dieses Verhalten wurde korrigiert.
+
+

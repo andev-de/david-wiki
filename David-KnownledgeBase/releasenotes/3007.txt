@@ -1,0 +1,43 @@
+====== Version 3007 vom 29.08.2018 ======
+
+Release: 2018-08-29T00:00:00
+
+
+=====  Administrator =====
+
+==== Bugfix ====
+
+  * Automatische Anpassung von Sende Methoden an geänderte Benutzer eMail-Konten\\ Für jedes eMail Konto, das in den Benutzereinstellungen des david® Administrators hinterlegt ist, existiert in der PostMan Konfiguration unter „PostMan/Datenbanken/Sende Methode“ ein zugehöriger Eintrag. Änderungen, die in der Benutzerkonfiguration an diesen eMail Konten vorgenommen worden sind, wurden bisher bei der Sende Methode u.U. nicht übernommen. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Darstellung bei maximierter Fenstergröße\\ Der Betrieb des david® Administrators mit maximierter Fenstergröße (über das komplette Display) wurde optimiert, so dass bisher bei dieser Einstellung mögliche minimale Darstellungsfehler nicht mehr auftreten.
+
+  * Optimierte Sortierung der Liste eingerichteter ActiveSync Geräte\\ Im david® Administrator lässt sich unter dem Punkt „Fernzugriff &amp; Publizierung/WebBox/ActiveSync“ eine Übersicht der ActiveSync Geräte aufrufen, die aktuell für den Datenaustausch eingerichtet sind. Durch Klick auf die Spaltenüberschriften kann diese Liste nach der jeweils zugehörigen Eigenschaft sortiert werden. Diese Sortierung wurde optimiert, da sie für die Eigenschaft „Letzte Verbindung“ nicht immer korrekt funktionierte. 
+
+  * Verbesserte Stabilität beim Ändern von Benutzerdaten\\ Beim Bearbeiten der Benutzerkonfiguration konnte es zu einem Absturz des david® Administrators kommen, wenn nach Klick auf die Schaltfläche „david®Client konfigurieren“ auf der Registerkarte „Benutzerdaten“ der Punkt „Editor“ aufgerufen wurde. Dieses Verhalten wurde korrigiert.
+
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Optimierter Abgleich der Fotos von Adresseinträgen bei Nutzung von Exchange ActiveSync\\ Beim Abgleich von Adressdaten per Exchange ActiveSync mit mobilen Geräten wurden neu angehängte Bilder oder das Entfernen von Bildern bei der Synchronisation u.U. nicht immer korrekt übernommen. Dieses Verhalten wurde korrigiert.
+  * Optimierter Abgleich geänderter Serientermine per ActiveSync\\ Die Synchronisation von Kalendereinträgen mit mobilen Geräten per Exchange ActiveSync wurde optimiert. Zuvor wurden u.U. Änderungen, die nach einem bereits erfolgten Abgleich an einzelnen Elementen einer Terminserie vorgenommen wurden, bei der nächsten Synchronisation u.U. nicht nicht korrekt übernommen. Dieser Effekt tritt nun nicht mehr auf.
+
+
+=====  Client PC =====
+
+==== Bugfix ====
+
+  * Optimierte Darstellung von Umlauten in Intercom Nachrichten\\ Im Intercom konnte u.U. der Effekt auftreten, dass Umlaute in Intercom Nachrichten, die bei bereits geöffnetem Intercom neu eintreffen, in der Vorschau nicht korrekt dargestellt wurden. Nach Verlassen und erneutem Öffnen des Intercom war die Darstellung jedoch wieder korrekt. Diese Verhalten wurde korrigiert, so dass Umlaute jetzt sofort einwandfrei angezeigt werden.
+
+  * Anpassungen beim Öffnen der Kontakt-Informationen zu einem verpassten Telefonanruf\\ Bei Nutzung der in david® integrierten Telefonie Dienste informiert david® auf Wunsch durch entsprechende Einträge im Eingangsbuch über verpasste Telefonanrufe. Hierbei konnte es u.U. zu einem Absturz des david® Client führen, wenn die zugehörigen Adresseinformationen des Anrufers durch einen Rechtsklick auf das Absenderbild des betreffenden Eintrags geöffnet werden sollen. Solche Abstürze treten nun nicht mehr auf.
+
+  * Korrigierte Anzeige von Umlauten bei Windows Anzeigesprache „English (en-DE)„\\ Im david® Client wurden Umlaute u.U. nicht korrekt dargestellt, wenn in den Windows Einstellungen des betreffenden Computers als Windows-Anzeigesprache „English (en-DE)" ausgewählt ist. Das konnte dann z.B. im Betreff von Nachrichten oder bei Nutzung der Rechtschreibprüfung auftreten. Dieses Verhalten wurde korrigiert.
+
+  * Optimierte Funktion der Eingabe-Historie nach internem Fax Versand\\ Nach dem internen Versand eines empfangenen Faxes über den Menüpunkt „Erneut versenden“ an einen lokalen david® Benutzer war u.U. die Eingabe-Historie des „An“ Feldes für einen direkt anschließendes „Erneut versenden“ einer weiteren Nachricht nicht per Cursor-Taste nutzbar. Der Druck auf die Taste „Cursor runter„ führte dann zu keinem Ergebnis. Diese Verhalten wurde korrigiert.
+
+  * Optimiertes Verhalten beim Beenden des david® Clients\\ In Einzelfällen konnte das Beenden des david® Clients zu einem Absturz führen. Dieses Verhalten wurde korrigiert.
+
+  * Auswahl des Ziel-Kalenders beim Erstellen von Terminen\\ Soll ein Termin im Kalender eines anderen david® Anwenders erstellt werden, so fehlte u.U. die Auswahl des Ziel-Kalenders mit der Option „Für den Besitzer des gewählten Kalenders speichern“. Somit wurde auch die Erinnerung nicht im Wiedervorlage Ordner dieses Anwenders erstellt, sondern im eigenen.
+
+

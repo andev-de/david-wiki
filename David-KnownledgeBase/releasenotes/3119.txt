@@ -1,0 +1,65 @@
+====== Version 3119 vom 03.12.2019 ======
+
+Release: 2019-12-03T00:00:00
+
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Optimierung bei der Konvertierung von MultiPart eMails\\ Die Konvertierung von MultiPart eMails wurde optimiert.
+
+=====  Grabbing Server =====
+
+==== Feature ====
+
+  * Optimierung bei der Konvertierung von MultiPart eMails\\ Die Konvertierung von MultiPart eMails wurde optimiert.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Textfarbe „schwarz“ zur Auswahl im Nachrichten Editor\\ Im Nachrichten Editor steht als Textfarbe nun auch „schwarz“ zur Auswahl.
+  * Frage nach Ziel-Kalender beim Kopieren und Einfügen von Terminen\\ Sind im Kalender weitere Kalender verknüpft und man will einen bestehenden Termin kopieren und wieder einfügen, so wird man nun gefragt in welchem Kalender der Termin gespeichert werden soll.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Neue Verteilregelbedingung: VIP\\ Es gibt nun eine neue Verteilregelbedingung, die nach dem VIP Status des Absenders bezogen auf den Empfänger verteilen kann. 
+  * Keine Tracking Einstellungen wenn Tracking global deaktiviert ist\\ Wenn im david Administrator das Tracking deaktiviert ist, werden im david Client die Tracking Einstellungen nun nicht mehr angezeigt.
+
+==== Bugfix ====
+
+  * Anzeige von Faxen des VoIP2 TLDs in normaler Auflösung\\ Wird mit dem VoIP2 TLD ein Fax in normaler Auflösung empfangen, so wurde das Fax in der Vorschau und im Fax Viewer gestaucht angezeigt.
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Ältere Nachrichten im david Chat nachladen\\ Im david Chat funktionierte das Nachladen älterer Nachrichten u.U. nicht.
+  * Fehlverhalten bei Anzeige von „heute“ und „gestern“ bei Nachricht zwischen 23 und 00 Uhr\\ Bei Nachrichten, die zwischen 23:00 und 0:00 Uhr empfangen wurden, stand am nächsten Tag fälschlicherweise "heute" statt "gestern".
+
+=====  hybrid TLD =====
+
+==== Feature ====
+
+  * Neue API für david hybrid mail\\ Die Deutsche Post als Technologiepartner für den E-Post-Dienst hinter hybrid mail stellt ihre API um. Aus diesem Grund setzt david auf eine neue, leistungsfähigere API für den komfortablen Briefversand. Die neue API ersetzt die bisherige, so dass bei Nutzung eines eigenen E-Post-Geschäftsaccounts aktualisierte Zugangsdaten für den hybrid mail TLD im david Administrator hinterlegt werden müssen. Bei Verwendung des in david integrierten Provider-Accounts erfolgt die Aktualisierung automatisch und es sind keine Maßnahmen erforderlich. 
+
+=====  ISDN TLD =====
+
+==== Feature ====
+
+  * Monitor Ausgaben mit Zeitstempel\\ Im TLD Monitor und einer Debug Datei kann zu Kontrollzwecken die Kommunikation angezeigt werden. Durch den Eintrag "file=40" in der Konfigurationsdatei tld.ini enthalten diese Ausgaben nun zusätzlich einen Zeitstempel.
+
+=====  VoIP2 TLD (Beta) =====
+
+==== Feature ====
+
+  * „Sende Services“ einstellen\\ In der Port Konfiguration kann nun auf dem "Allgemein" Tab der Schalter für die "Sende Services" aktiviert werden.&nbsp;
+  * Festlegen der lokalen IP-Adresse\\ Sind am david Server mehrere lokale IP-Adressen gebunden, so kann in den Einstellungen des TLDs nun die zu verwendende IP-Adresse angegeben werden
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Empfand und Versand\\ Ein möglicher Absturz beim Empfand und Versand wurde behoben.
+  * Vorwahl für Amtsholung doppelt gewählt\\ Wird eine "Vorwahl für Amtsholung" eingestellt, so wurde diese doppelt gewählt.
+  * Fax Empfang u.U. nicht mehr möglich\\ Wurde der TLD von einem Nicht-Faxgerät angerufen, so war anschließend kein Fax Empfang mehr möglich bis zum Neustart des TLDs. Das ist nun behoben.
+  * Fehlermeldung bei falscher Registrierung\\ Es gibt nun eine Fehlermeldung im TLD Monitor und im David Ereignis-Ordner, wenn die Engine sich mit den eingetragenen Daten nicht registrieren konnte.
+  * Verteilkennung bei empfangenen Faxen\\ Bei einem empfangenen Fax stand in dem Feld „Verteilkennung“ fälschlicherweise die Nummer des Absenders.
+

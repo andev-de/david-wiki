@@ -1,0 +1,11 @@
+====== Version 3301 vom 15.01.2021 ======
+
+Release: 2021-01-15T00:00:00
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * eMails u.U. nicht abgeholt\\ Bei vielen Postfächern bzw. vielen Nachrichten im Postfach konnte es zu einem starken Festplattenzugriff kommen und es wurden keine eMails mehr abgeholt.
+

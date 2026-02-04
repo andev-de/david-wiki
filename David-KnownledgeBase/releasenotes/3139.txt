@@ -1,0 +1,53 @@
+====== Version 3139 vom 16.01.2020 ======
+
+Release: 2020-01-16T00:00:00
+
+
+=====  Service Layer =====
+
+==== Bugfix ====
+
+  * Weitere Benutzer im smart client beim Kommunikation hinzufügen \\ Soll im smart client ein weiterer Benutzer zu einer Kommunikation hinzugefügt werden, so wurde dies u.U. nicht korrekt übernommen.
+  * Mögliches Fehlverhalten beim Faxempfang\\ In einem Einzelfall konnte es beim Faxempfang zum Absturz des Service Layers kommen.
+  * Betreff beim smart client eingekürzt\\ Hat eine eMail einen längeren Betreff, so wird dieser im smart client nun nicht mehr nach 95 Zeichen eingekürzt.
+  * Kein Badge für neue Chat Nachricht per Chat App\\ Erhält man von einem anderen david Anwender eine neue Chat Nachricht, die dieser per Chat App Android oder iOS sendet, so wurde dies im david Client PC u.U. nicht durch ein rotes Badge am Chat Tab signalisiert.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Optimierung der WebAPI (smart client) Konfiguration\\ Die Konfiguration des WebAPI Dienstes, der zur Nutzung des smart clients verwendet wird, wurde optimiert. U.a. kann hier nun direkt das verwendete SSL Zertifikat ausgewählt und die externe Erreichbarkeit geprüft werden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Anzeige des chayns Nachrichten Fensters\\ Erhält man eine neue chayns Nachricht, so erhält der Dialog nun nicht mehr automatisch den Fokus. Außerdem wird eine geänderte Position des Fensters nun gespeichert.
+  * Kennzeichnung des aktuellen Tages in der Monatsansicht des Kalenders\\ In der Monatsansicht des Kalenders ist der aktuelle Tag ("heute") nun in rot gekennzeichnet.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+
+==== Bugfix ====
+
+  * Ortsangabe bei privaten Terminen\\ Ist z.B. in einem Gruppenkalender ein Termin als "Privat" gekennzeichnet, so wurde die Ortsangabe dennoch innerhalb der Termins für andere Anwender angezeigt.
+  * Datum im Separator bei wiedervorgelegten eMails\\ Erhält man eine eMail aus der Wiedervorlage und will diese beantworten oder weiterleiten, so enthielt das Datum im Separator den Zeitpunkt der Wiedervorlage und nicht den des ursprünglichen Empfangs.
+
+=====  hybrid TLD =====
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand\\ In einem Einzelfall konnte es vorkommen, dass durch einen fehlerhaften Betreff der Brief nicht übertragen werden konnte.
+
+===== Message Identification Services =====
+
+==== Feature ====
+
+  * Aktualisierte Spamschutz-Engine\\ Zur stetigen Optimierung des Spamschutzes wurden die zentralen Funktionen der Message Identification Services aktualisiert und stehen nun in einer neuen Engine zur Verfügung. Diese neue Engine nutzt nun einen 64 Bit Prozess (neue Module david Security Demon, david Message Identification Layer, david Message Identification Library (64 Bit)
+), Voraussetzung für das Betriebssystem ist mindestens Server 2008 R2. Ältere Betriebssysteme nutzen weiterhin die bisherige Variante. 
+
+=====  WebAPI (smart client) =====
+
+==== Feature ====
+
+  * Optimierung der WebAPI (smart client) Konfiguration\\ Die Konfiguration des WebAPI Dienstes, der zur Nutzung des smart clients verwendet wird, wurde optimiert. U.a. kann hier nun direkt das verwendete SSL Zertifikat ausgewählt und die externe Erreichbarkeit geprüft werden.
+  * Diverse Optimierungen und Fehlerkorrekturen\\ Es wurden diverse Optimierungen und Fehlerkorrekturen am WebAPI Dienst vorgenommen, die die Nutzung des smart clients noch komfortabler machen.
+

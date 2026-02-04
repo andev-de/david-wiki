@@ -1,0 +1,86 @@
+====== Version 3328 vom 25.05.2021 ======
+
+Release: 2021-05-25T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Virus Protection\\ 
+Die Engine für die auf dem david Server betriebenen Anti-Virus-Dienste (Virus Protection) wurde aktualisiert auf die Version 6.200. 
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * Parameter TMRDOMAINLIST mehrfach verwendbar\\ 
+Bei der Verwendung der Mail Relay Services kann in der Datei postman.ini mit dem Parameter TMRDOMAINLIST angegeben werden, für welche Domains dies gelten soll (maximal 1000 Zeichen). Dieser Parameter kann nun auch mehrfach untereinander eingetragen werden, um mehr Domains eintragen zu können.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Versand von EML Anhängen\\ 
+Wird eine EML Datei als Dateianhang versendet, so konnte diese u.U. von Gegenstellen mit einem Microsoft Exchange Server nicht geöffnet werden.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Mögliche Verzögerung bei der Erstellung von eMails mit Dateianhängen\\ 
+Bei der Erstellung von eMails mit Dateianhängen per david Client Web konnte es u.U. zu Verzögerungen kommen.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Fax weiterleiten als PDF Datei\\ Beim Weiterleiten eines Fax aus der Eintragsliste oder dem Fax Viewer wird das Fax nun per Vorgabe als PDF an die neue eMail angehängt. In den Einstellungen (Editor/Erweitert) kann dies wieder wie zuvor auf TIFF umgestellt werden. Diese Einstellung kann auch über den david Administrator vorgenommen werden.
+  * Link zur Videokonferenz im Plain Text bei Einladungen\\ 
+Bei Einladungen zu einer Videokonferenz wird nun der Link zusätzlich im Plain Text Teil eingetragen.
+  * Automatisches Zwischenspeichern von Nachrichten\\ 
+Der david Client speichert nun bei der Erstellung von Nachrichten diese in Intervallen lokal ab, so dass die Nachricht nach einem Absturz oder einem unbeabsichtigten Beenden des david Clients weitgehend wiederhergestellt werden kann. Hierzu gibt es die neue Einstellung "Editor/Optionen/Auto-Wiederherstellung abgebrochener Nachrichten".
+  * Menü für Chromium und WebView2 Einstellungen\\ Die Einstellungen zur Verwendung von Chromium und WebView2 befunden sich nun direkt unter dem neuen Menüpunkt "HTML".
+  * Expertenmodus bei david Client Einstellungen\\ 
+Per Vorgabe werden nun beim Öffnen der david Client Einstellungen nur die wichtigsten Einstellungen angezeigt. Über den Schalter "Erweitert" werden wieder alle Einstellungen angezeigt.
+  * Optimierung beim Import von eMails aus Outlook \\ 
+Beim Import von eMails aus Outlook konnte es vorkommen, dass ältere Nachrichten oben angezeigt wurden. Das wurde nun optimiert, so dass immer die neuesten Nachrichten oben angezeigt werde.
+  * Nutzung des Link Lookup Service bei Verwendung der WebView2\\ 
+Wird die WebView2 verwendet, so wird beim Klick auf Links im Intercom nun auch der Link Lookup Service genutzt.
+  * Optimierung bei der Anzeige von Dateianhängen\\ Bei der Verwendung von höheren Bildschirmauflösungen wurde der Bereich der Dateianhänge im Nachrichten Editor u.U. in der falschen Größe angezeigt. Das wurde nun optimiert.
+  * Optimierung bei der Anzeige von Plain Text Nachrichten\\ 
+Die Anzeige von Plain Text Nachrichten wurde optimiert.
+  * Standardtext für die Erstellung von Nachrichten\\ In den Einstellungen für den Editor kann nun eine Standardtext vorgegeben werden. Dieser wird verwendet, wenn keine Vorlage eingestellt ist und wenn bei einer Vorlage die Cursor Position vorgegeben ist.
+
+
+  * Optimierung bei der Vergabe der Dateinamen für Sendeaufträge\\ Die Vergabe der Dateinamen für Sendeaufträge wurde optimiert (Verzeichnis \david\apps\faxware\out\api des david Servers).
+  * chayns.de auf InfoCenter Seite\\ 
+Ist der Anwender per chayns angemeldet, so wird beim Wechsel zur InfoCenter Seite dort die Seite chayns.de angezeigt.
+
+==== Bugfix ====
+
+  * Möglicher Anzeigefehler bei Terminen zum Tageswechsel\\ Ist im Kalender ein Termin bis 00:00 Uhr eingetragen, so wurde er u.U. auch noch am folgenden Tag angezeigt.
+  * eMail mit Textmarker Passagen ausdrucken\\ 
+Wird eine eMail ausgedruckt, die farbige Textmarker Passagen enthält, so wurden diese u.U. nicht farbig ausgedruckt und die entsprechende Option im Dialog "Seite einrichten" wurde auch nicht beachtet.
+  * Vorschau in gemounteten StrongBox Images\\ 
+Bei Verwendung von Edge oder Chrome war die Vorschau von eMails in gemounteten StrongBox Images nicht möglich.
+  * Möglicher Anzeigefehler der Tracking Informationen bei hoher Auflösung\\ 
+Bei einer hohen Auflösung des Monitors konnte es zu Anzeigefehlern bei den Tracking Informationen einer versendeten Nachricht kommen.
+  * Funktion „Rückgängig“ im Chromium Editor\\ Die Funktion „Rückgängig“ war im Chromium Editor u.U. nicht gegeben.
+  * Mögliches Fehlverhalten beim Editieren des Betreffs mit der Maus\\ In Einzelfällen konnte es zum Absturz kommen, wenn der Betreff einer Nachricht mit der Maus editiert wird.
+  * Mögliches Fehlverhalten beim Versand von EML Anhängen\\ Wird eine EML Datei als Dateianhang versendet, so konnte diese u.U. von Gegenstellen mit einem Microsoft Exchange Server nicht geöffnet werden.
+  * Mögliches Fehlverhalten beim Öffnen einer Wiedervorlage zu einem Chat\\ Wird eine Wiedervorlage zu einem Chat erstellt und anschließend soll der Link zum Chat in der Vorschau geöffnet werden, so funktionierte dies u.U. nicht.
+  * Eigene Sounds u.U. nicht abgespielt\\ Werden in den Einstellungen der david Clients eigene Sounds hinterlegt, so wurden diese u.U. nicht abgespielt.\\ 
+
+=====  hybrid TLD =====
+
+==== Feature ====
+
+  * Fehlermeldung bei fehlerhaften Zugangsdaten\\ 
+Werden beim hybrid TLD die Zugangsdaten eingetragen, so erschien bei einem Fehler u.U. nur der Hinweis "Allgemeiner Fehler", diese Informationen sind nun ausführlicher.
+
+===== Desktop Protection for  =====
+
+==== Feature ====
+
+  * Aktualisierte Engine für Client-Virenschutz\\ 
+Die Engine für die auf den Arbeitsstationen betriebenen Anti-Virus-Dienste (Desktop Protection for david) wurde aktualisiert auf die Version 6.200. 
+

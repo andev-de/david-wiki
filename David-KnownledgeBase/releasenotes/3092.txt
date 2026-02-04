@@ -1,0 +1,64 @@
+====== Version 3092 vom 24.09.2019 ======
+
+Release: 2019-09-24T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Windows Benutzer aus Trusted Domain als david Benutzer hinzufügen\\ Im david Administrator können nun auch Windows Benutzer aus einer Trusted Domain als david Benutzer hinzugefügt werden.
+
+==== Bugfix ====
+
+  * Speicher u.U. nicht freigegeben\\ In Einzelfällen konnte es vorkommen, dass Speicher nicht wieder freigegeben wurde.
+
+=====  PostMan =====
+
+==== Feature ====
+
+  * SMTP Host Name bei Sendemethode einstellbar\\ Wird im david Administrator eine Sendemethode für den eMail-Versand eingetragen, so kann hier nun zusätzlich der SMTP Host Name eingestellt werden, der genutzt werden soll.
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Status bei Ordnerabfrage per IMAP\\ Wird per IMAP die Existenz eines nicht vorhandenen oder nicht frei gegebenen Ordnern abgefragt, so wurde hier u.U. der falsche Status zurückgegeben.
+
+=====  WebBox =====
+
+==== Bugfix ====
+
+  * Verwendung von Umlauten im Passwort beim Zugriff per ActiveSync und david Client Web\\ Beim Zugriff auf den david Server per ActiveSync oder david Client Web können nun auch Umlaute im Remote Access Passwort verwendet werden.
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Anzeige der aktuellen Zeit in Kalenderansicht „Gruppen“\\ Hat man in der Kalenderansicht "Gruppen" mehrere Kalender eingebunden, so wird der blaue Punkt zur Darstellung der aktuellen Zeit nun nur noch einmal angezeigt und nicht bei jedem Kalender.
+  * Formatauswahl beim Einfügen aus Zwischenablage\\ Bei dem Dialog zur Auswahl des Formats beim Einfügen in eine neue eMail wird nun die letzte Auswahl gemerkt und beim nächsten Einfügen vorgeschlagen.
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Einstellung „Kalenderhintergrund farbig“ unter „Outdated“\\ Unter "Einstellungen/Global/Outdated" gibt es nun die Einstellung "Kalenderhintergrund farbig", wodurch bei Bedarf der bisherige farbige Hintergrund im Kalender wieder eingestellt werden kann.
+  * Erinnerung für Geburtstag aus einer Adresse erstellen\\ Wird bei einer Adresse die Option "Geburtstag im Kalender speichern" gewählt, so wird nun für den Geburtstag eine Wiedervorlage erstellt mit der Standard-Erinnerung für ganztägige Termine.
+  * „eMail senden an“ bei empfangenen und versendeten eMails\\ Öffnet man z.B. im Ausgang bei einer versendeten eMail das Kontextmenü bei der Empfänger eMail-Adresse über der Vorschau, so gibt es hier nun den neuen Menüpunkt "eMail senden an", um eine neue eMail an diesen Empfänger senden zu können.
+
+==== Bugfix ====
+
+  * Mögliches Fehlverhalten beim Kalenderausdruck\\ Beim Ausdruck aus dem Kalender konnte es zu Darstellungsfehlern kommen. Das wurde nun korrigiert.
+  * Dateianhang bei einer eMail u.U. nicht angezeigt\\ In einem Einzelfall wurde beim Öffnen einer empfangenen und signierten eMail der Dateianhang nicht angezeigt, im Dateianhangdialog wurde er dagegen angezeigt. Nun wird er auch in der geöffneten eMail angezeigt.
+  * Zeitangabe in Chat Übersicht\\ In der Chat Übersicht wurde bei jüngeren Einträgen "letzte Woche" statt "diese Woche" angezeigt. Das wurde nun korrigiert.
+  * Funktionstasten bei Suche per Quickfinder\\ Wird eine Nachricht per Quickfinder gesucht, so konnten anschließend die Funktionstasten (z.B. F5, F6) erst wieder verwendet werden, wenn das "Finden" Feld nicht mehr den Fokus hat.
+  * Möglicher Absturz beim Bereitstellen von Dateien für postlagernden Versand\\ In einem Einzelfall konnte es beim Hochladen von Dateien für den postlagernden Versand zum Absturz kommen.
+  * Möglicher Anzeigefehler beim Erstellen einer „Erinnerung“\\ Soll eine neue Erinnerung erstellt werden und der Editor wird im Vollbildmodus verwendet, so wurde beim Öffnen der Monatsauswahl diese nicht vollständig angezeigt.
+  * Möglicher Darstellungsfehler bei Betreff History im Dialog „Nachricht versenden“\\ Wird bei der Erstellung eines Fax im Dialog "Nachricht versenden" die History für den Betreff geöffnet, so konnte es hier zu Anzeigefehlern kommen.
+  * Mögliche Fehlermeldung beim Öffnen einer signierten eMail\\ In einem Einzelfall konnte es beim Öffnen einer signierten eMail eine Meldung geben, die fälschlicherweise auf einen Fehler der Signatur hinwies. Das wurde nun korrigiert.
+  * Mögliches Fehlverhalten beim Versand einer ganztägigen Besprechungsanfrage als Serie\\ Wird eine ganztägige Besprechungsanfrage als Terminserie zu einem Empfänger einer anderen david Installation versendet, so wurde der Termin hier für den Zeitraum 00:00 Uhr bis 23:59 Uhr angezeigt, statt mit dem Merkmal "ganztägig".
+  * Mögliche Fehlermeldung beim Wechsel in den Kalender\\ Beim Wechsel in den Kalender konnte es in Einzelfällen eine Fehlermeldung geben. Das wurde nun korrigiert.\\ \\ 
+
+=====  Client Mac =====
+
+==== Bugfix ====
+
+  * Aufruf der Notifier Menüpunkte u.U. fehlerhaft\\ Im Notifier Menü fehlten unter dem Menüpunkt "Neu" die weiteren Menüpunkte.
+  * Aufruf der chayns Menüs u.U. fehlerhaft\\ Beim Aufruf eines Menüpunktes im chayns®ID Bereich konnte es vorkommen, dass der falsche chayns®iD Bereich geöffnet wurde.
+

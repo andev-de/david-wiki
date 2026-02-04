@@ -1,0 +1,69 @@
+====== Version 2983 vom 30.04.2018 ======
+
+Release: 2018-04-30T00:00:00
+
+
+=====  Service Layer =====
+
+==== Feature ====
+
+  * Hinweis bei fehlgeschlagenem Rollout Download\\ Wenn der automatische Download eines neuen Rollout Packages nicht erfolgreich abgeschlossen werden kann (z.B. bei Abbruch der Internet-Verbindung), erfolgt nun ein entsprechender Hinweis im david® Ereignis Ordner.
+
+
+==== Bugfix ====
+
+  * Optimiertes Speichern von per david®Chat empfangenen Dateien \\ Das Speichern von Dateien, die per david®Chat empfangen wurden, ist optimiert worden. Zuvor konnte es in einem Einzelfall vorkommen, dass Dateien, die über die Android- oder iOS-Version des david®Chat versendet wurden, nicht korrekt gespeichert wurden und dann eine Dateigröße von 0 Byte hatten.
+
+=====  Administrator =====
+
+==== Feature ====
+
+  * Schalter für Link Lookup Service in Benutzerkonfiguration aufgenommen\\ Im david® Administrator besteht die Möglichkeit, für jeden Benutzer bestimmte Voreinstellungen für den Einsatz des david® Client zu treffen. Erreichbar sind diese Einstellungen in der Benutzerkonfiguration, indem dort auf der Registerkarte „Benutzerdaten“ die Schaltfläche „david® Client konfigurieren...“ angeklickt wird. Die so verfügbaren Einstellungen wurden um den Punkt „Sicherheit“ erweitert, wo sich festlegen lässt, ob die Link Lookup Services aktiviert sein sollen oder nicht. 
+
+
+=====  PostMan =====
+
+==== Bugfix ====
+
+  * Optimierte Anzeige der Cc Informationen empfangener eMails\\ Empfangene eMails, die zwar ohne Cc Empfänger versendet wurden, deren Header jedoch eine leere Cc Angabe enthielt, wurden im david® Client u.U. mit fehlerhaften Cc Informationen angezeigt. Im Cc Feld stand dann der Inhalt der Zeile, die im Header auf die leere Cc Angabe folgte. Dieses Verhalten ist nun korrigiert. 
+
+
+=====  Grabbing Server =====
+
+==== Bugfix ====
+
+  * Optimierte Anzeige der Cc Informationen empfangener eMails\\ Empfangene eMails, die zwar ohne Cc Empfänger versendet wurden, deren Header jedoch eine leere Cc Angabe enthielt, wurden im david® Client u.U. mit fehlerhaften Cc Informationen angezeigt. Im Cc Feld stand dann der Inhalt der Zeile, die im Header auf die leere Cc Angabe folgte. Dieses Verhalten ist nun korrigiert. 
+
+
+=====  Mail Access Server =====
+
+==== Bugfix ====
+
+  * Verbesserte Stabilität\\ Unter Umständen konnte ein Absturz des Mail Access Servers auftreten, der durch eine unstimmig übergebene Anzahl von Nachrichten beim LIST Befehl verursacht wurde. Solche Abstürze treten nun nicht mehr auf.
+
+
+=====  Client PC =====
+
+==== Feature ====
+
+  * Erweiterte Layout-Anpassungsmöglichkeiten\\ Das Erscheinungsbild des david® Client lässt sich nun komplett selbst definieren. Dazu wurden die unter „Einstellungen/Layout“ zur Verfügung stehenden Funktionen um zusätzliche Möglichkeiten erweitert. So können nun bereits vorhandene Layouts zur weiteren Bearbeitung kopiert oder komplett eigene Layouts neu erstellt werden. Alle selbst erstellten Entwürfe werden dann in einem separaten Tab „Eigene Layouts“ zusammengefasst.
+
+  * Anzeigen von Zertifikatinformationen bei ungültiger Signatur\\ Nach Empfang einer signierten eMail lässt sich nun das Signaturzertifikat auch dann anzeigen, wenn die Signatur als ungültig erkannt wurde. Das war zuvor nicht möglich.
+
+  * Aktualisierung und Erweiterung der Rechtschreibprüfung\\ Zur laufenden Optimierung und Aktualisierung der automatischen Rechtschreibprüfung wurde die Wörterliste um diverse Einträge erweitert.
+  * Gleichzeitiges Öffnen mehrerer Dateianhänge\\ Mehrere Dateianhänge einer eMail lassen sich jetzt gleichzeitig öffnen. Dazu werden die gewünschten Dateien markiert und dann per Doppelklick oder über den Menüpunkt "Öffnen“ im Kontextmenü (Rechtsklick) geöffnet. 
+
+
+==== Bugfix ====
+
+  * Schutz vor dem Verlust des Betreffs von Aufgaben\\ Das Bearbeiten der Kategorie einer Aufgabe in der Aufgabenansicht konnte u.U. dazu führen, dass dabei der Betreff der Aufgabe unbeabsichtigt gelöscht wurde. Dieses Verhalten ist korrigiert. Der Betreff bleibt nun auch in solchen Fällen bestehen. 
+  * Vermeidung von Abstürzen durch defekte Systemdatei dic.cfg\\ In einem Einzelfall konnte defekter Inhalt in der Systemdatei dic.cfg zum Absturz des david® Clients führen. Dieses Verhalten ist korrigiert, so dass diese Abstürze nicht mehr auftreten.
+
+  * Hinweis bei nicht erfolgreicher Signaturprüfung\\ Beim Öffnen einer empfangenen signierten eMail wurde u.U. nicht darauf hingewiesen, wenn die eMail Adresse des Absenders nicht zum Inhaber des verwendeten Zertifikats passte. Dieses Verhalten ist korrigiert, so dass der Hinweis jetzt korrekt erscheint. 
+
+  * Fehlermeldung „socket.io kann nicht geladen werden“ abgestellt\\ Während der Nutzung des david® Clients konnte in Einzelfällen spontan die Fehlermeldung „socket.io kann nicht geladen werden“ auftreten. Die Funktion wurde dadurch nicht beeinträchtigt, nach Schließen der Meldung konnte ohne Einschränkungen weitergearbeitet werden. Diese Meldungen erscheinen nun nicht mehr.
+
+  * Unterdrückung unerwünschter Sound-Ausgabe\\ Der david® Client verursachte u.U. ein ungewolltes Abspielen des Windows Sounds für „Navigation starten“. Dieses Verhalten wurde nun korrigiert.
+
+  * Optimierte Zielnummer-Angabe bei Fax-Versand über den FaxWare Druckertreiber\\ Bei der Erstellung von Faxen über den FaxWare Druckertreiber erscheint das Fenster „Nachricht versenden“, wenn nicht bereits im Dokument selbst die Faxnummer des Empfängers angegeben ist. Um das schnelle Eintragen der Empfängernummer zu erleichtern, steht in diesem Fenster der Cursor nun automatisch im Feld „An“. Zuvor war der Cursor direkt nach Öffnen des Fensters im Eingabefeld „Betreff“ platziert.
+
