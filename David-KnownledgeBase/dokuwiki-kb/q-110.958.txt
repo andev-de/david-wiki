@@ -1,0 +1,20 @@
+====== Q-110.958 - Zusätzliche Adressordner zur Auswahl ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Erstellen einer Nachricht können nun im Dialog "Adressbuch" weitere Adressordner zur Adressauswahl hinzugefügt werden (Button "Hinzufügen" im Menü zur Auswahl des Adressordners).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10958]]

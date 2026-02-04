@@ -1,0 +1,20 @@
+====== Q-110.629 - Summarizer verwenden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neuer Schalter im David Administrator unter System/Optionen: Summarizer verwenden. Über ihn kann der Summarizer aktiviert bzw. deaktiviert werden.
+
+==== Produkt ====
+
+David.Administrator
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10629]]

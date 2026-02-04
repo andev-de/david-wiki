@@ -1,0 +1,20 @@
+====== Q-110.989 - Termineditor kann nicht geöffnet werden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In einem Einzelfall ließ sich der Termineditor nicht öffnen.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10989]]

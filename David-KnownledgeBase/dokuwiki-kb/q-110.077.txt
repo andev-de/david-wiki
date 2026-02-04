@@ -1,0 +1,15 @@
+====== Q-110.077 - PC sperren/entsperren per BlueLock™ Funktion (Bluetooth) ======
+==== Problem ====
+Ab Windows Vista gibt es in den Einstellungen von ViProtect den neuen Reiter "BlueLock™". Mit dieser Funktion kann das angeschlossene Bluetooth-Gerät genutzt werden, um den PC automatisch zu sperren bzw. zu entsperren, wenn das Gerät in unmittelbare Reichweite des Rechners gelangt. Der PC muss dazu über einen aktivierten Bluetooth-Empfänger verfügen.
+==== Produkt ====
+Tobit.ViProtect
+==== Datum ====
+7.01.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 07-Jan-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10077]]

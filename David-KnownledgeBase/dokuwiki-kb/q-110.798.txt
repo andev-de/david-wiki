@@ -1,0 +1,20 @@
+====== Q-110.798 - LiveComments nicht mehr angezeigt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist bei einem Anwender im David Administrator zunächst noch keine eMail Adresse eingetragen und er schreibt mit anderen Anwendern eMails mit LiveComments, so wurden diese LiveComments nach Eintragen einer eMail Adresse nicht mehr angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10798]]

@@ -1,0 +1,20 @@
+====== Q-110.870 - Schutzverletzung beim Abholen von RSS Feeds ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In einem Einzelfall konnte es zur Schutzverletzung beim Abholen von RSS Feeds kommen.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10870]]

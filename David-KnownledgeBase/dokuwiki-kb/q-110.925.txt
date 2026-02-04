@@ -1,0 +1,20 @@
+====== Q-110.925 - Termine doppelt bei CalDAV mit iOS 6.x ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden per CalDAV Termine mit Erinnerungen auf einem iOS 6.x Gerät erstellt, so waren sie nach der Synchronisation auf dem Gerät doppelt vorhanden.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10925]]

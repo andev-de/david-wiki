@@ -1,0 +1,20 @@
+====== Q-110.855 - Gelöschte Nachrichten per david Client iOS erneut löschen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden Nachrichten gelöscht und anschließend aus dem Papierkorb wieder zurück in den Eingang verschoben, so konnten sie per david Client iOS nicht erneut gelöscht werden.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10855]]

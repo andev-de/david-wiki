@@ -1,0 +1,20 @@
+====== Q-110.961 - Foto des Absenders einer Nachricht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Ansicht "Vorschau neben der Eintragsliste" wird nun das Foto des Absenders einer Nachricht angezeigt, sofern es einen entsprechenden Adresseintrag mit Foto gibt. Beim Klick auf das Foto wird der Adresseintrag geöffnet.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10961]]

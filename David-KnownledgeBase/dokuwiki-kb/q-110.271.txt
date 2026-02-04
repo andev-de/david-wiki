@@ -1,0 +1,19 @@
+====== Q-110.271 - Firewall-Meldung bei jedem Start des David Client ======
+==== Problem ====
+Beim jedem Start des David Client wird von der Windows-Firewall ein Hinweis über einen Verbindungsaufbau zur IP-Adresse 62.153.122.126 angezeigt. Was bzw. welche Funktion löst diesen Verbindungsaufbau aus und welche Schritte sind notwendig, damit diese Meldung nicht mehr angezeigt wird?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+13.10.2010
+==== Antwort ====
+Im David Client Sie haben die Möglichkeit, direkt aus dem Hauptfenster heraus Internetrecherchen durchzuführen. Ist im David Client die Option »Internetsuche« aktiviert bzw. eine Internet-Suchmaschine eingestellt, so erfolgt beim Start des David Client generell ein Verbindungsaufbau zu der IP-Adresse 62.153.122.126, die zu einem Server von Tobit.Software führt. Hierbei wird mithilfe dieses Servers die Liste der Suchanbieter auf Vollständigkeit geprüft und gegebenenfalls aktualisiert.
+
+In der Regel werden schon während der Installation des David Client alle von ihm benötigten TCP-Ports automatisch in die Konfiguration der Windows-Firewall eingetragen bzw. dort freigegeben. Wird die Windows-Firewall aber erst nach der Installation des David Client aktiviert, ist es u.U. erforderlich, diese Port-Freigaben nachträglich manuell vorzunehmen. Damit der oben beschriebene Firewall-Hinweis nicht mehr angezeigt wird, geben Sie den TCP-Port 80 in der Windows-Firewall frei.
+
+Die »Internetsuche« können Sie unter »Ansicht Symbolleisten Internetsuche« als Symbol einblenden. Die Konfiguration der bevorzugte(n) Suchmaschine(n) erreichen Sie mit einem Klick auf den kleinen Pfeil neben dem Suchfeld bzw. der Schaltfläche für die »Suche«.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10271]]

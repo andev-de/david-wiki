@@ -1,0 +1,15 @@
+====== Q-110.049 - DFML Hilfe ======
+==== Problem ====
+Die David Formular Markup Language ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" DFMLDavid Formular Markup Language ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" Hilfe bestand bisher noch aus eigenen Dateien und konnte unter Windows Vista/Windows 7 nicht angezeigt werden - nun wurde die Hilfe in die des David Clients übernommen.
+==== Produkt ====
+David Client
+==== Datum ====
+18.12.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 18-Dec-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10049]]

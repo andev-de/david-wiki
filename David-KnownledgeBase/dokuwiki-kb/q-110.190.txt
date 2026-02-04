@@ -1,0 +1,15 @@
+====== Q-110.190 - Absturz beim Start ======
+==== Problem ====
+Beim Start des Service Layers konnte es in einem Einzelfall zum Absturz kommen. Ursache war hier ein fehlerhafter Eintrag in der Ordnerstruktur unterhalb von \david\address. sl.exe 11.00a (2391)
+==== Produkt ====
+David Service Layer
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10190]]

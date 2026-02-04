@@ -1,0 +1,20 @@
+====== Q-110.796 - Menü "Aktionen" in der ReadOnly Ansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der ReadOnly Ansicht des Editors stehen im Menü "Aktionen" nun die Funktionen Verteilen, Wiedervorlage, Verschieben, Als eMail versenden aus dem Kontextmenü der Eintragsliste zur Verfügung.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10796]]

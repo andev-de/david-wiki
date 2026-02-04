@@ -1,0 +1,15 @@
+====== Q-110.264 - SMS über ISDN: Betreff beim Weiterleiten ======
+==== Problem ====
+Wird eine Verteilregel eingerichtet, die Nachrichten als SMS weiter sendet (Nur Betreff), so wurde beim Versand "SMS über Integrated Services Digital Network arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" ISDNIntegrated Services Digital Network arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"" die Nachricht auf 40 Zeichen eingekürzt, auch wenn der Betreff länger war. sl.exe 11.00a (2456)
+==== Produkt ====
+David Service Layer
+==== Datum ====
+27.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Edition 2011 Service Pack 27-Sep-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10264]]

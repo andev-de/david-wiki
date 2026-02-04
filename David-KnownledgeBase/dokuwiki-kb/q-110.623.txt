@@ -1,0 +1,20 @@
+====== Q-110.623 - HTML Formatierung, eMail Vorlage bei anderen Browsern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird nicht der Internet Explorer verwendet, so war die HTML Formatierung im Editor bisher nicht verfügbar. Auch eine eingestellte eMail Vorlage wurde nicht beachtet. Das wurde nun für verschiedene andere Browser angepasst, z.B. Firefox.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10623]]

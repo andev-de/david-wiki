@@ -1,0 +1,20 @@
+====== Q-110.933 - Ordnereintrag per Script Objekt "Find First" ermitteln ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Per Script Objekt "Find First" kann ein Eintrag in der Archive.dat eines Ordners ermittelt werden. Enthält der Eintrag jedoch keinen Dateinamen (wie z.B. bei den Einträgen im "State" Ordner der Automation) so schlug dies fehl. Der Eintrag wird nun auch ohne Dateinamen gefunden.
+
+==== Produkt ====
+
+TLD (ISDN)
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10933]]

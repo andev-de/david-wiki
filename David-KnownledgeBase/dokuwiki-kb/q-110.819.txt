@@ -1,0 +1,20 @@
+====== Q-110.819 - Ausdruck im Querformat ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist in den Kalender Einstellungen der Schalter "Monatsansicht im Querformat drucken" gesetzt und man aktiviert einmal in der Monatsansicht die Vorschau beim Drucken, so erfolgten anschlieﬂend alle Ausdrucke (eMail, Termine, Aufgaben) bis zum Neustart des Clients im Querformat.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10819]]

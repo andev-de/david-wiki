@@ -1,0 +1,13 @@
+====== Q-110.241 - Anzeige der Vorschau für Ordner individuell einstellen ======
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+24.09.2010
+==== Antwort ====
+Auf der Registerkarte Optionen der Ordner-Eigenschaften treffen Sie allgemeine Einstellungen für den gewählten Ordner. Vorschau (nicht bei allen Anzeigetypen verfügbar)Diese Option gibt Ihnen die Möglichkeit, die Anordnung des Vorschaufensters für den aktuellen Ordner individuell festzulegen. Das bedeutet, dass jedes Mal, wenn Sie diesen Ordner öffnen, das Vorschaufenster auf die hier eingestellte Weise angezeigt wird. Als »Vorgabe« gilt die generelle Einstellung für die Darstellung der Vorschau, die unter dem Hauptmenüpunkt »Ansicht Vorschau« getroffen wurde.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10241]]

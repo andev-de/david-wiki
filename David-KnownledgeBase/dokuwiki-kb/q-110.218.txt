@@ -1,0 +1,15 @@
+====== Q-110.218 - Abbruch des David Setup während der Installation von SQL ======
+==== Problem ====
+Die Installation von David.fx Edition 2011 kann nicht durchgeführt werden, da der Prozess bereits bei der Installation des integrierten Microsoft SQL Server 2008 R2 Express abbricht. Wie kann eine korrekte SQL-Installation erreicht werden, so dass auch die weitere Installation von David.fx.Edition 2011 erfolgreich gelingt?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+3.12.2010
+==== Antwort ====
+Im Zuge der Installation von David.fx Edition 2011 wird (sofern noch nicht vorhanden) auch Microsoft SQL Server 2008 R2 Express installiert. Damit diese Installation durchgeführt werden kann, müssen auf dem Ziel-Laufwerk mindestens 3 GB freier Speicherplatz vorhanden sein. Stellen Sie also zunächst sicher, dass diese Voraussetzung erfüllt wird. Weitere Informationen der genutzten Datenbank und den Voraussetzungen erhalten Sie im KnowledgeBase Artikel Q-110.209.  Bricht der Installationsprozess trotz Erfüllung aller Voraussetzungen ab, prüfen Sie, ob sich auf dem Ziel-Server SQL-Programmfragmente befinden, und entfernen Sie diese gegebenenfalls.Gehen Sie hierzu folgendermaßen vor:Öffnen Sie die Systemsteuerung, wählen Sie hier den Punkt »Software« bzw. »Programme und Funktionen« und deinstallieren Sie, sofern vorhanden, folgende Elemente:Alle Einträge, in deren Namen die Bezeichnung »SQL« enthalten ist MSXML 6.0 ParserFühren Sie anschließend die Installation von David.fx Edition 2011 erneut aus. Der Installationsprozess sollte sich nun störungsfrei durchführen lassen.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10218]]

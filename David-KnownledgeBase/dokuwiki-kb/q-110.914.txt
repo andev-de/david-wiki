@@ -1,0 +1,20 @@
+====== Q-110.914 - Separator in InfoCenter Ansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ein Separator in der InfoCenter Ansicht trennt die aktuellen Einträge von denen, die älter als 48 Stunden sind. Wartende Sendeaufträge "In Transit", sowie Einträge mit der Priorität hoch stehen weiterhin oben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10914]]

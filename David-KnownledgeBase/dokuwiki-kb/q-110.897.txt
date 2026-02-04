@@ -1,0 +1,20 @@
+====== Q-110.897 - Icons von RSS Feeds bei geänderter Farbintensität ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Icons von RSS Feeds passen sich nun an die eingestellte Farbintensität an.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10897]]

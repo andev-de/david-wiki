@@ -1,0 +1,20 @@
+====== Q-110.873 - Mehrzeilige Eintragsliste bei ausgeblendeter Vorschau ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Einstellung "Vorschau neben Eintragsliste" ist die Eintragsliste mehrzeilig. Wird die Vorschau nun ausgeblendet, und man wechselt einmal in den Aufgaben Ordner und zurück, so war Anzeige der Eintragsliste ab diesem Zeitpunkt nur noch einzeilig (bis zum Neustart des Clients). Das ist nun behoben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10873]]

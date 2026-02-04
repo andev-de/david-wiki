@@ -1,0 +1,20 @@
+====== Q-110.902 -  Fehlerhaftes TO Feld ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine eMail per PostMan empfangen und dann per Mail Access Server bereitgestellt, so war nach dem Pollen per POP3 u.U. die TO Information fehlerhaft (sie enthielt z.B. zusätzlich das "X-Delivered-To" vor der eMail Adresse).
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10902]]

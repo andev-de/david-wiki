@@ -1,0 +1,28 @@
+====== Q-110.661 - WebPublishing mit der WebBox bei Einsatz von David®fx12™ ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+David®fx12™ ist standardmäßig so konfiguriert, dass bei Zugriff auf den David Server per WebBrowser generell der WebAccess gestartet wird und nicht mehr, wie bei Vorgänger-Versionen von David®fx12™, auf diese Weise der Zugriff auf eine eigene Webpräsenz möglich ist. Welche Einstellungen sind vorzunehmen, um auch mit David®fx12™ eigene Internetseiten mit der WebBox zu publizieren?
+
+==== Produkt ====
+
+David
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Natürlich ist es auch bei Einsatz von David®fx12™ möglich, die WebBox außer für den WebAccess auch für das Publizieren einer eigenen WebSite zu nutzen. Dazu ist eine Anpassung in der Datei »WEBBOX.INI« erforderlich, die Sie im Verzeichnis »David\Apps\Webbox\Code« auf dem David® Server finden. Öffnen Sie diese Datei mit einem geeigneten Editor und weisen Sie dem Parameter »ForceWebAccess« den Wert »FALSE« zu. Entfernen Sie anschließend unbedingt auch das Semikolon (;) am Anfang dieser Zeile, so dass nun folgender Eintrag existiert:ForceWebAccess = FALSESpeichern Sie die Datei mit diesen Änderungen ab und starten Sie danach die WebBox neu.  Nun wird beim Zugriff per Browser auf den David Server die WebSite geöffnet. Um den WebAcces auszuüben, muss bei dieser Einstellung in der Adresszeile des Browsers hinter der URI bzw. IP-Adresse des David Servers getrennt durch einen Schrägstrich (/) der eigene Benutzername angegeben werden, so wie er in der David Ordnerstruktur angegeben ist. Also z.B.: www.example.com/Thomas Tobit     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10661]]

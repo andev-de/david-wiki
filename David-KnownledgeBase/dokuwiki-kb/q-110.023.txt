@@ -1,0 +1,9 @@
+====== Q-110.023 - "WG:" beim Weiterleiten ======
+==== Problem ====
+Beim Erstellen des Betreffs einer Weiterleitung wird nun auch das "WG:" berücksichtigt, wie es z.B. von Outlook verwendet wird - so wie es bereits beim "AW:" (Antworten) gemacht wird.
+==== Produkt ====
+David Client
+==== Datum ====
+17.11.2009     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10023]]

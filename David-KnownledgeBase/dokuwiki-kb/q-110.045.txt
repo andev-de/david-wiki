@@ -1,0 +1,15 @@
+====== Q-110.045 - Schutzverletzung beim Klick auf unterstrichenes Wort ======
+==== Problem ====
+Beim Rechtsklick auf ein unterstrichenes Wort im Nachrichten Editor (Rechtschreibprüfung) konnte es u.U. zum Absturz des Clients kommen.
+==== Produkt ====
+David Client
+==== Datum ====
+18.12.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 18-Dec-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10045]]

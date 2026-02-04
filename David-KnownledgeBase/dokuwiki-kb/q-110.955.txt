@@ -1,0 +1,20 @@
+====== Q-110.955 -  Wechsel der Ansicht (vorheriger/nächster) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Kalenderansicht kann nun über zwei neue Buttons rechts neben dem "Heute" Button zum vorherigen bzw. nächsten Datum gewechselt werden, also z.B. in der Tagesansicht zum vorherigen/nächsten Tag bzw. in der Wochenansicht zur vorherigen/nächsten Woche.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10955]]

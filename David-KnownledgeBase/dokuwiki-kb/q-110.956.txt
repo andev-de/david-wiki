@@ -1,0 +1,20 @@
+====== Q-110.956 - Auswahl des Zielordners beim Speichern von Adressen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Steht man in einem Ordner, der kein Adressordner ist, und erstellt einen neuen Adresseintrag, so erscheint beim Speichern nun die Auswahl des Zielordners um z.B. den persönlichen Adressordner zu wählen. Bisher wurde die Adresse im aktuellen Ordner gespeichert, was u.U. unerwünscht ist.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10956]]

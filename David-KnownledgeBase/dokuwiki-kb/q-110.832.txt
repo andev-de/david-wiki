@@ -1,0 +1,20 @@
+====== Q-110.832 - Tabs oben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Tabs der Fenster (z.B. Eintragsliste, Ticker) werden nun per Vorgabe oben angezeigt. Über "Ansicht/Layout" kann diese geändert werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10832]]

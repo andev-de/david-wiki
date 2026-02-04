@@ -1,0 +1,24 @@
+====== Q-110.676 - Outlook Import (ol2tas.exe) schlägt fehl bei falscher Nachrichtenklasse ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Tool ol2tas.exe importiert die Elemente anhand ihrer Nachrichtenklasse. Alle Elemente, die z.B. mit IPM.Note oder IPM.Post anfangen, werden als eMail importiert. Sollten eMails als Nachrichtenklasse nur "IPM" haben so schlug der Import fehl. Diese werden nun wie IPM.Note oder IPM.Post importiert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.09.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 06-Mar-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10676]]

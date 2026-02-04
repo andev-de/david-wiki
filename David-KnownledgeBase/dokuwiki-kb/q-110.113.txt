@@ -1,0 +1,15 @@
+====== Q-110.113 - Löschen eines Ordners nach dem Speichern in diesem ======
+==== Problem ====
+Wird eine Nachricht über "Speichern unter" in einem Ordner des Explorers abgespeichert, konnte dieser Ordner nicht sofort gelöscht bzw. bearbeitet werden. Erst wenn der David Client beendet wird, war dies möglich. Das ist nun sofort nach dem Speichern möglich.
+==== Produkt ====
+David Client
+==== Datum ====
+22.02.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 19-Feb-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10113]]

@@ -1,0 +1,20 @@
+====== Q-110.822 - Seiteneinstellungen beim Drucken ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der david® Client benutzt für das Drucken von eMails die Seiteneinstellungen des Internet Explorers. Man kann nun in der ReadOnly Ansicht unter "Datei/Seite einrichten" die Einstellungen für den Ausdruck auch unabhängig vom Internet Explorer vornehmen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10822]]

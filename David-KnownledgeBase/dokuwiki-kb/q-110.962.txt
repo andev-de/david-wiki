@@ -1,0 +1,20 @@
+====== Q-110.962 - Kontextmenü für Spaltenpositionen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Ansicht "Vorschau unter der Liste" gibt es beim Rechtsklick auf die Spaltenüberschriften nun das Kontextmenü, um die Spaltenpositionen z.B. zu speichern, restaurieren oder Spalten auszuwählen.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10962]]

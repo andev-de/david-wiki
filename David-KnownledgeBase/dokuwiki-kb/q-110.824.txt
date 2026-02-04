@@ -1,0 +1,20 @@
+====== Q-110.824 - Nachrichten mit Tracking Infos beim David Client Mobile ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine Nachricht mit Tracking Anforderung zum Mobile Client repliziert und dort gelesen, so erschien die Tracking Information anschlieﬂend als eigene Nachricht im Eingang.
+
+==== Produkt ====
+
+Replication Services for David
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10824]]

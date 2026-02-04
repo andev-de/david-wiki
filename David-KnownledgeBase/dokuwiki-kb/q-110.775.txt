@@ -1,0 +1,20 @@
+====== Q-110.775 - Drag & Drop in Favoriten Leiste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Nachrichten oder externe Dateien können nun per Drag & Drop auf den Plus Button der Favoriten Leiste in diese aufgenommen werden und erhalten einen eigenen Button.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10775]]

@@ -1,0 +1,20 @@
+====== Q-110.773 - TAPI Unterstützung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Einstellungen des david® Client kann nun unterhalb des Punktes »Benutzerprofil« alternativ zum üblichen ECT Connect über den david® Server ein TAPI Provider ausgewählt werden. Die normalen Wählfunktionen des Clients erfolgen dann über den hier gewählten TAPI Provider. Zusätzlich kann man angeben, dass man im Client Rückmeldungen über eingehende Anrufe haben möchte (dies muss natürlich von dem TAPI Provider unterstützt werden). Kommt ein Anruf herein und der Schalter ist gesetzt, erscheint ein Reminder Fenster mit den Angaben zum Telefonat. Findet der Client eine zugehörige Adresse zu der Rufnummer, kann auch gleich der Address Editor geöffnet werden. Ist ein Bild zu dem Eintrag vorhanden, wird dies auch angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10773]]

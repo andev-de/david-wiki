@@ -1,0 +1,20 @@
+====== Q-110.630 - Favoriten Tab entfernt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Favoriten Tab neben den Tabs Navigator und Kontakte wurde entfernt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10630]]

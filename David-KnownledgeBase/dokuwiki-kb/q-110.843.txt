@@ -1,0 +1,20 @@
+====== Q-110.843 - Windows 8 ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die neue Version von David.Care Desktop Protection unterstützt nun auch Windows 8 - bei der bisherigen Version funktionierte die Neuinstallation unter Windows 8 nicht korrekt.
+
+==== Produkt ====
+
+David
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10843]]

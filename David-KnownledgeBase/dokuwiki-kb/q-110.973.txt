@@ -1,0 +1,20 @@
+====== Q-110.973 - Zusätzliche Bedingungen bei Client Verteilung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Client Verteilung gibt es nun die zusätzlichen Bedingungen "enthält", "beginnt mit" und "endet mit", z.B. beim Betreff.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10973]]

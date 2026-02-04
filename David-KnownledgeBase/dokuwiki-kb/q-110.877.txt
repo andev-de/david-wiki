@@ -1,0 +1,20 @@
+====== Q-110.877 - Buttons in Favoriten Leiste anordnen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Anordnung der Buttons in der Favoriten Leiste kann nun per Drag & Drop geändert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10877]]

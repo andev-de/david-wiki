@@ -1,0 +1,17 @@
+====== Q-110.269 - Nutzung des Word Makro mit Microsoft Word 2010 ======
+==== Problem ====
+Ist die Installation und Nutzung des Word Makro auch beim Einsatz der Microsoft Office Version 2010 bzw. Microsoft Word Version 2010 möglich?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+29.09.2010
+==== Antwort ====
+Wenn auf Ihrem Rechner Microsoft Office ab Version 2000 installiert ist, finden Sie im Hauptmenü des David Client unterhalb von »Werkzeuge« zusätzlich den Eintrag »Word Makro«. Nach Anklicken wird für Microsoft Word ein Makro installiert, das Ihnen den einfachen Versand des aktuellen Word-Dokuments erleichtert. Sie finden dann in Word unterhalb von »Datei Senden an« den Menüpunkt »David Client«. Wenn Sie ihn auswählen, wird im David Client eine neue Nachricht erstellt, die das aktuelle Word-Dokument direkt im HTML-Format enthält. Sie können dann Empfänger und Betreff eingeben und die Nachricht versenden.
+
+David.fx Edition 2011 unterstützt auch die Nutzung des Word Makro beim Einsatz der Microsoft Office bzw. Microsoft Word Version 2010. Die Installation erfolgt dabei wie oben angegeben. Die verfügbaren Makros befinden sich im Verzeichnis »David\Clients\Windows\Macros« auf Ihrem David Server.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10269]]

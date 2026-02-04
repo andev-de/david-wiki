@@ -1,0 +1,20 @@
+====== Q-110.808 - Angenommene Besprechungsanfrage gelöscht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine interne Besprechungsanfrage angenommen und als Termin im persönlichen Kalender gespeichert, so wurde dieser Termin u.U. bei der nächsten Bereinigung gelöscht (wenn in diesem Kalender Ordner eine Bereinigung eingestellt ist).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10808]]

@@ -1,0 +1,20 @@
+====== Q-110.947 - Besprechungsanfragen per IMAP von anderen Mail Clients ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden per IMAP über den Mail Access Server Besprechungsanfragen abgeholt, so können diese nun auch von anderen Mail Clients (z.B. Outlook oder Thunderbird/Lightning) verarbeitet werden.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10947]]

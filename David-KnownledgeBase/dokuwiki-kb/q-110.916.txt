@@ -1,0 +1,20 @@
+====== Q-110.916 - Falsche Anzahl ungelesener Nachrichten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Steht man im Eingang und man hat z.B. 2 ungelesene Nachrichten, öffnet nun über die rechte Maustaste im Navigator für den Ausgang eine Suche und öffnet eine der gefundenen Nachrichten, so wurde fälschlicherweise die Zahl der ungelesenen Nachrichten für den Eingang um eins reduziert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10916]]

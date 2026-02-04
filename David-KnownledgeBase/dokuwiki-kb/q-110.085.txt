@@ -1,0 +1,15 @@
+====== Q-110.085 - ISDN-Karte HST Saphir III E Multilink ======
+==== Produkt ====
+Hardware
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+15.02.2010
+==== Antwort ====
+Allgemeine AngabenBezeichnung:HST Saphir III E MultilinkTechnische DatenMax. Geschwindigkeit Senden: 14.400 Bd Max. Geschwindigkeit Empf.:  14.400 BdUnterstützte B-Kanäle Senden:  8Unterstützte B-Kanäle Empf.:  8Getestete FunktionenBetriebssystemWindows* Linux  Fax-Trainingston-Erkennung:Fax-Gruppe 3:Verteilung nach MSN Verteilung nach DDI ECT -Connect FaxPlus Versand:FaxPlus Empfang:Fax Abruf:Fax-on-Demand:Fax Back:Sprachnachricht senden: Sprachnachricht empfangen:T-Mail senden:DualTone Multi Frequency h&ouml;rt man am Telefon Ansagen wie: &quot;...wenn Sie Ihre Nachrichten abh&ouml;ren wollen, dr&uuml;cken Sie bitte die 1...&quot; Das Dr&uuml;cken der Telefontasten erzeugt T&ouml;ne, die vom System am anderen Ende erkannt und f&uuml;r Steuerungen verwendet werden k&ouml;nnen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" DTMFDualTone Multi Frequency h&ouml;rt man am Telefon Ansagen wie: &quot;...wenn Sie Ihre Nachrichten abh&ouml;ren wollen, dr&uuml;cken Sie bitte die 1...&quot; Das Dr&uuml;cken der Telefontasten erzeugt T&ouml;ne, die vom System am anderen Ende erkannt und f&uuml;r Steuerungen verwendet werden k&ouml;nnen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" senden:DTMF empfangen:Umschalten in Fax-Mode:SMS Versand:*Getestete Windows Betriebssysteme: Windows 2000, Windows XP, und Windows 2003 Server
+
+Die HST Saphir III E Multilink unterstützt 8 B-Kanäle und ist somit eine ideale Karte für grösseres Faxaufkommen. 
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10085]]

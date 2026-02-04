@@ -1,0 +1,20 @@
+====== Q-110.794 - eMails mit der Codierung "Koreanisch" (EUC-KR) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+eMails mit der Codierung "Koreanisch" (EUC-KR) werden nun auch korrekt dargestellt.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10794]]

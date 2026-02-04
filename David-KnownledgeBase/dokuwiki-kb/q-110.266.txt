@@ -1,0 +1,25 @@
+====== Q-110.266 - Fehlermeldung beim Öffnen von Faxnachrichten ======
+==== Problem ====
+Beim Öffnen von Faxnachrichten kommt es im David Client zu folgender Fehlermeldung des David Image Editors:
+
+Die Datei »Dateiname« konnte nicht geöffnet werden.Es bestehen keine Leserechte oder sie hat eine unbekannte Extension.
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+26.10.2010
+==== Antwort ====
+Die Funktion »Original Nachricht speichern« dient hauptsächlich zu Testzwecken bzw. zur Fehlersuche bei eventuellen Verbindungsproblemen. Ist dieser Punkt aktiviert, wird beim eMail-Empfang eine Kopie der empfangen Original-Nachricht (inklusive Mail Header und allen Dateianhängen ohne Konvertierung) in der Kommentardatei des zugehörigen Ordner-Eintrags abgelegt. Diese Informationen können z.B. helfen, mögliche Fehlerursachen zu lokalisieren.
+
+Diese Funktion lässt sich im David.Administrator aktivieren. Wechseln Sie dazu im Konfigurationsbaum zu dem Eintrag »eMail PostMan - SMTP Dienst«. Öffnen Sie hier per Rechtsklick das Kontextmenü und wählen den Punkt »Konfigurieren«. In dem neuen Dialogfenster können Sie auf dem Register »Erweitert« die Funktion »Original Nachricht speichern« aktivieren. Starten Sie den Dienst »David PostMan« anschließend neu. Dazu steht Ihnen im Kontextmenü des PostMan der benötigte Menüpunkt zur Verfügung. Nach einem Neustart des Dienstes werden bei jeder empfangenen eMail sämtliche Informationen der Nachricht in der Datei »i*.0tx« des jeweiligen Eingangs-Ordners der eMail gespeichert.
+
+Hinweis:Beachten Sie, dass durch Nutzung dieser Funktion ein erhöhter Speicherplatzbedarf auf der Festplatte des Servers entsteht. Daher sollten Sie diesen Punkt nur aktivieren, wenn es tatsächlich erforderlich ist.
+
+Der Zugriff auf diese Daten erfolgt direkt im David Client. Gehen Sie dazu folgendermaßen vor: Markieren Sie die betreffende eMail in der Eintragsliste des David Client und rufen Sie per Rechtsklick dessen Eigenschaften auf. Klicken Sie in dem neuen Dialogfenster, auf der Registerkarte »Parameter«, auf die Schaltfläche »Erweitert«. Hierdurch öffnet sich ein weiteres Dialogfenster. Wählen Sie auf dem Drop-Down-Feld in der Symbolleiste den Punkt »Original-Nachricht«. Daraufhin werden die gewünschten Informationen in dem darunter stehenden Textfeld angezeigt.Den Pfad zur Original-Datei auf Fileebene erhalten Sie ebenfalls über das »Kontextmenü - Eigenschaften«. Klicken Sie anschließend auf der Registerkarte »Parameter« auf das Icon direkt darunter (links oben neben dem Betreff der Nachricht). Unter diesem Pfad ist die Datei »i*.0tx« abgelegt. Wird vom Technischen Support zur Analyse die Original-Nachricht angefordert, so wird neben der Nachrichten aus dem David Client auch die »i*.0tx« Datei benötigt.Hinweise:Bei erkannten Viren in empfangenen eMails durch die "Virus Protection for David" werden nicht sämtliche Original-Daten der eMail gespeichert.
+
+Beachten Sie hierzu auch den KnowledgeBase Artikel Q-108.851.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10266]]

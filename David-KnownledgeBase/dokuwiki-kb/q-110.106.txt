@@ -1,0 +1,15 @@
+====== Q-110.106 - Alternativer TCP Port für MIS ======
+==== Problem ====
+Für die Abrechnung der Message Identification Services (MIS) kann nun ein alternativer TCP Port in der david.ini angegeben werden: DYNLICHTTPPORT=81 Bei dem Default Port 80 kann es in Einzelfällen u.U. zu Problemen bei Firewalls, Routern kommen (die Kommunikation unterscheidet sich bei der Verwendung von Port 80 zu der über Port 81). Nach Eintragen bzw. Ändern des Parameters ist ein Neustart des Service Layers notwendig. Ein anderer Port als 80 oder 81 ist nicht zulässig! Ist der Parameter nicht eingetragen, wird der Default Port 80 verwendet.
+==== Produkt ====
+David Service Layer
+==== Datum ====
+19.02.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 19-Feb-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10106]]

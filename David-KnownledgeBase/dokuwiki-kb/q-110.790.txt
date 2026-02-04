@@ -1,0 +1,20 @@
+====== Q-110.790 - Ziel bei Verteilregel entfernt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Existiert eine Verteilregel mit min. zwei Zielen (Benutzer oder Ordner) und es wird bei "Bedingungen" eine Änderung vorgenommen, so wurden die eingetragenen Ziele u.U. entfernt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10790]]

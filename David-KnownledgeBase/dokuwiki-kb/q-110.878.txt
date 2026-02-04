@@ -1,0 +1,20 @@
+====== Q-110.878 - Schutzverletzung beim Zugriff per david Client Web ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Sind für einen Benutzer keine Zugangsdaten eingetragen und der Benutzer greift per david Client Web auf seine Ordner zu, konnte es zum Absturz der WebBox kommen. Voraussetzung war, dass in der webbox.ini der Parameter "ForceWebAccess=FALSE" gesetzt ist.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10878]]

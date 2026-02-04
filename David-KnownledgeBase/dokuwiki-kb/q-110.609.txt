@@ -1,0 +1,20 @@
+====== Q-110.609 - Kalender als separates Fenster ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Unter bestimmten Bedingungen konnte in der Kalenderansicht nicht über den Button "Als separates Fenster öffnen" ein separates Fenster geöffnet werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10609]]

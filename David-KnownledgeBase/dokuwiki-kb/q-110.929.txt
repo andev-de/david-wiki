@@ -1,0 +1,20 @@
+====== Q-110.929 - Fehlverhalten nach Ändern der Kalendereinstellungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wurden Kalendereinstellungen geändert ("Arbeitszeit von - bis"), so konnte der Client u.U. nicht mehr korrekt bedient werden und musste neu gestartet werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10929]]

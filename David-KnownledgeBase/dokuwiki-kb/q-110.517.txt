@@ -1,0 +1,28 @@
+====== Q-110.517 - SQL-basierte Volltextsuche findet bestimmte Wörter nicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bestimmte Wörter werden von der SQL-basierten Volltextsuche von David.fx generell nicht gefunden. Auch nach wiederholten Versuchen führt die Suche nach diesen Wörtern nie zu einem Ergebnis, obwohl sie definitiv in mehreren Dokumenten innerhalb der David Ordnerstruktur enthalten sind. Was ist die Ursache für dieses Verhalten?
+
+==== Produkt ====
+
+David
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+15.04.2011
+
+==== Antwort ====
+
+Der Grund für das oben beschriebene Verhalten liegt in der Auswahl des verwendeten Suchbegriffes. Handelt es sich bei dem Suchbegriff um ein so genanntes »Stoppwort« liefert die Suche prinzipiell keine Treffer. Die SQL-basierte Volltextsuche von David.fx nutzt zur Optimierung der Suchergebnisse eine so genannte »Stoppliste«. Alle in dieser Liste enthaltenen Einträge (die »Stoppwörter«) werden von der Suchfunktion generell ignoriert, führen also niemals zu einem Suchergebnis. Bei diesen Stoppwörtern handelt es sich um Begriffe, die im Allgemeinen keine inhaltliche Relevanz besitzen, aber in nahezu jedem Text vorkommen, so dass sie bei Einbeziehung in die Suche zu unerwünscht vielen Treffern und somit zu keinem brauchbaren Suchergebnis führen würden. Dazu gehören unter anderem bestimmte bzw. unbestimmte Artikel sowie Präpositionen (der, die, das, ein, einer, in, auf, um usw.). Weiterführende Informationen:Die Erstellung des Volltextindex sowie die Durchführung der Volltextsuche und die hierfür verwendete Stoppliste beruhen auf Funktionen des Microsoft SQL Server 2008 R2 Express, der sich im Lieferumfang von David.fx befindet. Über spezielle SQL-Abfragen ist sowohl das Aufrufen als auch das Bearbeiten der Stoppliste möglich. Beachten Sie hierzu die zugehörigen Informationen in der Microsoft Knowledge Base.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10517]]

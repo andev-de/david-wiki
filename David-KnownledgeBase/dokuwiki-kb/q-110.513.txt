@@ -1,0 +1,24 @@
+====== Q-110.513 - Drucken einer Auswahl bei Plain Text eMails ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Ausdruck einer geöffneten Plain Text eMail kann nun auch die markierte Auswahl gedruckt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+11.04.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 11-Apr-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10513]]

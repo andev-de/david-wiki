@@ -1,0 +1,24 @@
+====== Q-110.817 - Tageswechsel ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Läuft der Client während eines Tageswechsels, so wurde die Anzeige des relativen Datums in folgenden Situationen nicht automatisch aktualisiert. 1. Eintragliste (erst wenn durch eine Aktion die Eintragsliste neu gezeichnet werden musste)
+
+ 2. Vorschau (erst nach Wechsel der Vorschau)
+
+ 3. Kalenderanzeige unterhalb des Tickers (erst, wenn man einen Tabwechsel macht). 
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10817]]

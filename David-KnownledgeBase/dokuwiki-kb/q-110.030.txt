@@ -1,0 +1,15 @@
+====== Q-110.030 - Wiedergabe einer VoiceMail aus der Vorschau ======
+==== Problem ====
+Bei der Wiedergabe einer noch als "ungelesen" markierten VoiceMail über die Vorschau, wurde die Wiedergabe u.U. abgebrochen.
+==== Produkt ====
+David Client
+==== Datum ====
+23.11.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 20-Nov-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10030]]

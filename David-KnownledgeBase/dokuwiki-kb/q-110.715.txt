@@ -1,0 +1,20 @@
+====== Q-110.715 - Kein 2nd Scan für bestimmte Nachrichten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Um den bestmöglichen Schutz vor SPAM-Nachrichten zu gewährleisten, werden die Message Identification Services von David® (MIS) inklusive der 2nd Scan Funktion genutzt. Für bestimmte Nachrichten soll aber generell kein 2nd Scan durchgeführt werden. Wie lässt sich dieses Ziel erreichen?
+
+==== Produkt ====
+
+David
+
+==== Datum ====
+
+10.04.2012
+
+==== Antwort ====
+
+Die 2nd Scan Funktion erhöht die Effizienz der Message Identification Services von David® (MIS). Allerdings führt der Einsatz dieser Funktion auch dazu, dass empfangene Nachrichten nicht unmittelbar nach ihrem Empfang zur Verfügung stehen (siehe unten »Arbeitsweise der 2nd Scan Funktion«). Ein Deaktivieren der 2nd Scan Funktion ist für David Ordner möglich, nicht jedoch für einzelne Nachrichten. Dennoch können Sie diese Eigenschaft nutzen, um die zweite Spam-Prüfung für bestimmte Nachrichten gezielt zu umgehen. Treffen Sie dazu folgende Einstellungen: Legen Sie im David® Ordnersystem einen neuen Ordner an.Rufen Sie die Eigenschaften dieses neuen Ordners auf und aktivieren Sie hier auf dem Register »Dienste« die Option »2nd Scan - Diesen Ordner ausschließen«.Nutzen Sie anschließend das Verteilregelwerk im David® Administrator, um die Nachrichten, die vom 2nd Scan ausgenommen werden sollen, automatisch in den soeben erstellten Ordner verteilen zu lassen.Ab sofort werden die gewünschten Nachrichten also unmittelbar nach ihrem Empfang in den hierfür erstellten Ordner verteilt und stehen hier sofort zur Verfügung, da die 2nd Scan Funktion für diesen Ordner deaktiviert wurde.Hinweise: Arbeitsweise der 2nd Scan FunktionDurch Einsatz der 2nd Scan Funktion lässt sich die Treffer-Quote der Message Identification Services noch weiter verbessern. Da die Erkennungsmuster zur Spam-Identifizierung permanent automatisch aktualisiert werden, ist es möglich, durch die zeitversetzte zweite Überprüfung auch solche Nachrichten zuverlässig als Spam einzustufen, für die zum Zeitpunkt des Empfangs noch keine eindeutige Erkennung möglich war. Das trifft z.B. auf solche Nachrichten zu, die zu den allerersten Exemplaren einer neuen Spam-Welle zählen. Bei Nutzung dieser Funktion werden externe Nachrichten direkt nach dem Empfang identifiziert und, sofern nicht unmittelbar als Spam erkannt, anstatt in das Eingangsbuch des betreffenden Empfängers zunächst mit dem Status »Waiting for 2nd scan« in dessen »In Transit« Ordner gestellt. Dort verbleiben die Nachrichten solange, bis die zweite Überprüfung durchgeführt wird. Nur Nachrichten, die auch bei dieser zweiten Überprüfung nicht als Spam einstuft werden, gelangen schließlich in das Eingangsbuch des zugehörigen Empfängers.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10715]]

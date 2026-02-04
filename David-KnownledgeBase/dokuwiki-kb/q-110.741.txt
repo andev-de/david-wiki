@@ -1,0 +1,24 @@
+====== Q-110.741 - Zeitzonen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der David Client PC unterstützt nun Zeitzonen. Befindet sich der Client in einer anderen Zeitzone als der David Server, so werden die angezeigten Zeiten entsprechend angepasst.Im David.Administrator kann dieses Verhalten unter "System/Optionen" aktiviert bzw. deaktiviert werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+2.10.2012
+
+==== Antwort ====
+
+Um diese Funktion zu nutzen, klicken Sie im Konfigurationsbaum des David.Administrator mit der rechten Maustaste auf den Punkt »System« und wählen dann aus dem erscheinenden Kontextmenü die Option »Konfigurieren...«, worauf sich das Fenster »System« öffnet. Hier wählen Sie nun die Registerkarte »Optionen«, wo Sie in der Mitte der Liste innerhalb des Sektion »System« den Punkt »Zeitumrechnung für Clients in anderen Zeitzonen« finden. Ist dieses Kontrollkästchen aktiviert, erfolgt die automatische Zeitanpassung zwischen verschiedenen Zeitzonen. Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 27-Apr-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10741]]

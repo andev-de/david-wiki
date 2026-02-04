@@ -1,0 +1,15 @@
+====== Q-110.371 - Badge des Favoriten-Buttons »In Transit« zählt wartende Jobs und »2nd Scan« Aufträge ======
+==== Problem ====
+Die im Badge des Buttons »In Transit« in der Favoritenleiste angegebene Anzahl bezieht sich sowohl auf die Anzahl der wartenden Sendeaufträge als auch auf die empfangenen Nachrichten, die in diesem Ordner auf die zeitversetzte zweite Spam-Prüfung (2nd Scan) warten. Sie zeigt also die Summe dieser beiden Eintragstypen an.
+==== Produkt ====
+David Client
+==== Datum ====
+5.01.2011
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 22-Dec-2010 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10371]]

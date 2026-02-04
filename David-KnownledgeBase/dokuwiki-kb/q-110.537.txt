@@ -1,0 +1,26 @@
+====== Q-110.537 - Automation-EIB TLD ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Automation-EIB Transport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" TLDTransport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" wurde um die Verbindungen EIBnet/IP und USB erweitert.Die neuen Verbindungen stehen nur bei einem NEU installiertem TLD zu Verfügung.Einen bestehenden TLD betrifft diese Erweiterung nicht.
+
+Durch den neuen Falcon Treiber 2.0 ergibt sich bei NEU installiertem TLDfolgende Änderung:Installation unter 32Bit und 64Bit (64Bit nur EIBnet/IP und USB!) möglich.Serielle Verbindungen nur noch unter XP,Vista,Win7 bei 32Bit.
+
+==== Produkt ====
+
+TLD (Gebäudesteuerung)
+
+==== Datum ====
+
+3.05.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 03-Mai-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10537]]

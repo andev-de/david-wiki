@@ -1,0 +1,20 @@
+====== Q-110.852 - TeamChat von Android/iPhone/iPad Client im Ausgang oder Eingang ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Schalter "TeamChat Protokoll im Ausgang statt im Eingang" in den Einstellungen des PC Clients wird nun auch vom david Client Android und david Client iPhone/iPad beachtet.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10852]]

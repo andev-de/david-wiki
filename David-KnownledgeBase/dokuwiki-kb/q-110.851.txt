@@ -1,0 +1,22 @@
+====== Q-110.851 - Menü Adressen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Adressenansicht des Clients gibt es nun im Kontextmenü und damit auch im Hauptmenü unter "Aktionen", die Menüpunkte "Senden" und "Anrufen". Man kann dann aus dem Kontextmenü eMails, Faxe oder SMS an die gewählten Adressen versenden, oder bei einer selektierten Adresse an eine der eingetragenen Rufnummern einen Anruf herstellen lassen.
+
+Diese Funktion ist zwar auch in der Vorschau vorhanden, dort aber nur per Maus bedienbar. Dadurch, dass sie sich nun auch im Menü befindet, kann die Funktion auch per Tastatur bedient werden. Damit steht die Funktion auch dann zur Verfügung, wenn man die Vorschau ausgeblendet hat.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10851]]

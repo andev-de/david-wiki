@@ -1,0 +1,15 @@
+====== Q-110.215 - Zeichen/löschen verzögert ======
+==== Problem ====
+Im Fax Viewer funktionierte das Zeichnen und Löschen von Anmerkungen u.U. verzögert - trat bisher nur unter Windows 7 auf und ist nun behoben. dvedit32.exe 11.00a (161)
+==== Produkt ====
+David Client
+==== Datum ====
+21.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10215]]

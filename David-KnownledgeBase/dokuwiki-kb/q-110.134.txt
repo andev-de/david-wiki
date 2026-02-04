@@ -1,0 +1,39 @@
+====== Q-110.134 - Allgemeine Hinweise zur Einrichtung der »Postlagernd« Funktion ======
+==== Problem ====
+David Benutzer sollen beim Versand von eMails mit Dateianhang die »Postlagernd« Funktion nutzen können. Welche Voraussetzungen müssen gegeben sein bzw. welche Einstellungen sind hierfür im David.Administrator notwendig?
+==== Produkt ====
+David.Administrator
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+12.04.2010
+==== Antwort ====
+Die Versandoption »Postlagernd« ermöglicht es, anderen Personen sehr große Dateien (z.B. Video-Aufzeichnungen) zur Verfügung zu stellen, ohne diese als Dateianhang versenden zu müssen. Der Empfänger erhält hierbei per eMail lediglich einen Link auf diese Dateien, der den Zugriff über das Internet per Web-Browser ermöglicht. 
+
+Voraussetzungen Generelle Voraussetzung für die Nutzung der Funktion Postlagernd ist, dass in Ihrem System die David WebBox läuft und korrekt eingerichtet ist. Darüber hinaus sollten Sie über eine permanente Internetverbindung verfügen, über die auf Ihren Rechner bzw. den David Server zugegriffen werden kann. Aktivierung und KonfigurationDie »Postlagernd« Funktion ist üblicherweise standardmäßig aktiviert und kann in der David Systemkonfiguration individuell angepasst oder auch deaktiviert werden. Die zugehörigen Einstellungen dazu erreichen Sie im David.Administrator unter »System - Konfigurieren…« auf der Registerkarte »Übertragung«. 
+
+Im oberen Drittel der Registerkarte »Übertragung« können Einstellungen zum postlagernden Versand getroffen werden. Aktivieren Sie das Kontrollkästchen »Postlagernd«, um den postlagernden Versand generell zu ermöglichen. In diesem Fall stehen folgende zugehörigen Konfigurationsmöglichkeiten zur Verfügung:Empfehlen ab x MB DateigrößeBestimmen Sie hier, ob und ab welcher Dateigröße den Benutzern der postlagernde Versand ihrer Dateianhänge empfohlen werden soll. Hängt ein Benutzer beim Erstellen einer Nachricht im David Client so viele bzw. so große Dateien an, dass die hier eingestellte Größe erreicht oder überschritten wird, erscheint automatisch ein Hinweisfenster, das ihm den postlagernden Versand dieser Daten vorschlägt, bzw. ermöglicht.
+
+Tragen Sie den Wert 0 ein, wenn der postlagernde Versand generell nicht vorgeschlagen werden soll. 
+
+Generell anwenden ab x MB DateigrößeLegen Sie fest, ob und ab welcher Dateigröße der Versand von Dateianhängen generell als postlagernd erfolgen soll. Bei Nachrichten, deren Dateianhänge die hier eingestellte Größe erreichen oder überschreiten, wird automatisch die Versandmethode postlagernd verwendet, ohne zuvor Hinweismeldungen oder Abfragen anzuzeigen. Bei Nutzung dieser Funktion ist es also nicht möglich, Dateien, deren Größe diesen Schwellenwert überschreitet, auf konventionelle Weise zu versenden. 
+
+Tragen Sie den Wert 0 ein, wenn der automatische Einsatz des postlagernden Versands nicht erfolgen soll. 
+
+Zu benutzende URLGeben Sie hier die URL an, die für die Erstellung des Links verwendet werden soll, der dem Empfänger der postlagernden Sendung übermittelt wird. Im Normalfall wird hierzu der Eintrag verwendet, der in der WebBox Systemkonfiguration auf dem Register »Domain« unter »Domain Name« vorgenommen wurde.
+
+Nehmen Sie hier nur dann eine Eintragung vor, wenn Sie nicht die vom System standardmäßig verwendeten Einstellungen nutzen wollen.
+
+VerzeichnisGeben Sie hier das Verzeichnis an, in dem die Dateien postlagernder Sendungen abgelegt werden sollen. Standardmäßig wird hierzu das Verzeichnis »\DAVID\ARCHIVE\WWW\$PST$« auf dem David Server verwendet. Im David Client trägt der zugehörige Ordner den Namen »Postlagernd« und ist im Ordnerbaum unterhalb von »World Wide Web« zu finden. 
+
+Nehmen Sie hier auch hier nur dann eine Eintragung vor, wenn Sie nicht die vom System standardmäßig verwendeten Einstellung nutzen wollen. 
+
+Hinweise:Beachten Sie, dass sich bei Nutzung dieser Funktion zum Teil erhebliche Datenmengen im Postlager-Ordner ansammeln können. Aus diesem Grund ist für den hierzu standardmäßig verwendeten Ordner (»WWW - Postlagernd«) eine automatische Bereinigung nach zehn Tagen voreingestellt.
+
+Unabhängig von den im David.Administrator definierten Schwellenwerten für die Dateigröße kann der postlagernde Versand für einzelne Nachrichten bei Bedarf auch manuell im David Client aktiviert werden.
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10134]]

@@ -1,0 +1,28 @@
+====== Q-110.608 - Fernzugriff per Android-Gerät nur eingeschränkt möglich ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Versuch, den Remote Access auf das David Ordnersystem mit einem Android Smartphone auszuüben, ist der Zugriff nicht auf alle Ordner möglich. Das Öffnen verschiedener Ordner, die eigentlich korrekt für den Remote Access eingerichtet sind, schlägt permanent fehl.
+
+==== Produkt ====
+
+David WebBox
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+24.08.2011
+
+==== Antwort ====
+
+Wenn sich beim Remote Access per Android-Gerät nicht alle freigegebenen Ordner tatsächlich öffnen lassen, prüfen Sie die Einstellung »Standard Dokument« in der Systemkonfiguration der David WebBox. Gehen Sie dazu folgendermaßen vor:Öffnen Sie im Konfigurationsbaum des David.Administrator den Punkt »Fernzugriff & Publizierung« und klicken Sie mit der rechten Maustaste auf »WebBox«Wählen Sie aus dem erscheinenden Kontextmenü den Punkt »Konfigurieren...«, um die Systemkonfiguration der WebBox zu öffnen.Wechseln Sie im Konfigurationsfenster auf die Registerkarte »Erweitert«Prüfen Sie hier den Eintrag im Feld »Standard Dokument« und stellen Sie sicher, dass dort »INDEX.HTM« eingetragen ist. Sollte hier ein abweichender Eintrag enthalten sein (z.B. »INDEX.HTML«), korrigieren sie diese Angabe entsprechend.  Schließen Sie das Konfigurationsfenster mit einem Klick auf »OK«Falls Sie Änderungen vorgenommen haben, starten Sie anschließend die Webbox neu, um diese Änderungen zu aktivieren. Klicken Sie dazu im David.Administrator wiederum mit der rechten Maustaste auf »WebBox« und wählen Sie dann aus dem Kontextmenü den Punkt »Dienst neu starten«     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10608]]

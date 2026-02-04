@@ -1,0 +1,20 @@
+====== Q-110.941 - Dateinamen mit Umlauten beim eMail Ausdruck ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält eine eMail Dateianhänge mit Umlauten im Dateinamen, so wurden die Umlaute beim eMail Ausdruck falsch ausgegeben.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10941]]

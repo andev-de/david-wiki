@@ -1,0 +1,16 @@
+====== Q-110.532 - Schriftart bei Kommentar in Originalnachricht (Weiterleiten/Antworten) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Einstellungen des Editors kann nun eingestellt werden, ob beim Antworten/Weiterleiten von eMails die Schriftart von Kommentaren in der Originalnachricht beibehalten oder eine andere verwendet werden soll.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+3.05.2011     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10532]]

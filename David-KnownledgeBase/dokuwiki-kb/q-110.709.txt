@@ -1,0 +1,24 @@
+====== Q-110.709 - Aktualisierung der LiveComments bei David Client iPhone und Android ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird per David Client iPhone oder Android eine LiveComments Nachricht bearbeitet, so konnte es vorkommen dass neue Beiträge nicht aktualisiert wurden. Erst nach dem Schließen und erneutem Öffnen der Nachricht wurden sie angezeigt.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+29.03.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 29-Mar-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10709]]

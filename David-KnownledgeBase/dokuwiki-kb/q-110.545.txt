@@ -1,0 +1,16 @@
+====== Q-110.545 - eMail Vorlage beim Weiterleiten/Antworten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Weiterleiten/Antworten wird nun auch die eMail Vorlage verwendet.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+19.08.2011     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10545]]

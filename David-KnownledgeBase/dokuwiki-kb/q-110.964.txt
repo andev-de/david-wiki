@@ -1,0 +1,20 @@
+====== Q-110.964 - Schalter "Jetzt anwenden" deaktiviert bei Autoreply Regel ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist bei den Client Verteilregeln eine Autoreply Regel eingerichtet, so ist dort der Schalter "Jetzt anwenden" nun deaktiviert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10964]]

@@ -1,0 +1,20 @@
+====== Q-110.774 - Eingekürzter Betreff mit Umlauten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden Einträge über die Suche oder den Quickfinder gefiltert, so wurde bei eingekürzten Betreffs, die Umlaute enthalten, diese Umlaute u.U. falsch angezeigt.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10774]]

@@ -1,0 +1,20 @@
+====== Q-110.871 - Jahreszahl bei Datumseingabe ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man z.B. beim Erstellen eines Termins oder einer Aufgabe das Datum durch eintippen angegeben kann und die Anzeige das Format "dd.mm.yyyy" hat, musste man bisher das Jahr vierstellig angeben - z.B. wurde aus 10.10.14 das aktuelle Jahr, also 10.10.2013. Man kann das Jahr dort nun auch in der Kurzform angeben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10871]]

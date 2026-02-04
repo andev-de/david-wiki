@@ -1,0 +1,15 @@
+====== Q-110.194 - Falsches Menü bei Windows Mobile 6.5 ======
+==== Problem ====
+Auf Geräten mit Windows Mobile 6.5 war der Inhalt der Menüs "Neu" und "Menü" gleich. Das ist mit der neuen Version des David Client Pocket behoben. David Client Pocket 1.11a (0384)
+==== Produkt ====
+David Client Pocket
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10194]]

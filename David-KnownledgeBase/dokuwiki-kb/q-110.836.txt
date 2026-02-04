@@ -1,0 +1,20 @@
+====== Q-110.836 - Sonderzeichen in Vorlagenauswahl ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei Vorlagen mit Sonderzeichen im Betreff (z.B. (r) oder (tm)) wurden diese Sonderzeichen im Dialog "Dokumentenvorlage" falsch angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10836]]

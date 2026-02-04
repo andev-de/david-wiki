@@ -1,0 +1,20 @@
+====== Q-110.856 - Löschen von Nachrichten bei IMAP Zugriff per iPhone ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden Nachrichten beim IMAP Zugriff per iPhone gelöscht, konnte es zu einem Fehlverhalten kommen, das eine unnötige Verbindung durch den Mail Client zur Folge hatte. Dies konnte auftreten, wenn in der Konfiguration des Mail Access Servers der Schalter "Nachrichten per IMAP direkt löschen" deaktiviert ist.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10856]]

@@ -1,0 +1,20 @@
+====== Q-110.946 - Kyrillische Zeichen beim eMail Ausdruck ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält eine eMail kyrillische Zeichen, so wurden diese bisher falsch ausgedruckt, das ist nun geändert.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10946]]

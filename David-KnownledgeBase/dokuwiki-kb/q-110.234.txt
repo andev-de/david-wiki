@@ -1,0 +1,29 @@
+====== Q-110.234 - Konfiguration des David.fx Client für Android Geräte ======
+==== Problem ====
+Für den mobilen Zugriff auf die persönlichen Daten des David Clients soll ein Android-Smartphone verwendet werden. Der David.fx Client für Android Geräte wurde auf dem Smartphone bereits korrekt installiert. Welche Schritte sind für die Einrichtung notwendig und was ist bei der Konfiguration zu beachten?
+==== Produkt ====
+David Client für Android
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+25.05.2011
+==== Antwort ====
+Zur Konfiguration des David Client auf einem Android Gerät starten Sie das Programm über die zugehörige Verknüpfung. Nach dem ersten Start muss ein Zugangskonto für den Zugriff auf den David.fx Server eingerichtet werden. Tragen Sie dazu Ihre Zugangsdaten in die folgenden Felder ein:Servername:Tragen Sie als Servernamen den Domain-Namen Ihres David Servers bzw. dessen IP-Adresse ein (z.B. »example.com«, »12345-12345.tobit.net«).
+
+Kontobezeichnung:Vergeben Sie hier eine Bezeichnung für das Konto (z.B. »David-Server«). Diese Bezeichnung ist frei wählbar. 
+
+Benutzername:Geben Sie als Benutzernamen den Namen an, unter dem Sie als Benutzer auf dem David Server eingerichtet sind. In der Regel ist dies der »vollständige Name« (z.B. »Leo Benz«).
+
+Loginname:Tragen Sie hier als Loginname die Zeichenkette ein, die Sie in den Eigenschaften des betreffenden David Ordners als Benutzername für den Remote Access festgelegt haben.
+
+Passwort: Als Passwort ist die Zeichenkombination einzutragen, die in den Eigenschaften des betreffenden David Ordners als Passwort für den Remote Access definiert wurde. 
+
+Unter dem Feld »Passwort« haben Sie zudem die Möglichkeit, weitere Einstellungen für dieses Zugangskonto zu treffen. 
+
+Nachdem Sie alle notwendigen Daten eingetragen haben, schließen Sie die Einrichtung des Zugangskontos (Account) mit einem Klick auf »Weiter« ab. Das soeben erstellte Zugangskonto wird anschließend in der Liste der eingerichteten Accounts angezeigt und kann ab sofort für die Nutzung des David.fx Client für Android verwendet werden. 
+
+Hinweise:Damit ein David Benutzer mit dem David Client für Android auf seine persönlichen Ordner zugreifen kann müssen folgende Voraussetzungen erfüllt werden: Der David.fx Server muss über das Internet erreichbar sein.Die WebBox muss gestartet sein.Dem Benutzer muss in der David Benutzerverwaltung im David Administrator das Recht »Remote Access nutzen« zugewiesen sein.Die betreffenden Ordner des Benutzers müssen für den Remote Access freigeschaltet und eingerichtet sein.Das Android Gerät muss mit dem Internet verbunden sein.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10234]]

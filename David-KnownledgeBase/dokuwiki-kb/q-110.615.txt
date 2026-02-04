@@ -1,0 +1,20 @@
+====== Q-110.615 - Start des Clients dauert lange ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Start des Clients konnte in einem speziellen Fall sehr lange dauern: Wenn ein Benutzer in seiner Schnellstartleiste (Benutzerordner /System/Anwendungen) den Link zu einer Anwendung eingefügt hat, diese Anwendung auf einem anderen PC liegt, und dieser PC während des Client Starts nicht erreichbar ist. Das ist nun behoben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10615]]

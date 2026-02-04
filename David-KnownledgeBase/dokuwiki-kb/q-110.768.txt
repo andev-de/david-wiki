@@ -1,0 +1,20 @@
+====== Q-110.768 - Gescannte Dokumente als Dateianhang ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Scanner Konfiguration (Einstellungen/Global/Scanner) kann nun eingestellt werden, dass im Nachrichten Editor ein Menüpunkt (Einfügen/Anhang) und/oder Button eingeblendet wird, über den eingescannte Dokumente direkt als Anhang an die neue Nachricht erstellt werden. Dabei können als Formate für den Anhang PDF, Multipage Tiff oder einzelne JPEG gewählt werden. 
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10768]]

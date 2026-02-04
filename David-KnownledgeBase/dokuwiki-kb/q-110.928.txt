@@ -1,0 +1,17 @@
+====== Q-110.928 - Fehlverhalten beim TeamChat ======
+~~NOCACHE~~
+!!!
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10928]]

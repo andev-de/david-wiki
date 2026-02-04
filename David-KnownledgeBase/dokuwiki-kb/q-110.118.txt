@@ -1,0 +1,11 @@
+====== Q-110.118 - TV Aufzeichnungen in Hate-List übernehmen ======
+==== Problem ====
+Im Ordner "Aufzeichnungen" kann eine Sendung in die Hate-List übernommen werden (Kontextmenü, "Titel zur Hate-List hinzufügen").
+==== Produkt ====
+David Client
+==== Datum ====
+22.02.2010
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10118]]

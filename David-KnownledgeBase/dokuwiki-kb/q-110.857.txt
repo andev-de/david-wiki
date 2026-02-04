@@ -1,0 +1,16 @@
+====== Q-110.857 - eMail Vorlage und Hintergrundfarbe ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Schalter "Einstellungen - Vorlagen - Beim Weiterleiten/Antworten die Hintergrundfarbe der Originalnachricht beibehalten" funktionierte bei der aktuellen eMail Standardvorlage nicht korrekt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10857]]

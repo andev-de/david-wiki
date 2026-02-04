@@ -1,0 +1,20 @@
+====== Q-110.624 - WebAccess beim Aufruf der Domäne ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Parameter "ForceWebAccess = TRUE|FALSE" in der WebBox.ini steht nun per Default auf TRUE. Beim Aufruf der Domäne wird also direkt der WebAccess gestartet. Möchte man per Default wieder die Homepage erreichen, muss der Parameter somit auf FALSE gesetzt werden.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10624]]

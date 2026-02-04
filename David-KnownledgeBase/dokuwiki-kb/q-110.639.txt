@@ -1,0 +1,20 @@
+====== Q-110.639 - Menü im Nachrichten Editor ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Per Vorgabe ist das Menü im Nachrichten Editor nun ausgeblendet und kann über das Kontextmenü wieder eingeblendet werden. Trifft nur zu, wenn der Editor losgelöst, also nicht eingebettet ist.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10639]]

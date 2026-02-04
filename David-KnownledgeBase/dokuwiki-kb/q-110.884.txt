@@ -1,0 +1,20 @@
+====== Q-110.884 -  "In Transit" Einträge in InfoCenter Ansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird ein RSS Feed geöffnet und man wechselt anschließend in die InfoCenter Ansicht, so funktionierten hier die Buttons wartender Sendeaufträge nicht (z.B. "Freigeben"), die in dieser Ansicht auch angezeigt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10884]]

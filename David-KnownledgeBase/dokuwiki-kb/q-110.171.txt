@@ -1,0 +1,15 @@
+====== Q-110.171 - Suchen und ersetzen in HTML eMails ======
+==== Problem ====
+Wenn man im Bearbeiten Modus einer HTML Nachricht per Suchen/Ersetzen Texte ändern lässt, erfolgte beim anschließenden Schließen nicht die Frage nach dem Speichern. dvwin32.exe 11.00a (3110)
+==== Produkt ====
+David Client
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10171]]

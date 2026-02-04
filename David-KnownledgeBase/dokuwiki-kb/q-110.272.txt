@@ -1,0 +1,25 @@
+====== Q-110.272 - Allgemeine Hinweise zum UpDate auf David.fx Edition 2011 ======
+==== Problem ====
+Was ist bei einem UpDate auf David.fx Edition 2011 zu beachten?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+17.12.2010
+==== Antwort ====
+Ein UpDate auf David.fx Edition 2011 kann für David Installationen ab der Version David.zehn! durchgeführt werden. Bestehende Daten und serverseitige Einstellungen bleiben bei einem solchen UpDate erhalten.
+
+Bei Einsatz von David Versionen, die älter sind als David.zehn!, kann generell kein UpDate auf David.fx Edition 2011 erfolgen. Hier ist eine komplette Neuinstallation erforderlich. Bestehende Daten und Einstellungen werden somit in diesem Fall nicht übernommen.
+
+Da David.fx Edition 2011 Teile seiner Datenbestände in einer SQL-Datenbank organisiert (MS SQL Server 2008 R2 Express - im Lieferumfang enthalten), sind die Anforderungen an den David Server höher als noch bei den Vorgängerversionen. Folgende Bedingungen müssen für die Installation von David.fx Edition 2011 erfüllt werden:Server mit mindestens 512 MB RAM (2 GB oder mehr wird empfohlen) und nicht weniger als 3 GB freiem Festplattenspeicher auf dem Systemlaufwerk Server-Betriebssystem Windows Server 2003 SP2, Windows Server 2008, Windows Server 2008 R2, Windows XP (ab SP3), Windows Vista oder Windows 7 (jeweils in den 32- oder 64-Bit Versionen) Microsoft.NET Framework ab Version 2.0 SP2(wird vom David Setup installiert, falls noch nicht vorhanden) Windows PowerShell(wird vom David Setup installiert, falls noch nicht vorhanden) Windows Installer ab Version 4.5(wird vom David Setup installiert, falls noch nicht vorhanden)
+
+Nach dem Start des UpDate-Vorgangs überprüft das Setup, ob die erforderlichen Voraussetzungen erfüllt werden, und nimmt gegebenenfalls zunächst die Installation oder Aktualisierung von Microsoft.NET Framework, Windows PowerShell, Windows Installer und SQL-Datenbank vor. In dieser Phase des UpDate-Prozesses kann es erforderlich sein, dass das System neu gestartet wird, bevor das eigentliche UpDate von David.fx beginnt. 
+
+HinweisBei David.fx Edition 2011 handelt es sich um eine neue Produktversion. Für ein Update sind daher neue Produktlizenzen notwendig. Die Website update.tobit.com stellt individuelle Update-Angebote zur Verfügung.
+
+
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10272]]

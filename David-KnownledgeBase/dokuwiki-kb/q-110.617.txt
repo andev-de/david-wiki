@@ -1,0 +1,20 @@
+====== Q-110.617 - Geburtsdatum per David Client iPhone/Android löschen/ändern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine Adresse mit dem David Client PC erstellt und ein Geburtsdatum eingetragen, so funktionierte das Ändern oder Löschen dieses Datums mit dem David Client iPhone und David Client Android nicht korrekt.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10617]]

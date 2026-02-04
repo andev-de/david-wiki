@@ -1,0 +1,20 @@
+====== Q-110.967 - Eigene Verknüpfungen beim "Verschieben nach" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Funktion "Verschieben nach" (Kontextmenü einer Nachricht in der Eintragsliste) stehen nun auch die eigenen Verknüpfungen als Zielordner zur Auswahl.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10967]]

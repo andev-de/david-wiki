@@ -1,0 +1,20 @@
+====== Q-110.954 - Kalenderwoche in Kalenderanzeige ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Kalenderansichten "Tag", "Arbeitswoche" und "Übersicht" enthalten die kleinen Kalender nun auch die Info zu den Kalenderwochen (KW).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10954]]

@@ -1,0 +1,20 @@
+====== Q-110.806 - "Speichern unter" im Editor ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man in der Nur Lesen Ansicht des Editors "Speichern unter" wählt, musste man bisher manuell den Dateinamen angeben. Nun wird der Betreff der Nachricht als Dateiname vorgeschlagen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10806]]

@@ -1,0 +1,20 @@
+====== Q-110.909 - Hintergrundfarbe im Editor ändern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Editor kann nun die Hintergrundfarbe geändert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10909]]

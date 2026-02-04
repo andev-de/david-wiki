@@ -1,0 +1,20 @@
+====== Q-110.812 - Update Hinweis für Client Apps ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist eine Client App installiert und es liegt ein Update bereit, so wird der + Button in der Favoriten Leiste rot eingefärbt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10812]]

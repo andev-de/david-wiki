@@ -1,0 +1,28 @@
+====== Q-110.659 - Dauerhafte Anzeige der Scrollbalken im David® Client ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei David®fx12™ sind die Scrollbalken mancher Teilfenster, wie z.B. der Eintragsliste, nicht ständig verfügbar. Ist es möglich, diese Scrollbalken dauerhaft anzeigen zu lassen und welche Einstellung ist hierfür vorzunehmen?
+
+==== Produkt ====
+
+David Client
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Verschiedene Scrollbalken im David® Client (z.B. in der Eintragsliste oder im Ticker) sind nicht permanent sichtbar, sondern werden nur bei Bedarf automatisch eingeblendet. So steht mehr Platz für die reinen Informationen zur Verfügung und wird nicht von aktuell ungenutzen Bedienelementen belegt. Das Einblenden erfolgt dann automatisch z.B. bei Benutzung des Maus-Scrollrads oder beim Platzieren des Mauszeigers in Bereiche, wo sich die Scrollbalken üblicherweise befinden. Um eine permanente Anzeige der Scrollbalken zu erreichen, rufen Sie die Einstellungen des David® Client auf und deaktivieren unterhalb des Punktes »Ansicht« die Option »Scrollbalken automatisch einblenden«.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10659]]

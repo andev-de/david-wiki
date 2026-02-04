@@ -1,0 +1,15 @@
+====== Q-110.174 - Wiederholter Login Dialog im David Client Web (mit IE 8) ======
+==== Problem ====
+Bei Verwendung des Internet Explorer 8 mit dem David Client Web konnte es auftreten, dass beim Ordnerwechsel oder dem Öffnen von Nachrichten, Terminen, etc. im David Client Web mehrmals der Login Dialog erschien, obwohl die Daten zuvor bereits eingegeben wurden. WebBox.exe 11.00a (639)
+==== Produkt ====
+David WebBox
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10174]]

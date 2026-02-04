@@ -1,0 +1,15 @@
+====== Q-110.450 - @ Zeichen mit Tastatur in anderen Sprachen im Adressfeld einfügen ======
+==== Problem ====
+Ist eine Tastatur in einer anderen Sprache eingestellt (z.B. ungarisch, kroatisch, polnisch), so konnte das @ Zeichen nicht in den Adressfeldern (An, Cc, Blind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" BccBlind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )") oder im Betreff eingefügt werden.
+==== Produkt ====
+David Client
+==== Datum ====
+10.03.2011
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 10-Mar-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10450]]

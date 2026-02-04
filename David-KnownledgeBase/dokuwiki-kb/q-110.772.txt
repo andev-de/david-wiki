@@ -1,0 +1,20 @@
+====== Q-110.772 - Absturz bei nicht lateinischer Absender Adresse ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Empfang von eMails mit nicht lateinischer Absender Adresse (z.B. kyrillische Zeichen) konnte es u.U. zum Absturz kommen.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10772]]

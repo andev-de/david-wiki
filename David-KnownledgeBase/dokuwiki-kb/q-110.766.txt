@@ -1,0 +1,20 @@
+====== Q-110.766 - LiveComments drucken ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Benutzung der Druckvorlage \david\clients\windows\email.prn für den Ausdruck von eMails kann nun bestimmt werden, dass vorhandene LiveComments mit gedruckt werden. Hierzu gibt es die neue Variable ##LIVECOMMENTS##.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10766]]

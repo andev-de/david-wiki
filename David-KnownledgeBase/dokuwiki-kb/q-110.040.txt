@@ -1,0 +1,15 @@
+====== Q-110.040 - Verwendung von Wildcards bei Nutzung der David Befehle ATTACH und BINFAX ======
+==== Problem ====
+Seit der Installation des David.fx Service Pack 20-Nov-2009 werden bei Nutzung der David Befehle @@ATTACH und @@BINFAX keine Jokerzeichen (Wildcards) in der Pfadangabe anzuhängender Dateien mehr akzeptiert. Ist es möglich, die Verwendung von Wildcards bei Einsatz dieser David Befehle wieder zu aktivieren und welche Einstellungen sind hierfür vorzunehmen?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+29.12.2009
+==== Antwort ====
+Durch die Installation des David.fx Service Pack 20-Nov-2009 wird bei Nutzung der David Befehle @@ATTACH und @@BINFAX die Verwendung von Wildcards generell unterbunden. Um den Einsatz von Wildcards weiterhin zu erlauben, ist die Datei »DAVID.INI« im Verzeichnis »\DAVID\CODE\« des David Servers anzupassen. Gehen Sie dazu folgendermaßen vor:Wechseln Sie auf dem David Server in das Verzeichnis »\DAVID\CODE\« und öffnen Sie die Datei »DAVID.INI« mit einem Editor. Fügen Sie dem Inhalt der Datei in einer neuen Zeile folgenden Parameter hinzu: AllowAttachWildcards = 1; Speichern Sie die vorgenommene Änderung und schließen Sie den Editor. Starten Sie anschließend den David Dienst »Service Layer« neu.Von nun an ist die Angabe von Wildcards bei Einsatz der David Befehle @@ATTACH und @@BINFAX wieder möglich.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10040]]

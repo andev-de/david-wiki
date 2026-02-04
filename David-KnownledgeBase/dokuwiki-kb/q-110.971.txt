@@ -1,0 +1,20 @@
+====== Q-110.971 - Zusätzliche TAPI Einstellungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den TAPI Einstellungen (Einstellungen, Benutzerprofil) können nun noch eigene Einstellungen zur Amtsholung und dem Format der Rufnummern vorgenommen werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10971]]

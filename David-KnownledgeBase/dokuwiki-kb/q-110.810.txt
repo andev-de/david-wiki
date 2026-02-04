@@ -1,0 +1,20 @@
+====== Q-110.810 - Schalter "Höchste Farbqualität erzwingen" entfernt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Schalter "Einstellungen/Ansicht/Höchste Farbqualität erzwingen" wurde entfernt, da er mittlerweile nicht mehr benötigt wird.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10810]]

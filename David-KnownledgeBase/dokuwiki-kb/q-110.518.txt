@@ -1,0 +1,28 @@
+====== Q-110.518 - Beim Fernzugriff per IMAP werden nicht alle Nachrichten abgerufen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei Nutzung des Fernzugriffs per IMAP über den David Mail Access Server lassen sich aus einem bestimmten Ordner nicht alle enthaltenen Nachrichten abrufen. Für einen Teil der Nachrichten in diesem Ordner ist das Abrufen nicht möglich. Wie kann dieses Problem gelöst werden? 
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+15.04.2011
+
+==== Antwort ====
+
+Wenn sich Nachrichten aus einem Ordner nicht über IMAP abrufen lassen, deutet das auf einen Defekt der Systemdatei »UID.INI« hin, die sich auf Betriebssystemebene in dem zugehörigen Verzeichnis befindet. Um dieses Problem zu lösen, müssen Sie die Datei »UID.INI« von David neu erzeugen lassen. gehen Sie dazu folgendermaßen vor:Erstellen Sie im David Client einen neuen Ordner, den Sie als Zwischenspeicher verwenden können. Öffnen Sie dann den Ordner, dessen Inhalt sich nicht vollständig abrufen lässt, und verschieben Sie sämtliche enthaltenen Einträge in den zuvor als Zwischenspeicher erstellten neuen Ordner. Wechseln Sie dann im Windows Explorer in das Verzeichnis des 'defekten' David Ordners.Löschen Sie hier außer den Dateien Archive.INIACCESS.INIARCHIVE.INIARCHIVE.DIRARCHIVE.URTsowie außer eventuell enthaltenen Unterverzeichnissensämtlichen Inhalt aus diesem Verzeichnis. Führen Sie anschließend den IMAP-Zugriff auf den betreffenden David Ordner erneut aus. Hierdurch erreichen Sie, dass die Datei »UID.INI« neu erstellt wird. Verschieben Sie nun im David Client sämtliche Einträge aus dem als Zwischenspeicher genutzten Ordner wieder zurück in den ursprünglichen Ordner. Den Zwischenspeicher können Sie danach löschen.Beim nächsten Zugriff mit dem IMAP Client werden nun sämtliche Nachrichten dieses Ordners korrekt abgerufen.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10518]]

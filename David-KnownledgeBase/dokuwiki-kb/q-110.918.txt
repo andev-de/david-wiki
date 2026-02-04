@@ -1,0 +1,20 @@
+====== Q-110.918 - Eintrag per Drag & Drop verschieben/kopieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Soll ein Eintrag per Drag & Drop in einen anderen Ordner kopiert oder verschoben werden, so wurde u.U. nicht der gewünschte Eintrag verwendet, sondern der zuvor markierte.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10918]]

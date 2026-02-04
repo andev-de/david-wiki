@@ -1,0 +1,16 @@
+====== Q-110.566 - Automatisch speichern beim Abmelden/PC herunterfahren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist die Vorschau neben der Eintragsliste eingestellt und es sind beim Abmelden oder Herunterfahren des PCs noch Nachrichten zum Weiterleiten/Antworten bzw. neue Nachrichten geöffnet, so werden diese Nachrichten nun automatisch im Ordner "Entwürfe" gespeichert. Unter "Einstellungen/Editor/Erweitert" kann dieses Verhalten eingestellt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+22.08.2011     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10566]]

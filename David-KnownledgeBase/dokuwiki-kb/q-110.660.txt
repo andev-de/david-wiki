@@ -1,0 +1,28 @@
+====== Q-110.660 - Allgemeine Informationen zur Nutzung der Summarizing-Technologie ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wie arbeitet die Summarizing-Technologie von David®fx12™ und wo befinden sich die zugehörigen Einstellungen?
+
+==== Produkt ====
+
+David
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Die Summarizing-Technologie von David® stellt die Kerninformation Ihrer Nachrichten in den Mittelpunkt. Direkt auf dem David® Server aktiv sorgt diese neuartige Technologie dafür, dass Sie Ihre wichtigen Informationen so schnell und so direkt wie nie zuvor erhalten. Die Aktivierung oder Deaktivierung des Summarizers erfolgt direkt am David® Server. Öffnen Sie dazu im David® Administrator die Systemkonfiguration und wechseln Sie hier auf die Registerkarte »Optionen«. Dort finden Sie in der Sektion »System« der Liste den Punkt »Summarizer verwenden«.Im Wesentlichen werden folgende Prozesse durchgeführt: Erstellen von Zusammenfassungen Der Summarizer analysiert und versteht die Inhalte empfangener Nachrichten und abonnierter Feeds und erstellt vollkommen automatisch kurze Zusammenfassungen. Diese Zusammenfassungen stellt der David® Client direkt in seinen Eintragslisten und im Ticker zur Verfügung, gekennzeichnet durch ein vorangestelltes Summenzeichen (&#931;). Im Unterschied zu normalen David® Ordnern, wo die Zusammenfassungen permanent in den Eintragslisten enthalten sind, erfolgt im InfoCenter und im Ticker das Einblenden der Zusammenfassung dynamisch. Sobald Sie hier mit der Maus auf einen Eintrag zeigen, schieben sich die nachfolgenden Nachrichten ein Stück nach unten und geben so Raum frei, in dem die Zusammenfassung erscheint. So wird der verfügbare Platz im InfoCenter optimal ausgenutzt, um möglichst viele Einträge anzeigen zu können.Entfernen störender Elemente Ticker-Meldungen abonnierter Feeds werden durch die Summarizing-Technologie auf eine spezielle Weise bereinigt. Bereits beim Abrufen der Meldungen durch den Grabbing Server erkennt und analysiert David® den Inhalt und trennt die eigentliche Botschaft von zusätzlichen Elementen, die keinen Beitrag zur Information leisten, wie z.B. Werbeanzeigen oder Navigationselemente. So werden die Tickermeldungen äußerst effektiv auf das Wesentliche reduziert - die reine Information. Beim Öffnen der Tickereinträge im David® Client wird dann automatisch diese bereinigte Version der Meldungen angezeigt. Sämtliches störendes Beiwerk ist automatisch vom Grabbing Server beseitigt worden. Und sollten Sie doch einmal die ursprüngliche Ansicht eines Feeds benötigen, also die Darstellung inklusive aller Link-Listen, Navigationselemente, Werbe-Anzeigen etc., können Sie diese über den Tab »Original« am unteren Fensterrand jederzeit aufrufen. Diese Funktion kann im David® Administrator am David® Server aktiviert bzw. deaktiviert werden. Dazu dient die Option »Readability«, die Sie in der Konfiguration des Grabbing Servers auf der Registerkarte »RSS-Feeds« finden.Tipp: Unabhängig von der Konfiguration des Grabbing Servers bietet auch der David® Client Funktionen zu Entfernung störender Elemente. Dieser so genannte »Reader« lässt sich über den gleichnamigen Tab am unteren Rand der angezeigten Tickermeldung aktivieren. So können Sie also auch bei deaktivierter »Readability« Funktion durch einen Klick auf den »Reader« Tab im David® Client die bereinigte Darstellung der aktuell angezeigten Meldung anfordern.Generelle Hinweise Die Vorteile der Summarizing-Technologie stehen Ihnen nur dann komplett zur Verfügung, wenn Sie den David® Client so eingestellt haben, dass die Vorschau neben der Eintragsliste dargestellt wird. Bei Betrieb des David® Client in der Einstellung »Vorschau unter Eintragsliste« erfolgt keine Anzeige von Zusammenfassungen in der Eintragsliste.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10660]]

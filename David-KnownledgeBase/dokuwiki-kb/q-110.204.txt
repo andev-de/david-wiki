@@ -1,0 +1,15 @@
+====== Q-110.204 - Autoreply nur einmalig an eine eMail Adresse ======
+==== Problem ====
+Ein eingerichteter Autoreply wird nun nur noch jeweils einmal an eine eMail Adresse versendet. Somit erhält der gleiche Absender also nicht mehr bei jeder eMail eine Autoreply eMail zurück. Wird eine Autoreply Regel deaktiviert und wieder aktiviert, erhält der Absender wiederum einmal eine Autoreply eMail zurück. Auf dem Tab "Autoreply" der Regel kann das Verhalten geändert werden ("Nur einmalig pro Absender ausführen") - Vorgabe ist, dass nur einmalig ausgeführt wird. Die Daten werden im \david\code Verzeichnis in der Datei AR.DAT gespeichert. Diese wird beim Beenden und bei Änderungen max. 1x pro Stunde gespeichert. sl.exe 11.00a (2399)
+==== Produkt ====
+David Service Layer
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10204]]

@@ -1,0 +1,16 @@
+====== Q-110.910 - Vorlagen einstellen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Einstellungen können nun die Vorlagen eingerichtet werden (z.B. für neue Nachricht, Weiterleiten, Antworten).
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10910]]

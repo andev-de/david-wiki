@@ -1,0 +1,9 @@
+====== Q-110.348 - Funktion "Antwort erwartet" (Anzahl Tage) ======
+==== Problem ====
+Bei der Funktion "Antwort erwartet" im Nachrichten Editor steht nun auch wieder die Option "Anzahl Tage" zur Auswahl.
+==== Produkt ====
+David Client
+==== Datum ====
+30.11.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10348]]

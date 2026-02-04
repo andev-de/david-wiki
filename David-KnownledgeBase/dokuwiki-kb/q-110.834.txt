@@ -1,0 +1,20 @@
+====== Q-110.834 - eMails mit hoher Priorität in InfoCenter Ansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ungelesene eMails mit hoher Priorität werden in der InfoCenter Ansicht nun ganz oben angezeigt - auch wenn sie sich in der Eintragsliste weiter unten befinden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10834]]

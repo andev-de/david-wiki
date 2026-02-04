@@ -1,0 +1,16 @@
+====== Q-110.760 - Angeforderte Tracking Infos werden nicht zugeordnet ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist im David Administrator ein POP3 Postfach bei einem Benutzer eingetragen statt unterhalb von "Grabbing Server/POP3 Postfächer" so wurden angeforderte Tracking Informationen u.U. nicht den versendeten eMails zugeordnet. Die Tracking Antworten des eMail Empfängers fehlten somit bei den versendeten eMails.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+22.06.2012     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10760]]

@@ -1,0 +1,20 @@
+====== Q-110.945 -  Aktualisierung Kalender- und Aufgabenansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Stehen zwei Clients im gleichen Kalender oder Aufgabenordner und ein Client erstellt einen neuen Eintrag, so wurde dieser bei dem anderen Client u.U. nicht sofort angezeigt, sondern erst nach einer manuelle Aktualisierung.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10945]]

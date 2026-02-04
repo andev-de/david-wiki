@@ -1,0 +1,28 @@
+====== Q-110.662 - Hinweise zur Nutzung des David® Client für OS-X ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Was ist beim Einsatz des David® Client für OS-X zu beachten? 
+
+==== Produkt ====
+
+David Client
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Um den David® Client für OS-X nutzen zu können, muss der David® Server für den Remote Access eingerichtet sein. Ebenso müssen die persönlichen Ordner aller Benutzer, die den David® Client für OS-X nutzen sollen, für den Remote Access freigegeben und mit Benutzernamen und zugehörigem Passwort gesichert sein. Beim Starten des David® Client für OS-X wird der Benutzer aufgefordet, seine Zugangsdaten einzugeben. Hier sind die Daten einzutragen, die für den Remote Access auf die persönlichen Ordner dieses Benutzers definiert wurden. Nach Angabe der korrekten Daten kann der David® Client verwendet werden.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10662]]

@@ -1,0 +1,20 @@
+====== Q-110.940 - LiveComments drucken ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Benutzung der Druckvorlage \david\code\template\default.eml für den Ausdruck von eMails kann nun bestimmt werden, dass vorhandene LiveComments mit gedruckt werden. Hierzu gibt es die neue Variable ##LIVECOMMENTS##.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10940]]

@@ -1,0 +1,20 @@
+====== Q-110.906 - LiveComments Sprechblase ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei internen Nachrichten ohne vorhandene LiveComments wird nun im im Editor die LiveComments Sprechblase angezeigt.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10906]]

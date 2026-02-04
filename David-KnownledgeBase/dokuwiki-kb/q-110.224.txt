@@ -1,0 +1,19 @@
+====== Q-110.224 - Sprachnachrichten werden aufgezeichnet aber im David Client nicht angezeigt ======
+==== Problem ====
+Im David.Administrator wurde ein ISDN-Port eingerichtet. In den Einstellungen des Ports (auf der Registerkarte »Dienste«) ist die Option für den Anrufbeantworter (VoiceMail) aktiviert. Bei einem eingehenden Anruf wird die Ansage der VoiceBox fehlerfrei abgespielt und die Sprachnachricht aufgezeichnet. Die aufgezeichnete Sprachnachricht wird im David Client jedoch nicht angezeigt bzw. in keinem Ordner abgelegt.Welche Schritte sind notwendig, damit die aufgezeichneten Sprachnachrichten ordnungsgemäß gespeichert und im David Client angezeigt werden?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+23.09.2010
+==== Antwort ====
+Kommt es nach der Aufzeichnung von Sprachnachrichten zu dem oben beschrieben Verhalten, so ist das unter Umständen auf die eingestellte Routing Methode zurückzuführen. 
+
+Diese Einstellung können Sie im David Client überprüfen und gegebenenfalls ändern. Wechseln Sie dazu im David Client in den Ordner »System – David – Access – Phone« und öffnen hier die »Phone Access Configuration«. Prüfen Sie die Einstellungen in dem Feld »Routing Methode«, passen diese an, übernehmen die Änderung und prüfen die Aufzeichnung der Sprachnachrichten.
+
+Neben der Einstellung zur Routing Methode im David Client sollten Sie auch die Einstellungen im David.Administrator prüfen und ggf. anpassen. Wechseln Sie dazu im David.Administrator unter »System« in das Menü »Ports« und rufen dort die Konfiguration des eingerichteten Ports auf (z.B. Port 001). Auf der Registerkarte »Integrated Services Digital Network arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" ISDNIntegrated Services Digital Network arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"« können Sie die eingestellte »Verteilmethode« prüfen und anpassen. Änderungen übernehmen Sie abschließend mit »OK«. 
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10224]]

@@ -1,0 +1,15 @@
+====== Q-110.139 - Falsche Werte in tld.ini ======
+==== Problem ====
+Nach dem Speichern der Einstellungen eines TLDs standen u.U. falsche Werte in der Transport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" TLDTransport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )".ini. Bei der ISDN-Karte von "Funkwerk" konnte es in diesem Zusammenhang zu Abstürzen des TLDs kommen. Aufgetreten sind diese Probleme unter Windows Server 2008 R2 und Windows 7 64 Bit. Das ist nun behoben.
+==== Produkt ====
+David.Administrator
+==== Datum ====
+3.05.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 03-May-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10139]]

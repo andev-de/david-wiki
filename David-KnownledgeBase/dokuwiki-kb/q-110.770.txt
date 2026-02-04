@@ -1,0 +1,20 @@
+====== Q-110.770 - Termin ungewollt erstellt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird in der Tages- oder Arbeitswochenansicht die Ansicht als eigenes Fenster abgelöst und per Eingabe ein neuer Termin erstellt, so wurde der Termin trotz des Abbrechens mit ESC gespeichert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10770]]

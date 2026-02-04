@@ -1,0 +1,24 @@
+====== Q-110.524 - StrongBox Inhalte bei per Client gemountetem Image ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird ein StrongBox Image per Client gemountet, so wurden bei eMails keine Dateianhänge angezeigt, wenn diese eMails in einem Ablage Ordner liegen, bei dem die Nachrichten gepackt wurden (Option "Dateien zusammenfassen"). Außerdem funktionierte in der gleichen Umgebung (gepackte Ablage Ordner, per Client gemountetes Image) das Restore von Nachrichten nicht, wenn das StrongBox Image ein Passwort hat.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+3.05.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 03-May-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10524]]

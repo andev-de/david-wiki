@@ -1,0 +1,20 @@
+====== Q-110.966 - Verteilen nach Cc Empfänger ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei den Client Verteilregeln kann nun als neues Kriterium nach dem "Cc" Empfänger verteilt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10966]]

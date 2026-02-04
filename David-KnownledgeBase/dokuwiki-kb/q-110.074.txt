@@ -1,0 +1,15 @@
+====== Q-110.074 - Verteilerliste anhängen bei To und Bcc ======
+==== Problem ====
+Wird nur eine AN und eine Blind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" BccBlind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" Adresse ausgewählt, konnte dennoch das Anhängen der Verteilerliste ausgewählt werden, obwohl sie in diesem Fall korrekter Weise nicht angehängt wird. Nun steht in diesem Fall das Anhängen der Verteilerliste nicht mehr zur Auswahl.
+==== Produkt ====
+David Client
+==== Datum ====
+7.01.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 07-Jan-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10074]]

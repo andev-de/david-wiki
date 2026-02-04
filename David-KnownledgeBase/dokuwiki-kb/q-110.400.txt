@@ -1,0 +1,15 @@
+====== Q-110.400 - 2nd Scan Einträge nicht zu sehen (POP3) ======
+==== Problem ====
+Ist MIS und 2nd Scan aktiviert und eMails für einen Benutzer werden per POP3 vom Grabbing Server abgeholt, so waren diese u.U. für den Benutzer in der Ansicht "In Transit" nicht zu sehen. Besitzer er das Recht "Versandaufträge aller Benutzer", so wurden die Einträge angezeigt. Der Benutzer sieht seine eigenen Einträge nun auch ohne diese spezielle Berechtigung.
+==== Produkt ====
+David Service Layer
+==== Datum ====
+31.01.2011
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 31-Jan-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10400]]

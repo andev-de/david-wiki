@@ -1,0 +1,29 @@
+====== Q-110.233 - Erstellen von Vorlagen mit dem »Personal Style Set« ======
+==== Problem ====
+Beim Einsatz von David.fx Edition 2011 steht im David Client unter den Hauptmenüpunkt »Werkzeuge Installation« der Punkt »Personal Style Set« zu Verfügung. Was ist das »Personal Style Set« bzw. was ist bei der Installation zu beachten?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+21.12.2010
+==== Antwort ====
+
+
+Was ist das »Personal Style Set«?Das »Personal Style Set« ermöglicht es, komfortabel und schnell optisch ansprechende eMail-Vorlagen zu erstellen, ohne dafür über besondere Design- oder HTML-Kenntnisse verfügen zu müssen. Es sind verschiedene Layout- und Farb-Stile auswählbar, aus denen automatisch die gewünschten Vorlagen zusammengestellt und mit den persönlichen Kontaktdaten versehen werden. Per Klick lassen sich diese Vorlagen schließlich in den David Client integrieren.
+
+Was sind Vorlagen?Vorlagen sind Musterseiten, die Sie über den Hauptmenüpunkt »Optionen Einstellungen Vorlagen« für verschiedene Arten von neuen Dokumenten vorgeben können. Jedes Mal, wenn Sie ein neues Dokument öffnen, wird die entsprechende, von Ihnen hier bestimmte Vorlage geöffnet.
+
+Vorlage mit dem »Personal Style Set« erstellenUm mit dem »Personal Style Set« eine Vorlage zu erstellen, starten Sie die Installationsroutine direkt in der Menüleiste Ihres David Client unter »Werkzeuge Installation«. Anschließend öffnet sich das Dialogfenster »David.fx Personal Style Set«. Klicken Sie auf »Weiter«, um mit der Erstellung einer Vorlag zu beginnen. Im ersten Schritt können Sie Ihre persönlichen Daten eingeben. Diese werden direkt in die Vorlage eingefügt.
+
+Tipp:Wenn Sie im David Client schon Ihre persönliche Adresskarte angelegt bzw. ausgefüllt haben, werden die Daten Ihrer persönlichen Adresskarte bei der Erstellung einer Vorlage mit dem »Personal Style Set« automatisch übernommen. 
+
+Eine persönliche Adresskarte können Sie in den Einstellungen des David Clients einrichten. Klicken Sie dazu auf die Schaltfläche »Einstellungen« oder wählen im Hauptmenü unter »Optionen« den Punkt »Einstellungen«. In dem gleichnamigen Dialogfenster klicken Sie im »Benutzerprofil« auf die Schaltfläche »Adresskarte (VCF)«, um die persönliche Adresskarte anzulegen.Mit einem Klick auf »Weiter« kommen Sie zur Auswahl des Vorlagen-Stils. Im nächsten Fenster haben Sie die Möglichkeit, eine Farbe für Ihre Vorlage auszuwählen. Bevor Sie nun Ihre persönliche Vorlage erstellen, müssen Sie noch die Verwendung festlegen. Diese Vorlage wird dann immer automatisch geöffnet wenn Sie eine der gewählten eMails erstellen. Klicken Sie auf »Weiter« und abschließend auf »Fertig stellen«, um die Vorlage einzurichten. Die neue Vorlage steht Ihnen im David Client dann sofort zur Verfügung.
+
+Vorlagen anpassenIhre persönlichen Vorlagen können Sie im David Client unter »Persönlich System Vorlagen« jederzeit einsehen und anpassen. Um eine weitere Vorlage zu erstellen, führen Sie das »Personal Style Set« einfach erneut aus.
+
+Vorlagen festlegenWollen Sie z.B. für neue Nachrichten eine andere Vorlage als Standard einrichten, können Sie das über den Hauptmenüpunkt »Optionen Einstellungen Vorlagen« durchführen. Klicken Sie dazu auf das Symbol mit dem Pluszeichen neben dem Eingabefeld, für das Sie die Vorlage festlegen möchten. Es öffnet sich ein Auswahlfenster, aus dem Sie die gewünschte Vorlage auswählen und mit »Einfügen und schließen« für den jeweiligen Dokumenttyp bestimmen können.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10233]]

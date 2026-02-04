@@ -1,0 +1,24 @@
+====== Q-110.753 - Neue Befehle für eMail Ausdruck ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Benutzung der Druckvorlage \david\clients\windows\email.prn für den Ausdruck von eMails kann nun bestimmt werden, dass bestimmte Elemente nach dem BodyText gedruckt werden sollen, z.B. die Liste der Dateianhänge.Es gibt hierzu nun die Befehle ##END## und ##/END##. Der Bereich des Templates, der sich zwischen diesen Befehlen befindet, wird dann nach dem Body Text gedruckt.Um also die Liste der Dateianhänge am Ende zu drucken kann man in der email.prn angeben:##END####ATTACHMENTS####/END## Außerdem gibt es nun zwei zusätzliche Variablen: ##USER####CURRENTTIME##User wird ersetzt durch den Benutzernamen desjenigen, der den Druckauftrag gestartet hat, CurrentTime wird ersetzt durch die aktuelle Zeit und Datum.Beides ist z.B. praktisch, wenn der Ausdruck mehrerer Personen auf demselben Drucker erfolgt, und die Ausdrucke anschließend den Personen zugeordnet werden müssen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+22.06.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 22-Jun-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10753]]

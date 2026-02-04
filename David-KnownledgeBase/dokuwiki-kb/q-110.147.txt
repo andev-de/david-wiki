@@ -1,0 +1,15 @@
+====== Q-110.147 - Fehlerverhalten bei Serverauswahl ======
+==== Problem ====
+Ist man an einem David Server angemeldet, wählt über "Netzwerk" einen anderen David Server aus, bei dem die Zugangsdaten angegeben werden müssen und klickt dann auf "Abbrechen" (man bleibt also auf dem aktuellen Server) gab es die Meldung "Der Server ist nicht erreichbar". Das wurde nun geändert. Außerdem gibt es nun in dem Login Dialog einen kurzen Hinweis zum Grund der Abfrage (z.B. weil Zugangsdaten angegeben werden müssen oder der gewählte Server nicht erreichbar ist).
+==== Produkt ====
+David Client
+==== Datum ====
+3.05.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 03-May-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10147]]

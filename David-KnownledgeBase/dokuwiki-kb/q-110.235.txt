@@ -1,0 +1,23 @@
+====== Q-110.235 - Offline-Nutzung des David.fx Client für iPhone ======
+==== Problem ====
+Der David.fx Client für das iPhone ermöglicht dem Benutzer den mobilen Zugriff auf die Daten in seinen persönlichen David Ordnern. Voraussetzung hierfür ist eine Verbindung zum David Server (z.B. über das Internet). 
+
+Ist die Nutzung des Client auch ohne aktuell bestehende Verbindung zum David Server, also „Offline“, möglich bzw. können die Daten auch ohne Server-Verbindung angezeigt werden?
+==== Produkt ====
+David Client iPhone
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+6.01.2011
+==== Antwort ====
+Der David.fx Client für das iPhone kann auf einem iPhone, iPod touch oder auch auf einem iPad betrieben werden und stellt je nach Gerät via EDGE, UMTS oder WLAN eine IP-Verbindung zum David Server her. Der Zugriff auf die persönlichen Daten des David Client, wie z.B. die Nachrichten im Eingang, erfolgt im Normalfall „Online“, was bedeutet, dass die Anzeige der Daten nur bei bestehender Verbindung zum David Server möglich ist. 
+
+Der David.fx Client für das iPhone verfügt aber über einen Schalter der es Ihnen ermöglicht, in den »Offline«-Modus zu schalten. Haben Sie den David.fx Client für das iPhone gestartet, greifen also „Online“ auf Ihre Daten zu, und Ihre Nachrichten und Termine sollen auch später, wenn keine Verbindung zum David Server besteht, auf dem iPhone zur Verfügung stehen, betätigen Sie im Eingang den Schalter oben links neben dem Symbol für die Suche (Lupensymbol). Der Wechsel in den »Offline«-Modus wird nun vorbereitet und die Daten auf das Gerät übertragen. 
+
+Im David.fx Client für das iPhone können Sie in den Einstellungen des jeweiligen Kontos die Optionen für den »Offline«-Betrieb festlegen. Klicken Sie dazu auf »Mehr« und anschließend auf »Konto«. In der Übersicht der Konten klicken Sie auf den kleinen Button rechts neben dem Kontonamen. Innerhalb der Zugangseinstellungen haben Sie die Möglichkeit, den »Offline«-Betrieb zu konfigurieren. Nehmen Sie hier die Einstellungen für den »Offline Kalender« und das »Eingangsbuch« vor. Wählen Sie beispielsweise den Zeitraum für die Anzeige des »Offline Kalenders« und die Anzahl der maximalen Einträge im Eingang.
+
+Im »Offline«-Betrieb lassen sich selbstverständlich auch neue Nachrichten und Termine erstellen. Diese werden beim nächsten Wechsel in den »Online«-Modus automatisch zum David Server übertragen, der dann den Versand der Nachrichten bzw. das Eintragen der Termine den Kalender vornimmt.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10235]]

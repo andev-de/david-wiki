@@ -1,0 +1,25 @@
+====== Q-110.238 - Einrichtung und Nutzung eines VoIP TLD ======
+==== Problem ====
+David.fx Edition 2011 bietet bei der Port-Installation die Möglichkeit zur Einrichtung eines VoIP TLDs. Welche Voraussetzungen für die Nutzung von VoIP mit David.fx müssen gegeben sein und was ist bei der Einrichtung zu beachten?
+==== Produkt ====
+TLD (VoIP)
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+30.06.2011
+==== Antwort ====
+Für die Nutzung von VoIP bietet David.fx einen speziell zu diesem Zweck entwickelten David Port. Dieser Port verhält sich wie ein VoIP Endgerät und ermöglicht die direkte Anbindung Ihres David.fx Servers an ein bestehendes VoIP Gateway. Mit dem VoIP Transport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" TLDTransport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" können unterschiedliche Funktionen und Dienste wie z.B. Voice Aufzeichnung, ECT Connect etc. ausgeführt werden.
+
+EinsatzmöglichkeitenDer David Port für VoIP ist nutzbar als Anrufbeantworter zur Annahme eingehender Anrufe, zum Versand von TMails und VoiceMails und, sofern vom Gateway des VoIP Anbieters unterstützt, zur Herstellung von ECT Verbindungen. Er ist kein Telefon und stellt auch keinen Gateway Server dar, der VoIP Anbindungen für andere Geräte oder Software zur Verfügung stellt.
+
+Unterstützte CodecsBeim Einsatz des David Port für VoIP gelten keine besonderen Beschränkungen in Bezug auf die zur Ver- und Entschlüsselung des Sprachsignals eingesetzten Codecs. Sämtliche der zu diesem Zweck verwendeten Codecs werden von David unterstützt.
+
+Voraussetzungen für die Nutzung von VoIP mit David.fxEine freie Port-Lizenz zum Betrieb des VoIP PortsPermanente, leistungsfähige Verbindung zum Internet(mindestens DSL-Anbindung mit 128 kbit/s Upload)Zugriff auf ein VoIP Gatewayz.B. durch gültige Anmeldung bei einem VoIP Anbieter (sipgate etc.)
+
+Installation und Konfiguration des VoIP PortsUm einen VoIP Port neu zu installieren, wählen Sie im Konfigurationsbaum des David.Administrator den Punkt »System Ports« und klicken Sie anschließend in der Symbolleiste auf »Hinzufügen«. Folgen Sie dann den Anweisungen des Installationsprogramms um den Vorgang abzuschließen. 
+
+Die Konfiguration des VoIP Ports erfolgt ebenfalls direkt im David.Administrator. Öffnen Sie dazu den zugehörigen Eintrag unterhalb von »System Ports« per Doppelklick und wechseln Sie auf die Registerkarte »VoIP«. Hier können Sie die erforderlichen Einstellungen vornehmen. Tragen Sie die benötigten Daten in die jeweiligen Felder ein. Zusätzliche Informationen zu den jeweiligen Datenfeldern können Sie der Online-Hilfe durch drücken der [F1]-Taste entnehmen.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10238]]

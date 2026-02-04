@@ -1,0 +1,20 @@
+====== Q-110.791 - Variable "Postlagernd Link" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Variable "Postlagernd Link" (Nachrichten Editor - Einfügen/Variablen/Allgemein) funktionierte nicht mehr.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10791]]

@@ -1,0 +1,19 @@
+====== Q-110.223 - Allgemeine Hinweise zu David.Care ======
+==== Problem ====
+In den Einstellungen der Backline Features des David.Administrator steht auf der Registerkarte »Allgemein« der Punkt »David.Care« zur Verfügung. Welche Funktionen und Aufgaben werden von David.Care übernommen?
+==== Produkt ====
+Backline Features
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+22.09.2010
+==== Antwort ====
+David.Care sorgt zuverlässig für die Sicherheit Ihres David.fx Servers, indem es Viren automatisch erkennt und abwehrt, sowie Spam-Nachrichten identifiziert und gemäß den von Ihnen eingestellten Vorgaben behandelt. Darüber hinaus stellen integrierte Komponenten wie die »Server Locator Services (SLS)«, »Tobit Mail Relay Services (TMRS)« und die »Zeitsynchronisation« für ständige Betriebsbereitschaft und die Erreichbarkeit Ihres David.fx Servers.
+
+In David.Care sind u.a. folgende Dienste enthalten:Virus Protection for DavidMessage Identification ServicesServer Locator Services (SLS)Tobit Mail Relay Services (TMRS)Site-Care-Monitor
+
+Hinweis:Der Einsatz von David.Care ist kostenpflichtig. Die Abrechnung der Kosten erfolgt im Tobit.NET, dem Kundenforum von Tobit.Software. Weitere Informationen zur Abrechnung sowie Einblick in Ihr Kundenkonto erhalten Sie direkt im Tobit.NET unter www.tobit.net.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10223]]

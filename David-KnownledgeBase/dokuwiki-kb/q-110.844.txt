@@ -1,0 +1,20 @@
+====== Q-110.844 - HTML Ausdruck bei Windows 8, Windows Server 2012 ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei Windows 8 und Windows Server 2012 funktionierte der HTML Ausdruck über den Service Layer nicht. Das ist nun behoben, hierzu wird die neue Datei SLPrintHelper64.exe benötigt, die in das Verzeichnis \david\code kopiert wird.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10844]]

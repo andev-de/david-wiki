@@ -1,0 +1,21 @@
+====== Q-110.035 - Ordner mit dem Ticker überwachen ======
+==== Problem ====
+Im David Client wird der Ticker verwendet, um RSS-Feeds (z.B. Audio- oder Video-Podcasts) zu abonnieren. Darüber hinaus werden standardmäßig die Betreffzeilen von Nachrichten aus dem persönlichen Eingangsordner im Ticker angezeigt. Damit ist der Ticker eine Alternative zum David Notifier, um über eingehende Nachrichten des Eingangsordners informiert zu werden. Besteht die Möglichkeit, weitere Ordner vom Ticker überwachen zulassen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+harmlos
+==== Datum ====
+24.02.2010
+==== Antwort ====
+Der im David Client integrierte Ticker bietet neben dem Abonnieren von RSS-Feeds auch die Möglichkeit, beliebige Ordner des David Ordnersystems zu überwachen, sodass die Betreffzeilen neuer Nachrichten im Ticker angezeigt werden. Abonnierte RSS-Feeds sowie überwachte Ordner werden als einzelne Schaltflächen am unteren Rand des Tickers angezeigt. Ordner werden dabei grundsätzlich als gelbe Ordnersymbole dargestellt; RSS-Feeds werden durch das jeweils zugehörige Logo des RSS-Servers repräsentiert. Die Schaltfläche »Alle« an der äußerst linken Position sorgt für die gemeinsame Darstellung der Einträge aller überwachten Ordner und abonnierten RSS-Feeds im Ticker-Fenster.
+
+Gehen Sie folgendermaßen vor, um weitere Ordner vom Ticker überwachen zu lassen:Öffnen Sie den David Client und stellen Sie sicher, dass der Ticker angezeigt wird. Dazu muss im Hauptmenü unter »Ansicht« die Option »Ticker« aktiviert sein.Klicken Sie im unteren Bereich des Tickers auf die »+« Schaltfläche, um das Ticker-Konfigurationsfenster zu öffnen, das auch zum Hinzufügen neuer Ticker-Abonnements dient. Öffnen Sie im Ticker-Konfigurationsfenster die Registerkarte »Abonnierte« und klicken Sie auf die Schaltfläche »Ordner«. Wählen Sie aus der Baumstruktur einen Ordner aus, den Sie mit dem Ticker überwachen möchten, und bestätigen Sie Ihre Auswahl durch einen Klick auf »OK«. In der Liste »Abonnierte« des Ticker-Konfigurationsfensters wird nun der soeben hinzugefügte Ordner angezeigt. Anhand der aktivierten Checkbox (Häkchen) vor dem neuen Eintrag können Sie erkennen, dass Sie diesen Ordner derzeit überwachen.
+
+Optional:Markieren Sie den hinzugefügten Eintrag mit der linken Maustaste und verwenden Sie die Schaltflächen »Nach oben« oder »Nach unten« um die Position der zugehörigen Schaltfläche im Ticker zu definieren. Wird der Eintrag ganz nach oben verschoben, so wird die Schaltfläche des überwachten Ordners im Ticker ganz links dargestellt. Wird der Eintrag hingegen ganz nach unten verschoben, so erscheint die Schaltfläche im Ticker an der äußerst rechten Position. Schließen Sie das Ticker-Konfigurationsfenster durch einen Klick auf »OK«. Anschließend steht Ihnen im Ticker eine neue Schaltfläche für den zu überwachenden Ordner zur Verfügung. Ein einfacher Klick auf den Betreff einer Nachricht im Ticker bewirkt das Öffnen des zugehörigen Ordners im Navigator sowie das Markieren der Nachricht in der Eintragliste des David Client. Durch einen Doppelklick wird die betreffende Nachricht direkt geöffnet. Deaktivieren der ÜberwachungUm das Überwachen von Ordnern zu deaktivieren, stehen Ihnen zwei Möglichkeiten zur Verfügung:Klicken Sie am unteren Rand des Tickers mit der rechten Maustaste auf die Schaltfläche des gewünschten Ordners und wählen Sie aus dem Kontextmenü die Funktion »Diesen Feed abbestellen«. Rufen Sie durch einen Klick auf die »+« Schaltfläche im Ticker das Konfigurationsfenster auf und wählen Sie dort die Registerkarte »Abonnierte«. Deaktivieren Sie dann die Checkbox des betreffenden Eintrags, sodass kein Häkchen mehr angezeigt wird. Alternativ können Sie den betreffenden Eintrag markieren und mit der Schaltfläche »Löschen« komplett entfernen.
+
+Bestätigen Sie Ihre Änderungen durch einen Klick auf »OK«.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10035]]

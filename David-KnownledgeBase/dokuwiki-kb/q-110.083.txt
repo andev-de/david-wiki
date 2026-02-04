@@ -1,0 +1,37 @@
+====== Q-110.083 - Einrichtung und Nutzung von BlueLock™ ======
+==== Problem ====
+Welche Voraussetzungen müssen für die Nutzung von BlueLock™ gegeben sein und welche Schritte sind bei der Einrichtung der BlueLock™ Funktion notwendig?
+==== Produkt ====
+Tobit.ViProtect
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+11.02.2010
+==== Antwort ====
+Mit der Funktion BlueLock™ können Anwender von David.fx ihren PC automatisch und komfortabel per Bluetooth sperren bzw. entsperren. Hierfür gelten folgende Voraussetzungen: David.fx Installation inklusive Service Pack 07-Jan-2010 oder höherArbeitsstation unter Windows Vista oder Windows 7 mit aktiver Tobit.ViProtect Installation und betriebsbereitem Bluetooth-EmpfängerFunktionsweiseNach erfolgter Einrichtung auf der zugehörigen Registerkarte der Tobt.ViProtect Konfiguration ist BlueLock™ betriebsbereit. Über den Bluetooth-Empfänger des Computers überprüft dieser ständig, ob sich das betreffende Bluetooth-Gerät in Reichweite befindet. Ist dies nicht der Fall, sorgt BlueLock™ für die selbsttätige Sperrung des Rechners. Diese wird automatisch wieder aufgehoben, sobald das Bluetooth-Gerät in den Erfassungsbereich zurückkehrt. Natürlich kann das Entsperren außerdem auch wie gewohnt über die Tastatur erfolgen. Ebenso ist ein ein manuelles Sperren sowie das Sperren über die zugehörigen Funktionen des Bildschirmschoners weiterhin möglich.
+
+Falls gewünscht, kann das System so eingestellt werden, dass ein automatisches Entsperren per BlueLock™ nur dann erfolgt, wenn auch die vorherige Sperrung durch BlueLock™ ausgelöst wurde. Wenn der PC also manuell bzw. durch den Bildschirmschoner gesperrt wurde, ist in diesem Fall eine Entsperrung per BlueLock™ nicht möglich, sondern muss zwingend manuell vorgenommen werden.
+
+Hinweise: Bei Nutzung von BlueLock™ ist der Computer möglicherweise einen Moment lang für andere Personen nutzbar, während Sie sich von Ihrem Arbeitsplatz entfernen bzw. zu ihm zurückkehren. BlueLock™ sollte daher nicht an Computern eingesetzt werden, die zur Verarbeitung sensibler und vertraulicher Daten dienen.
+
+Einrichtung:Die Einrichtung von BlueLock™ erfolgt an der gewünschten Arbeitsstation innerhalb der Tobt.ViProtect Konfiguration auf der Registerkarte mit der Bezeichnung »BlueLock™«.BlueLock™ zum Sperren/Entsperren des PCs aktivierenSetzen Sie diesen Schalter, wenn Sie die BlueLock™ Technologie nutzen möchten. Entfernen Sie die Markierung aus dem Kontrollkästchen, um diese Funktion zu deaktivieren. Eventuell bereits getroffene Einstellungen bleiben erhalten und sind so bei einem erneuten Aktivieren der BlueLock™ Funktion sofort wieder gültig. 
+
+Sämtliche nachfolgend beschriebenen Konfigurationselemente sind nur bei aktivierter BlueLock™ Funktion verfügbar.
+
+PC automatisch sperrenAktivieren Sie diese Option, wenn Sie wünschen, dass der PC automatisch gesperrt werden soll, sobald sich das betreffende Bluetooth-Gerät außerhalb der Reichweite des an diesem Rechner betriebenen Bluetooth-Empfängers befindet.
+
+PC auch nach manuellem Sperren automatisch entsperrenWenn diese Funktion aktiviert ist, bewirkt ein Wiedereintritt des Bluetooth-Geräts in den Erfassungsbereich des angeschlossenen Bluetooth-Empfängers in jedem Fall die automatische Entsperrung des PCs, unabhängig davon, ob die Sperrung manuell oder durch die BlueLock™ Funktion ausgelöst wurde. 
+
+Ist diese Funktion deaktiviert, erfolgt eine automatische Entsperrung per BlueLock™ nur dann, wenn auch die vorherige Sperrung durch BlueLock™ ausgelöst wurde. Falls der PC manuell bzw. durch die zugehörigen Funktionen des Bildschirmschoners gesperrt wurde, ist eine Entsperrung per BlueLock™ nicht möglich. Die Sperrung kann in diesem Fall also ausschließlich manuell aufgehoben werden.
+
+Benutzer-KonfigurationGeben Sie hier die erforderlichen Daten für die automatische Entsperrung ein.
+
+BenutzernameTragen Sie Ihren Benutzernamen ein. Hier ist der Name zu verwenden, mit dem Sie sich üblicherweise an dem PC bzw. im Netzwerk anmelden.
+
+PasswortGeben Sie das zu dem oben eingetragenen Benutzer gehörende Passwort an. Mit diesem Passwort erreichen Sie üblicherweise auch die manuelle Entsperrung des PCs.
+
+Bluetooth-GerätGeben Sie das Bluetooth-Gerät an, das für die Nutzung der BlueLock™ Technologie verwendet werden soll. Stellen Sie sicher, dass eine aktive Bluetooth-Verbindung zwischen diesem Gerät und dem PC besteht, und klicken Sie dann auf die Schaltfläche hinter dem Eingabefeld. Daraufhin öffnet sich eine Liste aller aktuell verbundenen Bluetooth-Geräte, aus der Sie den gewünschten Eintrag direkt übernehmen können.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10083]]

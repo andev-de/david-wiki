@@ -1,0 +1,20 @@
+====== Q-110.891 - Text in Standard eMail Vorlage einfügen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird bei der Standard eMail Vorlage Text innerhalb des weißen Bereichs eingefügt, so wurde dieser Text im david Client Web nicht angezeigt.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10891]]

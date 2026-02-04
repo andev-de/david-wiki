@@ -1,0 +1,16 @@
+====== Q-110.939 -  Besprechungsanfrage nachträglich ablehnen oder annehmen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Hat ein Anwender eine Besprechungsanfrage angenommen und den Termin in seinem Kalender gespeichert, so kann er beim Öffnen dieses Termins diese Einladung nachträglich absagen, unter Vorbehalt annehmen bzw. erneut annehmen. Zusätzlich gibt es nun den Button "Antworten".
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10939]]

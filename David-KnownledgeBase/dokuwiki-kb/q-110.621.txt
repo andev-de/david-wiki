@@ -1,0 +1,17 @@
+====== Q-110.621 - Anzeigen von chinesischen Zeichen in eMails (GBK Zeichensatz) ======
+~~NOCACHE~~
+!!!
+
+==== Produkt ====
+
+David
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+eMails mit dem chinesischen Zeichensatz "GBK" werden nun auch korrekt dargestellt.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10621]]

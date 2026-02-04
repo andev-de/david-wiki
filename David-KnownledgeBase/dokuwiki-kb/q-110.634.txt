@@ -1,0 +1,20 @@
+====== Q-110.634 - Feeds nur noch in InfoCenter Ansicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Fenster mit den Feeds wird nur noch in der InfoCenter-Ansicht angezeigt. In den anderen Ansichten wird an Stelle des Feeds Fensters der Navigator angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10634]]

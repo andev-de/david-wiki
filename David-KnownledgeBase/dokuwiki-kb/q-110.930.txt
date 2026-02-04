@@ -1,0 +1,20 @@
+====== Q-110.930 - Bereinigung von Adresseinträgen in globalem Protokoll ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine Adresse in einem Ordner erstellt, so wird auch ein Eintrag im globalen Protokoll erzeugt (david.Administrator, Protokolle & Infos). Hier wurde dieser Eintrag jedoch bisher nicht entsprechend des Alters bereinigt. Das wurde nun behoben.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10930]]

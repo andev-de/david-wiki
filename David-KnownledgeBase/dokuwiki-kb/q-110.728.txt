@@ -1,0 +1,20 @@
+====== Q-110.728 - Bedeutung der Meldung »Die Darstellung gemeinsamer Kalender-Ordner ist deaktiviert« ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei Nutzung der Funktion »Gruppenkalender« zeigt das zugehörige Konfigurationsfenster einen gelb hinterlegten Warnhinweis mit folgendem Inhalt: »Die Darstellung gemeinsamer Kalender-Ordner ist deaktiviert!«. Was bedeutet diese Meldung und wodurch wird sie hervorgerufen?
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+24.04.2012
+
+==== Antwort ====
+
+Die Gruppenkalender-Funktion ermöglicht es, zusätzliche Kalender-Ordner direkt in Ihren persönlichen Kalender einzublenden. Auf diese Weise bietet Ihnen Ihr persönlicher Kalender auch einen kompletten Überblick über sämtliche Einträge der so eingebundenen Kalender. Die Darstellung der Einträge eingebundener Kalender können Sie per Klick auf den Button »Gruppenkalender« in der Symbolleiste des Kalender-Fensters generell einschalten (Button ist farbig markiert) oder ausschalten (keine farbige Markierung des Buttons). Durch einen Klick auf die Schaltfläche am rechten Rand des Buttons rufen Sie die Konfiguration der eingebundenen Kalender auf. Wenn dieses Fenster die Hinweismeldung »Die Darstellung gemeinsamer Kalender-Ordner ist deaktiviert« enthält, haben Sie die Anzeige eingebundener Kalender aktuell abgeschaltet (Button »Gruppenkalender« ist nicht farbig markiert). Diese Warnung soll Sie explizit darauf aufmerksam machen, dass Einstellungen, die Sie hier vornehmen, momentan keine direkte Auswirkung auf die Anzeige des Kalenderinhalts haben, sondern erst nach einem erneuten Klick auf den Button »Gruppenkalender« sichtbar werden. Bei aktivierter Darstellung eingebundener Kalender (Button »Gruppenkalender« ist farbig markiert) enthält das Konfigurationsfenster die Hinweismeldung nicht, da in diesem Fall die vorgenommenen Einstellungen sofort sichtbar sind.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10728]]

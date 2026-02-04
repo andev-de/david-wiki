@@ -1,0 +1,20 @@
+====== Q-110.805 - Öffnen/Weiterleiten von signierten eMails mit Dateianhängen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Öffnen von signierten eMails wurden vorhandene Dateianhänge im Editor u.U. nicht angezeigt (in der Eintragsliste wurden sie jedoch durch das Dateianhang Symbol angezeigt). Beim Weiterleiten einer solchen eMail wurde der Dateianhang dann nicht mitgesendet. Dies konnte durch Sonderzeichen oder Umlaute im Dateinamen passieren.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10805]]

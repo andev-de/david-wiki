@@ -1,0 +1,42 @@
+====== Q-110.544 - Automatische Ersetzung bei der Texteingabe im Nachrichten-Editor ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Verfassen von Texten im Nachrichten-Editor sollen bestimmte Zeichenfolgen, Abkürzungen oder Kürzel automatisch durch zugehörige Ausdrücke oder Redewendungen ersetzt werden. So soll beispielsweise die Abkürzung »mfg« durch die Redewendung »Mit freundlichen Grüßen« ersetzt werden. Wo bzw. wie lassen sich Ersetzungen für die Texteingabe definieren?
+
+==== Produkt ====
+
+David Client
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+18.05.2011
+
+==== Antwort ====
+
+Der David Client bietet eine so genannte »Ersetzungsliste«, in die Sie Begriffe oder Kürzel eintragen können, die während der Texteingabe automatisch durch andere, ebenfalls hier zu definierende Wörter oder Redewendungen ersetzt werden sollen. Zur Aufnahme in diese Liste eignen sich z.B. Wörter, bei denen Ihnen häufig Tippfehler unterlaufen (etwa "dre" statt "der") sowie ständig wiederkehrende lange Eigennamen oder Fachbegriffe, für die Sie dann hier eine eindeutige Abkürzung definieren, um sie zukünftig unter der Verwendung eben dieser Abkürzung automatisch in Ihre Texte einfügen zu lassen.
+
+Die zugehörigen Einstellungen nehmen Sie im David Client unter »Optionen - Einstellungen - Rechtschreibung - Wörterbuch« oder direkt im Nachrichten Editor unter »Optionen - Rechtschreibung - Wörterbuch« vor. 
+
+Klicken Sie hier unterhalb von »Ersetzungen« auf »Konfigurieren«, um neue Ersetzungen zu erstellen bzw. die Liste der zu ersetzenden Wörter zu erweitern.
+
+Sie können die Liste erweitern, indem Sie auf »Hinzufügen« klicken und den gewünschten Begriff eingeben. 
+
+Übernehmen Sie den neue Ersetzung mit »OK«. Durch erneutes Klicken auf »Hinzufügen«, können Sie weitere Einträge in die Ersetzungsliste aufnehmen. Wenn Sie die Bearbeitung der Ersetzungsliste beenden möchten, schließen das Dialogfenster mit einem Klick auf »OK«. 
+
+Wenn Sie bei der Texteingabe im Nachrichten Editor nun die Abkürzung »mfg« eintragen, wird diese nach Eintippen des nächsten Leerzeichens automatisch durch definierte Redewendung ersetzt. 
+
+Tipp:Werden definierte Ersetzungen nicht durchgeführt, obwohl sie wie oben beschrieben eingerichtet wurden, stellen Sie sicher, dass die Option » Ersetzungsliste benutzen« in den Einstellungen der Rechtschreibung aktiviert ist. 
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10544]]

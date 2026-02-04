@@ -1,0 +1,20 @@
+====== Q-110.980 - Hinweis auf mehrere Bedingungen bei Verteilregeln ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Hat eine Verteilregel mehrere Bedingungen, so wird dies in der Übersicht der Verteilregeln nun gekennzeichnet ("und weitere...").
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10980]]

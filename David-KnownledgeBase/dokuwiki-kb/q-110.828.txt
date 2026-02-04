@@ -1,0 +1,20 @@
+====== Q-110.828 - Textbaustein auswählen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Dialog zur Auswahl der Textbausteine konnte es vorkommen, dass beim Wechsel von Persönlichen nach Globalen bzw. Alternativen Textbausteinen die zuvor dargestellten Einträge in der Liste erhalten blieben. Außerdem konnte es in sehr seltenen Fällen vorkommen, dass die Vorschau der Bausteine nicht mehr angezeigt wurde. Außerdem werden in der Liste nun auch Unterordner angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10828]]

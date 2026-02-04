@@ -1,0 +1,16 @@
+====== Knowledge Base ======
+
+Die Tobit Wissensdatenbank zu David war eine sehr gute Quelle für verschiedene Dinge.
+
+Leider wird sie seit 2013 nicht mehr aktiv gepflegt und ist seit 2020 nicht mehr direkt aufrufbar.
+
+Allerdings sind die Artikel unter den Deeplink noch ohne weiteres erreichbar.
+
+Dafür einfach von dem **Q-110.106** das "Q-1" und den "." entfernen und diese ID bei der Url **http://www.tobit.de/login/kbArticle.asp?ArticleID=** hinten anfügen.
+
+Da es jeder Zeit sein kann, das Tobit diese Artikel auch entfernt, habe ich sie mir mittels einem kleinen Skript heruntergeladen und in das Dokuwiki-Format konvertieren lassen.\\
+So findest du hier eine Kopie der originalen KnowledgeBase. Da diese aber mit einem Skript umgewandelt wurden, kann es zu Formatierungs-/Anzeigefehlern kommen.
+
+===== KB-Artikel =====
+
+<catlist -noHeadTitle -noNSInBold -noAddPageButton -forceHeadTitle -sortDescending -columns:2>

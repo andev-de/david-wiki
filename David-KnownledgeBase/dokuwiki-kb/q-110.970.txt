@@ -1,0 +1,20 @@
+====== Q-110.970 - Dialog "Verteilregeln" beim Ordnerwechsel ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird der Dialog "Verteilregeln" in einem Ordner geöffnet, so bleibt er nun beim Ordnerwechsel geöffnet und zeigt nach dem Wechsel die Verteilregeln des neuen Ordners an.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10970]]

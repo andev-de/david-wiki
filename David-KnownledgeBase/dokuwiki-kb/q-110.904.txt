@@ -1,0 +1,20 @@
+====== Q-110.904 - Signierte eMail bearbeiten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man eine signierte eMail zum Bearbeiten öffnet und verändert, so konnte sie bisher ohne Hinweis gespeichert werden. Jetzt erscheint beim Versuch zu speichern der Dialog zum Erstellen einer neuen Nachricht, so dass die signierte eMail unverändert bleibt.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10904]]

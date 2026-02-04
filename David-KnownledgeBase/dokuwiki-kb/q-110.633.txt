@@ -1,0 +1,20 @@
+====== Q-110.633 - Tab "Textmarker" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Tab "Textmarker" in der eMail Vorschau und der HTML Ansicht von Feeds markiert in der Nachricht bzw. dem Feed den jeweiligen Text, der in der Vorschau als Zusammenfassung angezeigt wird.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10633]]

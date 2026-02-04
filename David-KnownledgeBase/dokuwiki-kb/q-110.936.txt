@@ -1,0 +1,20 @@
+====== Q-110.936 - Kommentar editieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über das Kontextmenü kann nun das Kommentarfeld einer Nachricht editiert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10936]]

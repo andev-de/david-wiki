@@ -1,0 +1,26 @@
+====== Q-110.510 - Eingabe-History für Betreff und Empfänger Felder abschaltbar ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Eingabe-History kann nun für die Betreff und die Empfänger-Felder unabhängig voneinander abgeschaltet werden (Einstellungen/Editor/Erweitert).
+
+Außerdem können nun einzelne Einträge aus der History entfernt werden: Wenn die History für den Betreff oder die Empfänger-Felder über den rechten Pfeil geöffnet wird, kann per ENTF Taste auf dem aktuellen Eintrag dieser gelöscht werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+11.04.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 11-Apr-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10510]]

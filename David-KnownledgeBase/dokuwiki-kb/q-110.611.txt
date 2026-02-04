@@ -1,0 +1,26 @@
+====== Q-110.611 - Wochen/Monatsansicht und Serientermine ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+
+
+1. In der Wochen/Monatsansicht konnten Serientermine nicht per D&D auf den Desktop gezogen werden, normale Termine hingegen schon. Das geht nun auch für Serientermine.
+
+2. In der Tagesansicht kann man mit der Maus durch Verschieben eine Instanz einer Serie ausnehmen und eine neue Zeit zuweisen. In der Wochen/Monatsansicht ist das nun auch möglich. So kann ein Termin einfach aus der Serie ausgenommen und auf einen anderen Tag verlegt werden, bzw. für einen anderen Tag eine Kopie erstellt werden.
+
+3. Wenn man mit zwei Clients in derselben Wochen/Monatsansicht steht und mit einem eine Instanz aus der Serie löscht, wurde auf dem anderen Client diese Instanz nicht sofort automatisch entfernt, sondern erst nach einem manuellen Refresh. Das geht nun automatisch.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10611]]

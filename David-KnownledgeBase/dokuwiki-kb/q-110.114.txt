@@ -1,0 +1,15 @@
+====== Q-110.114 - Betreff bei Verteilregel mit mehr als 2 Bedingungen ======
+==== Problem ====
+Wird eine Verteilregel mit mehr als 2 Bedingungen erstellt (z.B. Erstellen einer neuen Nachricht) so wurde ab der 3. Bedingung der angegebene Betreff auch als Betreff beim Reiter "Aktion" übernommen. Dies konnte nur bei Textfeldern auftreten.
+==== Produkt ====
+David Service Layer
+==== Datum ====
+22.02.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 19-Feb-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10114]]

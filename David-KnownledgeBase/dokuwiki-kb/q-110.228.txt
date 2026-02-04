@@ -1,0 +1,15 @@
+====== Q-110.228 - Eingerichtete Verteilregen nachträglich anwenden ======
+==== Problem ====
+Im David Client wurde eine Regel zur Verteilung eingehender Nachrichten erstellt. Die eingehenden Nachrichten werden auch gemäß den Einstellungen der Regel verteilt. Ist es aber auch möglich eine Regel auf schon vorhandene Nachrichten anzuwenden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+24.09.2010
+==== Antwort ====
+Jetzt anwendenDie Schaltfläche »Jetzt anwenden« ermöglicht es, eine oder mehrere Regeln, die aktuell in der Liste markiert sind, sofort zur Anwendung zu bringen. Die Anwendung der Regel(n) bezieht sich also in diesem Fall auf alle zurzeit in dem betreffenden Ordner befindlichen Dokumente. Markieren Sie also zunächst die gewünschte(n) Regel(n) und klicken Sie dann auf »Jetzt anwenden« um deren sofortige Anwendung zu veranlassen. Auch hierbei werden die Regeln ihrem Rang entsprechend nacheinander abgearbeitet. Hinweis: Da sich dieser Vorgang nicht rückgängig machen lässt, sollten Sie die sofortige Anwendung von Regeln nur wohlüberlegt und ausschließlich für Regeln anwenden, die zuvor sorgfältig geprüft worden sind.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10228]]

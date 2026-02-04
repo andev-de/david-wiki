@@ -1,0 +1,20 @@
+====== Q-110.638 - Standard Werte für Identifizierung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei einer Neuinstallation von David wurden bei der Identifizierung (David Administrator) nicht mehr die Standard Werte eingestellt - diese werden nun wieder eingestellt, z.B. "Aktion Verschieben" bei Spam.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10638]]

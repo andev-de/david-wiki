@@ -1,0 +1,24 @@
+====== Q-110.653 - Zeilenumbruch im Dialog "Zusatz" (Fax versenden) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In dem Zusatzfenster, aufgerufen aus dem Fax Versenden Dialog, wurde im Textfeld kein Zeilenvorschub ausgeführt, sondern stattdessen die Funktion des Übernehmen Buttons ausgeführt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+6.03.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 06-Mar-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10653]]

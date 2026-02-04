@@ -1,0 +1,20 @@
+====== Q-110.869 - Statuszeit bei geöffneter LiveComments Nachricht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist eine LiveComments Nachricht geöffnet oder der aktuell markierte Eintrag in der Eintragsliste, so wurde die Statuszeit bei neu erstellten Kommentaren u.U. nicht aktualisiert.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10869]]

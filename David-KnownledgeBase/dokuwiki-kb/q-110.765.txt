@@ -1,0 +1,20 @@
+====== Q-110.765 - Suchfunktion ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Suche funktionierte nicht - es erschien nochmals das Anmeldefenster.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10765]]

@@ -1,0 +1,13 @@
+====== Q-110.137 - Wiederherstellen des "User Template" ======
+==== Produkt ====
+David.Administrator
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+14.04.2010
+==== Antwort ====
+Wenn das User Template nicht mehr vorhanden ist, übernimmt der nächste Benutzer - also der oberste in der Eintragsliste - dessen Funktion: seine Einstellungen bilden dann somit die Grundlage für die Einstellungen neu angelegter Benutzer. Es ist denkbar, dass dies nicht erwünscht ist, weil der nächste Benutzer in der Liste vielfach der Administrator ist, der z.B. am besten alle Rechte hat. Diese sollen neue Benutzer in der Regel nicht haben. In diesem Fall empfehlen wir die David Neuinstallation.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10137]]

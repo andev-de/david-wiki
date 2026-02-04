@@ -1,0 +1,20 @@
+====== Q-110.875 - Designanpassungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Design wurde an die Vorgabe des david Client PC angepasst und hat nun einen hellen Grauton.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10875]]

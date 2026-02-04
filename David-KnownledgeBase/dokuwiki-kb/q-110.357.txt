@@ -1,0 +1,15 @@
+====== Q-110.357 - Erweiterung der MIS um 2nd Scan ======
+==== Problem ====
+Sind die MIS aktiviert, ist nun der so genannte 2nd Scan aktivierbar (Schalter im David Administrator unter "Identifizierung"). Vorgabewert ist 5 Minuten. Jede von extern empfangene eMail (per PostMan oder Grabbing Server) wird dann, wenn sie nicht bereits als SPAM erkannt wurde, zunächst für den Ziel-Benutzer in den Versand gestellt. Hier kann der Benutzer sie also schon vorab ansehen. Empfangene Nachrichten, die keinen Benutzer gehören, sondern z.B. in einen Gruppen Ordner gelangen, können hier nur von Personen eingesehen werden, die das Recht besitzen "Versandaufträge aller Benutzer anzeigen". Nach dem Erreichen des Versandzeitpunktes (Vorgabe Empfangszeit + 5 Min.) wird die Nachricht wie ein normaler Versandauftrag an PostMan übergeben. Dieser führt wie sonst beim Empfang eine erneute Prüfung der eMail durch. Für den 2. Scanvorgang muss die Original eMail in der 0tx Datei gespeichert werden, wird dann aber nach dem 2. Scanvorgang wieder entfernt, wenn nicht anders vorgegeben. Der 2nd Scan kann für einzelnen Ordner deaktiviert werden (Ordner Eigenschaften, Dienste, 2nc Scan, Diesen Ordner ausschließen).Die Zählung der 2nd Scan Einträge und Änderung des Status wird im David Administrator auf der ersten Seite des SL-Monitors angezeigt. Da der Versand nun auch diese empfangenen Nachrichten enthält, wurde er in "In Transit" umbenannt.
+==== Produkt ====
+David
+==== Datum ====
+21.12.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Edition 2011 Service Pack 21-Dec-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10357]]

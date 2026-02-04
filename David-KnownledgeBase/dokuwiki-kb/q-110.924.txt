@@ -1,0 +1,20 @@
+====== Q-110.924 - Anzeige von eMail Text bei LiveComments ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält eine eMail LiveComments, so wurde der Text der eMail u.U. nicht angezeigt (bei der Einstellung Vorschau neben der Eintragsliste). Nun enthält die Anzeige generell die LiveComments und den Text der eMail.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10924]]

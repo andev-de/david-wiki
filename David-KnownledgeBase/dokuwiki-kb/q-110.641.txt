@@ -1,0 +1,20 @@
+====== Q-110.641 - DVGrabReader.exe für Reader Funktion ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Grabbing Server entpackt nun die neue DVGrabReader.exe beim Start aus den Resourcen, wenn die Reader Funktion aktiv ist. Sie ist zuständig für die Reader Funktion des Grabbing Servers.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10641]]

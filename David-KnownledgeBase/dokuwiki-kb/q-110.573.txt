@@ -1,0 +1,16 @@
+====== Q-110.573 - Falscher Eintrag beim Beantworten/Weiterleiten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine Nachricht geöffnet, dann im Hauptfenster ein anderer Eintrag angeklickt und anschließend die geöffnete Nachricht beantwortet oder weitergeleitet, so wurde stattdessen die im Hauptfenster markierte Nachricht verwendet. Nun erscheint beim Antworten/Weiterleiten ein entsprechender Hinweis, dass in diesem Fall die geöffnete Nachricht geschlossen und erneut geöffnet werden muss.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+19.08.2011     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10573]]

@@ -1,0 +1,20 @@
+====== Q-110.825 - Sprechblase beim Notifier ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Unter Windows XP wurde die Sprechblase beim Notifier nicht mehr angezeigt. Das ist nun behoben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10825]]

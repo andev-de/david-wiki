@@ -1,0 +1,20 @@
+====== Q-110.898 - Absturz beim Einfügen von Textbausteinen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Soll ein Textbaustein in den Editor eingefügt werden, so konnte es bei der Auswahl eines anderen Quellordners zum Absturz kommen.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10898]]

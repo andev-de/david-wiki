@@ -1,0 +1,20 @@
+====== Q-110.778 - Verwendung von Variablen in Besprechungs- und Aufgabenanfragen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird für Besprechungs- oder Aufgabenanfragen eine Vorlage verwendet, die Variablen enthält (z.B. % (Benutzer Name), % (Benutzer Zusatz1), so wurden diese Variablen bisher beim Erstellen einer Besprechungs- oder Aufgabenanfragen nicht aufgelöst. Das ist nun behoben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10778]]

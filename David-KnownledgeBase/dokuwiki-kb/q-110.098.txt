@@ -1,0 +1,9 @@
+====== Q-110.098 - Besprechungsanfragen zwischen David und Outlook ======
+==== Problem ====
+Wird eine Besprechungsanfrage von Outlook an eine David Installation geschickt, hier angenommen und zurück geschickt, so konnte diese Antwort von Outlook u.U. nicht korrekt verarbeitet werden. Das ist nun behoben.
+==== Produkt ====
+David PostMan
+==== Datum ====
+19.02.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10098]]

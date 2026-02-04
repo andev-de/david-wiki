@@ -1,0 +1,20 @@
+====== Q-110.986 - Adressen per Drag & Drop exportieren und als eMail versenden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Adressen können nun per Drag & Drop exportiert sowie als eMail Anhang versendet werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10986]]

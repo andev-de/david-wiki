@@ -1,0 +1,15 @@
+====== Q-110.193 - Absturz beim Beenden ======
+==== Problem ====
+Wird mit dem Mediaplayer eine Kameraaufzeichnung (*.jpm Datei) geöffnet und darin vor- und zurückgespult, so konnte es beim anschließenden Beenden zum Absturz oder "Hängen" des Mediaplayers kommen. dvwintv.exe 11.00a (177)
+==== Produkt ====
+David Mediaplayer
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10193]]

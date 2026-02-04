@@ -1,0 +1,20 @@
+====== Q-110.879 - Schutzverletzung bei fehlerhaftem Serientermin ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In einem Einzelfall verursachte ein fehlerhafter Serientermin einen Absturz des Service Layers, wenn per Client in den Kalenderordner mit diesem Serientermin gewechselt wurde.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10879]]

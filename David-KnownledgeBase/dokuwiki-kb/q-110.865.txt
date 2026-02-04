@@ -1,0 +1,20 @@
+====== Q-110.865 - Ordner-Eigenschaften ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Steht man auf einem Ordner, können nun über das Kontextmenü die Eigenschaften (Reiter Optionen, Dienste, Zugang) des Ordners aufgerufen und geändert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10865]]

@@ -1,0 +1,15 @@
+====== Q-110.410 - Vorlage für eMail Ausdruck ======
+==== Problem ====
+Beim eMail Ausdruck (über die Liste an einen "lokalen Drucker" und aus einer geöffneten eMail) wird nun generell die Vorlage EMAIL.PRN aus dem Verzeichnis »DAVID\CLIENTS\WINDOWS« des David Servers verwendet. Bisher gab es hier Unterschiede zwischen Nur-Text und HTML eMails. Auch können nun in der Vorlage alle üblichen Variablen verwendet werden, z.B. ##CCADDRESSES## für die Angabe der CC Empfänger.
+==== Produkt ====
+David Client
+==== Datum ====
+22.11.2012
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 31-Jan-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10410]]

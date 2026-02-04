@@ -1,0 +1,20 @@
+====== Q-110.968 - Ordnersymbole in Tickeransicht ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden Ordner, die ein anderes Symbol als das Standard Ordnersymbol haben, in die Tickeransicht übernommen, so wird dort nun auch das entsprechende Symbol angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10968]]

@@ -1,0 +1,9 @@
+====== Q-110.310 - Funktion "Antwort erwartet" ======
+==== Problem ====
+Die Funktion "Antwort erwartet" beim Erstellen einer neuen Nachricht wurde überarbeitet. Zur Auswahl steht nunNie noch heute bis morgen bis übermorgen innerhalb einer WocheBei der Auswahl "noch heute" und "bis morgen" kann anschließend eine Uhrzeit gewählt werden.
+==== Produkt ====
+David Client
+==== Datum ====
+15.11.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10310]]
