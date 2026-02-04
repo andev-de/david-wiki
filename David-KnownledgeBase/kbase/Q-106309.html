@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-106.309</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Service Pack 31-Jul-2003 - Code History (Windows NT/2000/XP/2003)</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">22.01.2010</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><B><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Service Pack<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> 31-Jul-2003<BR>Code History (Windows NT/2000/XP/2003)</B><P>Die folgenden Neuerungen und Bugfixes sind im Service Pack enthalten.</P><OL><LI><B><A href="#gesamt">Neuerungen und Bugfixes des aktuellen Service Packs</A></B><LI><B><A href="#einzeln">Neuerungen und Bugfixes sortiert nach Modulen</A></B><LI><B><A href="#versions">Aktuelle Dateiversionen</A></B></OL><P><FONT size=2><A href="#gesamt" name=gesamt><STRONG>1. Neuerungen und Bugfixes des aktuellen Service Packs</A><STRONG><P><FONT size=2>Diese Übersicht enthält alle Neuerungen und Bugfixes, die im aktuellen Service Pack (31-Jul-2003) vorgenommen wurden.</FONT></P></DIV><UL><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Im DvISE Administrator kann der Login Name eines vorhandenen DvISE Users nun umbenannt werden (z.B. auf Grund einer Namensänderung nach einer Hochzeit).</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Mögliche fehlerhafte Meldung "Print job ignored. No printer filter defined." im <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> "Fehlermeldungen". Diese Meldung trat u.U. trotz korrekter Druckereinrichtung über »Eigenschaften« eines Archive auf. </FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Die Eingabelänge der Datenfelder wurde bei den folgenden Datenbanken erweitert: Identifizierung, Verteilregeln, Verteilvorgaben, Robinson-Verzeichnis. Beim ersten Start des neuen DvISE Service Layers werden evtl. vorhandene Daten in das neue Format konvertiert. Die Dateien der bisherigen Datenbanken werden in *.old umbenannt.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Wurde eine eMailadresse mit einem Bindestrich (-) in die Robinsonliste eingetragen, so wurde dieser Eintrag nicht gefunden und eine eMail an diese Adresse wurde trotzdem versendet.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Unter NT 4 kam es zu einer Schutzverletzung, wenn im DvISE Administrator der Menüpunkt »Tools -> Systeminformationen« aufgerufen wurde.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Bei Tracking eMails fehlte die abschließende Boundery. Somit wurden diese unter Umständen von einigen Mail Systemen nicht weiterversendet.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Das Tobit <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'InfoCenter Web', 'content', '&Uuml;ber jeden internetf&auml;higen PC kann mit dem InfoCenter Web auf Nachrichten, Dokumente und multimediale Dateien zugegriffen werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >InfoCenter Web<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'InfoCenter Web', 'content', '&Uuml;ber jeden internetf&auml;higen PC kann mit dem InfoCenter Web auf Nachrichten, Dokumente und multimediale Dateien zugegriffen werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> enthält nun einen HTML Editor.</FONT></DIV></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Fehlverhalten, wenn der Betreff einer Nachricht »Navigation« lautete.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial><FONT size=1>Audio/Video-Dateien im <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit Archive System<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> können nun auch geöffnet und abgespielt werden. </FONT></DIV></DIV><LI><FONT size=1>Der Zugriff auf die Homepage der DvISE <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >WebBox<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> funktionierte nach Einspielen des Service Packs 30-Jun-2003 mit MAC Clients nicht mehr. </FONT><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Beim Verschieben oder Kopieren von Nachrichten in andere Archives bleibt der ursprüngliche DvISE Benutzer dieser Nachricht nun erhalten (Eintrags-Eigenschaften).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Bei den Nachrichtentypen Link, Termin, Aufgabe und Adresse wird nun der wirkliche "Erzeuger" in den Eintrags-Eigenschaften angezeigt (bisher: 00000000).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Die Suche in den "Erweiterten Informationen" eines Eintrags funktionierte unter den Betriebssystemen Windows XP/2003 Server nicht.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1>Fehlverhalten beim Erstellen eines Deckblattes mit dem Tobit InfoCenter: Nach der Erstellung über »Datei -> Deckblatt erstellen« erschien wieder die Aufforderung zur Adresseingabe und die CVP-Datei wurde nicht erstellt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1>Bei der Installation des Tobit InfoCenter Mobile werden nun auch die Stempel des Tobit InfoCenter Image Editors vom <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Host<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> auf den Mobile Client kopiert und stehen dort im Tobit InfoCenter <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Image Editor', 'content', 'Dieses Programm des David.InfoCenters dient dem komfortablen Anzeigen und Bearbeiten von Faxnachrichten, z.B. kann nachtr&auml;glich eine Anmerkung gemacht oder ein Logo eingef&uuml;gt werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Image Editor<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Image Editor', 'content', 'Dieses Programm des David.InfoCenters dient dem komfortablen Anzeigen und Bearbeiten von Faxnachrichten, z.B. kann nachtr&auml;glich eine Anmerkung gemacht oder ein Logo eingef&uuml;gt werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> zur Auswahl.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><DIV><FONT size=1>Durch einen automatischen, regelmässigen Refresh wurden unter Umständen bestimmte eingebundene Web-Sites auf der Portal Seite nicht mehr angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><DIV><FONT size=1>Aktualisierte Druckertreiber (Tobit FaxWare, <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit Image Messaging', 'content', 'Aus einer beliebigen Anwendung  wird &uuml;ber einen Druckertreiber eine Funktion zur Verf&uuml;gung gestellt, die eine Abbildung von z.B. einer Internetseite im Tobit InfoCenter als eMail-Anhang hinzuf&uuml;gt.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit Image Messaging<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit Image Messaging', 'content', 'Aus einer beliebigen Anwendung  wird &uuml;ber einen Druckertreiber eine Funktion zur Verf&uuml;gung gestellt, die eine Abbildung von z.B. einer Internetseite im Tobit InfoCenter als eMail-Anhang hinzuf&uuml;gt.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>) für den Betrieb unter Windows 2003 Server.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></LI></UL><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><P> </P><P><A href="#einzeln" name=einzeln><STRONG>2. Neuerungen und Bugfixes sortiert nach Modulen</STRONG></A></P><P>Diese Übersicht enthält alle Neuerungen und Bugfixes, die seit dem ersten Service Pack vorgenommen wurden, unterteilt nach den einzelnen DvISE Modulen. Die neusten Änderungen stehen jeweils am Anfang der Liste.</FONT></P></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><DIV><FONT size=2></FONT></DIV><DIV><FONT size=2></FONT></DIV><UL dir=ltr style="MARGIN-RIGHT: 0px"><UL><LI><A href="#sl"><FONT size=2><STRONG>DvISE Service Layer/DvISE Administrator</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#postman"><FONT size=2><STRONG>DvISE PostMan</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#dvgrab"><FONT size=2><STRONG>DvISE Grabbing Server</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#icweb"><FONT size=2><STRONG>Tobit InfoCenter Web</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#replica"><FONT size=2><STRONG>DvISE Replication Services</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#dserver"><FONT size=2><STRONG>DvISE Discussion Server</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#capi"><FONT size=2><STRONG>DvISE <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> für <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >ISDN<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Karten</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#<span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'DvCC', 'content', 'Der <B>D</B>avid.<B>C</B>ommunication <B>C</B>ontroller ist eine graphische Programmieroberfl&auml;che f&uuml;r die Steuerung von Abl&auml;ufen von z.B. eingehenden Anrufen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >DvCC<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'DvCC', 'content', 'Der <B>D</B>avid.<B>C</B>ommunication <B>C</B>ontroller ist eine graphische Programmieroberfl&auml;che f&uuml;r die Steuerung von Abl&auml;ufen von z.B. eingehenden Anrufen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>"><FONT size=2><STRONG>DvISE Communication Controller (dvcc.exe)</STRONG></FONT></A><FONT size=2><STRONG>  </STRONG></FONT><LI><A href="#automat"><FONT size=2><STRONG>Gebäudeautomation (Extended TLD)</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#tv"><FONT size=2><STRONG>DvISE TLD für Video Aufzeichnungen</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#webbox"><FONT size=2><STRONG>DvISE WebBox</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#maserver"><FONT size=2><STRONG>DvISE Mail Access Server</STRONG></FONT></A><FONT size=2><STRONG> </STRONG></FONT><LI><A href="#dvwin"><FONT size=2><STRONG>Tobit InfoCenter</STRONG></FONT></A><BR></LI></UL><A href="#sl"></A></UL><STRONG><P><A href="#sl" name=sl><STRONG><FONT size=2>DvISE Service Layer/DvISE Administrator</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P><UL><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Im DvISE Administrator kann der Login Name eines vorhandenen DvISE Users nun umbenannt werden (z.B. auf Grund einer Namensänderung nach einer Hochzeit). </FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Mögliche fehlerhafte Meldung "Print job ignored. No printer filter defined." im Archive »Fehlermeldungen«. Diese Meldung trat u.U. trotz korrekter Druckereinrichtung in den »Eigenschaften» des Archive auf.</FONT></DIV></DIV><LI><FONT face=Arial size=1>Die Eingabelänge der Datenfelder wurde bei den folgenden Datenbanken erweitert: Identifizierung, Verteilregeln, Verteilvorgaben und Robinson-Verzeichnis. Beim ersten Start des neuen DvISE Service Layers werden evtl. vorhandene Daten in das neue Format konvertiert. Die Dateien der bisherigen Datenbanken werden in *.old umbenannt. </FONT><DIV></DIV><DIV><FONT face=Arial size=1></FONT></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Wurde eine eMailadresse mit einem Bindestrich (-) in die Robinsonliste eingetragen, so wurde dieser Eintrag nicht gefunden und eine eMail an diese Adresse wurde trotzdem versendet.</FONT></DIV></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Unter NT 4 kam es zu einer Schutzverletzung, wenn im DvISE Administrator der Menüpunkt »Tools -> Systeminformationen« aufgerufen wurde.</FONT></DIV></DIV></DIV><LI><FONT size=1><FONT face=Arial>Der Wert der Variable @@Get sys_laufendenummer@@ entspricht nun der Variable »Laufende Nummer«, die im Nachrichten Editor ausgewählt werden kann. Bisher waren diese unterschiedlich.</FONT> </FONT><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Neue Version der Scan Engine (mcscan32.dll).</FONT></DIV></DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT size=1></FONT></DIV></DIV><LI><DIV><FONT face=Arial size=1>In der Meldung "Virus Engine started" (Archive "Fehlermeldungen") wurde die Anzahl der Viren, die mit den aktuellen Signaturen gefunden werden, nicht korrekt angezeigt.</FONT></DIV><LI><DIV><FONT face=Arial size=1>Einige ESC Sequenzen bei der Erstellung von Faxen (zum Beispiel über das Import Verzeichnis) wurden nicht korrekt ausgewertet.</FONT></DIV><LI><DIV><FONT face=Arial size=1>Im DvISE Administrator wird nun unter »Monitor« das globale Sendeprotokoll und das globale Empfangsprotokoll aufgelistet.</FONT></DIV><LI><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Bei der Benutzer-Variablen »Benutzer Name« wird nun der entsprechende Wert aus der Benutzerkonfiguration des DvISE Administrators verwendet (bisher wurde der Anmeldename ausgelesen).</FONT></DIV></DIV><LI><FONT face=Arial size=1>ECT funktioniert nun auch ohne Erweiterungslizenz ("Extended Telephony Module for DvISE"). </FONT><LI><FONT face=Arial size=1>Beim HTML Ausdruck über den DvISE Service Layer kann es nicht mehr zu Verwechselungen kommen (falscher Drucker bei Verwendung des MS Internet Explorer 6). </FONT><LI><DIV><FONT face=Arial size=1>Möglicher DvISE Service Layer Absturz beim Virus Scan bestimmter eMails wurde behoben.</FONT></DIV><LI><DIV><FONT face=Arial size=1>Anpassung des VCF-Formates (Adresskarte beim eMail Versand/Empfang) aus Kompatibilitätsgründen.</FONT></DIV><LI><DIV><FONT face=Arial size=1>Optimierung der Datenübertragung zum Tobit InfoCenter (ca. 10 fache Steigerung).</FONT></DIV><DIV><FONT size=2></FONT></DIV><DIV><FONT size=2></FONT></DIV></LI></UL><STRONG><P><A href="#postman" name=postman><STRONG><FONT size=2>PostMan</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P><UL><LI><DIV><FONT size=1>Bei Tracking eMails fehlte die abschließende Boundery. Somit wurden diese unter Umständen von einigen Mail Systemen nicht weiterversendet.</FONT></DIV><LI><DIV><FONT size=1>Beim Weiterleiten von eMails existiert die Nachricht im Falle weiterer Sendeversuche nur noch einmal auf dem DvISE Server (nur, wenn beim DvISE PostMan der Schalter "eMail Rundsendung" aktiviert ist).</FONT></DIV><LI><DIV><DIV><DIV><FONT size=1>Möglicher Fehler bei der Konvertierung bestimmter empfangener eMails.</FONT></DIV></DIV></DIV><LI><DIV><DIV><DIV><FONT size=1>Erweiterter SPAM Filter ("Datenbanken/Nicht erlaubte Absenderadressen"). Es können nun Einstellungen für das Ablehnen/Löschen von SPAM Mails vorgenommen werden. Wahlweise kann nach Absender, Empfänger und/oder Textinhalt gefiltert werden. Die entsprechenden eMails können direkt gelöscht oder in ein anzugebendes Archive verschoben werden. Im Error Archive erfolgt ein entsprechender Eintrag ("Unallowed message").</FONT></DIV></DIV></DIV><DIV><DIV><DIV><FONT size=1></FONT></DIV></DIV></DIV><LI><DIV><DIV><FONT size=1>Bei der Konvertierung von Winmail Dateien (Dateiendung *.TNF) kann es nicht mehr zum Stillstand des DvISE PostMan kommen.</FONT></DIV></DIV><DIV><FONT size=2></FONT></DIV><DIV><FONT size=2></FONT></DIV><DIV><FONT size=2></FONT></DIV></LI></UL><STRONG><P><A href="#dvgrab" name=dvgrab><STRONG><FONT size=2>Grabbing Server</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P><UL><LI><FONT size=1>Möglicher Fehler bei der Konvertierung bestimmter empfangener eMails. </FONT><LI><FONT size=1>Erweiterter SPAM Filter (siehe Hinweis zu "DvISE PostMan"). </FONT><LI><DIV><FONT size=1>Empfangene Nachrichten werden nun generell als »extern« in der Eintragsliste markiert.</FONT></DIV><LI><DIV><DIV><FONT size=1>Bei der Konvertierung von Winmail Dateien (Dateiendung *.TNF) kann es nicht mehr zum Stillstand des DvISE Grabbing Servers kommen.</FONT></DIV></DIV></LI></UL><STRONG><DIV><STRONG><P><A href="#icweb" name=icweb><STRONG><FONT size=2>Tobit InfoCenter Web</FONT></STRONG></A></STRONG></STRONG><FONT size=2> </FONT></P></STRONG></STRONG></DIV><UL><LI><DIV><FONT size=1>Das Tobit InfoCenter Web enthält nun einen HTML Editor.</FONT></DIV><LI><DIV><FONT size=1>Fehlverhalten, wenn der Betreff einer Nachricht "Navigation" lautete.</FONT></DIV><LI><DIV><DIV><FONT size=1>Audio/Video-Dateien im Tobit Archive System können nun auch geöffnet und abgespielt werden.</FONT></DIV></DIV><LI><DIV><DIV><FONT size=1>Die Unterstützung von Mac Clients beim Tobit InfoCenter Web wurde verbessert. </FONT></DIV></DIV><LI><FONT size=1>Termine im Kalender können nun auch gelöscht werden. </FONT><LI><FONT size=1>Verbesserung der Monatsansicht, keine fehlerhafte Darstellung mehr möglich. </FONT><LI><FONT size=1>Kein falsches Eintragen von Terminen mehr möglich. </FONT><LI><FONT size=1>Einführung einer Versionsinfo ("Über..." Button). </FONT><LI><DIV><FONT size=1>Beim Öffnen von Einschreiben erscheint ein Hinweis, dass der Absender über das Öffnen informiert wird.</FONT></DIV><LI><DIV><FONT size=1>Der "Öffnen"-Button ist nun auch bei eMails vorhanden.</FONT></DIV><DIV><FONT size=2></FONT></DIV><DIV><FONT size=2></FONT></DIV></LI></UL><DIV><STRONG><P><A href="#replica" name=replica><STRONG><FONT size=2> DvISE Replication Services</FONT></STRONG></A></STRONG></P></DIV><DIV><UL><LI><FONT size=1>Im "Replication Monitor" wurden übertragene Datenmengen >2 GB falsch angezeigt. </FONT><LI><DIV><FONT size=1>Einige Statusmeldungen der DvISE Replica ("Replica started", "Replica ended") wurden unter Umständen im Archive »Unverteilt« erstellt, statt im Archive "Fehlermeldungen".</FONT></DIV><LI><DIV><FONT size=1>Anmerkungen auf Fax-Nachrichten ("Overlays") werden nun bei der Replizierung berücksichtigt. </FONT></DIV><LI><FONT size=1>Beim Löschen von Einträgen wird die "LastChangedTime" gesetzt. </FONT><LI><DIV><FONT size=1>Wenn eine versendete Nachricht "erneut eingetragen" wurde, konnte es bei anschließenden Replizierungen dazu kommen, dass die Nachricht auf beiden Seiten vervielfältigt wurde.</FONT></DIV></LI></UL></DIV><UL><FONT size=2></FONT></UL><DIV><FONT size=2></FONT></DIV><DIV><STRONG><P><A href="#dserver" name=dserver><STRONG><FONT size=2>DvISE Discussion Server</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P></DIV><UL><LI><FONT size=1>Möglicher Absturz behoben, wenn der Gruppenname geändert wurde und externe Newsclients an den alten Gruppennamen gesendet haben.</FONT></LI></UL><DIV><STRONG><P><A href="#capi" name=capi><STRONG><FONT size=2>TLD für ISDN Karten</FONT></STRONG></A></STRONG></P></DIV><UL><LI><FONT size=1>Für die Nutzung der DBSS (Diphone Based Synthetic Speech) wird nur noch die "Extended Telephony Module for DvISE" Erweiterungslizenz benötigt.</FONT></LI></UL><STRONG><P><A href="#dvcc" name=dvcc><STRONG><FONT size=2>DvISE Communication Controller</FONT></STRONG></A></STRONG></P><UL><LI><DIV><FONT size=1>Das Programm "DvISE Communication Controller" (dvcc.exe) ist nun als 32 <!--noglossary-->Bit Version verfügbar und ersetzt die bisherige 16 <!--noglossary-->Bit Version.</FONT></DIV></LI></UL><STRONG><P><A href="#automat" name=automat><STRONG><FONT size=2>Gebäudeautomation (Extended TLD)</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P><UL><LI><FONT size=1>Optimierung der Gebäudeautomation. Für die Nutzung muss der "Extended TLD - Automation EIB" als weiterer Port eingerichtet werden. Eine Dokumentation liegt im Verzeichnis \David\Tld\Code\Extended\Automation-EIB. </FONT><LI><FONT size=1>Die Datei dvesp.dll wird nun bei der Installation des TLDs in das Verzeichnis »DAVID\CODE« kopiert (die Datei fehlte bei der CD vom 25.11.2002). </FONT><LI><FONT size=1>Neue Archivestruktur unter »Archive -> System -> DvISE -> Automation«. </FONT><LI><FONT size=1>Einführung eines Timers. </FONT><LI><FONT size=1>Erweiterung der Verteilregeln um Scriptausführung (Archive /Automation/State). </FONT><LI><FONT size=1>Umstellung der Adressbezeichnung. </FONT><LI><FONT size=1>Multiportbetrieb. </FONT><LI><FONT size=1>Direkte Kommunikation über Pipes.</FONT></LI></UL><DIV><DIV><STRONG><P><A href="#tv" name=tv><STRONG><FONT size=2>DvISE TLD für Videoaufzeichnungen</FONT></STRONG></A></STRONG></P></DIV><UL><LI><FONT size=1>Überarbeitete Funktion; Kanalumschaltung ist nun generell möglich.</FONT></LI></UL><DIV><STRONG><P><A href="#webbox" name=webbox><STRONG><FONT size=2>DvISE WebBox</FONT></STRONG></A></STRONG><STRONG><FONT size=2> </FONT></STRONG></P></DIV><UL><LI><FONT size=1>Der Befehl TotalUpTime lieferte u.U. einen negativen Wert. </FONT><LI><DIV><FONT size=1>Zusätzlicher Wert beim DvISE WebBox Parameter ##Archive /FSTR=##: %dl oder %DL gibt nun das Jahr 4-Stellig aus (z.B. 2003, statt 03).</FONT></DIV><LI><DIV><FONT size=1>Der Zugriff auf die Homepage funktionierte nach Einspielen des Service Packs 30-Jun-2003 mit MAC Clients nicht mehr.</FONT></DIV></LI></UL></DIV><DIV><STRONG><P><A href="#maserver" name=maserver><STRONG><FONT size=2>DvISE Mail Access Server</FONT></STRONG></A></STRONG></P></DIV><UL><LI><FONT size=1>Optimierung des Logins. </FONT><LI><FONT size=1>Der DvISE Mail Access Server lässt sich jetzt schneller beenden. </FONT><LI><FONT size=1>Wenn bei einer Nachricht das Archive Flag (Optionen -> "Keine Bereinigung") gesetzt ist, löscht der DvISE Mail Access Server diese Nachricht nicht. Es kann also jetzt das Löschen einzelner Nachrichten verhindert werden.</FONT></LI></UL><DIV><STRONG><P><A href="#dvwin" name=dvwin><STRONG><FONT size=2>Tobit InfoCenter</FONT></STRONG></A></STRONG><FONT size=2> </FONT></P></DIV><UL><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><FONT size=1>Beim Verschieben/Kopieren von Nachrichten in andere Archives bleibt der ursprüngliche DvISE Benutzer dieser Nachricht nun erhalten (Eintrags-Eigenschaften).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Bei den Nachrichtentypen Link, Termin, Aufgabe und Adresse wird nun der wirkliche »Erzeuger« in den Eintrags-Eigenschaften angezeigt (bisher: 00000000).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Die Suche in den "Erweiterten Informationen" eines Eintrags funktionierte unter Windows XP/Server 2003 nicht.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1>Fehlverhalten beim Erstellen eines Deckblattes mit dem Tobit InfoCenter: Nach der Erstellung über »Datei -> Deckblatt erstellen« erschien wieder die Aufforderung zur Adresseingabe und die CVP-Datei wurde nicht erstellt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1>Bei der Installation des Tobit InfoCenter Mobile werden nun auch die Stempel des Tobit InfoCenter Image Editors vom Host auf den Mobile Client kopiert und stehen dort im Tobit InfoCenter Image Editor zur Auswahl.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1>Durch einen automatischen, regelmässigen Refresh wurden unter Umständen bestimmte eingebundene Web-Sites auf der Portal Seite nicht mehr angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><DIV><FONT size=1></FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Fehlfunktion bei der Auswahl einer anderen eMail Adresse, als die vorgeschlagene, ist behoben.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Fehlfunktion bei der Neuinstallation des Tobit InfoCenter Mobil nach Installation des Service Pack 1a wurde behoben.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Design Änderungen der Symbolleisten unter Windows XP.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Beim Löschen externer Nachrichten sind die "erweiterten" Funktionen ("Absender blockieren", etc.) nur noch verfügbar, wenn der User das Recht hat »Verteilregeln« anzulegen (User Konfiguration).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Neues User Archive: »Anwendungen«. Beliebige Anwendungen können als Shortcut in dieses Archive gezogen werden und erscheinen dann in einer eigenen Symbolleiste.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Fehlfunktion bei der Auswahl des Versandzeitpunktes im Nachrichten Editor behoben.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Im Tobit InfoCenter Image Editor kann das aktuell geöffnete Fax nun über den neuen "Löschen" Button direkt gelöscht werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Bei der Serienfunktion können nun auf Wunsch die nachträglich vorgenommenen, fehlenden Adressdaten direkt in der Original Adresse gespeichert werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><FONT size=1>Bei der Adressauswahl wird nun die "2. eMail" Adresse vorgeschlagen, wenn diese als "bevorzugte" eMail Adresse markiert ist. </FONT><LI><DIV><DIV><DIV><FONT size=1>Bei der Adressauswahl im Tobit InfoCenter wurden unter Umständen nicht alle vorhandenen Adressen angezeigt.</FONT></DIV></DIV></DIV><LI><DIV><DIV><DIV><FONT size=1>Die Adressansicht war fehlerhaft (Text überschrieben) wenn das Feld "Titel" oder "Firma" mehrzeilige Einträge enthielt.</FONT></DIV></DIV></DIV><LI><DIV><DIV><DIV><FONT size=1>In der Kalenderansicht wird nun ein evtl. eingetragener Ort in der Vorschauleiste angezeigt.</FONT></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><FONT size=1>Beim Drag´nDrop einer Datei aus dem Dateianhang in das Textfeld kam es zu einer Schutzverletzung.</FONT></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><FONT size=1>Wenn die Tobit InfoCenter Leiste als Symbolleiste angezeigt wird, konnten die Buttons bisher nicht ausgeblendet werden.</FONT></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><FONT size=1>Wenn bei einer vorhandenen Client Verteilung mit nur einem Ziel-Archive zusätzlich ein weiteres Ziel-Archive (bzw. ein weiterer User) angegeben wurde, wurden die entsprechenden Nachrichten unter Umständen dennoch nur an das erste eingetragene Ziel-Archive verteilt.</FONT></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><FONT size=1>Nachrichten Editor: Bei der Auswahl der "globalen" Textbausteine über das Pull Down Menü wurden statt der globalen die persönlichen Textbausteine eingefügt.</FONT></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><FONT size=1>Beim "erneuten Eintragen" einer eMail über das Tobit InfoCenter konnte es zu der Fehlermeldung "TXFile nicht zu öffnen" kommen (wenn im DvISE PostMan der Schalter "eMail Rundsendung" gesetzt ist).</FONT></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Erstellen von Verteilregeln über den »Löschen« Dialog": Eine Verteilregel wird jetzt nicht nochmal zusätzlich angelegt, wenn bereits eine identische vorhanden ist. In der Liste der Regeln können nun mehrere Einträge selektiert und gelöscht werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Tagesübergreifende Serientermine wurde u.U. falsch angezeigt: ein Serientermin von 13:00 bis zum nächsten Tag um 14:30 wurde in der Tagesansicht des 2. Tages falsch angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Bei den eingerichteten News Servern wird nun eine Portal Seite mit den abonnierten News Groups angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Wird eine Aufgabe per Drag´nDrop in den Kalender gezogen, so gingen bisher die Informationen der Aufgabe (Status, etc.) verloren. Nun werden diese Informationen als »Status-Report Header« in der neuen Nachricht eingefügt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Im Kalender Editor wird nun bei der Termindauer auch die wirkliche Anzahl der Minuten angezeigt. Bisher stand z.B. bei einem Termin von 08:00 bis 09:50: 1,5 Stunden. Nun wird dort in diesem Fall 1:50 angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Eine in das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TAS', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TAS<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TAS', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> importierte Datei kann nun auch per Drag´nDrop als Anhang an eine neu erstellte eMail angehängt werden. Bisher wurde sie in diesem Fall als *.eml Datei angehängt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Beim Scrollen mit der Maus in einem leeren Aufgaben Archive kam es zu einer Schutzverletzung.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Neue Portal Seite wird geöffnet, wenn im aktuellen Tobit InfoCenter der Button/Menüpunkt "DvISE Administrator" gewählt wird. Durch den Klick auf diverse Links der Portal Seite wird der DvISE Administrator mit entsprechenden Parametern aufgerufen. Der Button/Menüpunkt ist nur vorhanden (wie auch bisher), wenn der User Rechte im »DAVID\CODE« Verzeichnis besitzt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>HTML-eMails können nun formatiert aus der Eintragsliste ausgedruckt werden(Vorlage unter: »DAVID\CLIENTS\WINDOWS\EMAIL.PRN«).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Wird eine neue Verteilregel durch den »Löschen« -Dialog (externe Nachrichten) erstellt, so wird der Zeitpunkt der Erstellung bei der Verteilregel (»Letzter Zugriff«) eingetragen.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><FONT face=Arial size=1>Die neue Kalenderansicht »Jahr« listet die Tage in Zeilen, die Termine in Spalten</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><FONT face=Arial size=1>Die Anzeige der Sortierungszeichen von Archives (z.B. #01#Archivename) wird nun in der Kontakteleiste, beim Verteilen und in der Adressauswahl unterbunden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Löschen externer Nachrichten (z.B. SPAM): Im "Löschen"-Dialog stehen die Punkte »Absender dauerhaft blockieren« bzw. »Empfänger dauerhaft blockieren« nicht zur Auswahl, wenn die zugehörigen Felder in der Nachricht leer sind. Ist die Empfängeradresse gleich der eigenen eMail-Adresse, so ist ebenfalls das Blockieren des Empfängers nicht möglich. Zusätzlich erscheint bei der Auswahl einer dieser Optionen eine zusätzliche Sicherheistabfrage, bevor die Verteilregel angelegt wird.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Über das Menü »Ansicht -> Vorschau« kann das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Vorschau-Fenster', 'content', 'Durch dieses Fenster im David.InfoCenter kann sich der Anwender schnell einen &Uuml;berblick &uuml;ber bspw. die eingegangenen eMails oder den eingetragenen Link verschaffen ohne diese(n) &ouml;ffnen zu m&uuml;ssen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Vorschau-Fenster<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Vorschau-Fenster', 'content', 'Durch dieses Fenster im David.InfoCenter kann sich der Anwender schnell einen &Uuml;berblick &uuml;ber bspw. die eingegangenen eMails oder den eingetragenen Link verschaffen ohne diese(n) &ouml;ffnen zu m&uuml;ssen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> auch unterhalb (Vorgabe) oder rechts neben der Eintragsliste angeordnet werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Kopiert man eine eMail per Drag´nDrop in das Aufgaben-Archive, so wird bei der neuen Aufgabe die ursprüngliche Absenderinformation der eMail (FROM) übernommen.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Der neue Menüpunkt "Öffnen" im Kontextmenü öffnet das aktuelle Archive in einem eigenen (neuen) Fenster.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Die Tastaturkürzel Strg+F6 bzw. Strg+F8 öffnen das Eingangs- bzw. Ausgangsbuch in einem eigenen Fenster.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT size=1><FONT face=Arial>Beim Drag´nDrop einer Nachricht in eine Plain-Text-eMail wird die Nachricht nun als ».EML«-</FONT><FONT face=Arial>Datei angehängt und nicht in den Text der eMail eingefügt.</FONT></FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Über den Editor können Aufgaben nun HTML-formatiert gedruckt werden. Dazu wird die neue HTML-Vorlage TASK.PRN im Verzeichnis »DAVID\CLIENTS\WINDOWS« verwendet.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Die Suche im Tobit InfoCenter ist nun für alle Archives so eingestellt, dass ein eigener Ergebnisdialog mit einer Liste der gefundenen Einträge angezeigt wird.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>Kalendereinträge können nun auch per Drag´nDrop in andere Kalender-Archives oder z.B. auf den Desktop kopiert werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><FONT face=Arial size=1>In der Monats-/Wochenansicht des Kalenders wird nun eine Quickinfo mit den wichtigsten Informationen angezeigt, wenn man den Mauszeiger über einem Eintrag ´schweben´ lässt: Ort, Gruppenkalender, Teilnehmer.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Beim Drag´nDrop einer Nachricht in das Aufgaben-Archive bleibt die ursprüngliche Formatierung dieser Nachricht erhalten und wird nicht mehr durch eine evtl. eingestellte Vorlage "überschrieben" (Nachrichten Editor: "Vorlage für neuen Nachrichten").</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Nach dem Import eines ganztägigen Termins aus Outlook wird dieser nun auch in der Wochen- und Monatsansicht des Tobit InfoCenters korrekt eintägig dargestellt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><FONT face=Arial size=1>Dialog "Dokumentenvorlage": Die angezeigte Reihenfolge der Sub Archives unter »Archive -> Resourcen -> Formulare« kann mit einem Sortierungszeichen im Archivenamen festgelegt werden, z.B. #01#Erstes Archive.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><FONT face=Arial size=1>Über das Menü »Datei -> Drucken« können die Eintragslisten (Eingang, Ausgang, etc.) gedruckt werden. Der Ausdruck entspricht der aktuell eingestellten Ansicht im Tobit InfoCenter (Spaltenanordnung/Datum, etc.).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><FONT face=Arial size=1>Über das Menü »Datei -> Drucken« kann die Aufgabenliste gedruckt werden. Der Ausdruck entspricht der aktuell eingestellten Ansicht im Tobit InfoCenter (Spaltenanordnung/Datum, etc.).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><FONT face=Arial size=1>Einträge im Kalender-Archive können nun als eMail-Anhang weitergeleitet werden (»Weiterleiten« im Kontextmenü bzw. als Menüpunkt).</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Im Kalender kann mit dem Pfeil im »Heute«-Button ein Kalenderdialog geöffnet werden, um zu einem bestimmten Tag zu wechseln.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Beim Erstellen einer Nachricht mit Dateianhang aus dem "combit address manager" wird nun zuverlässig die Nachricht inkl. Anhang erstellt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Bei den Eintrags-Eigenschaften kann nun auch die Farbe für den aktuellen Eintrag eingestellt werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Die Suche im Kalender-Archive wurde erweitert. In einem neuen Dialog werden nun die Suchergebnisse aus dem gesamten Kalender-Archive angezeigt (bisher nur aus der aktuellen Ansicht). Die Suche kann auch auf gemeinsam genutzte Kalender, die im aktuellen Kalender-Archive angezeigt werden, erweitert werden.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Bei der Erstellung von Briefen im Tobit InfoCenter werden nun auch die Benutzer-Variablen »Benutzer Fax«, »Benutzer Tel.« und »Benutzer SMS« ausgewertet.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><FONT color=#0000ff><FONT face=Arial color=#000000 size=1>Bei einem empfangenen und ungeöffneten Einschreiben ist nun der Button »Löschen« nicht mehr auswählbar.</FONT></FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Das "Weiterleiten" einer Nachricht wurde trotz deaktiviertem Tracking an den Absender übermittelt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><FONT face=Arial size=1>Beim Erstellen einer Brief-Rundsendung kann nun gewählt werden, ob für jeden Ausdruck ein Protokolleintrag im Ausgangsbuch eingetragen werden soll.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><FONT size=1>Im englischen Tobit InfoCenter werden die Zeiten zwischen 12:00 und 13:00 Uhr nun korrekt mit "PM" statt "AM" angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><FONT size=1>Beim Speichern mehrerer Dateianhänge erfolgte unter Umständen nicht die Abfrage nach dem Überschreiben bereits vorhandener Dateien.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><FONT size=1>Aktiviert man unter »Optionen -> Ansicht -> Nachricht bei Wechsel als gelesen markieren«, so wurde damit die Funktion »Nachricht als ungelesen markieren« außer Kraft gesetzt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV style="FONT: 10pt Courier New"><DIV><DIV><DIV><DIV><DIV><DIV><DIV style="FONT: 10pt Arial"><DIV><FONT size=1>Wird bei einer neuen Nachricht die eMail-Adresse mit dem Befehl @@AN im Textfeld eingetragen und das »An...«-Feld freigelassen, wurde die Adresse beim anschließenden Öffnen der versendeten Nachricht nicht angezeigt.</FONT></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><LI><DIV><FONT size=1>Im Fenster »Kontakte« und in der Adressauswahl werden die Namen der angemeldeten DvISE Benutzer (Tobit InfoCenter gestartet) farblich markiert (helles/dunkles Icon) bzw. mit dem Vermerk »angemeldet« gekennzeichnet.</FONT></DIV><LI><DIV><FONT size=1>Bei Adressen werden nun alle Datenfelder in der Eintragsliste angezeigt.</FONT></DIV><LI><DIV><FONT size=1>Keine Schutzverletzung mehr beim Ändern der Symbolleisten-Konfiguration.</FONT></DIV><LI><DIV><FONT size=1>Mögliche Darstellungsfehler im Kalender (Tagesansicht) behoben, wenn zur gleichen Zeit mehrere Termine eingetragen sind.</FONT></DIV><LI><DIV><FONT size=1>Beim Zwischenspeichern einer Faxvorlage im Entwurfs-Archive kann die Vorlage beim anschließenden Öffnen weiter bearbeitet werden.</FONT></DIV><LI><DIV><FONT size=1>Optimierung der Aufgabenverwaltung.</FONT></DIV><LI><DIV><FONT size=1>Einstellungen für das Aufgaben-Archive können unter »Einstellungen -> Diverses« vorgenommen werden.</FONT></DIV><LI><FONT size=1>Systemsicherheit: Wenn HTML Mails @@ Befehle enthalten, erfolgt beim Weiterleiten/Antworten dieser eMails ein entsprechender Sicherheitshinweis. Es wird dann in den Modus »Reiner Text« gewechselt und die Befehle werden entfernt. </FONT><LI><FONT size=1>Archives können nun nicht mehr ohne entsprechende Rechte des Users verschoben werden. </FONT><LI><FONT size=1>Anpassung des VCF-Formates (Adresskarte beim eMail Versand/Empfang) aus Kompatibilitätsgründen. </FONT><LI><FONT size=1>Kein Fehlerverhalten (z.B. Schutzverletzung) mehr möglich beim Weiterleiten von Faxen aus dem Tobit InfoCenter Image Editor. </FONT><LI><FONT size=1>Die eingestellte Schriftfarbe wird nun in allen Editoren übernommen (Nachrichten Editor, Aufgaben Editor, etc.). </FONT><LI><FONT size=1>Verbesserung des Ausdrucks der Monatsansicht, die Tagesbezeichnungen (Montag, Dienstag, etc.) konnten unter Umständen abgeschnitten werden. </FONT><LI><FONT size=1>Aufgaben, die über das Feld »Hier klicken, um Aufgabe zu erstellen« erstellt wurden, werden nun im HTML Format erstellt. Hier kann nun auch per TAB in die Spalten gewechselt werden. </FONT><LI><FONT size=1>Bei manuell eingetragenen Fortschritt wurde anschließend der Wert über die Cursor-Tasten nicht richtig ausgelesen (76% -> 50%). </FONT><LI><FONT size=1>Beim Erstellen von Serien-eMails an CC oder <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Bcc', 'content', 'Im David.InfoCenter wird die Kopie einer eMail verdeckt an die im Feld Bcc (<B>B</B>lind <B>C</B>arbon <B>C</B>opy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Bcc<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Bcc', 'content', 'Im David.InfoCenter wird die Kopie einer eMail verdeckt an die im Feld Bcc (<B>B</B>lind <B>C</B>arbon <B>C</B>opy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Adressen konnte es zu Fehlern kommen (z.B. doppelte Nachrichten). </FONT><LI><FONT size=1>Beim Erstellen einer neuen Aufgabe per Drag´nDrop wird die Original-Nachricht nicht mehr gelöscht, wenn während des Drag´nDrop "abgebrochen" wird. </FONT><LI><FONT size=1>Das Wechseln zwischen den Feldern AN, CC, BCC, BETREFF und Text ist nun auch mit der ENTER Taste möglich, bisher nur mit der TAB Taste. </FONT><LI><FONT size=1>Beim Löschen einer Client-Verteilung werden nun alle Einstellungen gelöscht. Bisher konnte es in einigen Fällen beim erneuten Erstellen zu Fehlern kommen. </FONT><LI><FONT size=1>Über die Systemsteuerung können eigene Sounds für den Tobit <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'InfoCenter Notifier', 'content', 'Unten rechts auf dem Bildschirm befindet sich dieser kleine Helfer, der den Anwender des David.InfoCenters auf z.B. eingegangene Nachrichten und anstehende Termine aufmerksam macht.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >InfoCenter Notifier<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'InfoCenter Notifier', 'content', 'Unten rechts auf dem Bildschirm befindet sich dieser kleine Helfer, der den Anwender des David.InfoCenters auf z.B. eingegangene Nachrichten und anstehende Termine aufmerksam macht.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> eingestellt werden. </FONT><LI><FONT size=1>Für Nachrichten, die über den Sendeservice »Drucker« erstellt werden, wird nun ein Eintrag im Ausgangs-Archive erstellt. Das AN Feld enthält dabei den Namen des gewählten Druckers. </FONT><LI><FONT size=1>Bei der Einstellung »Nachrichtenoptionen vor dem Versenden anzeigen« wird dieser Dialog nun beim Sendeservice »Drucker« nicht mehr angezeigt. </FONT><LI><FONT size=1>Bei einem Gruppenkalender wird in der Vorschauleiste von Terminen der Archivename des jeweiligen Kalenders angezeigt. </FONT><LI><FONT size=1>Kein Fehlerverhalten mehr beim Suchen in reinen Text-eMails. unter Umständen wurde der Suchtext nicht gefunden. </FONT><LI><FONT size=1>Adressen können nun auch über den Client in HTML-Formatierung gedruckt werden: rechte Maustaste auf einem Adresseintrag, »lokaler Drucker« wählen. Hierzu liegt ein entsprechendes Template (address.prn) im Verzeichnis \david\clients\windows. </FONT><LI><FONT size=1>Beim Erstellen eines Termins wird nun der eingestellte Standardzeichensatz (Nachrichten Editor) berücksichtigt. </FONT><LI><FONT size=1>Die Geschwindigkeit beim Einlesen der Eintragslisten wurde verbessert. </FONT><LI><FONT size=1>Beim Import von Outlook-Adressen (Menü »Werkzeuge -> Outlook Import«) kann nun über den Button »Optionen« die Reihenfolge der Felder Vorname und Nachname bestimmt werden. </FONT><LI><FONT size=1>Die eingestellte Ansicht für den rechten Rand wird nun gespeichert und gilt für alle Editoren. </FONT><LI><FONT size=1>Die eingestellten Initialen (Nachrichten Editor) werden nun auch in der Windows Registry benutzerbezogen gespeichert. </FONT><LI><FONT size=1>Beim Löschen externer Nachrichten erscheint ein neuer Dialog, mit dem die entsprechende Nachricht entweder wie bisher in den Papierkorb verschoben werden, oder automatisch eine entsprechende Verteilregel angelegt werden kann. Im letzten Fall können weitere Nachrichten von dem angegebenen Absender bzw. an den angegebenen Empfänger wahlweise direkt gelöscht oder in den Papierkorb verschoben werden. </FONT><LI><FONT size=1>Neue Option bei der Client-Verteilung: »Sonstige (Löschen oder kennzeichnen)«. Bewirkt, dass verteilte Einträge automatisch farbig markiert werden, eine Markierung erhalten und/oder in den Papierkorb verschoben werden. </FONT><LI><FONT size=1>Unter »Optionen -> Einstellungen -> Diverses« kann eingestellt werden, dass die Einträge in den Eintragslisten in abwechselnder Farbe angezeigt werden. </FONT><LI><FONT size=1>Kalender: Anzeige der Jahreszahl auch in der Wochen-/Monatsansicht. </FONT><LI><FONT size=1>Korrektur der angezeigten Kalenderwoche (KW) im Dialog »Kalender«. </FONT><LI><FONT size=1>Bei der Auswahl einer Vorlage konnte es zu Darstellungsfehlern kommen. </FONT><LI><FONT size=1>Kalender: Bei der Auswahl des Zeitraums wurde unter Umständen die Dauer falsch angezeigt. Ausserdem kam es zu Anzeigefehlern bei der Auswahl der Stoppzeit, wenn diese auf einen Folgetag eingestellt wurde. </FONT><LI><FONT size=1>Eigene Spalten/Spaltenanordnungen für jede Art der Eintragslisten (z.B. Adressen, Eingang, Ausgang). </FONT><LI><FONT size=1>Design Änderungen. </FONT><LI><FONT size=1>Dialog der Client-Verteilung ist nun nicht mehr modal und kann mehrfach aufgerufen werden. </FONT><LI><FONT size=1>Optimierung des Bildschirmschoners. </FONT><LI><FONT size=1>Der Schalter »IHS Replizierung unterbinden« befindet sich nun auf der Seite »Dienste« der Archive-Eigenschaften (bisher »Optionen«). </FONT><LI><FONT size=1>Einstellung »Symbolleisten fixieren« galt nach Neustart nicht für den Editor. </FONT><LI><DIV><FONT size=1>Anpassung der Hotkeys für die Attribute "Fett/Kursiv" im Nachrichten Editor (SHIFT+STRG F/K).</FONT></DIV><LI><DIV><FONT size=1>»Nachricht versenden« Dialog: Formularlayout per Tastenkombi erreichbar (ALT+Y)</FONT></DIV><LI><DIV><FONT size=1>TIFF Dateien (Dateiendung *.TIF) werden nun auch beim Öffnen über den Dateianhang Dialog mit dem Tobit InfoCenter Image Editor geöffnet.</FONT></DIV><LI><DIV><FONT size=1>Namentliche Bezeichnung des Ports, der versendet/empfangen hat.</FONT></DIV><LI><DIV><FONT size=1>Bei der Schnellsuche (ALT-Q) kann nun ein vorhandener Eintrag ausgewählt werden, ohne nochmal die ENTER-Taste drücken zu müssen.</FONT></DIV><LI><DIV><DIV><FONT size=1>Die Taste F10 funktioniert nun auch beim Erstellen einer neuen Aufgabe.</FONT></DIV></DIV><LI><DIV><DIV><FONT size=1>Beim Schließen einer Aufgabe wird nun generell nach dem Speichern gefragt, wenn Änderungen vorgenommen wurden.</FONT></DIV></DIV><LI><DIV><DIV><FONT size=1>Der neue Button »Gruppiert« ordnet die Einträge der aktuellen Liste nach auswählbaren Kriterien an, z.B. nach Betreff, Datum, etc. Steht man im Eingangsbuch, können optional die Einträge des Ausgangsbuches mit in die Gruppierung aufgenommen werden.</FONT></DIV></DIV><LI><DIV><DIV><FONT size=1>Aktualisierte Druckertreiber (Tobit FaxWare, Tobit Image Messaging) für den Betrieb unter Windows Server 2003.</FONT></DIV></DIV><DIV><FONT size=2></FONT></DIV></LI></UL><DIV><DIV><DIV><STRONG><P><FONT size=2> </FONT></P><P><A href="#versions" name=versions><STRONG><FONT size=2>3. Aktuelle Dateiversionen</FONT></STRONG></A></STRONG></P></DIV><DIV><FONT size=2>Diese Tabelle enthält eine Liste von Programmdateien, die durch die Installation des Service Packs aktualisiert werden. Neben dem Dateinamen befindet sich die aktuelle Versionsnummer. Diese Informationen finden Sie auch im DvISE Administrator (DVADMIN.EXE) unter dem Menüpunkt »Informationen -> Versions Informationen«.<P><table width="200"border="0"><tr><td>DVADMIN.EXE</td><td>7.00a   0302</td></tr><tr><td>SL.EXE</td><td>7.00a   1944</td></tr><tr><td>TOBIT32.DLL</td><td>7.00a   0143</td></tr>   <tr><td>DAVIDLIB.DLL</td><td>7.00a   0179</td></tr>   <tr><td>TGRAPHIC.DLL</td><td>7.00a   0132</td></tr><tr><td>POSTMAN.EXE</td><td>7.00a   0221</td></tr>   <tr><td>WEBBOX.EXE</td><td>7.00a   0311</td></tr>   <tr><td>DSERVER.EXE</td><td>7.00a   0130</td></tr><tr><td>REPLICA.EXE</td><td>7.00a   0140</td></tr><tr><td>DVGRAB.EXE</td><td>7.00a   0147</td></tr>   <tr><td>DVWIN32.EXE</td><td>2.00a   1500</td></tr>   <tr><td>DVEDIT32.EXE</td><td>1.00a   0123</td></tr>   <tr><td>DVAPI32.DLL</td><td>7.00a   0188</td></tr>   <tr><td>DVCTL32.DLL</td><td>7.00a   0114</td></tr>   <tr><td>DVREMIND.EXE</td><td>7.00a   0250</td></tr><tr><td>DVCC.EXE</td><td>7.70a   0345</td></tr><tr><td>InfoCenter Web</td><td>465</td></tr></table></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(6309);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

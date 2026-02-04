@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-101.581</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Die Datei NTVDM.EXE hat einen Fehler verursacht</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Die Datei NTVDM.EXE hat einen Fehler verursacht und das Tobit InfoCenter wird beendet.</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David.InfoCenter</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">2.08.2002</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Wichtig: Dieser Artikel enthält Informationen zum Bearbeiten der  Registrierung. Bevor Sie die Registrierung bearbeiten, vergewissern Sie  sich,  dass Sie die Registrierung wiederherstellen können, wenn ein Problem  auftritt. Informationen hierzu erhalten Sie, indem Sie in der Datei  "REGEDIT.EXE" unter dem Hilfethema "Wiederherstellen der Registrierung"  oder  in der Datei "REGEDT32.EXE" unter dem Hilfethema "Wiederherstellen eines  Registrierungsschlüssels" nachsehen. <p> Zusammenfassung:<br> Im folgenden wird Schritt für Schritt beschrieben, wie Sie Fehler beim  NTVDM- oder WOW-Start beheben. Beachten Sie bitte, dass SYSEDIT.EXE ein  16-Bit-Programm ist, dass in Windows NT für die Fehlerbehandlung bei  solchen Problemen zur Verfügung steht. Wenn dieses Programm gestartet wird, sind die WOW- und NTVDM-DLLs und die ausführbaren Dateien in Ordnung, und Sie müssen sich dann auf die unten beschriebenen Schritte konzentrieren, die sich auf die Umgebung beziehen. Wenn SYSEDIT nicht gestartet wird, versuchen Sie,  nur die MS-DOS-Shell "COMMAND.COM" aus der Eingabeaufforderung zu starten. <p> Bitte  beachten Sie, dass alle folgenden Schritte auszuführen sind, wenn SYSEDIT  nicht läuft. <p>  Weitere Informationen:<ol><li> Überprüfen Sie AUTOEXEC.NT und CONFIG.NT auf irgendetwas Ungewöhnliches  oder alles, was auskommentiert werden kann.<li> Benennen Sie die Datei AUTOEXEC.BAT um. <li> Überprüfen Sie WIN.INI oder SYSTEM.INI auf Änderungen oder ersetzen Sie  sie, indem Sie die Originaldateien vom Installationsmedium expandieren.<li> Benennen Sie möglichst alle anderen *.INI-Dateien um.<li> In der Datei CONFIG.NT sind nur folgende Angaben zulässig: </OL>  <p> <ul>    dos=high, umb<br>    device=%SystemRoot%\system32\himem.sys<br>    files=60<br>    shell=%SystemRoot%\system32\command.com /e:4096<br> </ul> <p> <b>Hinweis:</B><br> Mit den Standardeinträgen vom Installationsdatenträger kann SYSEDIT laufen;  es können jedoch weitere Einträge wie oben beschrieben erforderlich sein,  damit andere Anwendungen laufen können. Gültiger Bereich für Dateien: files = 5 bis 254.<p>  6. Überprüfen Sie die Umgebungsvariablen wie folgt: Klicken Sie auf START, zeigen Sie auf EINSTELLUNGEN, klicken Sie auf  SYSTEMSTEUERUNG, doppelklicken Sie auf SYSTEM und klicken Sie dann auf die  Registerkarte UMGEBUNG. In Windows 2000 klicken Sie auf EINSTELLUNGEN, dann   auf SYSTEMSTEUERUNG, doppelklicken Sie auf SYSTEM, klicken Sie auf die  Registerkarte ERWEITERT und dann auf UMGEBUNGSVARIABLEN. <ul><b>-oder-</B></UL> Führen Sie den Befehl SET aus der Eingabeaufforderung aus und überprüfen  Sie  alle Umgebungsvariablen auf Nullen, Leerzeichen, doppelte  Gleichheitszeichen  (==) oder sonstige unbekannte Einträge. <p> 7. Vergewissern Sie sich, dass der Pfad mit dem Standardpfad der CD  übereinstimmt, d.h., dass dem Pfad keine Einträge vorangestellt sind. Falls   es vom Standard abweichende Einträge gibt, entfernen Sie sie. 8. Überprüfen Sie die Pfadlängen auf Längen, die nach der Expandierung  nahezu  200 Zeichen betragen. Der Pfad setzt sich zusammen aus dem Pfad in  Autoexec.nt und in der Registerkarte UMGEBUNG im Programm SYSTEM in der  Systemsteuerung. Wenn der Pfad mehr als 100 Zeichen hat, ändern Sie ihn zu  Testzwecken.<p> 9. Überprüfen Sie die folgenden Registrierungseinträge. Die einfachste  Möglichkeit dafür ist, zunächst festzustellen, ob sie gefüllt sind. (In  manchen Fällen verschwinden Schlüssel oder Teilschlüssel einfach). Wenn die   Schlüssel komplett gefüllt sind, versuchen Sie nicht, die richtigen Werte  zu  ermitteln; laden Sie sie einfach herunter und laden Sie sie in ein  Testsystem, um herauszufinden, ob das Problem reproduzierbar ist. <p><b> WARNUNG:</B><BR> Die unkorrekte Verwendung des Registrierungseditors kann  schwerwiegende Probleme verursachen, die eine Neuinstallierung von Windows  erforderlich machen. Microsoft kann nicht dafür garantieren, dass Probleme,   die von einer falschen Verwendung des Registrierungseditors herrühren,  behoben werden können. Benutzen Sie den Registrierungseditor auf eigene  Verantwortung.  <p> Informationen zum Bearbeiten der Registrierung finden Sie unter dem  Online-Hilfethema "Ändern von Schlüsseln und Werten" im  Registrierungseditor  (Regedit.exe). Beachten Sie bitte, dass Sie eine Sicherungskopie der  Registrierungsdateien (System.dat und User.dat) erstellen sollten, bevor  Sie  die Registrierung bearbeiten. Wenn Sie mit Windows NT arbeiten, sollten Sie   auch Ihre Notfalldiskette (ERD = Emergency Repair Disk) sichern. <p> HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\WOW: Parameters für  WOW-Start <p>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\WOW:  System.ini-Einstellungen<p> HKEY_LOCAL_MACHINE\Software\Microsoft\Windows  NT\CurrentVersion\IniFile\Mapping: Zuordnungen für Win.ini, System.ini,  Winfile.ini,Progman.ini und Control.ini<p> HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session  Manager\Environment: Umgebungseinstellungen Sonstige INI-Einstellungen, die in der Registrierung zu finden sind: s.  Seiten 905 bis 908 des Windows NT Workstation 4.0 Resource Kit.<p>  10. Wenn das nicht funktioniert, fehlen Dateien, oder es gibt beschädigte  Dateien. (Es ist wahrscheinlicher, dass die Dateien beschädigt sind;  versuchen Sie zuerst, diese Dateien zu ersetzen).<p><ul> <li>Ntio.sys <li>Ntdos.sys <li>Ntvdm.exe <li>Ntvdm.dll (nur 3.1) <li>Redir.exe <li>Wowexec.exe <li>Vdmredir.dll <li>Krnl386.exe <li>Krnl286.exe (nur Windows NT 3.1) <li>Gdi.exe <li>User.exe <li>Wow32.dll (nicht in Windows 3.1) <li>Commdlg.dll<li> Version.dll<li> Shell32.dll <li>Gdi32.dll <li>User32.dll <li>Advapi32.dll <li>Compobj.dll <li>Ddeml.dll <li>Ole2.dll <li>Ole2dist.dll <li>Storage.dll <li>Rpcrt4.dll</UL>  Suchen Sie unter "System" nach: <ul>Avicap.dll<br> Avifile.dll<br> Commdlg.dll<br> Keyboard.drv<br> Lzexpand.dll<br> Mciavi.drv<br> Mciseq.drv<br> Mciwave.drv<br> Mmsystem.dll<br> Mmtask.tsk<br> Mouse.drv<br> Msvideo.dll<br> Olecli.dll<br> Olesvr.dll<br> Setup.inf<br> Shell.dll<br> Sound.drv<br> System.drv<br> Tapi.dll<br> Timer.drv<br> Ver.dll <br>Vga.drv <br>Wfwnet.drv <br>Winspool.drv</UL>Fehlende oder beschädigte DLLs (Schritt 2):Wenn Sie nichts gefunden haben, können Sie die DLLs unter folgendem Registrierungsschlüssel überprüfen: <p>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\WOW<p>Wert: Bekannte DLLs. Hier die Liste der DLLs, die meisten sind jedoch in der obigen Liste enthalten.<p>An diesem Punkt möchten Sie es vielleicht mit roher Gewalt versuchen: Führen Sie eine parallele Installation mit allen Aktualisierungen durch und kopieren Sie einfach %SystemRoot%\System und %SystemRoot%\System32 von der Parallelinstallation auf das neue System.<p>Comm.drv<br>Commdlg.dll<br>Ctl3dv2.dll<br>Ddeml.dll<br>Keyboard.drv<br>Lanman.drv<br>Mapi.dll<br> Mmsystem.dll<br>Mouse.drv<br>Netapi.dll<br> Olecli.dll<br>Olesvr.dll<br>Pmspl.dll<br>Shell.dll<br>Sound.drv<br>System.drv<br>Toolhelp.dll<br>Vga.drv<br>Wfwnet.drv<br>Win87em.dll<br>Winoldap.mod<br>Winsock.dll<br>Winspool.exe<br>Wowdeb.exe<br>Timer.drv<br>Rasapi16.dll<br>Compobj.dll<br>Storage.dll<br>Ole2.dll<br>Ole2disp.dll<br>Ole2nls.dll<br>Typelib.dll<br>Msvideo.dll<br>Avifile.dll<br>Msacm.dll<br>Mciavi.drv<br>Mciseq.drv<br>Mciwave.drv<br>Progman.exe<br>Avicap.dll<br></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(1581);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

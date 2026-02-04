@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-106.270</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Parameter der Datei DAVID.INI</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Welche Funktionen haben die Parameter in der DAVID.INI?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">2.10.2003</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>Funktionsweise der Datei DAVID.INI</b><p>Auf dem Server befindet sich im Verzeichnis \\DAVID\CODE\ die Datei DAVID.INI, deren Parameterbeim Start des Service Layers ausgewertet werden. Hier wird festgelegt, wann z.B. Datenbereinigungenvom Server durchgeführt werden sollen, in welchen Intervallen bestimmteVerzeichnisse gescannt werden, etc.<br>Der Wert, der nach einer Installation standardmäßig eingetragen ist, wird auch als "Default" unterder Eintragszeile nochmals zur Information angezeigt. Änderungen sollten sehr vorsichtigund wohl durchdacht vorgenommen werden, denn ein falscher Eintrag kann unvorhersehbareProbleme und Abstürze des Servers verursachen.<br>Wenn eine Änderung durchgeführt wird, muss dass Semikolon am Anfang der ersten Eintragszeileentfernt werden, erst dann wird dieser manuelle Eintrag auch ausgelesen. Die Änderungensind nur durch einen Neustart des Service Layers wirksam.<p><b>Folgende Einträge befinden sich in der Datei DAVID.INI:</b><p><b><i>TLDControlDelay = 2000</i></b><br>In diesem Intervall wird das Verzeichnis David\TLD\Port\xxx nach vorhandenen <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>.TX- oderTLD.RX-Dateien gescannt, welche für den Nachrichtenversand/-empfang generiert werden.Die Einheit ist Millisekunden.<p><b><i>MainTLDControlDelay = 2000</i></b><br>Zeitraum in Millisekunden, bevor in den TLD-Verzeichnissen nach vorhandenen Dateiengescannt wird, z.B. nach einem Neustart des Ports oder Systems.<p><b><i>GetFirstFreeTLDDelay = 1000</i></b><br>Intervall, welches für die Übergabe eines neuen Auftrags an einen freien Port verantwortlichist. Eine Änderung kann die allgemeine Auftragsübergabe beeinflussen. Die Einheit ist Millisekunden.<p><b><i>JOBFreeDelay = 1500</i></b><br>Der Service Layer legt für neue Aufträge einen Verweis in der Datei DAVID.JOB ab, so dassdiese Datei auf neue Einträge überwacht wird. Zeitraum in Millisekunden, in dem der nächsteEintrag im Auftragsbuch gelesen wird, wenn der aktuelle Job den Status »frei« trägt.<p><b><i>JOBDelay = 10</i></b><br>Intervall bei vorhandener Auftragsbearbeitung des Service Layers. Es wird entsprechend nachneuen Einträgen gescannt. Die Einheit ist Millisekunden.<p><b><i>ScanDelay = 2000</i></b><br>Dieser Intervall überwacht die Verzeichnisse, in denen neue Aufträge erstellt werden (API- undFileScan-Services, unter NetWare zusätzlich der Queue-Service). Eine Änderung beeinflusst dieGeschwindigkeit, mit welcher der Service Layer neue Aufträge erkennen kann. Bei häufigemEinsatz von Seriensendungen kann eine Änderung (langsamer) sehr hilfreich sein, um Fehlerwährend der Konvertierung von Aufträgen zu vermeiden. Die Einheit ist Millisekunden.<p><b><i>QueueScanDelay = 2000</i></b><br>Intervall in Millisekunden, in dem erstellte Druckaufträge überwacht werden.ScrUpdateDelay = 1000 (nur unter NetWare)Automatischer Refresh der Konfigurationsbildschirme auf dem Server innerhalb dieses Intervalls.Eine Änderung hat keinen Einfluss auf das eigentliche DvISE-System, sondern nur aufdie Aktualität, z.B. in den Monitoren der einzelnen Module. Die Einheit ist Millisekunden.ImmediatePurgeDIR = Volume:DAVID\TLD\PORT\001 (nur unter NetWare)Der Service Layer setzt das System-Flag für die Bereinigung des Systems im angegebenenOrdner.<p><b><i>CommandID = </i></b><br>Mit diesem Eintrag können Sie individuelle Befehlscharaktere erstellen, wenn z.B. das @-Zeichenauch von einer anderen Applikation ausgewertet würde. Sie können also frei bestimmen,welches Zeichen für die einzelnen DvISE Befehle eingesetzt werden kann. Nach Möglichkeitsollte dieser Eintrag NICHT geändert werden.<p><b><i>AdditionalCommandID = !!</i></b><br>Die alternative Sequenz zur CommandID, welche ebenfalls frei wählbar ist. Nach Möglichkeitsollte dieser Eintrag NICHT geändert werden.<p><b><i>PrinterLPP = 68</i></b><br>Der automatische Protokollausdruck nutzt die entsprechende Anzahl der Zeilen pro Seite, welchehier eingetragen ist. Beachten Sie, dass sich bei einer Änderung die Aufteilung einer Druckseiteändert und es ggf. zu einer Leerseite kommen kann.<p><b><i>Enable0Pages = FALSE</i></b><br>Leere Seiten, welche durchaus gewollt in einem Dokument vorkommen können, werden beider Einstellung »TRUE« nicht konvertiert.<p><b><i>DateValue = FALSE</i></b><br>Datumseinstellung des Service Layers. Bei Umstellung des Parameters wird das reale Datumanstelle von "heute" und "gestern" in die Protokolldateien eingetragen.<p><b><i>DeleteTime = 3</i></b><br>Startzeit der automatischen Bereinigung des Service Layers (03:00 Uhr nachts). Bei Einsatzvon Backup-Software ist oftmals eine Änderung notwendig, um unnötige Server-Auslastungen zu vermeiden. Bei einer Eingabe des Wertes »25« oder höher wird keineBereinigung gestartet.<p><b><i>NightFrom = 18</i></b><br>Hier wird der Zeitpunkt bestimmt, wann der Service Layer den kostenoptimierten Versand startensoll.<p><b><i>NightTo = 8</i></b><br>Hier wird der Zeitpunkt bestimmt, wann der Service Layer den kostenoptimierten Versandbeenden soll.<p><b><i>RNDReport = RND.NOK</i></b><br>Hier können Sie bestimmen, welche Report-Datei der Service Layer bei Rundsendungen erstellensoll. Nur fehlerhafte Aufträge werden in dieser Datei eingetragen, welche unterDAVID\APPS\FAXWARE\RESOURCE\DATA abgelegt wird. Durch die Angabe dieses Parametersohne Wertübergabe (RNDReport= ) wird die Erstellung der Report-Datei verhindert.<p><b><i>AcceleratePGA = 12</i></b><br>Konvertierungseinstellung der PGA-Dateien. Je höher der Wert, desto schneller die Konvertierung.Dieses gilt für alle Aufträge, die vom Service Layer erstellt werden sollen.<p><b><i>AcceleratePCX = 20</i></b><br>Konvertierungseinstellung der PCX-Dateien (Grafiken wie z.B. Formulare). Je höher der Wert,desto schneller die Konvertierung.<p><b><i>AccelerateG3 = 20</i></b><br>Konvertierungseinstellung des eigentlichen Ausgabeformats (Fax G3). Je höher der Wert,desto schneller die Konvertierung.<p><b><i>AccelerateDRK = 5</i></b><br>Konvertierungseinstellung der Druckdateien. Je niedriger der Wert, desto schneller dieKonvertierung (nur bei Betrieb von DvISEunter Novell NetWare).<p><b><i>DisableScanQueues = FALSE</i></b><br>Abschaltung des Scan-Intervalls für den Queue-Service, nachdem ein Auftrag erfolgte. DieserWert sollte möglichst nicht geändert werden, da ansonsten Aufträge ggf. nicht mehr abgearbeitetwerden.<p><b><i>DisableScanNoBook = FALSE</i></b><br>Abschaltung des Scan-Intervalls für das Import-Verzeichnis, nachdem ein Auftrag erfolgte.Dieser Wert sollte möglichst nicht geändert werden, da ansonsten Aufträge ggf. nicht mehrabgearbeitet werden.<p><b><i>DisableScanErrFiles = FALSE</i></b><br>Hiermit wird das Fehlerprotokoll beeinflusst, so dass dieses nicht mehr nach neuen Einträgengescannt wird. Der Wert sollte nach Möglichkeit nicht geändert werden, da Fehleranalysenerschwert werden, wenn die Fehlerprotokolle des Service Layers nicht mehr im Tobit Info-Center angezeigt werden.<p><b><i>DisableCheckFileSize = FALSE</i></b><br>Dieser Parameter vergleicht, ob bei einem Neustart des Service Layers eine Änderung in denDatenbanken des Service Layers erfolgt ist. Dieser Eintrag beeinflusst die Einstellungen imDvISE Administrator unter »Konfiguration/System« auf der Registerkarte »Optionen/CorruptFile Detection Default«.<p><b><i>NoAppendDel = TRUE</i></b><br>Veranlasst das Löschen der Image-Datei nach Versand. Dieser Wert sollte nicht verändertwerden, da die Dateien physikalisch gelöscht werden und im Tobit InfoCenter nur ein Verweisauf diese Datei angezeigt wird.<p><b><i>DisableChkFileSize = FALSE</i></b><br>Dieser Eintrag ist doppelt vorhanden und somit ohne Bedeutung.<p><b><i>AllowSysFileChecking = TRUE</i></b><br>Dieser Wert aktiviert die Datenprüfung beim Start des Service Layers in Bezug auf dieSystemdateien (DAVID\CODE). Dieser Wert sollte nach Möglichkeit nicht geändert werden.<p><b><i>TrainingDuration = 5</i></b><br>Definiert die Zeit in Sekunden, die der Service Layer für das Handshake mit einer Gegenstelleveranschlagt, um die eigentliche Übertragung zu beginnen. Diese Zeit wird zur geschätztenÜbertragungszeit addiert. Hinweis: Hierbei wird nicht die reale Übertragungsdauer angezeigt!<p><b><i>ChangePageDuration = 1</i></b><br>Definiert die Zeit in Sekunden, die der Service Layer für einen Seitenwechsel veranschlagt.Diese Zeit wird zur geschätzten Übertragungszeit addiert. Hinweis: Hierbei wird nicht diereale Übertragungsdauer angezeigt!<p><b><i>FaxBoxLog = FALSE</i></b><br>Definiert, ob die erstellten FaxBox-Dokumente in die Potokolldatei eingetragen werden sollen.<p><b><i>MinPageByteCnt = 0</i></b><br>Definiert die Anzahl der Schriftzeichen, die auf einer Seite vorhanden sein müssen, bevor einSeitenumbruch generiert wird. Dieser Wert kann geändert werden, wenn z.B. eineungewollte Leerseite konvertiert wird (in Verbindung mit einem eMail <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Client<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> wie z.B. NovellGroupWise).<p><b><i>NoTLDTimeOut = 300</i></b><br>Dieser Parameter definiert den Zeitraum in Sekunden, in dem die Meldung "Kein TransportLayer aktiv" ausgegeben wird. Danach wird erst wieder eine Meldung ausgegeben, wenneine neue Nachricht verschickt werden soll. Der Wert "0" schaltet die Überprüfung und entsprechenddie Ausgabe der Warnmeldung ab.<p><b><i>DupLog =</i></b><br>Mit dem DupLog-Befehl haben Sie die Möglichkeit getrennte Protokolldateien für das Sende-und Empfangsprotokoll anzulegen. Hierfür müssen Sie lediglich im DupLog-Befehl denDateinamen für die Protokolldatei wie folgt angeben:<br>Microsoft Windows:<br>\\SERVERNAME\DAVID\CODE\DV.LOG<br>Novell NetWare:<br>\\SERVERNAME\VOL1:DAVID\CODE\DV.LOG<br><p><b><i>BackupPath =</i></b><br>Definiert den Pfad zur Datensicherung, welche im DvISE Administrator unter »Konfiguration/System« eingestellt werden kann.<p><b><i>DisableBinFax = FALSE</i></b><br>Deaktiviert den Versand eines Anhangs per Fax oder eMail. Hinweis: Dieses gilt global und istnicht nur benutzerbezogen.<p><b><i>DisableAddTrustees = FALSE (nur unter NetWare)</i></b><br>Deaktiviert die automatisch vergebenen Rechte unter NetWare. Wird dieser Punkt geändert,müssen die Benutzerrechte manuell definiert werden.<p><b><i>DefaultUserRootArchiveTrustees =</i></b><br>Gibt an, welche Rechte ein User auf sein Verzeichnis bekommt. Die Werte werden in HEX angegeben(nur unter NetWare).<br>Mögliche Einstellungen:<br>Keine Rechte: 0x0000<br>Lesen: 0x0001<br>Schreiben: 0x0002<br>Erstellen: 0x0008<br>Löschen: 0x0010<br>Access Control: 0x0020<br>FileScan: 0x0040<br>Ändern: 0x0080<br>Supervisor: 0x0100<br>Alle: 0x01FB<br>Beispiel:<br>Um die Rechte eines Benutzers für Lesen, Schreiben und FileScan zu definieren, schreibenSie:<br>DefaultUserRootArchiveTrustees = 43<p><b><i>DefaultAddressBookTrustees</i></b><br>Definiert, ob ein Benutzer seine Standardrechte auch auf das öffentliche Adressbuch bekommt.Das Definieren der Rechte erfolgt wie bei "DefaultUserRootArchiveTrustees".<p><b><i>DefaultArchiveResourceTrustees</i></b><br>Definiert, ob ein Benutzer seine Standardrechte auch auf das VerzeichnisDAVID\ARCHIVE\RESOURCE bekommt. Das Definieren der Rechte erfolgt wie bei "DefaultUserRootArchiveTrustees".<p><b><i>DefaultAPIDirectoryTrustees</i></b><br>Definiert, ob ein Benutzer seine Standardrechte auch auf das VerzeichnisDAVID\APPS\FAXWARE\OUT\API bekommt. Das Definieren der Rechte erfolgt wie bei "DefaultUserRootArchiveTrustees".Bei nicht korrekter Rechtevergabe ist es unter Umständen möglich, dass der Benutzer aufgrundmangelnder Zugriffsrechte auf dieses Verzeichnis keine Daten versenden kann. Beachten Sie dazuunbedingt das Kapitel 2.1.2 im Mitgelieferten Handbuch<br><p><b><i>DefaultClientsDirectoryTrustees</i></b><br>Definiert, ob ein Benutzer seine Standardrechte auch auf das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> DAVID\CLIENTS bekommt.Beachten Sie dazu, dass der User bei mangelndem Zugriff automatische UpDatesbzw. das Tobit InfoCenter nicht installieren kann. Das Definieren der Rechte erfolgt wie bei"DefaultUserRootArchiveTrustees".<p><b><i>DefaultCoverDirectoryTrustees</i></b><br>Definiert, ob ein Benutzer seine Standardrechte auch auf das Verzeichnis DAVID\APPS\FAXWARE\RESOURCE\COVER bekommt. Dieses ist notwendig, um mit Deckblättern arbeitenzu können. Ohne Zugriff kann der Service Layer nicht die entsprechenden Daten für einenBenutzer einfügen. Das Definieren der Rechte erfolgt wie bei "DefaultUserRootArchiveTrustees".<p><b><i>DefaultADDRImportRecs =</i></b><br>Dieser Parameter ermöglicht die Eingabe einer standardisierten Reihenfolge für den Importvon Adressen (Kapitel 3.6 im Handbuch). Die eingetragene Reihenfolge sollte dann unbedingt eingehaltenwerden, da der Service Layer entsprechend dieser Angabe die zu importierenden Adressenkonvertiert.<br> Beispiel:<br>DefaultADDRImportRecs = ADDR_SHOWNAME, ADDR_FAX, ADDR_EMAIL<p><b><i>MinFileAge = 6</i></b><br>Definiert das "Mindestalter" einer Datei in Stunden, bevor der Service Layer diese während derautomatischen Datenbereinigung löschen darf. "Jüngere" Dateien werden nicht entfernt.<p><b><i>DisableExtraPort = TRUE</i></b><br>Das Verzeichnis DAVID\TLD\PORT\EXTRA wird bei Aktivierung (Standard) vom Service Layerüberwacht. Beachten Sie dabei, dass dort nur Daten abgelegt werden, die nicht korrektempfangen worden sind. In diesem Fall sollten Sie die Lizenzen (IHS oder PostMan) bzw.die Kommunikation der entsprechend eingesetzten eMail-Ports überprüfen.<p><b><i>BarSign = 254</i></b><br>Hier können Sie das ASCII-Zeichen ändern, mit der die Server-Auslastung während einerKonvertierung angezeigt wird. Im Allgemeinen wird diese Einstellung nicht geändert.<p><b><i>CreateJobDebugFile = FALSE</i></b><br>Mit diesem Eintrag wird für jeden Auftrag eine Debug-Datei erzeugt, in der die Befehle angezeigtwerden, die entsprechend des Auftrages generiert werden. Der Service Layer erstellt eineDatei mit der Erweiterung "DEB" im Auftragsbuch eines Benutzers. Da diese Einstellung globalwirkt, ist mit einem hohen Datenaufkommen zu rechnen.(Sie sollte nur bei evtl. auftretenden Problemen aktiviert werden.) Daher empfielt es sich, in einerNachricht den Befehl einzufügen, um den aktuell erstelltenAuftrag zu kontrollieren.<p><b><i>AutoValidation = TRUE</i></b><br>Beim Start des Tobit InfoCenters wird für einen nicht eingetragenen Benutzer ein Verzeichnismit dessen ID-Nummer angelegt. Durch Abschalten dieses Parameters wird die Erstellungdes Archives auf dem Server unterbunden.<p><b><i>MaxSuccessiveErrorCount = 10</i></b><br>Dieser Parameter bestimmt, nach welcher Anzahl von aufeinander folgenden Fehlern ein Portdeaktiviert wird (unabhängig davon, wie ein Fehler entstanden ist). Reaktivieren können Sie einenPort durch folgende Tastenkombinationen im Service Layer/DvISE Administrator unter»Monitor -> Ports«:<br>Microsoft Windows: [STRG] + [F2]<br>Novell NetWare: [F2]<br>Die Einstellung "0" (null) verhindert eine Abschaltung der Ports. Sollten sich diese trotzdemdeaktivieren, kontaktieren Sie den Hardware-Hersteller, da eine Abschaltung der Hardwarenicht durch diesen Eintrag verhindert werden kann (normalerweise ist dieses nur mit Modemsmöglich).<p><b><i>DisableFaxHeader = 0</i></b><br>Dieser Parameter ermöglicht die Abschaltung der vom Service Layer generierten Kopfzeile.<br>Folgende Einstellung ist möglich:<br>0 = Faxe und FaxBox-Dokumente mit Kopfzeile<br>1 = Faxe ohne Kopfzeile und FaxBox-Dokumente mit Kopfzeile<br>2 = Faxe mit Kopfzeile und FaxBox-Dokumente ohne Kopfzeile<br>3 = Faxe und FaxBox-Dokumente ohne Kopfzeile<p><b><i>TextHeadLineSequenz =</i></b><br>Dieser Eintrag formatiert den automatischen eMail-Ausdruck. Dazu werden dieentsprechenden ESC-Sequenzen eingetragen, z.B.:<br>TextHeadLineSequenz=\e(s7B\e&d0D%s\e(s0B\e&d@<p><b><i>DisableThumbnail =</i></b><br>Dieser Wert definiert, ob Thumbnails im Vorschaufenster des Tobit InfoCenters angezeigtwerden. Bei Abschaltung können Faxnachrichten nur noch per Doppelklick geöffnetwerden, nicht mehr über die Vorschau.<p><b><i>PostMasterEmailAddr =</i></b><br>Bei Tracking Mails bzw. Einschreiben kann hier die Rücksende-Adresse festgelegt werden.Standard ist die Adresse postmaster@domain.com; dieses kann aber in Ihre persönlicheeMail-Adresse geändert werden, wie z.B. info@unserefirma.de<p><b><i>UseJobCollection=0</i></b><br>Dient dazu, ausgehende Nachrichten umzubenennen, z.B.bei Sammellisten-Einträgen:Suchstring: rs<br>Neue Adresse:richard.sander@tobit.com<br>Mögliche Einstellungen sind:<br>0 = gar nicht<br>1 = vor den internen Usern<br>2 = nach den internen Usern<br><P><b>Hinweis:</b><br>Je nach DvISE Version und Betriebssystem können sich Abweichungen bzw. Änderungen ergeben.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(6270);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

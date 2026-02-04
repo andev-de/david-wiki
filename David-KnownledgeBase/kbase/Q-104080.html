@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-104.080</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Probleme mit dem Ausdruck über den DvISE Service Layer</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Dieser KnowledgeBase Artikel befasst sich nebst Druckerproblemen im allgemeinen auch im speziellem mit folgenden Themen:<ul><li>Ausdruck auf falschem Drucker<li>Automatischer Ausdruck funktioniert nicht mehr<li>Kein Ausdruck über einen DvISE Service Layer Drucker möglich<li>Längerer Zeitraum verstreicht bis der Ausdruck beginnt</ul></td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">25.11.2005</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>Empfehlung für das Win32 Server Betriebssystem:</b><br>Die vIntern des Microsoft Internet Explorers auf dem DvISE Server muss auf eine originale und nicht modifizierte Version von Microsoft hinweisen. Dies prüfen Sie im Internet Explorer über »? -> Info«. Die dort angegebene Versions Nummer, z.B. 6.0.2800.1106, darf keine Kürzel wie IC oder IS tragen, da dies auf eine modifizierte Version eines Internet Inhaltsanbieters verweist.<p>Downloaden Sie gegebenenfalls die aktuelle Version von der Microsoft Homepage und installieren Sie diese nachdem Sie Ihre derzeitige Version vom System entfernt haben. Vor der Installation des neuen Microsoft Internet Explorers muss das aktuellste <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Service Pack<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> für die Win32 Betriebssysteminstallation installiert werden.<p>Detaillierte Hinweise zu den Versionsständen und den Ursprüngen können Sie dem folgenden Microsoft KnowledgeBase Eintrag entnehmen: <a href="http://support.microsoft.com/?kbid=164539" target=_new><u>Q164539</u></a>.<p><b>Empfehlungen zu den verwendeten Druckertreibern:</b><br>Die Verwendung des korrekten Druckertreibers ist maßgebend für die einwandfreie Funktionalität der DvISE Service Layer Drucker. Standardtreiber sind in der Regel unproblematischer als Postscript- oder PCL- Druckertreiber. Probleme mit dem automatischen Ausdruck sind häufig auf die Verwendung des falschen Druckertreibers zurückzuführen, insbesondere dann, wenn der manuelle Ausdruck über das Tobit InfoCenter funktionell ist.<p>Der Spooler hat die Aufgabe alle automatisierten Aufgaben zur Annahme von Dokumenten, Zusammenstellen und Übertragen von Einlieferungen an den Drucker zu verwalten. Eine vergleichbare Aufgabe übernimmt die Druckerqueue des DvISE Servers, die wiederum vom DvISE Service Layer verwaltet und mit Druckjobs versorgt wird. Beide System arbeiten hand in hand, wobei die Druckerqueue vom DvISE Service Layer den Spooler des Betriebssystems mit Druckjobs versorgt.<p>In der Regel ist dieser Vorgang unproblematisch, kann jedoch aufgrund von einem hohem Druckvolumen gestört werden, was sich z.B. in deutlichen Verzögerungen beim Ausdruck von Dokumenten bzw. Ausbleiben eines Ausdruckes widerspiegelt. In diesem Fall sollten Druckaufträge direkt zum Drucker und nicht über den Spooler geleitet werden.<br>Die Einstellung können Sie in den Eigenschaften des entsprechenden Druckers im Betriebssystem unterhalb der Registerkarte »Erweitert« vornehmen.<br>Sollte dies keine Abhilfe gebracht haben, so ist eine De- und Neuinstallation des Druckertreibers zwingend erforderlich, da die Konsistenz des Druckertreibers nicht mehr gegeben ist.<p>Die einzelnen Druckinformationen werden vom Druckprozessor in einzelne Bildpunkte umgewandelt. Bei einer einzelnen DIN A4 Seite mit einem bedruckbaren Bereich von rund 20 x 29 Zentimetern und einer Auflösung von 300x300 dpi fallen rund 8 Millionen einzelne Bildpunkte an. Das sind etwa 8 MByte an Daten bei einem s/w Ausdruck. Sind die einzelnen Druckpunkte berechnet, werden diese temporär vom Druckprozessor unterhalb von <br>»%SystemRoot%\System32\Spool« abgelegt. Der Besitzer dieser dort erzeugten Spoolerdatei ist der Benutzer, der den Auftrag gegeben hat. Bei einem Ausdruck über den Service Layer wäre dies demnach entweder der Administrator (wenn der Dienst »DvISE Service Layer« mit dem Administratorkonto gestartet wird) oder das SYSTEM (wenn der Dienst »DvISE Service Layer« als Lokales Systemkonto gestartet wird).<br>Stellen Sie sicher, dass die DvISE Dienste als "Lokales Systemkonto" gestartet werden und nicht mit einem Benutzerkonto.<p>Als Druckprozessor sollte in erster Linie der mit dem Druckertreiber installierte verwendet werden und nur bei Problemen, testweise auf "WinPrint" umgestellt werden.<br>"WinPrint" übernimmt softwareseitig die Funktion des Druckprozessors, was eine höhere Auslastung des Servers bedeutet kann, wenn viele Druckaufträge anstehen. Als Standarddatentyp muss stets RAW verwendet werden! Sollte bei Ihnen nur "WinPrint" angeboten werden, so verfügt Ihr Druckermodell nicht über einen eigenen Druckprozessor und der Einsatz von "WinPrint" ist zwingend.<p>Die Einstellung können Sie in den Eigenschaften des entsprechenden Druckers unterhalb von »Erweitert -> Druckprozessor« vornehmen.<p><b>Generelle Empfehlung für den DvISE Server bei Problemen mit dem Ausdruck:</b><br>Gehen Sie wie folgt vor:<ol><li>Führen Sie zunächst eine Bereinigung der temporären Dateien gemäß <a href="https://club.tobit.com/login/KBArticle.asp?ArticleID=559"><b>KnowledgeBase Artikel Q-100.559</b></a> durch.<p><li>In der DAVID.INI [»DAVID\CODE«] entfernen Sie das Semikolon (";") bei den folgend genannten Einträgen und testen die genannten Wertbereiche aus. Ändern Sie die Werte synchron und starten Sie nach dem Abspeichern den Dienst »DvISE Service Layer« jeweils neu:<p>ScanDelay = 500<br>[Wertbereich in 1000er Schritten von 500 - 3500]<p>QueueScanDelay = 2000<br>[Wertbereich in 1000er Schritten von 2000 - 5000]<p>Je nach Leistungsfähigkeit (CPU; RAM) können unter Umständen aufgrund der Menge an anstehenden Jobs die Standard Delay Einträge zu niedrig bzw. zu hoch sein. Je nach Auslastung des Systems, wenn z.B. für jedes Fax ein Protokollausdruck erstellt werden soll, kann es sein, dass zu schnell zu viele Druckjobs an den DvISE Service Layer übergegeben werden.</ol><p><b>Vollständige Überarbeitung der Druckeranbindung:</b><br>Sollten die generellen Empfehlungen für den DvISE Server bei Problemen mit dem Ausdruck nicht geholfen haben, so ist folgende Vorgehensweise anzuwenden:<ol><li>Führen Sie erneut die Bereinigung der temporären Dateien durch.<p><li>Nennen Sie die DAVID.DRK im Verzeichnis »DAVID\CODE« in DAVID_DRK.OLD um. Dies hat zur Folge, dass die Drucker aus dem DvISE Administrator vollständig entfernt werden. Dieser Schritt ist zu diesem Zeitpunkt notwendig.<p><li>Deinstallieren Sie den bzw. die verwendeten Druckertreiber vollständig vom System; sollte keine Deinstallationsroutine vorhanden sein, so müssen Sie den/die Drucker über »Start -> Einstellungen -> Drucker« manuell entfernen. Damit die Anbindung der Bibliotheken bereinigt werden, sind folgende Windows Registry Hives ergänzend zu prüfen:<p><ul><li>HKEY_LOCAL_MACHINE\ SOFTWARE\ Microsoft\ Windows NT\ CurrentVersion\ Print\ Printers<li>HKEY_LOCAL_MACHINE\ SYSTEM\ CurrentControlSet\ Control\ Print\ Printers<li>HKEY_LOCAL_MACHINE\ SYSTEM\ CurrentControlSet\ Control\ Print\ Environments\ Windows NT x86\ Print Processors</ul><p>Suchen Sie dort nach Schlüsseln mit dem Namen des alten Druckers und entfernen Sie diesen vollständig. Unterhalb von »...\ Windows NT x86\ Print Processors« dürfen Sie "WinPrint" nicht entfernen! Dort entfernen Sie lediglich den Schlüssel mit der Bezeichnung des alten Druckprozessors. Der Server muss anschließend neu gestartet werden, damit die Änderungen übernommen werden.<p><li>Halten Sie sich strikt an die Empfehlungen, wie Sie in den Abschnitten »Empfehlung für das Win32 Server Betriebssystem« und »Empfehlungen zu den verwendeten Druckertreibern« genannt worden sind. Hierdurch stellen Sie sicher, dass der Internet Explorer korrekt installiert ist, dass das aktuellste Service Pack installiert worden ist, um eine Angleichung der Systembibliotheken zu bewirken und dass ein korrekter Standardtreiber mit den Standardeinstellungen installiert wird.<p><li>Richten Sie den/die Drucker im DvISE Administrator neu ein. Achten Sie hierbei auf folgende Punkte:<ul><li>System Drucker werden Benutzern nicht für den manuellen Ausdruck angeboten; sie sind lediglich für den Protokollausdruck verwendbar.<li>Abschlussstempel sind nur funktionell wenn <b>keine</b> Vorlage auf der Registerkarte »Allgemein« angegeben ist.<li>Für den reinen Ausdruck von Faxen ist ebenfalls <b>keine</b> Vorlage zu verwenden.<li>Die Ausgabe-Queue enthält bei lokal eingerichteten Druckern die Bezeichnung des Betriebssystems. Bei Netzwerkdruckern den korrekten UNC-Pfad, z.B. »\\SERVER\HPLASJ21« und <b>nicht</b> z.B. »\\SERVER\HP Laserjet 2100«.<li>Verwenden Sie <b>testweise keine</b> Druckvorlage "Default" wenn Sie einen Internet Explorer der Version 6 oder neuer einsetzen, um Probleme mit der verwendeten Internet Explorer Version ausschließen zu können.</ol><p><b>Ergänzender Hinweise bei Problemen mit dem automatischen Ausdruck über <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span></b><br>Grundlegend ist die gleiche Vorgehensweise anwendbar, lediglich folgende Ergänzung ist zu berücksichtigen:<p>Ergänzend zu Punkt 2 entfernen Sie nebst der DAVID.DRK auch die ARCHIVE.ADD aus den Archiven (entsprechende Verzeichnisse auf Dateiebene), für die Sie den automatischen Ausdruck aktiviert haben.<p>Haben Sie den automatischen Ausdruck z.B. für das Archiv »Unverteilt« eingerichtet, so müssen Sie die ARCHIVE.ADD aus dem Verzeichnis »DAVID\ARCHIVE\COMMON« entfernen. Bei dem Eingang eines Benutzers wäre dies dann z.B. »DAVID\ARCHIVE\USER\10008000\IN«.<p>Nach Entfernung der ARCHIVE.ADD müssen Sie den automatischen Ausdruck neu einrichten. Führen Sie dies nach Schritt 5 durch.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(4080);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

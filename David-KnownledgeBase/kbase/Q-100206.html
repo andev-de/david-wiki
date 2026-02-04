@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-100.206</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Grundkonfiguration des DvISE Discussion Server</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David Discussion Server</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">1.09.2005</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>»Discussion Server -> System«</b><br>Die generelle Konfiguration des DvISE Discussion Servers können Sie im DvISE Administrator unterhalb von »Discussion Server -> System« vornehmen.<p><b>Registerkarte »Generell«</b><br>Folgende Einstellungen können Sie vornehmen:<ul><li><b>Monitor Informationen:</b><br>Im Rahmen von Fehlerfeststellung bietet es sich an, dass Sie hier den Wert auf »Vollständig« stellen, damit Sie den Monitorinformationen unterhalb von »Monitor -> Applikationen -> Discussion Server -> Communication« eine vollständige Analyse präsentiert bekommen.<li><b>Verbindungstimeout:</b><br>Geben Sie hier die Zeit in Sekunden an, nach der eine bestehende Verbindung zu einem News-Client automatisch beendet werden soll, falls dieser keine weitere Anfrage stellt.<li><b>Max. Anzahl der Verbindungen:</b><br>Bestimmen Sie hier, die maximal zulässige Anzahl gleichzeitiger NNTP-Client-Verbindungen.<li><b>Genereller Zugriff:</b><br>Bestimmen Sie, ob Ihr Discussion Server generell über jeden Benutzer im Internet zugänglich oder gesperrt sein soll. Ausnahmen können Sie unterhalb von »Discussion Server -> IP-Filter« definieren.<li><b>Hostname</b><br>Tragen Sie hier den Hostnamen ein, unter dem Ihr News-Server erreichbar sein soll (z.B. "news.meinefirma.de").</ul><b>Registerkarte »Domain Name Server«</b><br>Tragen Sie hier bitte zwei <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'IP', 'content', 'Eine <B>I</B>nternet-<B>P</B>rotokoll-Adresse (Bsp. 193.173.88.5) gleicht einer Hausnummer, &uuml;ber die Rechner im Internet oder in Netzwerken eindeutig indentifiziert werden k&ouml;nnen. Erst so wird ein Datenaustausch m&ouml;glich. Man unterscheidet dabei zwischen statischen, also festen IP-Adressen, die bei einer Standleitung vergeben werden, und dynamischen IP-Adressen, die bei jeder Einwahl oder nach einem bestimmten Zeitraum wechseln. ', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >IP<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'IP', 'content', 'Eine <B>I</B>nternet-<B>P</B>rotokoll-Adresse (Bsp. 193.173.88.5) gleicht einer Hausnummer, &uuml;ber die Rechner im Internet oder in Netzwerken eindeutig indentifiziert werden k&ouml;nnen. Erst so wird ein Datenaustausch m&ouml;glich. Man unterscheidet dabei zwischen statischen, also festen IP-Adressen, die bei einer Standleitung vergeben werden, und dynamischen IP-Adressen, die bei jeder Einwahl oder nach einem bestimmten Zeitraum wechseln. ', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Adressen von öffentlichen DNS-Servern ein. Sollten Sie einen Router im Netzwerk haben und dieser fungiert als DNS-Forwarder, so tragen Sie bitte als erste IP die Adresse dieses Routers ein.<p><b>»Discussion Server -> Newsgroups«</b><br>Das Anlegen und Bearbeiten von Newsgroups können Sie im DvISE Administrator unterhalb von »Discussion Server -> Newsgroups« vornehmen. Sie müssen entweder mit der rechten Maustaste, Kontextmenü »Neu«, oder aus dem Menü »Bearbeiten -> Neu« einen neuen Eintrag erstellen.<br>Folgende Einstellungen sind für News-Gruppen möglich:<ul><li><b>Gruppen Name</b><br>Für die Erstellung einer neuen Gruppe tragen Sie hier den Name dieser Gruppe ein. Dieser Name darf keine Leerzeichen und Sonderzeichen, wie z.B. deutsche Umlaute, enthalten. Er muss ausschließlich aus 7-Bit-ASCII-Zeichen bestehen.<li><b>Beschreibung</b><br>Geben Sie hier eine Beschreibung für die aktuelle <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Newsgroup', 'content', 'In diesen globalen Foren im Web wird &uuml;ber diverse Themen diskutiert. Vergleichbar ist dies mit einem schwarzen Brett, auf dem gute Tipps und Informationen zu z.B. David SL weitergegeben werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Newsgroup<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Newsgroup', 'content', 'In diesen globalen Foren im Web wird &uuml;ber diverse Themen diskutiert. Vergleichbar ist dies mit einem schwarzen Brett, auf dem gute Tipps und Informationen zu z.B. David SL weitergegeben werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> an. Dieser Name wird im News <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Client<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> angezeigt.<li><b>Gruppen <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span></b><br>Weisen Sie der aktuellen Newsgroup ein Archive zu, in welchem alle Beiträge dieser Gruppe abgelegt werden sollen.<br>Mit Hilfe des Buttons am Ende des Eingabefeldes können Sie nach einem beliebigen Archive suchen, in dem die News-Gruppe angelegt werden soll. Auch ein direktes Eintragen des kompletten Pfades zu dem gewünschten Archive (in "UNC"-Schreibweise inklusive Servername) ist möglich. <br>Die Einträge aus diesem Menü werden in der Datei »\DAVID\APPS\DSERVER\CODE\DSERVER.GRP« abgelegt.<li><b>Posting erlaubt</b><br>Falls Sie den Teilnehmern dieser Gruppe die Erstellung eigener Beiträge erlauben wollen, aktivieren Sie dieses Kontrollkästchen. Diese Beiträge werden dann ebenfalls im Gruppen-Archive abgelegt. Wenn das Kontrollkästchen deaktiviert ist, so ist für diese Gruppe das Erstellen neuer Beiträge von außen generell nicht möglich.</ul><b>»Discussion Server -> Gruppen Import«</b><br>Der Discussion Server verfügt über eine Importfunktion, die es Ihnen erlaubt, bestehende Newsgroups oder Diskussionsforen von anderen News Servern (sowohl im lokalen Netz als auch im Internet) zu importieren. <br>Nehmen Sie die dazu die erforderlichen Einstellungen unter diesem Menüpunkt vor:<ul><li><b>Hostname</b><br>Tragen Sie hier den Namen des Servers ein, von dem Sie Newsgroups in Ihr System importieren wollen, z.B. "news.tobit.com".<li><b>Gruppenname</b><br>Tragen Sie hier den Namen der Newsgroup ein, die Sie in Ihr System importieren möchten.<li><b>Benutzername & Passwort</b><br>Falls die zu importierende Gruppe mit einem Benutzernamen und Passwort geschützt ist, können Sie hier die notwendigen Angaben eintragen.<li><b>Aktiver Zeitraum</b><br>Bestimmen Sie hier den Zeitraum, in dem der Discussion Server regelmäßig eine Verbindung zu dem entfernten <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'News Server', 'content', 'Innerhalb von Newsgroups tauschen sich Anwender aus und liefern sich gegenseitig Tipps und Hilfestellungen f&uuml;r bestimmte Themen. Auf einem News Server werden diese Daten gespeichert.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >News Server<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'News Server', 'content', 'Innerhalb von Newsgroups tauschen sich Anwender aus und liefern sich gegenseitig Tipps und Hilfestellungen f&uuml;r bestimmte Themen. Auf einem News Server werden diese Daten gespeichert.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> herstellen soll, um die importierte Newsgroup zu aktualisieren.<li><b>Verbindung aufbauen</b><br>Hiermit können Sie das Intervall bestimmen, in dem der Discussion Server regelmäßig eine Verbindung zu dem entfernten News Server herstellen soll, um die importierten Inhalte zu aktualisieren.<li><b>Verbinden an</b><br>Bestimmen Sie hier, an welchen Wochentagen der Discussion Server die importierten Inhalte aktualisieren soll.<li><b>Ziel Archive</b><br>Wählen Sie mittels des Buttons rechts vom Eingabefeld ein DvISE Archive aus, in welches die ausgewählte Newsgroup importiert werden soll.<li><b>Letzter Artikel</b><br>In dieses Feld wird automatisch bei jeder Aktualisierung der zu diesem Zeitpunkt jüngste Artikel eingetragen. Bei der nächsten Aktualisierung würde dann dementsprechend nur Artikel aktualisiert, die jünger sind als dieser Eintrag.</ul><b>»Discussion Server -> IP-Filter«</b><br>Über die IP-Filter kann einzelnen IP-Adressen, Teilnetzen oder auch ganzen Netzwerken der Zugriff auf den Discussion Server gezielt erlaubt oder verboten werden, abhängig von der in der Systemkonfiguration des Discussion Servers gewählten Einstellung für den generellen Zugriff.<p><b>Hinweis:</b><br>Ist der generelle Zugriff erlaubt, so tragen Sie hier die IP-Adressen bzw. Gruppen von IP-Adressen ein, für die der Zugriff auf den Discussion Server gesperrt sein soll. Die Einträge in der Liste werden in diesem Fall durch ein rotes <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Icon<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> gekennzeichnet. <br>Ist der generelle Zugriff  verboten, so sind in diese Liste alle IP-Adressen bzw. IP-Gruppen einzutragen, denen dennoch der Zugriff auf den Discussion Server erlaubt sein soll. Die Einträge besitzen in diesem Fall ein grünes Icon.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(206);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

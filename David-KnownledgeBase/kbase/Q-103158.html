@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-103.158</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Grundkonfiguration des SMTP-Dienstes (David PostMan)</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Wie wird die Grundkonfiguration des SMTP-Dienstes durchgeführt?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David PostMan</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">29.10.2008</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Die Konfiguration der SMTP-Dienste findet unter Windows NT/2000/XP im David.Administrator (Menü »Konfiguration -> PostMan« bzw. bei David.zehn! unter »eMail -> PostMan - SMTP Dienst«) und unter Novell NetWare im Konfigurationsdialog des POSTMAN.NLM statt. Bei einer Standleitung zum Internet geschieht sowohl der Versand als auch der Empfang von eMails über das SMTP Protokoll. Bei einer Wählleitung findet der Versand in jedem Fall über das SMTP Protokoll statt, für das Abholen empfangener eMails vom Provider kann sowohl das POP3 als auch das SMTP Protokoll (per ATRN oder ETRN) verwendet werden. Nehmen Sie folgende Einstellungen vor bzw. überprüfen Sie die eingetragenen Werte.<p><b>Generelle Einstellungen</b><br>Unter dem Menüpunkt »System -> Generell« können Sie grundsätzliche Einstellungen für den eMail-Versand treffen.<ul><li><b>SMTP <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Host<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Name</b><br>Wenn Sie bereits über eine eigene Domäne verfügen, so tragen Sie in das Feld denHost-Namen Ihres Servers ein (z.B. example.com). Der Host-Name entspricht dem »DNS A record« für Ihren Domain-Namen. Dieser Eintrag ist sowohl bei einer Standleitung als auch bei einer Wählverbindung vorzunehmen. Falls Sie eine Wählverbindung nutzen, sind weitere Einstellungen unter dem Punkt »Provider« erforderlich.<p>Besitzen Sie zusätzliche Domain-Namen, für die PostMan ebenfalls eMails entgegennehmen soll, so tragen Sie diese unter dem Punkt »Datenbanken -> Gültige Domain-Namen« in der David PostMan-Konfiguration ein. Wenn Sie über keine eigene Domäne verfügen, so können Sie bei Nutzung einer Standleitung hier auch die lokale IP-Adresse des David Servers eintragen.<p><li><b>Domain Name Server</b><br>Geben Sie hier die IP-Adressen der zu verwendenden Domain Name Server ein. Bei einer Installation unter Windows NT/2000/XP werden automatisch die entsprechenden Werte aus der Windows-Systemkonfiguration übernommen.<p><i>David PostMan nutzt die primäre IP-Adresse des David Servers und TCP-Port 25. Sie können diese Einstellungen in der Datei »\DAVID\APPS\POSTMAN\CODE\POSTMAN.INI« ändern.</i></ul><b>Provider-Einstellungen</b><br>Wenn Sie alle ausgehenden eMails über einen SMTP Relay Server (Smarthost) via Standleitung oder Wählverbindung versenden möchten, aktivieren Sie die entsprechende Option unterhalb des Menüpunktes »System -> Provider« und tragen Sie in das Feld »Mail Server des Providers« den Domain-Namen oder die IP-Adresse dieses Servers ein. Das Feld ist entsprechend vorbelegt,wenn Sie diese Angabe bereits während der David Installation gemacht haben.<p>Falls der Mail Server eine SMTP-Anmeldung erfordert, aktivieren Sie die entsprechende Funktion »Anmeldung erforderlich« und legen Sie über die Option »Parameter« die erforderlichen Daten für die Authentifizierung fest. Wenn Sie auf diesem Server auch POP3-Postfächer besitzen,die regelmäßig über den David Grabbing Server abgefragt werden, sokönnen Sie die dort konfigurierten Anmeldungsparameter übernehmen, indem Sie die Methode »Grabbing Server Zugänge nutzen« wählen. Die Angabe von Benutzername und Passwort ist dann in diesem Fenster nicht erforderlich.<p>Bestimmen Sie unter dem Punkt »Verbindung«, auf welche Weise eMail-Sendeaufträge bearbeitet werden sollen. Aktivieren Sie die Option »eMails sofort senden«, wenn Sie wünschen, dass mit der Übertragung jeder einzelnen eMail sofort nach ihrer Freigabe begonnen werden soll. Diese Einstellung eignet sich besonders für den Betrieb an einer Standleitung.<p>Ist Ihr Server über eine Wählverbindung mit dem Internet verbunden, so bewirkt diese Einstellung, dass für jede zu versendende eMail eine kostenpflichtige Verbindung aufgebaut wird. Um das zu verhindern, können Sie alternativ einen »Aktiven Zeitraum« sowie ein »Intervall« festlegen, in dem regelmäßig die Verbindung zum Provider aufgebaut wird, um alle bis dahin angefallenen eMail-Aufträge gemeinsam an den Mail Host zu übergeben. Zusätzlich können Sie über den Menüpunkt »Verbinden an« bestimmen, ob die Verbindung z.B. an Wochenenden zulässig ist. Mit dem Punkt »Nach Programmstart verbinden« können Sie unter Windows NT/2000/XP eine einmalige Verbindung unmittelbar nach dem Start des Dienstes veranlassen.<p><b>Weiterleitungs-Einstellungen</b><br>Aus Sicherheitsgründen werden in der Standardkonfiguration eMails abgelehnt, die über David PostMan an andere Domains gesendet werden sollen. Wenn Sie stattdessen das Weiterleiten ermöglichen wollen, nehmen Sie die notwendigen Einstellungen unter diesem Punkt vor.<ul><li><b>Weiterleiten</b><br>Aktivieren Sie diesen Schalter, um das Weiterleiten generell zu erlauben. So genannte Forward-Jobs werden dann von David PostMan angenommen und an die angegebene Domain weitergeleitet. So lassen sich auch eMails mit anderen eMail Clients (z.B. Microsoft Outlook oder Netscape Messenger) versenden.<p><li><b>Ohne Einschränkungen</b><br>Diese Einstellung ist nur verfügbar, wenn die Option »Weiterleiten« ausgewählt wurde. Aktivieren Sie diese Funktion, wenn PostMan alle Weiterleitungen generell ohne weitere Prüfung bearbeitensoll. Wenn Sie verhindern wollen, dass David PostMan missbräuchlich als Forwarder verwendet wird, deaktivieren Sie diese Funktion und klicken Sie auf den Schalter Einschränkungen, um Sicherheitseinstellungenvorzunehmen.<p><li><b>Einschränkungen</b><br>Dieser Schalter ist nur verfügbar, wenn die Option »Ohne Einschränkungen« deaktiviert ist. Wählen Sie diesen Punkt, wenn Sie Einschränkungen für die Nutzung von David PostMan als Forwarder treffen wollen. Daraufhin öffnet sich ein weiterer Dialog, in welchem Sie über verschiedene Einstellungen genau festlegen können, in welchen Fällen PostMan Weiterleitungenbearbeiten oder ablehnen soll. Hier stehen folgende Optionen zur Verfügung:<p><li><b>MX Überprüfung beim Weiterleiten</b><br>Ist diese Einstellung aktiviert, so wird bei einem Forward-Job zunächst über eine Anfrage beim DNS Server geprüft, ob der eigene Mail Server für die Ziel-Domain als gültiger Forwarder eingetragen ist. Existiert ein entsprechender MX-Eintrag, so wird der Forward-Job akzeptiert. Anderenfalls lehnt David PostMan einen solchen Auftrag ab.<p><i>Wenn sich der DNS Server nicht im eigenen LAN befindet, können zusätzliche Kosten entstehen, da unter Umständen für jeden DNS-Check eine kostenpflichtige Verbindung zum Provider aufgebaut wird. Deaktivieren Sie diese Funktion, wenn Sie wünschen, dass alle Forward-Jobs ohne die Durchführungeiner MX-Überprüfung angenommen werden sollen.</i><p><li><b>POP3/IMAP Anmeldung erforderlich</b><br>Diese Option bewirkt, dass ein Weiterleiten nur dann möglich ist, wenn der Absender eines Forward-Jobs zuvor eine POP3- oder IMAP4-Anfrage durchgeführt hat, und somit eine Authentifizierung stattgefunden hat. Ohne eine solche Authentifizierung wird keine Weiterleitung durchgeführt.<p><i>Um diese Art der Authentifizierung nutzen zu können, ist der Betrieb und die korrekte Konfiguration des Mail Access Servers erforderlich. In der Standardkonfiguration werden Forward-Jobs ausschließlich innerhalb von zehn Minuten nach der letzten Authentifizierung ausgeführt.Danach ist eine erneute Authentifizierung erforderlich. Die Länge dieses Zeitraums kann in der Datei MASERVER.INI im Verzeichnis »\DAVID\APPS\MASERVER\CODE« über den Parameter»AuthTimeWindow« frei definiert werden.</i><p><li><b>SMTP Anmeldung erforderlich</b><br>Wählen Sie diese Funktion, wenn Sie wünschen, dass Weiterleitungen nur stattfinden, wenn der Absender zuvor eine SMTP-Authentifizierung durchgeführt hat. Drücken Sie den Schalter »Parameter«, um die gewünschte Authentifizierungsmethode sowie den Benutzernamenund das Passwort zu definieren.<p><li><b>Datenbanken</b><br>Entscheiden Sie, ob und welche PostMan Datenbanken verwendet werden sollen, um den Einsatz von David PostMan als Forwarder einzuschränken. Wenn Sie beispielsweise wünschen, dass die Einträge in der Datenbank »Erlaubte Absenderadressen« auch bei Weiterleitungen berücksichtigt werden, aktivieren Sie hier die Option »Erlaubte Absenderadressen verwenden«.<p>Über den Punkt »Datenbanken« im PostMan Konfigurationsmenü haben Sie Zugriff aufdiese Datenbanken und können bei Bedarf bestehende Einträge ändern oder neue Einträge hinzufügen.<p><li><b>Wiederholungen</b><br>Definieren Sie, ob und in welchen Zeitabständen weitere Sendeversuche erfolgen sollen, falls Weiterleitungen fehlschlagen. Tragen Sie die gewünschten Zeitabstände in Minuten ein.<p><li><b>Benachrichtigung bei Verspätung</b><br>Bestimmen Sie einen Zeitraum, nach dessen Ablauf die Absender von eMails über eine verspätete Bearbeitung ihrer Sendeaufträge informiert werden sollen. Ist der Versand bzw. die Weiterleitung einer eMail innerhalb des hier festgesetzten Zeitraums nicht möglich, wird dem Absender automatisch eine entsprechende Benachrichtigung per eMail zugesendet.<p>Der Text für die automatischen Benachrichtigung ist in der Datei DELAYED.TXT abgelegt und kann bei Bedarf abgeändert werden. Die Datei befindet sich im Verzeichnis »DAVID\APPS\POSTMAN\CODE« auf dem David Server.<p><li><b>Ablauf</b><br>Legen Sie fest, nach welchem Zeitraum keine weiteren Wiederholungen mehr durchgeführt werden sollen. Ist der Versand bzw. die Weiterleitung einer Nachricht innerhalb des hier festgelegten Zeitraums nicht möglich, wird der Sendeauftrag verworfen und dem Absender automatisch eine entsprechende Benachrichtigung per eMail zugesendet.<p>Der Text für die automatische Benachrichtigung ist in der Datei POSTMAN.TXT abgelegt und kann bei Bedarf abgeändert werden. Die Datei befindet sich im Verzeichnis »DAVID\APPS\POSTMAN\CODE« auf dem David Server.</ul><b>DFÜ-Einstellungen (nur unter Windows NT/2000/XP)</b><br>Falls Sie per Wählleitung mit dem Internet verbunden sind, können Sie eine Windows-DFÜ-Verbindung für das regelmäßige Einwählen nutzen. Voraussetzung dafür ist, dass die ausgewählte DFÜ-Verbindung korrekt unter Windows eingerichtet wurde. Aktivieren Sie auf der Registerkarte »System -> DFÜ Netzwerk« die Funktion »DFÜ-Verbindung automatisch aktivieren« und wählen Sie die gewünschte Verbindung aus.<p>Tragen Sie anschließend in die Felder »Benutzername« und »Passwort« die entsprechenden Daten für die ausgewählte DFÜ-Verbindung ein. Die Zeitintervalle für den Aufbau der Verbindung werden in den Provider-Einstellungen eingerichtet. Falls eine DFÜ-Einstellung vorliegt,versucht David PostMan durch diese Einstellung die Verbindung mit dem Internet aufzubauen.<p><b>Erweiterte Einstellungen</b><br>Unter dem Menüpunkt »System -> Erweitert« können Sie zusätzliche Optionen für den Betrieb von David PostMan konfigurieren.<ul><li><b>Monitor Informationen</b><br>Während des Betriebs protokolliert David PostMan die Kommunikation mit den anderen Mail Hosts. Dabei werden alle gesendeten Kommandos und die darauffolgenden Antworten aufgezeichnet.<p>Die jeweils letzten 100 Zeilen dieses Protokolls können unter dem Menüpunkt »Monitor -> Ports -> David PostMan« im David.Administrator (unter Microsoft Windows NT/2000/XP) bzw. unter dem Hauptmenüpunkt »Monitor« des PostMan NLMs (unter Novell NetWare)eingesehen werden. <p>Über den Schalter »Monitor Informationen« kann bestimmt werden, wie detailliert dieses Kommunikationsprotokoll geführt werden soll. Die möglichen Einstellungen reichen von »Off« (keine Protokollierung) bis »Vollständig« (Protokollierung aller Meldungen).<p><i>Diese Informationen können in die Datei »\DAVID\APPS\POSTMAN\CODE\POSTMAN.DEB« geschrieben werden. Dafür fügen Sie den Parameter FILE=TRUE in die Datei »\DAVID\APPS\POSTMAN\CODE\POSTMAN.INI« ein.</i><p><li><b>Original Nachricht speichern</b><br>Wenn diese Funktion aktiviert ist, wird eine Kopie der Original-Nachricht inklusive Mail Header und allen Dateianhängen gespeichert. Diese Kopie wird unmittelbarnach dem Empfang angelegt und enthält die Nachricht in genau derForm, wie sie empfangen wurde, ohne dass bereits Konvertierungen stattgefundenhaben. Sie wird in der Kommentardatei des zugehörigen Archive-Eintrags abgelegt. Bei eventuellenSende- oder Empfangsproblemen kann der Inhalt dieser Datei wichtige Hinweisezur Fehlerbehebung geben. <p>Zur Einsicht dieser Informationen in der Kommentardatei klicken Sie im David.InfoCenter mit der rechten Maustaste auf des betreffende Dokument in der Eintragsliste und wählen Sie aus dem Kontextmenü die Funktion »Erweiterte Informationen«.<p><i>Wenn Sie diese Funktion nutzen möchten, müssen Sie berücksichtigen, dass hierdurch ein erhöhter Speicherplatzbedarf auf der Festplatte des Servers entsteht. So benötigen eMails mit Dateianhängen in diesem Fall sogar mehr als den doppelten Speicherplatz, da die Attachments zusätzlich im 7-Bit-Format, in welchem die Übertragung stattfindet, gespeichert werden.</i><p><li><b>Verteiler-Liste anhängen</b><br>Bei Aktivierung dieser Funktion werden die »To«- und »Cc«-Informationen einer empfangenen eMail am Ende des Mail-Textes angehängt. Diese Liste enthält also alle eMail-Adressen, an die ein Original oder eine Kopie der entsprechenden Nachricht gesendet wurde.<p><li><b><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Server Locator Services', 'content', 'Die Server Locator Services simulieren trotz einer dynamischen IP-Adresse eine  Standleitung. So kann David zum Beispiel schon mit einer DSL-Flat als echter eMail-Server mit einer st&auml;ndigen Internetverbindung betrieben werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Server Locator Services<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Server Locator Services', 'content', 'Die Server Locator Services simulieren trotz einer dynamischen IP-Adresse eine  Standleitung. So kann David zum Beispiel schon mit einer DSL-Flat als echter eMail-Server mit einer st&auml;ndigen Internetverbindung betrieben werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span></b><br>Wenn Sie die Server Locator Services von David einsetzen, um die Verbindung zum Internet herzustellen, müssen Sie diese Option aktivieren. <p><li><b>TLS Empfang erlauben</b><br>Aktivieren Sie diese Funktion, wenn Sie den Empfang von eMails über sichere TLS-Verbindungen ermöglichen möchten. In diesem Fall müssenSie über ein entsprechendes Zertifikat verfügen, das die Kommunikation überTLS-Verbindungen erlaubt. Dieses Zertifikat dient zur eindeutigen Identifikation und beinhaltet ebenfalls die Code-Schlüssel, welche für die Nachrichtenübertragung verwendet werden.<p><li><b>TLS bei Versand verwenden</b><br>Bestimmen Sie, ob und in welcher Weise der Versand von eMails über gesicherteTLS-Verbindungen erfolgen soll. Wählen Sie die Option »Nie«, wenn TLS beimVersand von eMails generell nicht verwendet werden soll. Bei der Einstellung »Wenn möglich«wird bei jedem Sendeauftrag zunächst überprüft, ob der Aufbau einer sicherenTLS-Verbindung zum Empfänger möglich ist. Gelingt dies, so erfolgt der Versand in verschlüsselter Form über diese Leitung. Wird bei der Prüfung festgestellt, dass keineTLS-Verbindung zu der entsprechenden Gegenstelle möglich ist, erfolgt der Versand automatisch unverschlüsselt. Ist die Option »Erzwingen« gewählt, so werden eMails ausschließlich dann versendet, wenn eine TLS-Verbindung mit der Gegenstelle hergestellt werdenkann. Dies kann auch für einzelne Nachrichten direkt im David.InfoCenter über den entsprechenden Schalter in den »Nachrichten Optionen« eingestellt werden. Der Versand findet indiesem Fall generell in verschlüsselter Form statt. Ein unverschlüsselter eMail-Versand ist bei dieser Einstellung nicht möglich.<p>Sendeaufträge, die nicht als TLS-Nachricht übertragen werden können, werden nicht ausgeführt und erscheinen mit einer entsprechenden Fehlermeldung im Ausgangs-Archive des Absenders.<p><li><b>Verbindung</b><br>Bestimmen Sie hier als »Timeout« eine Zeit in Sekunden, in der David PostMan auf eine Antwort des DNS Servers wartet. Ist dieser Wert zu niedrig, kann es bei Wählverbindungen zu einem vorzeitigen Verbindungsabbau kommen.<p><b>Hinweis:</b><br>Weitere Informationen zu dem Thema »Externe eMail mit eigener Internet-Anbindung« erhalten Sie im <a href="https://club.tobit.com/login/KBArticle.asp?ArticleID=3156"><b>KnowledgeBase Artikel 103.156</b></a>.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(3158);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

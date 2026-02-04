@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-107.971</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Grundlagen zu den Bussystemen EIB, LCN und Beckhoff</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Es werden grundlegende Informationen zu den Bussystemen EIB, LCN und Beckhoff benötigt.</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">Automation</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">24.03.2010</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>EIB (European Installation Bus)</b><p><b>Allgemein</b><br>Der European Installation Bus ist der bekannteste und verbreitetste Elektrobus in Europa. Die Technik stammt ursprünglich von Siemens und wird seit 1987 unter dem Namen »Instabus« entwickelt. Schwerpunkt ist der Einsatz in Haus – und Gebäudetechnik. Viele Firmen bieten zusammen ca. 4000 Produktgruppen für den EIB an. Der EIB ist ein dezentral aufgebautes System. Jeder Teilnehmer (ob <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Sensor', 'content', 'Der Sensor hat im Gegensatz zum Aktor in der Geb&auml;udeautomation die Aufgabe eine Information aufzunehmen und weiterzuleiten. Ein Temperaturf&uuml;hler leitet bspw. die Information &quot;Ich habe mehr als 25° C&quot; an den Server weiter, der daraufhin den verschiedenen Aktoren den Befehl zum Fenster schlie&szlig;en, Klimaanlage hochfahren und Rasensprenger starten gibt.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Sensor<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Sensor', 'content', 'Der Sensor hat im Gegensatz zum Aktor in der Geb&auml;udeautomation die Aufgabe eine Information aufzunehmen und weiterzuleiten. Ein Temperaturf&uuml;hler leitet bspw. die Information &quot;Ich habe mehr als 25° C&quot; an den Server weiter, der daraufhin den verschiedenen Aktoren den Befehl zum Fenster schlie&szlig;en, Klimaanlage hochfahren und Rasensprenger starten gibt.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> oder Aktor) verfügt über einen eigenen Mikrocomputer und EEPROM. Dadurch wird ein zentrales Steuergerät überflüssig. Ein Totalausfall dieses Systems ist damit praktisch unmöglich. Der Ausfall eines einzelnen Teilnehmers bedeutet nur den Ausfall einer einzelnen Funktion im System. <p><b>Verkabelung/Busteilnehmer</b><br>Die Busteilnehmer werden über eine 2-Drahtleitung (TwistedPair) miteinander verbunden. Diese Leitung dient zum einen der Datenübertragung und zum anderen der Versorgungsspannung von 28 V Gleichspannung. Jeder Busteilnehmer besitzt einen Busankoppler, um die Verbindung zum Datenbus herzustellen. Der Busankoppler enthält einen Mikroprozessor mit verschiedenen Speicherarten. Darin wird sowohl die lokale Applikation (z.B. Licht dimmen) wie auch die Kommunikation mit den anderen Teilnehmern abgewickelt. Das Anwendungsmodul (z.B. Zweifach-Taster) wird über die 10-polige Anwenderschnittstelle (AST) mit dem Busankoppler verbunden (aufgesteckt). <p><b>Adressierung/Werteübergabe</b><br>Alle Teilnehmer des Busses verfügen über eine physikalische Adresse, die für die Programmierung (Parametrierung) der Teilnehmer mit der ETS (EIB Tool Software) verwendet wird. Die physikalische Adresse dient nicht der Adressierung für die Telegramme! Mit Hilfe der Software werden den Teilnehmern Gruppenadressen zugeordnet. Die Gruppenadresse stellt die Adresse eines / mehrerer Teilnehmer mit der entsprechenden Applikation dar. Soll z.B. über einen Taster eine Beleuchtung geschaltet werden, so bilden der Taster (Sensor) und die Beleuchtung (Aktor) eine Gruppenadresse, der eine bestimmte Applikation zugeordnet ist (schalten). Wenn über den gleichen Taster die gleiche Beleuchtung gedimmt werden soll, bekommen die Teilnehmer eine andere bzw. zusätzliche Gruppenadresse, die die Applikation „dimmen“ berücksichtigt. Für die Sensoren, speziell Taster, sind mehrere Applikationen vorgesehen. Ein Zweifach-Taster hätte z.B. die Applikationen dimmen, schalten und Jalousie. <p align="center"><img src="/graphic/kb/D-107.971-01.GIF"></p><p>Die Applikationen sind Serienprodukte und können vom Anwender nicht verändert werden. Ein EIB Aktor unterstützt nur bestimmte Applikationen, die im Aktor hinterlegt sind und nicht geändert werden können. Um z.B. eine Lampe zu dimmen, wird ein Dimmaktor benötigt. Für die Jalousiesteuerung wird ein Jalousieaktor benötigt, um Steckdosen zu schalten wird ein Schaltaktor benötigt, etc. Eine EIB-Gruppenadresse hat den folgenden Aufbau: »0/0/10«. Die erste Stelle gibt die Haupt-, die zweite Stelle die Mittel- und die dritte Stelle die Untergruppe an. Es kann maximal 15 Hauptgruppen mit jeweils 7 Mittelgruppen geben, die wiederum jeweils maximal 255 Untergruppen haben können. <p>Zusätzlich zur Gruppenadresse muss der Wert übergeben werden, damit die Teilnehmer wissen, ob sie z.B. ein- oder ausschalten sollen. Bei Schaltvorgängen sind dies lediglich die Werte 1 (an) und 0 (aus), beim Dimmen werden die Werte 9 (aufdimmen), 0 (Stopp) und 1 (herunterdimmen) verwendet.<p> Im Zusammenhang mit EIB sollte auch der Konnex oder KNX Bus erwähnt werden. Bestandteil dieses Busses ist u.a. der EIB. Daher ist auch eine Kompatibilität mit dem KNX Bus gegeben.<p><b>Hinweis:</b><br>Weitere Informationen zu diesem Bussystem erhalten Sie auf der folgenden WebSite:<ul><li><a href="http://www.eiba.com" target="_self"><b>http://www.eiba.com</b></a><p><li>Beachten Sie den KnowledgeBase Artikel <a href="KBArticle.asp?ArticleID=9954" target="_self"><u>Q-109.954</u></a> bei Nutzung von »EIB« TLDs auf einem 64-Bit Betriebssystem.</ul></p><b>LCN (Local Control Network)</b><p><b>Allgemein</b><br>Das Elektrobussystem LCN wurde 1994 von der Firma Issendorff vorgestellt und ist wie EIB dezentral aufgebaut. Sensor und Aktor verfügen über eine gewisse Intelligenz wodurch auch hier eine zentrale Steuereinheit überflüssig wird. Der LCN- Bus ist hauptsächlich für die Haus- und Gebäudeautomation vorgesehen.<p><b>Verkabelung</b><br>Die einzelnen Module werden über eine zusätzliche Ader der Hauptverkabelung (NYM) miteinander verbunden. Zusätzlich zur Datenader müssen für die Stromversorgung noch Phase und Neutralleiter an die Module angeschlossen werden. Es sind im Gegensatz zu EIB und Beckhoff keinerlei Trafos erforderlich, da diese - falls benötigt - bereits in jedem Modul integriert sind.<p><b>Adressierung/Werteübergabe</b><br>Den Modulen werden Adressen zugewiesen, mit denen sie im Bus angesprochen werden können. Anders als bei EIB handelt es sich hier nicht um Gruppenadressen, die die Funktion beinhalten sondern um die reine Adresse des Moduls. Die Funktion wird zusätzlich zur Adresse übergeben. Eine Adresse eines LCN-Moduls mit der entsprechenden Funktion sieht wie folgt aus: »M000010.A1« Dabei steht das „M“ zu Beginn für Modul. Bei LCN lassen sich auch mehrere Module zu einer Gruppe zusammenfassen, dann würde das erste Zeichen ein „G“ sein. Das Zusammenfassen der Module zu Gruppen dient lediglich der Vereinfachung und nicht wie bei EIB der Funktionalität. Die nachfolgenden sechs Stellen geben die eigentliche Adresse des Moduls wieder, wobei die ersten drei Stellen die Segment- und die letzten drei Stellen die Moduladresse darstellen. In einem LCN-Bus können maximal 120 Segmente mit jeweils maximal 250 Modulen existieren (maximal 30.000 Module möglich). Die einzelnen Segmente werden über so genannte Segmentkoppler miteinander verbunden. Der nun folgende „.“ in der Modul-ID dient der Trennung von Adresse und Funktion. In diesem Beispiel wird als Funktion der Ausgang 1 des Moduls angesprochen (.A1). Ein Modul hat in der Regel zwei Ausgänge (A1 und A2) und mehrere Anschlüsse für Eingänge (I-Port bzw. T-Port) und Peripheriemodule (P-Port). Die Ausgänge können aber z.B. mit einem Relaismodul auf bis zu 8 Ausgänge erweitert werden. Viele LCN-Module bieten die Möglichkeit Bewegungsmelder, Temperaturfühler, Helligkeitssensoren etc. direkt anzuschließen. <p>Alle LCN-Module können Sensor und Aktor zugleich sein. Anders als beim EIB unterstützt ein Modul eine Vielzahl von Funktionen, die bei der Parametrierung ausgewählt werden können. Ein Modul kann sowohl schalten und dimmen als auch z.B. Bewegungen erfassen, Temperaturen messen oder auch die Jalousie-Steuerung übernehmen. <p>Zusätzlich zur Adresse und Funktion wird der Wert für die entsprechende Aktion übergeben. Soll z.B. Die Beleuchtung eingeschaltet werden, wird der Befehl »DI100000« verwendet. Dabei steht »DI« für dimmen, die folgenden drei Stellen geben die Intensität in Prozent an (in diesem Fall 100 %). Die letzten drei Stellen sind für die „Rampe“ reserviert. Mit der Rampe wird angegeben in welcher Zeit die angegebene Intensität erreicht werden soll. Die Rampe kann im Gegensatz zu EIB jederzeit neu übermittelt werden. <p><b>Hinweis:</b><br>Weitere Informationen zu diesem Bussystem erhalten Sie auf der folgenden WebSite:<ul><li><a href="http://www.lcn.de" target="_self"><b>http://www.lcn.de</b></a></ul><b>Beckhoff</b><p><b>Allgemein</b><br>Beckhoff realisiert offene Automatisierungssysteme auf Basis der PC-kompatiblen Steuerungstechnik. Das Produktspektrum beinhaltet die Hauptbereiche Industrie-PC, Feldbuskomponenten, Antriebstechnik und Automatisierungssoftware und ist darüber hinaus gegenüber anderen Bussystemen sehr platzsparend. Für alle Bereiche stehen Produktlinien zur Verfügung, die als Einzelkomponenten oder im Verbund als ein vollständiges, aufeinander abgestimmtes Steuerungssystem eingesetzt werden können. Komponenten und Systemlösungen von Beckhoff sind weltweit in den verschiedensten Anwendungen im Einsatz.<p><b>Verkabelung</b><br>Die Verdrahtung der feinmodularen mehrkanaligen Busklemmen erfolgt dezentral in der Unterverteilung oder zentral im Schaltschrank. Das offene System ermöglicht eine einfache und schnelle Nachrüstung von Gebäudefunktionalitäten. Für die busneutralen Reihenklemmen stehen Buskoppler für alle gängigen Bussysteme zur Verfügung: Profibus, Interbus, CANopen, DeviceNet, ControlNet, Beckhoff Lightbus, Sercos. Die PC-Anbindung der Buskoppler kann über die folgenden Schnittstellen realisiert werden: USB, RS485, RS232 und Ethernet TCP/IP.<p>Ethernet TCP/IP Busankoppler:<br> Der für den Einsatz in der Gebäudeautomatisierung prädestinierte Busklemmen Controller BC9000 mit Ethernet Anschluss enthält eine IEC 61131-3 SPS mit integrierten Steuerungsfunktionalitäten:<p>Signale für die Bereiche Licht, Temperatur, Beschattung oder dieHKL-Regelung werden direkt im Controller verarbeitet und können an übergeordnete Controller oder PCs weitergeleitet werden. Die zentral vorhandenen Daten wie z.B. Regelungssollwerte, Sicherheits- und Zutrittskontrolldaten kommunizieren über den Buskoppler via Ethernet TCP/IP mit der PC-Steuerung.<p><b>Adressierung/Wertübergabe</b><br>Die Adressierung der Module erfolgt im Gegensatz zu EIB und LCN automatisch und muß nicht manuell vorgenommen werden. Da auf jedem Buscontroller eine eigenes SPS-Programm gespeichert ist, können Gruppen individuell über die Anwendersoftware programmiert und auf den Controller übertragen werden.<p>Die Anzahl der Ein- und Ausgänge (Sensoren und <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Aktoren', 'content', 'Die Aktoren sind im Gegensatz zu den Sensoren die Befehlsausf&uuml;hrenden in der Geb&auml;udeautomation. Ein Aktor sorgt z.B. daf&uuml;r, dass das Licht eingeschaltet wird, nachdem er den Befehl erhalten hat, es einzuschalten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Aktoren<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Aktoren', 'content', 'Die Aktoren sind im Gegensatz zu den Sensoren die Befehlsausf&uuml;hrenden in der Geb&auml;udeautomation. Ein Aktor sorgt z.B. daf&uuml;r, dass das Licht eingeschaltet wird, nachdem er den Befehl erhalten hat, es einzuschalten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>) ist pro Controller auf 64 Busklemmen begrenzt, kann aber durch den Einsatz von weiteren Buscontrollern nahezu unendlich erweitert werden. Die Begrenzung ist abhängig vom verwendeten Netzwerk-Klassifikation. <p>Es werden folgende Werte übergeben:<p>beckh:192.168.123.5.1.1/800/4020/123<br>(SubType: Ams-Net-ID/Port/Speicherbereich/Ausgang)<p><b>Hinweis:</b><br>Weitere Informationen zu diesem Bussystem erhalten Sie auf der folgenden WebSite:<ul><li><a href="http://www.beckhoff.de" target="_self"><b>http://www.beckhoff.de</b></a></ul></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(7971);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

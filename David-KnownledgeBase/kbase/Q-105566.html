@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-105.566</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Aufnahme von TV-Sendungen im David InfoCenter</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Wie können TV-Sendungen im David InfoCenter aufgenommen werden?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David.InfoCenter PC</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">6.02.2006</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>TV-Programmübersicht</b><br>Das zentrale Element für die Aufnahmeplanung ist die TV-Programmübersicht. Dabei handelt es sich um eine elektronische Fernsehzeitschrift, die sich in Aussehen und Handhabung an gedruckten Fernsehzeitschriften orientiert. Entscheidend ist, dass Sie diese Zeitschrift nicht jede Woche neu kaufen müssen, sondern dass sie über das Internet aktualisiert wird. So finden auch kurzfristige Programmänderungen den Weg in die aktuelle Programmübersicht.<p>Sie finden Ihr TV-Programm im Archive-Baum des Tobit InfoCenters unter dem Menüpunkt »Programmübersicht«. Diese Programmübersicht enthält spaltenweise das Programm der ausgewählten Fernsehsender, jeweils in Stundenblöcken abgesetzt und farbig hinterlegt. Beim Öffnen wird die Ansicht zeitlich so eingestellt, dass Sie das gerade laufende Fernsehprogramm im Blick haben. Durch den Schieberegler unterhalb der Programmübersicht können Sie horizontal durch die Sender scrollen.<p>Die Titelzeile der Programmübersicht enthält neben dem Wochentag und dem zugehörigen Datum je eine Schaltfläche, um zum vorigen bzw. nächsten Wochentag zu wechseln. Über den Menüpunkt »Aufnahmeplanung« finden Sie eine Übersicht der zur Aufnahme vorgesehenen Sendungen, deren Kurzform Sie in der ganz linken Programmspalte sehen. Mit »Einstellungen« können Sie Ihr Benutzerprofil für die TV-Aufzeichnungen und das Aussehen der Programmübersicht beeinflussen. Die beiden letztgenannten Optionen werden in den folgenden Abschnitten behandelt.<p><b>Sendungen aufzeichnen</b><br>Sie können eine Sendung zum einen vollständig »von Hand« für die Aufnahme programmieren, eine bestimmte Sendung aus der TV-Übersicht für die automatische Aufnahme auswählen oder es einem »intelligenten« Aufnahmeprofil überlassen, die für Sie interessanten Sendungen in Ihrem Auftrag aufzuzeichnen.<p><b>Manuelle Aufzeichnung</b><br>Bei der manuellen Aufzeichnung stellen Sie sämtliche Aufnahmeparameter von Hand ein. Gehen Sie dazu folgendermaßen vor:<ol><li>Markieren Sie im <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit Archive System<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> »Programmübersicht« und klicken Sie anschließend in der Symbolleiste auf »Neu«. Es öffnet sich das Dialogfenster »Programmaufnahme«.<li>Vergeben Sie einen Betreff für die Aufnahme oder wählen Sie einen Betreff aus der Liste, indem Sie den kleinen Pfeil neben dem Eingabefeld anklicken.<li>Tragen Sie bei Bedarf einen Kommentar zur aufzunehmenden Sendung ein.<li>Geben Sie in das Feld »Kanal« den Namen den Kanals ein, von dem die Sendung aufgezeichnet werden soll. Wählen Sie alternativ einen Kanal aus der Liste.<li>Setzen Sie den Schalter »Sofort«, wenn unmittelbar mit der Aufnahme begonnen werden soll. Ist dieser Schalter deaktiviert, bestimmen Sie Datum und Uhrzeit für die Aufnahme.<li>Wählen Sie unter »Dauer« aus der Liste eine Zeitspanne, wie lange das System aufnehmen soll.<li>Mit einem Mausklick auf »Aufnehmen« wird der Aufnahme-Auftrag erstellt und je nach Einstellung sofort oder zum festgelegten Zeitpunkt gestartet. Sie finden den Auftrag im Versandbuch des Tobit InfoCenters.</ol><b>Komfort-Aufzeichnung</b><br>Die Komfort-Aufzeichnung macht es sehr einfach, aus der aktuellen Programmübersicht eine Sendung für die Aufnahme vorzusehen:<ol><li>Markieren Sie im Tobit Archive System das Archive »Programmübersicht« und wechseln Sie über die Schaltflächen »Vorheriger Tag« oder »Nächster Tag« in der Titelzeile zum gewünschten Tag, an dem die Sendung ausgestrahlt wird, die Sie aufnehmen möchten.<li>Klicken Sie mit dem Mauszeiger auf den Namen der Sendung, die Sie aufnehmen möchten. Es öffnet sich ein Dialogfenster mit dem Sendungsnamen in der Titelzeile.<li>Klicken Sie auf die Schaltfläche »Sendung aufzeichnen«. Daraufhin öffnet sich das gleichnamigeDialogfenster. Hier können Sie weitere Einstellungen für die Aufnahme vornehmen (s. Dialogfenster »Sendung aufzeichnen«). Bestätigen Sie Ihre Eingaben mit »OK«, um die Aufnahmeplanung abzuschließen. Sie finden den Aufzeichnungsauftrag im Versandbuch des Tobit InfoCenters.</ol><b>Dialogfenster »Sendung aufzeichnen«</b><br>In diesem Dialogfenster können Sie einige Optionen für die Aufzeichnung festlegen:<ul><li><b>Erweiterung des Aufnahmezeitraums</b><br>Wenn die Aufnahme einige Minuten vor dem offiziellen Beginn gestartet werden soll, geben Sie unter »Vorlaufzeit« die gewünschte AnzahlMinuten ein. Ein Standardwert kann in den Grundeinstellungen für TV-Aufzeichnungen eingestellt werden.<p>Mit dem Wert »Nachlaufzeit« bestimmen Sie, wie lange eine Sendung nach dem offiziellen Ende noch weiter aufgezeichnet wird. Wählen Sie aus der Liste neben dem Eingabefeld aus, ob die eingetragene Zahl sich auf eine absoluteZeitangabe »in Minuten« bezieht, oder auf einen relativen Wert in »% der Dauer«. Auch hier kann in den Grundeinstellungen für TV-Aufzeichnungen ein Standardwert eingestellt werden.<p><li><b>Sendungen mit diesem Titel generell in die automatische Aufnahmeplanung übernehmen</b><br>Setzen Sie diesen Schalter, wenn diese Sendung generell aufgezeichnet werden soll. So verpassen Sie z.B. nie Ihre Lieblingsserie.<p><li><b>Titel vor der Übernahme in die Aufgabenplanung editieren</b><br>Wenn Sie den vorigen Schalter gesetzt haben, können Sie mit dieser Option veranlassen, dass im Anschluss ein weiteres Dialogfenster geöffnet wird, in dem zusätzliche Einstellungen vorgenommen werden können.</ul><b>Aufzeichnungsprofil</b><br>Mit dem »Aufzeichnungsprofil« besitzen Sie eine automatische Aufnahmeplanung, die nach Ihren Vorgaben das gesamte Fernsehprogramm aller ausgewählten Sender Tag und Nacht durchsucht und bewertet. In eine Favoriten-Liste können Sie individuelle Schlüsselwörter eintragen, nach denen in den Titeln der TV-Sendungen gesucht wird (z.B. »heute«), wobei auch Teilbegriffe berücksichtigt werden. Die gefundenen Sendungen werden mit hoher Priorität aufgezeichnet. Genauso können Sie in eine Ausschluss-Liste Schlüsselwörter eintragen. Diese Sendungen werden dann auf jeden Fall von der Aufnahme ausgeschlossen.<p>Grundlage für die Bewertung des Fernsehprogramms sind zwei Kriterien. Zum einen das für jede Sendung vergebene Punktesystem zu den Kategorien »Popularität«, »Spielfilm«, »Humor«, »Information«, »Erotik«, »Action«, »Sport« und »Gefühl«. Hier wird von unserem Redaktionsteam eine Bewertung (eins bis sieben) vergeben, die Sie in den Detail-Informationen jeder Sendung finden. Zum anderen Ihre persönliche Bewertung jeder Kategorie, die Sie in den Systemeinstellungen vornehmen können (s.u.). Über die Verknüpfung dieser zwei Kriterien wird festgelegt, welche Sendung tatsächlich aufgezeichnet wird, wenn zwei gleichzeitig ausgestrahlte Sendungen auf verschiedenen Kanälen für die Aufnahme vorgesehen sind.<p>So stellt David Home Ihr ganz persönliches Fernsehprogramm zusammen, welches zudem – z.B. für Nachrichtensendungen – immer auf dem neuesten Stand gehalten werden kann.<p>Um ein individuell abgestimmtes Profil festzulegen, verfahren Sie wie folgt:Markieren Sie im Tobit Archive System das Archive »Programmübersicht«.<ul><li>Wählen Sie in der Titelleiste der Programmübersicht »Einstellungen« und wechseln Sie auf die Registerkarte »Schlüsselwörter«.<p><li>Klicken Sie neben der Favoriten-Liste auf »Hinzufügen«. Es öffnet sich das Dialogfenster »Textbewertung«.<p><li>Tragen Sie in das Eingabefeld das gewünschte Schlüsselwort oder einen Teilbegriff ein. Die Optionen in diesem Dialogfenster werden auf Seite 35 im Abschnitt zur Registerkarte »Schlüsselwörter« im Einzelnen beschrieben.<p><li>Klicken Sie auf »OK«, um Ihre Einstellungen abzuschließen. Das Schlüsselwort wird ans Ende der Liste eingefügt. Die Reihenfolge der Schlüsselwörter bestimmt deren Priorität. Um den Stellenwert für einen Begriff zu erhöhen oder zu verringern, markieren Sie ihn und ordnen ihn mit den Schaltflächen »Nach oben« bzw. »Nach unten« an die gewünschte Position.<p><li>Klicken Sie neben der "Ausschluß Liste" auf »Hinzufügen«, wenn Sie Sendungen mit bestimmten Schlüsselwörtern oder Teilbegriffen von der Aufzeichnung ausschließen möchten. Sind Schlüsselwörter oder Teilbegriffe sowohl in die "Favoriten Liste" als auch in die "Ausschluß Liste" eingetragen, wird die betreffende Sendung nicht aufgezeichnet.<p><li>Wechseln Sie anschließend auf die Registerkarte »Profil«. Stellen Sie für jede Kategorie mithilfe der Schieberegler eine Position zwischen »unwichtig« und »wichtig« ein, je nachdem wie hoch Sie die jeweilige Kategorie bewerten. Wählen Sie aus der Liste unter »Automatismus«, wie mit dem Profil verfahren werden soll. Die Auswahl »Diese Einstellungen nicht beachten« ignoriert das Profil vollständig, »Nur besonders hohe Bewertungen beachten« berücksichtigt nur die Einstellungen, bei denen der Schieberegler mindestens auf der vierten Position steht und »Alle Bewertungen beachten« berücksichtigt alle Kategorien so, wie Sie von Ihnen eingestellt wurden. Klicken Sie auf »OK«, um Ihr Aufzeichnungsprofil zu speichern.</ul>Ihre Einstellungen werden sofort wirksam.Die Spalte »Aufnahmeplanung« in der Programmübersichtfüllt oder ändert sich entsprechend den von Ihnen gemachten Bewertungen mit den Sendungen, die aufgezeichnet werden. Zusätzlich zu Titel, Startzeitpunkt und Lauflänge der Sendung weisen Symbole auf die Aufnahmeart hin. Der gelbe Stern besagt, dass die betreffende Sendung aufgrund der von Ihnen eingetragenen Schlüsselwörter aufgenommen wird, der blaue Punkt repräsentiert das Bewertungsprofil und das Personen-Symbol eine von Ihnen manuell eingestellte Aufnahme.<p>In der Programmspalte der Fernsehkanäle werden die für die Aufnahme vorgesehenen Sendungen mit roter Schrift dargestellt. Mit einem roten Balken hinterlegte Einträge weisen darauf hin, dass die Sendung von Ihnen manuell für die Aufnahme eingestellt wurde.<p><b>Schlüsselwörter</b><br>Wenn Sie die Sendungstitel nach ganz bestimmten Schlüsselwörtern durchsuchen lassen möchten, um die so gefundenen Sendungen aufzuzeichnen oder von der Aufzeichnung auszuschließen, öffnen Sie in der TV-Programmübersicht aus der Menüzeile die Schaltfläche »Einstellungen« und wechseln zur Registerkarte »Schlüsselwörter«. Klicken Sie anschließend auf »Hinzufügen«.<ul><li><b>Anzuwendende Zeichenfolge im Titel</b><br>Geben Sie in dieses Eingabefeld das Schlüsselwort oder den Teilbegriff ein, nach dem die Sendungstitel durchsucht werden sollen.<p><li><b>Exakte Übereinstimmung der Zeichenfolge</b><br>Wenn Sie diesen Schalter setzen, wird die oben eingetragene Zeichenfolge exakt mit dem Sendungstitel verglichen und nur bei genauer Übereinstimmung als Treffer gekennzeichnet. D.h., wenn Sie z.B. als Zeichenfolge »heute« eintragen, wird eine Sendung nur dann aufgenommen, wenn der Sendungstitel exakt »Heute« heißt. Die Sendung »Heute-Journal« wird demzufolge nicht aufgenommen.<p><li><b>Zeitfenster einschränken</b><br>Tragen Sie hier einen Zeitraum ein, in dem nach der oben eingetragenen Zeichenfolge in den Sendungstiteln gesucht werden soll, z.B. 12 bis 18 Uhr.<p><li><b>Erweiterung des Aufnahmezeitraums</b><br>Informationen zu dieser Option finden Sie weiter oben in diesem Text. <p><li><b>Aufgezeichnete Sendung nach x Tagen löschen</b><br>Geben Sie hier an, nach wie viel Tagen eine aufgezeichnete Sendung wieder gelöscht werden soll. So können Sie zum einen Speicherplatz auf Ihrer Festplatte sparen, zum anderen Ihr aufgezeichnetes TV-Programm aktuell halten, indem z.B. Nachrichtensendungen nach wenigen Tagen wieder gelöscht werden, da sie bereits veraltet sind.</ul><b>Aufnahmeplanung</b><br>Neben der in der TV-Programmübersicht angezeigten Spalte »Aufnahmeplanung«, die alle zur Aufzeichnung vorgesehenen Sendungen in einer Kurzform enthält, finden Sie eine ausführliche Aufbereitung dieser Daten, wenn Sie in der Titelzeile der TV-Programmübersicht die Schaltfläche »Aufnahmeplanung« anklicken.<p>Das zweigeteilte Fenster zeigt im linken Bereich in chronologischer Reihenfolge die vorgesehenen Sendungen mit Kanal, Start-Uhrzeit, Sendungstitel, Ende-Uhrzeit und Dauer der Aufzeichnung. Wenn Sie eine Sendung markieren, bekommen Sie im rechten Bereich des Fensters – dem <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Vorschau-Bereich', 'content', 'Durch dieses Fenster im David.InfoCenter kann sich der Anwender schnell einen &Uuml;berblick &uuml;ber bspw. die eingegangenen eMails oder den eingetragenen Link verschaffen, ohne diese(n) &ouml;ffnen zu m&uuml;ssen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Vorschau-Bereich<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Vorschau-Bereich', 'content', 'Durch dieses Fenster im David.InfoCenter kann sich der Anwender schnell einen &Uuml;berblick &uuml;ber bspw. die eingegangenen eMails oder den eingetragenen Link verschaffen, ohne diese(n) &ouml;ffnen zu m&uuml;ssen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> – ausführliche Informationen. Neben den schon bekannten Daten sind das zusätzlich die Bewertung des Redaktionsteams bzgl. Popularität, Humor, usw., und je nach Sendung der Untertitel, die Kategorie, eine Inhaltsangabe, die Liste der Hauptdarsteller, möglicherweise einige Szenenfotos und sonstige Informationen (z.B. Regisseur).</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(5566);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

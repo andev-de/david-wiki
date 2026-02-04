@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-106.156</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Digital Sender 9100C mit DvISE nutzen</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Wie kann der Digital Sender 9100c unter David bei einer Installation unter Novell NetWare oder Windows eingerichtet werden?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">10.07.2006</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><P><B>Hinweis zur Installation:</B><BR>Die Schnittstelle zwischen David oder FaxWare und dem Digital Sender ist der Digital Sender Service, welcher auf einer Windows NT 4.0/2000/XP Workstation oder einem Windows NT/2000 Server installiert werden muss. Auf diesem Rechner müssen Sie zusätzlich das FaxGate von der aktuellen CD installieren. Der David oder FaxWare Service Layer kann auf einem Windows NT Rechner, oder auf einem Novell NetWare Server installiert werden. <P><OL><LI><B>Digital Sender Hardware Installation</B><P>Zu Beginn müssen Sie einige Grundeinstellungen wie <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'IP', 'content', 'Eine <B>I</B>nternet-<B>P</B>rotokoll-Adresse (Bsp. 193.173.88.5) gleicht einer Hausnummer, &uuml;ber die Rechner im Internet oder in Netzwerken eindeutig indentifiziert werden k&ouml;nnen. Erst so wird ein Datenaustausch m&ouml;glich. Man unterscheidet dabei zwischen statischen, also festen IP-Adressen, die bei einer Standleitung vergeben werden, und dynamischen IP-Adressen, die bei jeder Einwahl oder nach einem bestimmten Zeitraum wechseln. ', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >IP<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'IP', 'content', 'Eine <B>I</B>nternet-<B>P</B>rotokoll-Adresse (Bsp. 193.173.88.5) gleicht einer Hausnummer, &uuml;ber die Rechner im Internet oder in Netzwerken eindeutig indentifiziert werden k&ouml;nnen. Erst so wird ein Datenaustausch m&ouml;glich. Man unterscheidet dabei zwischen statischen, also festen IP-Adressen, die bei einer Standleitung vergeben werden, und dynamischen IP-Adressen, die bei jeder Einwahl oder nach einem bestimmten Zeitraum wechseln. ', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Adresse, IP Gateway, etc. direkt am Digital Sender eingeben. Dafür drücken Sie an der Digital Sender Tastatur die folgende Tastenkombination: »SHIFT+ALT+STARTTASTE« (Grüne Taste). Nehmen Sie nun die entsprechenden Einstellungen vor. Diese Grundeinstellungen sind für die Einrichtung des Digital Senders als E-Mail <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Client<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> wichtig. <P><LI><B>Digital Sender Software Installation</B><P>Die zu installierende Software gehört zum Lieferumfang des Digital Senders und beinhaltet folgende Software-Komponente:<P><FONT FACE="Courier New" SIZE="2">- HP Enterprise Center für HP Digital Sender 9100C<br>- HP Digital Sender Service<br>- HP Address Book Manager<br>- HP Digital Sender Link<br>- HP Handbücher<br></FONT><P><li>Nach dem Start wählen Sie den Pfad aus, in den  die Software des Digital Sender installiert werden soll.<P><left><img src="/graphic/kb/D-106.156-01.jpg"></left><P><li>Wählen Sie im Dialogfenster "Setuptyp" den Menüpunkt "Anpassen".<P><left><img src="/graphic/kb/D-106.156-02.jpg"></left><P><li>Wählen Sie nun im Dialogfenster "Komponenten wählen" zumindest den Digital Sender Service aus. Alle weiteren Komponenten werden für den Betrieb des HP 9100 im Zusammenhang mit David nicht unbedingt benötigt.<p><left><img src="/graphic/kb/D-106.156-03.jpg"></left><P><P><LI><B>Wichtig ist, das die folgenden Voraussetzungen unbedingt eingehalten werden.</b><ul><li>Die Installation wird nur für die Betriebssysteme Microsoft® Windows® NT 4.0 und Windows 2000 unterstützt.<li>Die Installation kann nur vom Systemadministrator oder einem Benutzer ausgeführt werden, der Mitglied der Administratorgruppe ist. <li>Für den Dienst sind ein Benutzername und ein Kennwort eines Windows NT-Kontos erforderlich, das über folgende Eigenschaften verfügt:<ul>        <li>Das Kennwort des Benutzerkontos läuft nie ab.<li>Das Benutzerkonto gehört zur Administratorgruppe.<li>Die Berechtigungen des Benutzerkontos sind auf "Anmeldung als Dienst" eingestellt.</ul><li>Hewlett-Packard empfiehlt, dass der Digital Sender-Dienst auf dem LAN-Fax-Server installiert wird, oder auf einem Computer, auf dessen Arbeitsbereichverzeichnis der LAN-Fax-Server zugreifen kann. Das LAN-Fax-Arbeitsbereichverzeichnis muss den Installationsanforderungen des gewählten LAN-Fax-Herstellers genügen.<li>Computer, die den HP Digital Sender-Dienst für LAN-Fax verwenden, können nicht gleichzeitig mit HP Network ScanJet 5 oder mit HP Digital Sender Link arbeiten.</ul><p><li>Geben Sie nun im Dialogfeld "Digital Sender 9100C-Dienst für LAN-Fax" den Benutzer an, der das Recht hat einen Dienst zu starten und über die nötigen Rechte auf dem Rechner verfügt. Dies ist meistens der Administrator.<p><left><img src="/graphic/kb/D-106.156-04.jpg"></left><P><li>Bestätigen Sie die Frage ob die Faxdienstfunktion installiert werden soll mit "JA".<P><left><img src="/graphic/kb/D-106.156-05.jpg"></left><p><li>Wählen Sie im folgenden Dialogfeld "David by Tobit Software" aus.<p><left><img src="/graphic/kb/D-106.156-06.jpg"></left><p><li>Geben Sie nun im folgenden Dialogfeld das Verzeichnis an, in dem die Faxe abgelegt werden sollen.Dieses Verzeichnis müssen Sie später auch in der FaxGate Konfiguration angeben.<p><left><img src="/graphic/kb/D-106.156-07.jpg"></left><p><LI><b>Einrichtung des Digital Sender für E-Mail und Faxdienst mit dem WebAdmin</b><p>Den WebAdmin erreichen Sie über die im Digital Sender eingestellte IP Adresse z.B. http://192.168.2.10:4244.<p>Hier besteht die Möglichkeit alle Konfigurationen des Digital Senders vorzunehmen. Zunächst ist es wichtig, das die TCP/IP und DNS Konfigurationen unter dem Menüpunkt "Verbindungen" korrekt eingestellt werden.<p><left><img src="/graphic/kb/D-106.156-08.jpg"></left><p><li><b>Einrichtung des Digital Sender für E-Mail mit dem WebAdmin</b><p>Unter dem Menüpunkt "Senden an - E-Mail" können Sie die nötigen Konfigurationen für den SMTP Server vornehmen.Setzen Sie hierzu die IP Adresse des David Servers und die weiteren erforderlichen Daten ein.<p><left><img src="/graphic/kb/D-106.156-09.jpg"></left><p><li><b>Einrichtung des Digital Sender für Fax mit dem WebAdmin</b><p>Unter dem Menüpunkt "Senden an - Fax" können Sie die nötigen Konfigurationen für den Fax Server vornehmen.Setzen Sie hierzu die IP Adresse des Servers, auf dem der Digital Sender Service läuft ein.<p><left><img src="/graphic/kb/D-106.156-10.jpg"></left><p><li><b>Fax Gateway für HP Digital Sender</b><p>Seit dem David 5.2 wird eine neue FaxGate Version mitgeliefert. Sie können diese Version auf dem David CD im Verzeichnis »NT\DAVID\UTIL\WINDOWS\FAXGATE« finden. Diese Software muss auf einer Windows NT Rechner installiert werden, welcher Zugriff auf das HP Digital Sender Verzeichnis (\HPFSCAN) hat. Weiterhin muss der Client Schreibrechte im API-Verzeichnis des David bzw. FaxWare Servers haben. <p><left><img src="/graphic/kb/D-106.156-11.jpg"></left><p><li><b>Installation des FaxGate</b><p>Starten Sie das HP FaxGate durch Aufruf von FAXGATE. Auf Ihrem Client erscheint die folgende Meldung: <ul>DAVID SERVER NOT GIVEN </ul>Bestätigen Sie diese Meldung mit OK. <li><b>Konfiguration von FaxGate</b><p>In diesem Menü nehmen Sie nun die folgenden Einstellungen vor: <ul><b>David Server</b><br>Tragen Sie hier den Servernamen ein, auf dem David oder FaxWare installiert ist. Wenn sich die Installation auf einem NetWare Server und hier noch auf einem anderen Volume befindet, so muss der Name des Volumes mit angegeben werden. <b>Scan Interval</b><br>Tragen Sie hier die Zeit in Sekunden ein, in denen die Verzeichnisse nach Aufträgen durchsucht werden sollen. <b>HPFSCAN</b><br>Tragen Sie hier den Pfad für das HPFSCAN Verzeichnis incl. Servernamen ein. Hier werden später alle vom Scanner verarbeiteten Fax-Jobs abgelegt. Die Angabe muss in der UNC Schreibweise erfolgen. Mit dem Kontrollkästchen SCAN können Sie das Scannen des Verzeichnisses aktivieren bzw. deaktivieren. Beispiel: \\DAVID\SYS\HPFSCAN oder C:\HPFSCAN <b>Pre Include</b><br>Include-Datei. Diese Datei kann beliebige FaxWare Befehle (Klammeraffen-Befehle) enthalten. Diese Datei wird am Anfang des JobFiles für David oder FaxWare von FaxGate automatisch eingebunden. <b>Post Include</b><br>Include-Datei. Diese Datei kann beliebige FaxWare Befehle (Klammeraffen-Befehle) enthalten. Diese Datei wird am Ende des JobFiles für David oder FaxWare von FaxGate automatisch eingebunden. <b>E-Mail Attachments</b><br>Geben Sie an, ob E-Mail Attachments im Format BMP oder TIFF/G4 versendet werden sollen. <b>CPU Utilization</b><br>Stellen Sie die CPU Auslastung des PCs durch Tobit FaxGate ein. Sie sollten die Auslastung über einen längeren Zeitpunkt beobachten und dann entsprechend Ihren Vorstellungen einstellen. <p>Das FaxGate bindet sich jetzt als so genannte "SYSTEM-TRAY-APPLIKATION" in Ihre Windows-Taskleiste ein und wird zuerst inaktiv. Klicken Sie auf dem FaxGate <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Icon<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> mit der rechten Maustaste und auf "ACTIVATE FAXGATE". Das FaxGate Icon ist jetzt aktiv. <b>ACHTUNG:</b> Diese Bindung dauert einige Sekunden. In dieser Zeit bleibt das Fenster FaxGate Konfiguration öffnen. Warten Sie bis dieses Fenster sich schließt. </ul><p><li><b>Faxe versenden</b><br>Wählen Sie am Digital Sender den Punkt Fax aus.<p><left><img src="/graphic/kb/D-106.156-12.jpg"></left><p>Anschließend geben Sie die Faxnummer ein und bestätigen Sie diese mit der Enter Taste.<p><left><img src="/graphic/kb/D-106.156-13.jpg"></left><p>Um das Fax nun zu versenden drücken Sie die grüne Kopieren Taste.<p><left><img src="/graphic/kb/D-106.156-14.jpg"></left><p>Zum senden drücken Sie abschließend den senden Button.<br><b>Hinweis:</b> Das FAXGATE Icon wird bei der Erfassung der Dateien aus dem Faxverzeichnis grün blinken.<li><b>E-Mails versenden</b><p>Wählen Sie am Digital Sender den Punkt eMail aus.<p><left><img src="/graphic/kb/D-106.156-15.jpg"></left><p>Geben Sie im folgenden Dialog die Daten wie Absender und eMail Adresse des Empfänger ein.<p><left><img src="/graphic/kb/D-106.156-16.jpg"></left><p>Um die eMail zu versenden drücken Sie die grüne Kopieren Taste.<p><left><img src="/graphic/kb/D-106.156-17.jpg"></left><p>Zum senden drücken Sie abschließend den senden Button. <li><b>Dokument in David Archivieren </b><br>Sie müssen das gescanntes Dokumentes als Fax versenden. Statt eine Faxnummer einzugeben, tragen Sie Ihren David Benutzernamen in geschweiften Klammer ein {TTOBIT}. Dieses Dokument wird anschließend in Ihrem Eingangsbuch erscheinen. <p>Weitere Informationen zu HP Produkten und die aktuelle Digital Sender Software finden Sie auf der Webseite von Hewlett-Packard.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(6156);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-108.144</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Installation und Betrieb eines JavaScript TLDs</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Ein JavaScript <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> soll installiert und eingerichtet werden.</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">TLD (Gebäudesteuerung)</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">4.05.2006</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Nachfolgend wird die Einrichtung eines Extended TLDs für den Einsatz von JavaScript erläutert. Als Beispiel dient hierbei die Ansteuerung eines Panasonic Video Projektors. Führen Sie die beschriebenen Schritte in der hier angegebenen Reihenfolge durch.<p><b>Einrichten eines Extended Ports</b><br>Für den Betrieb eines Extended TLDs sollte ein separater Port verwendet werden. Gehen Sie dazu folgendermaßen vor:<ul><li><b>Starten des Port Setups</b><br>Öffnen Sie im David Administrator das Menü »Konfiguration -> Ports« und klicken Sie dann in der Symbolleiste auf das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Icon<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> »Neu«. Daraufhin startet das Setup-Programm. Klicken Sie auf »Hinzufügen«, um einen neuen Port einzurichten.<p><li><b>Bestimmen des Port-Typs</b><br>Wählen Sie aus der dann angezeigten Liste den Typ »Extended (z.B. Automation)« und bestätigen Sie Ihre Auswahl mit »Weiter«.<p><li><b>Auswahl des PlugIns</b><br>Im nächsten Dialogfenster ist das für den neuen Port zu nutzende PlugIn anzugeben. Da ein JavaScript Port erstellt werden soll, wählen Sie an dieser Stelle den Eintrag »JavaScript« aus. Klicken Sie anschließend auf »Weiter«, um Ihre Auswahl zu bestätigen und mit dem Setup fortzufahren.<p><li><b>Benennen des Ports und Abschluss des Setups</b><br>Vergeben Sie schließlich eine eindeutige Bezeichnung für den neuen Port (z.B. »Panasonic Beamer«) und klicken Sie auf »Fertig stellen«, um das Setup abzuschließen. Falls daraufhin eine Meldung erscheint, die besagt, dass Ergänzungen der Windows-Registry-Datenbank erforderlich sind, klicken Sieauf »Ja«, damit diese Anpassungen vom Port-Setup automatisch durchführt werden.Damit ist die Port-Installation beendet und das Setup-Programm schließt sich eigenständig.</ul><b>Anpassen der Port-Konfiguration</b><br>Nach der Installation des neuen Ports müssen einige Anpassungen in dessen Konfiguration vorgenommen werden. Wählen Sie dazu im David Administrator den Menüpunkt »Konfiguration -> Ports« und öffnen Sie den Konfigurationsdialog des soeben erstellten Ports durch einen Doppelklick auf den zugehörigen Listeneintrag. Nehmen Sie auf der Registerkarte »Allgemein« folgende Einstellungen vor:<ul><li><b>TLDSubType</b><br>Tragen Sie hier eine Bezeichnung ein, unter der dieser Port direkt adressierbar sein soll. Die Verwendung dieses TLDSubType ist sowohl im Adressfeld des Nachrichten Editors als auch in Verbindung mit DvISE Befehlen(z.B. @@NUMMER@@) möglich. Geben Sie als Empfängeradresse zunächst diese Bezeichnung an, direkt gefolgt von einem Doppelpunkt und der eigentlichenEmpfängeradresse.<p><li><b>Erweiterung der Sendeservices</b><br>Aktivieren Sie die Funktion »Diesen Port mit der folgenden Bezeichnung im Nachrichten Editor des InfoCenters unter »Sendeservices« zur Auswahl anbieten«, wenn Sie wünschen, dass dieser Port über einen eigenen Eintrag inder Liste »Sendeservices« im Nachrichten Editor des David InfoCenters direkt ansprechbar sein soll. Vergeben Sie dazu in dem darunter stehenden Feld »Bezeichnung« einen Namen, der den verfügbaren Sendeservices hinzugefügt werden soll. Bei der Erstellung von Aufträgen, die über diesen Port abgewickeltwerden sollen, ist dann als Sendeservice dieser Eintrag zu wählen.</ul><b>Einbinden des JavaScript Codes</b><br>Erstellen Sie den auszuführenden JavaScript Code und speichern Sie ihn unter dem Dateinamen TLDX.JS auf dem David Server in dem Port Verzeichnis des zuvor erstellten Extended Port ab (z.B. DAVID\TLD\PORT\002, für den Fall dass es sich hierbei um den Port mit der Nummer 002 handelt). Starten Sie anschließend den zugehörigen <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> neu, um den Code zu laden. Öffnen Sie dazu im David Administrator das Dialogfenster »DvISE Services« durch einen Klick auf die zugehörige Schaltfläche in den Symbolleisten. Markieren Sie dann in der Liste der DvISE Services den TLD des betreffenden Ports (also beispielsweise »TLD 002« für den Port mit der Nummer 002) und klicken Sie auf »Neu starten«.<p><b>Betrieb des JavaScript Ports</b><br>Nach dem Speichern der gewünschten JavaScript Datei und dem anschließenden Neustart des TLDs ist der Port betriebsbereit. Aufträge für diesen Port können per Text-Datei im ASCII-Format über die API- oder über die FileScan-Services erzeugt werden, wobei in der Adressierung der in der Port-Konfiguration definierte TLDSubType zu verwenden ist.<p>Die Erstellung von Aufträgen ist natürlich auch über den Nachrichten Editor des David InfoCenters möglich. Hier geschieht die Adressierung komfortabel über die Auswahl des Sendeservices, der ebenfalls zuvor in der Port-Konfiguration definiert wurde.<p><b>Port Monitor</b><br>Sobald der Port Aufträge bearbeitet, kann die System-Kommunikation im Port Monitor überwacht werden. Wählen Sie dazu im David Administrator den Menüpunkt »Monitor -> Ports« und öffnen Sie den Monitor des gewünschten Ports per Doppelklick auf den zugehörigen Listeneintrag. Wechseln Sie hier auf das Register »Communication« um den Verlauf der Kommunikation zu verfolgen.<p><b>Beispiele</b><br>Hier finden Sie einige Beispiel-Listings für den Einsatz von JavaScript. Speichern Sie den Code unter dem Namen TLDX.JS im Port Verzeichnis des Port ab, um ihn zu nutzen. Zur Aktivierung muss anschließend der zugehörige TLD neu gestartet werden.<p><b>Standard COM-Port-Objekt</b><br>Die unten stehenden Listings sind Beispiele für eine synchrone COM-Port-Übertragung. Beachten Sie hierbei folgende allgemeine Informationen:<ul><li>Um eine synchrone COM-Port-Übertragung einzurichten, sollte ein entsprechendes Objekt mit der Funktion »TLD.CreateObject("TLDX.ScriptComm")« erzeugt werden.<li>Die Funktion "OnSendMessage()" wird bei jeder über diesen Port ausgehenden Nachricht ausgeführt.<li>Die Funktion »OnReceiveMessage()« wird sekündlich ausgeführt.<li>Die Funktion »OnExit()« wird beim Entladen des TLD aufgerufen.<li>Die Funktion »TLD.ODS(“Text“)« gibt den als Parameter übergebenen Text direkt im Port Monitor aus.<li>Über das Objekt »TLD.SR« kann z.B. auf die »From«, »To« und »Subject« Daten der zu versendenden Nachricht zugegriffen werden.</ul><b>Beispiel 1</b><br>In diesem Beispiel wird beim Starten des Ports der COM-Port initialisiert. Der Rückgabewert wird auf dem Portmonitor ausgegeben. Wird eine Nachricht versendet, erfolgt im Port Monitor die Ausgabe der Von- und An-Informationen sowie des Betreffs der Nachricht. Im Anschluss an den Versand wird überprüft, ob Daten über den COM-Port empfangen wurden, und diese gegebenenfalls auchim Port Monitor angezeigt. Über die Funktion OnExit() wird in diesem Beispiel der COM-Port wiederfreigegeben.<p><font face="Courier New"><blockquote>var oCom = TLD.CreateObject("TLDX.ScriptComm");<br>var Port = 1;<br>var <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Baud', 'content', 'Die Ma&szlig;einheit f&uuml;r die Schrittgeschwindigkeit bei der &Uuml;bertragung von Daten z.B. per Modem oder ISDN-Karte nennt man Baud.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Baud<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Baud', 'content', 'Die Ma&szlig;einheit f&uuml;r die Schrittgeschwindigkeit bei der &Uuml;bertragung von Daten z.B. per Modem oder ISDN-Karte nennt man Baud.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> = 9600;<br>var DataBits = 8;<br>var StopBits = 0; // 0 = 1 StopBit, 1 = 2 StopBits<br>var Parity = 0; // 0 = none Parity<br>var RetVal = 0;<p>RetVal = oCom.OpenPort(Port, Baud, DataBits, Parity, StopBits);<br>TLD.ODS("OpenPort returned "+ RetVal +"\n");<p>function OnSendMessage()<br>{<blockquote>TLD.ODS("------------Send Message------------" + "\n");<br>MsgOut = "From: "+TLD.SR.From+"\n To: "+<br>TLD.SR.To+"\n Subject: "+ TLD.SR.Subject+"\n";<br>TLD.ODS(MsgOut);<br>RetVal = oCom.WriteString(TLD.SR.Subject + "\r\n");<br>TLD.ODS("Result: " + RetVal + "\n");<br>TLD.ODS("-----------Receive Message----------\n");<br>RetVal = oCom.ReadString();<br>TLD.ODS("Receive String: " + RetVal + "\n");</blockquote>}<p>function OnExit()<br>{<br><ul>oCom.ClosePort();<br>TLD.ODS("Ende...\n");</ul>}</blockquote></font><p><b>Beispiel 2</b><br>Dieses Beispiel greift, wie das erste Beispiel, auf die serielle Schnittstelle zu. Es wurde speziell für die Steuerung von Panasonic Video Beamern geschrieben (Modelle PT-D7600/D7500, PT-D7700/DW7000, PT-D5500). Der Betreff einer über diesen Port gesendeten Nachricht wird ausgewertetund als spezielle Befehlskette an den Beamer gesendet. Der Betreff muss also den gewünschten Befehl und gegebenenfalls erforderliche Parameter enthalten (z.B. PON für Power on, IIS:DVI für DVI Quellenwahl oder VBR:63 für volle Helligkeit).<p><font face="Courier New"><blockquote>var oCom = TLD.CreateObject("TLDX.ScriptComm");<br>var Port = 1;<br>var Baud = 9600;<br>var DataBits = 8;<br>var StopBits = 0; // 0 = 1 StopBit, 1 = 2 StopBits<br>var Parity = 0; // 0 = none Parity<br>var RetVal = 0;<p>RetVal = oCom.OpenPort(Port, Baud, DataBits, Parity, StopBits);<br>TLD.ODS("OpenPort returned "+ RetVal +"\n");<p>function OnSendMessage()<br>{<p><blockquote>TLD.ODS("------------Send Message------------" + "\n");<br>MsgOut = TLD.SR.Subject +"\n"<br>TLD.ODS(MsgOut);<br>RetVal = oCom.WriteString(unescape("%02") + "ADZZ;" + TLD.SR.Subject<br>+ unescape("%03"));<br>TLD.ODS("Send-Result: " + RetVal + "\n");<br>TLD.ODS("-------------------------------------------------" + "\n");</blockquote>}<p>function OnExit()<br>{<br><ul>oCom.ClosePort();<br>TLD.ODS("Ende...\n");</ul>}</blockquote></font><p><b>Asynchrones COM-Port Objekt</b><br>Dieses Listing dient als Beispiel für eine asynchrone COM-Port-Übertragung. Hier gelten folgende allgemeinen Hinweise:<ul><li>Um eine asynchrone COM-Port-Übertragung einzurichten, sollte ein entsprechendes Objekt mit der Funktion »TLD.CreateObject("TLDX.ScriptAsyncComm")« erzeugt werden.<li>Um das Überwachen der Schnittstelle zu starten, wird die Funktion »oCom.StartCommReadEvent()« aufgerufen.<li>Die Funktion »OnCommData (data)« wird automatisch aufgerufen, sobald Daten an der seriellen Schnittstelle anliegen; der ankommende Daten-String wird als Parameter übergeben.<li>Die Funktion »OnSendMessage()« wird bei jeder über diesen Port ausgehenden Nachricht ausgeführt.<li>Die Funktion »OnExit()« wird beim Entladen des TLD aufgerufen.<li>Die Funktion »TLD.ODS()« gibt den als Parameter übergebenen Text im Port Monitor aus.<li>Über das Objekt »TLD.SR« kann z.B. auf die »From«, »To« und »Subject« Daten der zu versendenden Nachricht zugegriffen werden.</ul><b>Beispiel 1</b><br><font face="Courier New"><blockquote>var oCom = TLD.CreateObject("TLDX.ScriptAsyncComm");<br>//Asynchrones COMPort Objekt erzeugen<p>var PortState = oCom.OpenPort(Port, Baud, DataBits, Parity, StopBits);<br>//COM Port öffnen<p>oCom.StartCommReadEvent();<br>// Event Funktion starten<p>function OnCommData (Text)<br>{<blockquote>TLD.ODS ("OnCommData: Daten empfangen:\n");<br>TLD.ODS (Text);<br>// hier kann jetzt reagiert werden.<br>// z.B.:<br>oCom.WriteString ("OK\n");</blockquote>}<br>function OnExit()<br>{<ul>oCom.ClosePort();<br>TLD.ODS("Ende...\n");</ul>}</blockquote></font><p><b>Beispiel 2</b><br>Dieses Beispiel zeigt, wie durch Nutzung der Funktion »AddRXMessage« Daten, die über das JavaScript-TLD empfangen wurden, direkt ins State <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> geschrieben werden können. Hirbei gilt folgende Syntax:<p><font face="Courier New"><blockquote>TLD.AddRXMessage ("subject", "from", "value", icon);<p>Parameter: <ul>subject - Text für Betreff<br>from - Absenderangabe (Adresse des Gerätes)<br>value - Wert, der gesetzt werden soll<br>icon - Nummer des zu verwendenden Symbols (nicht in "")</ul>function Test ()<br>{<br><ul>TLD.ODS ("Start\n");<br>if (TLD.AddRXMessage ("Dies ist das Subject", "hier das From", "100", 217) == 0)<br>{<ul>TLD.ODS ("Senden erfolgreich\n");</ul>}<br>else<br>{<ul>TLD.ODS ("Senden nicht erfolgreich\n");</ul>}<p>if (TLD.AddRXMessage ("Dies ist Subject Nr. 2", "noch ein From",<br>"200", 218) == 0)<br>{<ul>TLD.ODS ("Senden erfolgreich\n");</ul>}<br>else<br>{<ul>TLD.ODS ("Senden nicht erfolgreich\n");</ul>}</ul>}<br>Test ();</blockquote></font><p><b>Hinweis:</b><br>Beachten Sie auch das Anwendungsbeispiel im <a href="kbarticleCLUB.asp?ArticleID=8288" target="_self"><b>KnowledgeBase Artikel Q-108.288</b></a>.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(8144);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-106.330</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">ServicePack 1 - Code History für DvISE 6.0 (Windows NT/2000)</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">21.01.2010</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><B><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Service Pack<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> 1 <BR>Code History (Windows NT/2000)</B><P>Die folgenden Neuerungen und Bugfixes sind im Service Pack enthalten:</P><OL><LI><B><A href="#sl">David Service Layer/David Administrator</A></B> <LI><B><A href="#dvwin">Tobit InfoCenter</A></B> <LI><B><A href="#dvdfml">David Workflow (DVDFML)</A></B> <LI><B><A href="#comtrol">David Communication Controller</A></B> <LI><B><A href="#capi"><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> für <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >ISDN<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Karten</A></B> <LI><B><A href="#class2">TLD für Class2 Modems</A></B> <LI><B><A href="#postman">David PostMan</A></B> <LI><B><A href="#webbx">David <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >WebBox<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span></A></B> <LI><B><A href="#ihs">IHS TLD</A></B> <LI><B><A href="#version">Aktuelle Dateiversionen</A></B></LI></OL><P><B><A name=sl>1. David Service Layer/David Administrator</A></B><UL><LI>DVAdmin lässt sich mehrfach für den gleichen SL starten. <LI>Der Service Layer hatte nach der Datenbereinigung im Windows Service Control Manager den Status "starting" und ließ sich nicht mehr beenden (nur unter Win 2000). <LI>Doorkeeper: Formatierung und Text der Standard Benachrichtigungstexte überarbeitet. <LI>Online Aktualisierung der vorhandenen Ports, wenn über den DVAdmin ein Port hinzugefügt wird. <LI>Der Befehl DisableHeader schaltet den Fax Header für den aktuellen Job aus. <LI>Bei ECT Aufträgen wird die Sammelliste ignoriert. <LI>Möglicher Serverabsturz durch defekte <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Struktur (Eintrag in aktueller archive.dir weisst auf das nächst höhere Archive). <LI>Neuer Schalter in der Druckerkonfiguration "Systemdrucker" blendet den Drucker in der Druckerauswahl der Clients aus. <LI>Neuer Schalter in der Druckerkonfiguration "Nur externe Nachrichten drucken" verhindert den automatischen Ausdruck interner Nachrichten. <LI>Beim Drucken von Nachrichten wurden auch ECT Einträge gedruckt. <LI>Neuer Schalter unter "Benutzerkonfiguration/Rechte": "PGP Verschlüsselung JA/NEIN". Bei Einstellung "JA" sind die Menüpunkte zur PGP Verschlüsselung im Nachrichten Editor vorhanden (sofern PGP auf der Workstation installiert ist!) <LI>Mögliches Anlegen von doppelten User Archives nach der Installation des Service Pack 1 Beta. <LI>Bei Verwendung der Variable SYS_TIME wurden hinter der Uhrzeit noch Leerzeichen gesetzt. <LI>Empfangene eMails werden automatisch an Benutzer ohne eMail Adresse verteilt, wenn der Username der eMail Adresse zu der in der Systemkonfiguration eingetragenen Domäne passt. <LI>Die eMail Adresse eines Anwender steht in der Benutzerkonfiguration des DVAdmin jetzt auf der ersten Seite (Generell). <LI>Bei der Indexerstellung werden die Indexdateien neu erstellt, wenn die Größe der vorhandenen Dateien größer als 15 MB ist (bisher: 1 MB). </UL></P> <P><B><A name=dvwin>2. Tobit InfoCenter</A></B>  <UL><LI>Neues Layout des Client Setups. <LI>Bei der Client-Verteilung war der "OK" Button in der Benutzerauswahl nicht verfügbar. <LI>Erstellen und versenden von elektronischen Visitenkarten (VCards). <LI>Falsche Darstellung eines Eintrags im Auftragsbuch, wenn nachträglich ein Dateianhang gelöscht wurde. <LI>Client-Verteilung: die Liste mehrerer Einträge wurde falsch aufgebaut, wenn ein Eintrag aktiviert oder deaktiviert wurde. <LI>Bei ausgeblendeten Archives und Nachrichten wird das Icon in der Liste blasser dargestellt. Beim Ausblenden einer Nachricht wurde die Liste falsch aktualisiert. <LI>Archive Ansicht ("Archive-Eigenschaften/Anzeigen als") konnte für Verknüpfungen und Buttons (z.B. "Eingang", "Zentral-Eingang") nicht geändert werden. <LI>Wenn bei der Adressauswahl ein Datenformat ausgewählt ist, werden nur noch die Adresseinträge angezeigt, die eine Adresse dieses Datenformates haben. <LI>Client-Verteilung: Falsches Icon für "Textbausteine", wenn mit TAB durch die Felder gewechselt wurde. <LI>Bevorzugte Adresse: Bei Datenformat AUTO werden die bevorzugten Adressen verwendet und für jedes Datenformat ein eigener Job erstellt. Bei einem speziellen Datenformat (z.B. <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TMail', 'content', 'Eine eMail kann dem Empf&auml;nger als TMail am Telefon mit einer synthetischen Stimme vorgelesen werden, indem er diese an einen Telefonanschluss weiterleitet.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TMail<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TMail', 'content', 'Eine eMail kann dem Empf&auml;nger als TMail am Telefon mit einer synthetischen Stimme vorgelesen werden, indem er diese an einen Telefonanschluss weiterleitet.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>) werden die jeweiligen Einträge der Adressen verwendet (hier: "Voice-Box") <LI>Rechter Rand im Nachrichten Editor einstellbar (senkrechte Linie). <LI>Neuer Schalter "Eigenschaften übernehmen ja/nein" bei der Archive Erstellung (betrifft Archive.ini und Access.ini) <LI>Beim Eintragen eines Termins konnte die Stoppzeit u. U. nicht verändert werden. <LI>Beim Erstellen eines neuen Archives wird der Archive Tree geöffnet und das neue Archive angezeigt. <LI>Nach der Sprachumschaltung wechselt auch die Sprache in der Treeliste. <LI>Fehler beim <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Drag & Drop', 'content', 'Frei &uuml;bersetzt hei&szlig;t dies &quot;ziehen und wieder fallen lassen&quot; und ist die einfachste Methode Dateien von einem Ort zum anderen zu bewegen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Drag & Drop<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Drag & Drop', 'content', 'Frei &uuml;bersetzt hei&szlig;t dies &quot;ziehen und wieder fallen lassen&quot; und ist die einfachste Methode Dateien von einem Ort zum anderen zu bewegen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> aus Attachment Dialog unter W2000 Preview. <LI>Geänderter Zeichensatz im Nachrichten Editor (Felder AN, CC, <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Bcc', 'content', 'Im David.InfoCenter wird die Kopie einer eMail verdeckt an die im Feld Bcc (<B>B</B>lind <B>C</B>arbon <B>C</B>opy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Bcc<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Bcc', 'content', 'Im David.InfoCenter wird die Kopie einer eMail verdeckt an die im Feld Bcc (<B>B</B>lind <B>C</B>arbon <B>C</B>opy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>, Betreff). <LI>Text im Nachrichten Editor hat einen größeren Abstand zum linken und oberen Rand. <LI>Zusätzliche Optionen bei der Archive Sortierung: Priorität und Ausgeblendet. <LI>Manuell gelöschte Einträge im TIC werden automatisch in den "Papierkorb" verschoben. <LI>Über den Nachrichten Editor kann eine Wertung (gut/schlecht/normal) für Nachrichten vergeben werden. Die Wertung wird durch einen Unterstrich in der Eintragsliste angezeigt. <LI>Wird der rechte Rand ausgeschaltet, so erscheint ein waagerechter Scrollbalken und der Editor kann über die volle Länge genutzt werden. <LI>Neue Schalter in "Archive-Eigenschaften/Dienste": "Archive-Replizierung" (sind nur wirksam in Verbindung mit der "David Archive Replication"). <LI>Die Einträge der persönlichen und öffentlichen Textbausteine können über ein neues Pulldown Menü neben dem Button "Neue Nachricht" ausgewählt werden. <LI>Dateianhang Dialog unter Win 2000: Beim Kopieren von mehreren Dateianhängen gleichen Types per Drag & Drop hatten alle Dateianhänge anschliessend den gleichen Inhalt. <LI>Bei der Auswahl von FaxBox Dokumenten im Nachrichten Editor wurde der Titel der FaxBox Dokumente nicht angezeigt. <LI>Tracking Liste und Einschreiben bei internen/externen eMails. <LI>Sichere eMail Verbindung über TLS (Transport Layer Security). <LI>Falsche Darstellung des Nachrichten Editors bei Verwendung von 2 Monitoren. <LI>Schutzverletzung, wenn bei einem leeren Archive in der Eintragsliste die Taste F2 gedrückt wurde. <LI>Desktop Hintergrund flackerte beim Start der Tobit InfoCenters. <LI>PGP Verschlüsselung im Nachrichten Editor (siehe Hinweis zum Service Layer). <LI>32-Bit Dialog beim Anlegen von Links zu externen Dateien. <LI>Neuer Button und Shortcut "Kalender" im Tobit InfoCenter <LI>Möglicher falscher Umbruch im Editor, wenn mit F2 zwischengespeichert wurde. <LI>Beim "erneuten Versenden" konnte der Betreff geändert werden. Dieser wurde aber nicht übernommen, sondern der alte beibehalten. <LI>Die Vorgabefarbe des Kalenders wurde geändert (kann unter "Einstellungen/Kalender" eingestellt werden. <LI>Bei einem empfangenen Einschreiben kann die eigene Empfänger Adresse angegeben werden, wenn das Einschreiben nicht an die eigene Adresse gesendet wurde. <LI>Neues Verteilkriterium bei der Client Verteilung: intern/externe Nachricht. <LI>Beim Öffnen einer PGP-verschlüsselten Nachricht erscheint automatisch der Dialog zum Entschlüsseln der Nachricht. <LI>Beim Start des Tobit InfoCenters wird eine Wave Datei abgespielt. <LI>Bei einem zu langen Betreff eines Kalendereintrags gab es eine Schutzverletzung. <LI>Wurden die Spaltenüberschriften eines Kalender Archives verschoben, so war die Maus "gefangen". <LI>Unter Windows 95/98 war der untere Rand des Editors defekt, wenn dieser zuvor minimiert und wieder maximiert wurde. <LI>Bei einer englischen Windows Installation funktionierten die Accents nicht (z.B. á). <LI>Bei der Client Verteilung unter Verwendung der Variable %(Y) war die Jahresangabe falsch (z.B. März 100, statt März 00). <LI>Bei der Angabe eines 2-stelligen Geburtsjahres in der Visitenkarte wurde die Jahreszahl beim Versand falsch ausgegeben. <LI>Externe Einschreiben werden im Auftragsbuch grün markiert. <LI>Die TAB Reihenfolge in einem Kalendereintrag stimmte nicht. <LI>Beim Erstellen eines Adresseintrags über den "Adressbuch" Dialog wurde die <LI>Adresse nicht im ausgewählten Archive, sondern im aktuellen Archive gespeichert. <LI>Beim Erstellen eines Kalendereintrags kann ein Zeitpunkt angegeben werden, zu dem der Anwender an diesen Termin erinnert wird (Wiedervorlage). <LI>Im Kalender ist jetzt auch eine Wochenübersicht vorhanden. <LI>Im Nachrichten Editor kann bestimmt werden, dass eine TLS Verbindung erzwungen werden soll. Nur bei einer TLS Gegenstelle wird diese Nachricht dann versendet. <LI>Die Registrierung von *.VCF Dateien (Visitenkarten) durch das Tobit InfoCenter kann unterbunden werden (Menü "Einstellungen/Speichern"). Ist die Endung bereits durch das TIC registriert, so muss diese zuvor entfernt werden. <LI>Neuer Button im Nachrichten Editor "Adresskarte anhängen". Ist noch keine Adresskarte eingetragen, so erfolgt eine Aufforderung. Die letzte Einstellung (Adresskarte anhängen/nicht anhängen) wird gespeichert. <LI>Positive/negative Nachrichten werden im Auftragsbuch farbig gekennzeichnet. <LI>Beim Drucken über den FaxWare Druckertreiber konnte keine "Notiz auf Deckblatt" ausgewählt werden. Zusätzlich ist jetzt ein Button vorhanden, er einen Editor für die Texteingabe öffnet. <LI>Unter Windows 2000 ist in der Konfiguration des Message Reminders der Punkt "Keyboard Flash" nicht mehr auswählbar, da es zu unerwünschten Problemen bei der Tastatureingabe kam. <LI>Neuer Schalter in den Archive-Eigenschaften "Indexerstellung ausschließen" bewirkt, dass das aktuelle und alle darunterliegenden Archives bei der Indexerstellung für die Suchfunktion nicht berücksichtigt werden. <LI>Der Dialog "Nachrichtenoptionen" wird nicht mehr generell beim Versand angezeigt. </UL></P> <P><B><A name=dvdfml>3. David Workflow (DVDFML)</A></B><UL><LI>Bitmap für Button "Dateianhang löschen" geändert (X statt Mülltonne). <LI>Bei deaktivierter Buttonleiste ist auch die Taste (Senden) F10 deaktiviert. <LI>Address Collection erlaubt Implementierung eines eigenen Adressbuchs. <LI>Kopieren in Clipboard (Ctrl+C) funktioniert nun auch bei selektiertem HTML Text, nicht nur bei Selektion in Edit Feldern. <LI>Aufruf eigener Html Dialoge aus dem <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'DFML', 'content', 'Die <B>D</B>avid <B>F</B>ormular <B>M</B>arkup <B>L</B>anguage ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >DFML<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'DFML', 'content', 'Die <B>D</B>avid <B>F</B>ormular <B>M</B>arkup <B>L</B>anguage ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Formular heraus (# #DIALOG HTML# #). Der Einsatz von # #-Befehlen und DFML Tags in diesen Dialogen möglich, wie auch der Datenaustausch mit dem Hauptformular. <LI>DvDFML ist kompletter OLE Server. Kann eingesetzt werden mit jedem OLE-Automations Controller (WORD, Excel Datenbaken etc). <LI># #Uses Properties# # erlaubt das Benutzen von eigenen Variablen (Properties). Definieren und aufrufen der Variablen mit # #GET bzw. # #SET Befehl # #Uses Noscript# # unterbindet alle Scripts (Java und VB) innerhalb des Formulars, unabhängig von den Sicherheitseinstellungen des Browsers. <LI>Wenn ein DVDFML Formular Umlaute im Namen enthielt, so wurden diese Umlaute in der Auswahl der Formulare über eine INI-Datei falsch dargestellt. <LI>Nach Refresh eines Formulars (Taste F5) wurde der Inhalt nicht mehr angezeigt. </UL></P> <P><B><A name=comtrol>4. David Communication Controller</A></B> <UL><LI>Bei dem Objekt WRITE INI konnten maximal 47 Variablen geschrieben werden (jetzt maximal 100) </UL></P> <P><B><A name=capi>5. TLD für ISDN Karten</A></B> <UL><LI>Falsche Datumsangabe bei WRITE LOG (100 statt 00). <LI>Beim gleichzeitigen Anruf auf zwei Leitungen konnten u.U. die gewählten DDIs falsch zugeordnet werden. <LI>Support von mehr als 4 ISDN Controllern in einem Server.</UL></P>  <P><B><A name=class2>6. TLD für Class2 Modems</A></B> <UL><LI>Optimierung der Server Auslastung während der Faxübertragung. </UL></P><P><B><A name=postman>7. David PostMan</A></B><UL><LI> <LI>Sichere eMail Verbindung über TLS (Transport Layer Security). <LI>Fehler beim Forwarden von eMails an AOL. <LI>Der Mail-Header einer Übertragung wird jetzt von allen Verbindungsversuchen gespeichert (vorher nur der erste). <LI>Passwörter werden in den xxx.usr Dateien verschlüsselt. <LI>Bei der Einstellung "Kommunikation als Kommentar: Nein" wurden bei empfangenen Nachrichten die Header Daten trotzdem in der Kommentardatei gespeichert. <LI>Empfangene eMails, die an mehrere Benutzer gehen, werden nur noch einmal konvertiert und entsprechend oft kopiert. <LI>Meldung im Error Log wenn eMails nicht abgeholt werden können. <LI>Schalter für Abholen über POP3: Einzutragen ist das SMTP Headerfeld, aus dem die To Adresse genommen werden soll. <LI>Mailversand über Authentifizierung (Versand nur dann möglich, wenn zuvor POP3 Anfrage stattgefunden hat) in Verbindung mit dem MAServer (Zeitfenster 10 Miunten). <LI>Bei einer Dialup Verbindung kann jetzt unter "Wählleitung/Generell" eine vorhandene DFÜ Verbindung ausgewählt und konfiguriert werden. Unter Windows 2000 werden im Port Monitor die Verbindungsinformationen angezeigt. Im Archive "System/David/Protokoll" wird zu jeder Verbindung ein Eintrag mit Verbindungsinformationen erstellt. Das Programm DVDIALUP.EXE wird nicht mehr benötigt. </UL></P><P><B><A name=webbx>8. David WebBox</A></B> <UL><LI>WAP (Wireless Application Protocol) Funktionalität integriert. <LI>Bei Benutzung des Server Clients wurden beim Versand einer Nachricht ungewollt Sonderzeichen und Leerzeilen vor der eigentlichen Nachricht eingefügt und mit versendet. <LI>Im Web ServerClient erfolgte beim Anklicken der "Archive-Eigenschaften" die Fehlermeldung "Document not found". <LI>WebBox kann jetzt mehrfach gestartet und somit für verschiedene IP-Adressen genutzt werden. </UL></P> <P><B><A name=ihs>9. IHS TLD</A></B> <UL><LI>Bei einer defekten Archive Struktur konnte es bei einer Archive Replizierung zu mehrmaligen Anwahlversuchen zum David <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Host<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> kommen. Jetzt wird die Archive Replizierung deaktiviert, wenn Fehler bei der Replizierung auftreten. <LI>Die Gebühren versendeter und empfangener Nachrichten werden bei den jeweiligen Archive-Einträgen angezeigt. Bei mehreren gleichzeitig versendeten/empfangenen nachrichten erfolgt dies nur bei einem Eintrag. Voraussetzung ist die Übermittlung der Gebühreninformationen im ISDN. <LI>Mögliche Fehler beim Provider Fax bei mehrsietigen Faxen. <LI>Zwei aufeianderfolgende Verbindungen liegen jetzt min. 5 Minuten auseinander (auch bei der Einstellung "Mails sofort senden").</UL></P>  <P><B><A name=version>10. Aktuelle Dateiversionen</A></B><BR><BR>Diese Liste enthält alle aktuellen Dateiversionen. Hinter dem Dateinamen steht die jeweilige Versionsnummer. Diese Angaben finden Sie im David Administrator (DVADMIN.EXE) unter dem Menüpunkt "Informationen/Versions Informationen". <p><table width="200"border="0"><tr><td>DVADMIN.EXE 6.00b</td><td>(0188)</td></tr><tr><td>SL.EXE 6.00b</td><td>(1774)</td></tr><tr><td>TOBIT32.DLL 6.00b</td><td>(0116)</td></tr><tr><td>DAVIDLIB.DLL 6.00b</td><td>(0140)</td></tr><tr><td>TGRAFIC.DLL 6.00b</td><td>(0124)</td></tr><tr><td>DVMSG.DLL 6.00b</td><td>(0102)</td></tr><tr><td>TLD.EXE Class1 6.00b</td><td>(0105)</td></tr><tr><td>TLD.EXE Class2 6.00b</td><td>(0214)</td></tr><tr><td>TLD.EXE ISDN 6.00b</td><td>(0398)</td></tr><tr><td>TLD.EXE SMS 6.00b</td><td>(0109)</td></tr><tr><td>TLD.EXE IHS 6.00b</td><td>(0106)</td></tr><tr><td>POSTMAN.EXE 6.00b</td><td>(0168)</td></tr><tr><td>WEBBOX.EXE 6.00b</td><td>(0253)</td></tr><tr><td>DSERVER.EXE 6.00a</td><td>(0108)</td></tr><tr><td>MASERVER.EXE 6.00b</td><td>(0068)</td></tr><tr><td>REPLICA.EXE 1.00a</td><td>(0124)</td></tr><tr><td>DVWIN.EXE 6.00b</td><td>(1165)</td></tr><tr><td>DVEDIT.EXE 6.00a</td><td>(0318)</td></tr><tr><td>DVREMIND.EXE 6.00b</td><td>(0198)</td></tr><tr><td>DVAPI.DLL 6.00b</td><td>(0262)</td></tr><tr><td>TOBITLIB.DLL 6.00b</td><td>(0240)</td></tr><tr><td>DVTCPIP.DLL 6.00b</td><td>(0116)</td></tr><tr><td>DVCRYPT.DLL 6.00a</td><td>(0103)</td></tr><tr><td><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'DvCC', 'content', 'Der <B>D</B>avid.<B>C</B>ommunication <B>C</B>ontroller ist eine graphische Programmieroberfl&auml;che f&uuml;r die Steuerung von Abl&auml;ufen von z.B. eingehenden Anrufen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >DvCC<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'DvCC', 'content', 'Der <B>D</B>avid.<B>C</B>ommunication <B>C</B>ontroller ist eine graphische Programmieroberfl&auml;che f&uuml;r die Steuerung von Abl&auml;ufen von z.B. eingehenden Anrufen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>.EXE 6.00a</td><td>(0321)</td></tr><tr><td>FAXWARE.DRV (Win3.1)</td><td>2.010</td></tr><tr><td>FAXWARE.DRV (Win95)</td><td>2.010</td></tr><tr><td>FAXWARMO.DLL (Win NT)</td><td>(0065)</td></tr></table></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(6330);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

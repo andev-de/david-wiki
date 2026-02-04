@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-109.993</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Rechte in der Benutzerkonfiguration bei David.zehn! und David.fx</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Welche Bedeutungen haben die einzelnen Rechte, die in der Benutzerkonfiguration im David.Administrator unter »System > Benutzer« auf der Registerkarte »Rechte« gesetzt werden können?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David.Administrator</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">5.11.2009</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><a name="#anfang"></a>Die Benutzerkonfiguration im David.Administrator erlaubt auf der Registerkarte »Rechte« die Aktivierung von Rechten in den folgenden Bereichen:<ul type=square><li><a href="#allgemein"><b>Allgemein</b></a></li><li><a href="#erweitert"><b>Erweitert </b></a></li><li><a href="#empfang"><b>Nachrichtenempfang</b></a></li><li><a href="#versand"><b>Nachrichtenversand </b></a></li><li><a href="#einstellungen"><b>Voreinstellungen</b></a></li><li><a href="#strongbox"><b>StrongBox (Datensicherung)</b></a></li></ul><p><a name="#allgemein"><b>Allgemein</b></a></p><ul type=square><li>Remote Access nutzen<br>Diese Berechtigung muss jedem Benutzer zugewiesen werden, der in der Lage sein soll, Fernzugriff auf den David Server auszuüben. In diesem Fall kann der Anwender z.B. den WebAcces ausüben oder mit einem mobilen Gerät (z.B. Notebook oder iPhone) per Internet die David Dienste nutzen sowie auf den Inhalt seiner Ordner zugreifen.<p><i>Hinweis:</i><br>Um tatsächlich Fernzugriff ausüben zu können, müssen der David Server und das David Ordnersystem entsprechend freigegeben bzw. eingerichtet sein. </p></li><li>Ordner-Eigenschaften bearbeiten<br>Ist dieses Kontrollkästchen aktiviert, so besitzt der Anwender die Berechtigung, auf die Eigenschaften der David Ordner (z.B. Datenbereinigung, Sortierung, etc.) in seinem David Client zuzugreifen und diese ggf. zu verändern. In diesem Fall kann er einen Ordner im Ordnersystem des David Client markieren und über das Menü Datei bzw. über die rechte Maustaste die Ordner-Eigenschaften aufrufen und hier entsprechende Änderungen vornehmen. Deaktivieren Sie das Kontrollkästchen, wenn Sie dem Benutzer diese Berechtigung entziehen wollen. </li><li>PGP-Signatur/-Verschlüsselung nutzen<br>Ist dieses Kontrollkästchen aktiviert, besitzt der Anwender die Berechtigung zur Nutzung des clientbasierten Verschlüsselungsverfahrens PGP. Somit ist es ihm möglich, PGP-signierte bzw. PGP-verschlüsselte Nachrichten direkt über den David Client zu empfangen und zu versenden. Voraussetzung hierfür ist, dass PGP auf der Arbeitsstation dieses Benutzers installiert und korrekt konfiguriert ist. Trifft dies zu, so stehen im Nachrichten-Editor zusätzliche Schaltflächen für die PGP-Ver- und Entschlüsselung sowie für die PGP-Signatur zur Verfügung.<br>Deaktivieren Sie das Kontrollkästchen, um dem Benutzer diese Berechtigung zu nehmen. In diesem Fall sind die zusätzlichen Schaltflächen im Nachrichten-Editor generell nicht verfügbar, auch wenn PGP auf der Workstation installiert ist. </li><li>S/MIME-Verschlüsselung nutzen<br>Ist dieses Kontrollkästchen aktiviert, besitzt der Anwender die Berechtigung zur Nutzung des clientbasierten Verschlüsselungsverfahrens S/MIME. Somit ist es ihm möglich, S/MIME-verschlüsselte Nachrichten direkt über David zu empfangen und zu versenden. Voraussetzung hierfür ist, dass der Benutzer über ein persönliches S/MIME-Zertifikat inklusive der dazugehörigen Schlüssel verfügt (z.B. ein David Signaturzertifikat) und dieses in das Betriebssystem seiner Arbeitsstation korrekt eingebunden ist. Trifft dies zu, so steht im Nachrichten-Editor eine zusätzliche Schaltfläche für die Nutzung der S/MIME-Verschlüsselung zur Verfügung.<p>Deaktivieren Sie das Kontrollkästchen, um dem Benutzer diese Berechtigung zu nehmen. In diesem Fall sind die zusätzlichen Schaltflächen im Nachrichten-Editor generell nicht verfügbar, auch wenn S/MIME-Zertifikate auf der Workstation vorhanden sind.</p><p><i>Hinweis:</i><br>Beachten Sie hierzu auch die Einstellung auf dem Register »Sicherheit« in der Systemkonfiguration. Ist diese Option deaktiviert, steht dem Benutzer die Nutzung der S/MIME-Verschlüsselung generell nicht zur Verfügung – auch dann nicht, wenn ihm in der Benutzerkonfiguration diese Berechtigung explizit erteilt wird. </p></li><li>Zertifikate auch beim Remote Access verwenden<br>Aktivieren Sie diese Option, wenn die über David bezogenen Signaturzertifikate des Benutzers zentral auf dem David Server installiert werden sollen. Bei dieser Einstellung steht dem Benutzer die digitale Signatur bei der Arbeit mit David generell zur Verfügung, unabhängig davon, welche Arbeitsstation er nutzt. <p>Ist dieses Kontrollkästchen deaktiviert, erfolgt keine Speicherung der Signaturzertifikate dieses Benutzers auf dem David Server. Stattdessen wird das Zertifikat ausschließlich auf der Arbeitsstation eingebunden, an der die Installation durchgeführt wird.</p><p>Erfolgt eine nachträgliche Deaktivierung dieses Kontrollkästchens, nachdem bereits mindestens ein Zertifikat dieses Benutzers auf dem David Server gespeichert wurde, erhält der Benutzer beim nächsten Start des David Client eine entsprechende Meldung angezeigt. Er hat dann die Möglichkeit, sein(e) Zertifikat(e) vom David Server auf die Arbeitsstation, die er momentan verwendet, übertragen zu lassen. Erfolgreich übertragene Zertifikate werden anschließend automatisch vom David Server entfernt.</p><p><i>Hinweis:</i><br>Bei zentraler Speicherung auf dem David Server werden die Zertifikate im persönlichen Root-Verzeichnis de jeweiligen Benutzers unterhalb von »ARCHIVE\USER« abgelegt. Der Dateiname besteht dabei jeweils aus der eMail-Adresse, für die das Zertifikat ausgestellt wurde, und der Extension ».P12«, also z.B.:<br>»DAVID\ARCHIVE\USER\10004000\LEO.BENZ@EXAMPLE.NET.P12«</p></li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#erweitert"><b>Erweitert</b></a></p><ul type=square><li>David Administrator<br>Besitzt der Anwender diese Berechtigung, so hat er die Möglichkeit, den David.Administrator direkt aus dem David Client an seiner Arbeitstation aufzurufen. Voraussetzung hierfür ist, dass diese Arbeitstation unter Windows XP oder höher betrieben wird, und dass der betreffende Anwender über Zugriffsrechte auf das Verzeichnis »\DAVID\CODE« des David Servers verfügt. In diesem Fall enthält dann die »Allgemeine Symbolleiste« im David Client die Schaltfläche »David.Administrator«.<p><i>Hinweis:</i><br>Der Anwender hat durch dieses Recht die Möglichkeit, beim Identifizieren von Nachrichten die Verteilkennung zu ersetzen (Funktion »Identifizieren« im David Client).<p>Außerdem haben David Benutzer, die über dieses Recht verfügen, die Möglichkeit, Ordner direkt aus dem David Client heraus mit dem Windows Explorer zu öffnen. Dazu steht ihnen im Ordner-Kontextmenü (Rechtsklick) die zusätzliche Option »Im Explorer öffnen« zur Verfügung. </p></li><li>Versandaufträge aller Benutzer anzeigen<br>Bei Aktivierung dieser Option kann der Anwender in seinem Auftragsbuch neben seinen eigenen auch die Versandaufträge aller anderen Anwender sehen. Hierzu muss er im David Client den Schalter »Aufträge aller Benutzer« aktivieren (unter »Ansicht > Filter > Optionen«). Ohne das zusätzliche Leserecht auf die Ordner der Anwender kann er jedoch die eigentlichen Nachrichten nicht öffnen. Es geht hier nicht um eine globale Ansicht aller versendeten oder empfangenen Nachrichten, sondern nur um die Nachrichten, die sich im Auftragsbuch der Benutzer befinden. </li><li>DFÜ-Verbindung aktivieren<br>Falls diese Option aktiviert ist, erscheint in der Benutzer-Symbolleiste im David Client ein Symbol »Senden/Empf.«. Mit diesem kann der Benutzer von seiner Arbeitsstation aus die im PostMan oder Grabbing Server eingerichteten Verbindungen aktivieren, um eMails zu versenden oder zu empfangen. </li><li>Message Identification Services (MIS) anpassen<br>Ist diese Option aktiviert, besitzt der Benutzer die Berechtigung, eigene Einstellungen für die Identifizierung seiner empfangenen Nachrichten zu definieren. Zu diesem Zweck steht ihm im David Client eine zusätzliche Registerkarte im Dialog »Ordner-Eigenschaften« seines Eingangsordners zur Verfügung. Hier hat er die Möglichkeit, individuelle Anpassungen an den Einstellungen zur Nachrichtenidentifizierung vorzunehmen. Diese Einstellungen gelten jedoch ausschließlich für den eigenen Eingangsordner des Benutzers.<p><i>Hinweis:</i><br>Diese Funktionen können nur bei Einsatz des kostenpflichtigen Backline Features »Message Identification Services« genutzt werden. Hierzu muss im David.Administrator der Punkt »Identifizierung für eingehende eMails« aktiviert sein. Sie finden diesen Punkt in der Konfiguration der »Backline Features for David« auf der »Registerkarte Identifizierung«. </p></li><li>Ordner-Zugriffsrechte anpassen<br>Aktivieren Sie diese Option, wenn Sie dem Benutzer erlauben möchten, im David Client Verzeichnisrechte auf Ordner zu vergeben. In diesem Fall kann die Vergabe der Verzeichnisrechte also direkt im David Client erfolgen, ohne dazu auf Betriebssystemebene wechseln zu müssen. Zu diesem Zweck steht in den Ordner-Eigenschaften auf dem Register »Zugang« die Schaltfläche »Berechtigungen« zur Verfügung, über die der zugehörige Betriebssystemdialog aufgerufen werden kann.<p><i>Hinweis:</i><br>Diese Berechtigung sollte ausschließlich an erfahrene Anwender vergeben werden, da sie u.U. schwerwiegende Eingriffe in das Gesamtsystem ermöglicht. </p></li><li>Ordner verschieben und kopieren<br>Ist die Option »Ordner verschieben und kopieren« aktiviert, so besitzt der Anwender die Berechtigung, im David Client per »<span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Drag & Drop', 'content', 'Frei &uuml;bersetzt hei&szlig;t dies &quot;ziehen und wieder fallen lassen&quot; und ist die einfachste Methode Dateien von einem Ort zum anderen zu bewegen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Drag & Drop<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Drag & Drop', 'content', 'Frei &uuml;bersetzt hei&szlig;t dies &quot;ziehen und wieder fallen lassen&quot; und ist die einfachste Methode Dateien von einem Ort zum anderen zu bewegen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>« Ordner zu verschieben und zu kopieren.</li><li>Feeds nutzen<br>Ist diese Option aktiviert, stehen dem Anwender die »RSS-Feeds« Funktionen im David Client zur Verfügung, die es ihm erlauben, verschiedene so genannte RSS-Feeds (z.B. News-Feeds oder Video/Audio Casts) zu nutzen. Deaktivieren Sie das Kontrollkästchen, um dem Benutzer diese Berechtigung zu nehmen. In diesem Fall stellt der David Client dem Anwender keine Funktionen zur Nutzung und zur Konfiguration von Feeds zur Verfügung. </li><li>Live Forum nutzen<br>Ist diese Option aktiviert, steht dem Anwender die Nutzung des »Live Forums« zur Verfügung. In diesem Fall enthält das persönliche Menü, das im Hauptmenü des David Client aufrufbar ist, einen zusätzlichen Eintrag, über welchen der Benutzer das Live Forum direkt aufrufen kann. Deaktivieren Sie diese Option, um die Nutzung des Live Forums zu unterbinden.</li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#empfang"><b>Nachrichtenempfang</b></a></p><ul type=square><li>Nachrichten manuell verteilen<br>Ist dem Anwender diese Berechtigung zugewiesen, so kann er Nachrichten an andere David User im Netz verteilen. Im David Client steht ihm hierzu die Funktion »Verteilen...« zur Verfügung.</li><li>Absender identifizieren<br>Besitzt der Anwender diese Berechtigung, so kann er bei empfangenen Nachrichten die Kennung der Gegenstelle »lernen« lassen. Das bedeutet, die jeweilige Kennung wird in der Identifizierungsliste eingetragen (siehe Menü »System > Verteilung > Identifizierung«). Im David Client steht ihm hierzu die Funktion »Identifizierung« zur Verfügung. Soll der Anwender über diese Funktion zusätzlich noch die Verteilkennung ändern können, benötigt er auch das Benutzerrecht »David Administrator«. </li><li>Verteilregeln erstellen/bearbeiten<br>Ist dieses Kontrollkästchen aktiviert, so besitzt der Anwender die Berechtigung, im David Client Verteilregeln zu erzeugen. In diesem Fall steht ihm unter dem Hauptmenüpunkt »Aktionen« sowie im Ordner-Kontextmenü der Eintrag »Regeln...« zur Verfügung, der es erlaubt, eigene Verteilregeln für beliebige David Ordner zu erstellen. Deaktivieren Sie das Kontrollkästchen, wenn Sie dem Benutzer diese Berechtigung entziehen wollen.</li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#versand"><b>Nachrichtenversand </b></a></p><ul type=square><li>Rundsendungen versenden<br>Ist dieses Kontrollkästchen aktiviert, so besitzt der Anwender die Berechtigung, Rundsendungen unter Verwendung des David Befehls »@@RUNDSENDUNG« zu erstellen. Deaktivieren Sie dieses Kontrollkästchen, wenn Sie dem Benutzer diese Berechtigung entziehen wollen. Entdeckt der Service Layer dennoch Aufträge dieses Users, in denen der Befehl »@@RUNDSENDUNG« enthalten ist, so werden diese nicht versendet, sondern mit der Fehlermeldung »Unerlaubte Rundsendung« in das Sendebuch gestellt. </li><li>Externe Faxe versenden<br>Aktivieren Sie diese Option, wenn dem Benutzer der Versand von Faxen sowohl intern im lokalen Netzwerk als auch extern über das Telefonnetz möglich sein soll. Entfernen Sie den Haken aus dem Kontrollkästchen, wenn der Benutzer nicht die Möglichkeit besitzen soll, externe Faxe zu versenden. Der interne Faxversand ist auch in dieser Einstellung weiterhin möglich. </li><li>Externe eMails versenden<br>Aktivieren Sie diese Option, wenn dem Benutzer der Versand von eMails sowohl intern im lokalen Netzwerk als auch extern über das Internet möglich sein soll. Entfernen Sie den Haken aus dem Kontrollkästchen, wenn der Benutzer nicht die Möglichkeit besitzen soll, externe eMails zu versenden. Der interne Versand von eMails ist auch in dieser Einstellung weiterhin möglich. </li><li>Externe SMS Nachrichten versenden<br>Aktivieren Sie diese Option, wenn dem Benutzer der Versand von SMS Nachrichten sowohl intern im lokalen Netzwerk als auch extern über das Mobilfunk-Netz möglich sein soll. Entfernen Sie den Haken aus dem Kontrollkästchen, wenn der Benutzer nicht die Möglichkeit besitzen soll, externe SMS Nachrichten zu versenden. Der interne SMS-Versand ist auch in dieser Einstellung weiterhin möglich. </li><li>Externe TMails versenden<br>Aktivieren Sie diese Option, wenn dem Benutzer der Versand von TMails sowohl intern als auch extern möglich sein soll. Entfernen Sie den Haken aus dem Kontrollkästchen, wenn der Benutzer nicht die Möglichkeit besitzen soll, externe TMails zu versenden. Der interne Versand von TMails ist auch in dieser Einstellung weiterhin möglich.</li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#einstellungen"><b>Voreinstellungen  </b></a></p><ul type=square><li>Öffentliche Benutzerdaten<br>Aktivieren Sie dieses Kontrollkästchen, wenn es auch anderen David Usern möglich sein soll, die Daten dieses Anwenders (z.B. die Unterschrift) zu verwenden. Anwender können dann Sendeaufträgen durch Verwendung des Befehls »@@OWNERNAME« einen anderen Besitzer zuweisen und dessen Unterschrift über den Befehl »@@UNTERSCHRIFT« in die Nachricht einsetzen lassen, sofern für diesen User der Schalter »Öffentliche Benutzerdaten« gesetzt ist. </li><li>Kostenschlüssel mitwählen<br>Bei Aktivierung des Kontrollkästchens wird der eingetragene Kostenschlüssel bei jedem Wahlversuch dieses Anwenders mitgewählt. Einige Telefonanlagen können diesen Kostenschlüssel z.B. für eine Kostenstellenzuweisung herausfiltern.<p><i>Hinweis:</i>Falls die Telefonanlage eine solche Funktion nicht unterstützt, sollten Sie auf keinen Fall diese Option aktivieren.</p></li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#strongbox"><b>StrongBox (Datensicherung)  </b></a></p><ul type=square><li>StrongBox Ordner anzeigen<br>Wählen Sie diese Option, wenn der Benutzer das Recht haben soll, StrongBox Backups zu nutzen. Nur wenn der Benutzer über diese Berechtigung verfügt, wird ihm im David Client der Ordner »StrongBox Images« angezeigt, in dem sich die zur Verfügung stehenden Backups befinden. </li><li>Mounten lokaler StrongBox Images<br>Ist diese Option markiert, hat der Benutzer die Berechtigung, lokal in seinem David Client StrongBox Images zu mounten, um auf den darin enthaltenen Inhalt zuzugreifen. Im David Client steht in diesem Fall eine entsprechende Funktion unterhalb des Hauptmenüpunktes »Optionen« zur Verfügung. </li><li>Wiederherstellen (Restore) von StrongBox-Inhalten<br>Aktivieren Sie diese Option, wenn der Benutzer das Recht haben soll, Inhalte aus StrongBox Backups in das David Ordnersystem auf dem David Server zurückzusichern. Im Kontextmenü von Ordnern, die sich innerhalb eines Backups befinden, steht dann die Funktion »Restore« zur Verfügung. </li><li>Drag & Drop aus StrongBox Ordnern<br>Besitzt der Benutzer dieses Recht, hat er die Möglichkeit, nicht nur einzelne Dokumente sondern auch ganze Ordner per Drag & Drop aus StrongBox Backups zu kopieren. Der Inhalt der Backups selbst kann dadurch nicht verändert werden.</li></ul><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p>Außerdem können Sie im Bereich »Einschränkungen« die »max. Anzahl von Adressaten« festlegen, die der Benutzer für einen Sendeauftrag angeben darf. Versucht dieser Benutzer eine Rundsendung zu versenden, deren Adressliste die hier eingestellt Anzahl von Empfängeradressen überschreitet, so wird eine entsprechende Fehlermeldung in seinem Ausgangsordner erstellt. Der Versand findet in diesem Fall nicht statt.</p></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(9993);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   
