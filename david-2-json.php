@@ -118,7 +118,7 @@ $files = @glob(dirname(__FILE__).'/tobit-kb-files/*.html');
 // $files = @glob(dirname(__FILE__).'/tobit-kb-files/Q-109*.html');
 // $files = @glob(dirname(__FILE__).'/tobit-kb-files/Q-110*.html');
 
-echo "files founce: " . count($files) . "\n";
+echo "files found: " . count($files) . "\n";
 
 $cnt = 1;
 $max = count($files);
