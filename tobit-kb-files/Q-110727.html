@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-110.727</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Einsatz des bintec fxConnect4 als Fax- und Voice-Hardware für den Betrieb mit David®fx12™</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Was ist zu beachten, um den bintec fxConnect4 als Fax- und Voice-Hardware für den Betrieb mit David®fx12™ einzusetzen? Welche Konfigurationen sind am Gerät selbst sowie an David® erforderlich? </td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">Hardware</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">10.04.2012</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Der bintec fxConnect4 ist speziell abgestimmt für den Einsatz mit David®fx12™ von Tobit.Software. Zur Inbetriebnahme führen Sie die hier beschriebenen Anpassungen an der Konfiguration des Gerätes selbst und an der David® Konfiguration durch. Installieren Sie zunächst die Hardware nach Anleitung des Herstellers und stellen Sie sicher, dass sie betriebsbereit und im lokalen Netzwerk erreichbar ist. Gehen Sie dann folgendermaßen vor:<P><H4>Konfiguration des bintec fxConnect4</H4>Als Erstes treffen Sie in der Konfiguration des bintec fxConnect4 die generellen Einstellungen, damit David® die ISDN-Ports für Fax-Versand und -Empfang und für Sprachdienste nutzen kann. Hierzu wird das Funkwerk Configuration Interface verwendet, das per Web-Browser nutzbar ist. Öffnen Sie Ihren Web-Browser und tragen Sie in dessen Adresszeile die IP-Adresse des bintec fxConnect4 ein (Standard: 192.168.0.254). Daraufhin öffnet sich das Configuration Interface. Melden Sie sich mit den Zugangsdaten an, die Sie für das Gerät festgelegt haben. Die Standard-Daten lauten für den Benutzernamen »admin« und für das Passwort »funkwerk«.<P><B>Anpassen der ISDN-Schnittstellen für die Nutzung durch David® </B><BR>Wählen Sie im Configuration Interface den Menüpunkt »Physikalische Schnittstellen > ISDN-Ports > ISDN-Konfiguration«. Hier sehen Sie die beiden ISDN-Ports des Geräts und deren aktuelle Einstellungen. Über das Schraubenschlüssel-Symbol am rechten Rand rufen Sie die Konfiguration des jeweils zugehörigen Ports auf. Stellen Sie hier für jeden Port die folgenden Einstellungen sicher:<UL type=square><LI>Automatische Konfiguration beim Start: Nicht aktiviert</LI> <LI>Port-Verwendung: Dialup (Euro-ISDN)</LI> <LI>ISDN-Konfigurationstyp: Einstellung gemäß des Typs Ihres ISDN-Anschlusses. »Punkt-zu-Mehrpunkt« bei Mehrgeräteanschluss, »Punkt-zu-Punkt« bei Anlagenanschluss</LI></UL><p align="center"><img src="/graphic/kb/Q-110.727-1.jpg"></p><BR>Bestätigen Sie Ihre Einstellungen mit »OK« und wechseln Sie dann zu dem Punkt »MSN-Konfiguration«. Im Auslieferungszustand bzw. ohne eine manuelle MSN-Konfiguration nimmt der bintec fxConnect4 alle eingehenden ISDN-Verbindungen an. Um das zu verhindern und somit zu erreichen, dass eingehende ISDN-Verbindungen an David® weitergeleitet werden, weisen Sie hier jedem Port eine Dummy MSN zu (z.B. 99999). Nun werden alle eingehende Rufe, die nicht diesem Eintrag zugeordnet werden können, an den Dienst CAPI und somit an David® übergeben. Die übrigen Punkte der MSN-Konfiguration sind für den Betrieb mit David® nicht von Belang.<p align="center"><img src="/graphic/kb/Q-110.727-2.jpg"></p><BR><B>Netzwerkweites Bereitstellen der ISDN-Ports per Remote-CAPI-Server</B><BR>Der Remote-CAPI-Server des bintec fxConnect4 stellt die ISDN-Ports des Geräts im lokalen Netzwerk zur Verfügung und sorgt dafür, dass sie per CAPI (Common <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >ISDN<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'ISDN', 'content', 'Das <B>I</B>ntegrated <B>S</B>ervices <B>D</B>igital <B>N</B>etwork arbeitet mit digitalen Signalen anstelle von analogen Tonfrequenzen und erlaubt die Nutzung spezieller Dienste, die analog nicht oder nur mit erheblichem Aufwand m&ouml;glich sind. Mit ISDN und David ist z.B. der Versand und Empfang von Faxen und Sprachnachrichten direkt am PC m&ouml;glich.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Application Programming Interface) nutzbar sind. Er ist bereits im Auslieferungszustand aktiviert und funktionsbereit. Eine Konfiguration ist nur dann erforderlich, wenn Sie den Zugriff auf die CAPI beschränken möchten. In diesem Fall finden Sie die benötigten Optionen unter dem Menüpunkt »Lokale Dienste > CAPI-Server«. Vergeben Sie hier die gewünschten Zugangsdaten und definieren Sie bei Bedarf den zu verwendenden TCP-Port. Diese Daten müssen Sie dann auch in der Remote-CAPI-Client-Software angeben (siehe unten »Installation und Einrichtung der Remote-CAPI-Client-Software«).<P><H4>Anpassungen auf dem David® Server</H4>Damit David® mit dem bintec fxConnect4 kommunizieren und dessen ISDN-Ports nutzen kann, muss auf dem Computer, auf dem sich die David® Server-Installation befindet, die Remote-CAPI-Software installiert werden. Das macht die ISDN-Schnittstellen des bintec fxConnect4 für die automatische Hardware-Erkennung von David® identifizierbar und stellt sie so zur Einrichtung von David® Kommunikationsports zur Verfügung. <P><B>Installation und Einrichtung der Remote-CAPI-Client-Software</B><BR>Die Remote-CAPI-Client-Software ist Bestandteil des Softwarepakets »BRICKware«. Dieses befindet sich auf der dem Gerät beiliegenden Programm-DVD bzw. ist im Downloadbereich auf www.funkwerk-ec.com erhältlich. Die Installation erfolgt in die Programmgruppe »funkwerk BRICKware«. Nach dem Starten des Setup-Programms werden Sie aufgefordert, die zu installierenden Komponenten zu bestimmen. Stellen Sie hier in der Sektion »Treiber« sicher, dass der Punkt »Remote CAPI« ausgewählt ist. Die Option »CAPI Kernel Treiber« darf hingegen nicht aktiviert sein.<p align="center"><img src="/graphic/kb/Q-110.727-3.jpg"></p><BR>Gegen Ende des Installationsprozesses startet die »Remote Clients Configuration«. In diesem Fenster treffen Sie alle Einstellungen, die erforderlich sind, damit sich David® erfolgreich am bintec fxConnect4 anmelden und dessen ISDN-Ports nutzen kann. Gehen Sie folgendermaßen vor:Tragen Sie auf dem Register »Remote CAPI« in das Feld »IP-Adresse oder Host-Name des Gerätes«, die IP-Adresse ein, unter der Ihr bintec fxConnect4 erreichbar ist (Standard: 192.168.0.254). Den Inhalt aller übrigen Datenfelder dieser Registerkarte müssen Sie nur dann anpassen, wenn Sie individuelle Einstellungen zur Konfiguration des CAPI-Servers getroffen haben (siehe oben im Abschnitt »Netzwerkweites Bereitstellen der ISDN-Ports per Remote-CAPI-Server«). Tragen Sie in diesem Fall für <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TCP Port', 'content', 'Der TCP Port ist ein Ein-/Ausgabekanal eines Netzwerk-Computers, auf dem das Internetprotokoll TCP/IP ausgef&uuml;hrt wird. Jeder Port ist f&uuml;r einen bestimmten Dienst zust&auml;ndig: Der Port 25 ist beispielsweise f&uuml;r den eMail-Transport zust&auml;ndig.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TCP Port<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TCP Port', 'content', 'Der TCP Port ist ein Ein-/Ausgabekanal eines Netzwerk-Computers, auf dem das Internetprotokoll TCP/IP ausgef&uuml;hrt wird. Jeder Port ist f&uuml;r einen bestimmten Dienst zust&auml;ndig: Der Port 25 ist beispielsweise f&uuml;r den eMail-Transport zust&auml;ndig.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>, Benutzername und Passwort die dort definierten Werte ein.<p align="center"><img src="/graphic/kb/Q-110.727-4.jpg"></p><BR>Klicken Sie auf die Schaltfläche »Werte übernehmen«, um die getroffenen Einstellungen zu speichern. Zur Bestätigung erscheint im Info-Bereich des Fensters eine entsprechende Meldung. Unter »Mehrere Geräte...« finden Sie u.a. detaillierte Informationen über die konfigurierten CAPI-Server und deren CAPI-Controller sowie eine Schaltfläche zum Testen der aktuellen Konfiguration.<P><B>Installation der David® Ports</B><BR>Durch die Einrichtung der David® Kommumikationsports erfolgt schließlich die Einbindung der ISDN-Schnittstellen in David®. Nehmen Sie diese Einstellungen im David® Administrator auf dem David® Server vor. Wählen Sie im Menübaum den Punkt »System > Ports« und klicken Sie dann in der Symbolleiste auf »Hinzufügen«, um das Port Setup zu starten. Markieren Sie hier den Punkt »ISDN-Controller (CAPI)«, klicken Sie auf »Weiter« und aktivieren Sie im folgenden Dialog die Option »Hardware automatisch erkennen«. Nach einem erneuten Klick auf »Weiter« startet die automatische Hardware-Erkennung, die die Funkwerk Remote-CAPI-Controller findet und anzeigt.<p align="center"><img src="/graphic/kb/Q-110.727-5.jpg"></p><BR>Wählen Sie den gewünschten Eintrag aus, klicken Sie auf »Weiter«, und befolgen Sie die Anweisungen des Setup-Programms, um die Port-Installation abzuschließen. Um beide B-Kanäle eines ISDN-Mehrgeräteanschlusses zu nutzen, muss ein weiterer Port angelegt werden. Dazu können Sie den zuvor erzeugten Eintrag duplizieren, indem Sie ihn im David® Administrator unterhalb von »System > Ports« mit der rechten Maustaste anklicken und aus dem daraufhin erscheinenden Kontextmenü den Punkt »Duplizieren« wählen. Beachten Sie, dass Sie für den Betrieb zusätzlicher Kommunikationsports über eine ausreichende Anzahl von Port-Lizenzen verfügen müssen.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(10727);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

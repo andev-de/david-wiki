@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-108.473</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Installation und Betrieb eines EIB TLDs</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Ein Extended <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> mit dem PlugIn »EIB« soll installiert und eingerichtet werden.</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">TLD (Gebäudesteuerung)</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">3.07.2006</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Dieser <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Knowledge Base', 'content', 'Diese st&auml;ndig aktualisierte &quot;Wissens-Datenbank&quot; liefert immer aktuelle L&ouml;sungen f&uuml;r technische Fragen jeglicher Art.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Knowledge Base<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Knowledge Base', 'content', 'Diese st&auml;ndig aktualisierte &quot;Wissens-Datenbank&quot; liefert immer aktuelle L&ouml;sungen f&uuml;r technische Fragen jeglicher Art.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Artikel erläutert die Einrichtung von David für den Betrieb innerhalb von EIB-Systemen (Europäischer Installationsbus). Hierzu muss zunächst ein geeigneter Port eingerichtet und anschließend für seinen Bestimmungszweck konfiguriert werden. Führen Sie dazu die beschriebenen Schritte in der hier angegebenen Reihenfolge durch.<p><b>Einrichten eines EIB Ports</b><br>Für die Einbindung in das EIB-System sollte ein separater Port verwendet werden. Gehen Sie zur Einrichtung dieses Ports folgendermaßen vor:<ul><li><b>Starten des Port Setups</b><br>Öffnen Sie im David Administrator das Menü »Konfiguration -> Ports« und klicken Sie dann in der Symbolleiste auf das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Icon<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Icon', 'content', 'Dieses Bildsymbol kennzeichnet eine Funktion, wie z.B. das &quot;i&quot; mit m&uuml;nzf&ouml;rmigem, blauem Hintergrund, welches f&uuml;r das Tobit InfoCenter steht.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> »Neu«. Daraufhin startet das Setup-Programm. Klicken Sie auf »Hinzufügen«, um einen neuen Port einzurichten.<p><li><b>Auswahl des Port-Typs</b><br>Wählen Sie aus der dann angezeigten Liste den Typ »Extended (z.B. Automation)« und bestätigen Sie Ihre Auswahl mit »Weiter«.<p><li><b>Auswahl des PlugIns</b><br>Im nächsten Dialogfenster ist das für den neuen Port zu nutzende PlugIn anzugeben. Da ein EIB Port erstellt werden soll, wählen Sie an dieserStelle den Eintrag »Automation - EIB« aus. Klicken Sie anschließend auf »Weiter«, um Ihre Auswahl zu bestätigen und mit dem Setup fortzufahren.<p align="left"><img src="/graphic/kb/D-108.473-01.JPG"><p><li><b>Benennen des Ports</b><br>Vergeben Sie eine eindeutige Bezeichnung für den neuen Port (z.B. »Automation - EIB«) und klicken Sie wiederum auf »Weiter«.<p><li><b>Bestimmen der Schnittstelle und Abschluss</b><br>Wählen Sie schließlich die Schnittstelle aus, über die der DvISE Server mit dem EIB-Busankoppler verbunden ist. Im Normalfall erfolgt die Verbindung über eine der COM-Schnittstellen per seriellem Schnittstellenkabel (RS232). Bei Bedarf kann diese Einstellung auch nachträglich noch geändert werden. Klicken Sie auf »Fertig stellen«, um Ihre Auswahl zu bestätigen und das Setup abzuschließen. Damit ist die Port-Installation beendet und das Setup-Programm schließt sich eigenständig.</ul><p><i>Das Starten eines EIB-Ports ist nur möglich, wenn eine Verbindung zum Busankoppler und somit zum Elektrobussystem besteht.</i><p><b>Anpassen der Port-Konfiguration</b><br>Nach der Installation des neuen Ports muss dessen Konfiguration angepasst werden. Wählen Sie dazu im David Administrator den Menüpunkt »Konfiguration -> Ports« und öffnen Sie den Konfigurationsdialog des soeben erstellten Ports durch einen Doppelklick auf den zugehörigen Listeneintrag. Nehmen Sie auf der Registerkarte »Allgemein« folgende Einstellungen vor:<p><ul><li><b>TLDSubType</b><br>Bestimmen Sie hier eine Bezeichnung, unter der dieser Port direkt adressierbar sein soll. Standardmäßig wird die Bezeichnung »EIB« genutzt. Die Verwendung dieses TLDSubType ist sowohl im Adressfeld des Nachrichten Editors als auch in Verbindung mit DvISE Befehlen (beispielsweise @@NUMMER@@) möglich. Geben Sie als Empfängeradresse zunächst diese Bezeichnung an, direkt gefolgt voneinem Doppelpunkt und der eigentlichen Empfängeradresse.<p align="left"><img src="/graphic/kb/D-108.473-02.JPG"><p><li><b>Erweiterung der Sendeservices</b><br>Aktivieren Sie die Funktion »Diesen Port mit der folgenden Bezeichnung im Nachrichten Editor des InfoCenters unter »Sendeservices« zur Auswahl anbieten«, wenn Sie wünschen, dass dieser Port über einen eigenen Eintrag in der Liste »Sendeservices« im Nachrichten Editor des David InfoCenters direkt ansprechbar sein soll. Vergeben Sie dazu in dem darunter stehenden Feld»Bezeichnung« einen Namen, der den verfügbaren Sendeservices hinzugefügt werden soll. Bei der Erstellung von Aufträgen, die über diesen Port abgewickelt werden sollen, ist dann als Sendeservice dieser Eintrag zu wählen.</ul><p><b>Erweiterte Einstellungen</b><br>Um über den soeben erstellten Port mit dem EIB-System kommunizieren zu können, sind einige zusätzliche Einstellungen vorzunehmen. Klicken Sie dazu auf die Schaltfläche »Extended <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>...«. Daraufhin öffnet sich ein weitererKonfigurationsdialog.<p align="left"><img src="/graphic/kb/D-108.473-03.JPG"><p>Hier können Sie die Schnittstelleneinstellung prüfen und bei Bedarf ändern. Wenn Sie wünschen, dass bei jedem Starten des Ports die Werte sämtlicher <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Aktoren', 'content', 'Die Aktoren sind im Gegensatz zu den Sensoren die Befehlsausf&uuml;hrenden in der Geb&auml;udeautomation. Ein Aktor sorgt z.B. daf&uuml;r, dass das Licht eingeschaltet wird, nachdem er den Befehl erhalten hat, es einzuschalten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Aktoren<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Aktoren', 'content', 'Die Aktoren sind im Gegensatz zu den Sensoren die Befehlsausf&uuml;hrenden in der Geb&auml;udeautomation. Ein Aktor sorgt z.B. daf&uuml;r, dass das Licht eingeschaltet wird, nachdem er den Befehl erhalten hat, es einzuschalten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> im State <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> aktualisiert werden sollen, aktivieren Sie das zugehörige Kontrollkästchen. In diesem Fall wird beim Starten des Ports eine Abfrage an jeden Aktor gesendet und der daraufhin erhaltene Rückgabewert in das State Archive übernommen. Auf diese Weise liefert das Automation Portal nach einem Neustart des Ports immer die aktuell gültigen Werte.<p><i>Nutzen Sie die Option »Beim Starten dieWerte aller Aktoren im State Archive aktualisieren« nur, wenn sichergestellt ist, dass bei der Parametrierung über die ETS (EIB Tool Software) in den Objekt-Eigenschaften der Aktoren das Flag »Lesen« gesetzt ist. Andernfalls können durch fehlende Rückmeldungen von Aktoren, für die dieses Flag nicht gesetzt ist, spürbare Zeitverzögerungen auftreten.</i><p>In der darunter stehenden Liste können Sie beliebig viele Gruppen Adressen eintragen, deren Werte beim Start des Ports abgefragt werden sollen. Klicken Sie hier auf »Hinzufügen«, um einen neuen Eintrag zu erstellen. Tragen Sie in das Feld »Name« eine beliebige Bezeichnung ein. Mit den Feldern »Anfangsadresse« und »Letzte Adresse« können Sie den abzufragenden Bereich der EIB-Gruppen-Adresse definieren.<p><b>Betrieb des EIB Ports</b><br>Nach dem Abschluss der Konfiguration ist der Port betriebsbereit. Aufträge für diesen Port können über die API- oder über die FileScan-Services (z.B. per Text-Datei im ASCII-Format) erzeugt werden, wobei in der Adressierung der in der Port-Konfiguration definierte TLDSubType zu verwenden ist.<p>Eine gültige Zieladresse setzt sich folgendermaßen zusammen:<p><ul>TLDSubType:Gruppen Adresse</ul><p>Beispiel:<p><ul>EIB:3/4/66</ul><p>Die Erstellung von Aufträgen ist natürlich auch über den Nachrichten Editor des David InfoCenters möglich. Hier kann die Adressierung auch komfortabel über die Auswahl des betreffenden Sendeservices geschehen, wenn dieser zuvor in der Port-Konfiguration definiert wurde.<p>In dem System-Archive »Archive/System/DvISE/ Automation/State« werden alle Meldungen, die der DvISE Server über den Beckhoff Port vom Bus empfängt, verwaltet. Hier existiert für jede der bisher angesprochenen Bus-Adressen ein Eintrag, der die jeweils zugehörige Adresse als Bezeichnung trägt. Zur leichteren Unterscheidung oder zum schnellen Auffinden bestimmter Adressen kann in das Feld »Bezeichnung« auch ein beliebiger Text geschrieben werden. Die Spalte »Adresse« beinhaltet in jedem Fall die korrekte Adresse. Vergeben Sie für wichtige Adressen, auf die ein schneller Zugriff möglich sein soll, manuell die Priorität »hoch«. Diese Adressen werden dann in einem gesondertenBereich des Automation Portals von David aufgelistet.<p>Sobald der Port Aufträge bearbeitet, kann die System-Kommunikation im Port Monitor überwacht werden. Wählen Sie dazu im David Administrator den Menüpunkt »Monitor -> Ports« und öffnen Sie den Monitor des gewünschten Ports per Doppelklick auf den zugehörigen Listeneintrag. Wechseln Sie hier auf das Register »Communication« um den Verlauf der Kommunikation zu verfolgen.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(8473);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

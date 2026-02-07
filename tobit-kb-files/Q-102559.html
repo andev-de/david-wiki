@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-102.559</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Wiederherstellung der DvISE Installation nach Problem mit der Systemintegrität</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Während der Installation des aktuellen Service Packs für die DvISE Installation wurde die Meldung ausgegeben, dass ein Zugriff auf Dateien im Verzeichnis »DAVID\Z$BACKUP« nicht möglich wäre. Mit dem »Ignorieren«-Button wurde die Installation fortgesetzt.<br>Bei erneuten Versuchen das aktuelle <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Service Pack<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> zu installieren, wurden weitere Meldungen ausgegeben, z.B. dass kein David 6.6 vorliegt.<br>Der Versuch, das ursprüngliche Service Pack wieder einzuspielen oder die Uninstall Routine aus dem Verzeichnis Z$BACKUP aufzurufen, scheiterten.<p>Wie können solche Meldungen zustande kommen und wie kann das DvISE System wiederhergestellt werden, da der DvISE Service Layer nicht mehr gestartet werden kann und Hinweise auf unterschiedliche Versionen der Systemdateien gegeben sind?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">dringend</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">kritisch</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">24.10.2002</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Solche Probleme können im Zusammenhang mit der Systemintegrität und/oder der Rechtevergabe stehen. Im weiteren Verlauf der Dokumentation wird hierauf detaillierter eingegangen.<p>Folgende Vorgehensweise empfiehlt sich, um das DvISE System mit dem aktuellsten <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Service Pack<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Service Pack', 'content', 'Ein Service Pack stellt eine Sammlung von Programmaktualisierungen f&uuml;r die DvISE Produkte zur Verf&uuml;gung und wird kostenlos angeboten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> wieder in den einwandfreien Zustand zu befördern:<ol><li>Zunächst empfiehlt es sich, dass Sie eine Datensicherung mittels MKINST32.EXE durchführen, um Inhalte des Tobit Archive Systems zu sichern, z.B. die Benutzerarchive, Zentraleingang, usw.<br>Nutzen Sie hierzu die Hilfestellungen der folgenden KnowledgeBase Artikel:<ul><li><a href="kbarticleCLUB.asp?ArticleID=279"><b>Q-100.279 (Der Archivepacker MKINST32.EXE)</b></a><li><a href="kbarticleCLUB.asp?ArticleID=75"><b>Q-100.075 (nur Punkt 2 und 3 der Anleitung)</b></a></ul><li>Falls noch nicht geschehen, notieren Sie sich alle relevanten Informationen insoweit vorhanden, wie z.B. Vergabe der eMail Adressen, Faxnummerzuweisungen,Einstellungsoptionen der DvISE Dienste, usw. <br>Hier empfiehlt es sich generell eine eigene Kurzdokumentation anzulegen, um stets alle relevanten Informationen schnell zur Verfügung zu haben.<li>Nach manueller Deaktivierung aller DvISE Dienste sichern Sie die komplette David-Verzeichnisstruktur auf einen externen Datenträger, z.B. Bandsicherung, CDR, etc., um eine zusätzliche Datensicherung zur Hand zu haben.<li>Es empfiehlt sich ebenfalls, vor der einer Deinstallation des DvISE Systems die lokalen Tobit InfoCenter Installationen zu deinstallieren, da für die Deinstallation Abhängigkeiten zum Server bestehen.<li>Als Letztes deinstallieren Sie nun über die Uninstallroutine das DvISE System.<br>Ist dies <b>widererwartend nicht möglich, und auch nur dann</b>, notieren Sie sich alle in der Windows Dienstesteuerung eingetragenen DvISE Dienste und starten Sie auf dem Server den DOS Prompt:<ul><li>Wechseln Sie in das Verzeichnis »DAVID\APPS\...\CODE«, wobei "..." für den jeweiligen Dienst steht und führen Sie dort die jeweilige EXE Datei, z.B. POSTMAN.EXE mit der Option "-u" aus. Beispiele:<br>POSTMAN -u<br>DSERVER -u<br>usw.<li>Im Verzeichnis »DAVID\CODE« führen Sie SL.EXE mit dem Prompt »SL -u« aus, um als letztes den Dienst »DvISE Service Layer« aus der Dienstesteuerung zu entfernen.<li>Nennen Sie das Verzeichnis »DAVID« um, z.B. »DAVID_OLD«.<li>Eine Entfernung von Registry-Einträgen ist <b>nicht</b> erforderlich, da diese bei einer erneuten Installation neu eingetragen werden.</ul><li>Führen Sie nun einen Serverneustart durch.<li>Installieren Sie nun von Ihrer neuesten Produkt-CD das DvISE System erneut und führen Sie anschließend alle Schritte zur Grundeinrichtung durch. Hierzu gehören folgende Punkte in genannter Reihenfolge:<ul><li><b>Anmeldung als Administrator am Server</b><br>Sehen Sie davon ab, spezielle Service-User zu verwenden, um sicherzustellen, insbesondere bei Active Directory Umgebungen, dass der Benutzer definitiv alle Rechte hat.<li><b>Starten der Installation von der Produkt-CD</b><li><b>Sicherstellung der korrekten Rechtevergabe</b><br>Verwenden Sie hierzu die Hinweise im <br><a href="kbarticleCLUB.asp?ArticleID=212"><b>KnowledgeBase Article Q-100.212</b></a>.<li><b>Grundkonfiguration via DvISE Administrator</b><br>Hierzu eignet sich insbesondere die Verwendung der eigenen Kurzdokumentation, wie bereits vorab geschildert.<li><b>Grundkonfiguration des Betriebssystems</b><br>Insbesondere in einer Active Directory Umgebung empfiehlt es sich, über ein Script ein einheitliches Laufwerksmapping für das Serververzeichnis »DAVID« auf allen Clients sicherzustellen. Z.B. über eine Grouppolicy können Sie dies verwirklichen, weisen Sie das Script optimaler Weise benutzerspezifisch zu und nicht clientspezifisch.<br>In einer nicht Active Directory Umgebung kann solch ein Script auch über Autostart auf den Clients implementiert werden.<br><b>Beispiel für eine Script zum Laufwerksmapping:</b><br>»net use o: \\servername\david«<li><b>Testen der Funktionalität</b><br>Prüfen Sie die Funktion aller benötigen Dienste mittels einem <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Client<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> und korrigieren Sie gegebenfalls festgestellte Irritationen, z.B. falsches Passwort für POP3 Postfächer.</ul><li>Sollten Sie in der Vergangenheit Probleme mit der Integrität von heruntergeladenen gepackten Dateien haben, so prüfen Sie zunächst (nach Download des aktuellsten Service Pack von der Club Tobit.com Site) das aktuellste Service Pack für das DvISE System manuell mittels z.B. dem Packer "WINRAR" oder "WINZIP":<ul><li>Hierzu öffnen Sie die gepackte Datei mittels einem dieser Tools und entpacken manuell den Inhalt in ein temporäres Verzeichnis.<li>Gelingt diese Operation einwandfrei, so ist die Integrität gewährleistet und sie können die Executable normal zum Update der DvISE Installation starten.<li>Gelingt dies nicht, so laden Sie die Datei erneut von einer anderen Workstation runter, wo Sie den aktuellsten Internet Explorer installiert haben.<br><b>Hinweis:</b><br>Teilweise ist die Integrität auch abhängig von dem vorliegendem Dateisystem, der Fragmentierung oder Defekten der Festplatte.</ul><li>Nach erfolgreicher Installation des aktuellsten Service Packs und Überprüfung der Grundfunktionalität des DvISE Systems mit einem Testclient, führen Sie alle weiteren Schritte zur Installation des Tobit InfoCenters auf anderen Clients durch.</ol></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(2559);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-109.722</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Konfiguration und Nutzung von TV Select in Verbindung mit David.fx</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;"><a name="#anfang"></a>TV Select soll zusammen mit David.fx genutzt werden. Welche Möglichkeiten ergeben sich dadurch, und welche Einstellungen sind dafür notwendig?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">TV Select</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">15.10.2010</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">TV Select ist eine kostenfreie App für das iPhone und den iPod touch und zeigt das aktuelle Fernsehprogramm der TV DIGITAL, Deutschlands populärstem TV-Magazin, an. In Verbindung mit David.fx kann TV Select auch als Instrument für die Aufnahmeplanung von TV-Sendungen und als Fernbedienung zur Steuerung des David Mediaplayers genutzt werden:<ul type=square><li><a href="#grundeinrichtung"><b>Grundeinrichtung</b></a></li><li><a href="#tv"><b>Vornehmen von Aufzeichnungen und Aufnahmeplanung in TV Select</b></a></li><li><a href="#mediathek"><b>Fernsteuerung des David Mediaplayer</b></a></li></ul><p><a name="#grundeinrichtung"><b>Grundeinrichtung</b></a></p><p>Um TV Select in Verbindung mit David.fx nutzen zu können, muss zwischen TV Select und dem David.fx Server eine Verbindung aufgebaut werden.</p><p>Dazu können Sie beim iPhone folgende Möglichkeiten nutzen:<ul type=square><li>Verbindungsaufbau per EDGE / UMTS,<br>wenn der David.fx Server von extern über das Internet erreichbar ist. Nähere Informationen dazu finden Sie im Abschnitt zur <a href="#extern"><b>externen Nutzung</b></a>.</li><li>Verbindungsaufbau per WLAN</li></ul><p>Beim iPod touch besteht ausschließlich die Möglichkeit, eine Verbindung per WLAN zum David.fx Server aufzubauen. Netzwerkintern sollten Sie darauf achten, Ihren Geräten (PCs, Server, iPhones) statische IP-Adressen zuzuweisen. DHCP-Adressenvergabe sollten Sie dann z.B. in Ihrem Router deaktivieren.</p><p>Auf dem David.fx Server muss das Programm »David Mediaplayer« dauerhaft gestartet sein. Dieses Programm befindet sich auf Windows-Verzeichnisebene als »DVWINTV.EXE« im Verzeichnis »C:\PROGRAMME\TOBIT INFOCENTER«. In der Konfiguration des David Mediaplayer muss unter »Datei > Einstellungen > Remote-Control« die Option »Remote-Control erlauben« aktiviert werden. Das Anlegen von Benutzername und Passwort ist optional, wird aus Sicherheitsgründen aber empfohlen.<p><p align="center"><img src="/graphic/kb/Q-109.722-1.jpg"></p><p>Starten Sie anschließend den David Mediaplayer neu. Achten Sie darauf, dass im Windows Task-Manager unter »Prozesse« nur einmal der Prozess »DVWINTV.EXE« aufgeführt ist. Existiert hier mehr als ein Eintrag mit diesem Namen, beenden Sie alle DVWINTV-Prozesse und starten Sie anschließend den David Mediaplayer neu. Netzwerkintern ist nun eine Verbindung zum David.fx Server möglich. Falls eine <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Firewall', 'content', 'Dieser Sicherheitsmechanismus sch&uuml;tzt Netzwerke und einzelne Rechner vor unerlaubten Benutzern wie eine &quot;Brandmauer&quot;.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Firewall<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Firewall', 'content', 'Dieser Sicherheitsmechanismus sch&uuml;tzt Netzwerke und einzelne Rechner vor unerlaubten Benutzern wie eine &quot;Brandmauer&quot;.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> genutzt wird oder eine Verbindung von extern über das Internet aufgebaut werden soll, beachten Sie folgende Hinweise:</p><ul type=square><a name="#extern"></a><li><b>Der TCP-Port 8899 muss für eingehende Verbindungen in Ihrem Router und Ihrer Firewall geöffnet sein.</b></li><li>Ihr David.fx Server muss von extern über das Internet erreichbar sein. Z.B. durch Einsatz einer statischen IP-Adresse, die Sie von Ihrem Internet-Provider bekommen haben, oder durch Nutzung der »<span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Server Locator Services', 'content', 'Die Server Locator Services simulieren trotz einer dynamischen IP-Adresse eine  Standleitung. So kann David zum Beispiel schon mit einer DSL-Flat als echter eMail-Server mit einer st&auml;ndigen Internetverbindung betrieben werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Server Locator Services<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Server Locator Services', 'content', 'Die Server Locator Services simulieren trotz einer dynamischen IP-Adresse eine  Standleitung. So kann David zum Beispiel schon mit einer DSL-Flat als echter eMail-Server mit einer st&auml;ndigen Internetverbindung betrieben werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>«, den Sie als kostenpflichtigen Zusatzdienst im David.Administrator innerhalb der PostMan Konfiguration auf der Registerkarte »Generell« aktivieren können. Beachten Sie dazu den KnowledgeBase Artikel <a href="KBArticle.asp?ArticleID=0229" target="_self"><u>Q-100.229</u></a>. </ul><p>In TV Select müssen Sie anschließend im Bereich »Mehr > Server« den David.fx Server angeben, mit dem Sie sich verbinden möchten. Klicken Sie dazu oben rechts auf die Schaltfläche »Bearbeiten« und anschließend oben links auf die »+« Schaltfläche. TV Select wird Ihnen daraufhin alle aktuell im Netzwerk verfügbaren David.fx Server anzeigen, bei denen der David Mediaplayer mit aktivierter Remote-Control gestartet ist.</p><p align="center"><img src="/graphic/kb/Q-109.722-2.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-3.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-4.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-5.jpg"></p><p>Nach Auswahl Ihres David.fx Servers klicken Sie erneut auf den Server-Namen bzw. auf das blaue Pfeil-Symbol dahinter um ggf. die Zugangsdaten einzutragen, die Sie zuvor in den Remote-Control-Einstellungen des David Mediaplayer definiert haben (Benutzername und Passwort). Wechseln Sie anschließend über die Schaltfläche »Server« zurück zur Server-Übersicht und bestätigen Sie Ihre Einstellungen mit einem Klick auf die Schaltfläche »Fertig«.</p><p align="center"><img src="/graphic/kb/Q-109.722-6.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-7.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-8.jpg"></p><p>Nach erneutem Anklicken des Server-Namens wird eine Verbindung zum David.fx Server aufgebaut. In der Server-Übersicht wird eine aktive Verbindung hinter der IP-Adresse oder dem Server-Namen mit einem Häkchen angezeigt.</p><p align="center"><img src="/graphic/kb/Q-109.722-9.jpg"></p><p>Alternativ können Sie die Zugangsdaten zum David.fx Server auch manuell in der Server-Übersicht über den Menüpunkt »Manuelle Eingabe« hinterlegen. Dabei stehen Ihnen folgende Optionen zur Verfügung:<ul type=square><li>IP-Adresse, unter der der David.fx Server von intern oder extern erreichbar ist, gefolgt von einem Doppelpunkt und dem für die Verbindung zu verwendenden TCP-Port (8899)<br><i>Beispiel: 192.168.0.1:8899</i></li><li>Domain Name, unter der der David.fx Server von intern oder extern erreichbar ist, gefolgt von einem Doppelpunkt und dem für die Verbindung zu verwendenden TCP-Port (8899)<br><i>Beispiel: example.net:8899</i></li><li>Rechner-Name des David.fx Servers</li></ul></p><p align="center"><img src="/graphic/kb/Q-109.722-10.jpg"></p><p>Eine bestehende Verbindung zwischen TV Select und einem David.fx Server können Sie unter »Mehr > Server« löschen, indem Sie in den »Bearbeiten«-Modus wechseln, den betreffenden Server auswählen und auf die Schaltfläche »Server entfernen« klicken.</p><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p><p><a name="#tv"><b>Vornehmen von Aufzeichnungen und Aufnahmeplanung in TV Select</b></a></p><p>Beim Aufrufen von Detail-Informationen zu einer Sendung, steht in TV Select oben rechts die Schaltfläche »Aufnehmen« zur Verfügung. Um diese Funktion nutzen zu können, muss David.fx gemäß dem KnowledgeBase Artikel <a href="KBArticle.asp?ArticleID=9955" target="_self"><u>Q-109.955</u></a> zum Aufzeichnen von TV-Sendungen eingerichtet sein.</p><p>Ist dies der Fall, können Sie durch einen Klick auf die »Aufnehmen« Schaltfläche und das Bestätigen der Aufzeichnungsabfrage mit »Ja« einen neuen Aufnahme-Auftrag in David generieren. Dieser ist im David Client unter »Navigator > Programm« in der Spalte »Aufnahmen« sichtbar und kann dort bei Bedarf auch wieder gelöscht werden. Die Aufzeichnungen werden im David Client unter dem Ordner »Multimedia > Video > Aufzeichnungen« gespeichert.</p><p align="center"><img src="/graphic/kb/Q-109.722-11.jpg"></p><p align="center"><img src="/graphic/kb/Q-109.722-12.jpg"></p><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p> <p><a name="#mediathek"><b>Fernsteuerung des David Mediaplayer</b></a></p><p>Wenn Sie in TV Select den Bereich »Mediathek« aufrufen, wird Ihnen eine Eintragsliste mit allen Aufnahmen angezeigt, die auch im David Client unter dem Ordner »Multimedia > Video > Aufzeichnungen« sichtbar sind.</p><p align="center"><img src="/graphic/kb/Q-109.722-13.jpg"></p><p>Nach Auswahl einer Sendung befindet sich über den Detail-Informationen zur Aufzeichnung oben rechts die Schaltfläche »Wiedergabe«. Klicken Sie die Schaltfläche an, um den David Mediaplayer die Aufzeichnung auf Ihrem PC bzw. Server wiedergeben zu lassen.<p align="center"><img src="/graphic/kb/Q-109.722-14.jpg"></p><p>In TV Select werden nun eine Zeitleiste sowie verschiedene Schaltflächen zur weiteren Steuerung der Wiedergabe angezeigt:<ul type=square><li>Halten Sie den roten Pfeil auf der Timeline gedrückt und bewegen Sie den Pfeil nach unten oder oben, um in der Aufzeichnung vor- oder zurückzuspulen.</li><li>Nach Anklicken der oberen rechten Schaltfläche erscheint ein Schieberegler, über den Sie die Lautstärke anpassen können.</li><li>Die Schaltflächen im unteren Bereich haben folgende Aufgaben (von links nach rechts): Vorherige Aufzeichnung wiedergeben, zurückspulen, pausieren/wiedergeben, vorspulen und nächste Aufzeichnung wiedergeben.</li><li> Nach Anklicken der oberen linken Schaltfläche wechseln Sie zur vorherigen Seite mit den Detail-Informationen zur Aufzeichnung zurück. Von dort aus können Sie auch zurück zur Eintragsliste wechseln.</li></ul> </p><p align="center"><img src="/graphic/kb/Q-109.722-15.jpg"></p><p>Die Fernsteuerung des David Mediaplayer mit TV Select ist auf allen Computern möglich, die Zugriff auf den David.fx Server besitzen, über einen korrekt installierten David Client verfügen und deren David Mediaplayer für den Remote-Control-Betrieb <a href="#grundeinrichtung"><b>wie oben beschrieben</b></a> konfiguriert ist.</p><p><a href="#anfang"><b>Zurück zum Artikelanfang</b></a>  </p>  <p><b>Allgemeine Hinweise:</b><br>Die Nutzung von TV Select ist sowohl mit der David.fx Basic als auch mit der David.fx Pro Edition möglich.<br>Die Installation von TV Select erfolgt direkt über den App Store. Entweder direkt auf dem iPhone / iPod touch oder über <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=313531387&mt=8" target="_blank"><u>iTunes</u></a>.</p></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(9722);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

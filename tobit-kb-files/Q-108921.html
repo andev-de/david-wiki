@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-108.921</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Hinweise zur Nutzung des von AGFEO angepassten »CONNECT.DCC« Scripts </b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;"><a name="#anfang"></a>David wird in Verbindung mit einer AGFEO TK-Anlage eingesetzt. Hierbei soll nun auch das von AGFEO angepasste Script »CONNECT.DCC« verwendet werden. Welche Schritte sind dazu notwendig und was ist zu beachten?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">TLD (allgemein)</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">11.12.2009</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Das Script »CONNECT.DCC« wird u.a. benötigt, damit David eine ausgehende Telefon-Verbindung durch Nutzung von <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'CTI', 'content', 'Die <B>C</B>omputer <B>T</B>elephony <B>I</B>ntegration stellt in David Sytemen die Verbindung zwischen Telefon und Server dar und  steuert bspw. die Wahlhilfe und den R&uuml;ckruf f&uuml;r jeden Anwender im Netzwerk.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >CTI<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'CTI', 'content', 'Die <B>C</B>omputer <B>T</B>elephony <B>I</B>ntegration stellt in David Sytemen die Verbindung zwischen Telefon und Server dar und  steuert bspw. die Wahlhilfe und den R&uuml;ckruf f&uuml;r jeden Anwender im Netzwerk.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Funktionen (Computer Telephony Integration) über eine TK-Anlage aufbauen kann. Diese Datei befindet sich auf Ihrem David Server im Verzeichnis »\DAVID\TLD\COMMON\«. Nähere Informationen dazu erhalten Sie im KnowledgeBase Artikel <a href="KBArticle.asp?ArticleID=6271" target="_self"><u>Q-106.271</u></a>. <p>Der TK-Anlagen-Hersteller AGFEO hat für Nutzer von AGFEO TK-Anlagen ein spezielles »CONNECT.DCC« Script erstellt, welches dem David Benutzer zusätzliche Funktionen zur Verfügung stellt:</p> <ul type=square> <li>Direktes Starten des Systemtelefons im <a href="#client"><u>Freisprech-Betrieb </u></a> bei Rufnummernwahl mit David. </li> <li>Direktes Starten des Systemtelefons im <a href="#client"><u>Headset-Betrieb </u></a> bei Rufnummernwahl mit David.<br><i>Verfügbar, wenn ein Headset an Ihr AGFEO Systemtelefon angeschlossen ist. Unterstützte AGFEO Systemtelefone: <ul> <li>»ST 21« </li> <li>»ST 25« </li> <li>»ST 30«  </li> <li>»ST 40«</li></ul></i></li> <li><b>Einschränkungen:</b> <ul> <li>Die Wiedergabe von Voicemails auf Ihrem Systemtelefon ist bei Nutzung des Freisprech- oder Headset-Betriebs nicht mehr möglich. </li> <li>Externe Teilnehmer mit dreistelliger Rufnummer können bei Nutzung des AGFEO »CONNCECT.DCC« Scripts nicht angewählt werden, da diese Rufnummern im Script als intern ausgewertet werden. </li> <li>In Ihren David Adresskarten dürfen sich keine »!« vor den Rufnummern befinden, da diese vom AGFEO »CONNCECT.DCC« Script nicht richtig ausgewertet werden.<br>(Im »CONNECT.DCC« Script von Tobit.Software würde erst der externe Teilnehmer angerufen werden)  </li> <li>Bei Teilnehmern mit analogen Nebenstellen muss in den Einstellungen des David Client im Bereich »Rufnummer für TAPI-Funktionen (Lokale Nebenstelle)« das Präfix »a« vor die Rufnummer  gesetzt werden. Ohne das Präfix »a« erhält der Anwender bei Nutzung der Wahlhilfe im David Client eine Meldung mit dem Hinweis auf einen unbekannten Fehler, während das Telefongespräch zu der gewünschten Zielnummer zwar aufgebaut aber ungewollt direkt mit dem Anrufbeantworter des David Benutzers verbunden wird.</li></ul> </li> </ul> <p>Diese angepasste Version des »CONNECT.DCC« Scripts ist von Tobit.Software freigegeben und kann durch einen Klick auf die folgende Schaltfläche kostenfrei heruntergeladen werden:</p> <p><form><center><button type=button onClick="self.location.href='/graphic/kb/agfeo-script.zip'">Download</button></center></form> </p> <p><i>Hinweis: Die zum Download bereitgestellte Datei liegt im »ZIP« Format vor. Zum Öffnen wird ggf. ein Packprogramm benötigt. </i></p> <p>Folgende Voraussetzungen müssen für den Einsatz des angepassten »CONNECT.DCC« Scripts erfüllt sein:</p> <ul type=square> <li><b>Eingerichteter David Server</b> (David 6.6 oder höher), insbesondere: <ul> <li>Eine im Server installierte ISDN-Karte<br>(siehe <a href=http://www.tobit.com/login/HardwareList.asp?guest=1&CategoryID=8, target="blank"><u>Liste mit unterstützter Hardware)</u></a>)</li> <li>Ein in David eingerichteter ISDN-Port (<span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TLD<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TLD', 'content', 'Der <B>T</B>ransport <B>L</B>ayer <B>D</B>river ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>) mit aktiviertem »ECT« Dienst</li></ul></li> <li><a href="#connect"><b><u>Installiertes AGFEO »CONNECT.DCC« Script </u></b></a></li>  <li><a href="#client"><b><u>Angepasste Einstelllungen im David Client </u></b></a></li>  <li><a href="#tkanlage"><b><u>Aktivierte CTI-Funktion in der AGFEO-TK-Anlage</u></b></a></li> </ul>  <p><a name="#connect"><b>Installation des AGFEO »CONNECT.DCC« Scripts</b></a></p> <p>Gehen Sie folgendermaßen vor, um das »CONNECT.DCC« von AGFEO zu installieren:</p> <p><b>Prüfen der eingerichteten ISDN-Ports</b></p> <ol> <li>Öffnen Sie den David.Administrator und wechseln Sie im Konfigurationsbaum auf der linken Seite in den Bereich »System > Ports«. </li> <li>Markieren Sie einen ISDN-Port mit der rechten Maustaste und wählen Sie aus dem Kontextmenü den Eintrag »Eigenschaften«. </li> <li>Überprüfen Sie auf der Registerkarte »Dienste«, ob die Option »ECT« aktiv ist. Notieren Sie sich in diesem Fall die Nummer des Ports (z.B. »001«) und schließen das Fenster mit den Port-Eigenschaften.</li> <li>Wiederholen Sie diesen Vorgang für alle eingerichteten ISDN-Ports. </li> <p align="center"><img src="/graphic/kb/Q-108.921-1.jpg"></p> </ol> <p><b>Durchführen der Installation</b></p> <ol><li>Rufen Sie in der Symbolleiste des David.Administrator über die Schaltfläche »David Dienste« das zugehörige Dialogfenster auf und beenden Sie alle David Dienste. </li> <p align="center"><img src="/graphic/kb/Q-108.921-2.jpg"></p> <li>Erstellen Sie auf Ihrem David Server ein temporäres Backup-Verzeichnis außerhalb der David Verzeichnis-Struktur, z.B. »C:\BACKUP-DAVID\«.</li> <li>Wechseln auf Ihrem David Server mit dem Windows Explorer in das Verzeichnis »\DAVID\TLD\COMMON\«.  </li> <li><u>Verschieben</u> Sie die dort vorhandene Datei »CONNECT.DCC« in das soeben erzeugte Backup-Verzeichnis, um diese bei Bedarf wiederherstellen zu können. </li> <li>Kopieren Sie die von AGFEO angepasste Datei »CONNECT.DCC« in das Verzeichnis »\DAVID\TLD\COMMON\« Ihres David Servers. </li> <li>Wechseln Sie in das Verzeichnis »\DAVID\TLD\PORT\«. Hier befindet sich u.a. für jeden eingerichteten ISDN-Port ein eigenes Unterverzeichnis, wobei dessen Name der jeweiligen Port-Nummer entspricht. </li> <p align="center"><img src="/graphic/kb/Q-108.921-3.jpg"></p> <li>Markieren die Verzeichnisse aller Ports, die Sie zu Anfang notiert haben, und kopieren Sie diese Verzeichnisse ebenfalls in das zuvor erstellte Backup-Verzeichnis. </li> <li>Wechseln Sie nun nacheinander in die Original-Verzeichnisse aller von Ihnen notierten Ports, z.B. »\DAVID\TLD\PORT\001\«. </li> <li>Öffnen Sie die darin enthaltene Datei »TLD.INI« mit einem Editor und fügen Sie in einer neuen Zeile den folgenden Parameter ein:<br><b>VALIDNUMBERSIGNS=*# </b></li> <p align="center"><img src="/graphic/kb/Q-108.921-4.jpg"></p> <p>Speichern Sie Ihre Änderungen an der Datei ab und wiederholen Sie diesen Vorgang bei allen »TLD.INI« Dateien, bei deren Ports die »ECT« Option aktiv ist. </p></li> <li>Nachdem Sie alle betreffenden »TLD.INI« Dateien angepasst haben, öffnen Sie den David.Administrator, rufen in der Symbolleiste über die Schaltfläche »David Dienste« das zugehörige Dialogfenster auf und starten Sie die zuvor beendeten David Dienste wieder. </li> </ol> <p><a href="#anfang"><b><u>Zurück zum Artikelanfang</u></b></a>  </p>  <p><a name="#client"><b>Anpassung der Einstellungen im David Client</b></a></p> <p>Sie haben die Möglichkeit, zu bestimmen, ob Ihr Systemtelefon bei Nutzung der Rufnummernwahl mit David generell im Freisprech- oder im Headset-Betrieb starten soll. Die hierzu erforderlichen Einstellungen können Sie direkt im David Client vornehmen. Gehen Sie dazu folgendermaßen vor:</p> <ol> <li>Öffnen Sie den David Client und wechseln Sie im Hauptmenü in den Bereich »Optionen > Einstellungen«. </li> <li>Fügen Sie im Bereich »Benutzerprofil« in das Feld »Rufnummer für TAPI-Funktionen (Lokale Nebenstelle)« in Abhängigkeit von der gewünschten Funktion folgendes ein:   <ul type=square> <li><b>Für den generellen Start im Headset-Betrieb</b><br>Tragen Sie die interne Rufnummer Ihrer lokalen Nebenstelle ein, angeführt von einem »h«, z.B. »h16« für Headset-Betrieb an der internen AGFEO Nebenstelle 16. </li> <li><b>Für den generellen Start im Freisprech-Betrieb</b><br>Tragen Sie die interne Rufnummer Ihrer lokalen Nebenstelle ein, angeführt von einem »a«, z.B. »a16« für Freisprech-Betrieb an der internen AGFEO Nebenstelle 16.</li></ul> <p align="center"><img src="/graphic/kb/Q-108.921-5.jpg"></p>  </li> <li>Speichern Sie Ihre Einstellungen durch einen Klick auf »OK« ab.</li> </ol> <p><a href="#anfang"><b><u>Zurück zum Artikelanfang</u></b></a>  </p>   <p><a name="#tkanlage"><b>Hinweise zur Aktivierung der CTI-Funktion in der AGFEO-TK-Anlage</b></a></p> <p>Um die CTI Funktion mit der AGFEO TK-Anlage nutzen zu können, muss für die gewünschte Nebenstelle die Fremdwahl mit CTI in der AGFEO TK-Anlage aktiviert werden. Gehen Sie dazu folgendermaßen vor:</p> <ol> <li>Lesen Sie mit dem AGFEO Programm »TK Suite« die Konfiguration Ihrer TK-Anlage aus. </li> <li>Aktivieren Sie bei der gewünschten Nebenstelle die Fremdwahl mit CTI im Bereich »Telefoneinstellungen > Wählen«.</li> </ol> <p>Technische Unterstützung zur Einrichtung Ihrer TK-Anlage erhalten Sie beim AGFEO Support oder unter <a href="http://www.agfeo.de", target="blank"><u>www.agfeo.de</u></a>. </p> <p><a href="#anfang"><b><u>Zurück zum Artikelanfang</u></b></a>  </p> </td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(8921);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

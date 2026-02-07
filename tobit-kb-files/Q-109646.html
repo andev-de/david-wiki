@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-109.646</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">David Befehle und ihre Funktionsweise</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Welche David Befehle stehen den Anwendern zur Verfügung und welche Funktionen verbergen sich hinter den Befehlen?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">7.05.2010</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">David unterstützt eine Vielzahl von Kommandos, so genannte »David Befehle«, mit denen der Anwender das Layout von Nachrichten und deren Versand beeinflussen kann. Der wohl wichtigste dieser Befehle dient der Angabe der Zieladresse (z.B. Faxnummer oder eMail-Adresse). Weiterhin können Sie mit David Befehlen beispielsweise den Versandtermin festlegen, das optische Layout bei Faxaufträgen regeln oder Rundsendungen erstellen. <p>David Befehle können direkt innerhalb des Nachrichtentextes von Sendeaufträgen verwendet werden. Sie sind hierbei durch eine so genannte »Befehls-ID« zu kennzeichnen. Üblicherweise besteht diese Befehls-ID aus zwei direkt aufeinanderfolgenden @-Zeichen. <ul><a href="#hinweise"><b>Hinweise zur Nutzung von David Befehlen finden Sie weiter unten im Text.</b></a> </ul>In Abhängigkeit ihrer Funktionsweise sind die Befehle in folgende <a name="#liste">Befehlskategorien</a> unterteilt: <ul type=square><li><a href="#adressierungsbefehle"><b>Adressierungsbefehle</b></a><br><li><a href="#jobbefehle"><b>Job-Befehle</b></a><br><li><a href="#gestaltung"><b>Gestaltungsbefehle</b></a><br><li><a href="#windowsbefehle"><b>Windows-Befehle</b></a><br><li><a href="#sonderfunktionen"><b>Sonderfunktionen</b></a><br></ul><a name="adressierungsbefehle"><b>Adressierungsbefehle</b></a><br><ul>Jedem Sendeauftrag muss die Empfängeradresse mitgeteilt werden. Ohne die Angabe des Ziels kann die Übertragung natürlich nicht durchgeführt werden. Neben der einfachen Übergabe der Adresse (Fax-, Rufnummer oder eMail-Adresse) sind auch andere Formen der Adressierung möglich. So kann z.B. nur der Name des Empfängers angegeben werden (der David Service Layer sucht in diesem Fall die Nummer aus dem Adressbuch). Weiterhin kann eine Liste von mehreren Rufnummern oder auch der Verweis auf eine Datei mit den Zieladressen als Adressierung verwendet werden.<p><table><tr><td class=tdNote><b> Befehl (Kurzform)</b></td><td class=tdNote><b>Wirkung</b></td></tr><tr><td class=tdNote>AN (AN)</td><td class=tdNote> Angeben einer Faxnummer oder eMail-Adresse </td></tr><tr><td class=tdNote><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (ARC)</td><td class=tdNote> Nachricht in einem Archive erstellen </td></tr><tr><td class=tdNote>AUSDRUCK (ADR)</td><td class=tdNote> Ausdrucken statt versenden</td></tr><tr><td class=tdNote>EMAIL (EML)</td><td class=tdNote> Erstellen einer eMail </td></tr><tr><td class=tdNote>FBCREATE (FBC)</td><td class=tdNote>Erstellen eines Fax Box-Dokumentes</td></tr><tr><td class=tdNote>NUMMER (NMR)</td><td class=tdNote> Angeben der Zieladresse </td></tr><tr><td class=tdNote>NUMMERNLISTE (NRL)</td><td class=tdNote> Übergeben einer Adressliste </td></tr><tr><td class=tdNote>RUNDSENDUNG (RND)</td><td class=tdNote> Starten einer Rundsendung </td></tr><tr><td class=tdNote><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TMail', 'content', 'Eine eMail kann dem Empf&auml;nger als TMail am Telefon mit einer synthetischen Stimme vorgelesen werden, indem er diese an einen Telefonanschluss weiterleitet.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TMail<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TMail', 'content', 'Eine eMail kann dem Empf&auml;nger als TMail am Telefon mit einer synthetischen Stimme vorgelesen werden, indem er diese an einen Telefonanschluss weiterleitet.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (TML)</td><td class=tdNote> Erstellen einer TMail </td></tr></table><p><a href="#liste"><b>Zurück zur Übersicht der Befehlskategorien</b></a> </ul><a name="#jobbefehle"><b>Job-Befehle</b></a><br><ul>Grundsätzlich gelten für die Übertragung einer Nachricht allgemeine Regeln, die entweder in der Systemkonfiguration von David festgelegt wurden oder aber von anderen Einstellungen abhängig sind. Bestimmte Parameter lassen sich auch mit speziellen Befehlen individuell für einen Auftrag verändern. Die Befehle dieser Kategorie bestimmen z.B. den Versandtermin, die Anzahl der Wiederholungen im Besetzt- oder Fehlerfall oder benennen auch einen speziellen Sendeauftrag.<p><table><tr><td class=tdNote><b> Befehl (Kurzform)</b></td><td class=tdNote><b>Wirkung</b></td></tr><tr><td class=tdNote>ABLAUF (ABL)</td><td class=tdNote> Festlegen eines Ablauftermins </td></tr><tr><td class=tdNote>ANGEZEIGTERNAME</td><td class=tdNote> Temporäres Verändern des angezeigten Namens </td></tr><tr><td class=tdNote>BETREFF (BTR)</td><td class=tdNote> Benennen eines Auftrags </td></tr><tr><td class=tdNote>EILIG (ELG)</td><td class=tdNote> Umgehen der Sammlung einer Nachricht </td></tr><tr><td class=tdNote>EINSCHREIBEN (ESN)</td><td class=tdNote> Einschreiben versenden </td></tr><tr><td class=tdNote>FAXPOLLING (FPL)</td><td class=tdNote> <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Fax Polling', 'content', 'Beim Fax Polling wird einem per Telefax abrufbaren Dokument eine Faxnummer zugewiesen, die der Empf&auml;nger anw&auml;hlt, um es zu &uuml;bertragen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Fax Polling<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Fax Polling', 'content', 'Beim Fax Polling wird einem per Telefax abrufbaren Dokument eine Faxnummer zugewiesen, die der Empf&auml;nger anw&auml;hlt, um es zu &uuml;bertragen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (aktives Abrufen von Fax-Dokumenten) </td></tr><tr><td class=tdNote>MELDUNG (MSG)</td><td class=tdNote> Rückmeldung für den Benutzer </td></tr><tr><td class=tdNote>PRIORITÄT (PRI)</td><td class=tdNote> Zuweisen der Priorität </td></tr><tr><td class=tdNote>TERMIN (TRM)</td><td class=tdNote> Festlegen des Versandtermins </td></tr><tr><td class=tdNote>VON (VON)</td><td class=tdNote> Temporäres Verändern des Kennungsgebers </td></tr><tr><td class=tdNote>WARTEN (WRT)</td><td class=tdNote> Sendeauftrag in den Wartestatus setzen</td></tr><tr><td class=tdNote>WIEDERHOLUNG (WDH)</td><td class=tdNote> Festlegen der Wahlwiederholungen </td></tr></table><p><a href="#liste"><b>Zurück zur Übersicht der Befehlskategorien</b></a> </ul><a name="#gestaltung"><b>Gestaltungsbefehle</b></a><br><ul>Der David Service Layer kennt zahlreiche Befehle für die Gestaltung von Nachrichten. Diese Befehle bestimmen die »Optik« eines Dokuments, in dem z.B. ein bestimmtes Formular hinterlegt, eine Grafik eingefügt oder eine Unterschrift eingesetzt wird.<p><table><tr><td class=tdNote><b> Befehl (Kurzform)</b></td><td class=tdNote><b>Wirkung</b></td></tr><tr><td class=tdNote>ADRESSAT (ADS)</td><td class=tdNote> Überschreiben der Adressnummer im Faxkopf </td></tr><tr><td class=tdNote>ANLAGE (ANL)</td><td class=tdNote> Anfügen einer Anlage </td></tr><tr><td class=tdNote>APIGRAFIK (AGF)</td><td class=tdNote> Überlagern einer Grafik </td></tr><tr><td class=tdNote>APPENDIMAGE (AIM)</td><td class=tdNote> Anhängen einer vorhandenen Fax-Datei </td></tr><tr><td class=tdNote>BENUTZER (BNZ)</td><td class=tdNote> Überschreiben des Benutzerkürzels im Faxkopf </td></tr><tr><td class=tdNote>DECKBLATT (DBL)</td><td class=tdNote> Vorschalten eines Deckblattes </td></tr><tr><td class=tdNote>EINFÜGEN (EFG)</td><td class=tdNote> Einfügen einer Grafik </td></tr><tr><td class=tdNote>EXTDECKBLATT (XDB)</td><td class=tdNote> Erweitertes Deckblatt verwenden </td></tr><tr><td class=tdNote>FBANHANG (FBA)</td><td class=tdNote> Anhängen eines FaxBox-Dokuments </td></tr><tr><td class=tdNote>FONT (FNT)</td><td class=tdNote> Bestimmen des Zeichensatzes </td></tr><tr><td class=tdNote>FORMULAR (FRM)</td><td class=tdNote> Auswählen eines Formulars </td></tr><tr><td class=tdNote>GEHEZU (GZU)</td><td class=tdNote> Platzieren des Cursors </td></tr><tr><td class=tdNote>GRAFIK (GFK)</td><td class=tdNote> Platzieren einer Grafik </td></tr><tr><td class=tdNote>HEADDATE (HDT)</td><td class=tdNote> Überschreiben des Datums im Faxkopf </td></tr><tr><td class=tdNote>HEADTIME (HTI)</td><td class=tdNote> Überschreiben der Uhrzeit im Faxkopf </td></tr><tr><td class=tdNote>IMAGE (IMG)</td><td class=tdNote> Versenden einer vorhandenen Faxdatei </td></tr><tr><td class=tdNote>RAND (RAN)</td><td class=tdNote> Setzen des linken Randes </td></tr><tr><td class=tdNote>RESTOREPOS (RST)</td><td class=tdNote> Rücksetzen des Cursors </td></tr><tr><td class=tdNote>SEITENENDE (STE)</td><td class=tdNote> Erzwingen eines Seitenwechsels </td></tr><tr><td class=tdNote>SENDERNAME (SDN)</td><td class=tdNote> Überschreiben der Absender-ID im Faxkopf </td></tr><tr><td class=tdNote>SETFORMULAR (SFM)</td><td class=tdNote> Wechseln der Formular-Vorgabe </td></tr><tr><td class=tdNote>SETFORMULARLAYOUT (SFL)</td><td class=tdNote> Wechseln des Formular-Layouts </td></tr><tr><td class=tdNote>STOREPOS (STO)</td><td class=tdNote> Speichern der aktuellen Cursor-Position </td></tr><tr><td class=tdNote>UNTERSCHRIFT (UTS)</td><td class=tdNote> Einsetzen einer Unterschrift </td></tr><tr><td class=tdNote>ZEICHENABSTAND (CAS)</td><td class=tdNote> Ändern des Zeichenabstandes </td></tr><tr><td class=tdNote>ZEILENABSTAND (ZAS)</td><td class=tdNote> Ändern des Zeilenabstandes </td></tr></table><p><a href="#liste"><b>Zurück zur Übersicht der Befehlskategorien</b></a></ul><a name="#windowsbefehle"><b> Windows-Befehle </b></a><br><ul>Die in dieser Kategorie beschriebenen Befehle gelten nur für den FaxWare-Druckertreiber des David.InfoCenter. Sie werden also nicht an den David Service Layer gesendet. Diese Befehle haben in einem unter DOS erstellten Sendeauftrag keinerlei Wirkung.<p><table><tr><td class=tdNote><b> Befehl (Kurzform)</b></td><td class=tdNote><b>Wirkung</b></td></tr><tr><td class=tdNote>DIALOG (DLG)</td><td class=tdNote> Öffnen des Clients erzwingen </td></tr><tr><td class=tdNote>DIREKT (DKT)</td><td class=tdNote> Direkter Faxversand </td></tr><tr><td class=tdNote>SERIENFAX (SFX)</td><td class=tdNote> Erstellen von Serienfaxen </td></tr></table><p><a href="#liste"><b>Zurück zur Übersicht der Befehlskategorien</b></a></ul><a name="sonderfunktionen"><b>Sonderfunktionen</b></a><br><ul>Unter Sonderfunktionen verstehen wir einige besondere Befehle, die speziell für "fortgeschrittene" David-Benutzer gedacht sind. In einer Include-Datei hinterlegt, sorgen sie beispielsweise dafür, dass alle Faxe in niedriger Auflösung versendet werden oder ein Benutzer nur über einen speziellen Port senden darf. Natürlich können diese Befehle auch individuell in "normalen" Sendeaufträgen angewendet werden.<p><table><tr><td class=tdNote><b> Befehl (Kurzform)</b></td><td class=tdNote><b>Wirkung</b></td></tr><tr><td class=tdNote>ATTACH (ATT)</td><td class=tdNote> Anfügen einer Datei </td></tr><tr><td class=tdNote>ATTACHVCARD (VCF)</td><td class=tdNote> Anfügen einer digitalen Visitenkarte </td></tr><tr><td class=tdNote>AUFLÖSUNG (AFL)</td><td class=tdNote> Bestimmen der Faxauflösung </td></tr><tr><td class=tdNote>AUTODEL (DEL)</td><td class=tdNote> Löscht direkt nach Abschluss des Sendevorgangs die Datei der Nachricht (nicht deren Protokolleintrag), wenn der Versand an eine externe Adresse erfolgte. Bei intern versendeten Nachrichten ist dieser Befehl ohne Wirkung. </td></tr><tr><td class=tdNote>BARCODE (BRC)</td><td class=tdNote> Einsetzen eines Barcods </td></tr><tr><td class=tdNote>BEFID (BID)</td><td class=tdNote> Einsetzen der aktuellen Befehls-ID </td></tr><tr><td class=tdNote><span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'DFML', 'content', 'Die <B>D</B>avid <B>F</B>ormular <B>M</B>arkup <B>L</B>anguage ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >DFML<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'DFML', 'content', 'Die <B>D</B>avid <B>F</B>ormular <B>M</B>arkup <B>L</B>anguage ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (DFML)</td><td class=tdNote> Erzeugen eines DvDFML-Formulars </td></tr><tr><td class=tdNote>DRUCKEN (DRK)</td><td class=tdNote> Anfordern eines Ausdrucks </td></tr><tr><td class=tdNote>GET (GET)</td><td class=tdNote> Einfügen einer Variablen </td></tr><tr><td class=tdNote>INCLUDE (INC)</td><td class=tdNote> Einfügen einer Textdatei </td></tr><tr><td class=tdNote>JOBANFANG (JAF)</td><td class=tdNote> Festlegen des Job-Anfangs </td></tr><tr><td class=tdNote>JOBENDE (END)</td><td class=tdNote> Festlegen des Job-Endes </td></tr><tr><td class=tdNote>KOMMENTAR (KOM)</td><td class=tdNote> Einfügen eines Kommentars </td></tr><tr><td class=tdNote>LÄNGE (LNG)</td><td class=tdNote> Bestimmen der Seitenlänge eines Faxes </td></tr><tr><td class=tdNote>LINK (LNK)</td><td class=tdNote> Erzeugen eines Links </td></tr><tr><td class=tdNote>LOCK (LCK)</td><td class=tdNote> Ignorieren der David Befehle </td></tr><tr><td class=tdNote>MSGFLASH (MSF)</td><td class=tdNote> Direktes Anzeigen einer SMS Nachricht </td></tr><tr><td class=tdNote>MSGSPLIT (MSS)</td><td class=tdNote> Automatisches Aufteilen langer SMS Nachrichten </td></tr><tr><td class=tdNote>OWNERNAME (OWN)</td><td class=tdNote> Überschreiben des Besitzers einer Nachricht </td></tr><tr><td class=tdNote>PORT (PRT)</td><td class=tdNote> Auswählen eines Ports </td></tr><tr><td class=tdNote>PROVIDER (UPV)</td><td class=tdNote> Übergeben von Aufträgen an einen externen Provider </td></tr><tr><td class=tdNote>SET(SET)</td><td class=tdNote> Definieren einer Variablen </td></tr><tr><td class=tdNote>UNLOCK(ULK)</td><td class=tdNote> Erkennung der David Befehle wieder aktivieren </td></tr><tr><td class=tdNote>WIEDERHOLUNG (WDH)</td><td class=tdNote> Festlegen der Wahlwiederholungen </td></tr></table><p><a href="#liste"><b>Zurück zur Übersicht der Befehlskategorien</b></a></ul><p><center><i>Weitere Informationen zu den einzelnen David Befehlen sowie Anwendungsbeispiele finden Sie der Online Hilfe des David.Administrator und des David Client.</i></center><p><a name="hinweise"><b>Hinweise zur Nutzung von David Befehlen: </a></b><p>David Befehle können an beliebiger Position direkt innerhalb des Nachrichtentextes von Sendeaufträgen verwendet werden. Bei der Verarbeitung der Nachrichten werden diese Befehle von David erkannt, ausgewertet und anschließend aus dem Text entfernt. In den tatsächlich versendeten Nachrichten ist also von evtl. verwendeten Befehlen nichts mehr zu sehen. <p>Damit David Befehle sicher erkannt werden können, sind sie durch eine so genannte »Befehls-ID« zu kennzeichnen. Üblicherweise besteht diese Befehls-ID aus zwei direkt aufeinanderfolgenden @-Zeichen. David erkennt daran, dass die nachfolgende Zeichenkette als Befehl interpretiert werden muss.<p>Das Ende eines Befehls wird entweder durch erneute Angabe der Befehls-ID (@@) oder durch Einfügen eines Zeilenumbruchs definiert. Bei Verwendung eines Zeilenumbruchs ist zu beachten, dass dieser als Bestandteil des Befehls gewertet und dementsprechend nach erfolgter Auswertung mitsamt des Befehls aus dem Text entfernt wird.<p><ul><b>Beispiel:</b><br><ul>@@NUMMER 08766253@@<br>An: Schneider KG<br>Dies ist ein Textfax!<br>Mit freundlichen Grüßen<br>@@Unterschrift@@<br<EDV @@WARTEN<br>Partner<br></ul></ul>Der Text »Partner« wird in der endgültigen Nachricht unmittelbar hinter dem Wort »EDV« platziert, da der letzte Zeilenumbruch als Abschluss des Befehls @@WARTEN gewertet und daher nach Auswertung der Befehle verschwindet.<p><b>Schreibweise:</b><br>Die Groß- und Kleinschreibung spielt bei den Namen der Befehle keine Rolle. Wichtig ist natürlich die Einhaltung der korrekten Schreibweise. Leer- oder Sonderzeichen sind innerhalb eines Befehls nicht gültig. Die Anzahl der Leerzeichen zwischen dem Befehl und den Parametern darf variabel sein. Allerdings muss wenigstens einem, höchstens jedoch 10 Zeichen Platz gelassen werden. Alternativ existiert für jeden Befehl auch eine Kurzform, die exakt die gleiche Bedeutung wie der ausgeschriebene Befehl hat. <p><ul><b>Beispiel:</b><br><ul>@@NUMMER 09877263@@<br>@@NMR 09877452@@<br></ul></ul>Hinweis zum David Befehl @@BETREFF:<br>Alternativ zum David Befehl »BETREFF« kann auch der Befehl »REFERENZ« verwendet werden.<p><a href="#liste"><b>Übersicht der Befehle bzw. der Befehlskategorien</b></a> </td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(9646);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

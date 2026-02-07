@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-103.162</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Grundkonfiguration der serverbasierten POP3-Dienste (DvISE Grabbing Server)</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Wie sieht die Grundkonfiguration des POP3-Dienstes aus?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David Grabbing Server</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">keine</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">harmlos</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">27.10.2006</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Nehmen Sie die folgenden Einstellungen vor, um Ihre POP3-Postfächer mit dem Grabbing Server abfragen zu können.<p><b>Generelle Einstellungen</b><br>Wählen Sie im Konfigurationsdialog des DvISE Grabbing Servers den Punkt »System« und nehmen Sie hier die folgenden Einstellungen vor bzw. überprüfen Sie die eingetragenen Daten.<ul><li><b>Monitor Informationen</b><br>Der Grabbing Server protokolliert die Kommunikation mit den anderen Mail Hosts. Dabei werden alle gesendeten Kommandos und die darauffolgenden Antworten aufgezeichnet. Die jeweils letzten 100 Zeilen des Protokolls können unter »Monitor -> Applikationen -> Grabbing Server« im DvISE Administrator (Windows NT/2000/XP) bzw. unter dem Menüpunkt »Monitor«des DVGRAB NLMs (NetWare) eingesehen werden. Über den Schalter »Monitor Informationen« kann bestimmt werden, wie detailliert das Protokoll geführt werden soll. Die möglichen Einstellungen reichen von »Off« (keine Protokollierung) bis »Vollständig« (vollständige Protokollierung).<p><i>Diese Informationen können in die Datei »\DAVID\APPS\DVGRAB\CODE\DVGRAB.DEB« geschrieben werden. Dafür müssen Sie den Parameter FILE=TRUE in der Datei »\DAVID\APPS\DVGRAB\CODE\DVGRAB.INI« einfügen.</i><p><li><b>Domain Name Server</b><br>Geben Sie unter diesem Punkt die IP-Adressen der zu verwendenden Domain Name Server ein. Bei einer Installation unter Windows NT/2000/XP werden diese Daten automatisch aus der Windows-Systemkonfiguration übernommen.<p><li><b>Original Nachricht speichern</b><br>Wenn diese Funktion aktiviert ist, wird eine Kopie der Original-Nachricht inklusive Mail Header und allen Dateianhängen gespeichert. Diese Kopie wird unmittelbar nach dem Empfang angelegt und enthält die Nachricht in genau der Form, wie sie empfangen wurde, ohne dass bereits Konvertierungen stattgefunden haben. Sie wird in der Kommentardatei des zugehörigenArchive-Eintrags abgelegt. Bei eventuellen Sende- oder Empfangs-problemenkann der Inhalt dieser Datei wichtige Hinweise zur Fehlerbehebunggeben. Zur Einsicht dieser Informationen in der Kommentardatei klicken Sie im Tobit InfoCenter mit der rechten Maustaste auf des betreffende Dokument in der Eintragsliste und wählen Sie aus dem Kontextmenü dieFunktion »Erweiterte Informationen«.<p><i>Wenn Sie diese Funktion nutzen möchten, müssen Sie berücksichtigen, dass hierdurch ein erhöhter Speicherplatzbedarf auf der Festplatte des Servers entsteht. So benötigen eMails mit Dateianhängen in diesem Fall sogar mehr als den doppelten Speicherplatz, da die Attachments zusätzlich im7-Bit-Format, in welchem die Übertragung stattfindet, gespeichert werden.</i><p><li><b>Verteiler-Liste anhängen</b><br>Bei Aktivierung dieser Funktion werden die »To«- und »Cc«-Informationen einer empfangenen eMail am Ende des Mail-Textes angehängt. Diese Liste enthält also alle eMail-Adressen, an die das Original oder eine Kopie einer Nachricht gesendet wurde.</ul><b>Konfigurieren der Verbindungsparameter</b><br>Unter dem Punkt »Verbindung« im Konfigurationsmenü des Grabbing Servers haben Sie die Möglichkeit, die Verbindungsparameter für die Anfragen beim Mail Server des Providers festzulegen. Bestimmen Sie hier den aktiven Zeitraum sowie einen Intervall für den regelmäßigenVerbindungsaufbau. Außerhalb des hier definierten Zeitraums findet keine Verbindung zum Provider statt. Wenn Sie wünschen, dass nach jedem Start des Grabbing Servers direkt eine Verbindung zum Provider aufgebaut wird, um nach neuen Mails zu fragen, wählen Sie die Option »Nach Programmstart verbinden«. Haben Sie bereits bei der Konfiguration des DvISE PostMan entsprechende Verbindungsparameter festgelegt, wählen Sie die Option »PostMan Einstellungen benutzen«, um diese Intervalle auch für den Grabbing Server zu nutzen.<p><b>DFÜ-Einstellungen (nur unter Windows NT/2000/XP)</b><br>Falls Sie nicht über eine Standleitung zum Internet verfügen, können Sie eine Windows-DFÜ-Verbindung für die regelmäßigen Einwahlen nutzen. Voraussetzung hierfür ist, dass die ausgewählte DFÜ-Verbindung korrekt unter Windows eingerichtet wurde. Aktivieren Sie auf der Registerkarte »DFÜ Netzwerk« die Funktion »DFÜ Verbindung automatisch aktivieren«. Selektieren Sie die gewünschte Verbindung und tragen Sie in die Felder »Benutzername« und »Passwort« die entsprechenden Daten für die ausgewählte DFÜ-Verbindung ein.<p><b>Einrichten der abzufragenden Postfächer</b><br>Rufen Sie den Grabbing-Server-Menüpunkt »Datenbanken -> POP3 Postfächer« auf, um die abzufragenden Postfächer einzurichten. Alternativ dazu kann die Einrichtung auch über das Tobit InfoCenter vorgenommen werden. Zu diesem Zweck existiert ein spezielles <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (»Archive - System - DvISE - Grabbing Server«), in welchem die entsprechenden Daten abgelegt werden.<p>In diesem Archive befindet sich ein Eintrag mit der Bezeichnung »Neu...«. Durch Öffnen dieses Eintrags wird ein Formular angezeigt, mit dem neu abzufragende Postfächer eingerichtet werden können. Die Verwaltung der POP3-Konten ist auf diese Weise an einer beliebigen Arbeitsstation im Netzwerk möglich, sofern der eingeloggte Benutzer ausreichende Zugriffsrechte auf das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TAS', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TAS<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TAS', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> besitzt. <p>Füllen Sie die folgenden Eingabefelder aus, um ein eMail-Konto durch den DvISE Grabbing Server abfragen zu lassen:<ul><li><b>Server Posteingang (POP3)</b><br>Tragen Sie hier den Namen oder die IP-Adresse des Mail Servers ein, auf dem sich das abzufragende POP3-Postfach befindet.<p><li><b>Benutzername und Passwort</b><br>Geben Sie die erforderlichen Zugangsdaten für das abzufragende Postfach an.<p><li><b>Auszuwertendes Adressfeld</b><br>Bei eMail-Rundsendungen, die gleichzeitig an mehrere Empfänger versendet wurden, stehen all diese Adressen im Empfänger-Adressfeld (»To«-Feld). Einige Provider stellen aus diesem Grund ein zusätzliches Adressfeld zur Verfügung, in welchem ausschließlich die Adresse des aktuellen Postfachs angegeben wird. Tragen Sie hier den Namen dieses Adressfeldes ein, wenn dieses anstatt des »To«-Feldes ausgewertet werden soll.<p><li><b>Zieladresse</b><br>Geben Sie hier die Zieladresse an, an welche der Grabbing Server die abgeholten Mails weiterleiten soll. Hierbei kann es sich sowohl um eine interne als auch um eine externe Adresse handeln. Es ist in jedem Fall die vollständige eMail-Adresse anzugeben. Sie können hier auch den Real Name eines Archives als UNC-Pfad eingeben. Die Verwendung von Benutzerkürzeln ist nicht möglich.<p>Beispiele:<br>richard.sander@example.com<br>\\SERVERNAME\DAVID\GROUP\2<p><li><b>Nachrichten auf dem Server belassen</b><br>Aktivieren Sie diese Funktion, wenn Sie wünschen, dass die eMails nach dem Abholen durch den Grabbing Server auf dem Mail Server des Providers nicht gelöscht werden. In diesem Fall bleiben die Nachrichten nach der Abfrage durch den Grabbing Server auch auf dem Mail Server des Providers erhalten und werden hier lediglich als gelesen markiert.<p>Der DvISE Grabbing Server führt eine interne Liste aller bisher abgeholten Mails. Auf diese Weise ist sichergestellt, dass, auch wenn diese Option aktiviert ist, lediglich die jeweils neuen Nachrichten vom Provider abgeholt werden.<p><li><b>Nachrichten nur Weiterleiten</b><br>Aktivieren Sie diese Funktion, wenn Sie wünschen, dass abgeholte eMails, die an eine externe Zieladresse weitergeleitet werden sollen, direkt an PostMan übergeben werden sollen. In diesem Fall arbeitet die lokale DvISE Installation als reiner eMail Forwarder.<p><li><b>Auch beim Senden verwenden</b><br>Diese Einstellung wird nur beachtet, wenn in der PostMan Konfiguration auf der Registerkarte »Provider« die Option »Generell über Provider senden« aktiviert und als Anmelde-Methode »Grabbing Server Zugänge benutzen« gewählt ist. In diesem Fall werden Zugangsparameter dieses Postfachs ebenfalls dazu verwendet, sich beim <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Host<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Server für denMail-Versand anzumelden.<p><li><b>Max. Nachrichtengröße (kByte)</b><br>In diesem Feld können Sie eine Größenbeschränkung (in KB) für abzuholende eMails festlegen.Dieser Wert bezieht sich auf die komplette Mail inklusive aller Dateianhänge. Alle eMails, deren Größe dieses Limit überschreitet, werden nicht abgeholt. Statt dessen werden Einträge mit entsprechenden Hinweisen in den Zielarchives erzeugt. Speichern Sie Ihre Eingaben ab, indem Sie die entsprechende Schaltfläche im Formular anklicken. Rufen Sie für jedes abzufragende POP3-Postfach das Grabbing-Server-Formular erneut auf. Nach dem Speichern wird jeweils ein neuer Eintrag in dem Archive »Archive - System - DvISE - Grabbing Server« erzeugt. Sie können die eingegebenen Daten jederzeit ändern, indem Sie den entsprechenden Eintrag in diesem Archive öffnen. Es wird Ihnen dann automatisch wieder das Grabbing-Server-Formular angezeigt, in dem Sie die Änderungen direkt vornehmen können.<p>Wenn Sie ein eingerichtetes Postfach nicht mehr abfragen möchten, löschen Sie einfach den betreffenden Eintrag aus dem Grabbing Server Archive. Der DvISE Grabbing Server wird die Abfrage für dieses Postfach dann nicht mehr durchführen. Um die Abfrage eines Postfaches lediglich temporär zu deaktivieren, blenden Sie den entsprechenden Eintrag im Grabbing Server Archive aus. Klicken Sie den Eintrag dazu mit der rechten Maustaste an und wählen Sie aus dem Kontextmenü den Punkt »Ein-/Ausblenden«. Auf die gleiche Weise können Sie ausgeblendete Einträge wieder einblenden, um die Mail-Abfrage erneut zu aktivieren.<p><b>Hinweis:</b><br>Weitere Informationen zu dem Thema »Externe eMail mit eigener Internet-Anbindung« erhalten Sie im <a href="https://club.tobit.com/login/KBArticle.asp?ArticleID=3156"><b>KnowledgeBase Artikel 103.156</b></a>.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(3162);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-100.075</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Datenübernahme auf einen neuen David Server</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Datenübernahme am Beispiel: <b>Novell NetWare auf Windows NT</b></td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">Utilities</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">3.07.2014</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;"><b>Option 1: <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Server Migration Services', 'content', 'Dieser Service ist behilflich bei der Umstellung von Tobit Produkten auf ein anderes Betriebssystem des Servers, z.B. bei einem Wechsel von Netware auf Windows oder Linux.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Server Migration Services<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Server Migration Services', 'content', 'Dieser Service ist behilflich bei der Umstellung von Tobit Produkten auf ein anderes Betriebssystem des Servers, z.B. bei einem Wechsel von Netware auf Windows oder Linux.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> for DvISE</b><br>Tobit bietet mit den "Server Migration Services for DvISE" ein leistungsfähiges Werkzeug, mit dem DvISE-Daten bei einem Serverwechsel per Mausklick migriert werden können. Dabei werden neben allen im <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit Archive System<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> abgelegten Dateien auch wichtige Systemdaten übernommen. Die Server Migration Services for DvISE können für Migrationen von Netware auf Win32, von Netware auf Linux, von Win32 auf Linux sowie von Win32 auf Win32 eingesetzt werden. <p>Die Server Migration Services for DvISE können vom Fachhändler über das Tobit Partner Network bezogen werden. Voraussetzung für den Einsatz ist DvISE ab Version 6.6. Zudem ist zu beachten, dass für den neu einzurichtenden Server der Erwerb eines neuen DvISE Vollproduktes erforderlich ist. <p><b>Option 2: Manuelle Datenübernahme</b><br>Bitte beachten Sie, dass eine Datenübernahme eigentlich nicht vorgesehen ist und es sich bei folgendem Text um einen Workaround handelt!<p>Führen Sie zunächst eine entsprechende Datensicherung durch!<p>Sofern Sie unter Windows NT/2000 arbeiten (NT -> NT) und der Servername »gleich« bleibt können Sie im Prinzip ganz einfach nach der vollständigen Installation - wobei alle Ports in der gleichen Reihenfolge installiert werden müsssen - eineKopie des David Verzeichnisses über die Neuinstallation kopieren.<p>Unter Novell NetWare gilt im Prinzip Ähnliches, hier muß jedoch sichergestellt werden, daß Volume und Servername gleich bleiben.<p>Ansonsten gibt es lediglich die Möglichkeit, Daten der <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Archive<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Archive', 'content', 'Der elektronische Ordner im David.InfoCenter nennt sich Archive. Hier k&ouml;nnen alle Nachrichten, Dokumente und multimediale Dateien ganz einfach abgelegt und verwaltet werden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> zu übernehmen, nicht aber Konfigurationsdaten.<br>Diese Datenübernahme kann auch nicht durch einfaches Kopieren stattfindensondern MUSS mit Hilfe eines Archivpackers oder mit ArcUtil vollzogen werden.<p>Sicherlich ist die Datenübernahme mit ArcUtil (per suchen und ersetzen) die schnellere Lösung, jedoch sollten Sie von dieser Vorhegensweise Abstand nehmen, da bei unsachgemäßem Gebrauch des Tools ArcUtil es zu irreparablen Schäden in der Archivestruktur kommen kann. <p>Aus diesem Grunde halten Sie sich an die unten aufgeführte Vorgehensweise, die eine Datenübernahme mit Hilfe des Tools "MKINST" beschreibt.Dieses Tool finden Sie auch auf Ihrem David-Server im Verzeichnis »DAVID\UTIL\WINDOWS\MKARC«.<p><i> Diese Anleitung ist für eine Datenübernahme am Beispiel Novell NetWare -> Windows NT geschrieben.Sofern Sie eine Datenübernahme Windows NT -> Windows NT oder Novell NetWare -> Novell NetWare planen müssen natürlich eventuelle Pfadangaben ersetzt werden.</i><p>Um diese nötigen Schritte durchzuführen gehen Sie bitte wie folgt vor:<ol><li>Zunächst sorgen Sie bitte dafür, dass Verzeichniseinträge, welche nicht mehr in der neuen Installation benötigt werden aus den Archiven entfernt werden. Dazu stellen Sie bitte im David <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Client<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Client', 'content', 'Der Client nutzt die Dienste, die ein Server zur Verf&uuml;gung stellt. Im Netzwerk k&ouml;nnen mehrere Clients auf einen Server zugreifen. Ein Beispiel f&uuml;r einen Client ist das David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> am Arbeitsplatz des Administrators die Archivbereinigung alles Archive auf z.B. 30 Tage (oder gewünschter Zeitraum).<p>Unter der Netware wechseln Sie nun in den Servicelayer und drücken die ALT-1 TASTE. Nun können Sie mit ALT-3 verfolgen, wie die Bereinigung durchgeführt wird.<p>Unter Windows NT öffnen Sie bitte die Datei DAVID.INI im DAVID/CODE Verzeichnis. Dort ändern Sie bitte den Eintrag ";deletetime=1" auf folgenden Eintrag:<br>deletetime= x  (x steht für die nächste volle Stunde!)<br>Nun starten Sie unter Windows NT dem Servicelayer neu. Warten Sie nun ab, bis die nächste Volle Stunde erreicht ist.<p>David führt nun eine Bereinigung durch.<br>Das Ende der Bereinigung können Sie im Archiv : <br>   SYSTEM/DAVID/FEHLERMELDUNGEN<br>feststellen. Dort gibt es dann einen Eintrag: "Finish purging Archive". Erst wenn dieser Eintrag dort erscheint können Sie mit Schritt 2 fortsetzen!<p><li>Starten Sie nun auf dem alten Server aus den Verzeichnis LW:\DAVID\UTIL\WINDOWS\MKARC die MKINST.EXE :<ul><li>Aus Integritäts- und Sicherheitsgründen sollte ein mit MKINST32.EXE gepacktes Archiv nicht mehr als 250 MB umfassen. Sollten Sie ein größeres Volumen an Daten verfügen, so teilen Sie Inhalte Ihrer Archive entsprechend auf, z.B. das Adressarchiv in ein eigenes gepacktes File.<li>Hier haben Sie nun im Fenster OPTIONEN zunächst die Möglichkeit, die Bezeichnung des alten Archivs anzugeben.<br>Normalerweise wäre dies : ARCHIVE<br><li>Sofern Sie jedoch nur bestimmte Archive packen möchten geben Sie bitte explizit den Archivnamen an. (Bsp.: FAXBOX)<li>Jetzt gibt es im nächsten Feld (Bezeichnet mit Quellverzeichnis) die Möglichkeit genau anzugeben, wo sich das gewünschte Archiv befindet. Mit Hilfe des links liegenden Buttons (...) können Sie nun den Pfad wählen. (Bsp.: "\\»SERVERNAME«\SYS:\DAVID\ARCHIVE")<br><li>Hier wechseln Sie bitte herunter in das Archiv, welches Sie übernehmen möchten. (Möglichkeit: "\\»SERVERNAME«\SYS:DAVID\ARCHIVE\FAXBOX\")<li>Jetzt geben Sie bitte im letzten Feld des Tools (Bezeichnet mit Zieldatei) einen Pfad und Dateinamen an, in dass das gepackte Archiv von MKINST gelegt werden soll.<br>Anbieten würde sich ein Pfad außerhalb der DAVID Verzeichnis Struktur. (Bsp.: "C:\DATEN\OLDARCH.exe")<li>Nachdem Sie nun noch das Feld "Absender beibehalten" angeklickt haben klicken Sie bitte den PACKEN Button.</ul>Nun werden die Daten gepackt. Dieser Vorgang kann durchaus einige Zeit dauern. Da der Arbeitsplatz relativ stark von diesem Prozess belastet wird, arbeiten Sie bitte während des Packvorgangs nicht mit einem anderen Programm.<p><li>Nachdem die Archive nun gepackt außerhalb der David Struktur liegen, führen Sie bitte eine Datensicherung des David Verzeichnisses durch. Sofern nämlich bei dem Packvorgang ein Fehler aufgetreten ist, wäre dies die einzige Möglichkeit die Daten zurück zu erhalten!<p><li>Jetzt kann eine Deinstallation von David auf dem alten Server durchgeführt werden.<p>Dazu starten Sie unter Windows NT die Uninstallroutine, unter Novell Netware löschen Sie das David Verzeichnis einfach. (Benennen Sie bitte auch die Dateien DVNDS.NLM und DAVID.*, sowie TLDxxx.nlm um)<br>Jetzt löschen Sie auf den Arbeitsplätzen die Datei "TOBIT.INI".<p><li>Jetzt können Sie wie gewohnt eine Neuinstallation auf dem neuen Server durchführen.<br>Führen Sie bitte noch kein Client Setup durch!<p><li>Jetzt starten Sie die in Schritt 2 erstellte Archivedatei mit der Endung ".exe". Hier brauchen Sie nur noch den Zielpfad angeben. Dazu können Sie wieder mit Hilfe des (...) Buttons in das Verzeichnis <br>"\\»SERVERNAME«\DAVID\ARCHIVE\" <br>wandern.<br>Benutzen Sie jedoch bitte keine gemappten Laufwerke. Geben Sie anschließend per Hand hinter dem letzten "\" noch OLD ein.<p>Was natürlich nun noch nötig ist, ist die Nennung des Servernamens.<br>Bsp.: "\\»SERVERNAME«"<br>Unter Novell hieße dieser : "\\»SERVERNAME«\VOL1:"<br>Nun betätigen Sie den "INSTALLIEREN" Button. Jetzt werden die Archive neu eingespielt.<p><li>Installieren Sie nun die Clients an den Arbeitsplätzen. Dazu loggen Sie sich bitte an allen Arbeitsplätzen als ADMINISTRATOR oder gleich gestellter Benutzer ein.<p>Hier sehen Sie jetzt unterhalb der blauen Archivebox einen Archivordner "ARCHIVE" oder "FAXBOX" oder je nachdem, was Sie zuvor in Schritt 2 als Archivebezeichnung genannt haben.<p><li>Nun brauchen Sie nur noch die gewünschten Archivinhalte via DRAG&DROP in das gewünschte Archiv verschieben.<br>Wichtig ist nur, dass das Verschieben innerhalb des Clients geschieht.</ol>Nun sind die alten Daten auf Ihren neuen Server übernommen.<p>Beachten Sie auch den Text zur Übernahme von Verteilregeln im<br> <a href="kbarticleCLUB.asp?ArticleID=2382"><b>KnowledgeBase Article Q-102.382</b></a>.<p><p><b>Hinweis:</b><br>Achten Sie grundlegend darauf, dass Sie nicht komplette Archive-Bäume packen, sondern z.B. nur kleinere Verzeichnisstrukturen wie einzelne User-Verzeichnisse. Diese Verzeichnisstrukturen sollte eine Größe von 1 GB nicht überschreiten.</td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(75);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-109.931</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Anforderung digitaler Signaturzertifikate im David Client</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Zur Sicherstellung der Authentizität Ihrer eMails lassen sich in David.fx digitale Signaturen bestellen. Dadurch können Benutzer, für deren eMail-Adressen digitale Signaturen (S/MIME-Zertifikate) vorliegen, eMails digital signieren und optional verschlüsseln. Wie können digitale Signaturen in David.fx angefordert werden und was ist dabei zu beachten?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David Client</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">10.12.2009</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">David.fx bietet Ihnen umfangreiche Funktionen für den Einsatz digitaler Signaturen. Dazu wurde das Signaturprodukt  »SIGNTRUST  CERT«  von  Signtrust,  dem  akkreditierten  Trustcenter  der  Deutschen Post, nahtlos integriert. Auf diese Weise haben Sie die Möglichkeit, mit minimalem formalen, zeitlichen und finanziellen Aufwand persönliche S/MIME-Zertifikate der Klasse 2 für David Benutzer anzufordern und in Ihr System einzubinden. <p><i>Hinweise:</i><br>Zertifikate der Klasse 2 bieten eine hohe Sicherheit und besitzen rechtliche Gültigkeit. Bei Beantragung dieser Zertifikate findet neben der eMail-Überprüfung eine einfache Identitätsfeststellung statt. Im Fall der Signaturzertifikate von David.fx erfolgt diese Identitätsfeststellung per Einschreiben auf dem Postweg. </p> <p>Die Bereitstellung der S/MIME-Signaturzertifikate ist kostenpflichtig. Die anfallenden Kosten werden über das <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'TSSM', 'content', 'Kurzform f&uuml;r Tobit.Software Site Management, der Online-Account f&uuml;r Software-Kunden von Tobit.Software.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >TSSM<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'TSSM', 'content', 'Kurzform f&uuml;r Tobit.Software Site Management, der Online-Account f&uuml;r Software-Kunden von Tobit.Software.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> (<span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit.Software Site Management', 'content', 'Das Tobit.Software Site Management (TSSM) ist ein Online-Account f&uuml;r Nutzer von Software von Tobit. Hier werden alle Daten und Informationen zu einer Installation verwaltet. Dar&uuml;ber hinaus findet &uuml;ber diesen Account auch die Kommunikation mit dem betreuenden Fachh&auml;ndler und/oder Tobit Software statt sowie der Bezug und die Abrechnung zus&auml;tzlicher Dienste.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit.Software Site Management<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit.Software Site Management', 'content', 'Das Tobit.Software Site Management (TSSM) ist ein Online-Account f&uuml;r Nutzer von Software von Tobit. Hier werden alle Daten und Informationen zu einer Installation verwaltet. Dar&uuml;ber hinaus findet &uuml;ber diesen Account auch die Kommunikation mit dem betreuenden Fachh&auml;ndler und/oder Tobit Software statt sowie der Bezug und die Abrechnung zus&auml;tzlicher Dienste.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>) im Tobit.NET abgerechnet. </p> <p><b>Voraussetzungen für den Einsatz der Signaturzertifikate</b></p> <p>Um den Einsatz und die Anforderungen von Signaturzertifikaten generell zu ermöglichen bzw. zu erlauben, müssen folgende Einstellungen vorgenommen werden: </p> <ol> <li>Öffnen Sie auf Ihrem David Server den David.Administrator, markieren Sie im Konfigurationsbaum auf der linken Seite den Punkt »System« mit der rechten Maustaste und wählen Sie aus dem Kontextmenü den Eintrag »Konfigurieren«. </li> <li>Wechseln Sie auf die Registerkarte »Sicherheit« und aktivieren Sie die Option »S/MIME-Signatur global erlauben« sowie optional die Option »S/MIME-Verschlüsselung global erlauben«. </li> <p align="center"><img src="/graphic/kb/Q-109.931-1.jpg"></p> <li>Bestätigen Sie Ihre Änderung durch einen Klick auf »OK«.</li> <li>Wechseln Sie im Konfigurationsbaum in den Bereich »System > Benutzer«. </li> <li>Öffnen Sie die Einstellungen derjenigen Benutzer, die die Option zum Anfordern von Signaturen haben sollen, und wechseln Sie auf die Registerkarte »Rechte«. </li> <li>Aktivieren Sie die Option »S/MIME Signatur nutzen« sowie optional die Option »S/MIME Verschlüsselung nutzen«. <p><i>Empfehlung:</i><br>Durch Aktivierung der Option »Zertifikate auch beim Remote Access verwenden« stellen Sie sicher, dass die angeforderten S/MIME-Zertifikate ausschließlich zentral auf dem David Server gespeichert werden und dem David Benutzer somit bei Nutzung des David Client generell, also unabhängig von der Arbeitsstation, bei der er sich gerade befindet, zur Verfügung stehen.  <p>Andernfalls werden die angeforderten Zertifikate nur im Windows Zertifikatsspeicher der lokalen Arbeitsstation gespeichert und sind lediglich an diesem Computer nutzbar. </p></p></li> <p align="center"><img src="/graphic/kb/Q-109.931-2.jpg"></p> <li>Bestätigen Sie Ihre Änderung durch einen Klick auf »OK«. </li> <li>Den betreffenden David Benutzern steht nun nach einem Neustart des David Client die Option zur Anforderung digitaler Signaturen zur Verfügung. </li> </ol> <p><b>Anforderung digitaler Signaturzertifikate im David Client</b></p> <p>Gehen Sie folgendermaßen vor, um digitale Signaturen (S/MIME-Zertifikate) direkt im David Client anzufordern:</p> <ol> <li>Am unteren Rand des David Client Hauptfensters befindet sich eine Schaltfläche, die den Benutzernamen sowie ein Siegel-Symbol als Aufschrift trägt. Ein Klick mit der linken Maustaste auf diesen Button führt direkt zum Bestellvorgang für David Signaturzertifikate sowie zu deren Verwaltung. <p align="center"><img src="/graphic/kb/Q-109.931-3.jpg"></p><p>Daraufhin wird im David Client eine Portalseite angezeigt, in der Sie Informationen zum Einsatz von David Signaturzertifikaten finden. Verfügen Sie bereits über gültige S/MIME-Zertifikate, die korrekt in das System eingebunden sind, werden diese hier aufgeführt. </p></li> <li>Klicken Sie auf die Schaltfläche »Signatur anfordern«, um ein neues S/MIME-Zertifikat für eine eMail-Adresse zu bestellen, und folgen Sie den Anweisungen des Bestellassistenten: <p align="center"><img src="/graphic/kb/Q-109.931-4.jpg"></p> <p align="center"><img src="/graphic/kb/Q-109.931-5.jpg"></p> <p><i>Hinweis:</i><br>Für jede eMail-Adresse kann nur <u>ein</u> S/MIME-Signaturzertifikat angefordert werden. </li> <li>Nach Abschluss des Bestellvorgangs wird auf dem David Server im Verzeichnis »\DAVID\CODE\CERT\REQUESTS\« eine »REQ«-Datei erzeugt. Deren Dateiname besteht aus der eMail-Adresse, für die Sie das Zertifikat angefordert haben, und der Dateiendung ».REQ«, z.B. »LEO.BENZ@EXAMPLE.NET.REQ«. Diese Datei ist der private Schlüssel bzw. »private key« des angeforderten S/MIME-Zertifikats. </li> <li>Außerdem erhält der betreffende David Benutzer per Post ein Einschreiben mit seinem persönlichen Authentisierungscode. Erst nach Eintreffen dieses Einschreibens kann das Signaturzertifikat aktiviert und anschließend auch genutzt werden.</li> </ol>  <p><b>Aktivierung von Signaturzertifikaten</b></p> <p>Nach Erhalt des persönlichen Einschreibens können Sie das Zertifikat durch Eintragen des zugehörigen Authentisierungscodes aktivieren. Gehen Sie dazu folgendermaßen vor:</p> <ol> <li>Stellen Sie sicher, dass Sie als der Benutzer angemeldet sind, für den das Zertifikat bestellt wurde. </li> <li>Öffnen Sie den David Client und klicken Sie auf die Schaltfläche, über die Sie die Signatur angefordert haben (Button mit Benutzername und Siegel-Symbol am unteren Rand des David Client).</li> <li>Tragen Sie in das zugehörige Eingabefeld den Authentisierungscode ein und klicken Sie auf »Übernehmen«. </li> <p align="center"><img src="/graphic/kb/Q-109.931-6.jpg"></p> <li>In der Regel erhält der David Benutzer nun innerhalb von 24 Stunden eine eMail mit dem Betreff »Ihre digitale Signatur«. Klicken Sie in dieser eMail auf den Link mit dem Titel »Signaturzertifikat einbinden«.</li> <p align="center"><img src="/graphic/kb/Q-109.931-7.jpg"></p> <li>Es öffnet sich ein Dialogfenster, das eine Zusammenfassung aller Informationen zum Zertifikat zeigt. Zusätzlich ermöglicht die Option »Ausgehende Nachrichten digital signieren« zu entscheiden, ob die digitale Signatur zukünftig generell aktiviert  sein soll, oder nicht. Wenn Sie diese Funktion deaktivieren, müssen Sie die Signatur, falls gewünscht, beim Nachrichtenversand manuell aktivieren. </li> <p align="center"><img src="/graphic/kb/Q-109.931-8.jpg"></p> <li>Klicken Sie auf »Ja«, um das Zertifikat zu installieren. Dadurch wird aus dem öffentlichen Schlüssel (»public key«) im Anhang der eMail (»P7B«-Datei, z.B. »LEO.BENZ@EXAMPLE.NET.P7B«) und dem privaten Schlüssel (»private key«, siehe oben) das S/MIME-Zertifikat des David Benutzers generiert und abhängig von der Einstellung »Zertifikate auch beim Remote Access verwenden« (siehe oben unter »Voraussetzungen für den Einsatz der Signaturzertifikate«) entweder im Windows Zertifikatsspeicher der lokalen Arbeitsstation oder zentral auf dem David Server gespeichert. </li> <li>Der David Benutzer kann fortan das angeforderte S/MIME Zertifikat zum Signieren und Verschlüsseln von eMails verwenden. Je nach Wahl der Einstellung »Ausgehende Nachrichten digital signieren« bei der Installation des Zertifikats (s.o.) ist nun die Nachrichtenoption »Nachricht mit S/MIME digital signieren« beim Verfassen von eMails generell aktiv oder inaktiv.  <p>Sie haben aber dennoch die Möglichkeit, für jeden Sendeauftrag individuell zu entscheiden, ob dieser signiert werden soll, indem Sie die Funktion »Digital signieren« in der Symbolleiste des Nachrichten-Editors manuell aktivieren bzw. deaktivieren. </p> </li> <p align="center"><img src="/graphic/kb/Q-109.931-9.jpg"></p> <li>Falls gewünscht, können Sie auch die bei der Installation des Zertifikats gewählte generelle Voreinstellung nachträglich ändern. Rufen Sie dazu im David Client den Hauptmenüpunkt »Optionen > Einstellungen > Sicherheit« auf und aktivieren bzw. deaktivieren Sie die Option  »Nachrichten digitale Signatur hinzufügen«. Bestätigen Sie anschließend Ihre Einstellung durch einen Klick auf »OK«. </li> <p align="center"><img src="/graphic/kb/Q-109.931-10.jpg"></p></ol> <p><i>Hinweis:</i><br>Das Zertifikat gilt ausschließlich für die Absender-eMail-Adresse, die im Bestellassistenten angegeben wurde.</p> <p>Weiterführende Informationen:<ul type=square><li><a href="KBArticle.asp?ArticleID=9732" target="_self"><u>Sichern und Wiederherstellen von S/MIME-Zertifikaten</u></a></li></ul></p></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(9931);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   

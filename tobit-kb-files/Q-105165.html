@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="BlendTrans(Duration=0, Transition=0)" />
+<!-- 95bb21b86ba9ffc778c3a7c1c52ebc47 -->
+
+<title>Tobit.Software</title>
+
+<script language="javascript" src="https://club.tobit.com/include/alphaAPI.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domLib.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT.js"></script>
+<script language="javascript" src="https://club.tobit.com/include/domTT_drag.js"></script>
+
+<!-- -->
+
+<script language="javascript" type="text/javascript">
+var debug = 0;
+</script>
+<link  href="/include/imgButtons.css" rel="stylesheet" type="text/css">
+
+<link  href="/include/msgBox.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><style type="text/css">td.msgBoxshadow{display:none;}</style><![endif]-->
+<script language=javascript src="/include/alert.js"></script>
+<script language="javascript">
+<!--
+function SendToStatusWindow(FormName, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var frm;
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    frm = eval("document.forms." + FormName);
+    frm.target="StatusWindow";
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open("/include/EmptyStatusWin.htm", "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}
+
+function SendURLToStatusWindow(url, width, height)
+{
+    if (!width)
+        width=400;
+    if (!height)
+        height=200;
+           
+    var left= (screen.width-width)/2;
+    var top = (screen.height-height)/2;
+    var settings = " dependent=yes,"+
+                   " hotkeys=no," +
+                   " menubar=no," +
+                   " locationbar=no," +
+                   " status=no," +
+                   " height=" + height + "," +
+                   " width=" + width + "," +
+                   " top=" + top + "," +
+                   " left=" + left;
+    //window.open("about:blank", "StatusWindow", settings, true);
+    tmp = window.open(url, "StatusWindow", settings, true);        
+    if (tmp)
+      tmp.focus();
+    
+    return true;
+}		
+
+//-->
+</script>
+
+
+  <style>
+  <!--
+  
+  A:link {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:visited {color:#000000; text-decoration: none;  font-weight: normal;}
+  A:active {color:#000000;  text-decoration: none;  font-weight: normal;}
+  A:hover {color:#000000;  text-decoration: underline;  font-weight:  normal;}
+
+  .tdDefault {background-color:#e4e4e4; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+  .tdNote    {background-color:#f7f7f7; font-family:"ARIAL, HELVETICA, SANS-SERIF"; font-size:8pt; color:#000000}
+
+  -->
+  </style>
+  <script language=javascript>
+  <!--
+  function open_Window(val)
+  {    
+    if(document.all)
+    {
+      iW=window.parent.top.document.body.offsetWidth;
+      iH=window.parent.top.document.body.offsetHeight;
+    }
+    else
+    {
+      iW=window.innerWidth;
+      iH=window.innerHeight;
+    }
+  
+    iW = (Math.floor((iW/2))-250);
+    iH = (Math.floor((iH/2))-150);
+  
+    var oUrl = "assessment.asp?ArticleID=" + val;
+    var Wparam = "width=500,height=310,left="+ iW +",top="+ iH;
+    F1 = window.open(oUrl,"Tobit_Software",Wparam);    
+  }
+  -->
+  </script>
+   <script language=javascript src="/include/datefunctions.js"></script>
+   <script language=javascript src="/include/tobitPages.js?id=1"></script>
+   <script language="JavaScript" type="text/javascript">
+   function debAlert(msg)
+   {
+      
+   }
+   </script>
+   <script language="javascript" src="/include/stringfunctions.js"></script>
+   <script language=javascript src="/include/textfield.js"></script>
+   <script language="javascript" src="/include/jquery_latest.js"></script>
+   <script type="text/javascript" src="/include/jquery.modaldialog.js"></script>
+
+
+   <link href="/include/tobit2009.css" rel="stylesheet" type="text/css" media="screen">
+   <link href="/include/tobit2009_print.css" rel="stylesheet" type="text/css" media="print">
+
+   <style type="text/css">
+   div.gradient
+   {
+      position:absolute; top:70px; left:0px; width:100%; z-index:100; background-image:url(/graphic/gradient.png); background-repeat:repeat-x;
+   }   
+   </style>
+   
+   <!--[if lte IE 6]>
+   <style type="text/css">
+
+   </style>
+   <![endif]-->
+
+   <!--[if lte IE 7]>
+   <style type="text/css">
+   ul.SubMenu a
+   {
+      padding:1px 10px 1px 10px;
+   }
+   
+   div.gradient
+   {
+      top:69px;
+   }
+   
+   div#menubar
+   {
+      height:23px;
+   }
+   
+   </style>
+   <![endif]-->
+
+   
+   <link rel="alternate" type="application/rss+xml" title="Tobit.NET" href="http://rss.tobit.com/rss.asp" />
+
+   
+
+   </head>
+
+   
+
+   <body class="mainpages"   >
+
+   
+         <div id="topshadow">
+            
+            <div style="position:absolute; right:20px; top:13px; height:20px; width:150px; cursor:pointer;" onclick="location.href='/login/Start.asp';"></div>
+         </div>
+         
+      
+      <div id="menubar">
+                     
+      </div>
+      
+<script type="text/javascript">
+var txtUsername = "Username, Site-ID oder Kartennr.";
+var CookiesLoaded=false;
+var permanentShow=false
+var supressHideLogin = false;
+var LoginDialogTimer = null;
+   
+
+   function LoginDialogFocusForm(element) 
+    {
+        clearLoginDialogTimer();
+        supressHideLogin = true;
+        element.value == txtUsername ? element.value = "" : element.value = element.value;
+        //element.value == "Kennwort" ? element.value = "" : element.value = element.value;
+    }
+
+    function LoginDialogFocusFormPwd(element, hasFocus) 
+    {
+        clearLoginDialogTimer();
+        if (hasFocus)
+            supressHideLogin = true;
+        else
+            supressHideLogin = false;    
+         
+        if (element.value == "" && hasFocus ==  false)
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+
+    function LoginDialogBlurFormPwd(element) 
+    {
+        supressHideLogin = false;    
+        HideLoginDialog();
+         
+        if (element.value == "")
+           element.style.backgroundImage = "url(/graphic/TextGraphic/PasswordPinGer.png)";
+        else 
+           element.style.backgroundImage = "";
+    }
+    
+    function LoginDialogBlurForm(element) 
+    {
+        supressHideLogin = false;
+        HideLoginDialog();
+        (element.value == "" && element.name == "LoginID") ? element.value = txtUsername : element.value = element.value;
+        (element.value == "" && element.name == "LoginPwd") ? element.value = "Kennwort" : element.value = element.value;
+    }
+    
+    function LoginDialogAnmelden()
+    {
+      LoginDialogSetCookie(document.loginform.RememberPassword);
+      document.loginform.submit();
+    }
+
+
+   //Cookies
+   function LoginDialogReadCookies()
+   {
+      if (CookiesLoaded)
+         return;
+         
+      CookiesLoaded=true;   
+   
+      if (!document.loginform || !document.loginform.LoginID)
+         return;
+         
+	   if (navigator.cookieEnabled == true)
+	   {
+	      var userID = getCookieStr ("AccDataClub");
+	      var PassWD = getCookieStr ("PassWDClub");
+	      var pwState = getCookieStr ("storePwdClub") == 1;
+
+         if (userID!="")
+            document.loginform.LoginID.value = userID;
+            
+         if (PassWD!="")
+         {
+            document.loginform.LoginPwd.value = PassWD;
+         }
+         LoginDialogFocusFormPwd(document.loginform.LoginPwd, false);
+
+         if (pwState)         
+         {
+            document.getElementById("idRememberPassword").checked = true;
+            /*
+            Check("div_RememberPassword", "RememberPassword")
+            CheckboxHover("div_RememberPassword", true)
+            CheckboxHover("div_RememberPassword", false)
+            */
+            //url= location.href+""
+            //if (url.search("logout")==-1)
+            if (permanentShow)
+               document.loginform.submit();
+         }
+	   }
+   }
+
+   function LoginDialogSetCookie(src)
+   {   
+      clearLoginDialogTimer();
+      if (document.loginform.RememberPassword.checked) 
+         LoginDialogUpdateCookie();
+      else
+         LoginDialogDeleteCookie();
+   }
+
+   function LoginDialogUpdateCookie()
+   {
+	   if (navigator.cookieEnabled)
+	   {
+	      var userID  = document.loginform.LoginID.value;
+	      var PassWD  = document.loginform.LoginPwd.value;
+	      var pwState = document.loginform.RememberPassword ? 1 : 0;
+         
+         setCookie ("AccDataClub", userID, null, null, "/");
+         setCookie ("PassWDClub", PassWD, null, null, "/");
+         setCookie ("storePwdClub", "1", null, null, "/");
+	   }
+   }
+
+   function LoginDialogDeleteCookie()
+   {
+	   if(navigator.cookieEnabled == true)
+	   {
+         setCookie ("AccDataClub", "", null, null, "/");
+         setCookie ("PassWDClub", "", null, null, "/");
+         setCookie ("storePwdClub", "0", null, null, "/");
+	   }
+   }
+      
+   function ShowLoginDialog (permanent)
+   {
+      if (permanent)
+         permanentShow=permanent;
+
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "mainmenuhover";
+      
+      LoginDialogReadCookies();
+      //document.getElementById ("SubMenuPoint10010").style.display = "block";
+      //document.getElementById ("SubMenuPoint10010").style.left = "1800px";
+      document.getElementById ("LoginDialogDIV").style.visibility="visible";
+      document.getElementById ("LoginDialogDIV").style.right="10px";
+
+      clearLoginDialogTimer();
+   }
+
+   function HideLoginDialog (ev)
+   {
+      if(!ev)
+         ev = window.event;
+      
+      /*Wegen den tollen selbst designten Radiobuttons*/
+      if(ev && ev.srcElement && ev.srcElement.tagName.toLowerCase() == "form")
+         return;
+      else if(ev && ev.target && (ev.target.tagName.toLowerCase() == "form" || ev.target.tagName.toLowerCase() == "img" || ev.target.tagName.toLowerCase() == "span"))
+         return;
+         
+      if (supressHideLogin)
+         return;
+      if (!permanentShow)
+      {
+         LoginDialogTimer = window.setTimeout("HideLoginDialogCallback();", 200);         
+      }
+   }
+   function HideLoginDialogCallback ()
+   {
+      document.getElementById ("LoginDialogDIV").style.visibility="hidden";
+      if (document.getElementById("MenuPoint10010"))
+         document.getElementById("MenuPoint10010").className = "";
+   }
+   
+   function clearLoginDialogTimer()
+   {
+      if (LoginDialogTimer)
+         window.clearTimeout(LoginDialogTimer);
+      LoginDialogTimer = null;
+   }   
+   
+   function setLogintype(t)
+   {
+      tn = document.getElementById ("tobitnetlogin");
+      fb = document.getElementById ("facebooklogin");
+      /*
+      if (t=="tobitnet")
+      {
+         tn.style.display = "block"
+         fb.style.display = "none"
+      }
+      else
+      {
+         tn.style.display = "none"
+         fb.style.display = "block"
+      }
+      */
+   }
+   
+   function anmelden()
+   {
+      tn = document.getElementById ("logintype_tobitnet");
+      
+      if (tn.checked)
+      {
+         supressHideLogin=true;
+         clearLoginDialogTimer();
+         LoginDialogSetCookie();
+         document.forms.loginform.submit();
+      }
+      else   
+         window.location.href='https://club.tobit.com/login/FacebookConnect.asp'            
+   }
+
+   function LoginDialogKeyUp(e)
+   {
+      keyCode = e.keyCode? e.keyCode : e.charCode;
+      if(keyCode == 13)
+         anmelden();
+   }
+</script>
+
+<style>
+div.LoginDialogMain
+{
+   height:178px !important;
+   padding-top:20px !important;
+}
+</style>
+
+
+<div class="LoginDialogMain" style="visibility:hidden;" id="LoginDialogDIV" onmouseover="clearLoginDialogTimer()">
+      <form name="loginform" action="https://club.tobit.com/login.asp" method="post" onsubmit="">
+      <input type="hidden" name="logindialog" value="club1"/>
+      <input type="hidden" name="LoginFailCount" value="1"/>
+      <input type="hidden" name="PublicSite" value="1"/>      
+      
+      
+      
+      <input type="radio" name="logintype" onclick="setLogintype('tobitnet');" id="logintype_tobitnet" value="tobitnet" checked>&nbsp;&nbsp;<label for="logintype_tobitnet" onclick="setLogintype('tobitnet');">Tobit.NET login</label> 
+      <div id="tobitnetlogin" style="display:block; margin-left:20px; margin-top:10px; margin-bottom:10px;">
+      
+         <input class="LoginDialog" name="LoginID" style="width:180px;margin-bottom:10px;" type="text" value="Username, Site-ID oder Kartennr." onfocus="LoginDialogFocusForm(this)" onblur="LoginDialogBlurForm(this)" />
+         <br />
+         <input class="LoginDialog" name="LoginPwd" style="width:180px;margin-bottom:10px; background-repeat:no-repeat; background-position:4px 3px;" type="password" value="" onfocus="LoginDialogFocusFormPwd(this, true)" onblur="LoginDialogBlurFormPwd(this)" onkeyup="LoginDialogKeyUp(event);" />
+         <br />
+         <input type="checkbox" class="ccheckbox" id="idRememberPassword" name="RememberPassword" onclick="LoginDialogSetCookie(document.loginform.RememberPassword);" />
+         &nbsp;<label style="position:relative; top:-2px;" for="idRememberPassword">k&uuml;nftig automatisch anmelden</label>
+         
+      </div>
+      
+            
+      <input type="radio" name="logintype" onclick="setLogintype('facebook');" id="logintype_facebook" value="facebook">&nbsp;&nbsp;<label for="logintype_facebook" onclick="setLogintype('facebook');">Facebook login</label> 
+
+      <div style="margin-top:15px;"> 
+      </div>         
+      <link  href="/include/imgButtons.css" rel="stylesheet" type="text/css"><script language=javascript src="/include/CButtons.js"></script><span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=22><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_70x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_70x19.png); height:19px; width:70px;" onfocus='clearLoginDialogTimer();' onClick=anmelden();>Anmelden</button>
+</td></tr></table></span>
+      </form>
+</div>
+<script language="javascript">
+   document.getElementById("LoginDialogDIV").onmouseout = HideLoginDialog;
+</script>
+      
+   <div id="outer" align="center">
+   
+   
+   
+     <div id="inner-content" align="center">
+       
+       <div id="content"> 
+       
+          <div class="title">Q-105.165</div>
+          
+<b class=tabletext style="position:relative; top:-5px;">Signaturen und Zertifikate mit PGP und TLS/SSL</b>
+
+<p style="position:relative; top:-14px;">
+<br>
+<table cellspacing="0" cellpadding="2" class="border" ID="Table1">
+  <tr>
+    <td colspan="2" class="borderhead" style="padding-left:5px;"><b>Frage</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+  
+    <tr>
+      <td width="70" valign="top" align="right" class="tabletext" style="padding-right:10px;"><b>Problem</b></td>
+      <td class="tabletext" style="padding-right:10px;">Wie können Signaturen im David InfoCenter erzeugt werden?</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Produkt</b></td>
+      <td class="tabletext">David</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Priorit&auml;t</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+    <tr>
+      <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Effekt</b></td>
+      <td class="tabletext">normal</td>
+    </tr>
+    
+  <tr>
+    <td width="70" align="right" class="tabletext" style="padding-right:10px;"><b>Datum</b></td>
+    <td class="tabletext">26.01.2007</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table cellpadding="2" cellspacing="0" class="border">
+  <tr>
+    <td class="borderhead" style="padding-left:5px"><b>Antwort</b></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+  <tr>
+    <td class="tabletext" style="padding-left:10px; padding-right:10px;">Zwei Möglichkeiten bestehen um Signaturen zu erzeugen bzw. zu verwenden: <ol><li><b>Clientbasierte Verschlüsselung (PGP)</b><br>Die Einbindung von Signaturen erfolgt nicht unmittelbar im David InfoCenter, sondern über PGP. Im David InfoCenter können Sie lediglich die Integration der Signatur via Button aktivieren bzw. deaktivieren.<p>PGP (Pretty Good Privacy) stellt ein Verfahren zur Nachrichtenverschlüsselung und zur Erstellung so genannter digitaler Unterschriften (Signaturen) dar. Dazu verfügen der Absender und der Empfänger über jeweils zwei Code-Schlüssel. Nach der Installation von PGP auf seiner Workstation kann sich ein Anwender diese Code-Schlüssel erzeugen. Als zusätzliche Sicherheit ist hierbei ebenfalls ein besonderes Passwort zu definieren. Es wird ein geheimer Schlüssel (Private Key) und ein öffentlicher Schlüssel (Public Key) benötigt.<p>Der Public Key dient zum Verschlüsseln von Nachrichten, die an Ihre eigene Adresse gesendet werden sollen. Daher ist dieser Schlüssel all denjenigen Personen zur Verfügung zu stellen, die Ihnen PGP-Nachrichten schicken wollen. Im Gegenzug müssen Sie über die Public Keys aller Personen verfügen, denen Sie verschlüsselte Nachrichten senden möchten. Public Keys können z.B. als eMail-Anhang ausgetauscht oder von speziellen Servern aus dem Internetheruntergeladen werden. Diese Schlüssel werden dann auf dem eigenen Computer vomPGP-Programm an einem so genannten Schlüsselbund (Keyring) verwaltet. <p>Der Private Key dient zum Entschlüsseln von Nachrichten, die mit Ihrem Public Key verschlüsselt wurden. Geben Sie aus diesem Grund Ihren Private Key niemals heraus und bewahren Sie ihn an einem sicheren Ort auf. Mit Hilfe des Private Keys kann man außerdem eine eMail so kennzeichnen, dass sich mit dem zugehörigen Public Key überprüfen lässt, ob sie wirklich vom angegebenen Absender stammt und ob der Inhalt auf dem Übertragungsweg verändert wurde. Diese Kennzeichnung nennt man digitale Signatur. <p>Der Nachrichten Editor des David InfoCenters stellt spezielle Funktionen zur Nutzung von PGP zur Verfügung. Voraussetzung hierfür ist, dass auf der entsprechenden Workstation PGP bereits installiert und korrekt eingerichtet wurde und für den entsprechenden Benutzer am Service Layer das Recht »PGP Verschlüsselung« aktiviert ist (Option »Rechte« bei der Benutzerkonfiguration).Ist dies der Fall, so enthalten die Symbolleisten im Nachrichten Editor des David InfoCenters drei zusätzliche Buttons:<p><ul><li><b>PGP Verschlüsseln</b><br>Wählen Sie diesen Button, wenn Sie die Nachricht, die aktuell im Nachrichten Editor geöffnet ist, verschlüsselt versenden möchten. In diesem Fall wird die Verschlüsselung unmittelbar nach Betätigung des »Senden«-Buttons vorgenommen. Sie müssen natürlich über den Public Key des Empfängers verfügen, um eine PGP-Verschlüsselung durchführen zu können. Wird aus der im »An«-Feld eingetragenen Adresse ein Empfänger erkannt, dessen Public Key sich bereits am lokalen Keyring befindet, so wird dieser Schlüssel automatisch zur Verschlüsselung der Nachricht verwendet. Es erfolgt also keine weitere Abfrage. Existiert kein zur eingetragenen Empfängeradresse passender Public Key auf dem lokalen Computer, so öffnet sich direkt nach dem Betätigen des »Senden«-Buttons ein Dialogfenster, in dem alle zur Verfügung stehenden Public Keys zur Auswahlangeboten werden. Selektieren Sie hier den gewünschten Schlüssel und bestätigen Sie die Auswahl mit »OK«.<p><li><b>PGP Unterschrift</b><br>Über diesen Button können Sie die aktuelle Nachricht mit Ihrer digitalen Unterschrift versehen. Diese Funktion können Sie entweder in Verbindung mit der PGP-Verschlüsselung oder auch separat verwenden. Wenn Sie z.B. den Inhalt einer Nachricht nicht verschlüsseln, sondern lediglich mit Ihrer Signatur versehen möchten, so aktivieren Sie diesen Button und deaktivierenb Sie den »PGP Verschlüsseln«-Button. Sobald Sie eine zu signierende Nachricht zum Versand freigeben, werden Sie in einem separaten Dialogfenster zur Eingabe Ihres PGP-Passwortes aufgefordert, mit dem Sie sich identifizieren. Ist das angegebene Passwort nicht korrekt, kann keine Signatur stattfinden.<p><li><b>PGP Entschlüsseln</b><br>Dieser Button ermöglicht das Entschlüsseln empfangener PGP-codierter Nachrichten. Bitte beachten Sie, dass Sie ausschließlich Nachrichten entschlüsseln können, die mit Ihrem Public Key verschlüsselt wurden. Klicken Sie auf diesen Button, um die Entschlüsselung der aktuell geöffnetenNachricht zu veranlassen. Daraufhin werden Sie aufgefordert, Ihr PGP-Passwort einzugeben. <p>Ein Entschlüsseln der Nachricht findet nur statt, wenn die Angabe dieses Passwortes korrekt ist. Die Entschlüsselung geschieht ausschließlich temporär. Im <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Tobit Archive System<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Tobit Archive System', 'content', 'Das <B>T</B>obit <B>A</B>rchive <B>S</B>ystem ist die Baumstruktur aller Archives, der elektronische Ordner, im David.InfoCenter.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> auf dem Server bleibt die entsprechende Datei in codierter Form erhalten. Das bedeutet, dass die Nachricht bei jedem Öffnen erneut entschlüsselt werden muss, also jedes Mal erneut das Passwort eingegebenwerden muss. Wenn Sie wünschen, dass direkt beim Öffnen von PGP-verschlüsselten Nachrichten der Entschlüsselungsdialog erscheint, ohne zuvor den »PGP Entschlüsseln«-Button drücken zu müssen, stellen Sie sicher, dass in der Konfiguration des David InfoCenters unterhalb von »Optionen-> Einstellungen -> Ansicht« die Option »Nachrichten beim Öffnen entschlüsseln«aktiviert ist. </ul><p>Bei PGP findet die gesamte Ver- und Entschlüsselung auf der Arbeitsstation selbst statt. PGP-verschlüsselte Nachrichten werden generell auch in verschlüsselter Form im Archive-System auf dem Server, z.B. in den Eingangs- und Ausgangs-Archives der Benutzer, abgelegt. Ohne den passenden Private Key ist also keinerlei Zugriff auf die enthaltene Information möglich. Daher können diese Nachrichten auch über nicht gesicherte Leitungen bzw. Verbindungenversendet werden, ohne unbefugten Zugriff auf die Daten befürchten zu müssen.<p><li><b>TLS-Zertifikat-Generator</b><br>Des Weiteren ist es möglich eine serverbasierte Signatur zu hinterlegen. Dies ist nicht nur für den eMail Transfer geeignet, sondern auch für den MailAccess Server und für die <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >WebBox<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'WebBox', 'content', '&Uuml;ber das Internet Access Module von Tobit.Software  in Verbindung mit David kann sich der Kunde eine WebBox (eigenst&auml;ndiger Web-Server) aufsetzen und die eigenen Web-Seiten &quot;zu Hause&quot; verwalten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span>.<p>Das Programm TLSCERT.EXE (Verzeichnis »DAVID\UTIL\WINDOWS\TLSCERT«) dient zur Erstellung von Zertifikat-Requests oder von selbstsignierten Zertifikaten für die Transport-Layer-Security-Dienste (TLS-Dienste) ab David 6.6. TLS kann bei den eMail Diensten, bei den Web Server Diensten und beim Mail Access eingesetzt werden. <p>Um eine Übertragung von Nachrichten über eine sichere Verbindung zu gewährleisten, muss sowohl der Absender als auch der Empfänger über ein so genanntes Zertifikat verfügen, das ihn eindeutig identifiziert.<p><ul><li><b>Certificate Type</b><br>Geben Sie an, ob Sie ein selbstsigniertes Zertifikat oder ein Zertifikat-Request erzeugen wollen. Ein selbstsigniertes Zertifikat wird vollständig selbst erzeugt und bietet keine zusätzliche Kontrollmöglichkeit. Bei einem Zertifikat-Request werden Dateien erzeugt, mit denen bei einer so genannten Certification Authority (wie z.B. VeriSign oder Thawte) ein Zertifikat beantragtwerden kann. Bei Zweifeln an einem Zertifikat kann in diesem Falle die Echtheit durch eine Nachfrage an die Certification Authority überprüft werden.<p><li><b>Key Length</b>Bestimmen Sie den Grad der Verschlüsselung in Bits. Sinnvoll sind Werte zwischen 512 und 4096. Werte kleiner als 512 gelten als unsicher. Am häufigsten verwendet wird der Wert 1024.<br>Generell gilt: Je größer die Key Length ist, desto größer ist die Sicherheit.<p><li><b>Distinguished Name</b><br>Tragen Sie hier alle für das Zertifikat erforderlichen Daten ein.<p><li><b>Country Name</b><br>Schreiben Sie in dieses Feld den zweistelligen Ländercode Ihres Landes (z.B. DE für Deutschland, US für USA etc.).<p><li><b>State or Province Name</b><br>Tragen Sie hier den Namen Ihres Landes bzw. Bundesstaates ein.<p><li><b>Locality Name</b><br>In dieses Feld ist der Name Ihrer Stadt einzutragen.<p><li><b>Organization Name</b><br>Fügen Sie in dieses Feld den Namen Ihrer Firma ein.<p><li><b>Organizational Unit Name</b><br>Hier wird der Name Ihrer Abteilung innerhalb Ihrer Firma erwartet.<p><li><b>Common Name</b><br>Tragen Sie hier den <span style="cursor:hand" onmouseover="return makeTrue (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" >Host<img src="/graphic/glossary_s.gif" border=0 align="absmiddle" onclick="return makeFalse (domTT_activate(this, event, 'caption', 'Host', 'content', 'Dieser Zentralrechner ist ein &quot;Gastgeber&quot;, der es Computern erm&ouml;glicht, in einem Netzwerk mit anderen Rechnern zu kommunizieren.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )"></span> Namen des Servers ein, für den das Zertifikat verwendet werden soll. Dieser Name kann auch Wildcards wie z.B. *.example.com enthalten, was allerdings mit erhöhten Kosten verbunden ist, falls ein gesichertes Zertifikat bei einer Certification Authority beantragt wird.<p><li><b>eMail Address</b><br>Geben Sie hier eine eMail-Adresse an, an die bei Zweifeln an der Echtheit des Zertifikats Rückfragen gerichtet werden können.<p><li><b>Optional Extra Attributes</b><br>Abhängig von der Art des zu erzeugenden Zertifikats sind hier zusätzliche Angaben zu treffen.<p><li><b>Valid Days</b><br>Dient zur Festlegung der Gültigkeitsdauer bei selbstsignierten Zertifikaten.<p><li><b>Common Name</b><br>In den meisten Fällen ist derselbe Wert anzugeben, der auch als „Common Name“ unterhalb von „Distinguished Name“ eingetragen wurde.<p><li><b>Challenge Password</b><br>Dient zur zusätzlichen Sicherheit und wird bei Zertifikat-Requests an die Certification Authority übertragen. Bevor diese ein Zertifikat erteilt, muss dieses Passwort dann nochmals bestätigt werden.</ul><p>Nachdem Sie alle erforderlichen Daten angegeben haben, klicken Sie auf den „Generate”-Button, um den Zertifikat-Request bzw. das selbstsignierte Zertifikat erzeugen zu lassen. Bei einem selbstsignierten Zertifikat wird eine Datei erzeugt, die unter dem Namen RXCERT.PEM (für den Empfang) und/oder unterdem Namen TXCERT.PEM (für den Versand von Nachrichten über eine gesicherte Verbindung) in das Verzeichnis »DAVID\APPS\POSTMAN\CODE« des DavidServers kopiert werden muss. <p>Bei einem Zertifikat-Request werden zwei Dateien erzeugt, wobei die eine den Schlüssel und die andere den Zertifikat-Request enthält. Der Zertifikat-Requestist an eine Zertifizierungsstelle (wie z.B. VeriSign oder Thawte) zu übertragen. Das geschieht üblicherweise über das WWW oder per eMail.<p>Sie erhalten daraufhin ein entsprechendes Zertifikat, dessen Inhalt Sie in die erste vom TLS-Zertifikat-Generator erzeugte Datei unterhalb des Schlüssels kopieren. Speichern Sie anschließend diese Datei unter dem Namen RXCERT.PEM (für den Empfang) und/oder unter dem Namen TXCERT.PEM (für den Versand von Nachrichten über eine gesicherte Verbindung) in dem Verzeichnis »DAVID\APPS\POSTMAN\CODE« auf dem David Server ab. <p>Für den gesicherten Zugriff zwischen der WebBox und einem Browser speichern Sie diese Datei unter dem Namen WBCERT.PEM im Verzeichnis »DAVID\APPS\WEBBOX\CODE«. <p>Um TLS Verbindungen auch beim Mail Access über den Mail Access Server nutzen zu können, speichern Sie die Datei unter dem Namen MACERT.PEM im Verzeichnis »DAVID\APPS\MASERVER\CODE« ab.<p><b>Hinweis</b><br> Beim Einsatz unter Linux dürfen zur Benennung der Zertifikat-Dateien ausschließlich Kleinbuchstaben verwendet werden. Hier müssen die Dateinamen also folgendermaßen aussehen:<br><ul><li>rxcert.pem<li>txcert.pem<li>wbcert.pem<li>macert.pem</ul></ol></td>
+  </tr>
+  <tr>
+    <td class="tabletext" height="5"></td>
+  </tr>
+</table>
+</p>
+	
+<span class=noprint><table width=100% cellpadding=0 cellspacing=0 height=32><tr><td align=right valign=bottom><button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=open_Window(5165);>Bewertung</button>
+&nbsp;<button type=button onfocus="this.blur();" onmousedown="CButtons_Mouse3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseup="CButtons_Mouse3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseover="CButtons_Hover3(this, true, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" onmouseout="CButtons_Hover3(this, false, '/graphic/buttons/completed/tobitDark#status#_72x19.png');" type="button" class="imgButton3Dark" style=" background-image: url(/graphic/buttons/completed/tobitDark_72x19.png); height:19px; width:72px;" onClick=window.history.back();>Zur&uuml;ck</button>
+</td></tr></table></span>
+<br>
+
+   <script language="javascript">
+      PrepareLoginDialog();
+         
+      function PrepareLoginDialog()
+      {
+         var phDIV = document.getElementById("MENUPH_LoginDialogDIV")
+         var dlgDIV = document.getElementById("LoginDialogDIV")
+         if (!phDIV || !dlgDIV)
+            return
+         
+         var dlghtml = dlgDIV.innerHTML;
+         if (dlghtml!="")
+         {
+            dlgDIV.innerHTML="";          
+            phDIV.innerHTML=dlghtml;
+         }
+      }   
+    </script>  
+   
+   </div><!--1-->
+   
+   </div></div>
+
+  
+   </body>
+
+   <script type="text/javascript" src="/include/wndctrl/jquery.checkbox.js"></script>
+   <link rel="stylesheet" type="text/css" href="/include/wndctrl/jquery.tobit-checkbox.css" />
+
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/CCheckbox/CCheckbox.css" />
+   <link rel="Stylesheet" type="text/css" href="/Include/WndCtrl/ComboBox/jquery.combobox.css" />
+   <script type="text/javascript" src="/Include/WndCtrl/CCheckbox/CCHeckbox.js"></script>
+   <script type="text/javascript" src="/Include/WndCtrl/ComboBox/jquery.combobox.js"></script>
+   <script language="javascript">
+      $(document).ready(function ()
+      {
+         $('.tobitComboBox').customStyle("");
+         $('.tobitComboBoxRed').customStyle("");
+         $('input:radio').checkbox({ cls: 'jquery-tobit-radiobtn' });
+         $('input:checkbox').checkbox({ cls: 'jquery-tobit-checkbox' });                  
+      });
+      if (CustomizeForms)
+         CustomizeForms()         
+   </script>
+
+   </html>
+   
