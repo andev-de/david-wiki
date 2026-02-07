@@ -25,7 +25,138 @@ function read_json_file($file_path) {
     return $data;
 }
 
-function create_kb_page($config, $kb) {
+function process_woltlab_request($url, $info, $encodedData, $cookieValue) {
+    $cookieFile = __DIR__ . "/cookies.txt";
+
+    echo $info;
+
+    // Initialize cURL session
+    $ch = curl_init($url);
+
+    // Set cURL options
+    curl_setopt($ch, CURLOPT_POST, true); // Use POST method
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $encodedData); // Encode data
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return response as a string
+    // curl_setopt($ch, CURLOPT_COOKIEJAR, $cookieFile); // Save cookies to file
+    // curl_setopt($ch, CURLOPT_COOKIEFILE, $cookieFile); // Load cookies from file
+
+    // Optional headers (if required)
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0',
+                'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language: de,en-US;q=0.7,en;q=0.3',
+                'Content-Type: application/x-www-form-urlencoded',
+                'Origin: https://www.david-forum.de',
+                'Connection: keep-alive',
+                'Referer: https://www.david-forum.de/wiki/entry-add/?categoryID=5',
+                'Cookie: '.$cookieValue,
+                'Upgrade-Insecure-Requests: 1',
+                'Sec-Fetch-Dest: document',
+                'Sec-Fetch-Mode: navigate',
+                'Sec-Fetch-Site: same-origin',
+                'Sec-Fetch-User: ?1',
+                'Priority: u=0, i',
+                'Pragma: no-cache',
+                'Cache-Control: no-cache'
+    ]);
+
+    // curl_setopt($ch, CURLOPT_VERBOSE, true);
+
+    // Execute cURL request
+    $response = curl_exec($ch);
+
+    // Check for errors
+    if (curl_errno($ch)) {
+        echo 'Curl error: ' . curl_error($ch);
+        curl_close($ch);
+        exit;
+    }
+
+    // Close cURL session
+    curl_close($ch);
+
+    if (empty($response)) {
+        $status = "Erfolgreich";
+    }
+    else {
+        $pfind = '<small class="innerError">';
+        $pstart = strpos($response, $pfind);
+        if ($pstart !== false) {
+            $pstart = $pstart + strlen($pfind);
+            $pend = strpos($response, '</', $pstart + 1);
+            $plen = $pend - $pstart;
+            // echo $pstart,"-",$pend,"=",$plen,"\n";
+            $status = trim(substr($response, $pstart, $plen));
+        }
+        else {
+            $pfind = '<woltlab-core-notice type="error">';
+            $pstart = strpos($response, $pfind);
+            if ($pstart !== false) {
+                $pstart = $pstart + strlen($pfind);
+                $pend = strpos($response, '</', $pstart + 1);
+                $plen = $pend - $pstart;
+                // echo $pstart,"-",$pend,"=",$plen,"\n";
+                $status = trim(substr($response, $pstart, $plen));
+            }
+            else {
+                $pfind = '<p class="exceptionTitle">';
+                $pstart = strpos($response, $pfind);
+                if ($pstart !== false) {
+                    $pstart = $pstart + strlen($pfind);
+                    $pend = strpos($response, '</', $pstart + 1);
+                    $plen = $pend - $pstart;
+                    // echo $pstart,"-",$pend,"=",$plen,"\n";
+                    $status = trim(substr($response, $pstart, $plen));
+                }
+                else {
+                    file_put_contents(dirname(__FILE__).'/response.html', $response);
+                    die('xxxx');
+                }
+            }
+        }
+    }
+
+    echo "[",$status,"]\n";
+
+    file_put_contents(dirname(__FILE__).'/response.html', $response);
+    file_put_contents(dirname(__FILE__).'/response-wiki.log', $info.": ".$status."\n", FILE_APPEND);
+}
+
+function create_wiki_page($info, $post_data, &$config) {
+    $cookieValue = $config['sessionNumber'].'='.$config['sessionValue'].'; XSRF-TOKEN='.$config['xsrfToken'];
+    parse_str('t='.$config['xsrfToken'], $tokenArr);
+
+    $post_data['t'] = $tokenArr['t'];
+
+    // print_r($post_data); exit;
+
+    $encodedData = http_build_query($post_data);
+
+    // echo $encodedData; exit;
+
+    $url = "https://www.david-forum.de/wiki/entry-add/";
+
+    process_woltlab_request($url, $info, $encodedData, $cookieValue);
+}
+
+function update_wiki_page($info, $post_data, &$config) {
+    $cookieValue = $config['sessionNumber'].'='.$config['sessionValue'].'; XSRF-TOKEN='.$config['xsrfToken'];
+    parse_str('t='.$config['xsrfToken'], $tokenArr);
+
+    $post_data['t'] = $tokenArr['t'];
+
+    // print_r($post_data); exit;
+
+    $encodedData = http_build_query($post_data);
+
+    // echo $encodedData; exit;
+
+    $url = "https://www.david-forum.de/wiki/entry-edit/".$page_key."/";
+
+    process_woltlab_request($url, $info, $encodedData, $cookieValue);
+}
+
+function create_kb_page(&$config, $kb) {
     $article = "aus Tobit KB importiert - vom ".$kb['date'];
     if (!empty($kb['link']))
         $article .= " - <a href='".$kb['link']."'>Beitrag bei Tobit</a>";
@@ -47,7 +178,9 @@ function create_kb_page($config, $kb) {
     // if ($kb['kblink'] == 1)
     //     echo $kb['kbid'],"\n";
 
-    print_r($post_data);
+    // print_r($post_data);
+
+    create_wiki_page("generating ".$kb['kbid']."... ", $post_data, $config);
 }
 
 
