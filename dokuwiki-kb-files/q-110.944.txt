@@ -1,0 +1,20 @@
+====== Q-110.944 - Angemeldeter Benutzer und Servername im Navigator ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Navigator wird nun ganz oben der Name des angemeldeten Benutzers sowie der Servername angezeigt. Über einen Rechtsklick auf diesem Eintrag hat man über ein Kontextmenü die Möglichkeit sich umzumelden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10944]]

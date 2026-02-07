@@ -1,0 +1,13 @@
+====== Q-110.236 - Anzeige der Nachrichten-Vorschau individuell konfigurieren ======
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+26.10.2010
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10236]]

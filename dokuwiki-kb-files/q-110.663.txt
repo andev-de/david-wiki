@@ -1,0 +1,20 @@
+====== Q-110.663 - Allgemeine Informationen zu der Funktion »Nach Konversation ordnen« ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Was ist bei Nutzung der Funktion »Nach Konversation ordnen« zu beachten?
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Mit der Funktion »Nach Konversation ordnen« hilft Ihnen David®, auch bei längeren Mail-Wechseln mit verschiedenen beteiligten Personen den Überblick zu behalten. Ist diese Funktion aktiv, fasst der David® Client in der Eintragsliste sämtliche Mails mit identischem Betreff zusammen und ordnet sie chronologisch sortiert der jeweils neuesten dieser Nachrichten zu. So sind alle zusammengehörenden Informationen gebündelt und immer direkt im Zugriff, ohne lange danach suchen zu müssen.Verfügbar ist diese Funktion im InfoCenter und im Eingangsordner sowie in allen anderen Ordnern, in deren Eigenschaften die Einstellung »Anzeigen als Eingang« getroffen ist (siehe Tab »Optionen«). Über ein zugehöriges Icon in der Symbolleiste des David® Client lässt sich das Zusammenfassen der Nachrichten bei Bedarf aus- und auch wieder einschalten.In der Konfiguration der Symbolleisten können Sie außerdem entscheiden, ob dieses Icon in der Symbolleiste angeboten werden soll oder nicht. Wichtiger Hinweis Die Funktion »Nach Konversation ordnen« steht Ihnen nur dann zur Verfügung, wenn Sie den David® Client so eingestellt haben, dass die Vorschau neben der Eintragsliste dargestellt wird. Bei Betrieb des David® Client in der Einstellung »Vorschau unter Eintragsliste« ist diese Funktion nicht nutzbar.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10663]]

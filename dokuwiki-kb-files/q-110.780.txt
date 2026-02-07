@@ -1,0 +1,20 @@
+====== Q-110.780 - "Ohne Absenderkennung" (Vorschau neben Eintragsliste) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Ansicht "Vorschau neben Eintragsliste" wurde bei eMails u.U. "Ohne Absenderkennung" angezeigt, obwohl ein Absender vorhanden ist. Dies konnte auftreten, wenn die Spalte "Von" in der Eintragsliste entfernt wurde.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10780]]

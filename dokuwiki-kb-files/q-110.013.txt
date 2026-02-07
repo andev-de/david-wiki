@@ -1,0 +1,15 @@
+====== Q-110.013 - Deutsche Texte bei englischer Version ======
+==== Problem ====
+Wird die Personal Digital Assistant ist ein handfl&auml;chengro&szlig;er Computer, ausgestattet mit einem Eingabestift, mit dem &uuml;ber den ber&uuml;hrungsempfindlichen Bildschirm navigiert wird.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" PDAPersonal Digital Assistant ist ein handfl&auml;chengro&szlig;er Computer, ausgestattet mit einem Eingabestift, mit dem &uuml;ber den ber&uuml;hrungsempfindlichen Bildschirm navigiert wird.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" Synchronisation in englisch verwendet, so wurden dort teilweise deutsche Texte verwendet. Das ist nun behoben.
+==== Produkt ====
+David Client Pocket Sync
+==== Datum ====
+17.11.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 17-Nov-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10013]]

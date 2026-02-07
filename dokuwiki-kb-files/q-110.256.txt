@@ -1,0 +1,15 @@
+====== Q-110.256 - Auslösen des eingebetteten Editors als eigenes Fenster ======
+==== Problem ====
+Wird bei der Einstellung "Editor in Vorschau öffnen" eine Nachricht bearbeitet, so kann diese als eigenes Fenster ausgelöst werden, in dem man den Tab mit der Maus nach oben oder unten zieht. dvwin32.exe 11.00a (3312)
+==== Produkt ====
+David Client
+==== Datum ====
+27.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Edition 2011 Service Pack 27-Sep-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10256]]

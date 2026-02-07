@@ -1,0 +1,20 @@
+====== Q-110.917 - "Windows Wählregeln verwenden" bei TAPI Einstellungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den TAPI Einstellungen (Einstellungen, Benutzerprofil) kann nun festgelegt werden, dass die Windows Wählregeln verwendet werden sollen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10917]]

@@ -1,0 +1,15 @@
+====== Q-110.207 - Zugriff auf SQL Adressen ======
+==== Problem ====
+Es konnte vorkommen, dass allein durch den Zugriff auf einen SQL Ordner die Datenbankverbindung aufgebaut wurde, ohne dass wirklich Einträge geladen wurden. Also z.B. im Adressauswahldialog wenn dort in der Liste ein oder mehrere SQL Ordner angezeigt wurden. Das konnte zudem Verzögerungen in der Adressauswahl bewirken. Das ist nun behoben. dvwin32.exe 11.00a (3201)
+==== Produkt ====
+David Client
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10207]]

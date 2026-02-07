@@ -1,0 +1,20 @@
+====== Q-110.881 - Markierungen in Eintragsliste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Eintragslisten werden nun die farbigen Symbole angezeigt, sofern sie bei Einträgen als Markierung gesetzt sind.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10881]]

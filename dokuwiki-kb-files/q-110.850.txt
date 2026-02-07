@@ -1,0 +1,20 @@
+====== Q-110.850 - Fehler beim Verschieben der Symbolleisten des Editors ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Sind die Symbolleisten des Nachrichten Editors nicht fixiert, so ließen sie sich neben oder über die Menüleiste verschieben, was zu Anzeigefehlern oder u.U. auch zum Absturz des Clients führen konnte. Das ist nun unterbunden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10850]]

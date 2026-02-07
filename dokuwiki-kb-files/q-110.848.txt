@@ -1,0 +1,20 @@
+====== Q-110.848 - david® Client Mac Beta ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Beta Version des Clients wird nun mit auf den david® Server kopiert (\david\Clients\Mac\David-Client.dmg). Künftige Updates werden in das Verzeichnis \David\Updates kopiert so dass die Clients wie bei der PC Version ein automatisches Update erhalten.
+
+==== Produkt ====
+
+David
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10848]]

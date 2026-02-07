@@ -1,0 +1,17 @@
+====== Q-110.209 - Allgemeine Informationen zu dem in David.fx Edition 2011 integrierten SQL-Datenbanksystem ======
+==== Problem ====
+David.fx Edition 2011 verfügt über ein integrierten SQL-Datenbanksystem. Wozu dient diese Datenbank und welche Systemvoraussetzungen müssen hierfür erfüllt werden?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+22.09.2010
+==== Antwort ====
+David.fx Edition 2011 indiziert die im David Ordnersystem gespeicherten Dokumente und Nachrichten in einer SQL-Datenbank. Diese Indizierung geschieht vollautomatisch, was eine äußerst schnelle Volltextrecherche ermöglicht. Hierbei wird standardmäßig das Datenbank-Managementsystem »Microsoft SQL Server 2008 R2 Express Edition« genutzt, das sich auch im Lieferumfang von David.fx Edition 2011 befindet und im Normalfall während der Installation von David.fx Edition 2011 automatisch installiert und eingerichtet wird. Bei Bedarf ist jedoch auch der Einsatz bereits bestehender Datenbank-Installationen für diesen Zweck möglich. 
+
+ Aufgrund der Datenbankintegration sind Anforderungen an den David Server höher als noch bei den Vorgängerversionen von David.fx Edition 2011. Folgende Bedingungen müssen für die Installation von David.fx Edition 2011 erfüllt werden:Server mit mindestens 512 MB RAM (2 GB oder mehr wird empfohlen) und nicht weniger als 3 GB freiem Festplattenspeicher auf dem Systemlaufwerk Server-Betriebssystem Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows XP (ab SP3), Windows Vista oder Windows 7 (jeweils in den 32- oder 64-Bit Versionen) Microsoft.NET Framework ab Version 2.0 SP2(wird vom David Setup installiert, falls noch nicht vorhanden) Windows PowerShell(wird vom David Setup installiert, falls noch nicht vorhanden) Windows Installer ab Version 4.5(wird vom David Setup installiert, falls noch nicht vorhanden)     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10209]]

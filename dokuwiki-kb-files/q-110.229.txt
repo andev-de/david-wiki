@@ -1,0 +1,27 @@
+====== Q-110.229 - Favoriten-Leiste im David Client individuell anpassen ======
+==== Problem ====
+Die Favoriten-Leiste im David Client bietet über entsprechende Schaltflächen den direkten Zugriff auf die wichtigsten Ordner. Wie lassen sich diese Favoriten erweitern und individuell anpassen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+26.10.2010
+==== Antwort ====
+Die Favoriten-Leiste ist im David Client direkt unterhalb der Symbolleisten am oberen Rand des Programmfensters angeordnet. Sie bietet über entsprechende Schaltflächen direkten Zugriff auf die für die tägliche Arbeit wichtigsten Ordner (Favoriten). Eine rote Markierung (ein so genanntes Badge) in der oberen rechten Ecke einer Schaltfläche zeigt an, ob und wie viele noch ungelesene Einträge der zugehörige Ordner enthält. Voraussetzung für die Anzeige des Badge ist, dass Sie den betreffenden Ordner mithilfe des David Notifiers auf neue bzw. ungelesene Nachrichten überwachen lassen.
+
+Einige wichtige Ordner sind bereits vorgegeben, Sie können die Favoriten jedoch erweitern und individuell anpassen. Per Klick mit der rechen Maustaste auf die Favoriten-Leiste öffnen Sie deren Kontextmenü, in dem Sie unter anderem die Darstellung beeinflussen können.
+
+In dem Dialogfenster »Symbolleisten«, können Sie die eingerichteten Verknüpfungen (Favoriten) bearbeiten, entfernen, neuen Favoriten hinzufügen oder auch deren Reihenfolge anpassen. 
+
+Sie erreichen dieses Dialogfenster auch, indem Sie aus dem Hauptmenü den Punkt »Optionen Symbolleisten« aufrufen. Wählen Sie hier die Registerkarte »Favoriten«, um sich eine Liste der bereits eingerichteten Verknüpfungen mit den zugehörenden Symbolen sowie den Konfigurationsmöglichkeiten anzeigen zu lassen.
+
+Beachten Sie, dass sich die Optionen zu »Darstellung« und »Ausrichtung« sowie zur Anzeige der »Symboltitel« nicht auf die Favoriten-Leiste sondern nur auf das Favoriten-Fenster beziehen und keine Auswirkungen auf die Anzeige der Favoriten-Leiste haben. 
+
+Über das Kontextmenü der Favoriten-Leiste haben Sie die Möglichkeit, die Symbole der Favoriten ein- oder auszublenden. 
+
+Natürlich können Sie den Inhalt der Favoriten-Leiste erweitern, indem Sie z.B. zusätzliche Ordner hinzufügen. Zugehörige Funktionen finden Sie wahlweise im Navigator oder in dem oben beschriebenen Dialogfenster »Symbolleisten« auf der Registerkarte »Favoriten«. Im Navigator rufen Sie dazu per Rechtsklick das Kontextmenü eines Ordners auf, den Sie in die Favoriten aufnehmen möchten, und wählen hier »Zu Favoriten hinzufügen«. In der Favoriten-Konfiguration klicken Sie auf »Hinzufügen« und wählen in der »Ordner-Auswahl« den gewünschten Ordner aus.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10229]]

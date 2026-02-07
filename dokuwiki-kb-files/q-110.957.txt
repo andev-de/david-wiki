@@ -1,0 +1,20 @@
+====== Q-110.957 -  Einstellung für Zeitraster in Kalenderanzeige ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Einstellung für das Zeitraster in der Ansicht "Tag" und "Arbeitswoche" kann nun auch unter Einstellungen/Kalender vorgenommen werden. Bisher ging dies nur über das Kontextmenü in der Kalenderansicht selbst.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10957]]

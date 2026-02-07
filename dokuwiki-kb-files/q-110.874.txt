@@ -1,0 +1,20 @@
+====== Q-110.874 - Kopfzeile der Vorschau bleibt stehen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man im Ausgangbuch in der Vorschau den Tab mit den Tracking Informationen oder den Dateianhängen ausgewählt hat und dann in einen leeren Ordner wechselt, blieben die Informationen der Kopfzeile in der Vorschau stehen (der Inhalt war aber korrekt leer).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10874]]

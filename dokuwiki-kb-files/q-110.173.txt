@@ -1,0 +1,15 @@
+====== Q-110.173 - Fax nicht zu öffnen (2 User angemeldet) ======
+==== Problem ====
+Ein Benutzer meldet sich über die Tabbed Desktop als ein anderer Benutzer am David Server an (z.B. Urlaubsvertretung), ist also somit mit 2 User Accounts am David Server angemeldet. Beim Wechsel zwischen den Usern über den Tab konnten empfangene Faxe des einen Benutzers u.U. nicht geöffnet werden (Fehlermeldung). dvedit32.exe 11.00a (152)
+==== Produkt ====
+David Client
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10173]]

@@ -1,0 +1,25 @@
+====== Q-110.036 - Speicherort der im David Client angelegten Favoriten ======
+==== Problem ====
+Im David Client wurden persönliche Favoriten angelegt, die dem zugehörigen Benutzer sowohl netzwerkintern als auch extern auf jeder Arbeitsstation mit installiertem David Client zur Verfügung stehen. In welcher Datei werden diese Favoriten auf dem David Server gespeichert?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+30.11.2009
+==== Antwort ====
+Die im David Client angelegten persönlichen Favoriten stehen dem Benutzer bei der Arbeit mit dem David Client jederzeit und überall zur Verfügung. Dabei ist es völlig unerheblich, auf welchem Computer er den David Client für den Zugriff auf den David Server nutzt. Dies ist möglich, da die zugehörigen Daten zentral auf dem David Server gespeichert werden. 
+
+Unterhalb von »\DAVID\ARCHIVE\USER\« führt der David Server für jeden David Benutzer ein persönliches Verzeichnis, dessen Name jeweils identisch mit der »David ID« (s.u.) des betreffenden Benutzers ist. In diesem Verzeichnis befindet sich eine Datei »DIC.CFG« in der neben weiteren Daten auch die Informationen zu den persönlichen Favoriten des Benutzers gespeichert sind.
+
+Für den Benutzer mit der David ID »10004000« finden Sie die zugehörigen Informationen also unter dem folgenden Pfad:
+
+»\DAVID\ARCHIVE\USER\10004000\DIC.CFG«
+
+Hinweis:Die Datei »DIC.CFG« beinhaltet u.a. auch Verweise auf hinterlegte S/MIME-Zertifikate sowie auf vom David Notifier überwachte Ordner und sollte daher nur in Ausnahmefallen umbenannt oder gelöscht werden.
+
+Weiterführende InformationenErmittlung der David ID / User ID von David Benutzern
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10036]]

@@ -1,0 +1,20 @@
+====== Q-110.841 - POP3 per Thunderbird (CAPA Kommando) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das CAPA Kommando wird nun unterstützt, so dass nun z.B. auch von Thunderbird Nachrichten per POP3 abgerufen werden können.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10841]]

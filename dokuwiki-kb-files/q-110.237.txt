@@ -1,0 +1,15 @@
+====== Q-110.237 - Einstellungen und Nutzung der Adresserkenung im David Client ======
+==== Problem ====
+David.fx verfügt seit der Edition 2011 über die automatische Adressvervollstädnigung.Beim Erstellen neuer Nachrichtem  automatische Adressvorschläge
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+20.12.2010
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10237]]

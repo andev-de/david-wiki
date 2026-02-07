@@ -1,0 +1,20 @@
+====== Q-110.919 - Neuen Ordner erstellen bei Ordnerauswahl ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird die Ordnerauswahl zur Auswahl eines Zielordners geöffnet (z.B. bei der Client Verteilung), so kann hierüber nun auch ein neuer Ordner erstellt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10919]]

@@ -1,0 +1,20 @@
+====== Q-110.842 - Login bei POP3 Verwendung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Man kann nun für das POP3 Login des Mail Access Servers als User Namen auch den für die Remote Freigabe verwendeten Namen benutzen.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10842]]

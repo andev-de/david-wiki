@@ -1,0 +1,20 @@
+====== Q-110.983 - Titel in Adressen um eigene Einträge erweitern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Man kann nun in der Auswahl des Titels bei einer Adresse eigene Titel hinzufügen (neue Auswahl "Hinzufügen..."). Die Angaben werden für den Benutzer auf dem Server gespeichert (dic.cfg).
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10983]]

@@ -1,0 +1,20 @@
+====== Q-110.637 - Reader ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neuer Schalter in der Konfiguration des Grabbing Servers: RSS-Feeds/Readability. Hierdurch wird beim Abholen von RSS-Feeds der Feed auf den eigentlichen Textinhalt beschränkt. Der Client zeigt diesen Inhalt beim Öffnen eines Feeds in dem Tab "Inhalt" an. Der Tab "Original" enthält den Original Feed. Beim Tab "Reader" führt der Client selbst die Beschränkung des Feeds durch - also ähnlich wie schon der Grabbing Server.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10637]]

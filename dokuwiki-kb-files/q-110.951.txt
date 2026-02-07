@@ -1,0 +1,20 @@
+====== Q-110.951 - Anzahl Zielordner bei der Funktion "Verschieben nach" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Funktion "Verschieben nach" im Kontextmenü eines Eintrags werden nun bis zu 20 Zielordner gespeichert (bisher nur 3).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10951]]

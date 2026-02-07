@@ -1,0 +1,24 @@
+====== Q-110.647 - Import von Adressen mit David®fx12™ für Android ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+David®fx12™ für Android bietet eine Importmöglichkeit von Adressen aus den persönlichen David-Adressbüchern auf das Android-Gerät. Wie wird der Import durchgeführt und was ist dabei zu beachten?
+
+==== Produkt ====
+
+David Client für Android
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+16.12.2011
+
+==== Antwort ====
+
+Um den Adressimport durchführen zu können, müssen folgende Voraussetzungen erfüllt sein:Der David® Server muss über das Internet verfügbar seinIn der WebBox-Konfiguration im David® Administrator muss die Option "CardDav-Verbindung erlauben" aktiviert seinFür den betreffenden Benutzer muss der Remote Access aktiviert und korrekt eingerichtet seinDas mobile Gerät muss mit der Android-Version 2.2 oder höher betrieben werden und aktuell mit dem Internet verbunden sein, außerdem muss sichergestellt sein, dass der Zugriff auf den David® Server korrekt funktioniertBeim Import werden alle Adressen berücksichtigt, die im Ordner »Persönlich« der betreffenden Person sowie in den in den freigegebenen Unterordnern des Ordners »Persönlich« gespeichert sind. Um bestimmte Ordner vom Import auszuschließen, entfernen Sie deren Freigabe im David® Client. Gehen Sie folgendermaßen vor, um den Import einzurichten und durchzuführen: Starten Sie David®fx12™ auf Ihrem Android-Gerät und öffnen Sie die Konten-Verwaltung, indem Sie unterhalb von »Mehr« bzw. »Sonstiges« auf den Eintrag »Konten« tippen.Wählen Sie das aktuelle David-Konto aus und tippen Sie auf den blauen Pfeil am rechten Bildschirmrand, um die Konfiguration zu öffnen. Öffnen Sie den Punkt »Optionen« und aktivieren Sie hier die Funktion »Adressimport«. Tippen Sie danach auf den Pfeil in der linken oberen Ecke, um zu den Kontoeinstellungen zurückzukehren.Hier wählen Sie nun den Punkt »Weiter« (rechts oben), um die Einstellungen zu speichern. Daraufhin befinden Sie sich wieder in der Kontenübersicht.Kehren Sie nun zum David® Client zurück, indem Sie auf das zugehörige Konto tippen. Unterhalb von »Mehr« bzw. »Sonstiges« steht nun der Punkt »Adressimport« zur Verfügung, mit dem Sie den Button »Adressimport starten« aufrufen. Tippen Sie auf diesen Button, um den Import auszulösen. Beim erstmaligen Ausführen des Imports wird ein neuer Ordner für die importierten Adressen angelegt. Sie haben Möglichkeit, einen individuellen Namen für diesen Ordner zu bestimmen. Nach Bestätigung dieses Namens beginnt der Import, anschließend sind Ihre Adressen sowohl im David® Client als auch in den »Kontakten« auf dem Android-Gerät verfügbar.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10647]]

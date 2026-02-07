@@ -1,0 +1,15 @@
+====== Q-110.151 - Anhänge bei einer signierten eMail werden im Editor nicht angezeigt ======
+==== Problem ====
+In einem Einzelfall wurden beim Öffnen einer signierten eMail die Dateianhänge im Editor nicht angezeigt - wohl aber im Dateianhang Dialog.
+==== Produkt ====
+David Client
+==== Datum ====
+3.05.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 03-May-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10151]]

@@ -1,0 +1,20 @@
+====== Q-110.923 - Nummerneingabe beim Erstellen eines Fax ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird ein Fax über den FaxWare Druckertreiber erstellt und die Faxnummer manuell eingegeben, so wurden die eingegebenen Ziffern doppelt übernommen.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10923]]

@@ -1,0 +1,15 @@
+====== Q-110.404 - Löschen/verteilen von eMails mit bestimmten Zeichensätzen ======
+==== Problem ====
+Beim Löschen einer extern empfangenen eMail gibt es nun die zusätzliche Option "eMails mit Zeichensatz xxx blockieren". Hierbei wird eine Verteilregel angelegt, die anschließend jede weitere Nachricht mit diesem Zeichensatz direkt löscht. Somit ist es möglich, dass eMails mit fremden Zeichensätzen (z.B. chinesische oder japanische Zeichensätze), direkt entfernt werden. Zusätzlich gibt es bei den Verteilregeln das neue Kriterium "Zeichensatz", bei dem nach verwendeten Zeichensätzen verteilt werden kann.
+==== Produkt ====
+David Client
+==== Datum ====
+31.01.2011
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 31-Jan-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10404]]

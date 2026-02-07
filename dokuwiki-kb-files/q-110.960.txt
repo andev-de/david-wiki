@@ -1,0 +1,20 @@
+====== Q-110.960 - Nachricht als gelesen markieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Einstellungen "Nachricht nach 5 Sekunden als gelesen markieren" und "Nachricht nach Wechsel als gelesen markieren" wurden aufgenommen.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10960]]

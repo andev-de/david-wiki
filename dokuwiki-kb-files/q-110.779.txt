@@ -1,0 +1,20 @@
+====== Q-110.779 - Beantworten/Weiterleiten von eMails mit LiveComments ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Weiterleiten von eMails mit LiveComments erfolgt nun die Frage ob die LiveComments mit versendet werden sollen. Beim Beantworten werden sie generell mit versendet (wie beim David Client PC).
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10779]]

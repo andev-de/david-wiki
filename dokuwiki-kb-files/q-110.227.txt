@@ -1,0 +1,15 @@
+====== Q-110.227 - Eingabe-History nachträglich einschalten ======
+==== Problem ====
+Beim Einsatz von David.fx Edition 2011 ist die Eingabe-History im David Client bzw. dem Nachrichten-Editor standardmäßig ausgeschaltet. Wie kann die Eingabe-History nachträglich aktiviert werden, um die zuletzt eingegebenen Einträge der Felder »An« und »Betreff« mit den Cursor-Tasten abzurufen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+24.09.2010
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10227]]

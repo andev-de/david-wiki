@@ -1,0 +1,20 @@
+====== Q-110.827 - Fax als PDF speichern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im david® Image Editor steht nun beim "Speichern unter" neben den Formaten Tiff/BMP/PCX auch PDF zur Verfügung.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10827]]

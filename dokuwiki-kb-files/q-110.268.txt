@@ -1,0 +1,29 @@
+====== Q-110.268 - Anzeige der klassischen Portalseite im David Client ======
+==== Problem ====
+Beim Einsatz von David.fx Edition 2011 steht den Benutzern im David Client das »InfoCenter« als Portalseite zur Verfügung. Gibt es eine Möglichkeit alternativ die klassische Portalseite zu verwenden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+11.10.2010
+==== Antwort ====
+David bietet Ihnen mit dem »InfoCenter« eine Portalseite, die eine Vorschau auf den heutigen Tag sowie verschiedene aktuelle Informationen ermöglicht. Hier erhalten Sie eine Übersicht aller ungelesenen Nachrichten aus Ihrem Eingangsbuch sowie aller aktuellen Termine Ihres persönlichen Kalenders. Üblicherweise wird beim Start des David Client das InfoCenter direkt angezeigt. Per Klick auf das Symbol »InfoCenter« in den Favoriten oder im Navigator können Sie die Portalseite jederzeit schnell aufrufen.
+
+Die Konfiguration des InfoCenter erfolgt unter »Optionen Einstellungen« im Menüpunkt »Benutzerprofil«. Setzen Sie den Schalter »Beim Start direkt zu 'InfoCenter' wechseln«, wenn die Portalseite gleich nach dem Starten des David Client angezeigt werden soll.
+
+ Sollten Sie anstelle der standardmäßigen Übersicht die Anzeige einer klassischen Portalseite bevorzugen, aktivieren Sie in den Einstellungen des David Client (aufrufbar über den Hauptmenüpunkt »Optionen Einstellungen« bzw. über die Schaltfläche »Einstellungen« in den Symbolleisten) unterhalb von »Global Outdated« die Option »Klassische Portalseite als 'InfoCenter' anzeigen«.
+
+Die Optionen unter »Outdated« geben Ihnen die Möglichkeit, ältere Funktionen von David, die mittlerweile durch neuere Versionen ersetzt wurden, übergangsweise zu reaktivieren. Sie sollten hiervon jedoch nur Gebrauch machen, wenn tatsächlich triftige Gründe für den Verzicht auf die aktuellen Funktionen sprechen. 
+
+
+
+ Wählen Sie die Funktion »Klassische Portalseite als »InfoCenter« anzeigen«, wenn Sie wünschen, dass beim Klick auf »InfoCenter« in der Favoriten-Leiste bzw. im Favoriten-Fenster nicht die aktuelle Standard-Übersicht, sondern statt dessen die klassische Portalseite angezeigt wird. Diese Einstellung ist z.B. sinnvoll, wenn Sie bereits eine Vorgängerversion von David.fx Edition 2011 im Einsatz hatten und hierfür eine individuell angepasste Portalseite erstellt haben, die Sie auch weiterhin nutzen möchten.
+
+Wichtige Hinweise: Beachten Sie, dass diese Optionen nicht dauerhaft im Funktionsumfang der Software verbleiben werden, sondern hauptsächlich dem Zweck dienen, Ihnen Übergangslösungen für im Zuge der Produktpflege geänderte oder aktualisierte Funktionen zu bieten. So haben Sie die Möglichkeit, eigene Anpassungen wie z.B. individuelle Portalseiten so lange in gewohnter Form weiterzuverwenden, bis Sie diese auf die aktuelle Funktionsweise von David abgestimmt haben. 
+
+Bei zukünftigen UpDates oder ServicePacks werden die Outdated-Optionen endgültig entfernt, so dass die zugehörigen Funktionen dann nicht mehr nutzbar sind.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10268]]

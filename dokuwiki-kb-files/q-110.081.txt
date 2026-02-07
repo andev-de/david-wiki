@@ -1,0 +1,25 @@
+====== Q-110.081 - Nutzung einer geänderten eMail-Vorlage mit dem iPhone Client ======
+==== Problem ====
+Im David Client wurden individuelle Änderungen an der Standard-eMail-Vorlage für neue Nachrichten vorgenommen und die geänderte Vorlage abgespeichert. Diese neue Vorlage lässt sich im David Client fehlerfrei verwenden. Beim Versand von eMails mit dem David Client iPhone wird der geschriebene Text jedoch immer unter die geänderte Vorlage gesetzt. Was ist zu tun, damit die geänderte Vorlage auch beim eMail-Versand aus dem David Client iPhone fehlerfrei verwendet werden kann?
+==== Produkt ====
+David Client iPhone
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+30.06.2010
+==== Antwort ====
+Kommt es beim Erstellen bzw. dem Versand von eMails im David Client iPhone zu dem oben beschriebenen Verhalten, so muss der Quelltext Ihrer Standard-eMail-Vorlage für neue Nachrichten angepasst und um den HTML-Befehl »TABLEDIV« erweitert werden.
+
+Gehen Sie folgendermaßen vor, um diese Anpassung durchzuführen:Starten Sie auf Ihrer Arbeitsstation den David Client und öffnen Sie im Navigator den Ordner, in dem sich die betreffende Vorlage befindet (z.B. »Ressourcen Vorlagen«, wenn es sich um eine globale Vorlage handelt). 
+
+Klicken Sie der Eintragsliste mit der rechten Maustaste auf die die betreffende Vorlage und wählen Sie aus dem Kontextmenü den Eintrag »Eigenschaften«. 
+
+Klicken Sie in der Registerkarte »Parameter« auf die Schaltfläche »Erweitert«.  
+
+Wählen Sie im Auswahlmenü der Symbolleiste den Eintrag »HTML-Inhalt« aus.Fügen Sie innerhalb des daraufhin angezeigten HTML-Codes den Befehl »!CURSOR TABLEDIV« unmittelbar nach dem Befehl »Body« den Befehl »ID=TABLEDIV« ein. 
+
+Klicken Sie im Hauptmenü auf »Datei Speichern«, um die Änderungen zu übernehmen, und schließen Sie sowohl das Bearbeitungsfenster als auch den Eigenschaften-Dialog der Nachricht.Nachdem Sie diese Änderungen an der Standard-eMail-Vorlage für neue Nachrichten durchgeführt haben, sollte die fehlerfreie Nutzung dieser Vorlage nicht nur mit dem David Client auf Ihrer Workstation, sondern auch im David Client iPhone möglich sein.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10081]]

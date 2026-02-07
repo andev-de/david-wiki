@@ -1,0 +1,37 @@
+====== Q-110.226 - Einstellungen zum »Fulltext Index« in der Systemkonfiguration ======
+==== Problem ====
+Beim Einsatz von David.fx Edition 2011 steht in der Systemkonfiguration des David.Administrator auf der Registerkarte »Optionen« die Rubrik »Fulltext Index« zur Verfügung. Welche Funktionen bewirken die hier aktivierbaren Optionen?
+==== Produkt ====
+David.Administrator
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+16.12.2010
+==== Antwort ====
+David.fx Edition 2011 verfügt über ein integriertes Datenbanksystem, das auf Basis eines SQL-Servers Nachrichten und Dokumente vollständig und vollautomatisch indexert. Hierbei wird standardmäßig das Datenbank-Managementsystem »Microsoft SQL Server 2008 R2 RTM – Express with Advanced Services« genutzt, das sich auch im Lieferumfang von David.fx Edition 2011 befindet und im Normalfall während der Installation von David.fx Edition 2011 automatisch installiert und eingerichtet wird. Dieses System kann Datenbanken bis zu einer Größe von maximal 10 GB verwalten, was ca. eine Million Einträgen im David Ordnersystem entspricht.
+
+Indexiert werden unter anderem Empfänger, Absender, Betreff und der Nachrichteninhalt aller eMails und SMS Nachrichten. Auch Adressen, Kalendereinträge und direkt im David Client erstellte Dokumente werden automatisch bei der Indexerstellung berücksichtigt.
+
+In den Systemeinstellungen des David.Administrator auf der Registerkarte »Optionen« gibt es dazu die folgenden Einstellungsmöglichkeiten:
+
+Volltext Index aktivierenNur wenn diese Funktion aktiviert ist, steht die datenbankbasierte Volltextsuche von David zur Verfügung. Ist dieser Haken nicht gesetzt, sind die zugehörigen Funktionen deaktiviert. Es wird dann keine entsprechende Datenbank aufgebaut und gepflegt und die datenbankbasierte Volltextsuche kann im David Client nicht genutzt werden. 
+
+Regelmäßigen Abgleich erlaubenIst diese Option aktiviert, wird die Datenbank der Suchfunktion in regelmäßigen Abständen automatisch aktualisiert. Standardmäßig erfolgt dieser Vorgang alle 60 Minuten. Neue Daten werden dann also nach spätestens einer Stunde in die Datenbank übernommen.
+
+Durch Nutzung der Funktion »Echtzeiteinträge erlauben« (siehe unten) können Sie erreichen, dass Neuerungen sofort in die Datenbank eingepflegt werden. 
+
+Bei Bedarf kann das Intervall für die regelmäßige Aktualisierung individuell angepasst werden. Dazu ist in der Datei »DAVID.INI« (zu finden im Verzeichnis »DAVID\CODE« auf dem David Server) der Parameter »FullTextImportIntervall« zu verwenden. Weisen Sie diesem Parameter den gewünschten Zeitabstand in Minuten zu. Wenn sie also wünschen, dass der Automatische Abgleich jede halbe Stunde erfolgen soll, nehmen Sie in der »DAVID.INI« folgenden Eintrag vor:
+
+FullTextImportIntervall=30
+
+Suche erlaubenWenn Sie diese Option deaktivieren, ist die Suche im David Client ohne Funktion. In diesem Fall führen also Suchanfragen, die Benutzer im David Client durchführen generell zu keinem Ergebnis.
+
+Echtzeiteinträge erlaubenAktivieren Sie diese Funktion, wenn Sie wünschen, dass neue Nachrichten und Dokumente unmittelbar nach ihrem Eintreffen bzw. ihrer Erstellung in die Datenbank aufgenommen werden sollen und somit auch sofort von der Suchfunktion erfasst werden. 
+
+Ist diese Option deaktiviert, erfolgt die Aufnahme in die Datenbank innerhalb der definierten Intervalle (standardmäßig also alle 60 Minuten). 
+
+Hinweis: Weitere Informationen und Einstellungen zu Betrieb und Aufbau der Indexdatenbank finden Sie im Status Monitor des David Service Layer auf der Registerkarte »Volltextindex«. Sie erreichen den Statusmonitor, indem Sie im Konfigurationsbaum des David.Administrator den Punkt »System« mit der rechten Maustaste anklicken und aus dem daraufhin erscheinenden Kontextmenü den Punkt »Status Monitor« wählen.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10226]]

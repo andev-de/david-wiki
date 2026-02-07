@@ -1,0 +1,24 @@
+====== Q-110.866 - IMAP Optimierungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Mail Access Server unterstützt nun das UNSELECT Kommando nach RFC 3691. Dieses Kommando ermöglicht es einem IMAP Client dem Server mitzuteilen, dass dep selektierte Ordner für diese Verbindung nicht weiter benötigt wird.
+
+Der Mail Access Server unterstützt nun das Erweiterte IMAP4 Flag $Forwarded nach RFC 5788 Sektion 3.4.2. Dadurch können nun auch weitergeleitete Nachrichten durch IMAP Clients entsprechend markiert werden (z.B. Thunderbird).
+
+Bei Statuscommand Updates schickte der Mail Access Server bisher nur die Flag Information, ob sich das Gelesen Flag geändert hat. Das hat zur Folge, dass ein IMAP Client bspw. die Information, ob sich das Answered Flag geändert hat, nicht durch periodisches Pollen aktualisieren konnte. Unter Umständen wurde das dann erst nach einem Neustart des IMAP Clients angezeigt.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10866]]

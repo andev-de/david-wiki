@@ -1,0 +1,20 @@
+====== Q-110.974 - Neue Nachrichten durch Notifier sofort anzeigen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neuer Schalter in den Notifier Einstellungen: "Info bei neuer Nachricht sofort anzeigen". Bisher betrug das Intervall für die Info bei einer neuen Nachricht min. 10 Sekunden. Durch den neuen Schalter kann die Info sofort angezeigt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10974]]

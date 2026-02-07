@@ -1,0 +1,20 @@
+====== Q-110.912 - Fax nach Indexsuche erneut versenden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird ein Fax per Indexsuche gefunden und soll "erneut versendet" werden, so wurde der falsche Eintrag verwendet.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10912]]

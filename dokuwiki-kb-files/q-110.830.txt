@@ -1,0 +1,20 @@
+====== Q-110.830 - TeamChat möglich obwohl deaktiviert ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über "Navigator - Kontakte" konnte der TeamChat mit einem david® Benutzer aktiviert werden, obwohl dies bei den Benutzerrechten im david® Administrator unterbunden ist.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10830]]

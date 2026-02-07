@@ -1,0 +1,20 @@
+====== Q-110.618 - Festlegen der zu verwenden IP-Adresse ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+wenn auf einem Server mehrere IP-Adressen vorhaden sind kann jetzt in der Transport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" TLDTransport Layer Driver ist ein leitungsbasierender Kommunikationsdienst f&uuml;r z.B. Fax- oder Voice-Nachrichten.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )".ini die IP Adresse festgelegt werden die von dem VoIP TLD verwendet werden soll.
+
+==== Produkt ====
+
+TLD (VoIP)
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10618]]

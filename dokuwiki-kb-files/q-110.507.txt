@@ -1,0 +1,30 @@
+====== Q-110.507 - Aktualisierte Version der Server Migration Services for David ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Server Migration Services for David stehen ab sofort in einer überarbeiteten Version zur Verfügung (Vers. 11.0a). Welche Anpassungen bzw. Aktualisierungen sind in dieser Version enthalten?
+
+==== Produkt ====
+
+David
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+6.04.2011
+
+==== Antwort ====
+
+Die Server Migration Services for David ermöglichen eine automatische Übernahme von David-Daten von einem David Server auf einen anderen. Neben allen in Ordnern abgelegten Dateien werden auch wichtige Systemdaten übernommen. In der aktuellen Version 11.00a sind folgende Neuerungen enthalten: Quell- und Ziel-Server müssen nun zwingend durch die Angabe des jeweiligen Servernamens spezifiziert werden. Das Eintragen von IP-Adressen ist nicht mehr möglich.Eventuelle Inhalte der Verzeichnisse »TEMP« in den User-Verzeichnissen der David Benutzer (z.B. »DAVID\ARCHIVE\USER\10014000\TEMP«) werden bei der Migration nicht berücksichtigt. Hierbei handelt es sich um reine Systemverzeichnisse, die auf Betriebssystemebene existieren müssen, jedoch nicht in der Ordnerstruktur des David Client dargestellt werden. Durch das Ignorieren bei der Migration wird sichergestellt, dass diese Verzeichnisse weiterhin im David Client unsichtbar bleiben. Individuelle Einstellungen der David Benutzer, die in der Datei »DIC.CFG« im jeweiligen User-Verzeichnis auf dem Quell-Server gespeichert sind, werden nun von der Migration berücksichtigt und auf den Ziel-Server übernommen. Hierbei handelt es sich z.B. um Ordner-Verknüpfungen, Konfiguration des Notifiers oder zugewiesene Zertifikate.Auf dem Quell-Server eingerichtete POP3-Konten, deren Übernahme fehlschlägt, werden auf dem Ziel-Server nicht eingetragen. Statt dessen wird eine zugehörige Meldung in der Protokolldatei (DVMIGRATE.LOG) erzeugt.Eventuell existierende fehlerhafte Ordnereinträge auf dem Quell-Server (Fehlermeldung »Invalid Archive Path«) werden nicht auf den Ziel-Server übernommen. Die betreffenden Einträge werden aus der zugehörigen Datei »ARCHIVE.DIR« entfernt und in der Protokolldatei (DVMIGRATE.LOG) vermerkt.Systemdateien vom Typ »ARCHIVE.DAT« und/oder »ARCHIVE.DIR«, die eine fehlerhafte Größe besitzen, werden in die Protokolldatei (DVMIGRATE.LOG) eingetragen. 
+
+Weiterführende Information:Generelle Hinweise zu den Server Migration Services for David finden Sie im KnowledgeBase Artikel Q-109.541.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10507]]

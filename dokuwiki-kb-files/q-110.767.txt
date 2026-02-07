@@ -1,0 +1,20 @@
+====== Q-110.767 - Private Termine exportieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Sind in einem Kalender private Termine anderer Benutzer eingetragen (Termineditor/Optionen/Art), so wurden diese beim Export des Kalenders in eine ICS Datei mit exportiert und konnten bei einem anschlieﬂenden Import in einen anderen Kalender gelesen werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10767]]

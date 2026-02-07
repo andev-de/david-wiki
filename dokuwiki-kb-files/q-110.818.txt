@@ -1,0 +1,28 @@
+====== Q-110.818 - Notiz Editor unter Windows 7 ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Einige Dinge funktionierten unter Windows 7 im Notiz Editor nicht richtig und wurden angepasst:
+
+ 1. Wenn man eine Selektion skalieren will, wurde das selektierte Element einfach immer nur kleiner
+
+ 2. Beim Zeichnen von Linien, Rechtecken und Pfeilen gab es Zeichenfehler
+
+ 3. Texteingabefelder wurden erst sichtbar, nachdem man den ersten Buchstaben eingegeben hatte.
+
+ Außerdem haben die Texteingabefelder nun ein Kontextmenü und unterstützen die gängigen Tastaturshortcuts für Einfügen, Kopieren etc.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10818]]

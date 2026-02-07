@@ -1,0 +1,15 @@
+====== Q-110.184 - Opening and forwarding a fax via the reminder ======
+==== Problem ====
+If a received fax was openend via the Reminder then when forwarding it afterwards the Client possibly crashed or incorrect entries occured. dvwin32.exe 11.00a (3117)
+==== Produkt ====
+David Client
+==== Datum ====
+20.09.2010
+==== Antwort ====
+The effect described above is fixed with David.fx Edition 2011.
+
+Keep your David installation up-to-date. By installing the current program versions and service packs constantly you ensure a maximum of safety and comfort for your software.
+
+Common notes as well as information about the installation and the Code History is found in the corresponding download section.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10184]]

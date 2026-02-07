@@ -1,0 +1,20 @@
+====== Q-110.840 - Verwendung von "Mail" (Windows 8) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Nutzung des "Mail" Programms von Windows 8 wurden beim Zugriff per IMAP u.U. nicht alle Nachrichten angezeigt.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10840]]

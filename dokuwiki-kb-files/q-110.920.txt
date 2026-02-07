@@ -1,0 +1,20 @@
+====== Q-110.920 - Sortieren in Eintragsliste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über "Ansicht/Sortieren nach" kann eine Sortierung für die aktuelle Liste gewählt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10920]]

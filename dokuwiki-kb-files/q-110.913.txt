@@ -1,0 +1,20 @@
+====== Q-110.913 - Emoticon in LiveComments und TeamChat ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In LiveComments und TeamChat können nun per Button Emoticons eingefügt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10913]]

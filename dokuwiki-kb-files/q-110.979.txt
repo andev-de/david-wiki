@@ -1,0 +1,20 @@
+====== Q-110.979 - Reihenfolge der Felder "Fällig am" und "Beginnt am" im Aufgabeneditor ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Reihenfolge der Felder "Fällig am" und "Beginnt am" im Aufgabeneditor wurde vertauscht.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10979]]

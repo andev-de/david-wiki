@@ -1,0 +1,22 @@
+====== Q-110.977 - Maximal gleichzeitige Verbindungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die WebBox baut nun dynamisch die Threads für die Verbindungen auf (max. 256) und wenn nicht mehr benötigt wird wieder ab. 
+
+Der Wert "Maximal gleichzeitige Verbindungen" in der WebBox Konfiguration des david.Administrator wird nicht mehr verwendet und wurde entfernt.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10977]]

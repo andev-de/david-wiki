@@ -1,0 +1,20 @@
+====== Q-110.788 - Tracking Information "weitergeleitet" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn in den Tracking Informationen die Kombination "empfangen/gelesen/weitergeleitet" enthalten ist, erhält der Tab bisher die Beschriftung "gelesen". In dem Fall wird dort nun "weitergeleitet" angezeigt, da das Weiterleiten auch das vorherige Öffnen der eMail beinhaltet.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10788]]

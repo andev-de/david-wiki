@@ -1,0 +1,20 @@
+====== Q-110.976 - Externe Verbindungen testen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im david.Administrator kann über einen neuen Button im Menü ein Dialog aufgerufen werden, über den geprüft werden kann, ob eine Verbindung nach extern hergestellt werden kann und ob die einzelnen david Module von extern erreichbar sind oder z.B. durch eine Firewall blockiert werden.
+
+==== Produkt ====
+
+David.Administrator
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10976]]

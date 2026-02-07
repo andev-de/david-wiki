@@ -1,0 +1,20 @@
+====== Q-110.927 - Tooltipps in Kalender (Tages-, Jahresansicht) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Tagesansicht gibt es nun auch Tooltipps. In der Jahresansicht wurden die Tooltipps bei wiederkehrenden Terminen u.U. nicht immer angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10927]]

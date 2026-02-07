@@ -1,0 +1,29 @@
+====== Q-110.120 - Bedeutung der Meldung »Read Message failed« beim POP3 Abruf  ======
+==== Problem ====
+Mithilfe des David Grabbing Servers werden eMails von Provider-Postfächern abgerufen und die Nachrichten im Ordnersystem des David Servers abgelegt. Beim Abruf einiger POP3 Postfächer wird im Status Monitor des Grabbing Servers die Meldung »Read Message failed« angezeigt. Welche Maßnahmen sind erforderlich, damit der Abruf der POP3 Postfächer fehlerfrei durchgeführt wird? 
+==== Produkt ====
+David Grabbing Server
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+24.03.2010
+==== Antwort ====
+Tritt beim Abruf von POP3 Postfächern mit dem David Grabbing Server die oben angegebene Meldung auf, sollten Sie folgende Maßnahmen in der hier angegebenen Reihenfolge durchführen:
+
+Prüfen des Provider-Postfachs auf defekte NachrichtenPrüfen des Ordners »David\Apps\Dvgrab\In« auf dem David ServerKontrolle der Einstellungen in der Datei »DVGRAB.INI«Prüfen des Provider-Postfachs auf defekte NachrichtenKontrollieren Sie zuerst, ob sich in dem betroffenen POP3-Postfach bei Ihrem eMail-Provider u.U. defekte oder bereits abgerufene Nachrichten befinden. Verschieden Sie diese gegebenenfalls in ein Unterverzeichnis und prüfen den Nachrichtenabruf erneut. 
+
+Prüfen des Ordners »David\Apps\Dvgrab\In« auf dem David ServerKommt es weiterhin zu der oben angegebenen Meldung, wechseln Sie auf dem David Server in das Verzeichnis »David\Apps\Dvgrab\In«. Befinden sich in diesem Verzeichnis eine oder mehrere Dateien, stoppen Sie den Dienst »David Grabbing Server«, verschieben Sie die vorhandenen Dateien in einen anderen Ordner und starten Sie den Dienst anschließend wieder. Wenn Sie nun die zuvor verschobenen Dateien wieder in den Ordner »David\Apps\Dvgrab\In« zurück verschieben, sollte der Grabbing Server diese jetzt korrekt weiterverarbeiten können und anschließend ordnungsgemäß im Ordner »System« ablegen.
+
+Kontrolle der Einstellungen in der Datei »DVGRAB.INI«Weitere Ursachen für die Meldung »Read Message failed« sind unter Umständen auf die Verbindung bzw. Verbindungsqualität zurückzuführen. Um einem solchen Effekt entgegenzuwirken, kann der Eintrag »WatchdogDelay« der Datei »DVGRAB.INI« angepasst werden.
+
+Mithilfe des Parameters »WatchdogDelay« können Sie, je nach Verbindungsqualität, sowohl für eingehende als auch für ausgehende Verbindungen den maximal zulässigen Zeitraum zwischen dem Versand bzw. dem Empfang der einzelnen IP-Pakten festlegen.
+
+Wechseln Sie dazu auf dem David Server in das Verzeichnis »DAVID\APPS\DVGRAB\CODE«, öffnen Sie die Datei »DVGRAB.INI« und entfernen Sie das Semikolon vor dem Parameter »WatchdogDelay«. Ist der Parameter noch nicht vorhanden, tragen Sie ihn manuell in einer eigenen Zeile ein. Weisen Sie dem Eintrag anschließend den Wert 75 zu (WatchdogDelay = 75). Speichern Sie die Änderung, schließen Sie die Datei und führen Sie danach einen Neustart des Dienstes »David Grabbing Server« durch. Bei Bedarf können Sie anschließend den Wert auch weiter erhöhen (in 5er Schritten), um die optimale Einstellung zu ermitteln.
+
+Zurück zum Artikelanfang 
+
+
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10120]]

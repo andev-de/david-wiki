@@ -1,0 +1,20 @@
+====== Q-110.863 - Tickerfenster ausblenden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Tickerfenster kann nun über das Menü ausgeblendet werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10863]]

@@ -1,0 +1,22 @@
+====== Q-110.801 - TeamChat Kommunikation im Eingang, Verteilung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die TeamChat Kommunikation wird nun nicht mehr im Ausgang sondern im Eingang des Benutzers gespeichert.
+
+ Außerdem können diese Einträge nun per Client Verteilregel verteilt werden (funktionierte bisher im Ausgang nicht).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10801]]

@@ -1,0 +1,15 @@
+====== Q-110.084 - Keine automatische Aktualisierung der Anzahl ungelesener Nachrichten ======
+==== Problem ====
+Einige David Ordner werden mit dem David Notifier überwacht, um automatisch über neu eintreffende Nachrichten informiert zu werden. Nach dem Start des David Client wird im Navigator hinter den Namen dieser Ordner die Anzahl der jeweils darin enthaltenen ungelesenen Nachrichten korrekt angezeigt. Im weiteren Betrieb des David Client findet jedoch die sonst übliche automatische Aktualisierung dieser Anzeige nicht statt. Die Werte bleiben auf ihrem jeweiligen Anfangsstand und passen sich nicht der aktuellen Situation an. Auf Veränderungen der Anzahl ungelesener Nachrichten reagiert der Notifier nur dann, wenn nach Rechtsklick auf das David Icon im SYS-Tray die Funktion »Aktualisieren« manuell ausgelöst wird.Worin kann die Ursache hierfür liegen und wie kann dieses Problem behoben werden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+1.02.2010
+==== Antwort ====
+Bei David Ordnern, für die eine Überwachung per David Notifier aktiviert ist, wird im Navigator des David Client hinter dem Ordnernamen auch die Anzahl der aktuell enthaltenen ungelesenen Nachrichten angezeigt und ständig aktualisiert. Falls die Anzahl zwar angezeigt wird, jedoch keine automatische Aktualisierung dieser Werte erfolgt, fehlen dem Benutzerkonto, unter dem der David Service Layer betrieben wird, möglicherweise Berechtigungen auf die David Freigabe. Üblicherweise handelt es sich hierbei um das System-Konto. Gehen Sie folgendermaßen vor, um dieses Problem zu beheben:Wechseln Sie auf dem David Server in das Verzeichnis »David« und rufen Sie dessen Eigenschaften auf. Wählen Sie dann die Registerkarte »Freigabe«, fügen Sie das System-Konto den Freigabeberechtigungen hinzu und gewähren Sie ihm Vollzugriff auf diese Freigabe. Bestätigen Sie die vorgenommenen Änderungen, indem Sie die Konfigurationsfenster jeweils mit »OK« schließen. Starten Sie schließlich den Dienst »David Service Layer« auf dem David Server neu. Daraufhin wird die Anzahl der ungelesenen Nachrichten im David Client wieder korrekt aktualisiert.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10084]]

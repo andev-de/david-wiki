@@ -1,0 +1,16 @@
+====== Q-110.643 - Navigator und Kontakte kombiniert ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Navigator und Kontakte werden nun per Vorgabe kombiniert angezeigt. Über das Menü "Ansicht/Kontakte" kann dies geändert werden.
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10643]]

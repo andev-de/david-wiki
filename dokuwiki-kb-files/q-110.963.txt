@@ -1,0 +1,20 @@
+====== Q-110.963 - Zeitpunkte für Terminerinnerung hinzufügen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Erstellen eines Termins bzw. in den Kalendereinstellungen können nun im Feld "Erinnerung" eigene Werte für den Zeitpunkt der Erinnerung hinzugefügt werden ("Hinzufügen" am Ende der Auswahl).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10963]]

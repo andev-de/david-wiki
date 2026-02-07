@@ -1,0 +1,20 @@
+====== Q-110.903 - Zeilenumbruch im Betreff ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält der Betreff einer Nachricht einen Zeilenumbruch, so kam es zu einem Darstellungsfehler in der Eintragsliste.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10903]]

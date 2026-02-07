@@ -1,0 +1,20 @@
+====== Q-110.896 - Sortierung der internen Benutzer in Adressauswahl ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Adressauswahl werden die internen Benutzer nun nach Alphabet sortiert.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10896]]

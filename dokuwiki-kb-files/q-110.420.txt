@@ -1,0 +1,23 @@
+====== Q-110.420 - Allgemeine Hinweise zur 2nd Scan Funktion ======
+==== Problem ====
+Die Konfiguration von David soll per Remote Zugriff erfolgen. Gibt es eine Möglichkeit den David.Administrator auch von einem anderen Computer im Netzwerk zu starten?
+==== Produkt ====
+Backline Features
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+8.02.2011
+==== Antwort ====
+Die Konfiguration des David Service Layers mit dem David.Administrator ist auch von anderen Computern des lokalen Netzwerks aus möglich. Der David.Administrator kann hierbei sowohl auf anderen Windows-Servern als auch auf Windows-Workstations eingesetzt werden (jeweils ab Windows 2000 bzw. Windows XP). 
+
+Der Aufruf des David.Administrators kann über zwei Wege erfolgen. Zum einem aus dem David Client, zum anderen durch Aufruf der Datei »DVADMIN.EXE«.
+
+Aufruf des David.Administrator aus dem David Client:Besitzt ein David Benutzer die Berechtigung »David .Administrator«, so hat er die Möglichkeit, den David.Administrator direkt aus dem David Client an seiner Arbeitsstation aufzurufen. Voraussetzung hierfür ist, dass diese Arbeitsstation unter Windows XP oder höher betrieben wird und dass der betreffende Anwender über Zugriffsrechte auf das Verzeichnis »DAVID\CODE« des David Servers verfügt. In diesem Fall wird im David Client die Schaltfläche David.Administrator angezeigt bzw. lässt sich über dir Konfiguration der Symbolleisten im David Client einblenden.
+
+Hinweis:Das Recht »David .Administrator« kann dem Benutzer in der Benutzerverwaltung des David.Administrator erteilt werden.
+
+Aufruf durch Ausführen der Datei »DVADMIN.EXE«:Ist der David Client nicht auf der Arbeitsstation installiert und der David.Administrator soll auf dieser Arbeitsstation ausgeführt werden, muss sowohl die Datei »DVADMIN.EXE« aus dem Server-Verzeichnis »DAVID\CODE« als auch die Datei »TOBIT32.DLL« aus dem »SYSTEM32« Verzeichnis des Servers in ein gemeinsames Verzeichnis auf die lokale Platte des entsprechenden Computers kopiert werden. Danach kann der David.Administrator durch Ausführen der Datei »DVADMIN.EXE« gestartet werden.Nachdem Sie den David.Administrator gestartet haben, müssen Sie noch die Auswahl des David Servers ändern. Öffnen Sie dazu im Hauptmenü unter »David« den Punkt »Serverauswahl«. Tragen Sie den Namen des David Servers ein, auf den Sie mit dem David.Administrator zugreifen wollen. Ist in der Systemkonfiguration des David Servers ein Passwort hinterlegt, so tragen Sie dieses hier ein und bestätigen die Eingaben mit »OK«.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10420]]

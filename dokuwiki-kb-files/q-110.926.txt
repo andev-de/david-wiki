@@ -1,0 +1,20 @@
+====== Q-110.926 - Icons in Symbolleiste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Icons in der Symbolleiste waren teilweise schlecht zu erkennen. Das wurde nun optimiert.
+
+==== Produkt ====
+
+David Communication Controller
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10926]]

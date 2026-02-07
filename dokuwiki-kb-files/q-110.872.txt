@@ -1,0 +1,20 @@
+====== Q-110.872 - Neue Nachricht auf InfoCenter Seite ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn eine neue Nachricht auf der InfoCenter Seite hereinkommt, die selbst keine hohe Priorität hat, wird sie nun hinter eventuell vorhandenen Sendeaufträgen und anderen Nachrichten mit hoher Priorität einsortiert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10872]]

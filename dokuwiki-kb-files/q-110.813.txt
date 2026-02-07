@@ -1,0 +1,20 @@
+====== Q-110.813 - Bezeichnung geändert: "In Transit automatisch aktualisieren" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Schalter "Einstellungen/Ansicht/Eintragsliste/Eintragsliste automatisch aktualisieren" wurde umbenannt nach "In Transit automatisch aktualisieren", da dieser Schalter nur Einfluss auf die Liste "In Transit" hat.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10813]]

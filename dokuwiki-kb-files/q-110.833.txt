@@ -1,0 +1,20 @@
+====== Q-110.833 - Wiedervorlagezeit einer Aufgabe ändern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Liegt die Wiedervorlage zu einer Aufgabe im Eingang und man ändert die Wiedervorlagezeit über den Editor, so wurde die Änderung u.U. nicht übernommen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10833]]

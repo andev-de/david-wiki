@@ -1,0 +1,19 @@
+====== Q-110.309 - David WebBox um CalDAV-Funktion erweitert ======
+==== Problem ====
+In der WebBox ist nun die CalDAV-Funktionalität enthalten. Bei der Einrichtung z.B. auf dem iPhone gelten die üblichen Login Daten wie auch beim WebAccess. Auch das Recht "Remote Access nutzen" muss im David Administrator für den Benutzer gesetzt sein. Sind im persönlichen Kalender andere Kalender verknüpft, für die der Remote Access freigeschaltet ist, werden diese Termine auch übertragen. In der WebBox sind für CalDAV keine Einstellungen vorzunehmen.
+==== Produkt ====
+David WebBox
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+9.12.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Edition 2011 Service Pack 12-Nov-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10309]]

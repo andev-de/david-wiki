@@ -1,0 +1,15 @@
+====== Q-110.161 - David Client lässt sich auf dem David Server nicht starten ======
+==== Problem ====
+Auf allen Arbeitsstationen im Netzwerk ist der David Client installiert und lässt sich dort auch problemlos starten. Die Nutzung des David Client auf dem David Server ist jedoch nicht möglich. Beim Versuch, den David Client auf dem Server zu starten, wird die Datei »DVWIN32.EXE« zwar ausgeführt, das Programmfenster des David Client öffnet sich daraufhin jedoch nicht bzw. wird nicht angezeigt.
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+20.05.2010
+==== Antwort ====
+Eine mögliche Ursache für das oben beschriebene Verhalten kann der Einsatz von Drittanbietersoftware wie z.B. »SpamPal« auf dem David Server sein. Prüfen Sie in diesem Fall, ob der David Client sich korrekt starten lässt, wenn Sie die betreffende Software zuvor deaktivieren oder deinstallieren.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10161]]

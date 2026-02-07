@@ -1,0 +1,21 @@
+====== Q-110.225 - Hauptmenü im David Client dauerhaft anzeigen ======
+==== Problem ====
+Beim Einsatz von David.fx Edition 2011 kann das Hauptmenü im David Client mit der [ALT] Taste oder der Schaltfläche »Menü« in der Symbolleiste ein bzw. ausgeblendet werden. Gibt es eine Möglichkeit das Menü immer anzeigen zu lassen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+23.09.2010
+==== Antwort ====
+Wenn Sie wünschen, dass das Hauptmenü des David Client direkt unterhalb des Fenstertitels permanent zur Verfügung stehen soll, müssen Sie in den Einstellungen des Client die Option »Immer Menü anzeigen« aktivieren. 
+
+Um diese Einstellung zu ändern, klicken Sie in der Symbolleiste auf die Schaltfläche »Einstellungen« und wählen in dem gleichnamigen Dialogfenster den Menüpunkt »Ansicht«. Alternativ erreichen Sie die Einstellungen auch, indem Sie das Hauptmenü durch betätigen der [ALT] Taste einblenden lassen und anschließend unterhalb den Eintrags »Optionen« den Menüpunkt »Einstellungen« auswählen.
+
+Ist hier die Option »Immer Menü anzeigen« deaktiviert, wird das Hauptmenü generell nicht angezeigt. Sie können es jedoch in diesem Fall durch einen Druck auf die [ALT] Taste temporär einblenden. Nach der Auswahl des gewünschten Punktes aus dem Hauptmenü oder nach erneutem Drücken der [ALT] Taste verschwindet die Menüzeile dann wieder. Aktivieren Sie diese Option, damit das Hauptmenü permanent angezeigt wird.
+
+Wird das Icon »Menü (Alt)« in der Symbolleiste des David Client nicht angezeigt, können Sie diese in den Einstellungen der Symbolleisten ändern. Rufen Sie dazu mit der [ALT] Taste das Hauptmenü auf und wählen unter »Ansicht - Symbolleisten« den Punkt »Anpassen«. In dem Fenster »Symbolleisten« makieren Sie nun im linken Menü den Punkt »Allgemein«. Anschließend können Sie im rechten Bereich die Option »Menü (ALT)« aktivieren. Das zugehörige Symbol wird direkt in der Symbolleiste eingeblendet und steht dort dauerhaft zur Verfügung.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10225]]

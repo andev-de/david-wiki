@@ -1,0 +1,15 @@
+====== Q-110.168 - Einstellungen beim FileScan Service ======
+==== Problem ====
+Wird im David Administrator ein FileScan Service gelöscht und ein neuer hinzugefügt, so wurden vorgenommene Einstellungen in diesem neuen FileScan Service u.U. nicht berücksichtigt (z.B. Quittungsdatei, eMail-Fußnote). sl.exe 2380
+==== Produkt ====
+David Service Layer
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10168]]

@@ -1,0 +1,15 @@
+====== Q-110.050 - Fax speichern mit dem Image Editor ======
+==== Problem ====
+Beim Speichern eines Fax mit dem Image Editor wurde u.U. unter Windows 7 bzw. Server 2008 ein angegebener Dateiname nicht übernommen und die Datei somit nur als *.tif gespeichert.
+==== Produkt ====
+David Client
+==== Datum ====
+18.12.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 18-Dec-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10050]]

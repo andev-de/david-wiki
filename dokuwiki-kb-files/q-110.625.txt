@@ -1,0 +1,20 @@
+====== Q-110.625 - Facebook Adressen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Grabbing Server kann nun auch Facebook Adressen verarbeiten. Diese können in der Form www.facebook.com/ angegeben werden. Das funktioniert nur mit Fan Pages. Beispielhttp://www.facebook.com/Tobit.Software
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10625]]

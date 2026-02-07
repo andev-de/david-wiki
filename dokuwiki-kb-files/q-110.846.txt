@@ -1,0 +1,22 @@
+====== Q-110.846 - Dynamische Teams ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über den neuen Button "Dynamische Teams" rechts vom Adressfeld bzw. in der Symbolleiste des Editors stehen Empfängergruppen aus der History zur Auswahl. Diese Gruppen werden automatisch bei der Eingabe von min. 2 Adressen erstellt und können durch einen Klick auf "Team einen Namen geben" benannt werden.
+
+Per Tastatur: Strg+D im Eingabefeld führt dieselbe Funktion aus wie der Button. F2 in der DropDown Liste benennt den selektierten Eintrag um.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10846]]

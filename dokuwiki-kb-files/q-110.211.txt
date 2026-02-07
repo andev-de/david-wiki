@@ -1,0 +1,15 @@
+====== Q-110.211 - Nutzung bestehender Datenbanken mit David.fx Edition 2011 ======
+==== Problem ====
+Ist es möglich, bereits bestehende SQL-Datenbanken mit David.fx Edition 2011 zu nutzen, oder muss zwingend die im Lieferumfang von David enthaltene Datenbank installiert werden?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+22.09.2010
+==== Antwort ====
+Wenn Sie in Ihrem Netzwerk bereits bestehende SQL-Datenbanksysteme nutzen, können Sie diese auch für den Betrieb von David.fx Edition 2011 verwenden. Hierzu müssen folgende Voraussetzungen erfüllt sein:Die bestehende Datenbank muss basieren auf »Microsoft SQL Server 2008 R2 RTM – Express with Advanced Services« oder einer höheren Version Enthält der Server, auf den die David Installation erfolgen soll, bereits eine lokale SQL Datenbank, darf diese nicht über eine Instanz mit dem Namen »DAVID« verfügen.Sind die oben genannten Bedingungen gegeben, werden bei Ausführung des David Setup zusätzliche Dialogfenster angezeigt, die eine Verknüpfung mit bestehenden Datenbanken ermöglichen.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10211]]

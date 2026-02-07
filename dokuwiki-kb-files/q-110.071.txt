@@ -1,0 +1,17 @@
+====== Q-110.071 - Bedeutung des Eintrags »Reset User Trustees« im Ereignisprotokoll ======
+==== Problem ====
+Im Ereignisprotokoll von David (Ordner »Ereignisse« im David Client unterhalb von »Archive/System/David«) wurde der folgende Eintrag erzeugt: 
+
+Reset User Trustees
+
+Was hat dieser Eintrag zu bedeuten und wodurch wurde er verursacht?
+==== Produkt ====
+David
+==== Datum ====
+6.01.2010
+==== Antwort ====
+Die oben angegebene Meldung wird in den Ordner »Ereignisse« eingetragen, wenn im David.Administrator unter dem Hauptmenüpunkt »Werkzeuge« die Funktion »Zugriffsrechte zurücksetzen...« verwendet wurde.
+
+Nach der erfolgreichen Durchführung dieses Prozesses wird der Eintrag der Meldung »Reset User Trustees« automatisch vorgenommen.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10071]]

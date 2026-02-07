@@ -1,0 +1,20 @@
+====== Q-110.988 - Termine als eMail versenden ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Termine können nun als eMail Anhang versendet werden. 
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10988]]

@@ -1,0 +1,15 @@
+====== Q-110.162 - Zahl hinter den David Bentzern im Kontaktefenster ======
+==== Problem ====
+Wenn ein Benutzer mehrere Instanzen des David Clients geöffnet und mit dem gleichen David Server verbunden ist oder andere Anwendungen mit der Aplication Programming Interface ist die bei David Produkten offene Schnittstelle f&uuml;r Entwickler, um neue Programmteile in die vorhandene Software einzubinden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" APIAplication Programming Interface ist die bei David Produkten offene Schnittstelle f&uuml;r Entwickler, um neue Programmteile in die vorhandene Software einzubinden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" arbeiten wird je eine Verbindung aufgebaut. Die Anzahl der Verb. wird im David Client hinter dem Kontakt angezeigt.
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+26.05.2010
+==== Antwort ====
+Die Infos aus den KB Artikeln Q-103.726, Q-104.403 zusammenfassen und nach Möglichkeit weitere Ursachen aufzählen, wodurch weitere Verbindungen zustande kommen. Den Menüpunkt "Client-Verbindungen" im David Administrator einbeziehen. Mögliche Ursachen:- Mehrere David Client Instanzen- Parameter MultipleIPThreads- Andere Anwendungen die mit der Aplication Programming Interface ist die bei David Produkten offene Schnittstelle f&uuml;r Entwickler, um neue Programmteile in die vorhandene Software einzubinden.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" APIAplication Programming Interface ist die bei David Produkten offene Schnittstelle f&uuml;r Entwickler, um neue Programmteile in die vorhandene Software einzubinden.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" arbeiten.      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10162]]

@@ -1,0 +1,16 @@
+====== Q-110.761 - eMail-Adressen in Separator anzeigen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neuer Schalter unter "Einstellungen/Editor/Erweitert": "eMail-Adressen in Separator beim Antworten/Weiterleiten". Zeigt im Separator einer beantworteten oder weitergeleiteten eMail neben dem Vollständigen Namen auch die eMail-Adresse an.Neues Kontextmenü bei den Adressen im Separator: eMail/Aufgabenanfrage/Besprechungsanfrage an die aktuelle Adresse, eMail-Adresse kopieren, eMail-Adresse bzw. Namen anzeigen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+22.06.2012     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10761]]

@@ -1,0 +1,20 @@
+====== Q-110.815 - Ticker in anderen Ansichten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über das Menü "Ansicht/Ticker" kann der Ticker auch in anderen als der InfoCenter Ansicht eingeblendet werden. Werden mehrere Fenster eingeblendet, z.B. noch "Aufgaben" oder "Kalender", so werden die Fenster durch das Zeigen mit der Maus vergrößert bzw. verkleinert. Dieser Effekt kann mit dem Schalter "Einstellungen - Ansicht - Ticker/Navigator durch Zeigen mit der Maus vergrößern" deaktiviert werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10815]]

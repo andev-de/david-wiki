@@ -1,0 +1,20 @@
+====== Q-110.716 - Akustische Benachrichtigungen anpassen oder deaktivieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Auf bestimmte Ereignisse, wie das Eintreffen neuer Nachrichten oder das Löschen von Ordnereinträgen macht David®fx12™ durch akustische Signale aufmerksam. Ist es möglich diese akustische Benachrichtigung zu deaktivieren oder individuell anzupassen?
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+10.04.2012
+
+==== Antwort ====
+
+Einstellungen für die akustischen Benachrichtigungen von David® können Sie direkt in Konfiguration Ihres Arbeitsplatzrechners vornehmen. Öffnen Sie dazu über das Startmenü die Systemsteuerung und wählen Sie hier den Punkt »Sound«. Auf der Registerkarte »Sounds« des zugehörigen Programmfensters suchen Sie dann in der Liste »Programmereignisse« den Eintrag »David Client«. Hier haben Sie die Möglichkeit, den verschiedenen Ereignissen die gewünschte Sounddatei zuzuweisen. Wählen Sie den Eintrag »(Kein)«, um die Soundausgabe für das betreffende Ereignis zu deaktivieren. Klicken Sie schließlich auf »OK« um Ihre Eistellungen zu speichern und das Fenster zu schließen.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10716]]

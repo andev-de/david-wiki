@@ -1,0 +1,20 @@
+====== Q-110.640 - Dateianhang mit "/" in signierter eMail ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält eine weitergeleitete, signierte eMail einen Dateianhang mit einem "/" im Dateinamen, so wurde der Dateianhang im geöffneten Nachrichten Editor u.U. nicht angezeigt (nur im separaten Dateianhang Dialog).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10640]]

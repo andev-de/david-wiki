@@ -1,0 +1,15 @@
+====== Q-110.101 - Fehler beim Öffnen von Anhängen in signierten eMails ======
+==== Problem ====
+Beim Öffnen von Anhängen in signierten eMails aus dem Editor konnte es zu Fehlern kommen, z.B.: Ist es eine Word Datei mit der Endung *.docx, meldete Word einen Fehler. Enthält die Datei (hier von Word) Umlaute im Dateinamen und es existieren noch andere Dateianhänge, konnte es ebenfalls zu einer Fehlermeldung beim Öffnen aus dem Editor kommen. Aus dem Dateianhang Dialog war es jeweils OK.
+==== Produkt ====
+David Client
+==== Datum ====
+19.02.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 19-Feb-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10101]]

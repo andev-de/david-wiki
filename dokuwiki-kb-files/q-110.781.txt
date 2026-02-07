@@ -1,0 +1,20 @@
+====== Q-110.781 - Auswahl von Emoticons im TeamChat ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Steht man im Eingabefeld eines TeamChats, so erhält man nun über das Kontextmenü eine Auswahl von Emoticons (wie im Nachrichten Editor).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10781]]

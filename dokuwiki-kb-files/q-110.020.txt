@@ -1,0 +1,15 @@
+====== Q-110.020 - Schutzverletzung beim Schließen ======
+==== Problem ====
+Wird mit der Maus ein Button betätigt, der gleichzeitig das aktuelle Fenster schließt (z.B. beim Weiterleiten einer Nachricht), so konnte es in einem ungünstigen Fall zu einer Schutzverletzung kommen. Diese Schutzverletzung konnte u.U. aber auch erst später auftreten, so dass hier kein Zusammenhang erkennbar war.
+==== Produkt ====
+David Client
+==== Datum ====
+17.11.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 17-Nov-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10020]]

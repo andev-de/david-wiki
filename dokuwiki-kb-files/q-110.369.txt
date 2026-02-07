@@ -1,0 +1,15 @@
+====== Q-110.369 - Mögliche Zeichenfehler bei Einsatz von UTF-8 Kodierung ======
+==== Problem ====
+In Sendeaufträgen mit UTF-8 Zeichenkodierung, die über das API- bzw. Import-Verzeichnis erstellt wurden, konnten Zeichenfehler auftreten, wenn in der Datei DAVID.INI ist der Parameter »ScanFilesBreak=False« gesetzt war.
+==== Produkt ====
+David Service Layer
+==== Datum ====
+5.01.2011
+==== Antwort ====
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 22-Dec-2010 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10369]]

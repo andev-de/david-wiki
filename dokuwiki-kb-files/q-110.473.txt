@@ -1,0 +1,15 @@
+====== Q-110.473 - Erstellung individueller Fax-Stempel ======
+==== Problem ====
+Im Image Editor, der zum Betrachten und Bearbeiten von Fax-Dokumenten dient, ist es möglich, empfangene Faxe mit Stempeln zu versehen. Ist es möglich, neben den standardmäßig vorhandenen auch eigene, selbst entworfene Stempel zu verwenden?
+==== Produkt ====
+TLD (VoIP)
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+27.04.2012
+==== Antwort ====
+Im Lieferumfang von David®fx12™ befinden sich verschiedene Stempel, mit denen sich Fax-Dokumente markieren lassen (z.B. »Erledigt«, »Logo«, »Frage«, »Prüfen«, »Wichtig«, »Rückruf«, »Eilt«). Sie können bei Bedarf beliebig viele Stempel hinzufügen. Dabei lassen sich sowohl globale Stempel, die generell jedem Benutzer zur Verfügung stehen, als auch individuelle Stempel erstellen, die nur für bestimmte Personen nutzbar sind. Eigene Stempel können Sie mit konventionellen Grafikprogrammen gestalten (z.B. Microsoft Paint). Die Stempel-Grafiken sind im BMP- oder PCX-Format mit folgenden Eigenschaften zu erstellen:Größe: 320x72 Pixel Farbe: Schwarz-Weiß (monochrom)Natürlich lassen sich auch die bereits bestehenden Stempel als Vorlage verwenden. Sie finden diese Grafiken im Verzeichnis »\David\Code\Common\Stamps« auf dem David® Server. Um Ihren eignen Entwurf als Stempel verfügbar zu machen, gehen Sie folgendermaßen vor:Speichern Sie die Grafik unter einem beliebigen Namen im Verzeichnis »\David\Code\Common\Stamps« auf dem Server ab. Öffnen im David® Client ein Fax-Dokument, um den Image Editor aufzurufen.Wählen Sie im Image Editor den Menüpunkt »Optionen - Stempel« und klicken Sie dann auf die Schaltfläche »Hinzufügen«.Vergeben Sie einen Namen für den neuen Stempel und wählen Sie die zuvor gespeicherte Grafik aus. Schließen Sie das Dialogfenster mit einem Mausklick auf »OK« und anschließend das Auswahlfenster mit »Schließen«.Ab sofort steht der neue Stempel im Tobit Image Editor zur Verfügung.Persönliche StempelWenn Sie bestimmten Personen individuelle Stempel zur Verfügung stellen wollen, gehen Sie prinzipiell genauso vor, wie oben beschrieben, mit dem Unterschied, dass Sie die Stempelgrafik nicht im Verzeichnis »\David\Code\Common\Stamps« speichern, sondern stattdessen im persönlichen Benutzer-Verzeichnis auf dem David® Server (»\David\Archive\USER\User-ID«). So ist bei korrekter Rechtevergabe sichergestellt, dass nur diese Person auf die Datei zugreifen und als Stempel in den Image Editor einbinden kann.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10473]]

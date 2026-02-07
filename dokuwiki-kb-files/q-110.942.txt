@@ -1,0 +1,20 @@
+====== Q-110.942 - URL zur Webseite in Adressvorschau ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist in einem Adresseintrag eine URL bei "Web-Site" eingetragen, so wird diese nun in der Adressvorschau angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10942]]

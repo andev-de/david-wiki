@@ -1,0 +1,15 @@
+====== Q-110.135 - Beachtete Adressdaten bei der iPhone Adress-Synchronisation ======
+==== Problem ====
+Der der Nutzung des David Client für das iPhone können Adressen zwischen dem David CLient und dem iPhone synchronisiert werden. Welche Felder (Daten) der vorhandenen Adressen im David Client werden beachtet bzw. zum iPhone übertragen?
+==== Produkt ====
+David Client iPhone
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+7.04.2010
+==== Antwort ====
+Aktuell können die folgenden Felder mit dem iPhone abgeglichen werden:Nachname x Vorname x Firma x Telefon Mobil x Telefon Privat x Telefon Arbeit x Telefon Zentrale x Fax, Privat x Fax, Arbeit x Pager x eMail privat x eMail Arbeit x eMail Andere x URL Homepage x Straße Privat x PLZ privat x Ort Privat x Straße Arbeit x PLZ Arbeit x Ort Arbeit x Titel x Zweiter Vorname x Namenzusatz x Spitzname x Position x Abteilung x Geburtstag x Datum x      
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10135]]

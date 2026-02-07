@@ -1,0 +1,20 @@
+====== Q-110.876 - Anzeige neuer Nachrichten im Systray (Windows 8) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Reminder Icon im SysTray enthielt unter Windows 8 die Anzahl neuer Nachrichten, obwohl dies bereits bei der Verknüpfung in der Taskleiste angezeigt wird. Wird die Anzahl in der Taskleiste angezeigt, entfällt sie nun im Systray.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10876]]

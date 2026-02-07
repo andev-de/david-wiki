@@ -1,0 +1,20 @@
+====== Q-110.802 - Besprechungsanfrage von Outlook mit Beginn 01.01.1970 ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In einem Einzelfall wurde eine von Outlook empfangene Besprechungsanfrage mit dem Beginn 01.01.1970 eingetragen.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10802]]

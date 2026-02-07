@@ -1,0 +1,20 @@
+====== Q-110.892 - Markierungen setzen/ändern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Markierungen in der Eintragsliste können nun auch gesetzt und geändert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10892]]

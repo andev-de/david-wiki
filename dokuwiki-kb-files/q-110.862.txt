@@ -1,0 +1,20 @@
+====== Q-110.862 - Drag & Drop von Ordnern in Favoriten Leiste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Drag & Drop von Ordnern in die Favoriten Leiste wurde optimiert.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10862]]

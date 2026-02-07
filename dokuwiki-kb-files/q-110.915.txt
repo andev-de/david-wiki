@@ -1,0 +1,20 @@
+====== Q-110.915 - Tracking bei externen Einladungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei externen Termineinladungen werden evtl. angeforderte Trackinginformationen nun nicht mehr an den Einladenden zurückgesendet, da diese von externen Systemen nicht verarbeitet werden können.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10915]]

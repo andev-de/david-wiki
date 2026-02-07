@@ -1,0 +1,20 @@
+====== Q-110.787 - "Verschieben nach" im Kontextmenü ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Mit dem neuen Menüpunkt "Verschieben nach" im Kontextmenü der Eintragsliste können die markierten Nachrichten in einen anderen Ordner verschoben werden. Neben der Ordnerauswahl stehen die drei zuletzt gewählten Ordner zur Auswahl.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10787]]

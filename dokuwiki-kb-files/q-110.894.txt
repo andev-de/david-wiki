@@ -1,0 +1,20 @@
+====== Q-110.894 - Dateianhangsdialog öffnen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ein Doppelklick auf das Dateianhangssymbol in der Eintragsliste öffnet nun den entsprechenden Dialog.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10894]]

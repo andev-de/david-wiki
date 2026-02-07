@@ -1,0 +1,20 @@
+====== Q-110.861 - TeamChat im Ausgang oder Eingang ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Schalter "TeamChat Protokoll im Ausgang statt im Eingang" in den Einstellungen des PC Clients wird nun auch vom david® Client Mac beachtet.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10861]]

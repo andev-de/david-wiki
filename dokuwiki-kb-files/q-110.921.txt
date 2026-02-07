@@ -1,0 +1,20 @@
+====== Q-110.921 - Wiedervorgelegte Nachricht beantworten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine interne Nachricht auf Termin versendet und anschließend auf die wiedervorlegte Nachricht geantwortet, so erhielt die Nachricht den Status "Wiedervorlage" mit dem Zeitpunkt des ursprünglichen Termins. Jetzt wird die aktuelle Zeit verwendet.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10921]]

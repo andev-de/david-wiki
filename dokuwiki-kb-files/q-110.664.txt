@@ -1,0 +1,28 @@
+====== Q-110.664 - Einblenden der Menüleiste im Nachrichten-Editor ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Nachrichten-Editor des David® Client ist keine Menüleiste mehr sichtbar. Ist es möglich, das Menü wieder dauerhaft einzublenden?
+
+==== Produkt ====
+
+David Client
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+22.12.2011
+
+==== Antwort ====
+
+Um den nutzbaren Bereich des Nachrichten-Editors so groß wie möglich zu halten, ist die Menüleiste, die üblicherweise unterhalb des Fenstertitels angezeigt wird, standardmäßig ausgeblendet und kann durch Drücken der Taste [Alt] bei Bedarf aufgerufen werden. Falls gewünscht, können Sie sich die Menüleiste aber auch permanent anzeigen lassen. Rufen Sie dazu wie zuvor beschrieben das Menü über die [Alt] Taste auf, wählen Sie dann den Punkt »Ansicht Symbolleisten« und aktivieren Sie hier die Option »Menü anzeigen«. Ab sofort wird Ihnen das Hauptmenü am oberen Fensterrand des Nachrichten-Editors wieder dauerhaft angeboten.       
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10664]]

@@ -1,0 +1,20 @@
+====== Q-110.895 - Standardvorlage beim Bearbeiten einer eMail einfügen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird beim Bearbeiten einer eMail per Hotkey Strg+1 die Standardvorlage eingefügt, so wurde hierdurch u.U. der vorhandene Text entfernt - das wurde behoben.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10895]]

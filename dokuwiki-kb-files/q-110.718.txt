@@ -1,0 +1,24 @@
+====== Q-110.718 - Bearbeiten von signierten eMails ohne Dateizugriff ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Hat der David Client keinen Dateizugriff auf den David Server und es wird eine signierte eMail mit Dateianhängen zum Bearbeiten geöffnet und anschließend als neue eMail gespeichert, so fehlten in der neuen eMail die Dateianhänge.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.03.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 29-Mar-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10718]]

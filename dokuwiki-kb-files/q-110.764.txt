@@ -1,0 +1,28 @@
+====== Q-110.764 - Direktes Zugreifen auf David aus externen Anwendungen (TIC-Protokoll) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist es möglich, David aus externen Anwendungen heraus direkt anzusprechen, um eMails zu schreiben, Anrufe zu tätigen oder Einträge zu verwalten und wie ist dazu vorzugehen?
+
+==== Produkt ====
+
+David
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+harmlos
+
+==== Datum ====
+
+4.10.2012
+
+==== Antwort ====
+
+Das direkte Ansprechen von David aus externen Anwendungen heraus ist über ein spezielles Protokoll möglich (TIC-Protokoll), das gleichzeitig mit dem David Client installiert und automatisch auf den zugehörigen Computern registriert wird. Dieses Protokoll verweist direkt auf Programmdatei des David Client (dvwin32.exe) und erlaubt es, mithilfe bestimmter Befehle Nachrichten zu erstellen oder David Ordner bzw. darin enthaltene Einträge zu öffnen. Die Nutzung dieses Protokolls wird durch Angabe der Zeichenfolge »tic://« eingeleitet und kann sowohl innerhalb des David Clients, in Verbindung mit der Eingabeaufforderung wie auch in externen Anwendungen wie z.B. dem Internet Explorer erfolgen. Die folgende Syntax ist hierbei zu beachten:Öffnen von David Ordnern und Einträgentic://%(ArchiveRoot)[PATH]Als [PATH] ist der Pfad zu dem gewünschten Ordner oder Eintrag anzugeben. Durch das vorangestellte %(ArchiveRoot) muss die Pfadangabe nicht komplett erfolgen sondern kann bei der Wurzel des David Ordnersystems beginnen (Verzeichnis »Archive«).Beispiele:  tic://%(ArchiveRoot)\archive\user\10004000\in Öffnet das Eingangsbuchdes Benutzers mit der David ID 10004000  tic://%(ArchiveRoot)\user\10004000\in\i0004a55.001 Öffnet eine bestimmte eMail aus dem Eingangsbuch des Benutzers Erstellen von Nachrichtentic://message?[PARAMETER1]&[PARAMETER2]&…Mithilfe der Parameter können Zeiladresse, Betreff, Inhalt, etc. übergeben werden. Folgende Parameter sind nutzbar:ParameterBedeutung type Definiert das Nachrichtenformat. Mögliche Typen:smsTMailemailfaxect (Telefonverbindung mit angegebener Nummer)auto (automatische Erkennung anhand der angegebenen Ziel-Adresse - Defaulteinstellung)to Empfänger-Adressecc Weitere Empfänger in KopieBlind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" BccBlind Carbon Copy) eingetragene Adesse verschickt. Andere Empf&auml;nger dieser Mail k&ouml;nnen Bcc-Empf&auml;nger somit nicht sehen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )" Empfänger für Blindkopiesubject Betreffzeilebodytext Inhalt der Nachrichtattachment Dateianhang inklusive komplettem Pfad,mehrfache Anwendung ermöglicht das Anhängen mehrerer Dateienignoretemplate Entscheidet, ob zur Erstellung der Nachricht die Standard-Vorlage verwendet werden soll.1: keine Vorlage verwenden; 0: Vorlage verwenden (Defaulteinstellung
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10764]]

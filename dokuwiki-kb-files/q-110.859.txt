@@ -1,0 +1,20 @@
+====== Q-110.859 - "Spam" eMail nicht verschoben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn es in der PostMan Konfiguration einen Eintrag unter "Nicht erlaubte Adressen (SPAM-Filter)" gibt, der einen zutreffenden Eintrag in einen bestimmten Ordner verschieben soll, und im Grabbing Server per POP3 die Konfiguration nicht für den Benutzer, sondern über die Grabbing Server POP3 Konten gemacht wurde, so landete der Eintrag nicht im Ziel Ordner, sondern in Unverteilt Ordner.
+
+==== Produkt ====
+
+David Grabbing Server
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10859]]

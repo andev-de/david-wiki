@@ -1,0 +1,13 @@
+====== Q-110.058 - Unerwünschte David-Fenster beim Beenden von Remotedesktopverbindungen ======
+==== Problem ====
+Auf einer Arbeitsstation wird neben dem David Client auch eine Windows Remotedesktopverbindung genutzt. Das Beenden der Remotedesktopverbindung führt zum unerwünschten Öffnen eines oder mehrerer leerer Nachrichten-Editor-Fenster von David (»Neue Nachricht«). Wie kann dieser Effekt verhindert werden?
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+5.01.2010
+==== Antwort ====
+Bewirkt das Beenden einer Windows Remotedesktopverbindung an einem Computer, auf dem ebenfalls der David Client betrieben wird, das unerwünschte Öffnen von Nachrichten-Editor-Fenstern, so lässt sich dieser Effekt durch eine Anpassung in der Konfiguration der Remotedesktopverbindung verhindern. Gehen Sie dazu folgendermaßen vor:Öffnen Sie auf dem betreffenden Computer den Konfigurationsdialog der Remotedesktopverbindung. Klicken Sie hierzu im Fenster »Remotedesktopverbindung« auf die Schaltfläche »Optionen«.Wechseln Sie auf die Registerkarte »Lokale Ressourcen«.Deaktivieren Sie im Bereich »Lokale Geräte und Resourcen« die Option »Drucker«, indem Sie die Markierung aus dem zugehörigen Kontrollkästchen entfernen.Wechseln Sie auf die Registerkarte »Allgemein« und nutzen Sie die Funktionen unterhalb von »Verbindungseinstellungen«, um die vorgenommenen Einstellungen zu speichern.Durch diese Maßnahme sollte der oben beschriebene Effekt nicht mehr auftreten.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10058]]

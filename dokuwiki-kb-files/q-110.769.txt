@@ -1,0 +1,20 @@
+====== Q-110.769 - Auswahl einer Plain Text eMail drucken ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man in der Read Only Ansicht einer Plain Text eMail mehrere Zeilen markiert und beim Ausdruck wählt, dass nur die Auswahl ausgedruckt werden soll, wurden beim Druck statt der Zeilenumbrüche HTML Tags gedruckt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10769]]

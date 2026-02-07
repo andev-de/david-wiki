@@ -1,0 +1,9 @@
+====== Q-110.156 - Fußnoten mit gleichen Dateianhängen ======
+==== Problem ====
+Ist zwischen 2 David Installation jeweils eine Fußnote mit der gleichen eingefügten Grafikdatei (gleicher Dateiname) eingestellt, so wurde beim Antworten auf eine eMail die 2. Grafik beim Empfänger nicht mehr angezeigt.
+==== Produkt ====
+David PostMan
+==== Datum ====
+3.05.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10156]]

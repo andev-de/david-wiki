@@ -1,0 +1,20 @@
+====== Q-110.900 - Nachricht im Bearbeiten Modus öffnen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ein Doppelklick mit gedrückter SHIFT + STRG Taste öffnet die aktuelle Nachricht im Bearbeiten Modus.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10900]]

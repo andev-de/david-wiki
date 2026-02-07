@@ -1,0 +1,20 @@
+====== Q-110.965 - Standard Einstellung bei Faxvorschau "Angepasst an Breite" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Standard Einstellung für die Faxvorschau in der Eintragsliste des Clients ist nun "Angepasst an Breite" (bisher 100%).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10965]]

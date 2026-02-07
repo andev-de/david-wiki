@@ -1,0 +1,21 @@
+====== Q-110.037 - Ermittlung der David ID / User ID von David Benutzern ======
+==== Problem ====
+Im David.Administrator wurden im Konfigurationsbaum unter dem Punkt »System Benutzer« Benutzer angelegt, die mit dem David Client arbeiten sollen. Gibt es eine eindeutige Eigenschaft, an der ein Benutzer in David erkannt wird?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+harmlos
+==== Datum ====
+1.12.2009
+==== Antwort ====
+Beim Anlegen von Benutzern im David.Administrator wird jedem Benutzer eine eindeutige Kennung, die David ID (User ID), zugewiesen.
+
+Die David ID können Sie folgendermaßen ermitteln:Öffnen Sie den David.Administrator und wählen Sie in dessen Konfigurationsbaum den Punkt »System Benutzer«. Rufen Sie die Konfiguration des betreffenden Benutzerkontos auf und wählen Sie hier die Registerkarte »Allgemein«. Die 8-stellige David ID / User ID wird im unteren Teil des Dialogfensters im Bereich »Kennungen« angegeben. 
+
+Auf dem David Server befinden sich im Verzeichnis »\DAVID\ARCHIVE\USER\« Unterverzeichnisse, deren Namen den angelegten User IDs entsprechen. Diese beinhalten neben den persönlichen Ordnern samt Nachrichten u.a. auch Daten zu individuellen Einstellungen.
+
+Weiterführende InformationenFunktion der Dateien unterhalb der Verzeichnisstruktur »\DAVID\ARCHIVE\USER\« 
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10037]]

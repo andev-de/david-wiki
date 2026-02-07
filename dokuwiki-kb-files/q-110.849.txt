@@ -1,0 +1,20 @@
+====== Q-110.849 - Nachrichten liegen nach IMAP Abgleich in Archive Root ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei Nachrichten mit langem Betreff und/oder eMail Adresse lagen diese nach dem IMAP Abgleich u.U. in der Archive Root (\david\archive).
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10849]]

@@ -1,0 +1,36 @@
+====== Q-110.555 - Anzahl der Textzeilen in der Eintragsliste anpassen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im David Client kann die Anzeige des Vorschaufensters unter oder neben der Eintragsliste erfolgen. Bei Darstellung der Vorschau neben den Nachrichten zeigt die Eintragsliste für jede Nachricht jeweils in wenigen Textzeilen einen Teil des Nachrichtentextes an und gibt so einen Hinweis auf den Inhalt. Ist es möglich, die Anzahl dieser Textzeilen pro Eintrag individuell festzulegen?
+
+
+
+==== Produkt ====
+
+David Client
+
+==== Priorit&auml;t ====
+
+normal
+
+==== Effekt ====
+
+normal
+
+==== Datum ====
+
+23.08.2011
+
+==== Antwort ====
+
+In den Einstellungen des David Client haben Sie die Möglichkeit, die »Textzeilen pro Eintrag in Vorschau« anzupassen. Klicken Sie dazu in der Symbolleiste auf »Einstellungen« bzw. rufen Sie über den Hauptmenüpunkt »Optionen« die »Einstellungen« auf. Die zugehörige Option finden Sie unter dem Punkt »Benutzerprofil« in der Sektion »Eintragsliste«. Hier können Sie festlegen, wie viel Platz jedem Eintrag zu Verfügung stehen soll, um eine Vorschau auf den enthaltenen Text anzuzeigen. Wenn Sie z.B. »2« einstellen, sind am unteren Ende jedes Listeneintrags zwei Textzeilen für die Darstellung des Textinhalts reserviert. Reicht dieser Platz nicht aus, um die gesamte Nachricht anzuzeigen, wird der restliche Text abgeschnitten. Bei kürzeren Texten bleiben nicht genutzte Zeilen frei.
+
+
+
+
+
+Hinweis:Diese Einstellung ist nur wirksam bei Anzeige des Vorschaufensters neben der Eintragsliste.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10555]]

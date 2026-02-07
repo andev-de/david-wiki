@@ -1,0 +1,9 @@
+====== Q-110.072 - Hintergrundfarbe beim Weiterleiten/Antworten ======
+==== Problem ====
+Bisher wurde beim Weiterleiten/Antworten auf eine eMail die Hintergrundfarbe dieser eMail übernommen - eine Hintergrundfarbe in der eigenen eMail Vorlage wurde also in dem Fall ignoriert. Nun wird diese Hintergrundfarbe der eigenen Vorlage als Vorgabe verwendet. Für den zitierten Bereich der Originalnachricht wird deren Hintergrundfarbe beibehalten. In den Einstellungen des Clients (Vorlagen) kann über einen neuen Schalter das bisherige Verhalten wieder aktiviert werden.
+==== Produkt ====
+David Client
+==== Datum ====
+7.01.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10072]]

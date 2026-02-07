@@ -1,0 +1,20 @@
+====== Q-110.776 - Anzeige von privaten Terminen, Terminen aus Gruppenkalender ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei als "privat" markierten Terminen anderer Benutzer wurde über der Vorschau Beginn und Dauer u.U. nicht angezeigt. Termine aus Gruppenkalendern konnten u.U. nicht geöffnet werden. Zusätzlich konnte es beim Klick auf einen "privaten" Termin zum Absturz der WebBox kommen. Diese Probleme traten auf, wenn der Ordnername des Benutzers einen Umlaut oder ein Sonderzeichen enthielt.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10776]]

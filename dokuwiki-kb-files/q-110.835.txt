@@ -1,0 +1,20 @@
+====== Q-110.835 - Symbolleisten konfigurieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Aktivieren/deaktivieren der Schalter in der Symbolleiste "Nachrichten-Editor/Optionen" wurde u.U. nicht richtig gespeichert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10835]]

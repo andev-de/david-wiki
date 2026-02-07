@@ -1,0 +1,16 @@
+====== Q-110.694 - "processed by" im eMail Separator ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im eMail Separator beim Weiterleiten/Antworten steht "Original Message processed by David.fx®12™" nun linksbündig.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+6.03.2012     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10694]]

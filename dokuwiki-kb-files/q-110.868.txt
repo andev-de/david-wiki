@@ -1,0 +1,20 @@
+====== Q-110.868 - Gleicher Text in TeamChat und LiveComments ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In Einzelfällen konnte es vorkommen, dass ein neu erstellter LiveComments Text gleichzeitig in einem geöffneten TeamChat Fenster erschien. Das konnte dann auftreten, wenn beide Kommentare zwischen den gleichen Benutzern erfolgten und z.B. das TeamChat Fenster während der nächtlichen Bereinigung geöffnet war.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10868]]

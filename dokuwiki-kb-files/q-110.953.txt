@@ -1,0 +1,20 @@
+====== Q-110.953 - Nachfrage beim Kopieren von Ordnern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Soll ein Ordner an eine andere Stelle kopiert werden, so erfolgt nun vor dem Kopieren eine Sicherheitsabfrage (wie bereits beim verschieben von Ordnern), um ein evtl. versehentliches Kopieren von Ordnern zu vermeiden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10953]]

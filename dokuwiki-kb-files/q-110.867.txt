@@ -1,0 +1,24 @@
+====== Q-110.867 - CalDAV Optimierungen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Übertragung der ICS Daten eines Kalendereintrags wurden zusätzliche Leerzeilen zwischen einzelnen Teilnehmern eingefügt - das wurde nun geändert.
+
+Bei der Übermittlung der CalDAV Daten wird nun eine Komprimierung per GZIP unterstützt.
+
+Bei Kalender Objekten wurde bisher fälschlicherweise das Kommando "METHOD" gesendet.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10867]]

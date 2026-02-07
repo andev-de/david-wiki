@@ -1,0 +1,13 @@
+====== Q-110.289 - Voraussetzung zur CalDAV Anbindung ======
+==== Produkt ====
+David WebBox
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+7.02.2011
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10289]]

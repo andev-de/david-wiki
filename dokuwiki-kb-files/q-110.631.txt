@@ -1,0 +1,20 @@
+====== Q-110.631 - Sound ändern/deaktivieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Sound bei einigen Dialogen des Clients (z.B. beim Löschen einer internen Nachricht) kann über die Windows Systemsteuerung geändert oder deaktiviert werden. So wie auch schon die Sounds für neuen Nachrichten. Die Original Sound Dateien werden in das Verzeichnis \Windows\Media kopiert, so dass sie auf Wunsch auch wieder eingestellt werden können.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10631]]

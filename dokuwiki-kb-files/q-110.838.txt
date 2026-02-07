@@ -1,0 +1,20 @@
+====== Q-110.838 - Falsche Umlaute im Betreff nach manuellem Verteilen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Umlaute im Betreff von eMails waren nach dem manuellen Verteilen u.U. falsch. Dies konnte bei extern versendeten Nachrichten auftreten, die Tracking Informationen der Gegenstelle enthalten. Ebenso konnte es auftreten, wenn eine extern empfangene eMail Tracking Anforderungen enthielt und manuell gelöscht oder per Drag & Drop verteilt wurde.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10838]]

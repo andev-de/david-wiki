@@ -1,0 +1,20 @@
+====== Q-110.887 - Eintragseigenschaften, Drag & Drop nach Favoriten, Finder ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die "Eigenschaften" von Einträgen können nun angezeigt werden. Beim Löschen von eMails konnte es zum Absturz kommen Drag & Drop von eMails ist nun über die Favoriten Leiste möglich Drag & Drop von Dateianhängen zum Finder ist nun möglich.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10887]]

@@ -1,0 +1,19 @@
+====== Q-110.025 - Thematische Gruppierung von Nachrichten in der Eintragsliste ======
+==== Problem ====
+Gibt es im David Client die Möglichkeit, sich Nachrichten oder Dokumente eines Ordners thematisch gruppiert (z.B. nach Betreff oder Datum) darstellen zu lassen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+1.03.2010
+==== Antwort ====
+Im David Client steht Ihnen in der Menüleiste unter »Ansicht Gruppierung« die Möglichkeit zur Verfügung, sich in der Eintragsliste Nachrichten oder Dokumente temporär gruppiert anzeigen zu lassen. Diese Funktion ist eine Ergänzung zur Suchfunktion, zum Quickfinder und zur Filter-Funktion. Die Gruppierung gilt solange, bis Sie den Ordner im Navigator erneut anklicken, in einen anderen Ordner wechseln oder den David Client neu starten. Je nach Eigenschaft eines Ordners stehen Ihnen dabei verschiedene Gruppierungsoptionen zur Verfügung.
+
+Gehen Sie folgendermaßen vor, um diese Gruppierungsfunktion zu nutzen:Öffnen Sie im Navigator des David Client den Ordner, dessen Inhalt Sie gruppiert darstellen lassen möchten (z.B. zu Ihren persönlichen Eingangsordner).Klicken Sie in der Menüleiste auf »Ansicht Gruppierung« und wählen Sie eine Gruppierungsoption aus, z.B. »Betreff«. Durch zusätzliches Aktivieren der Option »Eingangs- und Ausgangsbuch« erreichen Sie, dass Nachrichten und Dokumente sowohl aus Ihrem persönlichen Eingangs- als auch aus Ihrem persönlichen Ausgangsordner in die Gruppierung einfließen. Somit können Sie sich z.B. Konversationswechsel zu einem bestimmten Betreff gezielt anzeigen lassen. Beachten Sie, dass dabei keine Unterordner oder Verknüpfungen zu anderen Ordnern mit einbezogen werden. Beenden der gruppierten DarstellungDie Gruppierung können Sie wieder aufheben, indem Sie in der Menüleiste unter »Ansicht Gruppierung« die Option »Ohne« aktivieren. Alternativ dazu können Sie den betreffenden Ordner im Navigator erneut anklicken oder kurzfristig zu einem anderen Ordner und anschließend wieder zurück wechseln.Einblenden der Schaltfläche »Gruppieren« in die SymbolleisteDie Gruppierungsfunktion lässt sich auch in die Symbolleiste des David Client integrieren. Gehen Sie dazu folgendermaßen vor:Klicken Sie mit der rechten Maustaste auf die Symbolleiste, stellen Sie sicher, dass die Symbolleiste »Suche« aktiv ist (erkennbar an dem Häkchen vor dem Wort »Suche«) und wählen Sie aus dem Kontextmenü den Eintrag »Anpassen«. Wechseln Sie in den Bereich »Hauptfenster Suche« und aktivieren Sie die Option »Gruppiert«. Bestätigen Sie Ihre Änderungen durch einen Klick auf »OK«. Anschließend können Sie die Gruppierung direkt über die Schaltfläche »Gruppiert« in der Symbolleiste aktivieren oder deaktivieren. Die Gruppierungsoptionen können Sie über das Pfeil-Symbol rechts neben der »Gruppiert«-Schaltfläche beeinflussen. 
+
+Hinweis:Für bestimmte Ordner ist auch die Einrichtung einer dauerhaften Gruppierung möglich. Nähere Informationen dazu erhalten Sie im KnowledgeBase Artikel Q-109.725.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10025]]

@@ -1,0 +1,13 @@
+====== Q-110.231 - Nachrichten-Editor beim Bearbeiten von Dokumenten im separaten Fenster öffnen ======
+==== Problem ====
+Wird beim Einsatz von David.fx Edition 2011 im David Client auf eine vorhandene eMail geantwortet bzw. ein Dokument bearbeitet, so öffnet sich dieses Dokument nicht in einem separaten Fenster sondern im Vorschaubereich. Gibt es eine Möglichkeit, beim Antworten oder Weiterleiten einer Nachricht den Nachrichten-Editor in einem separaten Fenster öffnen bzw. anzeigen zu lassen?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+24.09.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10231]]

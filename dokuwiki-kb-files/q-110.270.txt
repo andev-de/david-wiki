@@ -1,0 +1,25 @@
+====== Q-110.270 - David Benutzern mehrere David Client Scripts zuweisen ======
+==== Problem ====
+Durch den Einsatz der David Client Scripts soll der David Client für die Benutzer um bestimmte Funktionen erweitert werden. Wird ein einzelnes Script beim Benutzer hinterlegt (z.B. das Beispielscript GoogleMaps.js), ist die Funktion des Scripts im David Client gegeben. Bei der Angabe von mehr als einem Script steht jedoch keine Script-Funktionen im David Client zur Verfügung bzw. die hinterlegten Scripte werden nicht ausgeführt. Ist die Nutzung mehrerer David Client Scripts möglich und wie werden diese beim Benutzer hinterlegt?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+29.09.2010
+==== Antwort ====
+Durch den Einsatz spezieller Script-Dateien kann das Aussehen und die Funktion des David Client individuell erweitert werden. Auf diese Weise ist es z.B. möglich, weitere Funktionen über zusätzliche Schaltflächen oder Menüpunkte bereitzustellen. 
+
+Tipp:Beispiel-Scripts inklusive Erläuterungen zu deren Einsatz sowie Informationen zur Erstellung eigener Scripts finden Sie im Verzeichnis »DAVID\CODE\SCRIPTS« auf dem David Server.
+
+Um bei einem Benutzer ein David Client Script zu hinterlegen, öffnen Sie im David.Administrator die Benutzerkonfiguration des gewünschten Users. Auf der Registerkarte »Benutzerdaten« ist einstellbar, ob und welche(s) Script(s) in seinem David Client ausgeführt werden sollen. Hierzu stehen zwei Einstellungen zur Verfügung:Individuelle(s) Script(s)Globales ScriptNutzen Sie die Option »Individuelle(s) Script(s)«, wenn dem Benutzer die David-Client-Erweiterungen zur Verfügung stehen sollen, die in Script-Dateien im Verzeichnis »DAVID\CODE\SCRIPTS« des David Servers definiert sind. Tragen Sie dazu in das Eingabefeld den vollständigen Dateinamen des gewünschten Scripts ein. Hier ist auch die Angabe mehrerer Dateien möglich, wobei die einzelnen Dateinamen per Komma oder Semikolon (ohne Leerzeichen!) voneinander zu trennen sind.
+
+Aktivieren Sie die Option »Globales Script«, wenn dem Benutzer die David-Client-Erweiterungen zur Verfügung stehen sollen, die in einem »Globalen Script« definiert sind. In einem solchen globalen Script können Sie Funktionen zusammenfassen, die Sie vielen oder sogar allen David Benutzern verfügbar machen möchten. Dieses Script ist unter dem Namen common.js bzw. common.vbs im Verzeichnis »DAVID\CODE\SCRIPTS« auf dem David Server abzuspeichern. Der zugehörige Code wird direkt geladen, sobald der Benutzer den David Client startet, so dass ihm die enthaltenen Funktionen unmittelbar zur Verfügung stehen.
+
+Hinweise:Änderungen an diesen Einstellungen oder in den Scripts selbst werden auf den betreffenden Arbeitsstationen erst nach einem anschließenden Neustart des David Client wirksam.
+
+Zulässige Scriptsprachen sind hierbei JavaScript (JS) und Visual Basic Script (VBS).     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10270]]

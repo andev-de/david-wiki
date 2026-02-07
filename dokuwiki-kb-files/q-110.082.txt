@@ -1,0 +1,17 @@
+====== Q-110.082 - Einstellungen zur BlueLock-Funktion nicht verfügbar ======
+==== Problem ====
+Beim Einsatz von David.fx mit installiertem Service Pack 07-Jan-2010 steht in den Einstellungen von Tobit.ViProtect die Registerkarte »BlueLock™« zur Verfügung. Auf einigen Arbeitsstationen im Netzwerk wird diese Registerkarte jedoch nicht angezeigt. Was ist bei der Nutzung von BlueLock™ zu beachten bzw. welche Voraussetzungen gelten für die BlueLock™ Technologie?
+==== Produkt ====
+Tobit.ViProtect
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+27.01.2010
+==== Antwort ====
+Mit der Funktion BlueLock™ können Anwender von David.fx ihren PC automatisch und komfortabel per Bluetooth sperren bzw. entsperren. Hierfür gelten folgende Voraussetzungen: David.fx Installation inklusive Service Pack 07-Jan-2010 oder höherArbeitsstation unter Windows Vista oder Windows 7 mit aktiver Tobit.ViProtect Installation und betriebsbereitem Bluetooth-EmpfängerBeachten Sie, dass auf Arbeitsstationen, die unter älteren Windows-Versionen betrieben werden (Windows XP, Windows 2000 etc.) die BlueLock™ Funktion von David.fx generell nicht nutzbar ist und somit die zugehörige Registerkarte nicht angezeigt wird.
+
+
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10082]]

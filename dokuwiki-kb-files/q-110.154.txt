@@ -1,0 +1,9 @@
+====== Q-110.154 - Schutzverletzung beim ÷ffnen einer Besprechungsanfrage ======
+==== Problem ====
+Beim ÷ffnen der Antwort auf eine Besprechungsanfrage konnte es zu einer Schutzverletzung kommen. Dies konnte auftreten, wenn Sender und Empf‰nger der Besprechungsanfrage eine Fuﬂnote mit dem gleichen Dateianhang (gleicher Dateiname) verwenden.
+==== Produkt ====
+David Client
+==== Datum ====
+3.05.2010     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10154]]

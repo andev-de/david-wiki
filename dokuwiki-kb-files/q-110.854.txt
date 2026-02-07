@@ -1,0 +1,20 @@
+====== Q-110.854 - Aktualisierung des Trees ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden im Tree Unterordner über das "+" Zeichen geöffnet, so sprang die Anzeige bei jedem Öffnen wieder an das obere Ende des Trees - das wurde nun optimiert.
+
+==== Produkt ====
+
+David Client Web
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10854]]

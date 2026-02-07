@@ -1,0 +1,20 @@
+====== Q-110.899 - Größe des Verteilregeldialogs ändern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Größe des Verteilregel Dialogs kann nun geändert und gespeichert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10899]]

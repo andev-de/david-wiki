@@ -1,0 +1,15 @@
+====== Q-110.032 - Kein Bild nach Wechsel der Aufzeichnung ======
+==== Problem ====
+Wenn der Mediaplayer nach der Wiedergabe einer Aufzeichnung gestartet bleibt, und später eine andere TV Aufzeichnung gewählt wird, konnte es vorkommen dass hier zunächst kein Bild angezeigt wurde. Erst nach dem Neustart des Mediaplayers war das OK. Das ist nun behoben.
+==== Produkt ====
+David Mediaplayer
+==== Datum ====
+23.11.2009
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 20-Nov-2009 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10032]]

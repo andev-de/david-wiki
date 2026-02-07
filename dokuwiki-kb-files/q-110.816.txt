@@ -1,0 +1,20 @@
+====== Q-110.816 - Empfängeradressen bei Weiterleitung per Client Verteilregel ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält eine empfangene eMail mehrere Empfängeradressen und wird per Client Verteilregel automatisch weitergeleitet, so kann per Include Variable % (TO) nur die erste Empfängeradresse übergeben werden. Mit der neuen Variable % (RECIPIENTS) erhält man nun die Info über alle Empfänger. Außerdem wurden Umlaute im Angezeigten Namen der eMail Adressen falsch übergeben.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10816]]

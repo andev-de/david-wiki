@@ -1,0 +1,29 @@
+====== Q-110.288 - Kalenderabgleich zwischen David Client und iPhone, iPad oder iPod touch ======
+==== Problem ====
+Der integrierte Kalender von iPhone, iPad oder iPod touch soll genutzt werden, um auch die Termine aus dem David Client zu verwalten. Die Kalendereinträge aus dem David Client sollen also direkt in den Kalender des Apple-Geräts übertragen werden bzw. dort zur Verfügung stehen. Welche Schritte sind hierzu notwendig?
+==== Produkt ====
+David WebBox
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+20.12.2010
+==== Antwort ====
+Bei Einsatz von David.fx Edition 2011 mit installiertem Service Pack 12-Nov-2010 oder höher unterstützt David das CalDAV Protokoll, das einen Kalender-Abgleich zwischen unterschiedlichen Geräten über das Internet ermöglicht. Durch Nutzung dieser Funktion können Sie erreichen, dass Ihre Kalenderdaten aus dem David Client z.B. auch im Kalender des iPhone zur Verfügung stehen. Hierzu müssen folgende Voraussetzungen erfüllt sein: Der David.fx Server muss über das Internet erreichbar seinDie WebBox muss gestartet seinDer Remote Access muss für den Benutzer aktiviert und eingerichtet seinDas iPhone muss mit dem Internet verbunden seinWerden diese Voraussetzungen erfüllt, ist als nächster Schritt eine Kalender-Anbindung auf dem iPhone einzurichten. Gehen Sie dazu folgendermaßen vor: Öffnen Sie auf dem iPhone die Einstellungen und klicken auf den Eintrag »Mail, Kontakte, Kalender« um einen neuen »Account« (Kalender) hinzufügen.
+
+Tippen Sie anschließend auf »Account hinzufügen« und wählen Sie im nächsten Fenster den Punkt »Andere«, um dann im Menü »Kalender« einen neuen »CalDAV-Account hinzuzufügen«.
+
+Tragen Sie nun Ihre Daten für den Remote Access (Fernzugriff) ein. Nach einem Klick auf »Weiter« erscheint ein Hinweis zur Verbindung über SSL. Betätigen Sie hier die Schaltfläche »Abbrechen«, um anschließend den genutzten TCP Port anzupassen.
+
+Beispiel:
+
+Wählen Sie dazu »Erweiterte Einstellungen« und ändern Sie den dort angegebenen TCP Port auf den Port, der für den Remote Access über die WebBox freigegeben bzw. eingetragen ist. Standardmäßig wird dazu der Port 80 verwendet. Deaktivieren Sie zudem den Schalter »SSL verwenden«. 
+
+Um die geänderten Einstellungen zu übernehmen, klicken Sie oben links auf »CalDAV«. 
+
+Abschließend wird der Zugriff auf den eingerichteten CalDAV-Kalender geprüft. Nach erfolgreicher Prüfung kehren Sie durch drücken der »Home«-Taste des iPhones zur Startseite zurück und rufen hier den systemeigenen Kalender auf. 
+
+Nach der Einrichtung eines CalDAV-Accounts werden die Termine aus Ihrem persönlichen Kalender des David Client in den Kalender des iPhones übertragen und stehen dort (auch im Offline-Modus) zur Verfügung. Vorhandene Termine aus dem David Client lassen sich im Kalender des iPhones auch bearbeiten oder löschen. Diese Änderungen werden anschließend auch in den Kalender des David Client übernommen. Wenn Sie im iPhone einen neuen Termin erstellen, haben Sie in den Termineinstellungen die Möglichkeit auszuwählen, ob der Termin nur für den iPhone Kalender gilt oder für den CalDAV-Kalender und somit auch in den Kalender von David übertragen wird.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10288]]

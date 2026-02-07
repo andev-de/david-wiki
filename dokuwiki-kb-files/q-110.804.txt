@@ -1,0 +1,20 @@
+====== Q-110.804 - "Heute" in der Monatsansicht nicht angezeigt ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In der Monatsansicht wurde der Text "heute" nicht angezeigt, wenn das aktuelle Datum das obere, linke Feld ist - in dem Fall wurde der Text vom Datum überschrieben.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10804]]

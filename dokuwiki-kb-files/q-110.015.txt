@@ -1,0 +1,17 @@
+====== Q-110.015 - Beschreibung von Vorlagen im Dialogfenster »Dokumentenvorlage« ======
+==== Problem ====
+Im David Client wurden persönliche Vorlagen unterhalb von »\PERSÖNLICH\SYSTEM\VORLAGEN\« bzw. globale Vorlagen unterhalb von »\[SERVERNAME]\RESOURCEN\VORLAGEN\« abgespeichert. Wenn in der Symbolleiste durch Klick auf die Schaltfläche »Formulare« das Dialogfenster »Dokumentenvorlage« aufgerufen wird, ist dort eine Spalte mit der Bezeichnung »Beschreibung« enthalten. Wozu dient diese und wie kann deren Inhalt angepasst werden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+23.11.2009
+==== Antwort ====
+Bei Aufrufen des Dialogfensters »Dokumentenvorlage« wird in der Spalte »Beschreibung« ein Hinweis auf den Verwendungszweck für eine ausgewählte Vorlage angezeigt.
+
+Diese Beschreibung können Sie folgendermaßen anlegen bzw. anpassen:Öffnen Sie den David Client und wechseln Sie im Navigator zu dem Ordner, in dem Sie die betreffende Vorlage gespeichert haben. (»\PERSÖNLICH\SYSTEM\VORLAGEN\« bei persönlichen Vorlagen oder »\[SERVERNAME]\RESOURCEN\VORLAGEN\« bei globalen Vorlagen) Markieren Sie in der Eintragsliste die Vorlage, zu der Sie eine Beschreibung hinzufügen möchten, mit der rechten Maustaste und wählen Sie im Kontextmenü den Eintrag »Kommentar editieren«. Tragen Sie im Fenster »Kommentar« die gewünschte Vorlagen-Beschreibung ein und bestätigen Sie Ihre Angaben durch einen Klick auf »OK«. Anschließend steht Ihnen diese Beschreibung nach Auswahl der entsprechenden Vorlage im Dialogfenster »Dokumentenvorlage« zur Verfügung.  
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10015]]

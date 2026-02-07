@@ -1,0 +1,20 @@
+====== Q-110.613 - Speichern von Mails ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wenn man eine längere eMail am Anfang editierte und per F2 oder STRG+S zwischenspeichern wollte, sprang der Cursor ans Textende. Jetzt bleibt der Cursor an der aktuellen Position.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10613]]

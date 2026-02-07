@@ -1,0 +1,15 @@
+====== Q-110.169 - Header fehlt bei signierter und verschlüsselter eMail ======
+==== Problem ====
+In einem Einzelfall wurden beim Öffnen einer signierten und verschlüsselten eMail die Headerangaben nicht angezeigt (Betreff, Absender, Empfänger). dvwin32.exe 11.00a (3104)
+==== Produkt ====
+David Client
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10169]]

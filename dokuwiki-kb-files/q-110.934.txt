@@ -1,0 +1,20 @@
+====== Q-110.934 - Termin einer Einladung verschieben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wurde man selbst zu einer Besprechung eingeladen und man verschiebt den im eigenen Kalender gespeicherten Termin, so erhält man nun einen Hinweis, dass diese Änderung nur im persönlichen Kalender erfolgt und die übrigen Teilnehmer von dieser Änderung nicht benachrichtigt werden.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10934]]

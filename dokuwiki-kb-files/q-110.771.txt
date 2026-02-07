@@ -1,0 +1,20 @@
+====== Q-110.771 - Position Favoriten Leiste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Die Favoriten Leiste lässt sich nun auch links oder rechts positionieren.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10771]]

@@ -1,0 +1,20 @@
+====== Q-110.864 - Standard eMail Client ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der david® Client kann nun als Standard eMail Client eingerichtet werden (muss über die "Einstellungen" von Apple Mail gemacht werden).
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10864]]

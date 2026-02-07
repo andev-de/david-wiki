@@ -1,0 +1,20 @@
+====== Q-110.950 - Abgelöster Navigator mit "Pin-Button" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird das Navigator Fenster abgelöst, so hat es nun wie das TeamChat Fenster einen "Pin-Button" durch dessen Aktivierung das Fenster immer im Vordergrund bleibt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10950]]

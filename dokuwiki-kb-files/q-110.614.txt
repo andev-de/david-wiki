@@ -1,0 +1,20 @@
+====== Q-110.614 - Import von ICS Dateien ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+U.U. konnte es vorkommen, dass beim Import von ICS Dateien Termine nicht als ganztägig eingetragen wurden. 
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10614]]

@@ -1,0 +1,20 @@
+====== Q-110.985 - Datenexport von Adressen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Datenexport von Adressen werden nun alle Adressfelder berücksichtigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10985]]

@@ -1,0 +1,22 @@
+====== Q-110.807 - Aufgaben exportieren, speichern ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Client Einstellungen unter "Aufgaben" kann nun für den Export von Aufgaben per Drag & Drop das Standard-Format vorgegeben werden (EML oder ICS).
+
+ Im Aufgaben Editor gibt es nun bei "Speichern unter" auch die Möglichkeit die Aufgabe als EML zu speichern. Da nicht alle Applikationen das "ICalendar ToDo" Format unterstützen hat man somit für solche Applikationen noch die Möglichkeit die Aufgabe als EML zu exportieren.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10807]]

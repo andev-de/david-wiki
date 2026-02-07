@@ -1,0 +1,15 @@
+====== Q-110.176 - Betrieb auf Apple iPad ======
+==== Problem ====
+Für den Betrieb auf einem Apple iPad wurden einige Anpassungen am David Client Web vorgenommen. U.A. kam es zu Darstellungefehlern, das Scrollen in der Vorschau funktionierte nicht, im Textfeld des Editors konnte kein Text eingegeben werden. David Client Web 747
+==== Produkt ====
+David Client Web
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10176]]

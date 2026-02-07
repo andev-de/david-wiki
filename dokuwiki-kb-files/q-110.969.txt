@@ -1,0 +1,20 @@
+====== Q-110.969 - Standard-Zielordner für Adressen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Unter "Einstellungen/Adressen" kann nun ein "Standard-Zielordner für Adressen" angegeben werden. Dieser wird verwendet, wenn beim Versand an eine bislang unbekannte Empfängeradresse der Dialog mit der Frage zum Speichern der Adresse erscheint.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10969]]

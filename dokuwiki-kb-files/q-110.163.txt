@@ -1,0 +1,13 @@
+====== Q-110.163 - Hinweise zur Ereignismeldung »Invalid Job SendRec reveived« ======
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+21.06.2010
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10163]]

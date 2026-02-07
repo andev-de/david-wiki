@@ -1,0 +1,22 @@
+====== Q-110.783 - Neue Variablen für Serien Nachrichten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neue Variablen im Editor unter "Einfügen/Variablen/Allgemein":
+
+ BetreffAnhänge
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10783]]

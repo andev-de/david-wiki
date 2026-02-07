@@ -1,0 +1,23 @@
+====== Q-110.267 - Allgemeine Informationen zur Indexierung ======
+==== Problem ====
+David.fx verfügt ab der Edition 2011 über eine datenbankbasierte Volltextsuche. Hierzu werden die im David Ordnersystem abgelegten Dokumente und Nachrichten vollautomatisch indexiert und die dabei gewonnenen Daten in einer SQL-Datenbank gespeichert. Welche Informationen werden hierbei berücksichtigt, und gibt es Daten bzw. Ordner, die standardmäßig von der Indexierung ausgeschlossen sind?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+16.12.2010
+==== Antwort ====
+David.fx Edition 2011 verfügt über ein integriertes Datenbanksystem, das auf Basis eines SQL-Servers Nachrichten und Dokumente vollständig und vollautomatisch indexert. Hierbei wird standardmäßig das Datenbank-Managementsystem »Microsoft SQL Server 2008 R2 RTM – Express with Advanced Services« genutzt, das sich auch im Lieferumfang von David.fx Edition 2011 befindet und im Normalfall während der Installation von David.fx Edition 2011 automatisch installiert und eingerichtet wird. Dieses System kann Datenbanken bis zu einer Größe von maximal 10 GB verwalten, was ca. eine Million Einträgen im David Ordnersystem entspricht.
+
+Indexiert werden unter anderem Empfänger, Absender, Betreff und der Nachrichteninhalt aller eMails und SMS Nachrichten. Auch Adressen, Kalendereinträge und direkt im David Client erstellte Dokumente werden automatisch bei der Indexerstellung berücksichtigt. 
+
+ Nicht indexiert werden Fax- und Voicenachrichten sowie die TV-Programmübersicht. Außerdem sind einige persönliche Systemordner der David Benutzer von der Indexierung ausgeschlossen (z.B. die Ordner »Spam«, »Feeds« und »Suchergebnisse« unterhalb von »Benutzer - System«). Das heißt, dass z.B. eingehende Spam-Nachrichten nicht indexiert werden. 
+
+Generell sind folgende Ordner von der Indexierung ausgeschlossen:»Spam« (unter dem Ordner »Unverteilt«)»Multimedia« (inkl. aller Unterordner)»Ressourcen« (inkl. aller Unterordner wie z.B. »Textbausteine«, »Vorlagen« und »TV Index Subscription«[»Programmübersicht«])»System« (inkl. aller Unterordner wie z.B. »Automation« und »Protokoll« - jedoch nicht der Ordner »Ereignisse«)»World Wide Web (WWW)«Hinweis:Die Indexerstellung für Ordner und deren Unterordner können Sie im David Client über die Ordnereigenschaften auf der Registerkarte »Dienste« deaktivieren bzw. aktivieren. Setzten Sie den Schalter »Unterordner ausschließen«, um den Inhalt des aktuellen Ordners und aller enthaltenen Unterordner für den Aufbau der Indexdatenbank unberücksichtigt zu lassen.
+
+Beachten Sie, dass ausgeblendete Ordner ebenfalls nicht indexiert werden. Die Inhalte dieser Ordner und der enthaltenen Unterordner können also durch Nutzung der Volltextsuche nicht gefunden werden. Ein Ordner lässt sich ausblenden, indem Sie in den Ordnereigenschaften, auf der Registerkarte »Optionen«, die Option »Ausblenden« aktivieren.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10267]]

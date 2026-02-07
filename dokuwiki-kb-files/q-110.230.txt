@@ -1,0 +1,21 @@
+====== Q-110.230 - Indivuelle Anpassung des Farbschemas im David Client ======
+==== Problem ====
+Um im David Client aktuell markierte Ordner, Favoriten und Schaltflächen hervorzuheben, werden diese farbig dargestellt. Ist es möglich die Einstellungen zu ändern, um eine andere Farbe zu verwenden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+27.09.2010
+==== Antwort ====
+Im Dialogfenster »Einstellungen«, das Sie über den Hauptmenüpunkt »Optionen« aufrufen, können Sie mithilfe der dort zu Verfügung stehenden Menüpunkte den David Client funktionell und optisch nach Ihrem Geschmack verändern. So können Sie im Menü »Benutzerprofil« beispielsweise die gewünschte Dialogsprache aus der Liste auswählen und Einstellungen zur Optik des Programmfensters vornehmen.Für die Anpassung der farblichen Einstellung des Clients haben Sie unterhalb des Menüpunktes »Eintragsliste« folgende Einstellungsmöglichkeit:FarbschemaWählen Sie aus dieser Liste die von Ihnen bevorzugte Kontrastfarbe aus. Diese Farbe wird verwendet, um aktuell getroffene Markierungen und Einstellungen hervorzuheben. So wird z.B. nach Anklicken einer Schaltfläche in der Favoriten-Leiste dieser Button mit der Kontrastfarbe hinterlegt und somit die aktuelle Auswahl verdeutlicht.
+
+Eintragsliste abwechselnd farbig hinterlegenSetzen Sie diesen Schalter, wenn die Einträge der Eintragsliste abwechselnd mit weißem und farbigem Hintergrund hinterlegt werden sollen. Wählen Sie aus der nebenstehenden Liste die gewünschte Farbe aus, bzw. definieren Sie eine neue Farbe.
+
+Wenn Sie die getroffenen Einstellungen mit einem Klick auf »OK« übernehmen, werden die Änderungen im David Client direkt übernommen. Ein Neustart des Client ist nicht notwendig.
+
+
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10230]]

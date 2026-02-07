@@ -1,0 +1,15 @@
+====== Q-110.210 - Version des von David.fx Edition 2011 genutzten SQL-Datenbanksystems ======
+==== Problem ====
+Welches Datenbanksystem kommt bei Betrieb von David.fx Edition 2011 zum Einsatz?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+17.09.2010
+==== Antwort ====
+David.fx Edition 2011 verfügt über ein integriertes Datenbanksystem. Auf Basis eines SQL-Servers werden Nachrichten und Dokumente vollständig und vollautomatisch indiziert. Hierbei wird standardmäßig das Datenbank-Managementsystem »Microsoft SQL Server 2008 R2 RTM – Express with Advanced Services« genutzt, das sich auch im Lieferumfang von David.fx Edition 2011 befindet und im Normalfall während der Installation von David.fx Edition 2011 automatisch installiert und eingerichtet wird. Dieses System kann Datenbanken bis zu einer Größe von maximal 10 GB verwalten, was ca. eine Million Einträgen im David Ordnersystem entspricht.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10210]]

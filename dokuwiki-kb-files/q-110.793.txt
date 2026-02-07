@@ -1,0 +1,20 @@
+====== Q-110.793 - Info zu beantworteten/weitergeleiteten Nachrichten ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine Nachricht beantwortet oder weitergeleitet so wird dies unter "Erweitert/Eigenschaften" eingetragen. Hier fehlte bisher die Info wer die Aktion ausgeführt hat. Außerdem wird dort nun auch der "Angezeigte Name" statt nur die eMail Adresse angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10793]]

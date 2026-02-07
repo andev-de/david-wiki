@@ -1,0 +1,15 @@
+====== Q-110.177 - Wiedervorlage beim Löschen von Serienelementen ======
+==== Problem ====
+Liegt die Wiedervorlage zu einer Terminserie vor dem Tageswechsel (also z.B. um 23:00 Uhr für den Termin am kommenden Tag um 08:00 Uhr) und man löscht dieses Serienelement, so wurde die Wiedervorlage nicht angepasst und blieb für diesen gelöschten Termin erhalten. sl.exe 11.00a (2385)
+==== Produkt ====
+David Service Layer
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10177]]

@@ -1,0 +1,20 @@
+====== Q-110.931 - VCard Version 3.0 mit Foto importieren ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist eine VCard Datei mit Version 3.0 kodiert, so konnte ein eventuell enthaltenes Foto nicht importiert werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10931]]

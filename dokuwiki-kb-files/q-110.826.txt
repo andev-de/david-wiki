@@ -1,0 +1,22 @@
+====== Q-110.826 - Smartphone Einstellungen/Verwaltung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Service Layer können nun für jeden Benutzer bis zu drei Smartphones verwaltet werden, an die Push Nachrichten versendet werden. Die Übersicht in den Einstellungen des Benutzers im david® Administrator ("Empfang") wurde entsprechend erweitert und zeigt die Namen und die Device Ids der Geräte an. Für die Anzeige des Namens wird eine aktualisierte Version des david® Client iPhone bzw. Android benötigt - andernfalls steht dort "Unbekannt". Die Push Einstellungen im david® Administrator beziehen sich auf alle eingerichteten Geräte.
+
+Im david® Client unter "Einstellungen/Zugang" werden die Geräte ebenfalls aufgeführt - die Push Einstellungen können hier für jedes Gerät individuell vorgenommen werden. Diese Einstellungen sind im david® Client nur verfügbar, wenn der Benutzer das entsprechende Recht besitzt (david® Administrator/Rechte).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10826]]

@@ -1,0 +1,20 @@
+====== Q-110.893 - Symbole in Adressvorschau ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Einige Symbole in der Adressvorschau entsprachen nicht der Windows Version und wurden angepasst.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10893]]

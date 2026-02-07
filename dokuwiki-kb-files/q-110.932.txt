@@ -1,0 +1,20 @@
+====== Q-110.932 - Verteilregel über Kontextmenü umbenennen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei den Client Verteilregeln kann eine vorhandene Regel nun auch über das Kontextmenü umbenannt werden, bisher nur über die Taste "F2".
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10932]]

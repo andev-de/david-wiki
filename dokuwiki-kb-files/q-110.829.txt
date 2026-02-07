@@ -1,0 +1,20 @@
+====== Q-110.829 - eMail Druckvorlage und Script ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Man kann nun in der eMail Druckvorlage EMAIL.PRN (\david\clients\windows) Skript verwenden, um den Ausdruck entweder dynamisch zu gestalten oder komplexere Formatierungen vorzunehmen. Dies ist vergleichbar mit dem Skriptbefehl in David Formular Markup Language ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'trail', true, 'fade', 'both','closeAction', 'remove') )" onmouseout="return makeTrue (domTT_mouseout(this, event) )" DFMLDavid Formular Markup Language ist eine Erweiterung von HTML um Programmierbefehle, die das Erstellen von Formularen m&ouml;glich machen.', 'type', 'sticky', 'closeLink', 'close', 'closeAction', 'remove') )".Man fügt das Skript in einer Sektion ##SCRIPT## ... ##/SCRIPT## ein.In dem Skript stehen drei Objekte zur Verfügung.PrintedItemDas ist die auszudruckende eMail als IMessageItem2 (s. API Dokumentation).StreamRepräsentiert den HTML-Text der Vorlage bis zu dem Punkt, an dem das Skript eingefügt wurde. Es besitzt die Methoden Append - hängt HTML Text an, Get - der HTML Text des Objekt, Set setzt den HTML Text.BodyTextRepräsentiert den formatierten Text der eMail und hat dieselben Methoden des Stream Objekts. Darüber lässt sich für den Ausdruck der BodyText der eMail anpassen, bzw. z.B. per BodyText.Set(" "); ganz unterdrücken.1. Beispiel:Eigene Auswertung und Formatierung der Anhänge für den Ausdruck:##SCRIPT##oAttachments = PrintedItem.Attachments;if (oAttachments.Count){Stream.Append("hrbr");for (i = 0; i { oAttachment = oAttachments(i); if ((oAttachments.Flags & 8) == 0)  Stream.Append("" + oAttachment.DisplayName);}}##/SCRIPT##2. Beispiel:Entfernt für den Ausdruck alle Grafiken aus dem BodyText.##SCRIPT## var strText = BodyText.Get(); var re = /img.*?/ig; strText = strText.replace(re, ""); BodyText.Set(strText);##/SCRIPT##
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10829]]

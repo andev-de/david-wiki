@@ -1,0 +1,20 @@
+====== Q-110.799 - Screenshot erstellen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Mit dem Client kann nun ein Screenshot erstellt und anschließend per eMail als Dateianhang oder eingefügte Grafik versendet werden. Die Funktion wird aufgerufen per Strg+Umschalt+H oder über das Menü "Neu/Bild" (bzw. Strg+Alt+H im Editor). Im Ordner "Ressourcen/Vorlagen" gibt es eine neue Vorlage, die beim Versenden eines Screenshots verwendet wird (Screenshot Template).
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10799]]

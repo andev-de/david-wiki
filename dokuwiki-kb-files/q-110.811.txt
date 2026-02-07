@@ -1,0 +1,20 @@
+====== Q-110.811 - Voice Mail in InfoCenter Ansicht abspielen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird eine neue Voice Mail in der InfoCenter Ansicht über die Vorschau abgespielt, so brach die Wiedergabe u.U. nach wenigen Sekunden ab und der Eintrag verschwand als "gelesen" aus der InfoCenter Ansicht.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10811]]

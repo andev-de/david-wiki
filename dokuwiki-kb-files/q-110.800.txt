@@ -1,0 +1,20 @@
+====== Q-110.800 - Aufgaben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Aufgabenfenster gibt es nun wie den Kalender als einblendbares Fenster in der InfoCenter Ansicht und/oder der Eintragsliste. Es hat drei Tabs, einen für die Anzeige aller Aufgaben, einen für die Anzeige noch offener Aufgaben und einen für die Anzeige der Aufgaben, die am heutigen Tag fällig werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10800]]

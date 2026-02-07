@@ -1,0 +1,15 @@
+====== Q-110.111 - "Angezeigter Name" bei eMail-Fußnote ======
+==== Problem ====
+Wird in einer eMail-Fußnote die Variable %-(USERDISPLAYNAME) verwendet, so wurden alle beim Benutzer im David Administrator eingetragenen "Angezeigte Namen" seiner eMail Adressen hintereinander geschrieben. Das ist nun behoben. Wird beim Versand eine andere hinterlegte Absender eMail Adresse gewählt, so werden außerdem nun die entsprechenden Daten bei Verwendung von %-(USERDISPLAYNAME) und %-(USEREMAIL) eingetragen.
+==== Produkt ====
+David Service Layer
+==== Datum ====
+22.02.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit dem David.fx Service Pack 19-Feb-2010 behoben. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10111]]

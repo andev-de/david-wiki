@@ -1,0 +1,20 @@
+====== Q-110.785 - Einstellung "Nebenstelle" überschrieben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Ist im David Administrator bei David Benutzern eine "Nebenstelle" eingetragen, so wurde diese u.U. beim Editieren mit dem Text "different-options" überschrieben. Das konnte auftreten, wenn mit einem englischsprachigen David Administrator die Einträge mehrerer Benutzer markiert, zum gleichzeitigen Bearbeiten geöffnet, und anschließend gespeichert wurden. Der fehlerhafte Text wurde dann auch im David Client PC in der Liste der Kontakte bei diesen David Benutzern angezeigt.
+
+==== Produkt ====
+
+David.Administrator
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10785]]

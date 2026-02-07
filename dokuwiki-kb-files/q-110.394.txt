@@ -1,0 +1,15 @@
+====== Q-110.394 - Adressenimport mit allen Feldern ======
+==== Problem ====
+Werden beim Import der Adressen per ASCII-Datei alle vorhandnen Adressfelder berücksichtigt und wie muss die Import-Datei aufgebaut sein? 
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+7.02.2011
+==== Antwort ====
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10394]]

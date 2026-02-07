@@ -1,0 +1,24 @@
+====== Q-110.592 - Löschen nach Datenbereinigung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im Nachrichten Editor und im Fax Viewer hat man die Möglichkeit den geöffneten Eintrag zu löschen. Öffnet man den Eintrag und lässt ihn stehen, so dass in der Zwischenzeit die Bereinigung gelaufen ist, so wurde, wenn man dann den Button zum Löschen betätigt, abhängig davon, ob sich durch die Bereinigung die Position des Eintrags in Archive.dat geändert hat, entweder der Eintrag nicht gelöscht oder ein falscher Eintrag gelöscht.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+19.08.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 12-AUG-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10592]]

@@ -1,0 +1,20 @@
+====== Q-110.789 - Sortierung ganztägiger Termine ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Gibt es mehrere ganztägige Termine, die über mehrere Tage andauern, so wurden sie an den einzelnen Tagen u.U. in unterschiedlicher Reihenfolge angezeigt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10789]]

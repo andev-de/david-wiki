@@ -1,0 +1,20 @@
+====== Q-110.959 - Dialog "Einstellungen" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Layout des "Einstellungen" Dialogs wurde an die Windows Version angepasst.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10959]]

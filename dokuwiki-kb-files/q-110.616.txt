@@ -1,0 +1,20 @@
+====== Q-110.616 - Eigenschaften bei eingefügter Grafik ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Aufruf der Eigenschaften einer eingefügten Grafik (Kontextmenü oder Doppelklick auf die Grafik) sind nun weitere Optionen vorhanden. z.B. kann die Größe verändert oder der Textfluss bestimmt werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10616]]

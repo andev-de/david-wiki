@@ -1,0 +1,20 @@
+====== Q-110.890 - Verteilregel umbenennen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Der Name einer vorhandenen Verteilregel kann nun per Enter Taste auf dem Eintrag editiert und geändert werden.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10890]]

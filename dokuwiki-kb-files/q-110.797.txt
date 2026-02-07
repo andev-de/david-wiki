@@ -1,0 +1,20 @@
+====== Q-110.797 - Notiz in Plain Text Termin hinzufügen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wird per David Client iPhone bei einem vorhandenen Termin im Plain Text Format eine Notiz hinzugefügt, so wurden vorhandene Notizen überschrieben.
+
+==== Produkt ====
+
+David WebBox
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10797]]

@@ -1,0 +1,20 @@
+====== Q-110.911 - Login bei Umlauten im Benutzernamen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Login per POP3 oder IMAP funktionierte u.U. nicht, wenn im Ordnernamen des David Benutzers oder im Benutzernamen seiner Login Daten Umlaute enthalten sind.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10911]]

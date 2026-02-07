@@ -1,0 +1,28 @@
+====== Q-110.548 - Neue Funktionen bei "Nicht erlaubte Adressen" ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Neue Funktionen im David.Administrator unter "Postman/Datenbanken/Nicht erlaubte Adressen (Spam-Filter)":
+
+1.Neue Auswahl bei "Aktion": Als Spam identifizieren. Die entsprechende eMail wird somit als "Spam" identifiziert und wird entsprechend der MIS Einstellungen behandelt (z.B. Verschieben in Spam Ordner).
+
+2.Folgende neue "Variablen" sind bei den Feldern "Sender-Adresse", "Angezeigter Name", "Empfänger-Adresse" möglich: bzw. Prüft auf ein Feld ohne Inhalt. bzw. Vergleicht Empfänger und Sender (jeweils beim Angezeigten Namen und Adresse). Z.B. vergleicht der Eintrag im Feld "Empfänger-Adresse", ob der Absender und der Empfänger die gleiche eMail Adresse haben, was bei Spam eMails häufig vorkommt.
+
+==== Produkt ====
+
+David PostMan
+
+==== Datum ====
+
+22.08.2011
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David.fx Edition 2011 Service Pack 09-Jun-2011 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10548]]

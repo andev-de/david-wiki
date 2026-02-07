@@ -1,0 +1,20 @@
+====== Q-110.972 - Absturz im Notiz Editor (gefülltes Rechteck zeichnen) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Versuch im Notiz Editor ein gefülltes Rechteck zu zeichnen, konnte es zum Absturz des Clients kommen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10972]]

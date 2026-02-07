@@ -1,0 +1,20 @@
+====== Q-110.922 - Gemeinsame Nutzung mit david® Administrator in Remote Desktop Verbindung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden david® Client und david® Administrator gemeinsam in einer Remote Desktop Verbindung genutzt, so war der Fensterrand der beiden Programme u.U. schlecht zu erkennen.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10922]]

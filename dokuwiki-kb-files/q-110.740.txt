@@ -1,0 +1,24 @@
+====== Q-110.740 - SQL Suche in Adressen nach Import von *.vcf Dateien ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Werden Adressen durch den Import von *.vcf Dateien im Adress Ordner erstellt, so wurde per SQL Suche enthaltender Text im Kommentarfeld nicht gefunden. Die Suche funktioniert in dem Fall nun - die Adressen müssen jedoch nach dem Update neu importiert werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+27.04.2012
+
+==== Antwort ====
+
+Die oben beschriebene Aktualisierung bzw. die Korrektur des oben beschriebenen Verhaltens ist im David®fx12™ Feature Pack 27-Apr-2012 enthalten. Um eine bestehende Installation auf den aktuellen Entwicklungsstand zu bringen, laden Sie sich das entsprechende Download für Ihre David Version herunter, führen die Download-Datei aus und starten die Installation.
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10740]]

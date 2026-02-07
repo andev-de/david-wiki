@@ -1,0 +1,21 @@
+====== Q-110.232 - Bearbeiten oder Löschen abonnierter Feeds im Ticker-Fenster ======
+==== Problem ====
+Mit dem Ticker werden im David Client Informationen aus Ordnern und abonnierten RSS-Feeds angezeigt. Neue Feeds lassen sich über die Konfiguration des Tickers hinzufügen. Wie können vorhandene Feeds bearbeitet oder abbestellt bzw. entfernt werden?
+==== Produkt ====
+David Client
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+28.09.2010
+==== Antwort ====
+Aufgaben des TickersMit dem Ticker sorgt David dafür, dass Sie nie den Überblick verlieren. In diesem Fenster, dessen Inhalt permanent aktualisiert wird, laufen alle für Sie wichtigen aktuellen Informationen an zentraler Stelle zusammen, und sind auf diese Weise für Sie stets präsent. Ganz gleich, ob empfangene Nachrichten aus David Ordnern, aktuelle Meldungen von RSS-Feeds oder Terminerinnerungen, Sie können selbst bestimmen, welche Informationen hier angezeigt werden sollen. Im Hauptmenü des David Client unter »Ansicht« können Sie das Ticker-Fenster ein- oder ausblenden (abhängig von der Einstellung unter dem Punkt »Layout«).
+
+Feed abonnierenWenn Sie ein neues Feed-Abonnement erzeugen möchten, klicken Sie auf das »Plus« Symbol in der Tab-Leiste des Tickers oder öffnen mit einem Rechtsklick in die Kopfzeile des Tickers dessen Kontextmenü. Alternativ erreichen Sie die Einstellungen des Tickers auch über das Hauptmenü »Optionen Ticker« In der Ticker Konfiguration können Sie weitere Feeds, Ordern oder auch Twitter Feeds abonnieren. 
+
+Feed entfernen oder bearbeitenMöchten Sie einen abonnierten Feed entfernen oder bearbeiten, können Sie das direkt über den zugehören Tab im Ticker-Fenster durchführen. Klicken Sie dazu den gewünschten Feed mit der rechten Maustaste an und wählen im Kontextmenü »Feed bearbeiten« oder »Feed abbestellen«.Beim Bearbeiten öffnet sich ein neues Dialogfenster. Führen Sie hier die gewünschten Änderungen, z.B. beim Namen oder der Priorität, durch und übernehmen die Änderungen mit »OK«. Wählen Sie »Feed abbestellen« um diesen Tab aus der Liste zu entfernen. Dabei wird das Abonnement lediglich zeitweise deaktiviert, ohne es gleich komplett zu löschen. Das können Sie auch erreichen, indem Sie in der Ticker Konfiguration die Markierung aus dem Kontrollkästchen des zugehörigen Listeneintrags entfernen. Soll das Abonnement zu einem späteren Zeitpunkt erneut genutzt werden, ist dazu lediglich das Kontrollkästchen in der Ticker Konfiguration wieder zu aktivieren.
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10232]]

@@ -1,0 +1,27 @@
+====== Q-110.121 - Allgemeine Hinweise zum Ausdruck von Nachrichten ======
+==== Problem ====
+David Benutzer haben im David Client mehrere Möglichkeiten, Nachrichten manuell auszudrucken. Beispielsweise direkt über das Kontextmenü der Eintragsliste oder bei geöffneten Nachrichten über den Menüpunkt »Datei Drucken« des Nachrichten-Editors bzw. eMail Viewers. Je nachdem, welcher Weg gewählt wurde, unterscheidet sich unter Umständen die Optik des Ausdrucks. Worauf sind die Unterschiede im Aussehen der Ausdrucke zurückzuführen und wie lassen sich diese gegebenenfalls vermeiden?
+==== Produkt ====
+David
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+29.03.2010
+==== Antwort ====
+Um im David Client Nachrichten auszudrucken, stehen dem Benutzer die folgenden drei Varianten zur Verfügung. Abhängig von der gewählten Vorgehensweise, werden teilweise so genannte Template Dateien genutzt, in denen bestimmte Einstellungen für den Ausdruck vordefiniert sind: Aufruf des Kontextmenüs einer Nachricht in der Eintragsliste per rechter Maustaste, dann Klick auf den Punkt »Drucken...« und Auswahl eines Druckers aus der Liste (jedoch nicht »Lokaler Drucker...«). 
+
+Ausdrucke, die auf diese Weise angefordert werden, erfolgen über einen Drucker, der im David.Administrator hinterlegt bzw. eingerichtet wurde. Hierbei werden die für diesen Drucker getroffenen Einstellungen berücksichtigt (z.B. »Grafik Rand« oder »Vorlage«, siehe Registerkarte »Allgemein« der Druckerkonfiguration). 
+
+Über »Vorlagen« (Templates) kann hier der Ausdruck von eMails, Kalendereinträgen und Adressen auf Wunsch in einer speziellen formatierten Form erfolgen. Solche Vorlagen sind Text-Dateien, die mithilfe von HTML-Tags und besonderen Befehle das jeweilige Layout festlegen. Diese Dateien befinden sich im Verzeichnis »DAVID\CODE\TEMPLATE« auf dem David Server. Durch die Dateinamen-Erweiterung ist festgelegt, für welches Nachrichten-Format die zugehörige Datei gilt (*.EML: eMail, *.CAL: Kalender, *.ADR: Adresse). 
+
+Aufruf des Kontextmenüs einer Nachricht in der Eintragsliste per rechter Maustaste, dann Klick auf den Punkt »Drucken...« und Auswahl des Listeneintrags »Lokaler Drucker...«. 
+
+In diesem Fall erfolgt der Ausdruck über einen an der Arbeitsstation eingerichteten Drucker. Auch hierbei wird durch Template-Dateien die Optik des Ausdrucks vordefiniert. Diese Dateien befinden sich im Verzeichnis »David\Clients\Windows« des David Servers und tragen die Namen »email.prn« (für den Ausdruck von eMails und Textdokumenten), »Appoint.prn« (für den Ausdruck von Kalendereinträgen) und »Address.prn« (für den Ausdruck von Adressen).
+
+Öffnen einer Nachricht, dann Aufrufen des Drucken-Dialogfensters im Nachrichten-Editors bzw. eMail Viewer über »Datei Drucken« und Auswahl des gewünschten Druckers. 
+
+Bei Anforderung des Ausdrucks auf diese Weise wird einer der lokal eingerichteten Drucker direkt angesprochen. Das Layout wird in diesem Fall durch die Konfiguration des Internet Explorers vorgegeben. Änderungen sind nur bedingt möglich und müssen in den Einstellungen des Internet Explorer (Drucker Seite einrichten) vorgenommen werden.     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10121]]

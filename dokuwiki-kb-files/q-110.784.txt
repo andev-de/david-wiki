@@ -1,0 +1,20 @@
+====== Q-110.784 - Nachrichten verschieben ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Nachrichten können nun in andere Ordner verschoben werden. Werden die entsprechenden Nachrichten markiert, gibt es hierzu unten einen neuen Button zum Verschieben. Beim iPhone können einzelne Nachrichten zudem per "Wischen" über dem aktuellen Eintrag verschoben werden.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10784]]

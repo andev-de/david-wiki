@@ -1,0 +1,23 @@
+====== Q-110.039 - Übernahme der David Client Pocket Sync Datenbank auf einen neuen PC ======
+==== Problem ====
+Ein David Benutzer, der regelmäßig Daten zwischen seiner lokalen Arbeitsstation und seinem Windows Mobile Smartphone / Pocket PC per David Client Pocket Sync abgleicht, bekommt eine neue Arbeitsstation. Was ist zu beachten, damit die David Client Pocket Sync auch mit diesem PC weiterhin korrekt arbeitet?
+==== Produkt ====
+David Client Pocket Sync
+==== Priorit&auml;t ====
+keine
+==== Effekt ====
+harmlos
+==== Datum ====
+14.12.2009
+==== Antwort ====
+Damit der Datenabgleich per David Client Pocket Sync weiterhin einwandfrei funktioniert, müssen folgende Voraussetzungen erfüllt sein: Microsoft Active Sync ab Version 3.7 bzw. das Windows Mobile Device Center muss korrekt auf dem neuen PC eingerichtet sein. Bei Verwendung von David.zehn! muss das »David.InfoCenter Pocket Sync« Update vom 01.10.2008 korrekt installiert sein. Andernfalls kann das Smartphone nicht ohne Datenverlust mit der neuen Arbeitsstation synchronisiert werden. Die Datenbank zur Synchronisation mit dem Smartphone muss von der alten Arbeitsstation auf die neue übernommen werden.
+
+Gehen Sie dazu folgendermaßen vor:Wechseln Sie auf der alten Arbeitsstation im Windows Explorer in das Verzeichnis»C:\DOKUMENTE UND EINSTELLUNGEN\[BENUTZERNAME]\ANWENDUNGSDATEN\TOBIT\DVSYNC\«Bei Verwendung von Windows XP.»C:\USERS\[BENUTZERNAME]\APPDATA\ROAMING\TOBIT\DVSYNC\«Bei Verwendung von Windows Vista und höher.
+
+Kopieren Sie sämtliche darin enthaltenen Dateien an einen Ort, auf den Sie auch von der neuen Arbeitsstation aus zugreifen können, z.B. auf einen USB-Stick oder auf ein Netzlaufwerk. Wechseln Sie auf der neuen Arbeitsstation im Windows Explorer in das Verzeichnis»C:\DOKUMENTE UND EINSTELLUNGEN\[BENUTZERNAME]\ANWENDUNGSDATEN\TOBIT\DVSYNC\«Bei Verwendung von Windows XP.»C:\USERS\[BENUTZERNAME]\APPDATA\ROAMING\TOBIT\DVSYNC\«Bei Verwendung von Windows Vista und höher.
+
+Fügen Sie die zuvor von der alten Arbeitsstation gesicherten Daten an dieser Stelle wieder ein. Starten Sie den David Client auf der neuen Arbeitsstation neu. Die Synchronisation kann nun wie gewohnt durchgeführt werden.
+
+Wichtiger Hinweis:Das mit Windows Mobile betriebene Gerät (Smartphone/Pocket PC) darf nach dem ersten Abgleich mit dem neuen PC fortan ausschließlich mit dieser Arbeitsstation synchronisiert werden.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10039]]

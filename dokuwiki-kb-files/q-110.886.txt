@@ -1,0 +1,20 @@
+====== Q-110.886 - Zeichenfehler beim editieren (Windows 8) ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Beim Editieren einer Nachricht konnte es unter Windows 8 zu einem Zeichenfehler kommen. Markiert man im Bearbeiten Modus einen Text im Editor und verschiebt diesen an eine Stelle auﬂerhalb des Editors, so blieb die Textpassage dort bis zum Neustart des Clients sichtbar.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10886]]

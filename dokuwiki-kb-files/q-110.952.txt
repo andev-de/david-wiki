@@ -1,0 +1,20 @@
+====== Q-110.952 - Button "Vorschau" im "Nachricht versenden" Dialog ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei der Faxerstellung über den Druckertreiber trägt der Button zur Vorschau des Fax im "Nachricht versenden" Dialog nun die Bezeichnung "Vorschau".
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.04.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10952]]

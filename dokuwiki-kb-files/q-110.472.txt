@@ -1,0 +1,43 @@
+====== Q-110.472 - CardDAV-Adressabgleich zwischen David und iPhone ======
+==== Problem ====
+Das integrierte Adressbuch von iPhone, iPad oder iPod touch soll genutzt werden, um auch die Kontakte aus dem David Client zu verwalten. Die Kontakte bzw. Adresseinträge aus dem David Client sollen also direkt in das Adressbuch des Apple-Geräts übertragen werden bzw. dort zur Verfügung stehen. Welche Schritte sind hierzu notwendig?
+==== Produkt ====
+David Client iPhone
+==== Priorit&auml;t ====
+normal
+==== Effekt ====
+normal
+==== Datum ====
+18.03.2011
+==== Antwort ====
+Bei Einsatz von David.fx Edition 2011 mit installiertem Service Pack 10-Mar-2011 oder höher unterstützt David das CardDAV Protokoll, das einen Adress-Abgleich zwischen unterschiedlichen Geräten über das Internet ermöglicht. Durch Nutzung dieser Funktion können Sie erreichen, dass Ihre Kontakte bzw. Adresseinträge aus dem David Client z.B. auch im Adressbuch des iPhone zur Verfügung stehen. Hierzu müssen folgende Voraussetzungen erfüllt sein: Der David.fx Server muss über das Internet erreichbar seinDie WebBox muss gestartet seinDer Remote Access muss für den Benutzer aktiviert und eingerichtet seinDas iPhone muss mit dem Internet verbunden seinWerden diese Voraussetzungen erfüllt, ist als nächster Schritt eine Kontakt-Anbindung / ein CardDav-Account auf dem iPhone einzurichten. Gehen Sie dazu folgendermaßen vor: Öffnen Sie auf dem iPhone die Einstellungen und klicken auf den Eintrag »Mail, Kontakte, Kalender«, um einen neuen »Account« (Kontakte) hinzufügen.
+
+Tippen Sie anschließend auf »Account hinzufügen« und wählen Sie im nächsten Fenster den Punkt »Andere«, um dann im Menü »Kontakte« einen neuen »CardDAV-Account hinzuzufügen«.
+
+Tragen Sie nun die Domäne ein, unter der Ihr David Server erreichbar ist und geben zudem Ihre Daten für den Remote Access (Fernzugriff) ein. Durch einen Klick auf »Weiter« wird die Verbindung zum eingetragenen David Server geprüft und der CardDav-Account eingerichtet. Nach erfolgreicher Einrichtung kehren Sie durch Drücken der »Home«-Taste des iPhones zur Startseite zurück und rufen hier das systemeigene Adressbuch (Kontakte) auf.
+
+Beispiel:
+
+Möchten Sie nachträglich beispielsweise den verwendeten TCP Port ändern, so klicken Sie auf das eingerichtete Konto und wählen hier den Punkt »Erweiterte Einstellungen«.
+
+
+
+Nach der Einrichtung eines CardDAV-Accounts werden die Kontakte aus Ihrem persönlichen Adressbuch des David Client in eine hierfür automatisch neu angelegte Gruppe des Adressbuchs auf dem iPhone übertragen und stehen dort (auch im Offline-Modus) zur Verfügung.
+
+Vorhandene Kontakte aus dem David Client lassen sich im Adressbuch des iPhones auch bearbeiten oder löschen. Diese Änderungen werden anschließend in das Adressbuch des David Client übernommen.
+
+In den Kontakten des iPhones steht Ihnen nach der Einrichtung des CardDav-Accounts die Schaltfläche »Gruppen« zur Verfügung.
+
+
+
+Nach einem Klick auf »Gruppen« haben Sie die Möglichkeit, die anzuzeigende Adressbuchgruppe auszuwählen. So können Sie sich beispielsweise nur die Kontakte anzeigen lassen, die aus dem David Client auf das iPhone übertragen wurden. 
+
+
+
+Hinweis:Bei Auswahl der Option »Alle Kontakte« werden auf dem iPhone neu erstellte Kontakte automatisch im Standardaccount gespeichert. Den Standardaccount legen Sie auf dem iPhone unter »Einstellungen - Mail, Kontakte, Kalender« im Menü »Kontakte« fest.
+
+
+
+
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10472]]

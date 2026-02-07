@@ -1,0 +1,20 @@
+====== Q-110.831 - Anzeige der Größe von eMails mit Anhängen ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+In den Eintragslisten steht die neue Spalte "Größe" zur Auswahl (bei der Einstellung "Vorschau unter der Eintragsliste"). Somit kann die Größe von eMails mit Dateianhängen angezeigt werden. Aus Performance Gründen wird die Spalte beim Neustart des Clients wieder ausgeblendet.
+
+==== Produkt ====
+
+David Service Layer
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10831]]

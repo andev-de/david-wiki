@@ -1,0 +1,20 @@
+====== Q-110.978 - Menüpunkt "Verschieben nach" in Eintragsliste ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Das Kontextmenü einer Nachricht in der Eintragsliste enthält nun auch den Menüpunkt "Verschieben nach".
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+14.06.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10978]]

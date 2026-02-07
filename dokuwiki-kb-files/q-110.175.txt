@@ -1,0 +1,15 @@
+====== Q-110.175 - Anpassungen an Safari 4 ======
+==== Problem ====
+Am David Client Web wurden Anpassungen an den Betrieb mit dem Safari Browser, Version 4 vorgenommen: bei verschiedenen Dialogen gab es Zeichenfehler. David Client Web 741
+==== Produkt ====
+David Client Web
+==== Datum ====
+20.09.2010
+==== Antwort ====
+Das oben beschriebene Verhalten ist mit der David.fx Edition 2011 behoben. 
+
+Halten Sie Ihre David-Installation stets auf dem neuesten Stand. Durch regelmäßiges Einspielen der aktuellen Programmversionen und Service Packs stellen Sie sicher, dass Sie Ihre Software stets mit einem Höchstmaß an Sicherheit und Komfort nutzen können. 
+
+Allgemeine Hinweise, Informationen zur Installation sowie die zugehörige Code History finden Sie in der jeweiligen Download-Sektion.
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10175]]

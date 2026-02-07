@@ -1,0 +1,20 @@
+====== Q-110.627 - Graylisting ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Im David Administrator kann nun in der PostMan Konfiguration unter "Erweitert" das Graylisting aktiviert werden. Per Default ist es deaktiviert.
+
+==== Produkt ====
+
+David PostMan
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10627]]

@@ -1,0 +1,20 @@
+====== Q-110.858 - Schutzverletzung beim IMAP Zugriff ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Bei bestimmten IMAP Kommandos konnte es zum Absturz des Mail Access Servers kommen, wenn der Angezeigte Name einer TO oder Cc Adresse sehr lang ist.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+17.01.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10858]]

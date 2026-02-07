@@ -1,0 +1,20 @@
+====== Q-110.839 - Login bei IMAP Verwendung ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Man kann nun für das Login des Mail Access Servers als User Namen auch den für die Remote Freigabe verwendeten Namen benutzen. Vorrang haben weiterhin die Alias Einträge in der Mail Access Server Konfiguration und die Angabe des Ordnernamens des jeweiligen David Benutzers.
+
+==== Produkt ====
+
+David Mail Access Server
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10839]]

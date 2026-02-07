@@ -1,0 +1,20 @@
+====== Q-110.888 - eMail Vorlage mit eingefügter Grafik ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Enthält die Standard eMail Vorlage eine eingefügte Grafik (z.B. Firmenlogo), so wurde diese nicht mit versendet.
+
+==== Produkt ====
+
+David Client Mac
+
+==== Datum ====
+
+5.03.2013
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10888]]

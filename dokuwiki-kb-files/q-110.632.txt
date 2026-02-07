@@ -1,0 +1,22 @@
+====== Q-110.632 - Wiedervorlage Button ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Über der Vorschau gibt es nun auch den "Wiedervorlage" Button (wie schon den Wiedervorlage Menüpunkt im Kontextmenü). Über einen kleinen Pfeil sind folgende Optionen wählbar:
+
+Morgen Übermorgen In einer Woche In einem Monat Anderer ZeitpunktBei "Anderer Zeitpunkt" wird der bisherige Dialog geöffnet. Bei allen anderen Punkten wird der angegebene Tag um 8:00 Uhr gewählt.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10632]]

@@ -1,0 +1,20 @@
+====== Q-110.782 - Einfügen von HTML Tags aus Datei oder Zwischenablage ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Wurden HTML Tags aus einer Textdatei oder der Zwischenablage in den Editor eingefügt, so wurden die HTML Tags direkt aufgelöst. Das ist nun geändert.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+18.12.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10782]]

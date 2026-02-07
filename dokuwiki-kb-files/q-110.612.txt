@@ -1,0 +1,20 @@
+====== Q-110.612 - Absturz beim Beenden des Clients ======
+~~NOCACHE~~
+!!!
+==== Problem ====
+
+Unter gewissen Umständen konnte es beim Beenden des Clients unter Windows7 zum Absturz kommen, wenn man den Client durch "Close All Windows" in der Taskbar beendete und dabei noch Editorfenster geöffnet waren.
+
+==== Produkt ====
+
+David Client
+
+==== Datum ====
+
+29.02.2012
+
+==== Antwort ====
+
+     
+==== Original-Link ====
+[[http://www.tobit.de/login/kbArticle.asp?ArticleID=10612]]
